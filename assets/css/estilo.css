@@ -1,0 +1,291 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+/* A_S - Root - Begin */
+:root {
+    --FonteMontserrat: 'Montserrat', sans-serif !important;
+
+    /* Todas cores */
+    --CorDC01: #C61067;
+    --CorDC02: #623CEA;
+    --CorDC03: #F9E784;
+    --CorDC04: #02394A;
+    --CorDC05: #0B39B4;
+    --CorPreta: #000000;
+    --CorBranca: #FFF;
+
+    /* Cor Topicos e Subtopicos */
+    --CorTopico: var(--CorDC01);
+    --CorSubtopico: var(--CorDC04);
+
+    /* Cor Caixas */
+    --CorApresentacao: #623CEA;
+
+    --CorImportante: #f56127;
+    --CorImportanteClaro: #ffe2d7;
+
+    --CorFiqueAtento: #f1a923;
+    --CorFiqueAtentoClaro: #fdefd4;
+
+    --CorReflita: #65d1e7;
+    --CorReflitaClaro: #d7f8ff;
+
+    --CorExemplo: #30b143;
+    --CorExemploClaro: #d7ffdd;
+
+    --CorSaibaMais: #36a5b1;
+    --CorSaibaMaisClaro: #d6fbff;
+
+    --CorCuriosidade: #435266;
+    --CorCuriosidadeClaro: #d3e5fd;
+
+    --CorResumo: #c79d60;
+    --CorResumoClaro: #fdecd3;
+
+
+}
+/* A_S - Root - End */
+
+/* A_S - Begin */
+
+/* A_S - Layout - BEGIN */
+.container-fluid {
+    transition: .5s;
+}
+/* Navbar preto */
+.navbarpreto {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--CorPreta);
+    z-index: 4;
+}
+* {
+    font-family: var(--FonteMontserrat);
+    font-weight: light;
+}
+
+/* Back to top */
+#BackToTop {
+    text-decoration: none !important;
+    display: inline-block;
+    background-color: var(--CorDC01);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#BackToTop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+#BackToTop:hover {
+    cursor: pointer;
+    background-color: var(--CorPreta);
+}
+#BackToTop:active {
+    background-color: #555;
+}
+#BackToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*  */
+
+/* A_S - Layout - END */
+
+/* A_S - Textos - BEGIN */
+.Titulo {
+    font-family: var(--FonteMontserrat);
+    /* font-weight: bold; */
+    font-size: 2rem;
+    color: var(--CorTopico);
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.Texto {
+    font-family: var(--FonteMontserrat);
+    font-size: 1.2rem !important;
+
+}
+.Subtopico {
+    color: var(--CorSubtopico);
+    margin: 40px 0 0 0;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+/* A_S - Textos - END */
+
+/* A_S - Box - BEGIN */
+.BoxApresentacao{
+    background-color: var(--CorApresentacao);
+    font-size: 1.5rem !important;
+    color: var(--CorBranca);
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 13px;
+    padding: 1rem;   
+    text-align: center;
+}
+.BoxRosa {
+    padding: 18px;
+    border-radius: 13px 13px;
+    background-color: var(--CorDC01);
+    color: var(--CorBranca);
+    margin: 1.5em 0;
+}
+.BoxAmarelo {
+    padding: 18px;
+    border-radius: 13px 13px;
+    background-color: var(--CorDC03);
+    color: #0c343d;
+    margin: 1.5em 0;
+}
+/* A_S - Box - END */
+
+/* A_S - Listas - BEGIN */
+.Lista li {
+    line-height: 30px;
+}
+/* A_S - Listas - END */
+
+/* A_S - Accordions - BEGIN */
+.Accordion {
+    border-radius: 13px 13px 16px 16px;
+    background-image: linear-gradient(to right, var(--CorDC01), var(--CorDC02));
+}
+.accordion-button {
+    background-image: linear-gradient(to right, var(--CorDC01), var(--CorDC02));
+    padding: 8px 19px;
+    border-radius: 13px;
+    color: white !important;
+    font-size: 1.3rem !important;
+    border: none;
+    border-color: transparent;
+    box-shadow: none !important;
+}
+.accordion-content {
+    background-color: #d5f2de;
+    font-size: 1.3em;
+    padding: 15px;
+    border-radius: 0 0 13px 13px;
+    font-weight: 200 !important;
+}
+/* A_S - Accordions - END */
+
+/* A_S - Caixas - BEGIN */
+.Caixa {
+    padding: 10px 20px;
+    font-size: 1.4em;
+    border-radius: 13px 13px 0px 0px;
+}
+.CaixaConteudo {
+    padding: 18px;
+    border-radius: 0px 0px 13px 13px;
+    background-color: #fef8f1;
+}
+.TituloImportante {
+    background-color: var(--CorImportante);
+    color: #fff;
+}
+.ConteudoImportante {
+    background-color: var(--CorImportanteClaro);
+}
+
+.TituloFiqueAtento {
+    background-color: var(--CorFiqueAtento);
+    color: #fff;
+}
+.ConteudoFiqueAtento {
+    background-color: var(--CorFiqueAtentoClaro);
+}
+
+.TituloReflita {
+    background-color: var(--CorReflita);
+    color: #fff;
+}
+.ConteudoReflita {
+    background-color: var(--CorReflitaClaro);
+}
+
+.TituloExemplo {
+    background-color: var(--CorExemplo);
+    color: #fff;
+}
+.ConteudoExemplo {
+    background-color: var(--CorExemploClaro);
+}
+
+.TituloReflita {
+    background-color: var(--CorReflita);
+    color: #fff;
+}
+.ConteudoReflita {
+    background-color: var(--CorReflitaClaro);
+}
+
+.TituloExemplo {
+    background-color: var(--CorExemplo);
+    color: #fff;
+}
+.ConteudoExemplo {
+    background-color: var(--CorExemploClaro);
+}
+
+.TituloSaibaMais {
+    background-color: var(--CorSaibaMais);
+    color: #fff;
+}
+.ConteudoSaibaMais {
+    background-color: var(--CorSaibaMaisClaro);
+}
+
+.TituloCuriosidade {
+    background-color: var(--CorCuriosidade);
+    color: #fff;
+}
+.ConteudoCuriosidade {
+    background-color: var(--CorCuriosidadeClaro);
+}
+
+.TituloResumo {
+    background-color: var(--CorResumo);
+    color: #fff;
+}
+.ConteudoResumo {
+    background-color: var(--CorResumoClaro);
+}
+
+.Citacao {
+    background-color: #f3f3f3;
+    border: 1px solid #dcdcdc;
+    border-bottom: 5px solid #c1c1c2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 3rem;
+  }
+/* A_S - Caixas - END */
+
+.Footer {
+    /* margin-bottom: 20px; */
+    background-color: var(--CorPreta) !important;
+    padding-bottom: 30px;
+}
+/* A_S - End */  
+
+
