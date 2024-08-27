@@ -94,11 +94,12 @@
                     </li>
                 </ul>
                 <br>
+                <!-- Formulário para Filtrar Questões -->
                 <form method="get" action="">
                     <label for="modulo">Escolha o módulo:</label>
                     <select name="modulo" id="modulo">
-                        <option value="Modulo 1">Módulo 1</option>
-                        <option value="Modulo 2">Módulo 2</option>
+                        <option value="1">Módulo 1</option>
+                        <option value="2">Módulo 2</option>
                         <!-- Adicione outros módulos conforme necessário -->
                     </select>
                     <input type="submit" value="Filtrar Questões">
@@ -106,43 +107,36 @@
                 <!-- Exibição das questões -->
                 <?php
                 // Obtém o módulo desejado (pode ser passado via URL ou formulário)
-                $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : 1;
+                $modulo = isset($_GET['modulo']) ? intval($_GET['modulo']) : 1;
 
                 // Consulta o banco de dados para obter as questões do módulo especificado
-                $sql = "SELECT id, pergunta, resposta_correta FROM questoes WHERE modulo = ?";
+                $sql = "SELECT id, enunciado, correta FROM questoes WHERE modulo = ?";
                 $stmt = $conn->prepare($sql);
-                $stmt->bind_param('s', $modulo);
+                $stmt->bind_param('i', $modulo);
                 $stmt->execute();
                 $result = $stmt->get_result();
 
                 // Exibe as questões
                 while ($row = $result->fetch_assoc()) {
                     $pergunta_id = $row['id'];
-                    $pergunta = $row['pergunta'];
-                    $resposta_correta = $row['resposta_correta'];
+                    $pergunta = $row['enunciado'];
+                    $resposta_correta = $row['correta'];
 
                     echo "<form method='post' action=''>";
-                    echo "<p><strong>Pergunta:</strong> " . $pergunta . "</p>";
+                    echo "<p><strong>Pergunta:</strong> " . htmlspecialchars($pergunta) . "</p>";
                     echo "<input type='hidden' name='pergunta_id' value='" . $pergunta_id . "'>";
                     echo "<input type='text' name='resposta' placeholder='Digite sua resposta' required>";
                     echo "<input type='submit' value='Validar Resposta'>";
                     echo "</form>";
 
                     // Processamento da resposta
-                    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['pergunta_id']) && $_POST['pergunta_id'] == $pergunta_id) {
-                        $resposta_usuario = trim($_POST['resposta']);
-
-                        if (strcasecmp($resposta_usuario, $resposta_correta) == 0) {
-                            echo "<p style='color:green;'>Resposta correta!</p>";
-                        } else {
-                            echo "<p style='color:red;'>Resposta incorreta. A resposta correta é: " . $resposta_correta . "</p>";
-                        }
+                    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['pergunta_id'])) {
+                        $resposta_usuario = $_POST['resposta'];
+                        $correta = ($resposta_usuario === $resposta_correta) ? "Correta" : "Incorreta";
+                        echo "<p>Resposta: $correta</p>";
                     }
-
-                    echo "<hr>"; // Separador entre perguntas
                 }
 
-                // Fecha a conexão
                 $stmt->close();
                 $conn->close();
                 ?>
