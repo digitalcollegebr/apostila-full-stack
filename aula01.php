@@ -94,6 +94,15 @@
                     </li>
                 </ul>
                 <br>
+                <form method="get" action="">
+                    <label for="modulo">Escolha o módulo:</label>
+                    <select name="modulo" id="modulo">
+                        <option value="Modulo 1">Módulo 1</option>
+                        <option value="Modulo 2">Módulo 2</option>
+                        <!-- Adicione outros módulos conforme necessário -->
+                    </select>
+                    <input type="submit" value="Filtrar Questões">
+                </form>
                 <!-- Exibição das questões -->
                 <?php
                     // Obtém o módulo desejado (pode ser passado via URL ou formulário)
