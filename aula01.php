@@ -105,25 +105,46 @@
                 </form>
                 <!-- Exibição das questões -->
                 <?php
-                    // Obtém o módulo desejado (pode ser passado via URL ou formulário)
-                    $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : 'Modulo 1';
+                // Obtém o módulo desejado (pode ser passado via URL ou formulário)
+                $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : 1;
 
-                    // Consulta o banco de dados para obter as questões do módulo especificado
-                    $sql = "SELECT pergunta, resposta FROM questoes WHERE modulo = ?";
-                    $stmt = $conn->prepare($sql);
-                    $stmt->bind_param('s', $modulo);
-                    $stmt->execute();
-                    $result = $stmt->get_result();
+                // Consulta o banco de dados para obter as questões do módulo especificado
+                $sql = "SELECT id, pergunta, resposta_correta FROM questoes WHERE modulo = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param('s', $modulo);
+                $stmt->execute();
+                $result = $stmt->get_result();
 
-                    // Exibe as questões
-                    while ($row = $result->fetch_assoc()) {
-                        echo "<p><strong>Pergunta:</strong> " . $row['pergunta'] . "</p>";
-                        echo "<p><strong>Resposta:</strong> " . $row['resposta'] . "</p>";
+                // Exibe as questões
+                while ($row = $result->fetch_assoc()) {
+                    $pergunta_id = $row['id'];
+                    $pergunta = $row['pergunta'];
+                    $resposta_correta = $row['resposta_correta'];
+
+                    echo "<form method='post' action=''>";
+                    echo "<p><strong>Pergunta:</strong> " . $pergunta . "</p>";
+                    echo "<input type='hidden' name='pergunta_id' value='" . $pergunta_id . "'>";
+                    echo "<input type='text' name='resposta' placeholder='Digite sua resposta' required>";
+                    echo "<input type='submit' value='Validar Resposta'>";
+                    echo "</form>";
+
+                    // Processamento da resposta
+                    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['pergunta_id']) && $_POST['pergunta_id'] == $pergunta_id) {
+                        $resposta_usuario = trim($_POST['resposta']);
+
+                        if (strcasecmp($resposta_usuario, $resposta_correta) == 0) {
+                            echo "<p style='color:green;'>Resposta correta!</p>";
+                        } else {
+                            echo "<p style='color:red;'>Resposta incorreta. A resposta correta é: " . $resposta_correta . "</p>";
+                        }
                     }
 
-                    // Fecha a conexão
-                    $stmt->close();
-                    $conn->close();
+                    echo "<hr>"; // Separador entre perguntas
+                }
+
+                // Fecha a conexão
+                $stmt->close();
+                $conn->close();
                 ?>
                 <!-- Accordion -->
                 <div class="Accordion wow fadeInLeftBig" data-wow-delay="0.3s">
