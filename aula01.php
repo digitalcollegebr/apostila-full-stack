@@ -94,16 +94,28 @@
                     </li>
                 </ul>
                 <br>
-                <!-- Teste -->
-                <form method="get" action="">
-                    <label for="modulo">Escolha o módulo:</label>
-                    <select name="modulo" id="modulo">
-                        <option value="Modulo 1">Módulo 1</option>
-                        <option value="Modulo 2">Módulo 2</option>
-                        <!-- Adicione outros módulos conforme necessário -->
-                    </select>
-                    <input type="submit" value="Filtrar Questões">
-                </form>
+                <!-- Exibição das questões -->
+                <?php
+                    // Obtém o módulo desejado (pode ser passado via URL ou formulário)
+                    $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : 'Modulo 1';
+
+                    // Consulta o banco de dados para obter as questões do módulo especificado
+                    $sql = "SELECT pergunta, resposta FROM questoes WHERE modulo = ?";
+                    $stmt = $conn->prepare($sql);
+                    $stmt->bind_param('s', $modulo);
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+
+                    // Exibe as questões
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<p><strong>Pergunta:</strong> " . $row['pergunta'] . "</p>";
+                        echo "<p><strong>Resposta:</strong> " . $row['resposta'] . "</p>";
+                    }
+
+                    // Fecha a conexão
+                    $stmt->close();
+                    $conn->close();
+                ?>
                 <!-- Accordion -->
                 <div class="Accordion wow fadeInLeftBig" data-wow-delay="0.3s">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false">
