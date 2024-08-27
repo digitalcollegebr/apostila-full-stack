@@ -1,6 +1,6 @@
 <?php
-    // A_S - Header
     include('layouts/header.php');
+    include_once('conn/conn.php');
 ?>
 
 <body>
@@ -94,6 +94,16 @@
                     </li>
                 </ul>
                 <br>
+                <!-- Teste -->
+                <form method="get" action="">
+                    <label for="modulo">Escolha o módulo:</label>
+                    <select name="modulo" id="modulo">
+                        <option value="Modulo 1">Módulo 1</option>
+                        <option value="Modulo 2">Módulo 2</option>
+                        <!-- Adicione outros módulos conforme necessário -->
+                    </select>
+                    <input type="submit" value="Filtrar Questões">
+                </form>
                 <!-- Accordion -->
                 <div class="Accordion wow fadeInLeftBig" data-wow-delay="0.3s">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false">
