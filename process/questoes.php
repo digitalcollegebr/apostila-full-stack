@@ -49,18 +49,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Mostrar resultado
+    $nota = $respostasCorretas/$totalQuestões*10;
+    if($nota > 7){
+        echo "Parabéns, sua nota foi: ".$nota;
+    }else{
+        echo "Revise o conteúdo, sua nota foi: ".$nota;
+    }
     echo "<p>Você acertou " . htmlspecialchars($respostasCorretas) . " de " . htmlspecialchars($totalQuestões) . " questões.</p>";
 
     // Mostrar questões erradas
     if (!empty($questoesErradas)) {
         echo "<h3>Questões que você errou:</h3>";
         echo "<table border='1' cellpadding='10' cellspacing='0'>";
-        echo "<tr><th>ID da Questão</th><th>Resposta Dada</th><th>Resposta Correta</th></tr>";
+        echo "<tr><th>ID da Questão</th><th>Resposta Dada</th> </tr>";
         foreach ($questoesErradas as $questaoErrada) {
             echo "<tr>";
             echo "<td>" . htmlspecialchars($questaoErrada['id']) . "</td>";
             echo "<td>" . htmlspecialchars($questaoErrada['resposta_usuario']) . "</td>";
-            echo "<td>" . htmlspecialchars($questaoErrada['item_certo']) . "</td>";
             echo "</tr>";
         }
         echo "</table>";
