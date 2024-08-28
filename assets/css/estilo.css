@@ -1,3 +1,4 @@
+/* Importa a fonte Montserrat */
 @import url('https://fonts.cdnfonts.com/css/montserrat');
 
 /* A_S - Root - Begin */
@@ -40,8 +41,6 @@
 
     --CorResumo: #c79d60;
     --CorResumoClaro: #fdecd3;
-
-
 }
 /* A_S - Root - End */
 
@@ -51,6 +50,7 @@
 .container-fluid {
     transition: .5s;
 }
+
 /* Navbar preto */
 .navbarpreto {
     position: fixed;
@@ -60,6 +60,7 @@
     background-color: var(--CorPreta);
     z-index: 4;
 }
+
 * {
     font-family: var(--FonteMontserrat);
     font-weight: light;
@@ -77,8 +78,7 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color .3s, 
-      opacity .5s, visibility .5s;
+    transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
@@ -103,15 +103,11 @@
     opacity: 1;
     visibility: visible;
 }
-
-/*  */
-
 /* A_S - Layout - END */
 
 /* A_S - Textos - BEGIN */
 .Titulo {
     font-family: var(--FonteMontserrat);
-    /* font-weight: bold; */
     font-size: 2rem;
     color: var(--CorTopico);
     border-bottom: 1px solid rgb(185, 185, 185);
@@ -121,25 +117,17 @@
 .Texto {
     font-family: var(--FonteMontserrat);
     font-size: 1.2rem !important;
-
-}
-.Subtopico {
-    color: var(--CorSubtopico);
-    margin: 40px 0 0 0;
-    border-bottom: 1px solid rgb(185, 185, 185);
-    padding-bottom: 10px;
-    margin-bottom: 15px;
 }
 /* A_S - Textos - END */
 
 /* A_S - Box - BEGIN */
-.BoxApresentacao{
+.BoxApresentacao {
     background-color: var(--CorApresentacao);
     font-size: 1.5rem !important;
     color: var(--CorBranca);
     border-radius: 13px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 13px;
-    padding: 1rem;   
+    padding: 1rem;
     text-align: center;
 }
 .BoxRosa {
@@ -231,22 +219,6 @@
     background-color: var(--CorExemploClaro);
 }
 
-.TituloReflita {
-    background-color: var(--CorReflita);
-    color: #fff;
-}
-.ConteudoReflita {
-    background-color: var(--CorReflitaClaro);
-}
-
-.TituloExemplo {
-    background-color: var(--CorExemplo);
-    color: #fff;
-}
-.ConteudoExemplo {
-    background-color: var(--CorExemploClaro);
-}
-
 .TituloSaibaMais {
     background-color: var(--CorSaibaMais);
     color: #fff;
@@ -270,22 +242,164 @@
 .ConteudoResumo {
     background-color: var(--CorResumoClaro);
 }
-
-.Citacao {
-    background-color: #f3f3f3;
-    border: 1px solid #dcdcdc;
-    border-bottom: 5px solid #c1c1c2;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 3rem;
-  }
 /* A_S - Caixas - END */
 
+/* A_S - Citação - BEGIN */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Alinha os itens aos extremos do contêiner */
+    align-items: flex-start; /* Alinha os itens ao topo do contêiner */
+    gap: 20px; /* Espaçamento entre os blocos, ajuste conforme necessário */
+    margin: 20px 0; /* Margem ao redor do contêiner, ajuste conforme necessário */
+}
+
+/* Estilo para o bloco da citação */
+.Citacao {
+    background-color: var(--CorBranca);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+    align-self: flex-start; /* Alinha a citação ao topo do contêiner pai */
+}
+
+/* Estilo para a imagem dentro da citação */
+.citacao-image {
+    flex-shrink: 0;
+}
+
+.citacao-image img {
+    width: 80px; /* Ajuste conforme necessário */
+    height: 80px; /* Ajuste para manter a forma redonda */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o bloco de subtítulo e texto */
+.citacao-side {
+    max-width: 35%;
+    background-color: var(--CorBranca);
+    padding: 20px;
+    border-radius: 15px;
+    align-self: flex-start; /* Alinha o subtítulo e texto ao topo do contêiner pai */
+}
+
+/* Estilo para o texto da citação */
+.citacao-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Estilo para o rodapé da citação */
+.citacao-footer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .Citacao {
+        max-width: 90%; /* Ajuste para telas menores */
+    }
+
+    .citacao-side {
+        max-width: 90%; /* Ajuste para telas menores */
+        margin-bottom: 20px; /* Adiciona margem abaixo para separar visualmente */
+    }
+
+    .Subtopico {
+        font-size: 16px;
+    }
+
+    .Texto {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Citacao {
+        max-width: 100%; /* Ajuste para telas muito pequenas */
+    }
+
+    .citacao-side {
+        max-width: 100%; /* Ajuste para telas muito pequenas */
+    }
+
+    .Subtopico {
+        font-size: 14px;
+    }
+
+    .Texto {
+        font-size: 12px;
+    }
+}
+/* A_S - Citação - END */
+
+/* Estilo para o texto à esquerda */
+.texto-guerraFria {
+    max-width: 60%; /* Ajuste conforme necessário */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o GIF à direita */
+.gif-side {
+    max-width: 35%; /* Ajuste conforme necessário */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Estilo para o GIF dentro do contêiner */
+.gif-side img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção original do GIF */
+}
+
+
+.hinge-effect {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção original do GIF */
+    animation: hinge 5s ease-in-out infinite; 
+}
+
+@keyframes hinge {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .texto-guerraFria {
+        max-width: 90%; /* Ajuste para telas menores */
+    }
+
+    .gif-side {
+        max-width: 90%; /* Ajuste para telas menores */
+        margin-bottom: 20px; /* Adiciona margem abaixo para separar visualmente */
+    }
+}
+
+@media (max-width: 576px) {
+    .texto-guerraFria {
+        max-width: 100%; /* Ajuste para telas muito pequenas */
+    }
+
+    .gif-side {
+        max-width: 100%; /* Ajuste para telas muito pequenas */
+    }
+}
+/* Footer */
 .Footer {
-    /* margin-bottom: 20px; */
     background-color: var(--CorPreta) !important;
     padding-bottom: 30px;
 }
-/* A_S - End */  
-
-
+/* A_S - End */
