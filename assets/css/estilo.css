@@ -244,159 +244,72 @@
 }
 /* A_S - Caixas - END */
 
-/* A_S - Citação - BEGIN */
-.flex-container {
+/* A_S - Code - BEGAN */
+
+.container-code {
     display: flex;
-    justify-content: space-between; /* Alinha os itens aos extremos do contêiner */
-    align-items: flex-start; /* Alinha os itens ao topo do contêiner */
-    gap: 20px; /* Espaçamento entre os blocos, ajuste conforme necessário */
-    margin: 20px 0; /* Margem ao redor do contêiner, ajuste conforme necessário */
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
 }
 
-/* Estilo para o bloco da citação */
-.Citacao {
-    background-color: var(--CorBranca);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 60%;
-    align-self: flex-start; /* Alinha a citação ao topo do contêiner pai */
+.code-section {
+    flex: 1;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f7f1f1;
 }
 
-/* Estilo para a imagem dentro da citação */
-.citacao-image {
-    flex-shrink: 0;
+.text-section {
+    flex: 1;
+    padding-left: 20px;
 }
 
-.citacao-image img {
-    width: 80px; /* Ajuste conforme necessário */
-    height: 80px; /* Ajuste para manter a forma redonda */
-    border-radius: 50%; /* Faz a imagem ficar redonda */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilo para o bloco de subtítulo e texto */
-.citacao-side {
-    max-width: 35%;
-    background-color: var(--CorBranca);
-    padding: 20px;
-    border-radius: 15px;
-    align-self: flex-start; /* Alinha o subtítulo e texto ao topo do contêiner pai */
-}
-
-/* Estilo para o texto da citação */
-.citacao-text {
-    font-size: 16px;
+.typewriter {
+    font-family: monospace;
+    width: 100%;
+    max-width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 8px;
+    border-right: 2px solid #f8f8f2; /* Cor do cursor */
+    font-size: 18px;
     line-height: 1.5;
-    color: #333;
+    animation: typing 6s steps(60, end), blink-caret 0.75s step-end infinite;
 }
 
-/* Estilo para o rodapé da citação */
-.citacao-footer {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
+.typewriter-small{
+    font-family: monospace;
+    width: 60%;
+    height: 5%;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #f7f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    border-radius: 8px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .Citacao {
-        max-width: 90%; /* Ajuste para telas menores */
-    }
-
-    .citacao-side {
-        max-width: 90%; /* Ajuste para telas menores */
-        margin-bottom: 20px; /* Adiciona margem abaixo para separar visualmente */
-    }
-
-    .Subtopico {
-        font-size: 16px;
-    }
-
-    .Texto {
-        font-size: 14px;
-    }
+.code-color{
+    color: #c51967;
 }
 
-@media (max-width: 576px) {
-    .Citacao {
-        max-width: 100%; /* Ajuste para telas muito pequenas */
-    }
-
-    .citacao-side {
-        max-width: 100%; /* Ajuste para telas muito pequenas */
-    }
-
-    .Subtopico {
-        font-size: 14px;
-    }
-
-    .Texto {
-        font-size: 12px;
-    }
-}
-/* A_S - Citação - END */
-
-/* Estilo para o texto à esquerda */
-.texto-guerraFria {
-    max-width: 60%; /* Ajuste conforme necessário */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+pre {
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap; /* Mantém a formatação do texto */
 }
 
-/* Estilo para o GIF à direita */
-.gif-side {
-    max-width: 35%; /* Ajuste conforme necessário */
-    padding: 20px;
-    border-radius: 15px;
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-/* Estilo para o GIF dentro do contêiner */
-.gif-side img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-    height: auto; /* Mantém a proporção original do GIF */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #f8f8f2; }
 }
 
-
-.hinge-effect {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-    height: auto; /* Mantém a proporção original do GIF */
-    animation: hinge 5s ease-in-out infinite; 
-}
-
-@keyframes hinge {
-    0% { transform: rotate(0deg); }
-    20% { transform: rotate(-10deg); }
-    40% { transform: rotate(10deg); }
-    60% { transform: rotate(-10deg); }
-    80% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
-}
-
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .texto-guerraFria {
-        max-width: 90%; /* Ajuste para telas menores */
-    }
-
-    .gif-side {
-        max-width: 90%; /* Ajuste para telas menores */
-        margin-bottom: 20px; /* Adiciona margem abaixo para separar visualmente */
-    }
-}
-
-@media (max-width: 576px) {
-    .texto-guerraFria {
-        max-width: 100%; /* Ajuste para telas muito pequenas */
-    }
-
-    .gif-side {
-        max-width: 100%; /* Ajuste para telas muito pequenas */
-    }
-}
 /* Footer */
 .Footer {
     background-color: var(--CorPreta) !important;
