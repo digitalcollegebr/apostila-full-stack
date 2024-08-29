@@ -9,7 +9,7 @@
         <?php if ($questao["modulo"] == 1): ?>
             <?php if ($questao["unidade"] == 1): ?>
             <div class="question">
-                <p><strong>Enunciado:</strong> <?php echo htmlspecialchars($questao["enunciado"]); ?></p>
+                <p><strong class="nQuestion"><?php echo $questao['id'] ?></strong><strong>) </strong><strong><?php echo htmlspecialchars($questao["enunciado"]); ?></strong></p>
                 <p><input type="radio" name="questao_<?php echo $questao["id"]; ?>" value="A">
                     <label><?php echo htmlspecialchars($questao["item_a"]); ?></label></p>
                 <p><input type="radio" name="questao_<?php echo $questao["id"]; ?>" value="B">
@@ -42,15 +42,21 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
 
         if (!isAnswered) {
             allAnswered = false;
-            question.style.border = '2px solid red'; // Optional: Highlight unanswered questions
+            question.classList.add('unanswered'); // Highlight unanswered questions
         } else {
-            question.style.border = ''; // Remove highlight for answered questions
+            question.classList.remove('unanswered'); // Remove highlight for answered questions
         }
     });
 
+    const errorAlert = document.getElementById('errorAlert');
+    const errorMessage = document.getElementById('errorMessage');
+
     if (!allAnswered) {
         event.preventDefault(); // Prevent form submission
-        alert('Por favor, responda todas as perguntas antes de enviar o formulário.');
+        errorAlert.style.display = 'block'; // Show error alert
+        errorMessage.textContent = 'Por favor, responda todas as perguntas antes de enviar o formulário.';
+    } else {
+        errorAlert.style.display = 'none'; // Hide error alert if all questions are answered
     }
 });
 </script>
