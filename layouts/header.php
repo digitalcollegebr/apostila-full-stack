@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../assets/css/animate.min.css" />
 
     <!-- Wow JS -->
-    <script src="assets/js/wow.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>

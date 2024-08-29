@@ -20,7 +20,7 @@
 
     <?php 
         // A_S - Nav
-        include('layouts/header.php'); 
+        include('layouts/nav.php'); 
     ?>
 
     <div class="container" style="margin-top: 100px">
