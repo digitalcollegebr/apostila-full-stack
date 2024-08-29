@@ -319,7 +319,7 @@ pre {
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--FonteMontserrat);
 }
 
 #quizForm {
@@ -368,4 +368,67 @@ button:hover {
 
 .navbar{
     background-color: black;
+}
+
+.nQuestion{
+    color: #c51967;
+}
+
+#errorAlert {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#errorAlert strong {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#errorAlert span {
+    flex-grow: 1;
+}
+
+#errorAlert::before {
+    content: "\26A0"; /* Unicode for warning sign */
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+button {
+    background-color:#c51967;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+        width: 100%;
+        max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ba1477;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+.question.unanswered {
+    border-color: #dc3545; /* Highlight unanswered questions with red */
+    background-color: #fff5f5; /* Light red background */
 }
