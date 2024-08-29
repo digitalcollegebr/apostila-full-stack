@@ -1,9 +1,9 @@
 <?php
 // Configuração da conexão com o banco de dados
 $host = 'localhost';
-$db = 'u128712671_questoes';
-$user = 'u128712671_digitalcollege';
-$pass = 'Digital@2024';
+$db = 'questoes';
+$user = 'root';
+$pass = '';
 
 $conn = new mysqli($host, $user, $pass, $db);
 

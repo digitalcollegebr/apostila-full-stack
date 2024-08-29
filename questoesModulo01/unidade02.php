@@ -7,7 +7,7 @@
 <form id="quizForm" method="post" action="../process/questoes.php">
     <?php foreach ($questoes as $questao): ?>
         <?php if ($questao["modulo"] == 1): ?>
-            <?php if ($questao["unidade"] == 3): ?>
+            <?php if ($questao["unidade"] == 2): ?>
             <div class="question">
                 <p><strong>Enunciado:</strong> <?php echo htmlspecialchars($questao["enunciado"]); ?></p>
                 <p><input type="radio" name="questao_<?php echo $questao["id"]; ?>" value="A">
