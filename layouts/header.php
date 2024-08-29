@@ -24,13 +24,13 @@
     <link rel="stylesheet" href="../assets/css/estilo.css">
 
     <!-- JS - Aula Web -->
-    <script src="assets/js/script.js" defer></script>
+    <script src="../assets/js/script.js" defer></script>
 
     <!-- Animate -->
     <link rel="stylesheet" href="../assets/css/animate.min.css" />
 
     <!-- Wow JS -->
-    <script src="assets/js/wow.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>

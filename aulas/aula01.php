@@ -2,7 +2,7 @@
 
 <?php
     // A_S - Header
-    include('layouts/header.php');
+    include('../layouts/header.php');
 ?>
 
 <body>
@@ -16,12 +16,7 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>    
-
-    <?php 
-        // A_S - Nav
-        include('layouts/nav.php'); 
-    ?>
+    </script> 
 
     <div class="container" style="margin-top: 100px">
         <div class="row">
@@ -67,6 +62,8 @@
         </div>
         <br>
         <p class="Texto">Aqui, <strong>My HTML Page</strong> representa o conteúdo do elemento, ao passo que </title> é a tag de fechamento que declara que este elemento está completo.</p>
+        <br>
+
         
 
    
