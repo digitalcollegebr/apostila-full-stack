@@ -63,6 +63,15 @@
         <br>
         <p class="Texto">Aqui, <strong>My HTML Page</strong> representa o conteúdo do elemento, ao passo que </title> é a tag de fechamento que declara que este elemento está completo.</p>
         <br>
+        <div class="wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloImportante">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 
+                            IMPORTANTE
+                    </div>
+                    <div class="CaixaConteudo ConteudoImportante">
+                        <p>Nem todos os elementos HTML precisam ser fechados; nesses casos, falamos de elementos vazios, elementos de auto-fechamento <br> ou elementos nulos.</p>
+                    </div>
+                </div>
 
         
 

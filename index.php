@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('layouts/header.php');
+    include('./layouts/header.php');
 ?>
 
 <body>
@@ -14,12 +14,7 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>    
-
-    <?php 
-        // A_S - Nav
-        include('layouts/nav.php'); 
-    ?>    
+    </script>     
 
     <!-- CONTEUDO - Begin -->
     <!-- Back to top -->
