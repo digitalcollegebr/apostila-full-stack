@@ -1,5 +1,6 @@
 <?php
 include_once('conn.php');
+include('../layouts/header.php');  
 
 // Inicializar variáveis para o resultado
 $respostasCorretas = 0;
@@ -24,8 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Extrair o ID da questão
         $id = substr($questao_id, 8);
 
-        // Obter a resposta correta e o número da questão
-        $sql = "SELECT item_certo, numero FROM questoes WHERE id = ?";
+        // Obter a resposta correta, enunciado e número da questão
+        $sql = "SELECT item_certo, numero, item_a, item_b, item_c, item_d, enunciado FROM questoes WHERE id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param('i', $id);
         $stmt->execute();
@@ -35,6 +36,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $questao = $result->fetch_assoc();
             $item_certo = $questao['item_certo'];
             $numero = $questao['numero'];
+            $enunciado = $questao['enunciado'];
+
+            // Mapeia as respostas para os itens
+            $respostas = [
+                'A' => $questao['item_a'],
+                'B' => $questao['item_b'],
+                'C' => $questao['item_c'],
+                'D' => $questao['item_d']
+            ];
 
             // Comparar resposta do usuário com a resposta correta
             if ($resposta_usuario === $item_certo) {
@@ -43,8 +53,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Adicionar à lista de questões erradas
                 $questoesErradas[] = [
                     'numero' => $numero,
-                    'resposta_usuario' => $resposta_usuario,
-                    'item_certo' => $item_certo
+                    'enunciado' => $enunciado,
+                    'resposta_usuario' => $respostas[$resposta_usuario],
+                    'item_certo' => $respostas[$item_certo]
                 ];
             }
         }
@@ -52,26 +63,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Mostrar resultado
     $nota = $respostasCorretas / $totalQuestões * 10;
-    if ($nota > 7) {
-        echo "Parabéns, sua nota foi: " . number_format($nota, 2);
-    } else {
-        echo "Revise o conteúdo, sua nota foi: " . number_format($nota, 2);
-    }
+    $mensagem = $nota > 7 ? "Parabéns, sua nota foi: " . number_format($nota, 2) : "Revise o conteúdo, sua nota foi: " . number_format($nota, 2);
+    $notaClass = $nota > 7 ? 'nota-alta' : 'nota-baixa';
+
+    echo "<div class='resultado $notaClass'>";
+    echo "<h2>Resultado do Quiz</h2>";
+    echo "<p>$mensagem</p>";
     echo "<p>Você acertou " . htmlspecialchars($respostasCorretas) . " de " . htmlspecialchars($totalQuestões) . " questões.</p>";
+    echo "</div>";
 
     // Mostrar questões erradas
     if (!empty($questoesErradas)) {
+        echo "<div class='questoes-erradas'>";
         echo "<h3>Questões que você errou:</h3>";
-        echo "<table border='1' cellpadding='10' cellspacing='0'>";
-        echo "<tr><th>Número da Questão</th><th>Resposta Dada</th><th>Resposta Correta</th></tr>";
+        echo "<table>";
+        echo "<tr><th>Número da Questão</th><th>Enunciado</th><th>Resposta Dada</th><th>Resposta Correta</th></tr>";
         foreach ($questoesErradas as $questaoErrada) {
             echo "<tr>";
             echo "<td>" . htmlspecialchars($questaoErrada['numero']) . "</td>";
+            echo "<td>" . htmlspecialchars($questaoErrada['enunciado']) . "</td>";
             echo "<td>" . htmlspecialchars($questaoErrada['resposta_usuario']) . "</td>";
             echo "<td>" . htmlspecialchars($questaoErrada['item_certo']) . "</td>";
             echo "</tr>";
         }
         echo "</table>";
+        echo "</div>";
     }
 } else {
     // Obter todas as questões

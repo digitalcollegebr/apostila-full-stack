@@ -13,7 +13,7 @@
 <form id="quizForm" method="post" action="../process/questoes.php">
     <?php foreach ($questoes as $questao): ?>
         <?php if ($questao["modulo"] == 1): ?>
-            <?php if ($questao["unidade"] == 1): ?>
+            <?php if ($questao["unidade"] == 8): ?>
             <div class="question">
                 <p><strong class="nQuestion"><?php echo $questao['numero'] ?></strong><strong>) </strong><strong><?php echo htmlspecialchars($questao["enunciado"]); ?></strong></p>
                 <div class="options">

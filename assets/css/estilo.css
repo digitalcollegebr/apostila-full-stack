@@ -432,3 +432,70 @@ button:hover {
     border-color: #dc3545; /* Highlight unanswered questions with red */
     background-color: #fff5f5; /* Light red background */
 }
+
+.resultado {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.resultado.nota-alta {
+    border-color: #28a745;
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.resultado.nota-baixa {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.questoes-erradas {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.questoes-erradas h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.questoes-erradas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.questoes-erradas table, .questoes-erradas th, .questoes-erradas td {
+    border: 1px solid #ddd;
+}
+
+.questoes-erradas th, .questoes-erradas td {
+    padding: 10px;
+    text-align: left;
+}
+
+.questoes-erradas th {
+    background-color: #c51967;
+    color: #ffffff;
+}
+
+.questoes-erradas tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.questoes-erradas tr:hover {
+    background-color: #f1f1f1;
+}
