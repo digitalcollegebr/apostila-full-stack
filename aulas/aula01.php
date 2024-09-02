@@ -2,7 +2,7 @@
 
 <?php
     // A_S - Header
-    include('layouts/header.php');
+    include('../layouts/header.php');
 ?>
 
 <body>
@@ -18,10 +18,6 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>    
 
-    <?php 
-        // A_S - Nav
-        include('layouts/nav.php'); 
-    ?>
 
     <div class="container" style="margin-top: 100px">
         <div class="row">
@@ -60,27 +56,60 @@
         <br>
         <p class="Texto">A tag <strong><span class="code-color">&lt;title&gt;</span></strong> é um exemplo de tag de abertura de um elemento HTML que define
         o título de um documento HTML. No entanto, um elemento possui dois outros componentes. Um
-        elemento <span class="code-color">&lt;title&gt;</span> completo seria parecido com este:</p>
+        elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> completo seria parecido com este:</p>
         <br>
         <div class="typewriter-small">
-                <span class="code-color"><strong>&lt;title&gt;</strong></span>My HTML Page<span class="code-color"><strong>&lt;title&gt;</strong></span>
+                <span class="code-color"><strong>&lt;title&gt;</strong></span>My HTML Page<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
         </div>
         <br>
-        <p class="Texto">Aqui, <strong>My HTML Page</strong> representa o conteúdo do elemento, ao passo que </title> é a tag de fechamento que declara que este elemento está completo.</p>
-<<<<<<< HEAD
+        <p class="Texto">Aqui, <strong>My HTML Page</strong> representa o conteúdo do elemento, ao passo que <span class="code-color"><strong>&lt;/title&gt;</strong></span> é a tag de fechamento que declara que este elemento está completo.</p>
         <br>
+        <!-- Importante -->
         <div class="wow fadeIn" data-wow-delay="0.3s">
                     <div class="Caixa TituloImportante">
                         <i class="fa-solid fa-triangle-exclamation"></i> 
                             IMPORTANTE
                     </div>
                     <div class="CaixaConteudo ConteudoImportante">
-                        <p>Nem todos os elementos HTML precisam ser fechados; nesses casos, falamos de elementos vazios, elementos de auto-fechamento <br> ou elementos nulos.</p>
+                        <p>Nem todos os elementos HTML precisam ser fechados; nesses casos, falamos de elementos vazios, elementos de auto-fechamento ou elementos nulos.</p>
                     </div>
                 </div>
+        <br>
+        <p class="Texto">Aqui estão os outros elementos HTML do exemplo anterior:</p>
+        <br>
+        <div class="typewriter-small">
+                <strong>&lt;html&gt;</strong>
+                Abrange todo o documento HTML. Contém todas as tags que compõem a página. Também indica que o conteúdo deste arquivo está em linguagem HTML. A tag de fechamento correspondente é: <span class="highlighter"><strong>&lt;/html&gt;</strong></span>
+        </div>
+        <br>
+        <div class="typewriter-small">
+                <strong>&lt;head&gt;</strong>
+                Um receptáculo para todas as metainformações relacionadas à página. A tag de fechamento correspondente a este elemento é  <span class="highlighter"><strong>&lt;/head&gt;</strong></span>
+        </div>
+        <br>
+        <div class="typewriter-small">
+                <strong>&lt;body&gt;</strong>
+                Um receptáculo para todas as metainformações relacionadas à página. A tag de fechamento correspondente a este elemento é  <span class="highlighter"><strong>&lt;/body&gt;</strong></span>
+        </div>
+        <br>
+        <p class="Texto">
+        As tags &lt;html&gt;, &lt;head&gt;, &lt;body&gt; e &lt;title&gt; são as chamadas tags estruturais, que fornecem o esqueleto básico de um documento HTML. Em particular, elas informam o navegador web de que ele está lendo uma página HTML.
+        </p>
+        <!-- Fique Atento -->
+        <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloFiqueAtento">
+                        <i class="fa-solid fa-person-circle-exclamation"></i> 
+                            FIQUE ATENTO 
+                    </div>
+                    <div class="CaixaConteudo ConteudoFiqueAtento">
+                        <p>Dentre esses elementos HTML, o único que é necessário para um documento HTML ser validado é a tag <title>.
+                        </p>
+                    </div>
+                </div>
+                <br>
+        
+            
 
-=======
->>>>>>> 5b04ababe3774add32cb1685d4a49ef8640fbca3
         
 
    

@@ -280,8 +280,8 @@
 
 .typewriter-small{
     font-family: monospace;
-    width: 60%;
-    height: 5%;
+    width: 65%;
+    height: 8%;
     font-size: 18px;
     line-height: 1.5;
     background-color: #f7f1f1;
@@ -289,7 +289,9 @@
     padding-left: 20px;
     border-radius: 8px;
 }
-
+.highlighter{
+    background-color: #eb6ca552;
+}
 .code-color{
     color: #c51967;
 }
