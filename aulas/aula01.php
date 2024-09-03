@@ -56,7 +56,7 @@
         o título de um documento HTML. No entanto, um elemento possui dois outros componentes. Um
         elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> completo seria parecido com este:</p>
         <br>
-        <div class="typewriter-small">
+        <div class="code-smaller">
                 <span class="code-color"><strong>&lt;title&gt;</strong></span>My HTML Page<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
         </div>
         <br>
@@ -105,6 +105,15 @@
                     </div>
                 </div>
                 <br>
+        <p class="Texto">Como se vê, cada página HTML é um documento bem estruturado que poderia ser comparado a uma árvore, na qual o elemento &lt;html&gt; representa a raiz e os elementos &lt;head&gt; e &lt;body&gt; são os primeiros galhos. O exemplo mostra que é possível aninhar elementos. Assim, o elemento &lt;title&gt; é aninhado dentro de &lt;head&gt;, que por sua vez é aninhado dentro de &lt;html&gt;.</p>
+        <br>
+        <p class="Texto">Para garantir que seu código HTML possa ser lido e mantido, todos os elementos HTML devem estar fechados corretamente e em ordem. Os navegadores web ainda serão capazes de exibir seu site conforme o esperado, mas o aninhamento incorreto de elementos e suas tags é uma prática que pode causar erros.</p>
+        <br>
+        <p class="Texto">Finalmente, uma menção especial à declaração doctype que aparece no alto da estrutura do documento de nosso exemplo. &lt;!DOCTYPE&gt; não é uma tag HTML, mas uma instrução para o navegador web que especifica a versão do HTML usada no documento. Na estrutura básica do documento HTML vista anteriormente, usamos &lt;!DOCTYPE&gt;, especificando que o HTML5 foi usado no documento.</p>
+
+</body>
+</html>
+
         
             
 
