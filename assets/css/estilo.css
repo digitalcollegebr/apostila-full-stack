@@ -255,6 +255,14 @@
     margin: 0 auto; /* Centraliza o container */
     box-sizing: border-box; /* Inclui padding e border no width total */
 }
+.small-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 0 auto; /* Centraliza o container */
+    box-sizing: border-box; /* Inclui padding e border no width total */
+}
 
 .code-section, .text-section {
     flex: 1;

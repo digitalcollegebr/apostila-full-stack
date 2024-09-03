@@ -60,7 +60,7 @@
                 <span class="code-color"><strong>&lt;title&gt;</strong></span>My HTML Page<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
         </div>
         <br>
-        <p class="Texto">Aqui, <strong>My HTML Page</strong> representa o conteúdo do elemento, ao passo que </title> é a tag de fechamento que declara que este elemento está completo.</p>
+        <p class="Texto">Aqui, My HTML Page representa o conteúdo do elemento, ao passo que </title> é a tag de fechamento que declara que este elemento está completo.</p>
         <br>
         <!-- Importante -->
         <div class="wow fadeIn" data-wow-delay="0.3s">
@@ -100,16 +100,36 @@
                             FIQUE ATENTO 
                     </div>
                     <div class="CaixaConteudo ConteudoFiqueAtento">
-                        <p>Dentre esses elementos HTML, o único que é necessário para um documento HTML ser validado é a tag <title>.
+                        <p>Dentre esses elementos HTML, o único que é necessário para um documento HTML ser validado é a tag &lt;title&gt;.
                         </p>
                     </div>
                 </div>
                 <br>
         <p class="Texto">Como se vê, cada página HTML é um documento bem estruturado que poderia ser comparado a uma árvore, na qual o elemento &lt;html&gt; representa a raiz e os elementos &lt;head&gt; e &lt;body&gt; são os primeiros galhos. O exemplo mostra que é possível aninhar elementos. Assim, o elemento &lt;title&gt; é aninhado dentro de &lt;head&gt;, que por sua vez é aninhado dentro de &lt;html&gt;.</p>
-        <br>
         <p class="Texto">Para garantir que seu código HTML possa ser lido e mantido, todos os elementos HTML devem estar fechados corretamente e em ordem. Os navegadores web ainda serão capazes de exibir seu site conforme o esperado, mas o aninhamento incorreto de elementos e suas tags é uma prática que pode causar erros.</p>
+        <p class="Texto">Finalmente, uma menção especial à declaração doctype que aparece no alto da estrutura do documento de nosso exemplo. <span class="code-color"><strong>&lt;!DOCTYPE&gt;</strong></span> não é uma tag HTML, mas uma instrução para o navegador web que especifica a versão do HTML usada no documento. Na estrutura básica do documento HTML vista anteriormente, usamos <span class="code-color"><strong>&lt;!DOCTYPE&gt;</strong></span>, especificando que o HTML5 foi usado no documento.</p>
         <br>
-        <p class="Texto">Finalmente, uma menção especial à declaração doctype que aparece no alto da estrutura do documento de nosso exemplo. &lt;!DOCTYPE&gt; não é uma tag HTML, mas uma instrução para o navegador web que especifica a versão do HTML usada no documento. Na estrutura básica do documento HTML vista anteriormente, usamos &lt;!DOCTYPE&gt;, especificando que o HTML5 foi usado no documento.</p>
+        <p class="Subtopico"><strong>Comentários em HTML</strong></p>
+        <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:
+        <div class="small-container">
+        <div class="code-conatainer">
+            <div class="typewriter">
+                <pre><code>
+                    &lt;!-- Isto é um comentário --&gt;
+                    &lt;!-- Isto são
+                     múltiplos 
+                     comentários --&gt;
+                </code></pre>
+            </div>
+        </div>
+        </div>
+        <div class="text-container">
+            <p class="Texto">O exemplo demonstra que os comentários, no HTML, podem ser postos em uma única linha, mas também podem se estender por várias linhas. De qualquer maneira, o resultado é que o texto entre &lt;!-- e --&gt; é ignorado pelo navegador web e, portanto, não é exibido na página HTML. Com base nessas considerações, podemos deduzir que a página HTML básica mostrada no parágrafo “Anatomia de um documento HTML” não exibe nenhum texto, porque as linhas <span class="code-color">&lt;!-- This is the Document Header --&gt;</span> e <span class="code-color">!-- This is the Document Body --&gt;</span>&lt; são apenas dois comentários.
+</p>
+        
+        </div>
+        
+</p>
 
         <?php include('../layouts/footer.php') ?>
 
