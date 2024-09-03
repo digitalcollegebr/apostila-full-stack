@@ -55,7 +55,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     'numero' => $numero,
                     'enunciado' => $enunciado,
                     'resposta_usuario' => $respostas[$resposta_usuario],
-                    'item_certo' => $respostas[$item_certo]
+                    'item_certo' => $respostas[$item_certo],
+                    'resposta_usuario_letra' => array_search($resposta_usuario, $respostas),
+                    'item_certo_letra' => array_search($item_certo, $respostas)
                 ];
             }
         }
@@ -82,8 +84,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "<tr>";
             echo "<td>" . htmlspecialchars($questaoErrada['numero']) . "</td>";
             echo "<td>" . htmlspecialchars($questaoErrada['enunciado']) . "</td>";
-            echo "<td>" . htmlspecialchars($questaoErrada['resposta_usuario']) . "</td>";
-            echo "<td>" . htmlspecialchars($questaoErrada['item_certo']) . "</td>";
+            echo "<td>" . htmlspecialchars($questaoErrada['resposta_usuario_letra']) . ") " . htmlspecialchars($questaoErrada['resposta_usuario']) . "</td>";
+            echo "<td>" . htmlspecialchars($questaoErrada['item_certo_letra']) . ") " . htmlspecialchars($questaoErrada['item_certo']) . "</td>";
             echo "</tr>";
         }
         echo "</table>";
