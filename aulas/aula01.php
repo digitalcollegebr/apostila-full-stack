@@ -111,6 +111,8 @@
         <br>
         <p class="Texto">Finalmente, uma menção especial à declaração doctype que aparece no alto da estrutura do documento de nosso exemplo. &lt;!DOCTYPE&gt; não é uma tag HTML, mas uma instrução para o navegador web que especifica a versão do HTML usada no documento. Na estrutura básica do documento HTML vista anteriormente, usamos &lt;!DOCTYPE&gt;, especificando que o HTML5 foi usado no documento.</p>
 
+        <?php include('../layouts/footer.php') ?>
+
 </body>
 </html>
 
