@@ -100,7 +100,8 @@
                             FIQUE ATENTO 
                     </div>
                     <div class="CaixaConteudo ConteudoFiqueAtento">
-                        <p>Dentre esses elementos HTML, o único que é necessário para um documento HTML ser validado é a tag <title>.
+                        <p>
+                            Dentre esses elementos HTML, o único que é necessário para um documento HTML ser validado é a tag <title>.
                         </p>
                     </div>
                 </div>
