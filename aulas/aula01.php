@@ -93,6 +93,7 @@
         <p class="Texto">
         As tags &lt;html&gt;, &lt;head&gt;, &lt;body&gt; e &lt;title&gt; são as chamadas tags estruturais, que fornecem o esqueleto básico de um documento HTML. Em particular, elas informam o navegador web de que ele está lendo uma página HTML.
         </p>
+        <br>
         <!-- Fique Atento -->
         <div class="destaques wow fadeIn" data-wow-delay="0.3s">
                     <div class="Caixa TituloFiqueAtento">
@@ -110,26 +111,170 @@
         <p class="Texto">Finalmente, uma menção especial à declaração doctype que aparece no alto da estrutura do documento de nosso exemplo. <span class="code-color"><strong>&lt;!DOCTYPE&gt;</strong></span> não é uma tag HTML, mas uma instrução para o navegador web que especifica a versão do HTML usada no documento. Na estrutura básica do documento HTML vista anteriormente, usamos <span class="code-color"><strong>&lt;!DOCTYPE&gt;</strong></span>, especificando que o HTML5 foi usado no documento.</p>
         <br>
         <p class="Subtopico"><strong>Comentários em HTML</strong></p>
-        <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:
-        <div class="small-container">
-        <div class="code-conatainer">
-            <div class="typewriter">
-                <pre><code>
-                    &lt;!-- Isto é um comentário --&gt;
-                    &lt;!-- Isto são
-                     múltiplos 
-                     comentários --&gt;
-                </code></pre>
+        <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:</p>
+        <div class="typewriter-small">
+                &lt;!--Isto é um comentário--&gt;<br>
+                &lt;!--Isto são<br>
+                múltiplos<br>
+                comentários--&gt;
+        </div>
+        <p class="Texto">O exemplo demonstra que os comentários, no HTML, podem ser postos em uma única linha, mas também podem se estender por várias linhas. De qualquer maneira, o resultado é que o texto entre &lt;!-- e --&gt; é ignorado pelo navegador web e, portanto, não é exibido na página HTML. Com base nessas considerações, podemos deduzir que a página HTML básica mostrada no parágrafo <strong>“Anatomia de um documento HTML”</strong> não exibe nenhum texto, porque as linhas &lt;!-- This is the Document Header --&gt; e &lt;!-- This is the Document Body --&gt; são apenas dois comentários.</p>
+        <br>
+        <!-- Importante -->
+        <div class="wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloImportante">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 
+                            IMPORTANTE
+                    </div>
+                    <div class="CaixaConteudo ConteudoImportante">
+                        <p>Os cometários <strong>não</strong> podem ser aninhados.</p>
+                    </div>
+                </div>
+                <br>
+        <p class="Subtopico"><strong>Atributos HTML</strong></p>
+        <p class="Texto">As tags HTML podem incluir um ou mais atributos para especificar detalhes do elemento HTML.
+        Uma tag simples com dois atributos tem o seguinte formato:</p>
+        <div class="typewriter-small">
+                <span class="code-color">&lt;tag</span> <span class="blue-code">attribute-a=</span> <span class="orange-code">"value-a"</span> <span class="blue-code">attribute-b=</span><span class="orange-code">"value-b"</span><span class="code-color">&gt;</span>
+        </div>
+        <p class="Texto">Os atributos devem ser definidos na tag de abertura.</p>
+        <p class="Texto">Um atributo consiste em um nome, que indica a propriedade a ser definida, um sinal de igual, mais o valor desejado entre aspas. As aspas podem ser simples ou duplas, mas recomenda-se manter o uso de aspas simples ou duplas de forma consistente em todo o projeto. É importante não misturar aspas simples e duplas em um mesmo valor de atributo, pois o navegador web não reconhecerá aspas mistas como uma unidade</p>
+        <br>
+        <div class="attecion">
+            <div class="notice">NOTE</div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">É possível incluir um tipo de aspas dentro do outro tipo sem problemas. Por exemplo, se for preciso usar ' no valor de um atributo, podemos envolver esse valor com ". Todavia, se você quiser usar o mesmo tipo de aspas dentro do valor e em torno dele, será necessário usar &quot; para " e &apos; para '.</p>
             </div>
         </div>
+        <br>
+        <p class="Texto">Os atributos podem ser categorizados em atributos genéricos e atributos específico conforme explicado nas seções a seguir.</p>
+        <br>
+        <p class="Subtopico"><strong>Atributos Genéricos</strong></p>
+        <div class="attecion">
+            <div class="notice" id="especial-text"><span class="code-color">title</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Descreve o conteúdo do elemento. Seu valor é geralmente exibido como como uma dica de contexto quando o usuário passa o cursor sobre o elemento.</p>
+            </div>
         </div>
-        <div class="text-container">
-            <p class="Texto">O exemplo demonstra que os comentários, no HTML, podem ser postos em uma única linha, mas também podem se estender por várias linhas. De qualquer maneira, o resultado é que o texto entre &lt;!-- e --&gt; é ignorado pelo navegador web e, portanto, não é exibido na página HTML. Com base nessas considerações, podemos deduzir que a página HTML básica mostrada no parágrafo “Anatomia de um documento HTML” não exibe nenhum texto, porque as linhas <span class="code-color">&lt;!-- This is the Document Header --&gt;</span> e <span class="code-color">!-- This is the Document Body --&gt;</span>&lt; são apenas dois comentários.
-</p>
-        
+        <br>
+        <div class="attecion">
+            <div class="notice" id="especial-texto"><span class="code-color">id</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Associa um identificador único a um elemento. Esse identificador deve ser único dentro do documento; este não será validado se vários elementos compartilharem o mesmo id.</p>
+            </div>
         </div>
+        <br>
+        <div class="attecion">
+            <div class="notice" id="especial-text"><span class="code-color">style</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Atribui propriedades gráficas (estilos CSS) ao elemento</p>
+            </div>
+        </div>
+        <br>
+        <div class="attecion">
+            <div class="notice" id="especial-text"><span class="code-color">class</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Especifica uma ou várias classes para o elemento em uma lista de nomes de classes separados por espaços. Essas classes podem ser referenciadas em folhas de estilo CSS.</p>
+            </div>
+        </div>
+        <br>
+        <div class="attecion">
+            <div class="notice" id="especial-text"><span class="code-color">lang</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Especifica o idioma do conteúdo do elemento usando códigos de idioma de dois caracteres no padrão ISO-639.</p>
+            </div>
+        </div>
+        <br>
+        <div class="attecion">
+            <div class="notice">NOTE</div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">O desenvolvedor pode armazenar informações personalizadas sobre um elemento definindo um atributo data-, que é indicado prefixando o nome desejado com data-, como em data-additionalinfo. Este atributo pode receber um valor, como qualquer outro atributo.</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <p class="Subtopico"><strong>Atributos Específicos</strong></p>
         
-</p>
+        <p class="Texto">Outros atributos são específicos a cada elemento HTML. Por exemplo, o atributo src de um elemento HTML <span class="code-color"><strong> &lt;img&gt;</strong></span> especifica a URL de uma imagem. Existem muitos outros atributos específicos, que serão abordados nas próximas lições</p>
+        <br>
+        <hr>
+        <p class="Subtopico"><strong>Cabeçalho do documento</strong></p>
+        <p class="Texto">O cabeçalho do documento define as metainformações sobre a página e é descrito pelo elemento &lt;head&gt;. Por padrão, as informações no cabeçalho do documento não são processadas pelo navegador web. Embora seja possível incluir, dentro do elemento &lt;head&gt;, elementos HTML que podem ser exibidos na página, a prática não é recomendada.</p>
+        <br>
+        <ul>
+            <li><strong>Título:</strong> O título do documento é especificado com o elemento &lt;title&gt;. O título definido entre as tags aparece na barra de título do navegador e é o nome sugerido quando a página é salva nos Favoritos. Ele também é exibido como título da página nos resultados do mecanismo de busca. </li>
+        </ul>
+        <br>
+        <p class="Texto">Eis um exemplo do uso desse elemento:</p>
+        <br>
+        <div class="code-smaller">
+                <span class="code-color"><strong>&lt;title&gt;</strong></span>My Test Page<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
+        </div>
+        <br>
+        <p class="Texto">A tag &lt;title&gt; é obrigatória em todos os documentos HTML e deve aparecer somente uma vez por documento.</p>
+        <br>
+        <div class="attecion">
+            <div class="notice" id="small-notice">NOTE</div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Não confunda o título do documento com o cabeçalho da página, que é definido no
+                corpo.</p>
+            </div>
+        </div>
+        <br>
+        <p class="Subtopico"><strong>Metadados</strong></p>
+        <br>
+        <p class="Texto">O elemento &lt;meta&gt; é usado para especificar metainformações, de maneira a descrever melhor o conteúdo de um documento HTML. Trata-se de um elemento de auto-fechamento, ou seja, ele não tem uma tag de fechamento. Além dos atributos genéricos, que são válidos para todos os elementos HTML, o elemento &lt;meta&gt; também usa os seguintes atributos:
+        </p>
+        <br>
+        <div class="attecion">
+            <div class="notice" id="especial-text"><span class="code-color">name</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Define quais metadados serão descritos neste elemento. Pode ser definido para qualquer valor personalizado, mas os valores comumente usados são <em>author, description e keywords..</em></p>
+            </div>
+        </div>
+        <br>
+        <div class="attecion">
+            <div class="notice" id="especial-texto"><span class="code-color">http-equiv</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Fornece um cabeçalho HTTP para o valor do atributo <em>content</em>. Um valor comum é <em>refresh</em>, que será explicado mais tarde. Se este atributo for definido, o atributo name não deve ser definido.</p>
+            </div>
+        </div>
+        <br>
+        <div class="attecion">
+            <div class="notice" id="especial-text"><span class="code-color">content</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Fornece o valor associado ao atributo <em>name</em> ou <em>http-equiv.</em>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="attecion">
+            <div class="notice" id="especial-text"><span class="code-color">charset</span></div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">Especifica a codificação de caracteres para o documento HTML, por exemplo <em>utf-8</em> para configurá-lo para o Unicode Transformation Format—8-bit.</p>
+            </div>
+        </div>
+        <br>
+        <p class="Subtopico"><strong>Adicionar um autor, descrição e palavras-chave</strong></p>
+        <p class="Texto">Usando a tag &lt;meta&gt;, podemos incluir informações adicionais sobre o autor da página HTML e descrever o conteúdo da página, desta forma:</p>
+        <br>
+        <div class="typewriter-small">
+                <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"author"</span> <span class="blue-code">content=</span><span class="orange-code">"Name Surname"</span><span class="code-color">&gt;</span>
+        </div>
+
+
 
         <?php include('../layouts/footer.php') ?>
 

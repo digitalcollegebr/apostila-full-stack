@@ -294,7 +294,7 @@
 }
 .code-smaller{
     width: 65%;
-    height: 3%;
+    height: 1%;
     font-size: 18px;
     line-height: 1.5;
     background-color: #f7f1f1;
@@ -313,7 +313,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-bottom: 20px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .highlighter {
@@ -337,6 +337,13 @@
 
 .code-color {
     color: #c51967;
+}
+.blue-code{
+    color: #258eff;
+}
+
+.orange-code{
+    color: #f3260b;
 }
 
 pre {
@@ -377,6 +384,58 @@ pre {
         font-size: 14px; /* Maior ajuste do tamanho da fonte para telas muito pequenas */
     }
 }
+/* Container principal */
+.attecion {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no início verticalmente */
+}
+
+/* Título */
+.notice {
+    padding-top: 40px;
+    padding-left: 30px;
+    font-weight: bold;
+    color: #333;
+    /* Garante que o .notice tenha a mesma altura vertical que .notice-side */
+    display: flex;
+    align-items: flex-start; /* Alinha o texto no início verticalmente */
+}
+
+/* Barra de separação */
+.separator {
+    width: 3px; /* Largura da barra de separação */
+    background-color: #e00000; /* Cor da barra de separação */
+    margin: 0 10px; /* Espaçamento horizontal ao redor da barra */
+}
+
+/* Conteúdo ao lado */
+.notice-side {
+    padding: 10px;
+    background-color: #f7f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* Garante que o .notice-side tenha a mesma altura vertical que .notice */
+    display: flex;
+    align-items: flex-start; /* Alinha o conteúdo no início verticalmente */
+}
+#especial-text {
+    padding-top: 20px;
+
+}
+#especial-texto {
+    padding-top: 20px;
+    padding-left: 50px;
+
+}
+
+#small-notice{
+    padding-top: 15px;
+}
+
+.Texto {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
 
 /* Footer */
 .Footer {
