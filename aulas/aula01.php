@@ -194,6 +194,7 @@
             </div>
         </div>
         <br>
+        <br>
         <div class="attecion">
             <div class="notice">NOTE</div>
             <div class="separator"></div>
@@ -202,12 +203,11 @@
             </div>
         </div>
         <br>
-        <hr>
+
         <p class="Subtopico"><strong>Atributos Específicos</strong></p>
         
         <p class="Texto">Outros atributos são específicos a cada elemento HTML. Por exemplo, o atributo src de um elemento HTML <span class="code-color"><strong> &lt;img&gt;</strong></span> especifica a URL de uma imagem. Existem muitos outros atributos específicos, que serão abordados nas próximas lições</p>
         <br>
-        <hr>
         <p class="Subtopico"><strong>Cabeçalho do documento</strong></p>
         <p class="Texto">O cabeçalho do documento define as metainformações sobre a página e é descrito pelo elemento &lt;head&gt;. Por padrão, as informações no cabeçalho do documento não são processadas pelo navegador web. Embora seja possível incluir, dentro do elemento &lt;head&gt;, elementos HTML que podem ser exibidos na página, a prática não é recomendada.</p>
         <br>
