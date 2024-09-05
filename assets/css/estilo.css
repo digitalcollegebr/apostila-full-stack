@@ -435,8 +435,25 @@ pre {
 .Texto {
     margin: 0; /* Remove a margem padrão do parágrafo */
 }
-
-
+ul {
+    list-style: none; /* Remove marcadores padrão */
+    padding-left: 0; /* Remove padding padrão */
+}
+ul li {
+    position: relative;
+    padding-left: 30px; /* Espaço para o novo marcador */
+}
+ul li::before {
+    content: ''; /* Adiciona um marcador vazio */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    width: 10px; /* Largura do marcador */
+    height: 10px; /* Altura do marcador */
+    border-radius: 50%; /* Faz o marcador ser um círculo */
+    background-color: #c51967; /* Cor do marcador */
+}
 /* Footer */
 .Footer {
     background-color: var(--CorPreta) !important;

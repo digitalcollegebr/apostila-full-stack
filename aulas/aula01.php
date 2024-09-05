@@ -31,6 +31,7 @@
                 <p class="Texto wow fadeIn">O HTML é uma habilidade fundamental para o desenvolvimento web, pois é a linguagem que define
                 a estrutura e boa parte da aparência de um website. Se você deseja seguir uma carreira em
                 desenvolvimento web, o HTML é um excelente ponto de partida.</p>
+                <br>
                 <p class="Subtopico"><strong>Anatomia de um documento html</strong></p>
                 <div class="container-code">
         <div class="code-section">
@@ -107,7 +108,9 @@
                 </div>
                 <br>
         <p class="Texto">Como se vê, cada página HTML é um documento bem estruturado que poderia ser comparado a uma árvore, na qual o elemento &lt;html&gt; representa a raiz e os elementos &lt;head&gt; e &lt;body&gt; são os primeiros galhos. O exemplo mostra que é possível aninhar elementos. Assim, o elemento &lt;title&gt; é aninhado dentro de &lt;head&gt;, que por sua vez é aninhado dentro de &lt;html&gt;.</p>
+        <br>
         <p class="Texto">Para garantir que seu código HTML possa ser lido e mantido, todos os elementos HTML devem estar fechados corretamente e em ordem. Os navegadores web ainda serão capazes de exibir seu site conforme o esperado, mas o aninhamento incorreto de elementos e suas tags é uma prática que pode causar erros.</p>
+        <br>
         <p class="Texto">Finalmente, uma menção especial à declaração doctype que aparece no alto da estrutura do documento de nosso exemplo. <span class="code-color"><strong>&lt;!DOCTYPE&gt;</strong></span> não é uma tag HTML, mas uma instrução para o navegador web que especifica a versão do HTML usada no documento. Na estrutura básica do documento HTML vista anteriormente, usamos <span class="code-color"><strong>&lt;!DOCTYPE&gt;</strong></span>, especificando que o HTML5 foi usado no documento.</p>
         <br>
         <p class="Subtopico"><strong>Comentários em HTML</strong></p>
@@ -208,7 +211,7 @@
         <p class="Subtopico"><strong>Cabeçalho do documento</strong></p>
         <p class="Texto">O cabeçalho do documento define as metainformações sobre a página e é descrito pelo elemento &lt;head&gt;. Por padrão, as informações no cabeçalho do documento não são processadas pelo navegador web. Embora seja possível incluir, dentro do elemento &lt;head&gt;, elementos HTML que podem ser exibidos na página, a prática não é recomendada.</p>
         <br>
-        <ul>
+    <ul class="Texto">
             <li><strong>Título:</strong> O título do documento é especificado com o elemento &lt;title&gt;. O título definido entre as tags aparece na barra de título do navegador e é o nome sugerido quando a página é salva nos Favoritos. Ele também é exibido como título da página nos resultados do mecanismo de busca. </li>
         </ul>
         <br>
@@ -271,9 +274,61 @@
         <p class="Texto">Usando a tag &lt;meta&gt;, podemos incluir informações adicionais sobre o autor da página HTML e descrever o conteúdo da página, desta forma:</p>
         <br>
         <div class="typewriter-small">
-                <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"author"</span> <span class="blue-code">content=</span><span class="orange-code">"Name Surname"</span><span class="code-color">&gt;</span>
+                <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"author"</span> <span class="blue-code">content=</span><span class="orange-code">"Name Surname"</span><span class="code-color">&gt;</span><br>
+                <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"description"</span> <span class="blue-code">content=</span><span class="orange-code">"A short summary of the page content"</span><span class="code-color">&gt;</span><br>
         </div>
-
+        <br>
+        <p class="Texto">Procure incluir uma série de palavras-chave relacionadas ao conteúdo da página na descrição. Essa descrição costuma ser a primeira coisa que um usuário vê ao navegar com um mecanismo de busca.</p>
+        <p class="Texto">Se quiser incluir palavras-chave adicionais relacionadas à página para os mecanismos de busca, adicione o seguinte elemento:</p>
+        <br>
+        <div class="typewriter-small">
+        <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"keywords"</span> <span class="blue-code">content=</span><span class="orange-code">"keyword1, keyword2, keyword3, keyword4, keyword5"</span><span class="code-color">&gt;</span>
+        </div>
+        <br>
+        <div class="attecion">
+            <div class="notice">NOTE</div>
+            <div class="separator"></div>
+            <div class="notice-side">
+                <p class="Texto">No passado, os spammers inseriam centenas de palavras-chave e descrições que não tinham nada a ver com o conteúdo real da página, de forma que elas também apareciam em pesquisas não relacionadas aos termos que as pessoas procuravam. Hoje em dia, as tags &lt;meta&gt; foram relegadas a uma posição de importância secundária e são usadas apenas para consolidar os tópicos tratados na página em si; portanto, não é mais possível enganar os novos e mais sofisticados algoritmos dos mecanismos de busca</p>
+            </div>
+        </div>
+        <br>
+        <p class="Subtopico"><strong>Redirecionar uma página HTML e definir um intervalo de tempo para que o
+        documento se atualize</strong></p>
+        <br>
+        <p class="Texto">Usando a tag &lt;meta&gt;, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
+        <div class="typewriter-small">
+        <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30"</span><span class="code-color">&gt;</span>
+        </div>
+        <br>
+        <p class="Texto">Outra alternativa é redirecionar uma página web para outra página web após o mesmo período de tempo com o seguinte código:</p>
+        <br>
+        <div class="typewriter-small">
+        <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30;url=http://www.lpi.org"</span><span class="code-color">&gt;</span>
+        </div>
+        <p class="Texto">Neste exemplo, o usuário é redirecionado da página atual para <a class="code-color"href="http://www.lpi.org" target="_blank">http://www.lpi.org</a> após 30 segundos. Os valores podem ser os que você preferir. Se especificarmos, por exemplo, content="0;url=http://www.lpi.org", a página será redirecionada imediatamente.</p>
+        <br>
+        <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
+        <br>
+        <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
+        <br>
+        <div class="typewriter-small">
+        <span class="code-color">&lt;meta</span> <span class="blue-code">charset=</span> <span class="orange-code">"utf-8"<span class="code-color">&gt;</span>
+        </div>
+        <p class="Texto">Este elemento especifica que a codificação de caracteres do documento é utf-8, um conjunto de caracteres universal que inclui praticamente qualquer caractere de qualquer idioma humano. Portanto, ao usá-lo, você evita problemas de exibição que poderiam surgir se escolhesse outros conjuntos de caracteres, como o ISO-8859-1 (o alfabeto latino).
+        </p>
+        <br>
+        <p class="Subtopico"><strong>Outros exemplos úteis</strong></p>
+        <br>
+        <p class="Texto">Eis duas outras aplicações úteis da tag &lt;meta&gt;:</p>
+        <br>
+        <ul class="Texto">
+            <li>Configurar cookies para rastrear um visitante do site.</li>
+            <li>Assumir o controle da janela de visualização (a área visível de uma página web dentro de uma janela do navegador), que depende do tamanho da tela do dispositivo do usuário (por exemplo, um telefone celular ou um computador).</li>
+        </ul>
+        <br>
+        <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
+        curiosidade.</p>
 
 
         <?php include('../layouts/footer.php') ?>
