@@ -1,6 +1,14 @@
 /* Importa a fonte Montserrat */
 @import url('https://fonts.cdnfonts.com/css/montserrat');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
 /* A_S - Root - Begin */
 :root {
     --FonteMontserrat: 'Montserrat', sans-serif !important;
@@ -454,11 +462,41 @@ ul li::before {
     border-radius: 50%; /* Faz o marcador ser um círculo */
     background-color: #c51967; /* Cor do marcador */
 }
+
 /* Footer */
 .Footer {
     background-color: var(--CorPreta) !important;
-    padding-bottom: 30px;
+    padding: 20px 0; /* Adiciona padding vertical */
+    margin: 0; /* Remove margens externas */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    text-align: center; /* Centraliza o conteúdo */
 }
+
+.Footer img {
+    max-width: 150px; /* Tamanho máximo da imagem do logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+.Footer p {
+    color: #fff; /* Cor do texto no footer */
+    margin: 0; /* Remove margens do parágrafo */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .Footer img {
+        max-width: 120px; /* Ajusta o tamanho da imagem em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .Footer img {
+        max-width: 100px; /* Ajusta ainda mais o tamanho da imagem em telas muito pequenas */
+    }
+}
+
 /* A_S - End */
 
 

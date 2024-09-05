@@ -329,6 +329,7 @@
         <br>
         <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
         curiosidade.</p>
+        <br>
 
 
         <?php include('../layouts/footer.php') ?>
