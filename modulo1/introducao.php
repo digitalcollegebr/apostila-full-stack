@@ -333,19 +333,11 @@
         <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
         curiosidade.</p>
         <br>
-<<<<<<< HEAD
         </div>
         </div>
     </div>
 
 <?php include('../layouts/footer.php') ?>
-=======
-        <div class="next-page">
-            <a href="html.php"  target="_blank" class="unit-next"></a>
-        </div>
-
-    <?php include('../layouts/footer.php') ?>
->>>>>>> 75d0f934c7e18d252ccb9f53396c38ab605f6599
 
 </body>
 </html>
