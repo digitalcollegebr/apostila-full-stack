@@ -38,7 +38,7 @@
     --CorReflita: #65d1e7;
     --CorReflitaClaro: #d7f8ff;
 
-    --CorExemplo: #30b143;
+    --CorExemplo: #32e1d9;
     --CorExemploClaro: #d7ffdd;
 
     --CorSaibaMais: #36a5b1;
@@ -463,6 +463,10 @@ ul li::before {
     background-color: #c51967; /* Cor do marcador */
 }
 
+.next-page{
+    color: #c51967;
+}
+
 /* Footer */
 .Footer {
     background-color: var(--CorPreta) !important;
@@ -496,13 +500,12 @@ ul li::before {
         max-width: 100px; /* Ajusta ainda mais o tamanho da imagem em telas muito pequenas */
     }
 }
-
+.Subtopico{
+    font-size: 1.3rem
+}
 /* A_S - End */
 
 
-body {
-    font-family: var(--FonteMontserrat);
-}
 
 #quizForm {
     width: 80%;
