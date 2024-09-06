@@ -70,7 +70,7 @@
                             IMPORTANTE
                     </div>
                     <div class="CaixaConteudo ConteudoImportante">
-                        <p>Nem todos os elementos HTML precisam ser fechados; nesses casos, falamos de elementos vazios, elementos de auto-fechamento ou elementos nulos.</p>
+                    <p class="Texto">Nem todos os elementos HTML precisam ser fechados; nesses casos, falamos de elementos vazios, elementos de auto-fechamento ou elementos nulos.</p>
                     </div>
                 </div>
         <br>
@@ -102,7 +102,7 @@
                             FIQUE ATENTO 
                     </div>
                     <div class="CaixaConteudo ConteudoFiqueAtento">
-                        <p>Dentre esses elementos HTML, o único que é necessário para um documento HTML ser validado é a tag &lt;title&gt;.
+                        <p class="Texto">Dentre esses elementos HTML, o único que é necessário para um documento HTML ser validado é a tag &lt;title&gt;.
                         </p>
                     </div>
                 </div>
@@ -130,25 +130,28 @@
                             IMPORTANTE
                     </div>
                     <div class="CaixaConteudo ConteudoImportante">
-                        <p>Os cometários <strong>não</strong> podem ser aninhados.</p>
+                        <p class="Texto">Os cometários <strong>não</strong> podem ser aninhados.</p>
                     </div>
                 </div>
                 <br>
         <p class="Subtopico"><strong>Atributos HTML</strong></p>
         <p class="Texto">As tags HTML podem incluir um ou mais atributos para especificar detalhes do elemento HTML.
         Uma tag simples com dois atributos tem o seguinte formato:</p>
+        <br>
         <div class="typewriter-small">
                 <span class="code-color">&lt;tag</span> <span class="blue-code">attribute-a=</span> <span class="orange-code">"value-a"</span> <span class="blue-code">attribute-b=</span><span class="orange-code">"value-b"</span><span class="code-color">&gt;</span>
         </div>
         <p class="Texto">Os atributos devem ser definidos na tag de abertura.</p>
         <p class="Texto">Um atributo consiste em um nome, que indica a propriedade a ser definida, um sinal de igual, mais o valor desejado entre aspas. As aspas podem ser simples ou duplas, mas recomenda-se manter o uso de aspas simples ou duplas de forma consistente em todo o projeto. É importante não misturar aspas simples e duplas em um mesmo valor de atributo, pois o navegador web não reconhecerá aspas mistas como uma unidade</p>
         <br>
-        <div class="attecion">
-            <div class="notice">NOTE</div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">É possível incluir um tipo de aspas dentro do outro tipo sem problemas. Por exemplo, se for preciso usar ' no valor de um atributo, podemos envolver esse valor com ". Todavia, se você quiser usar o mesmo tipo de aspas dentro do valor e em torno dele, será necessário usar &quot; para " e &apos; para '.</p>
-            </div>
+        <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloExemplo">
+                        <i class="fa-regular fa-pen-to-square"></i> 
+                            NOTE 
+                    </div>
+                    <div class="CaixaConteudo ConteudoExemplo">
+                        <p class="Texto">É possível incluir um tipo de aspas dentro do outro tipo sem problemas. Por exemplo, se for preciso usar ' no valor de um atributo, podemos envolver esse valor com ". Todavia, se você quiser usar o mesmo tipo de aspas dentro do valor e em torno dele, será necessário usar &quot; para " e &apos; para '.</p>
+                    </div>
         </div>
         <br>
         <p class="Texto">Os atributos podem ser categorizados em atributos genéricos e atributos específico conforme explicado nas seções a seguir.</p>
@@ -223,17 +226,17 @@
         <br>
         <p class="Texto">A tag &lt;title&gt; é obrigatória em todos os documentos HTML e deve aparecer somente uma vez por documento.</p>
         <br>
-        <div class="attecion">
-            <div class="notice" id="small-notice">NOTE</div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">Não confunda o título do documento com o cabeçalho da página, que é definido no
-                corpo.</p>
-            </div>
+        <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloExemplo">
+                        <i class="fa-regular fa-pen-to-square"></i> 
+                            NOTE 
+                    </div>
+                    <div class="CaixaConteudo ConteudoExemplo">
+                        <p class="Texto">Não confunda o título do documento com o cabeçalho da página, que é definido nocorpo</p>
+                    </div>
         </div>
         <br>
         <p class="Subtopico"><strong>Metadados</strong></p>
-        <br>
         <p class="Texto">O elemento &lt;meta&gt; é usado para especificar metainformações, de maneira a descrever melhor o conteúdo de um documento HTML. Trata-se de um elemento de auto-fechamento, ou seja, ele não tem uma tag de fechamento. Além dos atributos genéricos, que são válidos para todos os elementos HTML, o elemento &lt;meta&gt; também usa os seguintes atributos:
         </p>
         <br>
@@ -285,12 +288,14 @@
         <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"keywords"</span> <span class="blue-code">content=</span><span class="orange-code">"keyword1, keyword2, keyword3, keyword4, keyword5"</span><span class="code-color">&gt;</span>
         </div>
         <br>
-        <div class="attecion">
-            <div class="notice">NOTE</div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">No passado, os spammers inseriam centenas de palavras-chave e descrições que não tinham nada a ver com o conteúdo real da página, de forma que elas também apareciam em pesquisas não relacionadas aos termos que as pessoas procuravam. Hoje em dia, as tags &lt;meta&gt; foram relegadas a uma posição de importância secundária e são usadas apenas para consolidar os tópicos tratados na página em si; portanto, não é mais possível enganar os novos e mais sofisticados algoritmos dos mecanismos de busca</p>
-            </div>
+        <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloExemplo">
+                        <i class="fa-regular fa-pen-to-square"></i> 
+                            NOTE 
+                    </div>
+                    <div class="CaixaConteudo ConteudoExemplo">
+                        <p class="Texto">No passado, os spammers inseriam centenas de palavras-chave e descrições que não tinham nada a ver com o conteúdo real da página, de forma que elas também apareciam em pesquisas não relacionadas aos termos que as pessoas procuravam. Hoje em dia, as tags &lt;meta&gt; foram relegadas a uma posição de importância secundária e são usadas apenas para consolidar os tópicos tratados na página em si; portanto, não é mais possível enganar os novos e mais sofisticados algoritmos dos mecanismos de busca</p>
+                    </div>
         </div>
         <br>
         <p class="Subtopico"><strong>Redirecionar uma página HTML e definir um intervalo de tempo para que o
@@ -309,7 +314,6 @@
         <p class="Texto">Neste exemplo, o usuário é redirecionado da página atual para <a class="code-color"href="http://www.lpi.org" target="_blank">http://www.lpi.org</a> após 30 segundos. Os valores podem ser os que você preferir. Se especificarmos, por exemplo, content="0;url=http://www.lpi.org", a página será redirecionada imediatamente.</p>
         <br>
         <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
-        <br>
         <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
         <br>
         <div class="typewriter-small">
@@ -319,7 +323,6 @@
         </p>
         <br>
         <p class="Subtopico"><strong>Outros exemplos úteis</strong></p>
-        <br>
         <p class="Texto">Eis duas outras aplicações úteis da tag &lt;meta&gt;:</p>
         <br>
         <ul class="Texto">
@@ -330,11 +333,19 @@
         <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
         curiosidade.</p>
         <br>
+<<<<<<< HEAD
         </div>
         </div>
     </div>
 
 <?php include('../layouts/footer.php') ?>
+=======
+        <div class="next-page">
+            <a href="html.php"  target="_blank" class="unit-next"></a>
+        </div>
+
+    <?php include('../layouts/footer.php') ?>
+>>>>>>> 75d0f934c7e18d252ccb9f53396c38ab605f6599
 
 </body>
 </html>
