@@ -1,29 +1,29 @@
-<?php
-    // A_S - Header
-    include('../layouts/header.php');
-?>
+    <?php
+        // A_S - Header
+        include('../layouts/header.php');
+    ?>
 
-<body>
-    <!-- A_S - Habilita o VLibras -->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+    <body>
+        <!-- A_S - Habilita o VLibras -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
         </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>     
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>     
 
-    <!-- CONTEUDO - Begin -->
-    <!-- Back to top -->
-    <a id="BackToTop"></a>
+        <!-- CONTEUDO - Begin -->
+        <!-- Back to top -->
+        <a id="BackToTop"></a>
 
 
-    <div class="container" style="margin-top: 100px">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-lg-12">
+        <div class="container" style="margin-top: 100px">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12">
                 <!-- Titulo -->
                 <p class="Titulo">Titulo</p>
                 <br>

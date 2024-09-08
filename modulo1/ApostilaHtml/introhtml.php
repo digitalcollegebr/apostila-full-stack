@@ -1,7 +1,7 @@
-<?php
-    // A_S - Header
-    include('../layouts/header.php');
-?>
+
+<?php include '../../layouts/header.php'; ?>
+
+
 
 <body>
     <!-- A_S - Habilita o VLibras -->
@@ -337,7 +337,7 @@
         </div>
     </div>
 
-<?php include('../layouts/footer.php') ?>
+<?php include('../../layouts/footer.php') ?>
 
 </body>
 </html>
