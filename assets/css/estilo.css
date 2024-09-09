@@ -353,6 +353,13 @@
 .orange-code{
     color: #f3260b;
 }
+.red-color{
+    color: #b31414;
+}
+.C_inicializeted{
+    color: #717171;
+    
+}
 
 pre {
     margin: 0;
@@ -531,12 +538,6 @@ ul li::before {
     margin: 20px 0;
 }
 
-.text {
-  
-    padding-right: 20px; /* Espaçamento entre o texto e a imagem */
-}
-
-
 .image-side {
     flex-shrink: 0;
 }
@@ -547,21 +548,65 @@ ul li::before {
     border-radius: 8px;
 }
 
+.text {
+    text-align: left;
+    padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+/* Ajuste o container-side para telas menores */
 @media (max-width: 768px) {
     .container-side {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Centraliza o conteúdo */
+        text-align: center; /* Centraliza o texto */
     }
 
     .text {
         padding-right: 0;
-        margin-bottom: 15px;
+        margin-bottom: 15px; /* Adiciona espaço abaixo do texto */
     }
 
     .image-side img {
-        width: 100%
+        width: 100%; /* Faz com que a imagem ocupe 100% da largura do container */
+        height: auto; /* Mantém a proporção da imagem */
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
     }
 }
+
+/* Centralizar a imagem e tornar responsiva */
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.image-content img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.image-content:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 0 12px 24px rgba(197, 25, 103, 0.3);
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .image-content {
+        margin: 20px 10px;
+    }
+}
+
+
 /* A_S - End */
 
 
@@ -612,7 +657,7 @@ button:hover {
 
 .navbar{
     background-color: black;
-    padding: 20px 40px;
+    padding: 20px 0;
 }
 
 .nQuestion{
