@@ -350,6 +350,9 @@
     color: #258eff;
 }
 
+.dark_blue_code{
+    color: #0B39B4;
+}
 .orange-code{
     color: #f3260b;
 }
@@ -359,6 +362,9 @@
 .C_inicializeted{
     color: #717171;
     
+}
+.green-code{
+    color: #1b942a;
 }
 
 pre {

@@ -73,7 +73,7 @@
                 <br>
                 <p class="Subtopico"><strong>Manutenção de código</strong></p>
                 <p class="Texto">Seja em um IDE ou usando ferramentas autônomas, é importante empregar algum tipo de <em>sistema de controle de versão (VCS)</em>. O código-fonte está em constante evolução porque as falhas imprevistas precisam ser corrigidas e aprimoramentos devem ser incorporados. Uma consequência inevitável dessa evolução é que as correções e aprimoramentos podem interferir em outras partes dos aplicativos em uma grande base de código. Ferramentas de controle de versão como Git, Subversion e Mercurial mantêm um registro de todas as alterações feitas no código e a pessoa que as fez, permitindo rastrear e, eventualmente, voltar atrás em uma modificação malsucedida.</p>
-                <p class="Subtopico" style="font-size:30px;"><strong>Linguagens de programação</strong></p>
+                <p class="Subtopico" style="font-size:26px;"><strong>Linguagens de programação</strong></p>
                 <p class="Subtopico"><strong>Paradigmas</strong></p>
                 <p class="Texto">Os paradigmas definem as premissas nas quais se baseia uma linguagem de programação, especialmente no que diz respeito à maneira como o código-fonte deve ser estruturado.</p>
                 <p class="Texto">O desenvolvedor parte do paradigma da linguagem para formular as tarefas a serem executadas pela máquina. Essas tarefas, por sua vez, são expressas simbolicamente com as palavras e construções sintáticas oferecidas pela linguagem</p>
@@ -82,22 +82,99 @@
                 <div class="container-code">
         <div class="code-section">
             <div class="typewriter">
-                <pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;stdio.h&gt;</span>
-                    <span class="C_inicializeted"><strong>float</strong></span> side;
-                    <span class="C_inicializeted"><strong>float</strong></span> area;
-                    <span class="C_inicializeted"><strong>float</strong></span> volume;
-                    <br>
-                    <span class="C_inicializeted"><strong>void</strong></span> <span class="blue-code"><strong>square</strong></span>()&lbrace; area = side * side;  &rbrace;
-                    <span class="C_inicializeted"><strong>void</strong></span> <span class="blue-code"><strong>cube</strong></span>()&lbrace; volume = area * side;  &rbrace;
-                    <br>
+                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;stdio.h&gt;</span>
+        <span class="C_inicializeted"><strong>float</strong></span> side;
+        <span class="C_inicializeted"><strong>float</strong></span> area;
+        <span class="C_inicializeted"><strong>float</strong></span> volume;
+
+        <span class="C_inicializeted"><strong>void</strong></span> <span class="dark_blue_code"><strong>square</strong></span>()&lbrace; area = side * side;  &rbrace;
+
+        <span class="C_inicializeted"><strong>void</strong></span> <span class="dark_blue_code"><strong>cube</strong></span>()&lbrace; volume = area * side;  &rbrace;
+
+        <span class="C_inicializeted"><strong>int</strong></span><span class="dark_blue_code"><strong> main</strong></span>() &lbrace;
+                side = <span class="blue-color"><strong>2</strong></span>;
+                square();
+                cube();
+                printf(<span class="orange-code">"Volume: %f\n"</span>), volume;
+                <span class="green-code"><strong>return</strong></span><span class="dark_blue_code"><strong> 0</strong></span>;
+        &rbrace;
+            </p>
                 </code></pre>
             </div>
         </div>
         <div class="text-section">
-            <p class="Texto">A ordem das ações definidas em <em>main()</em> determina a sequência de estados do programa, caracterizada pelo valor das variáveis <em>side, area</em> e <em>volume</em>. O exemplo se encerra após exibir o valor de volume com a instrução printf. Por outro lado, o paradigma da <em>programação orientada a objetos (POO)</em> tem como principal característica a separação do estado do programa em subestados independentes. Esses subestados e as operações associadas são os <em>objetos</em>, assim chamados porque têm uma existência mais ou menos independente dentro do programa e porque têm finalidades específicas. Os diferentes paradigmas não restringem necessariamente o tipo de tarefa que pode ser executada por um programa. O código do exemplo anterior pode ser reescrito de acordo com o paradigma POO usando a linguagem <span class="code-color"><strong>C++:</strong></span>
-</p>
+            <p class="Texto">A ordem das ações definidas em <em>main()</em> determina a sequência de estados do programa, caracterizada pelo valor das variáveis <em>side, area</em> e <em>volume</em>. O exemplo se encerra após exibir o valor de volume com a instrução <span class="code-color"><em>printf</em></span>. Por outro lado, o paradigma da <em>programação orientada a objetos (POO)</em> tem como principal característica a separação do estado do programa em subestados independentes. Esses subestados e as operações associadas são os objetos, assim chamados porque têm uma existência mais ou menos independente dentro do programa e porque têm finalidades específicas.</p>
         </div>
         </div>
+        <br>
+        <p class="Texto">Os diferentes paradigmas não restringem necessariamente o tipo de tarefa que pode ser executada por um programa. O código do exemplo anterior pode ser reescrito de acordo com o paradigma POO usando a linguagem <span class="code-color"><strong>C++</strong></span>:</p>
+        <br>
+        <div class="code-section" style="width: 50%; margin: 0 auto;">
+                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;iostream&gt;</span>
+        <span class="green-code"><strong>class</strong></span><span class="code-color"><strong> Cube</strong></span>&lbrace;
+        <span class="C_inicializeted"><strong>float</strong></span> side;
+        <span class="blue-code">public:</span>
+        Cube&lpar;<span class="C_inicializeted"><strong>float</strong></span> s&rpar; &lbrace; side * side; &rbrace;
+        &rbrace;;
+
+        <span class="C_inicializeted"><strong>int</strong></span> <span class="dark_blue_code"><strong>main</strong></span>()&lbrace;
+        <span class="C_inicializeted"><strong>float</strong></span> side  = <span class="dark_blue-code"><strong>2</strong></span>;
+        Cube cube(side);
+        std::cout << <span class="orange-code">"Volume: "</span> cube.volume() << std::endl;
+        <span class="green-code"><strong>return</strong></span><span class="dark_blue_code"><strong> 0</strong></span>;
+        &rbrace;
+        </p>
+            </code></pre>
+        </div>
+        <br>
+        <p class="Texto">A função <span class="code-color"><em>main()</em></span> ainda está presente. Mas agora temos uma nova palavra, <em>class</em> (classe), que introduz a definição de um objeto. A classe definida, chamada <em>Cube</em>, contém suas próprias variáveis e sub-rotinas. No POO, uma variável também é chamada de <em>atributo</em> e uma sub-rotina é chamada de <em>método</em></p>
+        <p class="Texto">É possível criar vários objetos independentes pertencentes à mesma classe; as classes também podem ser compostas por outras classes Lembre-se de que esses mesmos recursos podem ser escritos de maneira diferente e que os exemplos deste capítulo são bem simplificados. C e C++ possuem recursos muito mais sofisticados, possibilitando construções bem mais complexas e práticas.</p>
+        <p class="Texto">A maioria das linguagens de programação não impõe rigorosamente um paradigma, mas permite que os programadores escolham diversos aspectos de um paradigma ou de outro. O JavaScript, por exemplo, incorpora aspectos de diferentes paradigmas. O programador pode decompor o programa inteiro em funções que não compartilham um estado comum entre si:</p>
+        <div class="code-section" style="width: 50%; text-align: left;">
+                <p><pre><code><span class="green-code"><strong>function</strong></span> cube(side) &lbrace;
+                <span class="green-code"><strong>return</strong></span> side*side*side;
+        &rbrace;
+        console.log(<span class="orange-code">"Volume: " </span> + cube(<span class="dark-blue_code">2</span>));
+</pre></code>
+        </p>
+        </div>
+        <br>
+        <p class="Texto">Embora este exemplo seja semelhante à programação procedural, note que a função recebe uma cópia de todas as informações necessárias para sua execução e sempre produz o mesmo resultado para o mesmo parâmetro, independentemente das alterações que ocorram fora do escopo da função. Este paradigma, denominado <em>funcional</em>, é fortemente influenciado pelo formalismo matemático, no qual toda operação é autossuficiente.</p>
+        <p class="Texto">Outro paradigma cobre as linguagens <em>declarativas</em>, que descrevem os estados em que se deseja que o sistema esteja. Uma linguagem declarativa pode descobrir como atingir os estados especificados. O <span class="code-color"><strong>SQL</strong></span>, a linguagem universal para consulta de bancos de dados, às vezes é chamada de linguagem declarativa, embora na verdade ocupe um nicho único no panteão da programação</p>
+        <p class="Texto">Não existe um paradigma universal que possa ser adotado em qualquer contexto. A escolha da linguagem também pode ser restrita pelos idiomas suportados na plataforma ou ambiente de execução em que o programa será usado.</p>
+        <p class="Texto">Um aplicativo web que será executado pelo navegador, por exemplo, precisa ser escrito em <span class="code-color"><strong>JavaScript</strong></span>, que é uma linguagem universalmente suportada pelos navegadores (na verdade, algumas outras linguagens podem ser usadas porque fornecem conversores para criar JavaScript). Assim, para o navegador web—às vezes chamado de <em>lado do cliente</em> ou <em>front end</em> do aplicativo web—o desenvolvedor terá de usar os paradigmas permitidos em JavaScript. O <em>lado do servidor</em> ou <em>back end</em> do aplicativo, que lida com as solicitações do navegador, normalmente é programado em uma linguagem diferente; o <span class="code-color"><strong>PHP</strong></span> é mais popular para essa finalidade.</p>
+        <p class="Texto">Independentemente do paradigma, toda linguagem possui bibliotecas de funções pré-construídas que podem ser incorporadas ao código. Funções matemáticas—como as ilustradas no código de exemplo—não precisam ser implementadas do zero, pois a linguagem já tem a função pronta para uso. O JavaScript, por exemplo, fornece o objeto <span class="code-color"><em>Math</em></span>, com as operações matemáticas mais comuns.</p>
+        <p class="Texto">Geralmente há funções ainda mais especializadas disponibilizadas pelo fornecedor da linguagem ou por outros desenvolvedores. Essas bibliotecas de recursos extras podem estar na forma de códigofonte, ou seja, em arquivos extras que são incorporados ao arquivo em que serão usados. Em JavaScript, a incorporação é feita com <span class="code-color"><em>import from</em></span>:</p>
+
+        <div class="code-smaller">
+                <span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;
+            </div>
+            <br>
+            <p class="Texto">Esse tipo de importação, em que o recurso incorporado também é um arquivo de código-fonte, é mais frequentemente usado nas chamadas <em>linguagens interpretadas</em>. As <em>linguagens compiladas</em> permitem, entre outras coisas, a incorporação de funcionalidades pré-compiladas em linguagem de máquina, ou seja, bibliotecas <em>compiladas</em>. A próxima seção explica as diferenças entre esses tipos de linguagem.</p>
+            <br>
+            <p class="Subtopico"><strong>Compiladores e interpretadores</strong></p>
+            <p class="Texto">Como já sabemos, o código-fonte é uma representação simbólica de um programa que precisa ser traduzido em linguagem de máquina para ser executado.</p>
+            <p class="Texto">Grosso modo, existem duas maneiras possíveis de se fazer a tradução: converter com antecedência o código-fonte para execução futura ou converter o código no momento de sua execução. As linguagens da primeira modalidade são chamadas de <em>linguagens compiladas</em> e as da segunda, <em>linguagens interpretadas</em>. Algumas linguagens interpretadas oferecem a compilação como opção para que o programa possa iniciar mais rápido.</p>
+            <p class="Texto">Nas linguagens compiladas, existe uma distinção clara entre o código-fonte do programa e o programa em si, que será executado pelo computador. Depois de compilado, o programa normalmente rodará apenas no sistema operacional e na plataforma para os quais foi compilado.</p>
+            <p class="Texto">Em uma linguagem interpretada, o próprio código-fonte é tratado como o programa, e o processo de conversão para linguagem de máquina é transparente para o programador. Nas linguagens interpretadas, é comum chamar o código-fonte de script. O interpretador traduz o <em>script</em> para a linguagem de máquina do sistema em que ele está sendo executado.</p>
+            <br>
+            <p class="Subtopico"><strong>Compilação e compiladores</strong></p>
+            <p class="Texto">A linguagem de programação C é um dos exemplos mais conhecidos de linguagem compilada. Os principais pontos fortes da linguagem C são sua flexibilidade e desempenho. Tanto supercomputadores e quando os microcontroladores de alto desempenho de eletrodomésticos podem ser programados na linguagem C. Outros exemplos de linguagens compiladas populares são C++ e C# (C sharp). Como seus nomes sugerem, essas linguagens são inspiradas em C, mas incluem recursos que suportam o paradigma orientado a objetos.</p>
+            <p class="Texto">O mesmo programa escrito em C ou C++ pode ser compilado para diferentes plataformas, exigindo pouca ou nenhuma alteração no código-fonte. É o compilador que define a plataforma de destino do programa. Existem compiladores específicos a plataformas, bem como compiladores que atendem a diversas plataformas, como o GCC (que significa <em>GNU Compiler Collection</em>) , capazes de produzir programas binários para muitas arquiteturas distintas.</p>
+            <br>
+            <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloExemplo">
+                        <i class="fa-regular fa-pen-to-square"></i> 
+                            NOTE 
+                    </div>
+                    <div class="CaixaConteudo ConteudoExemplo">
+                        <p>Existem também ferramentas que automatizam o processo de compilação. Em vez de invocar o compilador diretamente, o programador cria um arquivo indicando as diferentes etapas de compilação a serem executadas automaticamente. A ferramenta tradicional usada para esse propósito é make, mas certas ferramentas mais recentes, como o Maven e o Gradle, também são bastante usadas. Todo o processo de build (a compilação final ou geração do binário) é automatizado quando se usa um IDE.</p>
+                    </div>
+                </div>
+                <br>
+            <p class="Texto">O processo de compilação nem sempre gera um programa binário em linguagem de máquina. Existem linguagens compiladas que produzem um programa em um formato genericamente denominado <em>bytecode</em>. Como um script, o bytecode não está em uma linguagem específica à plataforma e, por isso, requer um programa interpretador, que o traduz para a linguagem de máquina. Neste caso, o programa interpretador é simplesmente chamado de <em>runtime</em>.</p>
+            <p class="Texto">A linguagem Java adota essa abordagem; assim, os programas compilados escritos em Java podem ser usados em diferentes sistemas operacionais. Apesar do nome, o Java não tem relação com o JavaScript.</p>
+            <p class="Texto">O bytecode está mais próximo da linguagem de máquina do que do código-fonte, de forma que sua execução tende a ser comparativamente mais rápida. Como ainda há um processo de conversão durante a execução do bytecode, é difícil obter o mesmo desempenho de um programa equivalente compilado em linguagem de máquina.</p>
             </div>
         </div>
     </div>
