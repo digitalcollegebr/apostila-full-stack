@@ -22,6 +22,7 @@
 
     <!-- CSS - Aula Web -->
     <link rel="stylesheet" href="../../assets/css/estilo.css">
+    <link rel="stylesheet" href="../assets/css/estilo.css">
 
     <!-- JS - Aula Web -->
     <script src="../assets/js/script.js" defer></script>

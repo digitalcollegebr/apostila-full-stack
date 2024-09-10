@@ -705,6 +705,22 @@ button {
     transition: background-color 0.3s ease;
 }
 
+.button {
+    background-color:#c51967;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
 button:hover {
     background-color: #ba1477;
 }

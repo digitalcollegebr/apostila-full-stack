@@ -1,6 +1,6 @@
 <?php
 include_once('conn.php');
-include('../layouts/header.php');  
+include_once('../layouts/header.php');  
 
 // Inicializar variáveis para o resultado
 $respostasCorretas = 0;
@@ -84,8 +84,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "<tr>";
             echo "<td>" . htmlspecialchars($questaoErrada['numero']) . "</td>";
             echo "<td>" . htmlspecialchars($questaoErrada['enunciado']) . "</td>";
-            echo "<td>" . htmlspecialchars($questaoErrada['resposta_usuario_letra']) . ") " . htmlspecialchars($questaoErrada['resposta_usuario']) . "</td>";
-            echo "<td>" . htmlspecialchars($questaoErrada['item_certo_letra']) . ") " . htmlspecialchars($questaoErrada['item_certo']) . "</td>";
+            echo "<td>" . htmlspecialchars($questaoErrada['resposta_usuario']) . "</td>";
+            echo "<td>" . htmlspecialchars($questaoErrada['item_certo']) . "</td>";
             echo "</tr>";
         }
         echo "</table>";
