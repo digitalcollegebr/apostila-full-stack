@@ -40,7 +40,7 @@
 </head>
 <nav class="navbar">
     <div class="container-fluid">
-    <img style="max-width: 10%" src="../../assets/img/logo-digital.png" alt="">
+    <img style="max-width: 10%" src="../assets/img/logo-digital.png" alt="">
 
         <form class="form" role="search">
         
