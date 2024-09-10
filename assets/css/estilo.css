@@ -722,7 +722,8 @@ button {
     display: block;
         width: 100%;
         max-width: 200px;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
+
 }
 
 .button {
@@ -739,10 +740,19 @@ button {
     transition: background-color 0.3s ease;
     margin-bottom: 20px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: white;
+    text-decoration: none;
+    background-color: #ba1477;
 }
 
 button:hover {
     background-color: #ba1477;
+    transform: scale(1.1);
 }
 
 .question {

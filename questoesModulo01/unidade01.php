@@ -33,6 +33,8 @@
     <button type="submit">Enviar Respostas</button>
 </form>
 
+<a href="../modulo1/ApostilaHtml/introhtml.php" class="button">Voltar para o conteúdo</a>
+
 <script>
 document.getElementById('quizForm').addEventListener('submit', function(event) {
     const questions = document.querySelectorAll('.question');
