@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- CSS - Aula Web -->
-    <link rel="stylesheet" href="../../assets/css/estilo.css">
+    <link rel="stylesheet" href="../assets/css/estilo.css">
 
     <!-- JS - Aula Web -->
     <script src="../assets/js/script.js" defer></script>
@@ -39,7 +39,7 @@
 </head>
 <nav class="navbar">
     <div class="container-fluid">
-    <img style="max-width: 10%" src="../../assets/img/logo-digital.png" alt="">
+    <img style="max-width: 10%" src="../assets/img/logo-digital.png" alt="">
 
         <form class="form" role="search">
         

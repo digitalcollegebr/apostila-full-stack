@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../../layouts/header.php');
+    include('../layouts/header.php');
 ?>
 
 <body>
@@ -32,7 +32,7 @@
                     <div class="col-md-6 col-sm-12 col-lg-6">
                         <br>
                         <div class="image-container">
-                            <img src="../../assets/img/first_Computer.jpg" alt="Computador antigo">
+                            <img src="../assets/img/first_Computer.jpg" alt="Computador antigo">
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         <p class="Texto">Nesse sentido, o código-fonte não difere muito de qualquer outro texto em que o autor emprega as regras bem estabelecidas de uma linguagem natural para se comunicar com o leitor. No caso do código-fonte, o “leitor” é a própria máquina e, portanto, o texto não pode conter ambigüidades ou inconsistências, nem mesmo as mais sutis. E como qualquer texto que discuta algum tópico em profundidade, o código-fonte também precisa ser bem estruturado e organizado de forma lógica ao se desenvolver aplicativos complexos. Programas muito simples e exemplos didáticos podem ser armazenados em poucas linhas de um único arquivo de texto contendo todo o código-fonte do programa. Programas mais complexos podem ser subdivididos em milhares de arquivos, cada um com milhares de linhas</p>
                     </div>
                     <div class="image-side">
-                        <img src="../../assets/img/codigo.gif" alt="GIF de código">
+                        <img src="../assets/img/codigo.gif" alt="GIF de código">
                     </div>
                 </div>
                 <p class="Texto">O código-fonte dos aplicativos profissionais deve ser organizado em pastas diferentes, geralmente associadas a uma finalidade específica. Um programa de chat, por exemplo, pode ser organizado em duas pastas: uma que contém os arquivos de código que tratam da transmissão e recepção de mensagens pela rede e outra com os arquivos que constituem a interface e reagem às ações do usuário. De fato, é comum que haja muitas pastas e subpastas com arquivos de código-fonte dedicados a tarefas extremamente específicas dentro do aplicativo.</p>
@@ -67,12 +67,26 @@
                 <p class="Texto">Nem todo desenvolvedor escolhe editar o código-fonte em um editor de uso geral. Um ambiente de <em>desenvolvimento integrado (em inglês, integrated development environment ou IDE)</em> inclui um editor de texto junto com ferramentas que ajudam o programador a evitar erros de sintaxe e inconsistências óbvias. Esses editores são particularmente recomendados para os programadores menos experientes, mas os programadores experientes também podem usá-los.</p>
                 <p class="Texto">Os IDEs mais populares, como o Visual Studio, o Eclipse e o Xcode, observam de forma inteligente o que o programador digita, muitas vezes sugerindo palavras (preenchimento automático) e verificando o código em tempo real. Os IDEs podem inclusive oferecer depuração e testes automatizados para identificar problemas sempre que o código-fonte é alterado.</p>
                 <div class="image-content">
-                    <img src="../../assets/img/ides.png" alt="Imagem de IDEs">
+                    <img src="../assets/img/ides.png" alt="Imagem de IDEs">
                 </div>
                 <p class="Texto">Alguns programadores mais experientes optam por editores menos intuitivos, como o Vim, que oferece maior flexibilidade e não requer a instalação de pacotes adicionais. Esses programadores usam ferramentas externas independentes para adicionar os recursos que são integrados quando você usa um IDE.</p>
                 <br>
                 <p class="Subtopico"><strong>Manutenção de código</strong></p>
                 <p class="Texto">Seja em um IDE ou usando ferramentas autônomas, é importante empregar algum tipo de <em>sistema de controle de versão (VCS)</em>. O código-fonte está em constante evolução porque as falhas imprevistas precisam ser corrigidas e aprimoramentos devem ser incorporados. Uma consequência inevitável dessa evolução é que as correções e aprimoramentos podem interferir em outras partes dos aplicativos em uma grande base de código. Ferramentas de controle de versão como Git, Subversion e Mercurial mantêm um registro de todas as alterações feitas no código e a pessoa que as fez, permitindo rastrear e, eventualmente, voltar atrás em uma modificação malsucedida.</p>
+                <p class="Texto">Além disso, as ferramentas de controle de versão permitem que cada desenvolvedor da equipe trabalhe em uma cópia dos arquivos do código-fonte sem interferir no trabalho dos outros programadores. Assim que as novas versões do código-fonte estiverem prontas e testadas, as correções ou melhorias feitas em uma cópia podem ser incorporadas pelos outros membros da equipe.</p>
+                <div class="container-side">
+                    <div class="text">
+                        <p class="Texto">O Git, o sistema de controle de versão mais popular hoje em dia, permite que muitas cópias independentes de um repositório sejam mantidas por diferentes pessoas, que compartilham suas alterações como desejarem. No entanto, quer o sistema de controle de versão seja centralizado ou descentralizado, a maioria das equipes mantém um único repositório confiável, com um código-fonte e recursos sólidos. Muitos serviços online oferecem espaços de armazenamento para repositórios de código-fonte. Os mais populares dentre eles são o <span class="code-color"><strong>GitHub</strong></span> e o <span class="code-color"><strong>GitLab</strong></span>, mas o <span class="code-color"><strong>Savannah</strong></span>, do projeto GNU, também vale a menção</p>
+                    </div>
+                    <div class="image-side">
+                            <div class="video-container">
+                            <video autoplay loop muted>
+            <source src="../assets/img/GitHub.mp4" type="video/mp4">
+        </video>
+                     </div>
+                    </div>
+                </div>
+
                 <p class="Subtopico" style="font-size:26px;"><strong>Linguagens de programação</strong></p>
                 <p class="Subtopico"><strong>Paradigmas</strong></p>
                 <p class="Texto">Os paradigmas definem as premissas nas quais se baseia uma linguagem de programação, especialmente no que diz respeito à maneira como o código-fonte deve ser estruturado.</p>
@@ -175,10 +189,17 @@
             <p class="Texto">O processo de compilação nem sempre gera um programa binário em linguagem de máquina. Existem linguagens compiladas que produzem um programa em um formato genericamente denominado <em>bytecode</em>. Como um script, o bytecode não está em uma linguagem específica à plataforma e, por isso, requer um programa interpretador, que o traduz para a linguagem de máquina. Neste caso, o programa interpretador é simplesmente chamado de <em>runtime</em>.</p>
             <p class="Texto">A linguagem Java adota essa abordagem; assim, os programas compilados escritos em Java podem ser usados em diferentes sistemas operacionais. Apesar do nome, o Java não tem relação com o JavaScript.</p>
             <p class="Texto">O bytecode está mais próximo da linguagem de máquina do que do código-fonte, de forma que sua execução tende a ser comparativamente mais rápida. Como ainda há um processo de conversão durante a execução do bytecode, é difícil obter o mesmo desempenho de um programa equivalente compilado em linguagem de máquina.</p>
+            <br>
+            <p class="Subtopico"><strong>Interpretação e interpretadores</strong></p>
+            <p class="Texto">Nas linguagens interpretadas como JavaScript, Python e PHP, o programa não precisa ser précompilado, o que facilita seu desenvolvimento e modificação. Em vez de compilá-lo, o script é executado por outro programa chamado interpretador. Normalmente, o interpretador de uma linguagem recebe o nome da própria linguagem. O interpretador de um script Python, por exemplo, é um programa chamado <em>python</em>. O interpretador de JavaScript é geralmente o navegador web, mas os scripts também podem ser executados pelo programa <span class="code-color">node</span> fora de um navegador. Por ser convertido em instruções binárias toda vez que é executado, um programa em linguagem interpretada tende a ser mais lento do que um equivalente em linguagem compilada.</p>
+            <p class="Texto">Nada impede que o mesmo aplicativo tenha componentes escritos em linguagens diferentes.Se necessário, esses componentes podem se comunicar por meio de uma <em>interface de programação de aplicativos (API)</em> mutuamente compreensível.</p>
+            <p class="Texto">A linguagem Python, por exemplo, possui recursos muito sofisticados de mineração e tabulação de dados. O desenvolvedor pode escolher o Python para escrever as partes do programa que lidam com esses aspectos e outra linguagem, como o C++, para realizar o processamento numérico mais pesado.</p>
+            <p class="Texto">É possível adotar essa estratégia mesmo quando não existe uma API que permita a comunicação direta entre os dois componentes. O código escrito em Python pode gerar um arquivo no formato adequado para ser usado por um programa escrito em C++, por exemplo.</p>
+            <p class="Texto">Embora seja possível escrever quase qualquer programa em qualquer linguagem, o desenvolvedor deve adotar aquela que estiver mais de acordo com o propósito do aplicativo. Ao fazer isso, você se beneficia da reutilização de componentes já testados e bem documentados.</p>
             </div>
         </div>
     </div>
     <?php
     // A_S - Footer
-    include('../../layouts/footer.php');
+    include('../layouts/footer.php');
 ?>
