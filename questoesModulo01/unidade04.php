@@ -1,6 +1,8 @@
 <?php
     include_once('../process/questoes.php');
 ?>
+<a href="../modulo1/ApostilaHtml/introhtml.php" class="button-left"><img src="../assets/img/arrow-circle-left.png" alt="" class="left"></a>
+
 
 <!-- Adicionar um formulário HTML -->
 <h1 style="text-align: center;">Questões</h1>
@@ -32,6 +34,8 @@
     <?php endforeach; ?>
     <button type="submit">Enviar Respostas</button>
 </form>
+<a href="../../questoesModulo01/unidade01.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
+<br><br>
 
 <script>
 document.getElementById('quizForm').addEventListener('submit', function(event) {

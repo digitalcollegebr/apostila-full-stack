@@ -835,3 +835,48 @@ button:hover {
 .questoes-erradas tr:hover {
     background-color: #f1f1f1;
 }
+
+.button-prox {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    transition: 0.3s;
+    right: 0;
+}
+
+.button-prox:hover {
+    transform: scale(1.1);
+    color: #c51967;
+    text-decoration: none;
+
+}
+
+.next{
+    width:40px ;
+}
+
+.left{
+    width:40px ;
+}
+
+
+.button-left{
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    transition: 0.3s;
+    right: 0;
+}
+
+.button-left:hover {
+    transform: scale(1.1);
+    color: #c51967;
+    text-decoration: none;
+
+}
