@@ -214,9 +214,9 @@
         <p class="Subtopico"><strong>Cabeçalho do documento</strong></p>
         <p class="Texto">O cabeçalho do documento define as metainformações sobre a página e é descrito pelo elemento &lt;head&gt;. Por padrão, as informações no cabeçalho do documento não são processadas pelo navegador web. Embora seja possível incluir, dentro do elemento &lt;head&gt;, elementos HTML que podem ser exibidos na página, a prática não é recomendada.</p>
         <br>
-        <ul class="Texto">
-            <li><strong>Título:</strong> O título do documento é especificado com o elemento &lt;title&gt;. O título definido entre as tags aparece na barra de título do navegador e é o nome sugerido quando a página é salva nos Favoritos. Ele também é exibido como título da página nos resultados do mecanismo de busca. </li>
-        </ul>
+            <ul class="Texto">
+                <li><strong>Título:</strong> O título do documento é especificado com o elemento &lt;title&gt;. O título definido entre as tags aparece na barra de título do navegador e é o nome sugerido quando a página é salva nos Favoritos. Ele também é exibido como título da página nos resultados do mecanismo de busca. </li>
+            </ul>
         <br>
         <p class="Texto">Eis um exemplo do uso desse elemento:</p>
         <br>
