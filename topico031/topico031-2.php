@@ -23,7 +23,8 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-                <p class="Subtopico" style="font-size: 26px";><strong>Introdução</strong></p>
+                <p class="Titulo">Arquiterura de aplicações web</p>
+                <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">A palavra <em>aplicativo</em> tem um amplo significado no jargão tecnológico. Quando o aplicativo é um programa tradicional, executado localmente e auto-suficiente em sua finalidade, tanto a interface operacional do aplicativo quanto os componentes de processamento de dados são integrados em um único “pacote”. Um <em>aplicativo web</em> é diferente porque adota o modelo cliente/servidor e sua parte cliente é baseada em HTML, que é obtido do servidor e, em geral, processado por um navegador.</p>
                 <br>
                 <p class="Subtopico"><strong>Clientes e servidores</strong></p>
@@ -39,7 +40,7 @@
                     <div class="text" style="margin-top: -90px;  margin-bottom: 0;">
                         <p class="Texto">Os desenvolvedores têm controle direto sobre o servidor; assim, eles também podem modificar o cliente fornecido por ele. Isso permite que os desenvolvedores aprimorem o aplicativo, em maior ou menor grau, sem que o usuário precise formalmente instalar novas versões</p>
                     </div>
-                    <div class="image-side" style="margin-top: -50px;  margin-bottom: 0;">
+                    <div class="image-side" id="image-content" style="margin-top: -50px;  margin-bottom: 0;">
                         <img src="../assets/img/dev-meme.png" alt="Meme de programação">
                     </div>
                 </div>

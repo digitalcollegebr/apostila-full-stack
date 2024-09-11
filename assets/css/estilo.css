@@ -558,12 +558,18 @@ video {
 
 .image-side {
     flex-shrink: 0;
+   
 }
 
 .image-side img {
     width: 400px; /* Defina o tamanho da imagem conforme necessário */
     height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+.image-side:hover img {
+    transform: scale(1.05);
 }
 
 .text {
@@ -614,6 +620,7 @@ video {
 .image-content:hover img {
     transform: scale(1.05);
 }
+
 
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
