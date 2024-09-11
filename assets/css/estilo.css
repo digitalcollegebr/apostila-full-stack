@@ -547,8 +547,6 @@ video {
 
 .image-container:hover img {
     transform: scale(1.05);
-    filter: brightness(1.1);
-    box-shadow: 0 12px 24px rgba(197, 25, 103, 0.3);
 }
 
 .container-side {
@@ -615,8 +613,6 @@ video {
 
 .image-content:hover img {
     transform: scale(1.05);
-    filter: brightness(1.1);
-    box-shadow: 0 12px 24px rgba(197, 25, 103, 0.3);
 }
 
 /* Media Queries para telas menores */
