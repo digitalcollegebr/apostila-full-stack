@@ -78,17 +78,17 @@
         <br>
         <div class="typewriter-small">
                 <strong>&lt;html&gt;</strong>
-                Abrange todo o documento HTML. Contém todas as tags que compõem a página. Também indica que o conteúdo deste arquivo está em linguagem HTML. A tag de fechamento correspondente é: <span class="highlighter"><strong>&lt;/html&gt;</strong></span>
+                Abrange todo o documento HTML. Contém todas as tags que compõem a página. Também indica que o conteúdo deste arquivo está em linguagem HTML. A tag de fechamento correspondente é: <span class="code-color"><strong>&lt;/html&gt;</strong></span>
         </div>
         <br>
         <div class="typewriter-small">
                 <strong>&lt;head&gt;</strong>
-                Um receptáculo para todas as metainformações relacionadas à página. A tag de fechamento correspondente a este elemento é  <span class="highlighter"><strong>&lt;/head&gt;</strong></span>
+                Um receptáculo para todas as metainformações relacionadas à página. A tag de fechamento correspondente a este elemento é  <span class="code-color"><strong>&lt;/head&gt;</strong></span>
         </div>
         <br>
         <div class="typewriter-small">
                 <strong>&lt;body&gt;</strong>
-                Um receptáculo para todas as metainformações relacionadas à página. A tag de fechamento correspondente a este elemento é  <span class="highlighter"><strong>&lt;/body&gt;</strong></span>
+                Um receptáculo para todas as metainformações relacionadas à página. A tag de fechamento correspondente a este elemento é  <span class="code-color"><strong>&lt;/body&gt;</strong></span>
         </div>
         <br>
         <p class="Texto">
@@ -156,7 +156,7 @@
         <br>
         <p class="Texto">Os atributos podem ser categorizados em atributos genéricos e atributos específico conforme explicado nas seções a seguir.</p>
         <br>
-        <p class="Subtopico"><strong>Atributos Genéricos</strong></p>
+        <p class="Subtopico"><strong>Atributos genéricos</strong></p>
         <div class="attecion">
             <div class="notice" id="especial-text"><span class="code-color">title</span></div>
             <div class="separator"></div>
@@ -198,12 +198,14 @@
         </div>
         <br>
         <br>
-        <div class="attecion">
-            <div class="notice">NOTE</div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O desenvolvedor pode armazenar informações personalizadas sobre um elemento definindo um atributo data-, que é indicado prefixando o nome desejado com data-, como em data-additionalinfo. Este atributo pode receber um valor, como qualquer outro atributo.</p>
-            </div>
+        <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloExemplo">
+                        <i class="fa-regular fa-pen-to-square"></i> 
+                            NOTE 
+                    </div>
+                    <div class="CaixaConteudo ConteudoExemplo">
+                        <p class="Texto">O desenvolvedor pode armazenar informações personalizadas sobre um elemento definindo um atributo data-, que é indicado prefixando o nome desejado com data-, como em data-additionalinfo. Este atributo pode receber um valor, como qualquer outro atributo.</p>
+                    </div>
         </div>
         <br>
 
@@ -232,7 +234,7 @@
                             NOTE 
                     </div>
                     <div class="CaixaConteudo ConteudoExemplo">
-                        <p class="Texto">Não confunda o título do documento com o cabeçalho da página, que é definido nocorpo</p>
+                        <p class="Texto">Não confunda o título do documento com o cabeçalho da página, que é definido no corpo.</p>
                     </div>
         </div>
         <br>

@@ -324,9 +324,7 @@
     box-sizing: border-box;
 }
 
-.highlighter {
-    color: #c51967; /* Cor para destacar as tags */
-}
+
 
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
@@ -882,4 +880,8 @@ button:hover {
     color: #c51967;
     text-decoration: none;
 
+}
+a{
+    text-decoration: none;
+    color: #c51967;
 }
