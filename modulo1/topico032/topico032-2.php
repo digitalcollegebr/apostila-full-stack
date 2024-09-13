@@ -195,7 +195,7 @@
         <div class="typewriter-small" style="width: 50%; text-align: left;" >
         <pre><code>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
-        &lt;ol&gt;
+        &lt;ol <span class="dark_blue_code">type=</span><span class="red-color">"A"</span><span class="dark_blue_code">start=</span><span class="red-color">"3"</span>&gt;
             &lt;li&gt;Welcome&lt;/li&gt;
             &lt;li&gt;Barbecue&lt;/li&gt;
             &lt;li&gt;Dessert&lt;/li&gt;
@@ -203,6 +203,20 @@
         &lt;/ol&gt;
         </pre></code>
         </div>
+                        <p class="Texto">Em um navegador web, esse código HTML é exibido como na <em>Figure 7</em>.</p>
+                        <br>
+                        <img src="../../assets/img/figure7.png" alt="Código">
+                        <p class="Texto"><em>Figure 7. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista ordenada de itens prefixados por letras maiúsculas começando com a letra C.</em></p>
+                        <p class="Texto">A ordem dos itens da lista também pode ser invertida usando o atributo reversed sem um valor.</p>
+                        <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloExemplo">
+                        <i class="fa-regular fa-pen-to-square"></i> 
+                            NOTE 
+                    </div>
+                    <div class="CaixaConteudo ConteudoExemplo">
+                        <p class="Texto">Em uma lista ordenada, também é possível definir o valor inicial de um item específico usando o atributo value da tag &lt;li&gt;. Os itens da lista serão incrementados a partir desse número. O atributo value sempre leva um valor numérico decimal.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

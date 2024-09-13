@@ -123,15 +123,15 @@
                 </div>
                 <br>
                 <!-- CAIXA DE TEXTO EXEMPLO -->
-                <div class="destaques wow fadeIn" data-wow-delay="0.3s">
-                    <div class="Caixa TituloExemplo">
-                        <i class="fa-regular fa-pen-to-square"></i> 
-                            EXEMPLO 
+                    <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                        <div class="Caixa TituloExemplo">
+                            <i class="fa-regular fa-pen-to-square"></i> 
+                                EXEMPLO 
+                        </div>
+                        <div class="CaixaConteudo ConteudoExemplo">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati magni saepe. Eum unde nisi, a quis laboriosam quam iste expedita quia non ad, iure, quaerat nostrum voluptatum.</p>
+                        </div>
                     </div>
-                    <div class="CaixaConteudo ConteudoExemplo">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati magni saepe. Eum unde nisi, a quis laboriosam quam iste expedita quia non ad, iure, quaerat nostrum voluptatum.</p>
-                    </div>
-                </div>
                 <br>
                 <!-- CAIXA DE TEXTO SAIBA MAIS -->
                 <div class="destaques wow fadeIn" data-wow-delay="0.3s">
