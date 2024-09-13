@@ -104,7 +104,7 @@
                 <p class="Texto">Quando aberto em um navegador web, este código produz o resultado mostrado na <em>Figure 3</em>.</p>
                 <br>
                 <div class="image-content">
-                    <img src="../../assets/figure3.png" alt="Código">
+                    <img src="../../assets/img/figure3.png" alt="Código">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 3. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com um convite para uma festa ao ar livre, com dois títulos para a programação e uma lista de coisas a levar</em></p>
@@ -142,7 +142,7 @@
                 <p class="Texto">A <em>Figure 5</em> mostra o resultado desse código.</p>
                 <br>
                 <div class="image-content">
-                    <img src="../../figure5.png" alt="Código">
+                    <img src="../../assets/img/figure5.png" alt="Código">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 5. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com uma lista de compras em duas seções separadas por uma linha horizontal.</em></p>
@@ -172,20 +172,37 @@
                         </div>
                         <br>
                         
-                        <p class="Texto">Em nosso exemplo, podemos preencher a programação da festa ao ar livre usando um elemento <ol> com o seguinte código:</p>
-                        <div class="typewriter-small">
-                            <pre><code><span class="code-color"><strong>&lt;h2&gt;</strong></span>
-                            Agenda&lt;/h2&gt;
-                            &lt;ol&gt;
-                                &lt;li&gt;
-                                &lt;li&gt;
-
-</pre></code>
-                            
-                        
-
-                    
-                </div>
+                        <p class="Texto">Em nosso exemplo, podemos preencher a programação da festa ao ar livre usando um elemento <span class="code-color"><strong>&lt;ol&gt;</strong></span> com o seguinte código:</p>
+        <div class="typewriter-small" style="width: 50%; text-align: left;" >
+        <pre><code>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        &lt;ol&gt;
+            &lt;li&gt;Welcome&lt;/li&gt;
+            &lt;li&gt;Barbecue&lt;/li&gt;
+            &lt;li&gt;Dessert&lt;/li&gt;
+            &lt;li&gt;Fireworks&lt;/li&gt;
+        &lt;/ol&gt;
+        </pre></code>
+        </div>
+                        <p class="Texto">Em um navegador web, esse código HTML produz o resultado mostrado na <em>Figure 6.</em></p>
+                        <img src="../../assets/img/figure6.png" alt="Código">
+                        <p class="Texto"><em>Figure 6. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista ordenada com quatro itens referentes à programação de uma festa ao ar livre.</em></p>
+                        <br>
+                        <p class="Subtopico"><strong>Opções</strong></p>
+                        <p class="Texto">Como vemos neste exemplo, os itens da lista são organizados com algarismos arábicos começando em 1 por padrão. No entanto, é possível alterar esse comportamento especificando o atributo <span class="code-color"><em>type</em></span> da tag &lt;ol&gt;. Os valores válidos para este atributo são <em>1</em> para algarismos arábicos, A para letras maiúsculas, a para letras minúsculas, <em>I</em> para algarismos romanos maiúsculos e <em>i</em> para algarismos romanos minúsculos.</p>
+                        <p class="Texto">Se quiser, você também pode definir o valor inicial usando o atributo start da tag &lt;ol&gt;. O atributo <span class="code-color"><em>start</em></span> sempre é acompanhado por um valor numérico decimal, mesmo que o atributo <span class="code-color"><em>type</em></span> defina umntipo diferente de numeração.</p>
+                        <p class="Texto">Por exemplo, poderíamos ajustar a lista ordenada do exemplo anterior para que os itens da lista sejam prefixados com letras maiúsculas, começando com a letra C, como mostrado no exemplo a seguir:</p>
+        <div class="typewriter-small" style="width: 50%; text-align: left;" >
+        <pre><code>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        &lt;ol&gt;
+            &lt;li&gt;Welcome&lt;/li&gt;
+            &lt;li&gt;Barbecue&lt;/li&gt;
+            &lt;li&gt;Dessert&lt;/li&gt;
+            &lt;li&gt;Fireworks&lt;/li&gt;
+        &lt;/ol&gt;
+        </pre></code>
+        </div>
             </div>
         </div>
     </div>
