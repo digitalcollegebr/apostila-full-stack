@@ -147,15 +147,16 @@
                 <br>
                 <p class="Texto"><em>Figure 5. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com uma lista de compras em duas seções separadas por uma linha horizontal.</em></p>
                 <br>
-                <p class="Subtopico" style="font-size: 18px;">Listas em HTML<strong></strong></p>
+                <p class="Subtopico"><strong>Listas em HTML</strong></p>
                 <p class="Texto">Em HTML, podemos definir três tipos de listas:</p>
-                <p class="Subtopico" style="font-size: 14px;">Listas ordenadas<strong></strong></p>
+                <p class="Subtopico" style="font-size: 14px;"><strong>Listas ordenadas</strong></p>
                 <p class="Texto">nas quais a ordem dos elementos listados é importante</p>
-                <p class="Subtopico" style="font-size: 14px;">Listas não ordenadas<strong></strong></p>
+                <p class="Subtopico" style="font-size: 14px;"><strong>Listas não ordenadas</strong></p>
                 <p class="Texto">nas quais a ordem dos elementos listados não é particularmente importante</p>
-                <p class="Subtopico"><strong>Listas de definição</strong></p>
+                <p class="Subtopico" style="font-size: 14px;"><strong>Listas de definição</strong></p>
                 <p class="Texto">para descrever mais detalhadamente certos termos</p>
                 <br>
+                <hr>
                 <p class="Texto">Cada uma delas contém um certo número de <em>itens de lista</em>. Vamos conhecer melhor esses tipos.</p>
                 <br>
                 <p class="Subtopico"><strong>Listas ordenadas</strong></p>
@@ -217,6 +218,188 @@
                         <p class="Texto">Em uma lista ordenada, também é possível definir o valor inicial de um item específico usando o atributo value da tag &lt;li&gt;. Os itens da lista serão incrementados a partir desse número. O atributo value sempre leva um valor numérico decimal.</p>
                     </div>
                 </div>
+                <p class="Subtopico"><strong>Listas não ordernadas</strong></p>
+                <p class="Texto">Uma lista não ordenada contém uma série de itens de lista que, ao contrário daqueles em uma lista ordenada, não têm uma ordem ou sequência especial. O elemento HTML para esse tipo de lista é <span class="code-color"><strong>&lt;ul&lg;</strong></span>. Também neste caso, <span class="code-color"><strong>&lt;li&lg;</strong></span>. é o elemento HTML que demarca os itens de lista.</p>
+                <br>
+                <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloExemplo">
+                        <i class="fa-regular fa-pen-to-square"></i> 
+                            NOTE 
+                    </div>
+                    <div class="CaixaConteudo ConteudoExemplo">
+                        <p class="Texto">Os elementos <span class="code-color"><strong>&lt;li&lg;</strong></span>. são os únicos elementos filho válidos dentro de um elemento
+                        <span class="code-color"><strong>&lt;ul&lg;</strong></span>.</p>
+                    </div>
+                </div>
+                <p class="Texto">Em nosso site de exemplo, podemos usar uma lista não ordenada para sugerir os itens que os convidados devem trazer para a festa. Usamos para isso o seguinte código HTML:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left;" >
+    <pre><code>
+    <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+    &lt;ul <span class="dark_blue_code">type=</span><span class="red-color">"A"</span><span class="dark_blue_code">start=</span><span class="red-color">"3"</span>&gt;
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+     &lt;/ul&gt;
+    </pre></code>
+</div>
+                <br>
+                <p class="Texto">Em um navegador da web, esse código HTML produz o resultado mostrado na <em>Figure 8</em>.</p>
+                <br>
+                <img src="../../assets/img/figure8.png" alt="Código">
+                <br>
+                <em>Figure 8. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista não ordenada de itens com sugestões de alimentos que os convidados devem trazer para a festa.</em>
+                <br>
+                <p class="Texto">Por padrão, cada item da lista é representado por um marcador circular. É possível alterar a aparência do marcador usando CSS, o que será discutido em lições posteriores</p>
+                <br>
+                <p class="Subtopico"><strong>Listas aninhadas</strong></p>
+                    As listas podem ser aninhadas em outras listas, como listas ordenadas em listas não ordenadas e vice-versa. 
+                    Para isso, a lista aninhada deve fazer parte de um elemento de lista <span class="code-color"><strong>&lt;li&gt;</strong></span>, 
+                    já que <span class="code-color"><strong>&lt;li&gt;</strong></span> é o único elemento filho válido nas listas ordenadas e não ordenadas. 
+                    Ao aninhar, cuidado para não sobrepor as tags HTML.</p>
+                <p class="Texto">Em nosso exemplo, poderíamos adicionar algumas informações à programação que criamos antes,como mostrado no exemplo a seguir: </p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left;">
+    <pre><code>
+    <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+    <span class="code-color"><strong>&lt;ol type=</strong></span><span class="red-color">"A"</span><span class="code-color"><strong> start=</strong></span><span class="red-color">"3"</span><span class="code-color"><strong>&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>
+      Barbecue
+      <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Burgers, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
+    </pre></code>
+</div>
+                <p class="Texto">Um navegador web exibiria esse código da maneira mostrada na <em>Figure 9</em>.</p>
+                <br>
+                <img src="../../assets/img/figure9.png" alt="Código">
+                <br>
+                <em>Figure 9. Representação do código HTML acima em um navegador, mostrando uma lista não ordenadaaninhada em uma lista ordenada, representando a programação de uma festa ao ar livre.</em>
+                <br>
+                <p class="Texto">Podemos ainda mais longe e aninhar múltiplos níveis de profundidade. Teoricamente, não há limite de quantidade para as listas aninhadas. Porém, ao fazer isso, leve em conta a legibilidade da página.</p>
+                <br>
+                <p class="Subtopico"><strong>Listas de definição</strong></p>
+                <p class="Texto">Uma <em>lista de definição</em> é criada com o elemento <span class="code-color"><strong>&lt;dl&gt;</strong></span> e representa um dicionário de <em>termos</em> e <em>descrições</em>. O termo é uma palavra ou nome a descrever e a descrição é a explicação. As listas de definição vão desde pares simples de termo-descrição até definições mais extensas.</p>
+                <p class="Texto">Os termos (ou termos de definição) são designados com o elemento <span class="code-color"><strong>&lt;dt&gt;</strong></span>; já a descrição usa o elemento <span class="code-color"><strong>&lt;dd&gt;</strong></span>.</p>
+                <p class="Texto">Um exemplo de lista de definição seria uma lista de frutas exóticas explicando a aparência delas.
+                Um exemplo de lista de definição seria uma lista de frutas exóticas explicando a aparência delas.</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left;">
+    <pre><code>
+    <span class="code-color"><strong>&lt;h3&gt;</strong></span>Frutas Exóticas<span class="code-color"><strong>&lt;/h3&gt;</strong></span>
+    <span class="code-color"><strong>&lt;dl&gt;</strong></span>
+      <span class="code-color"><strong>&lt;dt&gt;</strong></span>Banana<span class="code-color"><strong>&lt;/dt&gt;</strong></span>
+      <span class="code-color"><strong>&lt;dd&gt;</strong></span>
+      Uma fruta longa e curva que tem a casca amarela quando madura. A casca da fruta também pode ter uma cor verde suave quando não madura e manchas marrons quando passa do ponto.
+      <span class="code-color"><strong>&lt;/dd&gt;</strong></span>
+      <span class="code-color"><strong>&lt;dt&gt;</strong></span>Kiwi<span class="code-color"><strong>&lt;/dt&gt;</strong></span>
+      <span class="code-color"><strong>&lt;dd&gt;</strong></span>
+      Uma fruta pequena e oval com polpa verde, sementes pretas e uma casca marrom e peluda.
+      <span class="code-color"><strong>&lt;/dd&gt;</strong></span>
+      <span class="code-color"><strong>&lt;dt&gt;</strong></span>Manga<span class="code-color"><strong>&lt;/dt&gt;</strong></span>
+      <span class="code-color"><strong>&lt;dd&gt;</strong></span>
+      Uma fruta maior que um punho, com casca verde, polpa laranja e uma grande semente. A casca pode ter manchas que variam de verde a amarelo ou vermelho.
+      <span class="code-color"><strong>&lt;/dd&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/dl&gt;</strong></span>
+    </pre></code>
+</div>
+                <p class="Texto">Em um navegador web, isso produziria o resultado mostrado na <em>Figure 10</em>.</p>
+                <br>
+                <img src="../../assets/img/figure10.png" alt="Código">
+                <br>
+                <em>Figure 10. Exemplo de lista de definição usando frutas exóticas. A lista descreve a aparência de três frutas diferentes.</em>
+                <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                        <div class="Caixa TituloExemplo">
+                            <i class="fa-regular fa-pen-to-square"></i> 
+                                NOTE 
+                        </div>
+                        <div class="CaixaConteudo ConteudoExemplo">
+                            <p class="Texto">Ao contrário das listas ordenadas e não ordenadas, em uma lista de definição qualquer elemento HTML pode ser usado como filho. Isso permite agrupar elementos e estilizá-los usando CSS.</p>
+                        </div>
+                    </div>
+                <br>
+                <p class="Subtopico"><strong>Formatação de texto na linha</strong></p>
+                <p class="Texto">Em HTML, podemos usar elementos de formatação para alterar a aparência do texto. Esses elementos podem ser categorizados como elementos de apresentação ou elementos de expressão (ou de frase).</p>
+                <p class="Subtopico" styele="font-size: 14px;"><strong>Elementos de apresentação</strong></p>
+                <p class="Texto">Os elementos básicos de apresentação alteram a fonte ou a aparência do texto; eles são 
+                    <span class="code-color"><strong>&lt;b&gt;</strong></span>, 
+                    <span class="code-color"><strong>&lt;i&gt;</strong></span>, 
+                    <span class="code-color"><strong>&lt;u&gt;</strong></span> e 
+                    <span class="code-color"><strong>&lt;tt&gt;</strong></span>. 
+                    Esses elementos originalmente eram definidos antes que o CSS passasse a permitir o uso de negrito, itálico, etc. 
+                    Atualmente, existem maneiras melhores de alterar a aparência do texto, mas ainda encontramos esses elementos ocasionalmente.
+                </p>
+                <br>
+                <p class="Subtopico"><strong>Texto em negrito</strong></p>
+                <p class="Texto">Para deixar o texto em negrito, usamos o elemento <span class="code-color"><strong>&lt;b&gt;</strong></span> como ilustrado no exemplo a seguir. Oresultado aparece na Figure 11.</p>
+                <div class="code-smaller">
+                    Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
+                </div>
+                <br>
+                <img src="../../assets/img/figure11.png" alt="Código">
+                <br>
+                <em>Figure 11. A tag <span class="code-color"><strong>&lt;b&lg;</strong></span> é usada para deixar o texto em negrito.</em>
+                <br>
+                <p class="Texto">De acordo com a especificação do HTML5, o elemento &lt;b&gt; deve ser usado apenas quando não houver tags mais apropriadas. O elemento que produz a mesma aparência visual, aumentando ao mesmo tempo a importância semântica do texto marcado, é <span class="code-color"><strong>&lt;strong&gt;</strong></span>.</p>
+                <br>
+                <p class="Subtopico"><strong>Texto em itálico</strong></p>
+                <p class="Texto">Para colocar o texto em itálico, usamos o elemento <span class="code-color"><strong>&lt;i&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na <em>Figure 12</em>.</p>
+                <br>
+                <div class="code-smaller">
+                    Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
+                </div>
+                <br>
+                <img src="../../assets/img/figure12.png" alt="Código">
+                <br>
+                <em>Figure 12. A tag &lt;i&gt; é usada para colocar o texto em itálico</em>
+                <p class="Texto">De acordo com a especificação do HTML5, o elemento &lt;i&gt; deve ser usado apenas quando não houver tags mais apropriadas</p>
+                <br>
+                <p class="Subtopico"><strong>Texto sublinhado</strong></p>
+                <p class="Texto">Para sublinhar o texto, usamos o elemento <span class="code-color"><strong>&lt;u&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na <em>Figure 13</em>.</p>
+                <div class="code-smaller">
+                    Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
+                </div>
+                <br>
+                <img src="../../assets/img/figure13.png" alt="Código">
+                <br>
+                <em>Figure 13. A tag &lt;u&gt; é usada para sublinhar um texto.</em>
+                <br>
+                <p class="Texto">De acordo com a especificação do HTML 5, o elemento &lt;u&gt; deve ser usado apenas quando não houver maneiras melhores de sublinhar o texto. O CSS oferece uma alternativa mais moderna</p>
+                <br>
+                <p class="Subtopico"><strong>Largura fixa ou fonte monoespaçada</strong></p>
+                <p class="Texto">Para exibir texto em fonte monoespaçada (largura fixa), freqüentemente usada para exibir código de computador, usamos o elemento <span class="code-color"><strong>&lt;tt&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na  <em>Figure 14</em>.</p>
+                <div class="code-smaller">
+                    Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
+                </div>
+                <br>
+                <img src="../../assets/img/figure14.png" alt="Código">
+                <br>
+                <p class="Texto">A tag <span class="code-color"><strong>&lt;tt&gt;</strong></span> não é suportada em HTML5. Os navegadores ainda a exibem como esperado; porém, é preferível usar tags mais apropriadas, como <span class="code-color"><strong>&lt;code&gt;</strong></span>, <span class="code-color"><strong>&lt;kbd&gt;</strong></span>, <span class="code-color"><strong>&lt;var&gt;</strong></span> e <span class="code-color"><strong>&lt;samp&gt;</strong></span>.</p>
+                <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>Elementos de expressão</strong></p>
+                <p class="Texto">Os elementos de expressão ou de frase não apenas alteram a aparência do texto, como também adicionam importância semântica a uma palavra ou frase. Ao usá-los, podemos enfatizar uma palavra ou marcá-la como importante. Esses elementos, ao contrário dos elementos de apresentação, são reconhecidos pelos leitores de tela, o que torna o texto mais acessível aos visitantes com deficiência visual e permite que os mecanismos de busca leiam e avaliem melhor o conteúdo da página. Os elementos de frase que usamos ao longo desta lição são <span class="code-color"><strong>&lt;em&gt;</strong></span>, <span class="code-color"><strong>&lt;strong&gt;</strong></span> e <span class="code-color"><strong>&lt;code&gt;</strong></span>.</p>
+                <br>
+                <p class="Subtopico"><strong>Texto enfatizado</strong></p>
+                <p class="Texto">Para enfatizar um texto, usamos o elemento <span class="code-color"><strong>&lt;em&gt;</strong></span>, como mostrado no exemplo a seguir:</p>
+                <div class="code-smaller">
+                    Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
+                </div>
+                <br>
+                <img src="../../assets/img/figure15.png" alt="Código">
+                <br>
+                <em>Figure 15. A tag &lt;em&gt; é usada para enfatizar o texto</em>
+                <br>
+                <p class="Texto">Como vemos, os navegadores web exibem &lt;em&gt; com a mesma aparência de &lt;i&gt;, mas &lt;em&gt; adiciona  importância semântica ao elemento de frase, o que melhora a acessibilidade para visitantes com deficiência visual.</p>
+
             </div>
         </div>
     </div>
