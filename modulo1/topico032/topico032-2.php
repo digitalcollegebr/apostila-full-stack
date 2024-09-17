@@ -20,7 +20,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-                <!-- Titulo -->
+                <div class="container-main">
                 <p class="Titulo">A semântica do HTML e a hierarquia de documentos</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <!-- Texto -->
@@ -46,7 +46,7 @@
                     <br>
                     <p class="Texto">Quando aberto em um navegador, esse código HTML produz o resultado mostrado na Figure 1.</p>
                     <div class="image-content">
-                        <img src="../../assets/img/figure1.png" alt="Código">
+                        <img src="../../assets/img/figure1.png" alt="Código" class="img-fluid">
                     </div>
                 <br>
                 <p class="Texto"><em>Figure 1. Representação do código HTML acima em um navegador, exibindo dois parágrafos de texto. O primeiro parágrafo é bem curto. O segundo é um pouco mais longo e se estende em uma segunda linha.</em></p>
@@ -71,7 +71,7 @@
                     <br>
                 <p class="Texto">Um navegador web exibiria este código HTML como mostrado na Figure 2.</p>
                 <div class="image-content">
-                        <img src="../../assets/img/figure2.png" alt="Código">
+                        <img src="../../assets/img/figure2.png" alt="Código" class="img-fluid">
                 </div>
                 <p class="Texto"><em>Figure 2. Representação do código HTML acima em um navegador, mostrando diferentes níveis de títulos em um documento HTML. A hierarquia dos títulos é indicada pelo tamanho do texto.</em></p>
                 <p class="Texto">Se você está familiarizado com processadores de texto como o LibreOffice ou o Microsoft Word, provavelmente vai notar algumas semelhanças na utilização dos diferentes níveis de títulos e como eles são processados no navegador. Por padrão, o HTML usa o tamanho para indicar a hierarquia e a importância dos títulos e adiciona espaços antes e depois deles para separá-los visualmente do conteúdo.</p>
@@ -104,7 +104,7 @@
                 <p class="Texto">Quando aberto em um navegador web, este código produz o resultado mostrado na <em>Figure 3</em>.</p>
                 <br>
                 <div class="image-content">
-                    <img src="../../assets/img/figure3.png" alt="Código">
+                    <img src="../../assets/img/figure3.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 3. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com um convite para uma festa ao ar livre, com dois títulos para a programação e uma lista de coisas a levar</em></p>
@@ -119,7 +119,7 @@
                 <br>
                 <p class="Texto">No navegador, esse código HTML teria o resultado mostrado na <em>Figure 4</em>.</p>
                 <div class="image-content">
-                    <img src="../../assets/img/figure4.png" alt="Código">
+                    <img src="../../assets/img/figure4.png" alt="Código"  class="img-fluid">
                 </div>
                 <p class="Texto"><em>Figure 4. Representação do código HTML acima em um navegador, mostrando um exemplo de documentosimples com uma quebra de linha forçada.</em></p>
                 <br>
@@ -142,7 +142,7 @@
                 <p class="Texto">A <em>Figure 5</em> mostra o resultado desse código.</p>
                 <br>
                 <div class="image-content">
-                    <img src="../../assets/img/figure5.png" alt="Código">
+                    <img src="../../assets/img/figure5.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 5. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com uma lista de compras em duas seções separadas por uma linha horizontal.</em></p>
@@ -186,7 +186,7 @@
         </pre></code>
         </div>
                         <p class="Texto">Em um navegador web, esse código HTML produz o resultado mostrado na <em>Figure 6.</em></p>
-                        <img src="../../assets/img/figure6.png" alt="Código">
+                        <img src="../../assets/img/figure6.png" alt="Código" class="img-fluid">
                         <p class="Texto"><em>Figure 6. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista ordenada com quatro itens referentes à programação de uma festa ao ar livre.</em></p>
                         <br>
                         <p class="Subtopico"><strong>Opções</strong></p>
@@ -206,7 +206,7 @@
         </div>
                         <p class="Texto">Em um navegador web, esse código HTML é exibido como na <em>Figure 7</em>.</p>
                         <br>
-                        <img src="../../assets/img/figure7.png" alt="Código">
+                        <img src="../../assets/img/figure7.png" alt="Código" class="img-fluid">
                         <p class="Texto"><em>Figure 7. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista ordenada de itens prefixados por letras maiúsculas começando com a letra C.</em></p>
                         <p class="Texto">A ordem dos itens da lista também pode ser invertida usando o atributo reversed sem um valor.</p>
                         <div class="destaques wow fadeIn" data-wow-delay="0.3s">
@@ -248,7 +248,7 @@
                 <br>
                 <p class="Texto">Em um navegador da web, esse código HTML produz o resultado mostrado na <em>Figure 8</em>.</p>
                 <br>
-                <img src="../../assets/img/figure8.png" alt="Código">
+                <img src="../../assets/img/figure8.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 8. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista não ordenada de itens com sugestões de alimentos que os convidados devem trazer para a festa.</em>
                 <br>
@@ -281,7 +281,7 @@
 </div>
                 <p class="Texto">Um navegador web exibiria esse código da maneira mostrada na <em>Figure 9</em>.</p>
                 <br>
-                <img src="../../assets/img/figure9.png" alt="Código">
+                <img src="../../assets/img/figure9.png" alt="Código"  class="img-fluid">
                 <br>
                 <em>Figure 9. Representação do código HTML acima em um navegador, mostrando uma lista não ordenadaaninhada em uma lista ordenada, representando a programação de uma festa ao ar livre.</em>
                 <br>
@@ -314,7 +314,7 @@
 </div>
                 <p class="Texto">Em um navegador web, isso produziria o resultado mostrado na <em>Figure 10</em>.</p>
                 <br>
-                <img src="../../assets/img/figure10.png" alt="Código">
+                <img src="../../assets/img/figure10.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 10. Exemplo de lista de definição usando frutas exóticas. A lista descreve a aparência de três frutas diferentes.</em>
                 <div class="destaques wow fadeIn" data-wow-delay="0.3s">
@@ -345,7 +345,7 @@
                     Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
                 </div>
                 <br>
-                <img src="../../assets/img/figure11.png" alt="Código">
+                <img src="../../assets/img/figure11.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 11. A tag <span class="code-color"><strong>&lt;b&lg;</strong></span> é usada para deixar o texto em negrito.</em>
                 <br>
@@ -358,7 +358,7 @@
                     Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
                 </div>
                 <br>
-                <img src="../../assets/img/figure12.png" alt="Código">
+                <img src="../../assets/img/figure12.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 12. A tag &lt;i&gt; é usada para colocar o texto em itálico</em>
                 <p class="Texto">De acordo com a especificação do HTML5, o elemento &lt;i&gt; deve ser usado apenas quando não houver tags mais apropriadas</p>
@@ -369,7 +369,7 @@
                     Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
                 </div>
                 <br>
-                <img src="../../assets/img/figure13.png" alt="Código">
+                <img src="../../assets/img/figure13.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 13. A tag &lt;u&gt; é usada para sublinhar um texto.</em>
                 <br>
@@ -381,7 +381,7 @@
                     Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
                 </div>
                 <br>
-                <img src="../../assets/img/figure14.png" alt="Código">
+                <img src="../../assets/img/figure14.png" alt="Código" class="img-fluid">
                 <br>
                 <p class="Texto">A tag <span class="code-color"><strong>&lt;tt&gt;</strong></span> não é suportada em HTML5. Os navegadores ainda a exibem como esperado; porém, é preferível usar tags mais apropriadas, como <span class="code-color"><strong>&lt;code&gt;</strong></span>, <span class="code-color"><strong>&lt;kbd&gt;</strong></span>, <span class="code-color"><strong>&lt;var&gt;</strong></span> e <span class="code-color"><strong>&lt;samp&gt;</strong></span>.</p>
                 <br>
@@ -394,12 +394,171 @@
                     Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
                 </div>
                 <br>
-                <img src="../../assets/img/figure15.png" alt="Código">
+                <img src="../../assets/img/figure15.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 15. A tag &lt;em&gt; é usada para enfatizar o texto</em>
                 <br>
                 <p class="Texto">Como vemos, os navegadores web exibem &lt;em&gt; com a mesma aparência de &lt;i&gt;, mas &lt;em&gt; adiciona  importância semântica ao elemento de frase, o que melhora a acessibilidade para visitantes com deficiência visual.</p>
+                <br>
+                <p class="Subtopico"><strong>Texto forte</strong></p>
+                <p class="Texto">Para demonstrar que um texto é importante, usamos o elemento <span class="code-color"><strong>&lt;strong&gt;</strong></span> como no exemplo a seguir. O resultado aparece na <em>Figure 16</em>.</p>
+                <div class="code-smaller">
+                    Esta <span class="code-color"><strong>palavra</strong></span> é importante.
+                </div>
+                <br>
+                <img src="../../assets/img/figure15.png" alt="Código" class="img-fluid">
+                <br>
+                <em>Figure 16. A tag &lt;strong&gt; é usada para marcar a importância de um texto.</em>
+                <br>
+                <p class="Texto">Como vemos, os navegadores web exibem <span class="code-color"><strong>&lt;strong&gt;</strong></span> da mesma forma que &lt;b&gt;, mas <span class="code-color"><strong>&lt;strong&gt;</strong></span> adiciona importância semântica ao elemento de frase, o que melhora a acessibilidade para visitantes com deficiência visual.</p>
+                <br>
+                <p class="Subtopico"><strong>Código de Computador</strong></p>
+                <p class="Texto">Para inserir um trecho de código, podemos colocá-lo dentro do elemento &lt;code&gt; como ilustrado no
+                exemplo a seguir. O resultado aparece na <em>Figure 17</em>.</p>
+                <div class="code-smaller">
+                  O código Markdown<span class="code-color"><strong>&lt;code&gt;</strong></span># Heading<span class="code-color"><strong>&lt;/code&gt;</strong></span> cria um título no nível mais alto da hierarquia.
+                </div>
+                <br>
+                <img src="../../assets/img/figure17.png" alt="Código" class="img-fluid">
+                <br>
+                <em>Figure 17. A tag &lt;code&gt; é usada para inserir um trecho de código de computador.</em>
+                <br>
+                <p class="Subtopico"><strong>Texto destacado</strong></p>
+                <p class="Texto">Para destacar o texto com um fundo amarelo, semelhante ao estilo de um marca-texto, usamos o elemento <span class="code-color"><strong>&lt;mark&gt;</strong></span> como no exemplo a seguir. O resultado aparece na <em>Figure 18</em>.</p>
+                <div class="code-smaller">
+                    Esta <span class="code-color"><strong>&lt;mark&gt;</strong></span>palavra <span class="code-color"><strong>&lt;/mark&gt;</strong></span> está destacada.
+                </div> 
+                <br>
+                <img src="../../assets/img/figure18.png" alt="Código" class="img-fluid">
+                <br>
+                <em>Figure 18. A tag &lt;mark&gt; é usada para para realçar um texto com um fundo amarelo<em>
+                <br>
+                <p class="Subtopico"><strong>Formatando o texto de nossa lista de compras em HTML</strong></p>
+                <p class="Texto">Com base em nossos exemplos anteriores, vamos inserir alguns elementos de expressão para alterar a aparência do texto e, ao mesmo tempo, adicionar importância semântica. O resultado aparece na <em>Figure 19</em>.</p>
+                <br>
+                <div style="display: flex; flex-wrap: wrap;">
+  <div style="flex-basis: 50%; padding: 10px;">
+  <pre><code>
+        <span class="code-color"><strong>&lt;h1&gt;</strong></span>Garden Party<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>
+            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ol&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>
+                Barbecue
+                <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+            <span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
+        <span class="code-color"><strong>&lt;hr&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+    </pre></code>
+  </div>
+  <div style="flex-basis: 50%; padding: 10px;">
+    <img src="../../assets/img/figure19.png" alt="Código" class="img-fluid">
+  </div>
+</div>
+            <em>Figure 19. A página HTML com alguns elementos de formatação.</em>
+            <br>
+            <p class="Texto">Neste exemplo de documento HTML, as informações mais importantes sobre a festa ao ar livre foram realçadas usando o elemento <span class="code-color"><strong>&lt;strong&gt;</strong></span>. As iguarias disponíveis para o churrasco foram enfatizadas com o elemento <span class="code-color"><strong>&lt;em&gt;</strong></span>. Os fogos de artifício foram destacados simplesmente com o elemento <span class="code-color"><strong>&lt;mark&gt;</strong></span>.</p>
+            <p class="Texto">Para treinar, você pode remodelar outras partes do texto usando os outros elementos de formatação.</p>
+            <br>
+            <p class="Subtopico"><strong>Texto pré-formatado</strong></p>
+            <p class="Texto">Na maioria dos elementos HTML, o espaço em branco geralmente é reduzido a um espaçamento simples ou mesmo totalmente ignorado. No entanto, existe um elemento HTML chamado <span class="code-color"><strong>&lt;pre&gt;</strong></span> que permite definir o chamado texto pré-formatado. Qualquer espaço em branco incluído no conteúdo deste elemento, incluindo espaços e quebras de linha, é preservado e exibido no navegador web. Além disso, o texto é exibido em uma fonte de largura fixa, semelhante ao elemento &lt;code&gt;.</p>
+    <div class="typewriter-small" style="width: 50%; text-align: left;" >
+    <pre><code>
+<span class="code-color"><strong>&lt;pre&gt;</strong></span>
+field() {
+    shift $1 ; echo $1
+    }
+<span class="code-color"><strong>&lt;/pre&gt;</strong></span>
+    </pre></code>
+    </div>
+            <p><em>Figure 20. Representação do código HTML em um navegador, ilustrando como o elemento &lt;pre&gt; preserva os espaços em branco.</em></p>
+            <br>
+            <p class="Subtopico"><strong>Agrupando elementos</strong></p>
+            <p class="Texto">Por convenção, os elementos HTML são divididos em duas categorias:</p>
+            <p class="Subtopico" style="font-size: 14px;"><strong>Elementos de bloco</strong></p>
+            <p class="Texto">Aparecem em uma nova linha e ocupam toda a largura disponível. Alguns exemplos já discutidos são <strong>&lt;p&gt;</strong>, <strong>&lt;ol&gt;</strong> e <strong>&lt;h2&gt;</strong>.</p>
+            <p class="Subtopico" style="font-size: 14px;"><strong>Elementos de linha</strong></p>
+            <p class="Texto">Aparecem na mesma linha que outros elementos de texto, ocupando apenas o espaço necessário ao conteúdo. Dentre esses elementos temos <strong>&lt;strong&gt;</strong>, <strong>&lt;pre&gt;</strong> e <strong>&lt;i&gt;</strong>.</p>
+            <br>
+            <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                        <div class="Caixa TituloExemplo">
+                            <i class="fa-regular fa-pen-to-square"></i> 
+                                NOTE 
+                        </div>
+                        <div class="CaixaConteudo ConteudoExemplo">
+                            <p class="Texto">O HTML5 introduziu categorias de elementos mais precisas para evitar confusões com os blocos CSS. Para simplificar, nos limitaremos aqui à subdivisão convencional em elementos de bloco e de linha.</p>
+                        </div>
+                    </div>
+                <br>
+                <p class="Texto">Os elementos fundamentais para agrupar diversos elementos juntos são <span class="code-color"><strong>&lt;div&gt;</strong></span> e <span class="code-color"><strong>&lt;span&gt;</strong></span>.</p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;div&gt;</strong></span> é um contêiner em nível de bloco para outros elementos HTML e não adiciona valor semântico por si só. Este elemento serve para dividir um documento HTML em seções e estruturar seu conteúdo, tanto para melhorar a legibilidade do código quanto para aplicar estilos CSS a um grupo de elementos, como veremos em uma lição posterior.</p>
+                <p class="Texto">Por padrão, os navegadores web sempre inserem uma quebra de linha antes e depois de cada elemento <span class="code-color"><strong>&lt;div&gt;</strong></span> para que sejam exibidos em sua própria linha.</p>
+                <p class="Texto">Por sua vez, o elemento <span class="code-color"><strong>&lt;span&gt;</strong></span> é usado como um envoltório para texto em HTML e geralmente serve para agrupar outros elementos de linha para permitir a aplicação de estilos em uma parte menor do texto usando CSS.</p>
+                <p class="Texto">O elemento &lt;span&gt; se comporta como um texto normal e não inicia uma nova linha. Portanto, tratase de um <em>elemento de linha</em>.</p>
+                <p class="Texto">O exemplo a seguir compara a representação visual do elemento semântico &lt;p&gt; e os elementos de agrupamento &lt;div&gt; e &lt;span&gt;:</p>
+                <br>
+                <p class="Texto">O exemplo a seguir compara a representação visual do elemento semântico &lt;p&gt; e os elementos de agrupamento &lt;div&gt; e &lt;span&gt;:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;" >
+        <pre><code>
+<span class="code-color"><strong>&lt;p&gt;</strong></span>Texto dentro de um parágrafo<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+<span class="code-color"><strong>&lt;p&gt;</strong></span>Outro parágrafo de texto<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+<span class="code-color"><strong>&lt;hr&gt;</strong></span>
+<span class="code-color"><strong>&lt;div&gt;</strong></span>Texto envolvido dentro de um elemento <span class="code-color"><strong>&lt;code&gt;</strong></span>div<span class="code-color"><strong>&lt;/code&gt;</strong></span><span class="code-color"><strong>&lt;/div&gt;</strong></span>
+<span class="code-color"><strong>&lt;div&gt;</strong></span>Outro elemento <span class="code-color"><strong>&lt;code&gt;</strong></span>div<span class="code-color"><strong>&lt;/code&gt;</strong></span> com mais texto<span class="code-color"><strong>&lt;/div&gt;</strong></span>
+<span class="code-color"><strong>&lt;hr&gt;</strong></span>
+<span class="code-color"><strong>&lt;span&gt;</strong></span>Conteúdo do span<span class="code-color"><strong>&lt;/span&gt;</strong></span>
+<span class="code-color"><strong>&lt;span&gt;</strong></span>e mais conteúdo do span<span class="code-color"><strong>&lt;/span&gt;</strong></span>
+        </pre></code>
 
+                    </div>
+                <p class="Texto">Um navegador web exibiria este código como mostrado na <em>Figure 21</em>.</p>
+                <img src="../../assets/img/figure21.png" alt="Código" class="img-fluid">
+                <p><em>Figure 21. Representação do documento de teste em um navegador, ilustrando as diferenças entre os elementos
+                parágrafo, div e span em HTML.</em></p>
+                <p class="Texto">Já vimos que, por padrão, o navegador adiciona espaços antes e depois dos elementos &lt;p&gt;. Esses
+                espaços não são aplicados aos elementos de agrupamento &lt;div&gt; e &lt;span&gt;. Entretanto, os elementos
+                &lt;div&gt; são formatados como blocos independentes, ao passo que o texto nos elementos &lt;span&gt; são
+                mostrados na mesma linha</p>
+                <br>
+                <p class="Subtopico"><strong>Estrutura da página HTML</strong></p>
+                <p class="Texto">Já falamos de como como usar elementos HTML para descrever o conteúdo de uma página web semanticamente—em outras palavras, para transmitir significado e contexto ao texto. Outro grupo
+                de elementos tem o propósito de descrever a estrutura semântica de uma página web, uma expressão
+                ou sua estrutura. Esses são os elementos de bloco, ou seja, elementos que se comportam visualmente
+                de forma semelhante a um elemento <div>. Sua finalidade é definir a estrutura semântica de uma
+                página web especificando áreas bem definidas como cabeçalhos, rodapés e o conteúdo principal da
+                página. Esses elementos permitem o agrupamento semântico do conteúdo de forma que ele também
+                possa ser entendido por um computador, incluindo mecanismos de busca e leitores de tela.</p>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;header&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;header&gt;</strong></span> (cabeçalho) contém informações introdutórias ao elemento semântico circundante dentro de um documento HTML. Um cabeçalho é diferente de um título, mas um cabeçalho geralmente inclui um elemento de título ( &lt;h1&gt;, … ,  &lt;h6&gt;).</p>
+                <p class="Texto">Na prática, esse elemento é mais frequentemente usado para representar o cabeçalho da página, como um banner com um logotipo. Também pode ser usado para introduzir o conteúdo dos seguintes elementos:  &lt;body&gt;, &lt;section&gt;, &lt;article&gt;,  &lt;nav&gt;,  &lt;aside&gt;
+                </p>
+                <p class="Texto">Um mesmo documento pode ter <strong>múltiplos</strong> elementos &lt;header&gt;, mas um elemento &lt;header&gt; <strong>não</strong> pode ser aninhado dentro de outro elemento &lt;header&gt;. Um elemento &lt;footer&gt; também não pode ser usado dentro de um elemento &lt;header&gt;.
+                </p>
+                <p class="Texto">Por exemplo, para adicionar um cabeçalho ao nosso documento de exemplo, podemos fazer o
+                seguinte:</p>
+                <div class="code-smaller">
+                    Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
+                </div>
+
+                </div>
             </div>
         </div>
     </div>

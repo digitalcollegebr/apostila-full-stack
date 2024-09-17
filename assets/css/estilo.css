@@ -59,6 +59,9 @@
     transition: .5s;
 }
 
+.container {
+    margin-bottom: 5rem; /* Adjust this value as needed */
+  }
 /* Navbar preto */
 .navbarpreto {
     position: fixed;
@@ -491,24 +494,29 @@ video {
 }
 
 /* Footer */
+
+.container-main {
+    min-height: 100vh;
+    margin-bottom: 50px;
+  }
+
 .Footer {
-    background-color: var(--CorPreta) !important;
-    padding: 20px 0; /* Adiciona padding vertical */
-    margin: 0; /* Remove margens externas */
-    width: 100%; /* Garante que o footer ocupe toda a largura */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
-    text-align: center; /* Centraliza o conteúdo */
+  width: 100%;
+  background-color: var(--CorPreta) !important;
+  padding: 20px 0;
+  text-align: center;
+  clear: both; 
 }
 
 .Footer img {
-    max-width: 150px; /* Tamanho máximo da imagem do logo */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 10px; /* Espaço abaixo da imagem */
+    max-width: 150px;
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
 .Footer p {
     color: #fff; /* Cor do texto no footer */
-    margin: 0; /* Remove margens do parágrafo */
+    margin: 0; 
 }
 
 /* Estilos responsivos */
