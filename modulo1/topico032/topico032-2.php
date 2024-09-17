@@ -46,7 +46,7 @@
                     <br>
                     <p class="Texto">Quando aberto em um navegador, esse código HTML produz o resultado mostrado na Figure 1.</p>
                     <div class="image-content">
-                    <img src="../assets/img/figure1.png" alt="Modelo cliente/servidor">
+                    <img src="../../assets/img/figure1.png" alt="Modelo cliente/servidor">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 1. Representação do código HTML acima em um navegador, exibindo dois parágrafos de texto. O primeiro parágrafo é bem curto. O segundo é um pouco mais longo e se estende em uma segunda linha.</em></p>
