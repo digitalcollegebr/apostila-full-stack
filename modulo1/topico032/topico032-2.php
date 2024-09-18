@@ -174,7 +174,7 @@
                         <br>
                         
                         <p class="Texto">Em nosso exemplo, podemos preencher a programação da festa ao ar livre usando um elemento <span class="code-color"><strong>&lt;ol&gt;</strong></span> com o seguinte código:</p>
-        <div class="typewriter-small" style="width: 50%; text-align: left;" >
+                    <div class="typewriter-small" style="width: 50%; text-align: left;" >
         <pre><code>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         &lt;ol&gt;
@@ -554,11 +554,281 @@ field() {
                 </p>
                 <p class="Texto">Por exemplo, para adicionar um cabeçalho ao nosso documento de exemplo, podemos fazer o
                 seguinte:</p>
-                <div class="code-smaller">
-                    Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
-                </div>
+    <div class="typewriter-small" style="width: 50%; text-align: left;" >
+    <pre><code>
+    <span class="code-color"><strong>&lt;header&gt;</strong></span>
+    <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardin.<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/header&gt;</strong></span>
+    </pre></code>
+    </div>
+    <br>
+                <p class="Texto">Não haverá mudanças visíveis no documento HTML, já que &lt;h1&gt; (como todos os outros elementos de título) é um elemento de nível de bloco sem outras propriedades visuais.</p>
+                <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;main&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;main&gt;</strong></span> é o envoltório para o conteúdo central de uma página web. Não é possível haver
+                mais de um elemento <span class="code-color"><strong>&lt;main&gt;</strong></span> em um documento HTML.</p>
+                <p class="Texto">Em nosso documento de exemplo, todo o código HTML que escrevemos até agora teria sido postodentro do elemento &lt;main&gt;.</p>
+                <div style="display: flex; flex-wrap: wrap;">
+  <pre><code>
+<span class="code-color"><strong>&lt;main&gt;</strong></span>
+    <span class="code-color"><strong>&lt;header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h1&gt;</strong></span>Garden Party<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>
+            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ol&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>
+                Barbecue
+                <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+            <span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
+        <span class="code-color"><strong>&lt;hr&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+    </pre></code>
+  </div>
+                <p class="Texto">Como no caso do elemento &lt;header&gt;, o elemento &lt;main&gt; não causa nenhuma mudança visual em nosso exemplo.</p>
+                <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;footer&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong> &lt;footer&gt;</strong></span> contém notas de rodapé, como informações sobre a autoria, informações de contato ou documentos relacionados ao elemento semântico circundante, por exemplo <span class="code-color"><strong> &lt;section&gt;</strong></span>,  <span class="code-color"><strong> &lt;nav&gt;</strong></span> ou  <span class="code-color"><strong> &lt;aside&gt;</strong></span>. Um documento pode incluir diversos elementos &lt;footer&gt; que permitem descrever melhor os elementos semânticos. Todavia, um elemento <strong>&lt;footer&gt;</strong> não pode ser aninhado dentro de outro elemento &lt;footer&gt;, nem um elemento <strong>&lt;header&gt;</strong> pode ser usado dentro de um &lt;footer&gt;.</p>
+                <p class="Texto">Em nosso exemplo, podemos adicionar as informações de contato do host (John), como mostrado no exemplo a seguir:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left;" >
+    <pre><code>
+    <span class="code-color"><strong>&lt;footer&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>John Doe.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>john.doe@example.com<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/footer&gt;</strong></span>
+    </pre></code>
+    </div>
+    <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;nav&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;nav&gt;</strong></span> descreve uma unidade de navegação importante, como um menu, que contém uma série de hiperlinks.</p>
+                <br>
+                <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                        <div class="Caixa TituloExemplo">
+                            <i class="fa-regular fa-pen-to-square"></i> 
+                                NOTE 
+                        </div>
+                        <div class="CaixaConteudo ConteudoExemplo">
+                            <p class="Texto">Nem todos os hiperlinks devem ser postos dentro de um elemento &lt;nav&gt;. Ele é útil
+                            para listar um grupo de links.</p>
+                        </div>
+                    </div>
+                <br>
+                <p class="Texto">Como os hiperlinks ainda não foram abordados, o elemento de navegação não será incluído nos exemplos desta lição</p>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;aside&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;aside&gt;</strong></span> é um envoltório para conteúdos que não são necessários na organização do conteúdo da página principal, mas que geralmente estão indiretamente relacionados ou são suplementares. Este elemento é freqüentemente usado para barras laterais que exibem informações secundárias, como um glossário.</p>
+                <p class="Texto">Em nosso exemplo, podemos adicionar informações de endereço e rota, que são apenas indiretamente relacionados ao resto do conteúdo, usando o elemento <span class="code-color"><strong>&lt;aside&gt;</strong></span>.</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;" >
+    <pre><code>
+    <span class="code-color"><strong>&lt;aside&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Main Street.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
+    <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>Parking spaces available.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/aside&gt;</strong></span>
+    </pre></code>
+    </div>
+    <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;section&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;section&gt;</strong></span> define uma seção lógica de um documento que faz parte do elemento semântico circundante, mas que não funcionaria como conteúdo autônomo, como um capítulo.</p>
+                <p class="Texto">Em nosso documento de exemplo, podemos agrupar as seções de conteúdo da programação e incluir seções de listagem, como mostrado no exemplo a seguir:</p>
+                <div style="display: flex; flex-wrap: wrap;">
+  <pre><code>
+<span class="code-color"><strong>&lt;section&gt;</strong></span>
+    <span class="code-color"><strong>&lt;header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>
+            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ol&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>
+                Barbecue
+                <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+            <span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/section&gt;</strong></span>
+        <span class="code-color"><strong>&lt;hr&gt;</strong></span>
+        <span class="code-color"><strong>&lt;section&gt;</strong></span>
+        <span class="code-color"><strong>&lt;header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/section&gt;</strong></span>
+    </pre></code>
+  </div>
+                <p class="Texto">Este exemplo também acrescenta mais elementos <strong>&lt;header&gt;</strong> dentro das seções, de modo que cada seção está inserida em seu próprio elemento <strong>&lt;header&gt;</strong>.</p>
+                <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O  elemento  &lt;article&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;article&gt;</strong></span> define um conteúdo independente e autônomo que faz sentido por si só, sem
+                o resto da página. Seu conteúdo é potencialmente redistribuível ou reutilizável em outro contexto. Exemplos típicos ou materiais apropriados para um elemento <span class="code-color"><strong>&lt;article&gt;</strong></span> seriam uma postagem de blog, uma lista de produtos de uma loja ou o anúncio de um produto. O anúncio poderia então existir tanto por conta própria quanto em uma página maior.</p>
+                <p class="Texto">Em nosso exemplo, podemos substituir a primeira <strong>&lt;section&gt;</strong> que envolve a programação por um elemento <strong>&lt;article&gt;</strong>.</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;" >
+    <pre><code>
+    <span class="code-color"><strong>&lt;aside&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Main Street.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
+    <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>Parking spaces available.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/aside&gt;</strong></span>
+    </pre></code>
+    </div>
+    <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;section&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;section&gt;</strong></span> define uma seção lógica de um documento que faz parte do elemento semântico circundante, mas que não funcionaria como conteúdo autônomo, como um capítulo.</p>
+                <p class="Texto">Em nosso documento de exemplo, podemos agrupar as seções de conteúdo da programação e incluir seções de listagem, como mostrado no exemplo a seguir:</p>
+                <div style="display: flex; flex-wrap: wrap;">
+  <pre><code>
+<span class="code-color"><strong>&lt;article&gt;</strong></span>
+    <span class="code-color"><strong>&lt;header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>
+            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/header&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ol&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>
+                Barbecue
+                <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+            <span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/section&gt;</strong></span>
+        <span class="code-color"><strong>&lt;hr&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/article&gt;</strong></span>
+    </pre></code>
+  </div>
+                <p class="Texto">O elemento <strong>&lt;header&gt;</strong>que adicionamos no exemplo anterior também pode persistir aqui, uma vez que
+                os elementos <strong>&lt;article&gt;</strong> também podem ter seus próprios elementos <strong>&lt;header&gt;</strong>.</p>
+                <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O exemplo final</strong></span>
+                <p class="Texto">Se combinarmos todos os exemplos anteriores, o documento HTML final de nosso convite fica assim:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;" >
+    <pre><code>
+    <span class="code-color"><strong>&lt;aside&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Main Street.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
+    <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>Parking spaces available.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/aside&gt;</strong></span>
+    </pre></code>
+    </div>
+    <br>
+                <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;section&gt;</strong></p>
+                <p class="Texto">O elemento <span class="code-color"><strong>&lt;section&gt;</strong></span> define uma seção lógica de um documento que faz parte do elemento semântico circundante, mas que não funcionaria como conteúdo autônomo, como um capítulo.</p>
+                <p class="Texto">Em nosso documento de exemplo, podemos agrupar as seções de conteúdo da programação e incluir seções de listagem, como mostrado no exemplo a seguir:</p>
+                <div style="display: flex; flex-wrap: wrap;">
+  <pre><code>
+  <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
+<span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="blue-color">"en"</span><span class="code-color"><strong>&gt;</strong></span>
+  <span class="code-color"><strong>&lt;head&gt;</strong></span>
+    <span class="code-color"><strong>&lt;title&gt;</strong></span>Garden Party<span class="code-color"><strong>&lt;/title&gt;</strong></span>
+  <span class="code-color"><strong>&lt;/head&gt;</strong></span>
 
-                </div>
+  <span class="code-color"><strong>&lt;body&gt;</strong></span>
+    <span class="code-color"><strong>&lt;main&gt;</strong></span>
+      <span class="code-color"><strong>&lt;h1&gt;</strong></span>Garden Party<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+        Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+        <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+      
+      <span class="code-color"><strong>&lt;article&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ol&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Barbecue<span class="code-color"><strong>&lt;/strong&gt;</strong></span>
+            <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/strong&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+          <span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/article&gt;</strong></span>
+      
+      <span class="code-color"><strong>&lt;hr&gt;</strong></span>
+      
+      <span class="code-color"><strong>&lt;section&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;ul&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/section&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/main&gt;</strong></span>
+    
+    <span class="code-color"><strong>&lt;aside&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;strong&gt;</strong></span>10, Main Street<span class="code-color"><strong>&lt;/strong&gt;</strong></span><br>
+        <span class="code-color"><strong>&lt;strong&gt;</strong></span>Neville<span class="code-color"><strong>&lt;/strong&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Parking spaces available.<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/aside&gt;</strong></span>
+  <span class="code-color"><strong>&lt;/body&gt;</strong></span>
+<span class="code-color"><strong>&lt;/html&gt;</strong></span>
+    </pre></code>
+  </div>
+            <p class="Texto">Em um navegador web, a página inteira é exibida como na <em>Figure 22</em>.</p>
+            <img src="../../assets/img/figure6.png" alt="Código" class="img-fluid">
+            <br>
+            <p><em>Figure 22. Representação do documento HTML resultante em um navegador web, combinando todos os exemplos anteriores. A página representa um convite para uma festa ao ar livre, com a programação do evento e uma lista de coisas para os convidados levarem.</em></p>
+            </div>
+            </div>
             </div>
         </div>
     </div>
