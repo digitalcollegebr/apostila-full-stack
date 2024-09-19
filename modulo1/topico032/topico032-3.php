@@ -77,7 +77,64 @@
                     <img src="../../assets/img/Bitmap_SVG.svg" alt="Bitmap" class="img-fluid">
                 </div>
                 <p class="Texto">O formato JPEG é recomendado para fotografias, porque seu algoritmo de compactação produz bons resultados para as sombras e fundos desfocados. Para as imagens em que prevalecem as cores sólidas, o formato PNG é o mais apropriado. Portanto, o formato PNG deve ser escolhido quando for necessário converter uma imagem vetorial em bitmap.</p>
-                <p class="Texto">O formato GIF oferece a qualidade de imagem mais baixa dentre todos os formatos de bitmap populares. No entanto, ele ainda é amplamente utilizado devido ao seu suporte para animações. De fato, muitos sites empregam arquivos GIF para exibir vídeos curtos, mas existem maneiras melhores de exibir conteúdo de vídeo</p>
+                <p class="Texto">O formato GIF oferece a qualidade de imagem mais baixa dentre todos os formatos de bitmap populares. No entanto, ele ainda é amplamente utilizado devido ao seu suporte para animações. De fato, muitos sites empregam arquivos GIF para exibir vídeos curtos, mas existem maneiras melhores de exibir conteúdo de vídeo.</p>
+                <br>
+                <p class="Subtopico"><strong>Áudio e vídeo</strong></p>
+                <p class="Texto">Podemos adicionar conteúdos de áudio e vídeo a um documento HTML mais ou menos da mesma maneira que as imagens. Sem surpresa, a tag para adicionar áudio é <span class="code-color"><strong>&lt;audio&gt;</strong></span> e a tag para adicionar vídeo é <span class="code-color"><strong>&lt;video&gt;</strong></span>. Obviamente, os navegadores em modo texto não são capazes de reproduzir conteúdo multimídia, de forma que as tags <audio> e &lt;video&gt; empregam uma tag de fechamento para conter o texto usado como explicação para o elemento que não pôde ser mostrado. Por exemplo:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                    <pre>
+                        <code>
+<span class="code-color"><strong>&lt;audio&gt;</strong></span><span class="blue-code">controls src=</span><span class="orange-code">"/media/recording.mp3"</span><span class="code-color"><strong>&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>Unable to play<span class="code-color"><strong>&lt;em&gt;</strong></span>recording.mp3<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+<span class="code-color"><strong>&lt;/audio&gt;</strong></span>
+                </code>
+                    </pre>
+                </div>
+                <p class="Texto">Se o navegador não suportar a tag &lt;audio&gt;, a linha <em>“Unable to play recording.mp3”</em> será mostrada em seu lugar. O uso das tags de fechamento <strong>&lt;/audio&gt;</strong> ou &lt;/video&gt; permitem que a página web inclua conteúdos alternativos mais elaborados do que a simples linha de texto permitida pelo atributo <span class="code-color"><em>alt</em></span> da tag <span class="code-color"><strong></strong>&lt;img&gt;</span>.</p>
+                <p class="Texto">O atributo <span class="code-color"><em>src</em></span> das tags &lt;audio&gt; e &lt;video&gt; funcionam da mesma forma que em &lt;img&gt;, mas ele também aceita URLs apontando para uma transmissão ao vivo. O navegador cuida de armazenar em buffer, decodificar e exibir o conteúdo conforme ele é recebido. O atributo controls exibe os controles de reprodução. Sem ele, o visitante não poderá pausar, retroceder ou controlar a reprodução de qualquer outra maneira.</p>
+                <br>
+                <p class="Subtopico"><strong>Conteúdo genérico</strong>
+                <p class="Texto">Um documento HTML pode ser aninhado em outro documento HTML, de forma semelhante à inserção de uma imagem em um documento HTML, mas usando a tag <span class="code-color"><strong>&lt;iframe&gt;</strong></span>:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                    <pre>
+                        <code>
+<span class="code-color"><strong>&lt;iframe&gt;</strong></span><span class="blue-code">name=</span><span class="orange-code">"viewer"</span><span class="blue-code">src=</span><span class="orange-code">"gallery.html"</span><span class="code-color"><strong>&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>Unsupported browser<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+<span class="code-color"><strong>&lt;/iframe&gt;</strong></span>
+                </code>
+                    </pre>
+                </div>
+                <p class="Texto">Os navegadores em modo texto mais simples não suportam a tag &lt;iframe&gt;, exibindo em seu lugar o texto incluído. Como acontece com as tags de multimídia, o atributo src <strong>define a localização de origem do documento aninhado</strong>. É possível incluir atributos width e height (largura e altura) para alterar as dimensões padrão do elemento iframe.</p>
+                <p class="Texto">O atributo <span class="code-color"><em>name</em></span> permite fazer referência ao iframe e trocar o documento aninhado. Sem este atributo, o documento aninhado não pode ser trocado. Um elemento <span class="code-color"><em>anchor</em></span> pode ser usado para carregar um documento de outro local dentro de um iframe em vez da janela atual do navegador.</p>
+                <br>
+                <p class="Subtopico"><strong>Links</strong></p>
+                <p class="Texto">O elemento de página comumente chamado de <em>link</em> da web também é conhecido pelo termo técnico <em>âncora</em> (anchor), o que explica o uso da tag <span class="code-color"><strong>a</strong></span>. A âncora leva a outro local, que pode ser qualquer endereço compatível com o navegador. A localização é indicada pelo atributo <span class="code-color"><em>href</em></span> <em>(hyperlink reference)</em>:</p>
+                <div class="typewriter-small">
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                </div>
+                <p class="Texto">A localização pode ser informada como um caminho relativo ou absoluto, como acontece com o conteúdo incorporado de que falamos anteriormente. Somente o conteúdo de texto entre as tags (por exemplo, <span class="blue-code"><em><u>Contact Information</u></em></span>)e fica visível para o visitante, geralmente na forma de um texto em azul sublinhado e clicável, mas o item que contém o link também pode ser qualquer outro conteúdo visível, como imagens:</p>
+                <div class="typewriter-small">
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code">src</span><span class="orange-code">"contact.png"</span><span class="blue-code">alt=</span><span class="orange-code">"contact.png"</span>"Contact Information"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                </div>
+                <p class="Texto">Prefixos especiais podem ser adicionados ao caminho para informar ao navegador como abri-lo. Se a âncora apontar para um endereço de email, por exemplo, seu atributo href deve incluir o prefixo <span class="code-color"><em>mailto:</em></span>:</p>
+                <div class="typewriter-small">
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span>Contact by email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                </div>
+                <p class="Texto">O prefixo tel: indica um número de telefone. Essa indicação é particularmente útil para visitantes que visualizam a página em dispositivos móveis:</p>
+                <div class="typewriter-small">
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"</span>Contact by phone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                </div>
+                <p class="Texto">Quando o link é clicado, o navegador abre o conteúdo do caminho com o aplicativo associado.</p>
+                <p class="Texto">O uso mais comum das âncoras é carregar outros documentos da web. Por padrão, o navegador substitui o documento HTML atual pelo conteúdo do novo local. Esse comportamento pode ser modificado usando o atributo target. O destino _blank, por exemplo, diz ao navegador para abrir o local fornecido em uma nova janela ou nova guia do navegador, dependendo das preferências do visitante:</p>
+                <div class="typewriter-small">
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code">target=</span><span class="orange-code">"_blank"</span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                </div>
+                <p class="Texto">O destino <span class="code-color"><em>_self</em></span> é o padrão quando o atributo <span class="code-color"><em>target</em></span> não é fornecido. Ele faz com que o documento referenciado substitua o documento atual.</p>
+                <p class="Texto"></p>
+
+
+
+            
 
             </div>
         </div>
