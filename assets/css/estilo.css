@@ -635,6 +635,54 @@ video {
     }
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+thead tr {
+    background-color: #c51967;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+thead th {
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #c51967;
+}
+
+tbody td {
+    padding: 12px 15px;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+
 
 /* A_S - End */
 
