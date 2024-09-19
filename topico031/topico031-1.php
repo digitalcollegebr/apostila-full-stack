@@ -197,7 +197,7 @@
             </div>
         </div>
     </div>
-    <a href="../questoesIntroducao/questaoIntro.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
+    <a href="topico031-2.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
     <br><br>
     <?php
     // A_S - Footer
