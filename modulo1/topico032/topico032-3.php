@@ -130,7 +130,50 @@
                     <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code">target=</span><span class="orange-code">"_blank"</span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                 </div>
                 <p class="Texto">O destino <span class="code-color"><em>_self</em></span> é o padrão quando o atributo <span class="code-color"><em>target</em></span> não é fornecido. Ele faz com que o documento referenciado substitua o documento atual.</p>
-                <p class="Texto"></p>
+                <p class="Texto">Outros tipos de destinos estão relacionados ao elemento <strong>&lt;iframe&gt;</strong>. Para carregar um documento referenciado dentro de um elemento <strong>&lt;iframe&gt;</strong>, o atributo <em>target</em> deve apontar para o nome do elemento iframe:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                    <pre>
+                        <code>
+<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"viewer"</span>Photo Gallery<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
+</span>
+<span class="code-color"><strong>&lt;iframe&gt;</strong></span><span class="blue-code">name=</span><span class="orange-code">"viewer"</span><span class="blue-code">src=</span><span class="orange-code">"gallery.html"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;p&gt;</strong></span>Unsupported browser<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+<span class="code-color"><strong>&lt;/iframe&gt;</strong></span>
+                </code>
+                    </pre>
+                </div>
+                <p class="Texto">O elemento iframe funciona como uma janela distinta do navegador e, portanto, quaisquer links carregados a partir do documento dentro do iframe substituirão apenas o conteúdo do quadro. Para mudar esse comportamento, os elementos âncora dentro do documento aninhado também podem usar o atributo <em>target</em>. O destino <span class="code-color"><em>_parent</em></span>, quando usado dentro de um documento aninhado, fará com que o local referenciado substitua o documento pai que contém a tag &lt;iframe&gt;. Por exemplo, o documento <em>gallery.html</em> incorporado pode conter uma âncora que carrega a si mesma e substitui o documento pai:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                    <pre>
+                        <code>
+<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"_parent"</span>>Open as parent document<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
+</span>
+                </code>
+                    </pre>
+                </div>
+                <p class="Texto">Os documentos HTML suportam vários níveis de aninhamento com a tag <strong>&lt;iframe&gt;</strong>. O destino _top, quando usado em uma âncora dentro de um documento aninhado, fará com que o local referenciado substitua o documento principal na janela do navegador, independentemente de ele ser o pai imediato do <strong>&lt;iframe&gt;</strong> ou um ancestral mais distante.</p>
+                <br>
+                <p class="Subtopico"><strong>Locais dentro de documentos</strong></p>
+                <p class="Texto">O endereço de um documento HTML pode conter opcionalmente um <em>fragmento</em> que pode ser usado para identificar um recurso dentro do documento. Este fragmento, também conhecido como <em>âncora de URL</em>, é uma string iniciada por uma cerquilha <em>#</em> no final da URL. Por exemplo, a palavra <em>History</em> é a âncora da URL <span class="code-color"><em>https://en.wikipedia.org/wiki/Internet#History</em></span>.</p>
+                <p class="Texto">Quando a URL tem uma âncora, o navegador rola a página até o elemento correspondente no documento: ou seja, o elemento cujo atributo id é idêntico à âncora da URL. No caso da URL de nosso exemplo, https://en.wikipedia.org/wiki/Internet#History, o navegador irá diretamente para a seção “History”. Examinando o código HTML da página, descobrimos que o título da seção possui o atributo id correspondente:</p>
+                <p class="Texto">Quando a URL tem uma âncora, o navegador rola a página até o elemento correspondente no documento: ou seja, o elemento cujo atributo id é idêntico à âncora da URL. No caso da URL de nosso exemplo, <span class="code-color"><em>https://en.wikipedia.org/wiki/Internet#History</em></span>, o navegador irá diretamente para a seção “History”. Examinando o código HTML da página, descobrimos que o título da seção possui o atributo id correspondente:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                        <span class="code-color"><strong>&lt;span</strong></span><span class="blue-code">class=</span><span class="orange-code">"my-headline"</span><span class="blue-code">id=</span><span class="orange-code">"History"</span>History<span class="code-color"><strong>&lt;/span&gt;</strong></span><span class="code-color"></span>
+                </div>
+                <p class="Texto">As âncoras de URL podem ser usadas no atributo <em>href</em> da tag <span class="code-color"><strong>a</strong></span>, tanto para apontar para páginas externas quanto para para locais dentro da página atual. Neste último caso, basta usar apenas a cerquilha com o fragmento da URL, como em <span class="code-color"><em>&lt;a href="#History"&gt;History&lt;/a&gt;</em></span>.</p>
+                <br>
+                <div class="wow fadeIn" data-wow-delay="0.3s">
+                    <div class="Caixa TituloImportante">
+                        <i class="fa-solid fa-triangle-exclamation"></i> 
+                            IMPORTANTE
+                    </div>
+                    <div class="CaixaConteudo ConteudoImportante">
+                        <p class="Texto">O atributo id não deve conter espaços em branco (espaços, tabulações etc.) e deve ser único no documento.</p>
+                    </div>
+                </div>
+                <br>
+                <p class="Texto">Existem maneiras de personalizar a forma como o navegador reage às âncoras de URL. É possível, por exemplo, escrever uma função JavaScript que escuta o evento da janela hashchange e dispara uma ação personalizada, como uma animação ou uma solicitação HTTP. Vale notar, porém, que o fragmento de URL nunca é enviado ao servidor com a URL e, portanto, não pode ser usado como um identificador pelo servidor HTTP.</p>
+
 
 
 
