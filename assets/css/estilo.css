@@ -941,3 +941,49 @@ a{
     text-decoration: none;
     color: #c51967;
 }
+
+.button-prox-atv {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    transition: 0.3s;
+    right: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-prox-atv:hover {
+    transform: scale(1.1);
+    color: #c51967;
+    text-decoration: none;
+}
+
+/* Tooltip */
+.button-prox-atv .tooltip {
+    visibility: hidden; /* Tooltip escondido por padrão */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: -35px; /* Ajuste a posição da tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+}
+
+/* Exibe a tooltip ao passar o mouse */
+.button-prox-atv:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

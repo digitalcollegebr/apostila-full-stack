@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../../layouts/header.php');
+    include('../layouts/header.php');
 ?>
 
 <body>
@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
                 <div class="container-main">
-                <p class="Titulo">A semântica do HTML e a hierarquia de documentos</p>
+                <p class="Titulo">032.2 - A semântica do HTML e a hierarquia de documentos</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <!-- Texto -->
                  <p class="Texto">Na lição anterior, aprendemos que o HTML é uma linguagem de marcação capaz de descrever semanticamente o conteúdo de um site. Um documento HTML contém uma estrutura, que consiste nos elementos HTML <span class="code-color"><em>&lt;html&gt;</em></span>, <span class="code-color"><em>&lt;head&gt;</em></span> e <span class="code-color"><em>&lt;body&gt;</em></span>. Enquanto o elemento <span class="code-color"><em>&lt;head&gt;</em></span> descreve um bloco de metainformações sobre o documento HTML que será invisível para o visitante do site, o elemento <span class="code-color"><em>&lt;body&gt;</em></span> abriga muitos outros elementos que definem a estrutura e o conteúdo do documento HTML.
@@ -46,7 +46,8 @@
                     <br>
                     <p class="Texto">Quando aberto em um navegador, esse código HTML produz o resultado mostrado na Figure 1.</p>
                     <div class="image-content">
-                        <img src="../../assets/img/figure1.png" alt="Código" class="img-fluid">
+                        <img src="../assets/img/figure1.png" alt="Código" class="img-fluid"  style="max-width: 100%; height:150px">
+
                     </div>
                 <br>
                 <p class="Texto"><em>Figure 1. Representação do código HTML acima em um navegador, exibindo dois parágrafos de texto. O primeiro parágrafo é bem curto. O segundo é um pouco mais longo e se estende em uma segunda linha.</em></p>
@@ -71,7 +72,7 @@
                     <br>
                 <p class="Texto">Um navegador web exibiria este código HTML como mostrado na Figure 2.</p>
                 <div class="image-content">
-                        <img src="../../assets/img/figure2.png" alt="Código" class="img-fluid">
+                        <img src="../assets/img/figure2.png" alt="Código" class="img-fluid">
                 </div>
                 <p class="Texto"><em>Figure 2. Representação do código HTML acima em um navegador, mostrando diferentes níveis de títulos em um documento HTML. A hierarquia dos títulos é indicada pelo tamanho do texto.</em></p>
                 <p class="Texto">Se você está familiarizado com processadores de texto como o LibreOffice ou o Microsoft Word, provavelmente vai notar algumas semelhanças na utilização dos diferentes níveis de títulos e como eles são processados no navegador. Por padrão, o HTML usa o tamanho para indicar a hierarquia e a importância dos títulos e adiciona espaços antes e depois deles para separá-los visualmente do conteúdo.</p>
@@ -89,22 +90,22 @@
                     </div>
                 </div>
                 <br>
-                <p class="Texto">Vamos começar a criação de nossa lista de compras em HTML definindo sua estrutura. Criamos primeiro um elemento &lt;h1&gt; para conter o título da página, neste caso Garden Party, seguido por um pequeno texto inserido em um elemento &lt;p&gt;. Em seguida, usamos dois elementos &lt;h2&gt; para introduzir as duas seções do conteúdo: <em>Agenda e Please bring</em>.</p>
+                <p class="Texto">Vamos começar a criação de nossa lista de compras em HTML definindo sua estrutura. Criamos primeiro um elemento &lt;h1&gt; para conter o título da página, neste caso Festa no jardim, seguido por um pequeno texto inserido em um elemento &lt;p&gt;. Em seguida, usamos dois elementos &lt;h2&gt; para introduzir as duas seções do conteúdo: <em>Agenda e Por favor traga</em>.</p>
                 <div class="typewriter-small">
                     <span class="code-color"><strong>&lt;h1&gt;</strong></span>
-                    Garden Party<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+                    Festa no jardim<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
                     <span class="code-color"><strong>&lt;p&gt;</strong></span>
-                    Invitation to John's garden party on Saturday next week.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                    Invitation to Festa no jardim do João on Saturday next week.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
                     <span class="code-color"><strong>&lt;h2&gt;</strong></span>
                     Agenda&lt;/h2&gt;
                     <span class="code-color"><strong>&lt;h2&gt;</strong></span>
-                    Please bring&lt;/h2&gt;
+                    Por favor traga&lt;/h2&gt;
                 </div>
                 <br>
                 <p class="Texto">Quando aberto em um navegador web, este código produz o resultado mostrado na <em>Figure 3</em>.</p>
                 <br>
                 <div class="image-content">
-                    <img src="../../assets/img/figure3.png" alt="Código" class="img-fluid">
+                    <img src="../assets/img/figure3.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 3. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com um convite para uma festa ao ar livre, com dois títulos para a programação e uma lista de coisas a levar</em></p>
@@ -114,12 +115,12 @@
                 <br>
                 <div class="typewriter-small">
                     <span class="code-color"><strong>&lt;p&gt;</strong></span>
-                    Invitation to John's garden party <span class="span code-color"><strong>&lt;br&gt;</strong></span><br> Saturday, next week.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                    Invitation to Festa no jardim do João <span class="span code-color"><strong>&lt;br&gt;</strong></span><br> Sábado, próxima semana.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
                 </div>
                 <br>
                 <p class="Texto">No navegador, esse código HTML teria o resultado mostrado na <em>Figure 4</em>.</p>
                 <div class="image-content">
-                    <img src="../../assets/img/figure4.png" alt="Código"  class="img-fluid">
+                    <img src="../assets/img/figure4.png" alt="Código"  class="img-fluid">
                 </div>
                 <p class="Texto"><em>Figure 4. Representação do código HTML acima em um navegador, mostrando um exemplo de documentosimples com uma quebra de linha forçada.</em></p>
                 <br>
@@ -129,20 +130,21 @@
                 <br>
                 <div class="typewriter-small">
                     <span class="code-color"><strong>&lt;h1&gt;</strong></span>
-                    Garden Party<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+                    Festa no jardim<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
                     <span class="code-color"><strong>&lt;p&gt;</strong></span>
-                    Invitation to John's garden party on Saturday next week.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                    Convite para a festa do João próxima semana no sábado<span class="code-color"><strong>&lt;/p&gt;</strong></span>
                     <span class="code-color"><strong>&lt;h2&gt;</strong></span>
                     Agenda&lt;/h2&gt;
                     &lt;hr&gt;
                     <span class="code-color"><strong>&lt;h2&gt;</strong></span>
-                    Please bring&lt;/h2&gt;
+                    Por favor traga!&lt;/h2&gt;
                 </div>
+
                 <br>
                 <p class="Texto">A <em>Figure 5</em> mostra o resultado desse código.</p>
                 <br>
                 <div class="image-content">
-                    <img src="../../assets/img/figure5.png" alt="Código" class="img-fluid">
+                    <img src="../assets/img/figure5.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 5. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com uma lista de compras em duas seções separadas por uma linha horizontal.</em></p>
@@ -178,15 +180,15 @@
         <pre><code>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         &lt;ol&gt;
-            &lt;li&gt;Welcome&lt;/li&gt;
-            &lt;li&gt;Barbecue&lt;/li&gt;
-            &lt;li&gt;Dessert&lt;/li&gt;
-            &lt;li&gt;Fireworks&lt;/li&gt;
+            &lt;li&gt;Bem-vindo&lt;/li&gt;
+            &lt;li&gt;Churrasco&lt;/li&gt;
+            &lt;li&gt;Sobremesas&lt;/li&gt;
+            &lt;li&gt;Fogos de artifício&lt;/li&gt;
         &lt;/ol&gt;
         </pre></code>
         </div>
                         <p class="Texto">Em um navegador web, esse código HTML produz o resultado mostrado na <em>Figure 6.</em></p>
-                        <img src="../../assets/img/figure6.png" alt="Código" class="img-fluid">
+                        <img src="../assets/img/figure6.png" alt="Código" class="img-fluid">
                         <p class="Texto"><em>Figure 6. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista ordenada com quatro itens referentes à programação de uma festa ao ar livre.</em></p>
                         <br>
                         <p class="Subtopico"><strong>Opções</strong></p>
@@ -197,16 +199,16 @@
         <pre><code>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         &lt;ol <span class="dark_blue_code">type=</span><span class="red-color">"A"</span><span class="dark_blue_code">start=</span><span class="red-color">"3"</span>&gt;
-            &lt;li&gt;Welcome&lt;/li&gt;
-            &lt;li&gt;Barbecue&lt;/li&gt;
-            &lt;li&gt;Dessert&lt;/li&gt;
-            &lt;li&gt;Fireworks&lt;/li&gt;
+            &lt;li&gt;Bem-vindo&lt;/li&gt;
+            &lt;li&gt;Churrasco&lt;/li&gt;
+            &lt;li&gt;Sobremesas&lt;/li&gt;
+            &lt;li&gt;Fogos de artifício&lt;/li&gt;
         &lt;/ol&gt;
         </pre></code>
         </div>
                         <p class="Texto">Em um navegador web, esse código HTML é exibido como na <em>Figure 7</em>.</p>
                         <br>
-                        <img src="../../assets/img/figure7.png" alt="Código" class="img-fluid">
+                        <img src="../assets/img/figure7.png" alt="Código" class="img-fluid">
                         <p class="Texto"><em>Figure 7. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista ordenada de itens prefixados por letras maiúsculas começando com a letra C.</em></p>
                         <p class="Texto">A ordem dos itens da lista também pode ser invertida usando o atributo reversed sem um valor.</p>
                         <div class="destaques wow fadeIn" data-wow-delay="0.3s">
@@ -235,20 +237,20 @@
                 <br>
                 <div class="typewriter-small" style="width: 50%; text-align: left;" >
     <pre><code>
-    <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+    <span class="code-color"><strong>&lt;h2&gt;</strong></span>Por favor traga:<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
     &lt;ul <span class="dark_blue_code">type=</span><span class="red-color">"A"</span><span class="dark_blue_code">start=</span><span class="red-color">"3"</span>&gt;
-        <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-        <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-        <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-        <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-        <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Saladasa<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Bebidas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Pão<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Petiscos<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+        <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
      &lt;/ul&gt;
     </pre></code>
 </div>
                 <br>
                 <p class="Texto">Em um navegador da web, esse código HTML produz o resultado mostrado na <em>Figure 8</em>.</p>
                 <br>
-                <img src="../../assets/img/figure8.png" alt="Código" class="img-fluid">
+                <img src="../assets/img/figure8.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 8. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista não ordenada de itens com sugestões de alimentos que os convidados devem trazer para a festa.</em>
                 <br>
@@ -265,23 +267,23 @@
     <pre><code>
     <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
     <span class="code-color"><strong>&lt;ol type=</strong></span><span class="red-color">"A"</span><span class="code-color"><strong> start=</strong></span><span class="red-color">"3"</span><span class="code-color"><strong>&gt;</strong></span>
-      <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Bem-vindos<span class="code-color"><strong>&lt;/li&gt;</strong></span>
       <span class="code-color"><strong>&lt;li&gt;</strong></span>
-      Barbecue
+      Churrasco
       <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-      <span class="code-color"><strong>&lt;li&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-      <span class="code-color"><strong>&lt;li&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-      <span class="code-color"><strong>&lt;li&gt;</strong></span>Burgers, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Vegetais<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Carne<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>HamHamburguers, incluindo opções vegetarianas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
       <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
       <span class="code-color"><strong>&lt;/li&gt;</strong></span>
-      <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-      <span class="code-color"><strong>&lt;li&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesa<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+      <span class="code-color"><strong>&lt;li&gt;</strong></span>Fogos de artifício<span class="code-color"><strong>&lt;/li&gt;</strong></span>
     <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
     </pre></code>
 </div>
                 <p class="Texto">Um navegador web exibiria esse código da maneira mostrada na <em>Figure 9</em>.</p>
                 <br>
-                <img src="../../assets/img/figure9.png" alt="Código"  class="img-fluid">
+                <img src="../assets/img/figure9.png" alt="Código"  class="img-fluid">
                 <br>
                 <em>Figure 9. Representação do código HTML acima em um navegador, mostrando uma lista não ordenadaaninhada em uma lista ordenada, representando a programação de uma festa ao ar livre.</em>
                 <br>
@@ -314,7 +316,7 @@
 </div>
                 <p class="Texto">Em um navegador web, isso produziria o resultado mostrado na <em>Figure 10</em>.</p>
                 <br>
-                <img src="../../assets/img/figure10.png" alt="Código" class="img-fluid">
+                <img src="../assets/img/figure10.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 10. Exemplo de lista de definição usando frutas exóticas. A lista descreve a aparência de três frutas diferentes.</em>
                 <div class="destaques wow fadeIn" data-wow-delay="0.3s">
@@ -345,7 +347,7 @@
                     Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
                 </div>
                 <br>
-                <img src="../../assets/img/figure11.png" alt="Código" class="img-fluid">
+                <img src="../assets/img/figure11.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 11. A tag <span class="code-color"><strong>&lt;b&lg;</strong></span> é usada para deixar o texto em negrito.</em>
                 <br>
@@ -358,7 +360,7 @@
                     Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
                 </div>
                 <br>
-                <img src="../../assets/img/figure12.png" alt="Código" class="img-fluid">
+                <img src="../assets/img/figure12.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 12. A tag &lt;i&gt; é usada para colocar o texto em itálico</em>
                 <p class="Texto">De acordo com a especificação do HTML5, o elemento &lt;i&gt; deve ser usado apenas quando não houver tags mais apropriadas</p>
@@ -369,7 +371,7 @@
                     Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
                 </div>
                 <br>
-                <img src="../../assets/img/figure13.png" alt="Código" class="img-fluid">
+                <img src="../assets/img/figure13.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 13. A tag &lt;u&gt; é usada para sublinhar um texto.</em>
                 <br>
@@ -381,7 +383,7 @@
                     Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
                 </div>
                 <br>
-                <img src="../../assets/img/figure14.png" alt="Código" class="img-fluid">
+                <img src="../assets/img/figure14.png" alt="Código" class="img-fluid">
                 <br>
                 <p class="Texto">A tag <span class="code-color"><strong>&lt;tt&gt;</strong></span> não é suportada em HTML5. Os navegadores ainda a exibem como esperado; porém, é preferível usar tags mais apropriadas, como <span class="code-color"><strong>&lt;code&gt;</strong></span>, <span class="code-color"><strong>&lt;kbd&gt;</strong></span>, <span class="code-color"><strong>&lt;var&gt;</strong></span> e <span class="code-color"><strong>&lt;samp&gt;</strong></span>.</p>
                 <br>
@@ -394,7 +396,9 @@
                     Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
                 </div>
                 <br>
-                <img src="../../assets/img/figure15.png" alt="Código" class="img-fluid">
+                <div class="image-content">
+                    <img src="../assets/img/figure15.png" alt="Código" class="img-fluid">
+                </div>
                 <br>
                 <em>Figure 15. A tag &lt;em&gt; é usada para enfatizar o texto</em>
                 <br>
@@ -406,7 +410,9 @@
                     Esta <span class="code-color"><strong>palavra</strong></span> é importante.
                 </div>
                 <br>
-                <img src="../../assets/img/figure15.png" alt="Código" class="img-fluid">
+                <div class="image-content">
+                    <img src="../assets/img/figure15.png" alt="Código" class="img-fluid">
+                </div>
                 <br>
                 <em>Figure 16. A tag &lt;strong&gt; é usada para marcar a importância de um texto.</em>
                 <br>
@@ -419,7 +425,9 @@
                   O código Markdown<span class="code-color"><strong>&lt;code&gt;</strong></span># Heading<span class="code-color"><strong>&lt;/code&gt;</strong></span> cria um título no nível mais alto da hierarquia.
                 </div>
                 <br>
-                <img src="../../assets/img/figure17.png" alt="Código" class="img-fluid">
+                <div class="image-content">
+                    <img src="../assets/img/figure17.png" alt="Código" class="img-fluid">
+                </div>
                 <br>
                 <em>Figure 17. A tag &lt;code&gt; é usada para inserir um trecho de código de computador.</em>
                 <br>
@@ -429,7 +437,9 @@
                     Esta <span class="code-color"><strong>&lt;mark&gt;</strong></span>palavra <span class="code-color"><strong>&lt;/mark&gt;</strong></span> está destacada.
                 </div> 
                 <br>
-                <img src="../../assets/img/figure18.png" alt="Código" class="img-fluid">
+                <div class="image-content">
+                <img src="../assets/img/figure18.png" alt="Código" class="img-fluid">
+                </div>
                 <br>
                 <em>Figure 18. A tag &lt;mark&gt; é usada para para realçar um texto com um fundo amarelo<em>
                 <br>
@@ -439,38 +449,38 @@
                 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex-basis: 50%; padding: 10px;">
   <pre><code>
-        <span class="code-color"><strong>&lt;h1&gt;</strong></span>Garden Party<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardimy<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>
-            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
-            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+            Convite para <span class="code-color"><strong>&lt;strong&gt;</strong></span>A festa no jardim do João<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Sábado, próxima semana<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
         <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;ol&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bem-vindo<span class="code-color"><strong>&lt;/li&gt;</strong></span>
             <span class="code-color"><strong>&lt;li&gt;</strong></span>
-                Barbecue
+                Churrasco
                 <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetais<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Carne<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Hamburguers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
                 <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
             <span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesa<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fogos de artifício<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
         <span class="code-color"><strong>&lt;hr&gt;</strong></span>
-        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Por favor traga<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Saladasa<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bebidas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Pão<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Petiscos<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
     </pre></code>
   </div>
   <div style="flex-basis: 50%; padding: 10px;">
-    <img src="../../assets/img/figure19.png" alt="Código" class="img-fluid">
+    <img src="../assets/img/figure19.png" alt="Código" class="img-fluid">
   </div>
 </div>
             <em>Figure 19. A página HTML com alguns elementos de formatação.</em>
@@ -530,7 +540,9 @@ field() {
 
                     </div>
                 <p class="Texto">Um navegador web exibiria este código como mostrado na <em>Figure 21</em>.</p>
-                <img src="../../assets/img/figure21.png" alt="Código" class="img-fluid">
+                <div class="image-content">
+                    </img src="../assets/img/figure21.png" alt="Código" class="img-fluid">
+                </div>
                 <p><em>Figure 21. Representação do documento de teste em um navegador, ilustrando as diferenças entre os elementos
                 parágrafo, div e span em HTML.</em></p>
                 <p class="Texto">Já vimos que, por padrão, o navegador adiciona espaços antes e depois dos elementos &lt;p&gt;. Esses
@@ -572,34 +584,34 @@ field() {
   <pre><code>
 <span class="code-color"><strong>&lt;main&gt;</strong></span>
     <span class="code-color"><strong>&lt;header&gt;</strong></span>
-        <span class="code-color"><strong>&lt;h1&gt;</strong></span>Garden Party<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardim<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
         <span class="code-color"><strong>&lt;/header&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>
-            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
-            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>Festa no jardim do João<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Sábado, próxima semana<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
         <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;ol&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bem-vindo<span class="code-color"><strong>&lt;/li&gt;</strong></span>
             <span class="code-color"><strong>&lt;li&gt;</strong></span>
-                Barbecue
+                Churrasco
                 <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetais<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Carne<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Hamburguers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
                 <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
             <span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fogos de artifício<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
         <span class="code-color"><strong>&lt;hr&gt;</strong></span>
-        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Por favor traga<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Saladas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bebidas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Pão<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Petiscos<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesass<span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
     </pre></code>
   </div>
@@ -607,13 +619,13 @@ field() {
                 <br>
                 <p class="Subtopico" style="font-size: 14px;"><strong>O elemento  &lt;footer&gt;</strong></p>
                 <p class="Texto">O elemento <span class="code-color"><strong> &lt;footer&gt;</strong></span> contém notas de rodapé, como informações sobre a autoria, informações de contato ou documentos relacionados ao elemento semântico circundante, por exemplo <span class="code-color"><strong> &lt;section&gt;</strong></span>,  <span class="code-color"><strong> &lt;nav&gt;</strong></span> ou  <span class="code-color"><strong> &lt;aside&gt;</strong></span>. Um documento pode incluir diversos elementos &lt;footer&gt; que permitem descrever melhor os elementos semânticos. Todavia, um elemento <strong>&lt;footer&gt;</strong> não pode ser aninhado dentro de outro elemento &lt;footer&gt;, nem um elemento <strong>&lt;header&gt;</strong> pode ser usado dentro de um &lt;footer&gt;.</p>
-                <p class="Texto">Em nosso exemplo, podemos adicionar as informações de contato do host (John), como mostrado no exemplo a seguir:</p>
+                <p class="Texto">Em nosso exemplo, podemos adicionar as informações de contato do host (João), como mostrado no exemplo a seguir:</p>
                 <br>
                 <div class="typewriter-small" style="width: 50%; text-align: left;" >
     <pre><code>
     <span class="code-color"><strong>&lt;footer&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>John Doe.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>john.doe@example.com<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>João Doe.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>João.doe@example.com<span class="code-color"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;/footer&gt;</strong></span>
     </pre></code>
     </div>
@@ -639,9 +651,10 @@ field() {
                 <div class="typewriter-small" style="width: 50%; text-align: left;" >
     <pre><code>
     <span class="code-color"><strong>&lt;aside&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Main Street.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Rua Principal.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
     <span class="code-color"><strong>&lt;/p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>Parking spaces available.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>Vagas de estacionamento disponíveis.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+
     <span class="code-color"><strong>&lt;/aside&gt;</strong></span>
     </pre></code>
     </div>
@@ -656,36 +669,36 @@ field() {
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;/header&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>
-            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
-            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>Festa no jardim do João<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Sábado, próxima semana<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
         <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;/header&gt;</strong></span>
         <span class="code-color"><strong>&lt;ol&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bem-vindo<span class="code-color"><strong>&lt;/li&gt;</strong></span>
             <span class="code-color"><strong>&lt;li&gt;</strong></span>
-                Barbecue
+                Churrasco
                 <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetais<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Carne<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Hamburguers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
                 <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
             <span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fogos de artifício<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
         <span class="code-color"><strong>&lt;/section&gt;</strong></span>
         <span class="code-color"><strong>&lt;hr&gt;</strong></span>
         <span class="code-color"><strong>&lt;section&gt;</strong></span>
         <span class="code-color"><strong>&lt;header&gt;</strong></span>
-        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Por favor traga<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;/header&gt;</strong></span>
         <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Saladas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bebidas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Pão<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Petiscos<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesass<span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
         <span class="code-color"><strong>&lt;/section&gt;</strong></span>
     </pre></code>
@@ -699,9 +712,9 @@ field() {
                 <div class="typewriter-small" style="width: 50%; text-align: left;" >
     <pre><code>
     <span class="code-color"><strong>&lt;aside&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Main Street.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Rua principal.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
     <span class="code-color"><strong>&lt;/p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>Parking spaces available.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>Vagas de estacionamento .<span class="code-color"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;/aside&gt;</strong></span>
     </pre></code>
     </div>
@@ -716,33 +729,33 @@ field() {
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;/header&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>
-            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
-            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+            Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>Festa no jardim do João<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Sábado, próxima semana<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
         <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;/header&gt;</strong></span>
         <span class="code-color"><strong>&lt;ol&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bem-vindo<span class="code-color"><strong>&lt;/li&gt;</strong></span>
             <span class="code-color"><strong>&lt;li&gt;</strong></span>
-                Barbecue
+                Churrasco
                 <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Vegetais<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Carne<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span>Hamburguers<span class="code-color"><strong>&lt;/em&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/li&gt;</strong></span>
                 <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
             <span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span>Fogos de artifício<span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
         <span class="code-color"><strong>&lt;/section&gt;</strong></span>
         <span class="code-color"><strong>&lt;hr&gt;</strong></span>
-        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Por favor traga<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;li&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Saladas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Bebidas<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Pão<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Petiscos<span class="code-color"><strong>&lt;/li&gt;</strong></span>
+            <span class="code-color"><strong>&lt;li&gt;</strong></span>Sobremesass<span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
         <span class="code-color"><strong>&lt;/article&gt;</strong></span>
     </pre></code>
@@ -755,9 +768,9 @@ field() {
                 <div class="typewriter-small" style="width: 50%; text-align: left;" >
     <pre><code>
     <span class="code-color"><strong>&lt;aside&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Main Street.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>10, Rua principal.<span class="code-color"><strong>&lt;br&gt;</strong></span>Neville
     <span class="code-color"><strong>&lt;/p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>Parking spaces available.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>Vagas de estacionamento .<span class="code-color"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;/aside&gt;</strong></span>
     </pre></code>
     </div>
@@ -770,61 +783,61 @@ field() {
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
 <span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="blue-color">"en"</span><span class="code-color"><strong>&gt;</strong></span>
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
-    <span class="code-color"><strong>&lt;title&gt;</strong></span>Garden Party<span class="code-color"><strong>&lt;/title&gt;</strong></span>
+    <span class="code-color"><strong>&lt;title&gt;</strong></span>Festa no jardim<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
 
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
     <span class="code-color"><strong>&lt;main&gt;</strong></span>
-      <span class="code-color"><strong>&lt;h1&gt;</strong></span>Garden Party<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+      <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardim<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-        Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>John's garden party<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
-        <span class="code-color"><strong>&lt;strong&gt;</strong></span>Saturday, next week<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
+        Invitation to <span class="code-color"><strong>&lt;strong&gt;</strong></span>Festa no jardim do João<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.<br>
+        <span class="code-color"><strong>&lt;strong&gt;</strong></span>Sábado, próxima semana<span class="code-color"><strong>&lt;/strong&gt;</strong></span>.
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
       
       <span class="code-color"><strong>&lt;article&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;ol&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Welcome<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Bem-vindo<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
           <span class="code-color"><strong>&lt;li&gt;</strong></span>
-            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Barbecue<span class="code-color"><strong>&lt;/strong&gt;</strong></span>
+            <span class="code-color"><strong>&lt;strong&gt;</strong></span>Churrasco<span class="code-color"><strong>&lt;/strong&gt;</strong></span>
             <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Vegetables<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Meat<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Burgers<span class="code-color"><strong>&lt;/strong&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Vegetais<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Carne<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+              <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;em&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Hamburguers<span class="code-color"><strong>&lt;/strong&gt;</strong></span>, including vegetarian options<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
             <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
           <span class="code-color"><strong>&lt;/li&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Dessert<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Fireworks<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Sobremesas<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;mark&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Fogos de artifício<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/mark&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ol&gt;</strong></span>
       <span class="code-color"><strong>&lt;/article&gt;</strong></span>
       
       <span class="code-color"><strong>&lt;hr&gt;</strong></span>
       
       <span class="code-color"><strong>&lt;section&gt;</strong></span>
-        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Please bring<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
+        <span class="code-color"><strong>&lt;h2&gt;</strong></span>Por favor traga<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;ul&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Salad<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Drinks<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Bread<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Snacks<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Desserts<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Saladas<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Bebidas<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Pão<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Petiscos<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Sobremesass<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
       <span class="code-color"><strong>&lt;/section&gt;</strong></span>
     <span class="code-color"><strong>&lt;/main&gt;</strong></span>
     
     <span class="code-color"><strong>&lt;aside&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-        <span class="code-color"><strong>&lt;strong&gt;</strong></span>10, Main Street<span class="code-color"><strong>&lt;/strong&gt;</strong></span><br>
+        <span class="code-color"><strong>&lt;strong&gt;</strong></span>10, Rua principal<span class="code-color"><strong>&lt;/strong&gt;</strong></span><br>
         <span class="code-color"><strong>&lt;strong&gt;</strong></span>Neville<span class="code-color"><strong>&lt;/strong&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
-      <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Parking spaces available.<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Vagas de estacionamento .<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;/aside&gt;</strong></span>
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>
     </pre></code>
   </div>
             <p class="Texto">Em um navegador web, a página inteira é exibida como na <em>Figure 22</em>.</p>
-            <img src="../../assets/img/figure6.png" alt="Código" class="img-fluid">
+            <img src="../assets/img/figure22.png" alt="Código" class="img-fluid">
             <br>
             <p><em>Figure 22. Representação do documento HTML resultante em um navegador web, combinando todos os exemplos anteriores. A página representa um convite para uma festa ao ar livre, com a programação do evento e uma lista de coisas para os convidados levarem.</em></p>
             </div>
@@ -832,6 +845,6 @@ field() {
             </div>
         </div>
     </div>
-    <a href="../../questoesModulo01/unidade02.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
+    <a href="../questoesModulo01/unidade02.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
     <br><br>
-    <?php include('../../layouts/footer.php') ?>
+    <?php include('../layouts/footer.php') ?>

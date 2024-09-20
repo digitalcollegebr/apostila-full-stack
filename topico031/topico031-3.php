@@ -23,7 +23,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-                <p class="Titulo">Noções básicas de HTTP</p>
+                <p class="Titulo">031.3 - Noções básicas de HTTP</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">O protocolo de transferência de hipertexto (<span class="code-color">HyperText Transfer Protocol ou HTTP</span>) define a forma como um cliente solicita um recurso específico ao servidor. O princípio de funcionamento é bastante simples: o cliente cria uma mensagem de solicitação identificando o recurso de que necessita e encaminha essa mensagem para o servidor através da rede. Por sua vez, o servidor HTTP avalia de onde extrair o recurso solicitado e envia uma mensagem de resposta de volta ao cliente. A mensagem de resposta contém detalhes sobre o recurso solicitado, seguidos do recurso em si.</p>
                 <p class="Texto">Mais especificamente, HTTP é o conjunto de regras que definem como o aplicativo cliente deve formatar as mensagens de <em>solicitação</em> que serão enviadas ao servidor. O servidor então segue as regras do HTTP para interpretar a solicitação e formatar mensagens de <em>resposta</em>. Além de solicitar ou transferir o conteúdo solicitado, as mensagens HTTP contêm informações extras sobre o cliente e o servidor envolvidos, sobre o conteúdo em si e até mesmo sobre sua indisponibilidade. Se um recurso não puder ser enviado, um código na resposta explica o motivo da indisponibilidade e, se possível, indica para onde o recurso foi movido</p>
@@ -270,9 +270,15 @@
         </div>
     </div>
     <br>
-    <a href="../questoesIntroducao/questaoIntro.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
-    <br><br>
-    <?php
+    <a href="../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Atividade!</span></a>
+    <br><br><br>     
+    
+
+</body>
+</html>
+<?php
     // A_S - Footer
     include('../layouts/footer.php');
 ?>
+
+    

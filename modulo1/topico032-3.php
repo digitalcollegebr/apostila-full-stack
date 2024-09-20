@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../../layouts/header.php');
+    include('../layouts/header.php');
 ?>
 
 <body>
@@ -20,7 +20,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-                <p class="Titulo">Referências e recursos incorporados do HTML</p>
+                <p class="Titulo">032.3 - Referências e recursos incorporados do HTML</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">As páginas web modernas raramente são constituídas somente de texto. Elas incluem muitos outros tipos de conteúdo, como imagens, áudio, vídeo e até outros documentos HTML. Junto com o conteúdo externo, os documentos HTML podem conter links para outros documentos, o que torna a experiência de navegação na Internet muito mais simples.</p>
                 <p class="Subtopico"><strong>Conteúdo incorporado</strong></p>
@@ -74,7 +74,7 @@
                 <p class="Texto">O SVG é o único formato que não sofre com esses efeitos, porque todas as suas informações gráficas são armazenadas em coordenadas numéricas adequadas para o redimensionamento e suas dimensões não afetam o tamanho do arquivo (daí o nome <em>Scalable Vector Graphics</em>). Por exemplo, para desenhar um retângulo em SVG, são necessárias apenas a posição, as dimensões das arestas e as informações de cor. O valor específico de cada pixel será renderizado dinamicamente posteriormente. Na verdade, as imagens SVG são semelhantes aos arquivos HTML, no sentido de que seus elementos gráficos também são definidos por tags em um arquivo de texto. Os arquivos SVG destinam-se a representar desenhos com arestas bem definidas, como gráficos ou diagramas.</p>
                 <p class="Texto">As imagens que não se enquadram nesses critérios devem ser armazenadas como bitmaps. Ao contrário dos formatos vetoriais de imagem, os bitmaps armazenam informações de cor de antemão para cada pixel da imagem. O armazenamento do valor cromático de cada pixel da imagem gera uma grande quantidade de dados e, por isso, os bitmaps geralmente são armazenados em formatos compactados, como JPEG, PNG ou GIF.</p>
                 <div class="image-content">
-                    <img src="../../assets/img/Bitmap_SVG.svg" alt="Bitmap" class="img-fluid">
+                    <img src="../assets/img/Bitmap_SVG.svg" alt="Bitmap" class="img-fluid">
                 </div>
                 <p class="Texto">O formato JPEG é recomendado para fotografias, porque seu algoritmo de compactação produz bons resultados para as sombras e fundos desfocados. Para as imagens em que prevalecem as cores sólidas, o formato PNG é o mais apropriado. Portanto, o formato PNG deve ser escolhido quando for necessário converter uma imagem vetorial em bitmap.</p>
                 <p class="Texto">O formato GIF oferece a qualidade de imagem mais baixa dentre todos os formatos de bitmap populares. No entanto, ele ainda é amplamente utilizado devido ao seu suporte para animações. De fato, muitos sites empregam arquivos GIF para exibir vídeos curtos, mas existem maneiras melhores de exibir conteúdo de vídeo.</p>
@@ -85,11 +85,12 @@
                     <pre>
                         <code>
 <span class="code-color"><strong>&lt;audio&gt;</strong></span><span class="blue-code">controls src=</span><span class="orange-code">"/media/recording.mp3"</span><span class="code-color"><strong>&gt;</strong></span>
-        <span class="code-color"><strong>&lt;p&gt;</strong></span>Unable to play<span class="code-color"><strong>&lt;em&gt;</strong></span>recording.mp3<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>Áudio indisponível<span class="code-color"><strong>&lt;em&gt;</strong></span>recording.mp3<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
 <span class="code-color"><strong>&lt;/audio&gt;</strong></span>
                 </code>
                     </pre>
                 </div>
+                
                 <p class="Texto">Se o navegador não suportar a tag &lt;audio&gt;, a linha <em>“Unable to play recording.mp3”</em> será mostrada em seu lugar. O uso das tags de fechamento <strong>&lt;/audio&gt;</strong> ou &lt;/video&gt; permitem que a página web inclua conteúdos alternativos mais elaborados do que a simples linha de texto permitida pelo atributo <span class="code-color"><em>alt</em></span> da tag <span class="code-color"><strong></strong>&lt;img&gt;</span>.</p>
                 <p class="Texto">O atributo <span class="code-color"><em>src</em></span> das tags &lt;audio&gt; e &lt;video&gt; funcionam da mesma forma que em &lt;img&gt;, mas ele também aceita URLs apontando para uma transmissão ao vivo. O navegador cuida de armazenar em buffer, decodificar e exibir o conteúdo conforme ele é recebido. O atributo controls exibe os controles de reprodução. Sem ele, o visitante não poderá pausar, retroceder ou controlar a reprodução de qualquer outra maneira.</p>
                 <br>
@@ -114,15 +115,15 @@
                 </div>
                 <p class="Texto">A localização pode ser informada como um caminho relativo ou absoluto, como acontece com o conteúdo incorporado de que falamos anteriormente. Somente o conteúdo de texto entre as tags (por exemplo, <span class="blue-code"><em><u>Contact Information</u></em></span>)e fica visível para o visitante, geralmente na forma de um texto em azul sublinhado e clicável, mas o item que contém o link também pode ser qualquer outro conteúdo visível, como imagens:</p>
                 <div class="typewriter-small">
-                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code">src</span><span class="orange-code">"contact.png"</span><span class="blue-code">alt=</span><span class="orange-code">"contact.png"</span>"Contact Information"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code">src</span><span class="orange-code">"contact.png"</span><span class="blue-code">alt=</span><span class="orange-code">"contact.png"</span>"Informações de contato"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                 </div>
                 <p class="Texto">Prefixos especiais podem ser adicionados ao caminho para informar ao navegador como abri-lo. Se a âncora apontar para um endereço de email, por exemplo, seu atributo href deve incluir o prefixo <span class="code-color"><em>mailto:</em></span>:</p>
                 <div class="typewriter-small">
-                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span>Contact by email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span>Contato via Email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                 </div>
                 <p class="Texto">O prefixo tel: indica um número de telefone. Essa indicação é particularmente útil para visitantes que visualizam a página em dispositivos móveis:</p>
                 <div class="typewriter-small">
-                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"</span>Contact by phone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"</span>Contato via telefone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                 </div>
                 <p class="Texto">Quando o link é clicado, o navegador abre o conteúdo do caminho com o aplicativo associado.</p>
                 <p class="Texto">O uso mais comum das âncoras é carregar outros documentos da web. Por padrão, o navegador substitui o documento HTML atual pelo conteúdo do novo local. Esse comportamento pode ser modificado usando o atributo target. O destino _blank, por exemplo, diz ao navegador para abrir o local fornecido em uma nova janela ou nova guia do navegador, dependendo das preferências do visitante:</p>
@@ -134,10 +135,10 @@
                 <div class="typewriter-small" style="width: 50%; text-align: left;">
                     <pre>
                         <code>
-<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"viewer"</span>Photo Gallery<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
+<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"viewer"</span>Galeria de fotos<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
 </span>
 <span class="code-color"><strong>&lt;iframe&gt;</strong></span><span class="blue-code">name=</span><span class="orange-code">"viewer"</span><span class="blue-code">src=</span><span class="orange-code">"gallery.html"</span><span class="code-color"><strong>&gt;</strong></span>
-<span class="code-color"><strong>&lt;p&gt;</strong></span>Unsupported browser<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+<span class="code-color"><strong>&lt;p&gt;</strong></span>Seu navegador não suporta<span class="code-color"><strong>&lt;/p&gt;</strong></span>
 <span class="code-color"><strong>&lt;/iframe&gt;</strong></span>
                 </code>
                     </pre>
@@ -146,7 +147,7 @@
                 <div class="typewriter-small" style="width: 50%; text-align: left;">
                     <pre>
                         <code>
-<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"_parent"</span>>Open as parent document<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
+<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"_parent"</span>Abrir como documento pai<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
 </span>
                 </code>
                     </pre>
@@ -182,6 +183,6 @@
             </div>
         </div>
     </div>
-    <a href="../../questoesModulo01/unidade03.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
+    <a href="../questoesModulo01/unidade03.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
     <br><br>
-    <?php include('../../layouts/footer.php') ?>
+    <?php include('../layouts/footer.php') ?>
