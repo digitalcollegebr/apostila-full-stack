@@ -329,7 +329,48 @@
                   <br>
                   <p><em>Figure 26. O elemento textarea.</em></p>
                   <br>
-                  <p class="Texto">Outra diferença em relação ao elemento input é que o elemento <span class="code-color"><em>textarea</em></span> tem uma tag de fechamento (</textarea>), e assim seu conteúdo (ou seja, seu valor) fica entre as duas tags. Os atributos rows e cols (linhas e colunas) não limitam a quantidade de texto; eles são usados apenas para definir o layout. O textarea também inclui uma alça no canto inferior direito, que permite ao visitante redimensioná-lo.</p>
+                  <p class="Texto">Outra diferença em relação ao elemento input é que o elemento <span class="code-color"><em>textarea</em></span> tem uma tag de fechamento (<span class="code-color"><em>/textarea</em></span>), e assim seu conteúdo (ou seja, seu valor) fica entre as duas tags. Os atributos <span class="code-color"><em>rows</em></span> e <span class="code-color"><em>cols</em></span> (linhas e colunas) não limitam a quantidade de texto; eles são usados apenas para definir o layout. O textarea também inclui uma alça no canto inferior direito, que permite ao visitante redimensioná-lo.</p>
+                  <br>
+                  <p class="Subtopico"><strong>Listas de opções</strong></p>
+                  <p class="Texto">Diversos tipos de controles de formulário podem ser usados para apresentar uma lista de opções ao visitante: o elemento <span class="code-color"><strong>&lt;select&gt;</strong></span> e os tipos de entrada <span class="code-color"><em>radio</em></span> e <span class="code-color"><em>checkbox</em></span>.</p>
+                  <p class="Texto">O elemento <span class="code-color"><strong>&lt;select&gt;</strong></span> é um controle suspenso com uma lista de entradas predefinidas:</p>
+                  <br>
+                  <div class="typewriter-small" style="width: 50%; text-align: left">
+  <pre><code>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"browser"</span><span class="code-color"><strong>&gt;</strong></span> Browser favorito:<span class="code-color"><strong>&lt;/label&gt;</strong>
+        <span class="code-color"><strong>&lt;select</strong></span><span class="blue-code">name=</span> <span class="orange-code">"browser"</span><span class="blue-code">id=</span> <span class="orange-code">"browser"</span><span class="code-color"><strong>&gt;</strong>
+        <span class="code-color"><strong>&lt;option</strong></span><span class="blue-code">value=</span>  <span class="orange-code">"Mozilla Firefox"</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
+        <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code">value=</span>  <span class="orange-code">"Google Chrome "</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
+        <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code">value=</span>  <span class="orange-code">"Opera "</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
+        <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code">value=</span>  <span class="orange-code">"Microsoft Edge"</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/select&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    </pre></code>
+  </div>
+                  <p class="Texto">A tag <span class="code-color"><strong>&lt;option&gt;</strong></span> representa uma entrada individual no controle <strong>&lt;select&gt;</strong> correspondente. A lista completa aparece quando o visitante toca ou clica no controle, como mostrado na <em>Figure 27</em>.</p>
+                  <br>
+                  <div class="image-content">
+                    <img src="../assets/img/figure27.png" alt="Código" class="img-fluid">
+                  </div>
+                  <br>
+                  <p><em>Figure 27. O elemento de formulário select.</em></p>
+                  <br>
+                  <p class="Texto">A primeira entrada da lista é selecionada por padrão. Para alterar esse comportamento, você pode adicionar o atributo <span class="code-color"><em>selected</em></span> a outra entrada, para que ela esteja selecionada quando a página carregar.</p>
+                  <p class="Texto">O tipo de entrada <span class="code-color"><em>radio</em></span> é semelhante ao controle <strong>&lt;select&gt;</strong>, mas em vez de uma lista suspensa ele mostra todas as entradas para que o visitante selecione uma delas. Os resultados do código a seguir são mostrados na <em>Figure 28</em>.</p>
+                  <br>
+                  <div class="typewriter-small" style="width: 50%; text-align: left">
+  <pre><code>
+  <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-code">radio</span><span class="blue-code">id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
+
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    </pre></code>
+  </div>
+                  
+                  
                 
 
                 
