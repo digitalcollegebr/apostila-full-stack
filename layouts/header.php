@@ -22,16 +22,15 @@
 
     <!-- CSS - Aula Web -->
     <link rel="stylesheet" href="../../assets/css/estilo.css">
-    <link rel="stylesheet" href="../assets/css/estilo.css">
 
     <!-- JS - Aula Web -->
-    <script src="../assets/js/script.js" defer></script>
+    <script src="../../assets/js/script.js" defer></script>
 
     <!-- Animate -->
-    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../../assets/css/animate.min.css" />
 
     <!-- Wow JS -->
-    <script src="../assets/js/wow.min.js"></script>
+    <script src="../../assets/js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -40,7 +39,7 @@
 </head>
 <nav class="navbar">
     <div class="container-fluid">
-    <img style="max-width: 10%" src="../assets/img/logo-digital.png" alt="">
+    <img style="max-width: 10%" src="../../assets/img/logo-digital.png" alt="">
 
         <form class="form" role="search">
         
