@@ -254,7 +254,7 @@
               <p class="Texto">A aparência dos tipos de entrada <span class="code-color"><em>password</em></span>, <span class="code-color"><em>search</em></span>, <span class="code-color"><em>tel</em></span>, <span class="code-color"><em>url</em></span> e <span class="code-color"><em>email</em></span> é idêntica à do tipo text padrão. Sua finalidade é oferecer indicações ao navegador sobre o conteúdo esperado para esse campo de entrada de dados, de modo que o navegador ou o script em execução no lado do cliente possa realizar ações personalizadas para um tipo de entrada específico. A única diferença entre o tipo de entrada de texto e o tipo de campo de senha, por exemplo, é que o conteúdo do campo de senha <strong>não</strong> é exibido conforme o visitante digita sua senha. Nos dispositivos com tela de toque, nos quais o texto é digitado em um teclado virtual, o navegador pode exibir apenas o teclado numérico quando uma entrada do tipo <span class="code-color"><em>tel</em></span> é selecionada. Outra ação possível é sugerir uma lista de endereços de email conhecidos quando uma entrada do tipo email está no foco.</p>
               <p class="Texto">O tipo <span class="code-color"><em>number</em></span> também aparece como uma entrada de texto simples, mas com setas de aumentar/diminuir ao lado. Seu uso fará com que o teclado numérico apareça nos dispositivos com tela de toque quando o campo estiver selecionado.</p>
               <p class="Texto">Os outros elementos de inserção de dados têm sua própria aparência e comportamento. O tipo date, por exemplo, é representado de acordo com as configurações locais de formato de data e um calendário é exibido quando o campo está no foco:</p>
-              <div class="typewriter-small" style="width: 50%; text-align: left;">
+              <div class="typewriter-small" style="width: 50%; text-align: left">
   <pre><code>
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
@@ -264,6 +264,78 @@
     <span class="code-color"><strong>&lt;/form&gt;</strong></span>
     </pre></code>
   </div>
+              <p class="Texto">A <em>Figure 24</em> mostra como a versão para desktop do Firefox apresenta esse campo atualmente.</p>
+              <div class="image-content">
+                <img src="../../assets/img/figure24.png" alt="Código" class="img-fluid">
+              </div>
+              <br>
+              <p><em>Figure 24. O tipo de entrada de data.</em></p>
+              <br>
+              <div class="destaques wow fadeIn" data-wow-delay="0.3s">
+                        <div class="Caixa TituloExemplo">
+                            <i class="fa-regular fa-pen-to-square"></i> 
+                                NOTE 
+                        </div>
+                        <div class="CaixaConteudo ConteudoExemplo">
+                            <p class="Texto">Os elementos podem ter uma aparência ligeiramente diferente em navegadores ou sistemas operacionais distintos, mas seu funcionamento e uso são sempre os mesmos.</p>
+                        </div>
+                    </div>
+                <br>
+                <p class="Texto">Este é um recurso padrão em todos os navegadores modernos e não requer opções extras ou programação.</p>
+                <p class="Texto">Independentemente do tipo de entrada, o conteúdo de um campo de inserção de dados é chamado de valor. Todos os valores do campo aparecem vazios por padrão, mas o atributo value pode ser usado para definir um valor padrão para o campo. O valor do tipo de data deve usar o formato <span class="code-color"><strong>AAAA-MM-DD</strong></span>. O valor padrão do campo de data a seguir foi definido como 6 de agosto de 2020:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left">
+  <pre><code>
+    <span class="code-color"><strong>&lt;form&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"date"</span><span class="code-color"><strong>&gt;</strong></span> Date:<span class="code-color"><strong>&lt;/label&gt;</strong>
+        <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"date"</span><span class="blue-code">name=</span><span class="orange-color">"date" </span><span class="blue-code">id= </span><span class="orange-code">"date"</span> <span class="blue-code">value=</span> <span class="orange-code">"2024-09-20"</span><span class="code-code"><strong>&lt;/p&gt;</strong></span>
+
+    <span class="code-color"><strong>&lt;/form&gt;</strong></span>
+    </pre></code>
+  </div>
+                <p class="Texto">Os tipos de entrada específicos ajudam o visitante a preencher os campos, mas não evitam que ele ignore as restrições e insira valores arbitrários em qualquer campo. Por isso, é importante que os valores dos campos sejam validados ao chegarem ao servidor.</p>
+                <p class="Texto">Os elementos do formulário cujos valores devem ser digitados pelo visitante podem ter atributos especiais que auxiliam no preenchimento. O atributo <span class="code-color"><em>placeholder</em></span> (marcador de posição) insere um valor de exemplo no elemento de inserção de dados:</p>
+                <div class="typewriter-small" style="width: 50%; text-align: left">
+                <span class="code-color"><strong>&lt;p&gt;</strong></span>Adress:  <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span> <span class="orange-code">"text"</span><span class="blue-code">name=</span>  <span class="orange-code">"address"</span><span class="blue-code">placeholder=</span>  <span class="orange-code">"e.g. 41 John St., Upper Suite 1"</span><span class="code-code">&gt;</span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                </div>
+                <br>
+                <p class="Texto">O marcador de posição aparece dentro do elemento de inserção de dados, conforme mostrado na  <em>Figure 25</em>.</p>
+                <br>
+                <div class="image-content">
+                  <img src="../../assets/img/figure25.png" alt="Código" class="img-fluid">
+                </div>
+                <br>
+                <p class="Texto">Assim que o visitante começa a digitar no campo, o texto do marcador de posição desaparece. O texto do marcador de posição não é enviado como o valor do campo caso o visitante deixe o campo vazio.</p>
+                <p class="Texto">O atributo <span class="code-color"><em>required</em></span> obriga o visitante a preencher um valor para o campo correspondente antes de enviar o formulário:</p>
+                <p class="Texto">O atributo <span class="code-color"><em>autocomplete</em></span> indica se o valor do elemento de entrada pode ser preenchido automaticamente pelo navegador. Se definido como <span class="code-color"><em>autocomplete="off"</em></span>, o navegador não sugere valores anteriores para preencher o campo. Os elementos de inserção de dados para informações confidenciais, como números de cartão de crédito, devem ter o atributo <span class="code-color"><em>autocomplete</em></span> definido como <span class="code-color"><em>off</em></span>.</p>
+                <br>
+                <p class="Subtopico"><strong>Campo de entrada para textos grandes: textarea</strong></p>
+                <p class="Texto">Ao contrário do campo de texto, onde apenas uma linha de texto pode ser inserida, o elemento textarea permite que o visitante insira mais de uma linha de texto. O textarea é um elemento separado, mas não é baseado no elemento input:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left">
+  <pre><code>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"comment"</span><span class="code-color"><strong>&gt;</strong></span> Digite seu comentário aqui:<span class="code-color"><strong>&lt;/label&gt;</strong> <span class="code-color"><strong>&lt;br&gt;</strong></span>
+        <span class="code-color"><strong>&lt;textarea</strong></span><span class="blue-code">id=</span><span class="orange-code">"comment"</span><span class="blue-code">name=</span><span class="orange-code">comment</span>  <span class="blue-code">rows=</span><span class="orange-code">"10"</span> <span class="blue-code">cols=</span>  <span class="orange-code">"30"</span><span class="code-code">&gt;</strong></span>Meu comentário de várias linhas em texto simples.
+        <span class="code-color"><strong>&lt;/textarea&gt;</strong></span>
+        <span class="code-code"><strong>&lt;/p&gt;</strong></span>
+    </pre></code>
+  </div>
+                  <p class="Texto">A aparência típica de um textarea é mostrado na <em>Figure 26</em>.</p>
+                  <br>
+                  <div class="image-content">
+                    <img src="../../assets/img/figure26.png" alt="Código" class="img-fluid">
+                  </div>
+                  <br>
+                  <p><em>Figure 26. O elemento textarea.</em></p>
+                  <br>
+                  <p class="Texto">Outra diferença em relação ao elemento input é que o elemento <span class="code-color"><em>textarea</em></span> tem uma tag de fechamento (</textarea>), e assim seu conteúdo (ou seja, seu valor) fica entre as duas tags. Os atributos rows e cols (linhas e colunas) não limitam a quantidade de texto; eles são usados apenas para definir o layout. O textarea também inclui uma alça no canto inferior direito, que permite ao visitante redimensioná-lo.</p>
+                
+
+                
+
+
+
 
 
             
