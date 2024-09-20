@@ -8,7 +8,7 @@
 <body>
 <?php
     // A_S - Header
-    include('../../layouts/header.php');
+    include('../layouts/header.php');
 ?>
 
 <body>
@@ -28,7 +28,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-                <p class="Titulo">Formulários  HTML</p>
+                <p class="Titulo">032.4 - Formulários  HTML</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">Os formulários web são uma maneira simples e eficiente de solicitar informações ao visitante de uma página HTML. O desenvolvedor front-end pode usar diversos componentes, como campos de texto, caixas de seleção, botões e muitos outros para construir interfaces que enviam dados ao servidor de forma estruturada.</p>
                 <p class="Subtopico"><strong>Formulários HTML simples</strong></p>
@@ -55,8 +55,8 @@
             </div>
         </div>
     </div>
-    <a href="../../questoesModulo01/unidade04.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
+    <a href="../questoesModulo01/unidade04.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
     <br><br>
-    <?php include('../../layouts/footer.php') ?>
+    <?php include('../layouts/footer.php') ?>
 </body>
 </html>

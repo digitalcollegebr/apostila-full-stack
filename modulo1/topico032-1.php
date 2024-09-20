@@ -1,5 +1,5 @@
 
-<?php include '../../layouts/header.php'; ?>
+<?php include '../layouts/header.php'; ?>
 
 
 
@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
                 <!-- Titulo -->
-                <p class="Titulo">Marcação de documentos HTML</p>
+                <p class="Titulo">032.1 - Marcação de documentos HTML</p>
                 <br>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <!-- Texto -->
@@ -39,11 +39,11 @@
                 <strong><pre><code>&lt;!DOCTYPE html&gt;
                &lt;html&gt;
                     &lt;head&gt;
-                        <span class="code-color">&lt;title&gt;</span>My HTML Page<span class="code-color">&lt;title&gt;</span>
-                        &lt;!-- This is the Document Header --&gt;
+                        <span class="code-color">&lt;title&gt;</span>Minha página HTML<span class="code-color">&lt;title&gt;</span>
+                        &lt;!-- Esse é o cabeçalho do documento --&gt;
                     &lt;/head&gt;
                     <span class="code-color">&lt;body&gt;</span>
-                            &lt;!-- This is the Document Body --&gt;
+                            &lt;!-- Esse é o corpo do documento --&gt;
                     <span class="code-color">&lt;/body&gt;</span>
                 &lt;/html&gt;</code></pre></strong>
             </div>
@@ -58,10 +58,10 @@
         elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> completo seria parecido com este:</p>
         <br>
         <div class="code-smaller">
-                <span class="code-color"><strong>&lt;title&gt;</strong></span>My HTML Page<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
+                <span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página HTML<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
         </div>
         <br>
-        <p class="Texto">Aqui, My HTML Page representa o conteúdo do elemento, ao passo que </title> é a tag de fechamento que declara que este elemento está completo.</p>
+        <p class="Texto">Aqui, Minha página HTML representa o conteúdo do elemento, ao passo que </title> é a tag de fechamento que declara que este elemento está completo.</p>
         <br>
         <!-- Importante -->
         <div class="wow fadeIn" data-wow-delay="0.3s">
@@ -338,11 +338,11 @@
         </div>
         </div>
     </div>
-    <a href="../../questoesModulo01/unidade01.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
-    <br><br>
+    <a href="../questoesModulo01/unidade01.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
+    <br><br><br>
     
 
-<?php include('../../layouts/footer.php') ?>
+<?php include('../layouts/footer.php') ?>
 
 </body>
 </html>
