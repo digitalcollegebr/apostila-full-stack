@@ -493,6 +493,7 @@ video {
     border-radius: 50%;
 }
 
+
 /* Footer */
 
 .container-main {
@@ -505,7 +506,8 @@ video {
   background-color: var(--CorPreta) !important;
   padding: 20px 0;
   text-align: center;
-  clear: both; 
+  clear: both;
+  margin-top: 200px;
 }
 
 .Footer img {
@@ -558,14 +560,15 @@ video {
 .container-side {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 20px 0;
+    justify-content: space-between
 }
 
 .image-side {
-    flex-shrink: 0;
-   
-}
+    margin: 0;
+    padding: 0;
+  }
+  
+  
 
 .image-side img {
     width: 400px; /* Defina o tamanho da imagem conforme necessário */
@@ -573,8 +576,9 @@ video {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     overflow: hidden;
-}
-.image-side:hover img {
+        display: block;
+        margin: 0 ;
+    
     transform: scale(1.05);
 }
 
@@ -913,6 +917,7 @@ button:hover {
 
 .next{
     width:40px ;
+    
 }
 
 .left{
