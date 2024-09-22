@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../../layouts/header.php');
 ?>
 
 <body>
@@ -46,7 +46,7 @@
                     <br>
                     <p class="Texto">Quando aberto em um navegador, esse código HTML produz o resultado mostrado na Figure 1.</p>
                     <div class="image-content">
-                        <img src="../assets/img/figure1.png" alt="Código" class="img-fluid"  style="max-width: 100%; height:150px">
+                        <img src="../../assets/img/figure1.png" alt="Código" class="img-fluid"  style="max-width: 100%; height:150px">
 
                     </div>
                 <br>
@@ -72,7 +72,7 @@
                     <br>
                 <p class="Texto">Um navegador web exibiria este código HTML como mostrado na Figure 2.</p>
                 <div class="image-content">
-                        <img src="../assets/img/figure2.png" alt="Código" class="img-fluid">
+                        <img src="../../assets/img/figure2.png" alt="Código" class="img-fluid">
                 </div>
                 <p class="Texto"><em>Figure 2. Representação do código HTML acima em um navegador, mostrando diferentes níveis de títulos em um documento HTML. A hierarquia dos títulos é indicada pelo tamanho do texto.</em></p>
                 <p class="Texto">Se você está familiarizado com processadores de texto como o LibreOffice ou o Microsoft Word, provavelmente vai notar algumas semelhanças na utilização dos diferentes níveis de títulos e como eles são processados no navegador. Por padrão, o HTML usa o tamanho para indicar a hierarquia e a importância dos títulos e adiciona espaços antes e depois deles para separá-los visualmente do conteúdo.</p>
@@ -105,7 +105,7 @@
                 <p class="Texto">Quando aberto em um navegador web, este código produz o resultado mostrado na <em>Figure 3</em>.</p>
                 <br>
                 <div class="image-content">
-                    <img src="../assets/img/figure3.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure3.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 3. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com um convite para uma festa ao ar livre, com dois títulos para a programação e uma lista de coisas a levar</em></p>
@@ -120,7 +120,7 @@
                 <br>
                 <p class="Texto">No navegador, esse código HTML teria o resultado mostrado na <em>Figure 4</em>.</p>
                 <div class="image-content">
-                    <img src="../assets/img/figure4.png" alt="Código"  class="img-fluid">
+                    <img src="../../assets/img/figure4.png" alt="Código"  class="img-fluid">
                 </div>
                 <p class="Texto"><em>Figure 4. Representação do código HTML acima em um navegador, mostrando um exemplo de documentosimples com uma quebra de linha forçada.</em></p>
                 <br>
@@ -144,7 +144,7 @@
                 <p class="Texto">A <em>Figure 5</em> mostra o resultado desse código.</p>
                 <br>
                 <div class="image-content">
-                    <img src="../assets/img/figure5.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure5.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p class="Texto"><em>Figure 5. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples com uma lista de compras em duas seções separadas por uma linha horizontal.</em></p>
@@ -188,7 +188,7 @@
         </pre></code>
         </div>
                         <p class="Texto">Em um navegador web, esse código HTML produz o resultado mostrado na <em>Figure 6.</em></p>
-                        <img src="../assets/img/figure6.png" alt="Código" class="img-fluid">
+                        <img src="../../assets/img/figure6.png" alt="Código" class="img-fluid">
                         <p class="Texto"><em>Figure 6. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista ordenada com quatro itens referentes à programação de uma festa ao ar livre.</em></p>
                         <br>
                         <p class="Subtopico"><strong>Opções</strong></p>
@@ -208,7 +208,7 @@
         </div>
                         <p class="Texto">Em um navegador web, esse código HTML é exibido como na <em>Figure 7</em>.</p>
                         <br>
-                        <img src="../assets/img/figure7.png" alt="Código" class="img-fluid">
+                        <img src="../../assets/img/figure7.png" alt="Código" class="img-fluid">
                         <p class="Texto"><em>Figure 7. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista ordenada de itens prefixados por letras maiúsculas começando com a letra C.</em></p>
                         <p class="Texto">A ordem dos itens da lista também pode ser invertida usando o atributo reversed sem um valor.</p>
                         <div class="destaques wow fadeIn" data-wow-delay="0.3s">
@@ -250,7 +250,7 @@
                 <br>
                 <p class="Texto">Em um navegador da web, esse código HTML produz o resultado mostrado na <em>Figure 8</em>.</p>
                 <br>
-                <img src="../assets/img/figure8.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure8.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 8. Representação do código HTML acima em um navegador, mostrando um exemplo de documento simples contendo um título de segundo nível seguido por uma lista não ordenada de itens com sugestões de alimentos que os convidados devem trazer para a festa.</em>
                 <br>
@@ -283,7 +283,7 @@
 </div>
                 <p class="Texto">Um navegador web exibiria esse código da maneira mostrada na <em>Figure 9</em>.</p>
                 <br>
-                <img src="../assets/img/figure9.png" alt="Código"  class="img-fluid">
+                <img src="../../assets/img/figure9.png" alt="Código"  class="img-fluid">
                 <br>
                 <em>Figure 9. Representação do código HTML acima em um navegador, mostrando uma lista não ordenadaaninhada em uma lista ordenada, representando a programação de uma festa ao ar livre.</em>
                 <br>
@@ -316,7 +316,7 @@
 </div>
                 <p class="Texto">Em um navegador web, isso produziria o resultado mostrado na <em>Figure 10</em>.</p>
                 <br>
-                <img src="../assets/img/figure10.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure10.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 10. Exemplo de lista de definição usando frutas exóticas. A lista descreve a aparência de três frutas diferentes.</em>
                 <div class="destaques wow fadeIn" data-wow-delay="0.3s">
@@ -347,7 +347,7 @@
                     Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
                 </div>
                 <br>
-                <img src="../assets/img/figure11.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure11.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 11. A tag <span class="code-color"><strong>&lt;b&lg;</strong></span> é usada para deixar o texto em negrito.</em>
                 <br>
@@ -360,7 +360,7 @@
                     Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
                 </div>
                 <br>
-                <img src="../assets/img/figure12.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure12.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 12. A tag &lt;i&gt; é usada para colocar o texto em itálico</em>
                 <p class="Texto">De acordo com a especificação do HTML5, o elemento &lt;i&gt; deve ser usado apenas quando não houver tags mais apropriadas</p>
@@ -371,7 +371,7 @@
                     Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
                 </div>
                 <br>
-                <img src="../assets/img/figure13.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure13.png" alt="Código" class="img-fluid">
                 <br>
                 <em>Figure 13. A tag &lt;u&gt; é usada para sublinhar um texto.</em>
                 <br>
@@ -383,7 +383,7 @@
                     Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
                 </div>
                 <br>
-                <img src="../assets/img/figure14.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure14.png" alt="Código" class="img-fluid">
                 <br>
                 <p class="Texto">A tag <span class="code-color"><strong>&lt;tt&gt;</strong></span> não é suportada em HTML5. Os navegadores ainda a exibem como esperado; porém, é preferível usar tags mais apropriadas, como <span class="code-color"><strong>&lt;code&gt;</strong></span>, <span class="code-color"><strong>&lt;kbd&gt;</strong></span>, <span class="code-color"><strong>&lt;var&gt;</strong></span> e <span class="code-color"><strong>&lt;samp&gt;</strong></span>.</p>
                 <br>
@@ -397,7 +397,7 @@
                 </div>
                 <br>
                 <div class="image-content">
-                    <img src="../assets/img/figure15.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure15.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <em>Figure 15. A tag &lt;em&gt; é usada para enfatizar o texto</em>
@@ -411,7 +411,7 @@
                 </div>
                 <br>
                 <div class="image-content">
-                    <img src="../assets/img/figure15.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure15.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <em>Figure 16. A tag &lt;strong&gt; é usada para marcar a importância de um texto.</em>
@@ -426,7 +426,7 @@
                 </div>
                 <br>
                 <div class="image-content">
-                    <img src="../assets/img/figure17.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure17.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <em>Figure 17. A tag &lt;code&gt; é usada para inserir um trecho de código de computador.</em>
@@ -438,7 +438,7 @@
                 </div> 
                 <br>
                 <div class="image-content">
-                <img src="../assets/img/figure18.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure18.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <em>Figure 18. A tag &lt;mark&gt; é usada para para realçar um texto com um fundo amarelo<em>
@@ -480,7 +480,7 @@
     </pre></code>
   </div>
   <div style="flex-basis: 50%; padding: 10px;">
-    <img src="../assets/img/figure19.png" alt="Código" class="img-fluid">
+    <img src="../../assets/img/figure19.png" alt="Código" class="img-fluid">
   </div>
 </div>
             <em>Figure 19. A página HTML com alguns elementos de formatação.</em>
@@ -541,7 +541,7 @@ field() {
                     </div>
                 <p class="Texto">Um navegador web exibiria este código como mostrado na <em>Figure 21</em>.</p>
                 <div class="image-content">
-                    </img src="../assets/img/figure21.png" alt="Código" class="img-fluid">
+                    </img src="../../assets/img/figure21.png" alt="Código" class="img-fluid">
                 </div>
                 <p><em>Figure 21. Representação do documento de teste em um navegador, ilustrando as diferenças entre os elementos
                 parágrafo, div e span em HTML.</em></p>
@@ -837,7 +837,7 @@ field() {
     </pre></code>
   </div>
             <p class="Texto">Em um navegador web, a página inteira é exibida como na <em>Figure 22</em>.</p>
-            <img src="../assets/img/figure22.png" alt="Código" class="img-fluid">
+            <img src="../../assets/img/figure22.png" alt="Código" class="img-fluid">
             <br>
             <p><em>Figure 22. Representação do documento HTML resultante em um navegador web, combinando todos os exemplos anteriores. A página representa um convite para uma festa ao ar livre, com a programação do evento e uma lista de coisas para os convidados levarem.</em></p>
             </div>
@@ -845,6 +845,6 @@ field() {
             </div>
         </div>
     </div>
-    <a href="../questoesModulo01/unidade02.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
+    <a href="../../questoesModulo01/unidade02.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
     <br><br>
-    <?php include('../layouts/footer.php') ?>
+    <?php include('../../layouts/footer.php') ?>

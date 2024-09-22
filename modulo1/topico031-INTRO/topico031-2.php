@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../../layouts/header.php');
 ?>
 
 <body>
@@ -30,7 +30,7 @@
                 <p class="Subtopico"><strong>Clientes e servidores</strong></p>
                 <p class="Texto">No modelo cliente/servidor, parte do trabalho é feito localmente no <em>lado do cliente</em> e parte do trabalho é feito remotamente, no <em>lado do servidor</em>. As tarefas realizadas por cada parte variam de acordo com a finalidade do aplicativo, mas em geral cabe ao cliente fornecer uma interface para o usuário e exibir o conteúdo de forma atraente. Cabe ao servidor executar a parte operacional do aplicativo, processando e respondendo às solicitações feitas pelo cliente. Em um aplicativo de compras, por exemplo, o aplicativo cliente apresenta uma interface para o usuário escolher e pagar pelos produtos, mas a fonte de dados e os registros da transação são mantidos no servidor remoto, acessado pela rede. Os aplicativos web realizam essa comunicação pela internet, geralmente por meio do <span class="code-color"><strong>Protocolo de Transferência de Hipertexto (HTTP)</strong></span>.</p>
                 <div class="image-content">
-                    <img src="../assets/img/server-side.png" alt="Modelo cliente/servidor">
+                    <img src="../../assets/img/server-side.png" alt="Modelo cliente/servidor">
                 </div>
                 <p class="Texto">Depois de carregado pelo navegador, o lado do cliente do aplicativo inicia a interação com o servidor sempre que necessário ou conveniente. Os servidores de aplicativos web oferecem uma <span class="code-color"><em>interface de programação de aplicativos (API)</em></span> que define as solicitações disponíveis e como devem ser feitas. Assim, o cliente constrói uma solicitação no formato definido pela API e a envia ao servidor, que verifica os pré-requisitos da solicitação e envia de volta a resposta apropriada</p>
                 <p class="Texto">Enquanto o cliente, na forma de um aplicativo móvel ou navegador de desktop, é um programa independente em relação à interface do usuário e às instruções para se comunicar com o servidor, o navegador deve obter a página HTML e os componentes associados — como imagens, CSS e JavaScript — que definem a interface e as instruções para comunicação com o servidor.</p>
@@ -41,7 +41,7 @@
                         <p class="Texto">Os desenvolvedores têm controle direto sobre o servidor; assim, eles também podem modificar o cliente fornecido por ele. Isso permite que os desenvolvedores aprimorem o aplicativo, em maior ou menor grau, sem que o usuário precise formalmente instalar novas versões</p>
                     </div>
                     <div class="image-side" id="image-content" style="margin-top: -50px;  margin-bottom: 0;">
-                        <img src="../assets/img/dev-meme.png" alt="Meme de programação">
+                        <img src="../../assets/img/dev-meme.png" alt="Meme de programação">
                     </div>
                 </div>
                 <p class="Subtopico"><strong>O lado do cliente</strong></p>
@@ -61,14 +61,14 @@
                 <p class="Texto">O <span class="code-color"><strong>CSS</strong></span> pode ser fornecido como um arquivo separado ou diretamente no próprio arquivo HTML. O principal objetivo do CSS é refinar a aparência e o layout dos elementos da interface HTML. Embora isso não seja estritamente necessário, as interfaces mais sofisticadas geralmente requerem modificações nas propriedades CSS dos elementos para atender às suas necessidades</p>
                 <p class="Texto">O <span class="code-color"><strong>JavaScript</strong></span> é um componente praticamente indispensável. Os procedimentos escritos em JavaScript respondem a eventos no navegador. Esses eventos podem ser causados pelo usuário ou ser nãointerativos. Sem o JavaScript, um documento HTML fica praticamente limitado a texto e imagens. O uso do JavaScript em documentos HTML permite estender a interatividade muito além de hiperlinks e formulários, transformando a página exibida pelo navegador em uma interface de aplicativo convencional.</p>
                 <div class="image-content" style="padding: 20px; ">
-                    <img src="../assets/img/languages.gif" alt="Modelo cliente/servidor">
+                    <img src="../../assets/img/languages.gif" alt="Modelo cliente/servidor">
                 </div>
                 <p class="Texto">O <span class="code-color"><strong>JavaScript</strong></span> é uma linguagem de programação de propósito geral, mas seu principal uso é em aplicativos web. Os recursos do ambiente de execução do navegador são acessíveis por meio de palavras-chave em JavaScript, utilizadas em um script para realizar a operação desejada. O termo <span class="code-color"><em>document</em></span>, por exemplo, é usado no código JavaScript para se referir ao documento HTML associado a ele. No contexto da linguagem JavaScript, <span class="code-color"><em>document</em></span> é um <em>objeto global</em> com propriedades e métodos que podem ser usados para obter informações de qualquer elemento no documento HTML. Além disso, podemos usar o objeto <span class="code-color"><em>document</em></span> para modificar seus elementos e associá-los a ações personalizadas escritas em JavaScript. Um aplicativo cliente baseado em tecnologias web é multiplataforma, pois pode ser executado em qualquer dispositivo que possua um navegador compatível.</p>
                 <p class="Texto">Porém, o fato de estarem confinados ao navegador impõe limitações aos aplicativos web em comparação com os aplicativos nativos. A intermediação realizada pelo navegador permite uma programação de alto nível e aumenta a segurança, mas também aumenta as exigências de processamento e o consumo de memória.</p>
                 <p class="Texto">Os desenvolvedores estão continuamente aprimorando os navegadores para fornecer mais recursos e melhorar o desempenho dos aplicativos em JavaScript, mas existem aspectos intrínsecos à execução de scripts como o JavaScript que os deixam em desvantagem na comparação com programas nativos para o mesmo hardware.</p>
                 <p class="Texto">Um recurso que melhora bastante o desempenho dos aplicativos JavaScript em execução no navegador é o <span class="color-code"><strong>WebAssembly</strong></span>. O WebAssembly é um tipo de JavaScript compilado que produz códigofonte escrito em uma linguagem mais eficiente de nível inferior, como a linguagem C. O WebAssembly pode acelerar principalmente as atividades de uso intensivo do processador, pois evita grande parte da tradução realizada pelo navegador ao executar um programa escrito em JavaScript convencional.</p>
                 <div class="image-content" style="padding: 20px;";>
-                    <img src="../assets/img/assembly.png" alt="Modelo cliente/servidor">
+                    <img src="../../assets/img/assembly.png" alt="Modelo cliente/servidor">
                 </div>
                 <br>
                 <p class="Texto">Uma página web que atua como uma interface para um aplicativo web é como um documento HTML simples, mas com comportamentos adicionais. Nas páginas convencionais, o usuário é direcionado para outra página ao clicar em um link. Os aplicativos web podem apresentar sua interface e responder aos eventos do usuário sem carregar novas páginas na janela do navegador. A modificação desse comportamento padrão das páginas HTML é feita por meio da programação em JavaScript.</p>
@@ -103,9 +103,9 @@
             </div>
         </div>
     </div>
-    <a href="topico031-3.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
+    <a href="topico031-3.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
     <br><br><br>  
     <?php
     // A_S - Footer
-    include('../layouts/footer.php');
+    include('../../layouts/footer.php');
 ?>

@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../../layouts/header.php');
 ?>
 
 <body>
@@ -32,7 +32,7 @@
                     <div class="col-md-6 col-sm-12 col-lg-6">
                         <br>
                         <div class="image-container">
-                            <img src="../assets/img/first_Computer.jpg" alt="Computador antigo">
+                            <img src="../../assets/img/first_Computer.jpg" alt="Computador antigo">
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         <p class="Texto">Nesse sentido, o código-fonte não difere muito de qualquer outro texto em que o autor emprega as regras bem estabelecidas de uma linguagem natural para se comunicar com o leitor. No caso do código-fonte, o “leitor” é a própria máquina e, portanto, o texto não pode conter ambigüidades ou inconsistências, nem mesmo as mais sutis. E como qualquer texto que discuta algum tópico em profundidade, o código-fonte também precisa ser bem estruturado e organizado de forma lógica ao se desenvolver aplicativos complexos. Programas muito simples e exemplos didáticos podem ser armazenados em poucas linhas de um único arquivo de texto contendo todo o código-fonte do programa. Programas mais complexos podem ser subdivididos em milhares de arquivos, cada um com milhares de linhas</p>
                     </div>
                     <div class="image-side">
-                        <img src="../assets/img/codigo.gif" alt="GIF de código">
+                        <img src="../../assets/img/codigo.gif" alt="GIF de código">
                     </div>
                 </div>
                 <p class="Texto">O código-fonte dos aplicativos profissionais deve ser organizado em pastas diferentes, geralmente associadas a uma finalidade específica. Um programa de chat, por exemplo, pode ser organizado em duas pastas: uma que contém os arquivos de código que tratam da transmissão e recepção de mensagens pela rede e outra com os arquivos que constituem a interface e reagem às ações do usuário. De fato, é comum que haja muitas pastas e subpastas com arquivos de código-fonte dedicados a tarefas extremamente específicas dentro do aplicativo.</p>
@@ -79,7 +79,7 @@
                     <div class="image-side">
                             <div class="video-container">
                             <video autoplay loop muted>
-            <source src="../assets/img/GitHub.mp4" type="video/mp4">
+            <source src="../../assets/img/GitHub.mp4" type="video/mp4">
         </video>
                      </div>
                     </div>
@@ -197,9 +197,9 @@
             </div>
         </div>
     </div>
-    <a href="topico031-2.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
+    <a href="topico031-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
     <br><br>
     <?php
     // A_S - Footer
-    include('../layouts/footer.php');
+    include('../../layouts/footer.php');
 ?>

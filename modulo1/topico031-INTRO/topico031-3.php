@@ -29,7 +29,7 @@
                 <p class="Texto">Mais especificamente, HTTP é o conjunto de regras que definem como o aplicativo cliente deve formatar as mensagens de <em>solicitação</em> que serão enviadas ao servidor. O servidor então segue as regras do HTTP para interpretar a solicitação e formatar mensagens de <em>resposta</em>. Além de solicitar ou transferir o conteúdo solicitado, as mensagens HTTP contêm informações extras sobre o cliente e o servidor envolvidos, sobre o conteúdo em si e até mesmo sobre sua indisponibilidade. Se um recurso não puder ser enviado, um código na resposta explica o motivo da indisponibilidade e, se possível, indica para onde o recurso foi movido</p>
                 <p class="Texto">A parte da mensagem que define os detalhes do recurso e outras informações de contexto é chamada de <em>cabeçalho</em> da mensagem. A parte após o cabeçalho, que contém o conteúdo do recurso correspondente, é chamada de <em>corpo de dados</em> (ou carga) da mensagem. Tanto as mensagens de solicitação quanto as mensagens de resposta podem ter um corpo de dados, mas na maioria dos casos ele está presente apenas na mensagem de resposta.</p>
                 <div class="image-content">
-                    <img src="../assets/img/http.png" alt="HTTP">
+                    <img src="../../assets/img/http.png" alt="HTTP">
                 </div>
                 <br>
                 <p class="Subtopico"><strong>A solicitação do cliente</strong></p>
@@ -52,7 +52,7 @@
                 </div>
                 <br>
                 <div class="image-content">
-                    <img src="../assets/img/url.png" alt="Componentes da URL">
+                    <img src="../../assets/img/url.png" alt="Componentes da URL">
                 </div>
                 <p class="Subtopico"><strong>Como o cliente lida com a URL</strong></p>
                 <p class="Texto">Antes de contatar o servidor, o cliente precisa converter <span class="code-color"><em>learning.lpi.org_</em></span> para o endereço IP correspondente. O cliente usa outro serviço de Internet, o <em>Sistema de Nomes de Domínio (Domain Name System ou DNS)</em>, para solicitar o endereço IP de um nome de host a um ou mais servidores DNS predefinidos (em geral, os servidores DNS são definidos automaticamente pelo provedor).</p>
@@ -270,7 +270,7 @@
         </div>
     </div>
     <br>
-    <a href="../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Atividade!</span></a>
+    <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Atividade!</span></a>
     <br><br><br>     
     
 
@@ -278,7 +278,7 @@
 </html>
 <?php
     // A_S - Footer
-    include('../layouts/footer.php');
+    include('../../layouts/footer.php');
 ?>
 
     

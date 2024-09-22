@@ -8,7 +8,7 @@
 <body>
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../../layouts/header.php');
 ?>
 
 <body>
@@ -79,7 +79,7 @@
             <p class="Texto">As aspas duplas não são obrigatórias para atributos de palavra única como <span class="code-color"><em>type</em></span>, portanto <span class="code-color"><em>type=text</em></span>funciona tão bem quanto <span class="code-color"><em>type="text"</em></span>. O desenvolvedor pode escolher a convenção que prefere usar.</p>
             <p class="Texto">Salve o novo conteúdo e recarregue a página no navegador. Você deverá ver o resultado mostrado <em>Figure 23</em>.</p>
             <br>
-            <div class="image-content"><img src="../assets/img/figure23.png" alt="Código" class="img-fluid">
+            <div class="image-content"><img src="../../assets/img/figure23.png" alt="Código" class="img-fluid">
             </div>
             <p><em>Figure 23. Um formulário bem básico</em></p>
             <p class="Texto">A tag <strong>&lt;form&gt;</strong> em si não produz nenhum resultado perceptível na página. Os elementos dentro das
@@ -266,7 +266,7 @@
   </div>
               <p class="Texto">A <em>Figure 24</em> mostra como a versão para desktop do Firefox apresenta esse campo atualmente.</p>
               <div class="image-content">
-                <img src="../assets/img/figure24.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure24.png" alt="Código" class="img-fluid">
               </div>
               <br>
               <p><em>Figure 24. O tipo de entrada de data.</em></p>
@@ -302,7 +302,7 @@
                 <p class="Texto">O marcador de posição aparece dentro do elemento de inserção de dados, conforme mostrado na  <em>Figure 25</em>.</p>
                 <br>
                 <div class="image-content">
-                  <img src="../assets/img/figure25.png" alt="Código" class="img-fluid">
+                  <img src="../../assets/img/figure25.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p class="Texto">Assim que o visitante começa a digitar no campo, o texto do marcador de posição desaparece. O texto do marcador de posição não é enviado como o valor do campo caso o visitante deixe o campo vazio.</p>
@@ -324,7 +324,7 @@
                   <p class="Texto">A aparência típica de um textarea é mostrado na <em>Figure 26</em>.</p>
                   <br>
                   <div class="image-content">
-                    <img src="../assets/img/figure26.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure26.png" alt="Código" class="img-fluid">
                   </div>
                   <br>
                   <p><em>Figure 26. O elemento textarea.</em></p>
@@ -351,7 +351,7 @@
                   <p class="Texto">A tag <span class="code-color"><strong>&lt;option&gt;</strong></span> representa uma entrada individual no controle <strong>&lt;select&gt;</strong> correspondente. A lista completa aparece quando o visitante toca ou clica no controle, como mostrado na <em>Figure 27</em>.</p>
                   <br>
                   <div class="image-content">
-                    <img src="../assets/img/figure27.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure27.png" alt="Código" class="img-fluid">
                   </div>
                   <br>
                   <p><em>Figure 27. O elemento de formulário select.</em></p>
@@ -385,7 +385,7 @@
   </div>
   <br>
               <div class="image-content">
-                <img src="../assets/img/figure28.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure28.png" alt="Código" class="img-fluid">
               </div>
               <br>
               <p><em>Figure 28. Elementos de entrada do tipo radio</em></p>
@@ -420,7 +420,7 @@
             <p class="Texto">As caixas de seleção também podem usar o atributo checked para pré-selecionar opções por padrão. Em vez dos controles redondos da entrada radio, as caixas de seleção são apresentadas comocontroles quadrados, como mostrado na <em>Figure 29</em>.</p>
             <br>
             <div class="image-content">
-              <img src="../assets/img/figure29.png" alt="Código" class="img-fluid">
+              <img src="../../assets/img/figure29.png" alt="Código" class="img-fluid">
             </div>
             <br>
             <p><em>Figure 29. O tipo de entrada checkbox</em></p>
@@ -453,7 +453,7 @@
   </div>
   <br>
                 <div class="image-content">
-                  <img src="../assets/img/figure30.png" alt="Código" class="img-fluid">
+                  <img src="../../assets/img/figure30.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p><em>Figure 30. Agrupando elementos com a tag fieldset</em></p>
@@ -489,7 +489,7 @@
                 </div>
                 <br>
                 <div class="image-content">
-                  <img src="../assets/img/figure31.png" alt="Código" class="img-fluid">
+                  <img src="../../assets/img/figure31.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p><em>Figure 31. Um botão de envio padrão.</em></p>
@@ -544,8 +544,8 @@
             </div>
         </div>
     </div>
-    <a href="../questoesModulo01/unidade04.php" class="button-prox"><img src="../assets/img/arrow-circle-right.png" alt="" class="next"></a>
+    <a href="../..questoesModulo01/unidade04.php" class="button-prox"><img src="../../assets/img/arrow-circle-right.png" alt="" class="next"></a>
     <br><br>
-    <?php include('../layouts/footer.php') ?>
+    <?php include('../../layouts/footer.php') ?>
 </body>
 </html>
