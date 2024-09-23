@@ -351,7 +351,7 @@
                   <p class="Texto">A tag <span class="code-color"><strong>&lt;option&gt;</strong></span> representa uma entrada individual no controle <strong>&lt;select&gt;</strong> correspondente. A lista completa aparece quando o visitante toca ou clica no controle, como mostrado na <em>Figure 27</em>.</p>
                   <br>
                   <div class="image-content">
-                    <img src="../assets/img/figure27.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure27.png" alt="Código" class="img-fluid">
                   </div>
                   <br>
                   <p><em>Figure 27. O elemento de formulário select.</em></p>
@@ -365,27 +365,187 @@
 
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
       <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-code">radio</span><span class="blue-code">id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
+      <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-firefox"</ span><span class="code-color"><strong>&gt;</strong></span>Mozilla Firefox<span class ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">radio</span><span  class="blue-code">id=</span><span class="orange-code">"browser-chrome "</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class ="orange-code">"chrome "</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome "</ span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">radio</span><span  class="blue-code">id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"opera "</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</ span><span class="code-color"><strong>&gt;</strong></span>Opera<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
 
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">radio</span><span  class="blue-code">id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"edge"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-edge"</span><span class="code-color"><strong>&gt;</strong></span>>Microsoft Edge<span  class="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     </pre></code>
   </div>
-                  
-                  
-                
+  <br>
+              <div class="image-content">
+                <img src="../../assets/img/figure28.png" alt="Código" class="img-fluid">
+              </div>
+              <br>
+              <p><em>Figure 28. Elementos de entrada do tipo radio</em></p>
+              <br>
+              <p class="Texto">Observe que todos os tipos de entrada <span class="code-color"><em>radio</em></span> no mesmo grupo têm o mesmo atributo <span class="code-color"><em>name</em></span>. Cada um deles é exclusivo, de modo que o atributo value correspondente à entrada escolhida será associado ao atributo name compartilhado. O atributo <span class="code-color"><em>checked</em></span> funciona como o atributo <span class="code-color"><em>selected</em></span> do controle <strong>&lt;select&gt;</strong>. Ele marca a entrada correspondente quando a página é carregada pela primeira vez. A tag <strong>&lt;label&gt;</strong> é especialmente útil para as entradas de radio, porque permite ao visitante marcar uma opção clicando ou tocando no texto correspondente, além do próprio controle.</p>
+              <p class="Texto">Enquanto os controles radio se destinam a selecionar uma única opção em uma lista, o tipo de entrada <span class="code-color"><em>checkbox</em></span> (caixa de seleção) permite que o visitante marque diversas opções:</p>
+              <br>
+              <div class="typewriter-small" style="width: 50%; text-align: left">
+  <pre><code>
+  <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-code">"checkbox"</span><span class="blue-code">id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
+      <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-firefox"</span><span class="code-color"><strong>&gt;</strong></span>Mozilla Firefox<span class ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-chrome "</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class ="orange-code">"chrome "</span><span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome "</ span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"opera "</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</span><span class="code-color"><strong>&gt;</strong></span>Opera<span  class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"edge"</span><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-edge"</span><span class="code-color"><strong>&gt;</strong></span>Microsoft Edge<span  class="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    </pre></code>
+  </div>
+  <br>
+            <p class="Texto">As caixas de seleção também podem usar o atributo checked para pré-selecionar opções por padrão. Em vez dos controles redondos da entrada radio, as caixas de seleção são apresentadas comocontroles quadrados, como mostrado na <em>Figure 29</em>.</p>
+            <br>
+            <div class="image-content">
+              <img src="../../assets/img/figure29.png" alt="Código" class="img-fluid">
+            </div>
+            <br>
+            <p><em>Figure 29. O tipo de entrada checkbox</em></p>
+            <br>
+            <p class="Texto">Se mais de uma opção for selecionada, o navegador as enviará com o mesmo nome, exigindo que o desenvolvedor de back-end escreva um código específico para ler corretamente os dados do formulário contendo caixas de seleção.</p>
+            <p class="Texto">Para melhorar a usabilidade, os campos de entrada podem ser agrupados dentro de uma tag <span class="code-color"><strong>&lt;fieldset&gt;</strong></span>:</p>
+            <br>
+            <div class="typewriter-small" style="width: 50%; text-align: left">
+  <pre><code>
+  <span class="code-color"><strong>&lt;fieldset&gt;</strong></span>
+  <span class="code-color"><strong>&lt;legend&gt;</strong></span> Browser favorito:<span class="code-color"><strong>&lt;/legend&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-code">"checkbox"</span><span class="blue-code">id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
+      <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-firefox"</span><span class="code-color"><strong>&gt;</strong></span>Mozilla Firefox<span class ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-chrome "</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class ="orange-code">"chrome "</span><span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome "</ span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"opera "</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</span><span class="code-color"><strong>&gt;</strong></span>Opera<span  class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"edge"</span><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-edge"</span><span class="code-color"><strong>&gt;</strong></span>Microsoft Edge<span  class="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/fieldset&gt;</strong></span>
+    </pre></code>
+  </div>
+  <br>
+                <div class="image-content">
+                  <img src="../../assets/img/figure30.png" alt="Código" class="img-fluid">
+                </div>
+                <br>
+                <p><em>Figure 30. Agrupando elementos com a tag fieldset</em></p>
+                <br>
+                <p class="Texto">A tag <span class="code-color"><strong>&lt;legend&gt;</strong></span> contém o texto que é posto no alto do quadro que a tag <span class="code-color"><strong>&lt;fieldset&gt;</strong></span> desenha em torno dos controles (Figure 30).</p>
+                <br>
+                <p class="Subtopico"><strong>O tipo de elemento hidden</strong></p>
+                <p class="Texto">Em certas situações, o desenvolvedor precisa incluir no formulário informações que não podem ser manipuladas pelo visitante, ou seja, enviar um valor escolhido pelo desenvolvedor sem que haja um campo no formulário onde o visitante possa digitar ou alterar o valor. Isso serviria, por exemplo, para incluir um token de identificação, que não precisa ser visto pelo visitante, para aquele formulário específico. Um elemento oculto de formulário seria escrito como no exemplo a seguir:</p>
+                <br>
+                <div style class="typewriter-small" style="width: 50%; text-align: left;">
+                <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code">type=</span><span class="orange-code">"hidden "</span> <span class="blue-code">id=</span><span class="orange-code">"form-token"</span> <span class="blue-code">name=</span><span class ="orange-code">"form-token"</span> <span class="blue-code">value=</span><span class="orange-code">"e730a375-b953-4393-847d-2dab065bbc92"</span><span class="code-color"><strong>&gt;</strong></span>
+                </div>
+                <br>
+                <p class="Texto">O valor de um campo de entrada oculto é geralmente adicionado ao documento no lado do servidor, no momento de renderizar o documento. As entradas ocultas são tratadas como campos comuns quando o navegador as envia ao servidor, que também as lê como campos de entrada comuns.</p>
+                <br>
+                <p class="Subtopico"><strong>O tipo de entrada de arquivo</strong></p>
+                <p class="Texto">Além dos dados textuais, que são digitados ou selecionados em uma lista, os formulários HTML também podem enviar arquivos arbitrários ao servidor. O tipo de entrada <span class="code-color"><em>file</em></span> permite ao visitante escolher um arquivo em seu sistema de arquivos local e enviá-lo diretamente pela página</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left ">
+                <span class="code-color"><strong>&lt;p&gt;</strong></span>
+                <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for=</span><span class="orange-code">"attachment"</span> <span class="code-color"><strong>&gt;</strong></span>>Attachment:  <span class="code-color"><strong>&lt;/label&gt;</strong></span><span class="code-color"><strong>&lt;br&gt;</strong></span>
+                <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"file"</span><span class="blue-code">id=</span><span class="orange-code">"attachment"</span><span class="blue-code">name=</span><span class="orange-code">" attachment"</span><span class="code-color"><strong>&gt;</strong></span>
+                <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                </div>
+                <br>
+                <p class="Texto">Em vez de um campo de formulário para escrever ou selecionar um valor, o tipo de entrada file mostra um botão <span class="code-color"><em>browse</em></span> que abre uma caixa de diálogo de arquivo. Qualquer tipo de arquivo é aceito pelo tipo de entrada <span class="code-color"><em>file</em></span>, mas normalmente o desenvolvedor back-end restringe os tipos de arquivo permitidos e seu tamanho máximo. A verificação do tipo de arquivo também pode ser realizada no front-end, adicionando-se o atributo <span class="code-color"><em>accept</em></span>. Para aceitar apenas imagens JPEG e PNG, por exemplo, o atributo <span class="code-color"><em>accept</em></span> deve ser <em>accept="image/jpeg, image/png"</em>.</p>
+                <br>
+                <p class="Subtopico"><strong>Botões de ação</strong></p>
+                <p class="Texto">Por padrão, o formulário é enviado quando o visitante pressiona a tecla Enter em qualquer campo de entrada. Para tornar as coisas mais intuitivas, um botão de envio deve ser adicionado com o tipo de entrada <span class="code-color"><em>submit</em></span>:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left ">
+                <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code">type=</span><span class="orange-code">"submit "</span> <span class="blue-code">value=</span><span class="orange-code">"Enviar"</span><span class="code-color"><strong>&gt;</strong></span>
+                </div>
+                <br>
+                <div class="image-content">
+                  <img src="../../assets/img/figure31.png" alt="Código" class="img-fluid">
+                </div>
+                <br>
+                <p><em>Figure 31. Um botão de envio padrão.</em></p>
+                <br>
+                <p class="Texto">Outro botão útil a se incluir em formulários complexos é o botão <span class="code-color"><em>reset</em></span>, que limpa o formulário e o devolve ao seu estado original:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left"><span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"reset"</span><span class="code-color"><strong>&gt;</strong></span>
+                </div>
+                <br>
+                <p class="Texto">Como no caso do botão de enviar, o texto do atributo <span class="code-color"><em>value</em></span> é usado para rotular o botão. Alternativamente, a tag <span class="code-color"><strong>&lt;button&gt;</strong></span> pode ser usada para adicionar botões em formulários ou em qualquer outro lugar da página. Ao contrário dos botões feitos com a tag <span class="code-color"><strong>&lt;input&gt;</strong></span>, o elemento de botão tem uma tag de fechamento e o rótulo do botão é seu conteúdo interno:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left ">
+                <span class="code-color"><strong>&lt;button</strong></span>Enviar formulário<span class="code-color"><strong>&lt;/button&gt;</strong></span>
+                </div>
+                <br>
+                <p class="Texto">Quando dentro de um formulário, a ação padrão do elemento <span class="code-color"><strong>button</strong></span> é enviar o formulário. Como no caso dos botões de input, o atributo do tipo button pode ser alterado para <span class="code-color"><em>reset</em></span>.</p>
+                <br>
+                <p class="Subtopico"><strong>Ações e métodos do formulário</strong></p>
+                <p class="Texto">A última etapa ao se escrever um formulário HTML é definir como e para onde os dados devem ser enviados. Esses aspectos dependem dos detalhes do cliente e do servidor.</p>
+                <p class="Texto">No lado do servidor, a abordagem mais comum é configurar um arquivo de script para analisar, validar e processar os dados do formulário de acordo com a finalidade do aplicativo. Por exemplo, o desenvolvedor back-end pode escrever um script chamado <em>receive_form.php</em> para receber os dados enviados do formulário. No lado do cliente, o script é indicado no atributo action da tag do  formulário:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align:left">
+                  <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="code-color"><strong>&gt;</strong></span>
+                </div>
+                <br>
+                <p class="Texto">O atributo <span class="code-color"><em>action</em></span> segue as mesmas convenções de todos os endereços HTTP. Se o script estiver no mesmo nível de hierarquia da página que contém o formulário, ele pode ser escrito sem o caminho completo. Caso contrário, o caminho absoluto ou relativo deve ser fornecido. O script também deve gerar a resposta que servirá como página de destino, carregada pelo navegador após o visitante enviar o formulário.</p>
+                <p class="Texto">O HTTP proporciona métodos distintos para enviar dados de formulário por meio de uma conexão com o servidor. Os métodos mais comuns são <span class="code-color"><em>get</em></span> e <span class="code-color"><em>post</em></span>, que devem ser indicados no atributo method da tag <span class="code-color"><strong>form</strong></span>:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left ">
+                  <span class="code-color"><strong>&lt;form</strong></span> <span class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code">"get"</span> <span class="code-color"><strong>&gt;</strong></span>
+                </div>
+                <br>
+                <p class="Texto">Ou:</p>
+                <br>
+                <div class="typewriter-small" style="width: 50%; text-align: left  "> 
+                  <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code ">"post"</span><span class="code-color"><strong>&gt;</strong></span>
+                </div>
+                <br>
+                <p class="Texto">No método <span class="code-color"><em>get</em></span>, os dados do formulário são codificados diretamente na URL de solicitação. Quando o visitante envia o formulário, o navegador carrega a URL definida no atributo action com os campos do formulário anexados a ela.</p>
+                <p class="Texto">O método <span class="code-color"><em>get</em></span> é preferível para pequenas quantidades de dados, como formulários de contato simples. No entanto, a URL não pode exceder alguns milhares de caracteres, de modo que o método post deve ser usado quando os formulários contêm campos grandes ou não textuais, como imagens.</p>
+                <p class="Texto">O método <span class="code-color"><em>post</em></span> faz com que o navegador envie os dados do formulário na seção do corpo da solicitação HTTP. Embora necessário para dados binários que excedem o limite de tamanho de uma URL, o método post adiciona uma sobrecarga desnecessária à conexão quando usado com formas textuais mais simples, por isso o método get é preferível nesses casos.</p>
+                <p class="Texto">O método escolhido não afeta a forma como o visitante interage com o formulário. Os métodos get e post são processados de forma diferente pelo script do lado do servidor que recebe o formulário.</p>
+                <p class="Texto">Ao usar o método post, também é possível alterar o tipo MIME do conteúdo do formulário com o atributo de formulário enctype. Ele afeta a maneira como os campos e valores do formulário serão empilhados na comunicação HTTP com o servidor. O valor padrão para enctype é <em>application/xwww-form-urlencoded</em>, semelhante ao formato usado no método get. Se o formulário contiver campos de entrada do tipo file, é necessário usar o enctype <em>multipart/form-data</em>.</p>
+
+
+
 
                 
 
 
-
-
-
-            
 
             </div>
         </div>
     </div>
     <a href="../questoesModulo01/unidade04.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
-    <br><br>
+
     <?php include('../layouts/footer.php') ?>
 </body>
 </html>

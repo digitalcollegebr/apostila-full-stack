@@ -1,5 +1,5 @@
 
-<?php include '../layouts/header.php'; ?>
+<?php include '../../layouts/header.php'; ?>
 
 
 
@@ -115,7 +115,7 @@
         <br>
         <p class="Subtopico"><strong>Comentários em HTML</strong></p>
         <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:</p>
-        <div class="typewriter-small">
+        <div class="typewriter-small" style="width: 50%; color: #797979;">
                 &lt;!--Isto é um comentário--&gt;<br>
                 &lt;!--Isto são<br>
                 múltiplos<br>
@@ -138,11 +138,11 @@
         <p class="Texto">As tags HTML podem incluir um ou mais atributos para especificar detalhes do elemento HTML.
         Uma tag simples com dois atributos tem o seguinte formato:</p>
         <br>
-        <div class="typewriter-small">
+        <div class="typewriter-small" style="width: 50%;">
                 <span class="code-color">&lt;tag</span> <span class="blue-code">attribute-a=</span> <span class="orange-code">"value-a"</span> <span class="blue-code">attribute-b=</span><span class="orange-code">"value-b"</span><span class="code-color">&gt;</span>
         </div>
         <p class="Texto">Os atributos devem ser definidos na tag de abertura.</p>
-        <p class="Texto">Um atributo consiste em um nome, que indica a propriedade a ser definida, um sinal de igual, mais o valor desejado entre aspas. As aspas podem ser simples ou duplas, mas recomenda-se manter o uso de aspas simples ou duplas de forma consistente em todo o projeto. É importante não misturar aspas simples e duplas em um mesmo valor de atributo, pois o navegador web não reconhecerá aspas mistas como uma unidade</p>
+        <p class="Texto">Um atributo consiste em um nome, que indica a propriedade a ser definida, um sinal de igual, mais o valor desejado entre aspas. As aspas podem ser simples ou duplas, mas recomenda-se manter o uso de aspas simples ou duplas de forma consistente em todo o projeto. É importante não misturar aspas simples e duplas em um mesmo valor de atributo, pois o navegador web não reconhecerá aspas mistas como uma unidade.</p>
         <br>
         <div class="destaques wow fadeIn" data-wow-delay="0.3s">
                     <div class="Caixa TituloExemplo">
@@ -177,7 +177,7 @@
             <div class="notice" id="especial-text"><span class="code-color">style</span></div>
             <div class="separator"></div>
             <div class="notice-side">
-                <p class="Texto">Atribui propriedades gráficas (estilos CSS) ao elemento</p>
+                <p class="Texto">Atribui propriedades gráficas (estilos CSS) ao elemento.</p>
             </div>
         </div>
         <br>
@@ -211,7 +211,7 @@
 
         <p class="Subtopico"><strong>Atributos Específicos</strong></p>
         
-        <p class="Texto">Outros atributos são específicos a cada elemento HTML. Por exemplo, o atributo src de um elemento HTML <span class="code-color"><strong> &lt;img&gt;</strong></span> especifica a URL de uma imagem. Existem muitos outros atributos específicos, que serão abordados nas próximas lições</p>
+        <p class="Texto">Outros atributos são específicos a cada elemento HTML. Por exemplo, o atributo src de um elemento HTML <span class="code-color"><strong> &lt;img&gt;</strong></span> especifica a URL de uma imagem. Existem muitos outros atributos específicos, que serão abordados nas próximas lições.</p>
         <br>
         <p class="Subtopico"><strong>Cabeçalho do documento</strong></p>
         <p class="Texto">O cabeçalho do documento define as metainformações sobre a página e é descrito pelo elemento &lt;head&gt;. Por padrão, as informações no cabeçalho do documento não são processadas pelo navegador web. Embora seja possível incluir, dentro do elemento &lt;head&gt;, elementos HTML que podem ser exibidos na página, a prática não é recomendada.</p>
@@ -246,7 +246,7 @@
             <div class="notice" id="especial-text"><span class="code-color">name</span></div>
             <div class="separator"></div>
             <div class="notice-side">
-                <p class="Texto">Define quais metadados serão descritos neste elemento. Pode ser definido para qualquer valor personalizado, mas os valores comumente usados são <em>author, description e keywords..</em></p>
+                <p class="Texto">Define quais metadados serão descritos neste elemento. Pode ser definido para qualquer valor personalizado, mas os valores comumente usados são <em>author, description e keywords.</em></p>
             </div>
         </div>
         <br>
@@ -296,7 +296,7 @@
                             NOTE 
                     </div>
                     <div class="CaixaConteudo ConteudoExemplo">
-                        <p class="Texto">No passado, os spammers inseriam centenas de palavras-chave e descrições que não tinham nada a ver com o conteúdo real da página, de forma que elas também apareciam em pesquisas não relacionadas aos termos que as pessoas procuravam. Hoje em dia, as tags &lt;meta&gt; foram relegadas a uma posição de importância secundária e são usadas apenas para consolidar os tópicos tratados na página em si; portanto, não é mais possível enganar os novos e mais sofisticados algoritmos dos mecanismos de busca</p>
+                        <p class="Texto">No passado, os spammers inseriam centenas de palavras-chave e descrições que não tinham nada a ver com o conteúdo real da página, de forma que elas também apareciam em pesquisas não relacionadas aos termos que as pessoas procuravam. Hoje em dia, as tags &lt;meta&gt; foram relegadas a uma posição de importância secundária e são usadas apenas para consolidar os tópicos tratados na página em si; portanto, não é mais possível enganar os novos e mais sofisticados algoritmos dos mecanismos de busca.</p>
                     </div>
         </div>
         <br>
@@ -304,13 +304,13 @@
         documento se atualize</strong></p>
         <br>
         <p class="Texto">Usando a tag &lt;meta&gt;, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
-        <div class="typewriter-small">
+        <div class="typewriter-small" style="width: 50%;">
         <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30"</span><span class="code-color">&gt;</span>
         </div>
         <br>
         <p class="Texto">Outra alternativa é redirecionar uma página web para outra página web após o mesmo período de tempo com o seguinte código:</p>
         <br>
-        <div class="typewriter-small">
+        <div class="typewriter-small" style="width: 50%;">
         <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30;url=http://www.lpi.org"</span><span class="code-color">&gt;</span>
         </div>
         <p class="Texto">Neste exemplo, o usuário é redirecionado da página atual para <a class="code-color"href="http://www.lpi.org" target="_blank">http://www.lpi.org</a> após 30 segundos. Os valores podem ser os que você preferir. Se especificarmos, por exemplo, content="0;url=http://www.lpi.org", a página será redirecionada imediatamente.</p>
@@ -318,7 +318,7 @@
         <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
         <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
         <br>
-        <div class="typewriter-small">
+        <div class="typewriter-small" style="width: 30%;">
         <span class="code-color">&lt;meta</span> <span class="blue-code">charset=</span> <span class="orange-code">"utf-8"<span class="code-color">&gt;</span>
         </div>
         <p class="Texto">Este elemento especifica que a codificação de caracteres do documento é utf-8, um conjunto de caracteres universal que inclui praticamente qualquer caractere de qualquer idioma humano. Portanto, ao usá-lo, você evita problemas de exibição que poderiam surgir se escolhesse outros conjuntos de caracteres, como o ISO-8859-1 (o alfabeto latino).
@@ -338,11 +338,10 @@
         </div>
         </div>
     </div>
-    <a href="../questoesModulo01/unidade01.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
-    <br><br><br>
+    <a href="../../questoesModulo01/unidade01.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
     
 
-<?php include('../layouts/footer.php') ?>
+<?php include('../../layouts/footer.php') ?>
 
 </body>
 </html>

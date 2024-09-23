@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../../layouts/header.php');
 ?>
 
 <body>
@@ -32,7 +32,7 @@
                     <div class="col-md-6 col-sm-12 col-lg-6">
                         <br>
                         <div class="image-container">
-                            <img src="../assets/img/first_Computer.jpg" alt="Computador antigo">
+                            <img src="../../assets/img/first_Computer.jpg" alt="Computador antigo">
                         </div>
                     </div>
                 </div>
@@ -52,10 +52,10 @@
                 <p class="Texto">Da mesma forma que uma linguagem natural inclui substantivos, verbos e construções para expressar ideias de forma estruturada, as palavras e a pontuação em uma linguagem de programação são representações simbólicas de operações que serão realizadas na máquina.</p>
                 <div class="container-side">
                     <div class="text">
-                        <p class="Texto">Nesse sentido, o código-fonte não difere muito de qualquer outro texto em que o autor emprega as regras bem estabelecidas de uma linguagem natural para se comunicar com o leitor. No caso do código-fonte, o “leitor” é a própria máquina e, portanto, o texto não pode conter ambigüidades ou inconsistências, nem mesmo as mais sutis. E como qualquer texto que discuta algum tópico em profundidade, o código-fonte também precisa ser bem estruturado e organizado de forma lógica ao se desenvolver aplicativos complexos. Programas muito simples e exemplos didáticos podem ser armazenados em poucas linhas de um único arquivo de texto contendo todo o código-fonte do programa. Programas mais complexos podem ser subdivididos em milhares de arquivos, cada um com milhares de linhas</p>
+                        <p class="Texto">Nesse sentido, o código-fonte não difere muito de qualquer outro texto em que o autor emprega as regras bem estabelecidas de uma linguagem natural para se comunicar com o leitor. No caso do código-fonte, o “leitor” é a própria máquina e, portanto, o texto não pode conter ambigüidades ou inconsistências, nem mesmo as mais sutis. E como qualquer texto que discuta algum tópico em profundidade, o código-fonte também precisa ser bem estruturado e organizado de forma lógica ao se desenvolver aplicativos complexos. Programas muito simples e exemplos didáticos podem ser armazenados em poucas linhas de um único arquivo de texto contendo todo o código-fonte do programa. Programas mais complexos podem ser subdivididos em milhares de arquivos, cada um com milhares de linhas.</p>
                     </div>
                     <div class="image-side">
-                        <img src="../assets/img/codigo.gif" alt="GIF de código">
+                        <img src="../../assets/img/codigo.gif" alt="GIF de código">
                     </div>
                 </div>
                 <p class="Texto">O código-fonte dos aplicativos profissionais deve ser organizado em pastas diferentes, geralmente associadas a uma finalidade específica. Um programa de chat, por exemplo, pode ser organizado em duas pastas: uma que contém os arquivos de código que tratam da transmissão e recepção de mensagens pela rede e outra com os arquivos que constituem a interface e reagem às ações do usuário. De fato, é comum que haja muitas pastas e subpastas com arquivos de código-fonte dedicados a tarefas extremamente específicas dentro do aplicativo.</p>
@@ -74,12 +74,12 @@
                 <p class="Texto">Além disso, as ferramentas de controle de versão permitem que cada desenvolvedor da equipe trabalhe em uma cópia dos arquivos do código-fonte sem interferir no trabalho dos outros programadores. Assim que as novas versões do código-fonte estiverem prontas e testadas, as correções ou melhorias feitas em uma cópia podem ser incorporadas pelos outros membros da equipe.</p>
                 <div class="container-side">
                     <div class="text">
-                        <p class="Texto">O Git, o sistema de controle de versão mais popular hoje em dia, permite que muitas cópias independentes de um repositório sejam mantidas por diferentes pessoas, que compartilham suas alterações como desejarem. No entanto, quer o sistema de controle de versão seja centralizado ou descentralizado, a maioria das equipes mantém um único repositório confiável, com um código-fonte e recursos sólidos. Muitos serviços online oferecem espaços de armazenamento para repositórios de código-fonte. Os mais populares dentre eles são o <span class="code-color"><strong>GitHub</strong></span> e o <span class="code-color"><strong>GitLab</strong></span>, mas o <span class="code-color"><strong>Savannah</strong></span>, do projeto GNU, também vale a menção</p>
+                        <p class="Texto">O Git, o sistema de controle de versão mais popular hoje em dia, permite que muitas cópias independentes de um repositório sejam mantidas por diferentes pessoas, que compartilham suas alterações como desejarem. No entanto, quer o sistema de controle de versão seja centralizado ou descentralizado, a maioria das equipes mantém um único repositório confiável, com um código-fonte e recursos sólidos. Muitos serviços online oferecem espaços de armazenamento para repositórios de código-fonte. Os mais populares dentre eles são o <span class="code-color"><strong>GitHub</strong></span> e o <span class="code-color"><strong>GitLab</strong></span>, mas o <span class="code-color"><strong>Savannah</strong></span>, do projeto GNU, também vale a menção.</p>
                     </div>
                     <div class="image-side">
                             <div class="video-container">
                             <video autoplay loop muted>
-            <source src="../assets/img/GitHub.mp4" type="video/mp4">
+            <source src="../../assets/img/GitHub.mp4" type="video/mp4">
         </video>
                      </div>
                     </div>
@@ -88,7 +88,7 @@
                 <p class="Subtopico" style="font-size:26px;"><strong>Linguagens de programação</strong></p>
                 <p class="Subtopico"><strong>Paradigmas</strong></p>
                 <p class="Texto">Os paradigmas definem as premissas nas quais se baseia uma linguagem de programação, especialmente no que diz respeito à maneira como o código-fonte deve ser estruturado.</p>
-                <p class="Texto">O desenvolvedor parte do paradigma da linguagem para formular as tarefas a serem executadas pela máquina. Essas tarefas, por sua vez, são expressas simbolicamente com as palavras e construções sintáticas oferecidas pela linguagem</p>
+                <p class="Texto">O desenvolvedor parte do paradigma da linguagem para formular as tarefas a serem executadas pela máquina. Essas tarefas, por sua vez, são expressas simbolicamente com as palavras e construções sintáticas oferecidas pela linguagem.</p>
                 <p class="Texto">O código a seguir é um exemplo de linguagem procedural. Escrito em <span class="code-color"><strong>C</strong></span>, ele define variáveis que representam as faces, a área e o volume de formas geográficas. O valor da variável side é atribuído em <span class="code-color"><em>main()</em></span>, que é a função invocada quando o programa é executado. As variáveis <em>area e volume</em> são calculadas nas sub-rotinas <span class="code-color"><em>square()</em></span> e <span class="code-color"><em>cube()</em></span> que precedem a função principal:</p>
                 <br>
                 <div class="container-code">
@@ -139,7 +139,7 @@
             </code></pre>
         </div>
         <br>
-        <p class="Texto">A função <span class="code-color"><em>main()</em></span> ainda está presente. Mas agora temos uma nova palavra, <em>class</em> (classe), que introduz a definição de um objeto. A classe definida, chamada <em>Cube</em>, contém suas próprias variáveis e sub-rotinas. No POO, uma variável também é chamada de <em>atributo</em> e uma sub-rotina é chamada de <em>método</em></p>
+        <p class="Texto">A função <span class="code-color"><em>main()</em></span> ainda está presente. Mas agora temos uma nova palavra, <em>class</em> (classe), que introduz a definição de um objeto. A classe definida, chamada <em>Cube</em>, contém suas próprias variáveis e sub-rotinas. No POO, uma variável também é chamada de <em>atributo</em> e uma sub-rotina é chamada de <em>método</em>.</p>
         <p class="Texto">É possível criar vários objetos independentes pertencentes à mesma classe; as classes também podem ser compostas por outras classes Lembre-se de que esses mesmos recursos podem ser escritos de maneira diferente e que os exemplos deste capítulo são bem simplificados. C e C++ possuem recursos muito mais sofisticados, possibilitando construções bem mais complexas e práticas.</p>
         <p class="Texto">A maioria das linguagens de programação não impõe rigorosamente um paradigma, mas permite que os programadores escolham diversos aspectos de um paradigma ou de outro. O JavaScript, por exemplo, incorpora aspectos de diferentes paradigmas. O programador pode decompor o programa inteiro em funções que não compartilham um estado comum entre si:</p>
         <div class="code-section" style="width: 50%; text-align: left;">
@@ -152,7 +152,7 @@
         </div>
         <br>
         <p class="Texto">Embora este exemplo seja semelhante à programação procedural, note que a função recebe uma cópia de todas as informações necessárias para sua execução e sempre produz o mesmo resultado para o mesmo parâmetro, independentemente das alterações que ocorram fora do escopo da função. Este paradigma, denominado <em>funcional</em>, é fortemente influenciado pelo formalismo matemático, no qual toda operação é autossuficiente.</p>
-        <p class="Texto">Outro paradigma cobre as linguagens <em>declarativas</em>, que descrevem os estados em que se deseja que o sistema esteja. Uma linguagem declarativa pode descobrir como atingir os estados especificados. O <span class="code-color"><strong>SQL</strong></span>, a linguagem universal para consulta de bancos de dados, às vezes é chamada de linguagem declarativa, embora na verdade ocupe um nicho único no panteão da programação</p>
+        <p class="Texto">Outro paradigma cobre as linguagens <em>declarativas</em>, que descrevem os estados em que se deseja que o sistema esteja. Uma linguagem declarativa pode descobrir como atingir os estados especificados. O <span class="code-color"><strong>SQL</strong></span>, a linguagem universal para consulta de bancos de dados, às vezes é chamada de linguagem declarativa, embora na verdade ocupe um nicho único no panteão da programação.</p>
         <p class="Texto">Não existe um paradigma universal que possa ser adotado em qualquer contexto. A escolha da linguagem também pode ser restrita pelos idiomas suportados na plataforma ou ambiente de execução em que o programa será usado.</p>
         <p class="Texto">Um aplicativo web que será executado pelo navegador, por exemplo, precisa ser escrito em <span class="code-color"><strong>JavaScript</strong></span>, que é uma linguagem universalmente suportada pelos navegadores (na verdade, algumas outras linguagens podem ser usadas porque fornecem conversores para criar JavaScript). Assim, para o navegador web—às vezes chamado de <em>lado do cliente</em> ou <em>front end</em> do aplicativo web—o desenvolvedor terá de usar os paradigmas permitidos em JavaScript. O <em>lado do servidor</em> ou <em>back end</em> do aplicativo, que lida com as solicitações do navegador, normalmente é programado em uma linguagem diferente; o <span class="code-color"><strong>PHP</strong></span> é mais popular para essa finalidade.</p>
         <p class="Texto">Independentemente do paradigma, toda linguagem possui bibliotecas de funções pré-construídas que podem ser incorporadas ao código. Funções matemáticas—como as ilustradas no código de exemplo—não precisam ser implementadas do zero, pois a linguagem já tem a função pronta para uso. O JavaScript, por exemplo, fornece o objeto <span class="code-color"><em>Math</em></span>, com as operações matemáticas mais comuns.</p>
@@ -180,7 +180,7 @@
                             NOTE 
                     </div>
                     <div class="CaixaConteudo ConteudoExemplo">
-                        <p>Existem também ferramentas que automatizam o processo de compilação. Em vez de invocar o compilador diretamente, o programador cria um arquivo indicando as diferentes etapas de compilação a serem executadas automaticamente. A ferramenta tradicional usada para esse propósito é make, mas certas ferramentas mais recentes, como o Maven e o Gradle, também são bastante usadas. Todo o processo de build (a compilação final ou geração do binário) é automatizado quando se usa um IDE.</p>
+                        <p class="Texto">Existem também ferramentas que automatizam o processo de compilação. Em vez de invocar o compilador diretamente, o programador cria um arquivo indicando as diferentes etapas de compilação a serem executadas automaticamente. A ferramenta tradicional usada para esse propósito é make, mas certas ferramentas mais recentes, como o Maven e o Gradle, também são bastante usadas. Todo o processo de build (a compilação final ou geração do binário) é automatizado quando se usa um IDE.</p>
                     </div>
                 </div>
                 <br>
@@ -197,9 +197,8 @@
             </div>
         </div>
     </div>
-    <a href="topico031-2.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"></a>
-    <br><br>
+    <a href="topico031-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
     <?php
     // A_S - Footer
-    include('../layouts/footer.php');
+    include('../../layouts/footer.php');
 ?>

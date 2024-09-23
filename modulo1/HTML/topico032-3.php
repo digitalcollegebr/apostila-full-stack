@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../../layouts/header.php');
 ?>
 
 <body>
@@ -74,7 +74,7 @@
                 <p class="Texto">O SVG é o único formato que não sofre com esses efeitos, porque todas as suas informações gráficas são armazenadas em coordenadas numéricas adequadas para o redimensionamento e suas dimensões não afetam o tamanho do arquivo (daí o nome <em>Scalable Vector Graphics</em>). Por exemplo, para desenhar um retângulo em SVG, são necessárias apenas a posição, as dimensões das arestas e as informações de cor. O valor específico de cada pixel será renderizado dinamicamente posteriormente. Na verdade, as imagens SVG são semelhantes aos arquivos HTML, no sentido de que seus elementos gráficos também são definidos por tags em um arquivo de texto. Os arquivos SVG destinam-se a representar desenhos com arestas bem definidas, como gráficos ou diagramas.</p>
                 <p class="Texto">As imagens que não se enquadram nesses critérios devem ser armazenadas como bitmaps. Ao contrário dos formatos vetoriais de imagem, os bitmaps armazenam informações de cor de antemão para cada pixel da imagem. O armazenamento do valor cromático de cada pixel da imagem gera uma grande quantidade de dados e, por isso, os bitmaps geralmente são armazenados em formatos compactados, como JPEG, PNG ou GIF.</p>
                 <div class="image-content">
-                    <img src="../assets/img/Bitmap_SVG.svg" alt="Bitmap" class="img-fluid">
+                    <img src="../../assets/img/Bitmap_SVG.svg" alt="Bitmap" class="img-fluid">
                 </div>
                 <p class="Texto">O formato JPEG é recomendado para fotografias, porque seu algoritmo de compactação produz bons resultados para as sombras e fundos desfocados. Para as imagens em que prevalecem as cores sólidas, o formato PNG é o mais apropriado. Portanto, o formato PNG deve ser escolhido quando for necessário converter uma imagem vetorial em bitmap.</p>
                 <p class="Texto">O formato GIF oferece a qualidade de imagem mais baixa dentre todos os formatos de bitmap populares. No entanto, ele ainda é amplamente utilizado devido ao seu suporte para animações. De fato, muitos sites empregam arquivos GIF para exibir vídeos curtos, mas existem maneiras melhores de exibir conteúdo de vídeo.</p>
@@ -183,6 +183,6 @@
             </div>
         </div>
     </div>
-    <a href="../questoesModulo01/unidade03.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
-    <br><br>
-    <?php include('../layouts/footer.php') ?>
+    <a href="../../questoesModulo01/unidade03.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
+
+    <?php include('../../layouts/footer.php') ?>

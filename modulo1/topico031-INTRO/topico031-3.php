@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../../layouts/header.php');
 ?>
 
 <body>
@@ -26,10 +26,10 @@
                 <p class="Titulo">031.3 - Noções básicas de HTTP</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">O protocolo de transferência de hipertexto (<span class="code-color">HyperText Transfer Protocol ou HTTP</span>) define a forma como um cliente solicita um recurso específico ao servidor. O princípio de funcionamento é bastante simples: o cliente cria uma mensagem de solicitação identificando o recurso de que necessita e encaminha essa mensagem para o servidor através da rede. Por sua vez, o servidor HTTP avalia de onde extrair o recurso solicitado e envia uma mensagem de resposta de volta ao cliente. A mensagem de resposta contém detalhes sobre o recurso solicitado, seguidos do recurso em si.</p>
-                <p class="Texto">Mais especificamente, HTTP é o conjunto de regras que definem como o aplicativo cliente deve formatar as mensagens de <em>solicitação</em> que serão enviadas ao servidor. O servidor então segue as regras do HTTP para interpretar a solicitação e formatar mensagens de <em>resposta</em>. Além de solicitar ou transferir o conteúdo solicitado, as mensagens HTTP contêm informações extras sobre o cliente e o servidor envolvidos, sobre o conteúdo em si e até mesmo sobre sua indisponibilidade. Se um recurso não puder ser enviado, um código na resposta explica o motivo da indisponibilidade e, se possível, indica para onde o recurso foi movido</p>
+                <p class="Texto">Mais especificamente, HTTP é o conjunto de regras que definem como o aplicativo cliente deve formatar as mensagens de <em>solicitação</em> que serão enviadas ao servidor. O servidor então segue as regras do HTTP para interpretar a solicitação e formatar mensagens de <em>resposta</em>. Além de solicitar ou transferir o conteúdo solicitado, as mensagens HTTP contêm informações extras sobre o cliente e o servidor envolvidos, sobre o conteúdo em si e até mesmo sobre sua indisponibilidade. Se um recurso não puder ser enviado, um código na resposta explica o motivo da indisponibilidade e, se possível, indica para onde o recurso foi movido.</p>
                 <p class="Texto">A parte da mensagem que define os detalhes do recurso e outras informações de contexto é chamada de <em>cabeçalho</em> da mensagem. A parte após o cabeçalho, que contém o conteúdo do recurso correspondente, é chamada de <em>corpo de dados</em> (ou carga) da mensagem. Tanto as mensagens de solicitação quanto as mensagens de resposta podem ter um corpo de dados, mas na maioria dos casos ele está presente apenas na mensagem de resposta.</p>
                 <div class="image-content">
-                    <img src="../assets/img/http.png" alt="HTTP">
+                    <img src="../../assets/img/http.png" alt="HTTP">
                 </div>
                 <br>
                 <p class="Subtopico"><strong>A solicitação do cliente</strong></p>
@@ -52,11 +52,11 @@
                 </div>
                 <br>
                 <div class="image-content">
-                    <img src="../assets/img/url.png" alt="Componentes da URL">
+                    <img src="../../assets/img/url.png" alt="Componentes da URL">
                 </div>
                 <p class="Subtopico"><strong>Como o cliente lida com a URL</strong></p>
                 <p class="Texto">Antes de contatar o servidor, o cliente precisa converter <span class="code-color"><em>learning.lpi.org_</em></span> para o endereço IP correspondente. O cliente usa outro serviço de Internet, o <em>Sistema de Nomes de Domínio (Domain Name System ou DNS)</em>, para solicitar o endereço IP de um nome de host a um ou mais servidores DNS predefinidos (em geral, os servidores DNS são definidos automaticamente pelo provedor).</p>
-                <p class="Texto">Com o endereço IP do servidor, o cliente tenta se conectar à porta HTTP ou HTTPS. As portas de rede são números de identificação definidos pelo Protocolo de Controle de Transmissão (Transmission Control Protocol ou TCP) para entrelaçar e identificar canais de comunicação distintos em uma conexão cliente/servidor. Por padrão, os servidores HTTP recebem solicitações nas portas TCP 80 (HTTP) e 443 (HTTPS)</p>
+                <p class="Texto">Com o endereço IP do servidor, o cliente tenta se conectar à porta HTTP ou HTTPS. As portas de rede são números de identificação definidos pelo Protocolo de Controle de Transmissão (Transmission Control Protocol ou TCP) para entrelaçar e identificar canais de comunicação distintos em uma conexão cliente/servidor. Por padrão, os servidores HTTP recebem solicitações nas portas TCP 80 (HTTP) e 443 (HTTPS).</p>
                 <div class="destaques wow fadeIn" data-wow-delay="0.3s">
                     <div class="Caixa TituloExemplo">
                         <i class="fa-regular fa-pen-to-square"></i> 
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <br>
-                <p class="Texto">O cabeçalho pode conter mais linhas após a primeira, para contextualizar e ajudar a identificar a solicitação ao servidor. O campo de cabeçalho <span class="code-color"><em>Host</em></span>, por exemplo, pode parecer redundante, porque o host do servidor foi obviamente identificado pelo cliente para estabelecer a conexão e é razoável supor que o servidor conheça a sua própria identidade. No entanto, é importante informar ao host o nome de host esperado no cabeçalho da solicitação, pois é prática comum usar o mesmo servidor HTTP para hospedar mais de um site (nesse cenário, cada host específico é chamado de host virtual). Portanto, o campo <span class="code-color"><em>Host</em></span> é usado pelo servidor HTTP para identificar a qual deles a solicitação se refere</p>
+                <p class="Texto">O cabeçalho pode conter mais linhas após a primeira, para contextualizar e ajudar a identificar a solicitação ao servidor. O campo de cabeçalho <span class="code-color"><em>Host</em></span>, por exemplo, pode parecer redundante, porque o host do servidor foi obviamente identificado pelo cliente para estabelecer a conexão e é razoável supor que o servidor conheça a sua própria identidade. No entanto, é importante informar ao host o nome de host esperado no cabeçalho da solicitação, pois é prática comum usar o mesmo servidor HTTP para hospedar mais de um site (nesse cenário, cada host específico é chamado de host virtual). Portanto, o campo <span class="code-color"><em>Host</em></span> é usado pelo servidor HTTP para identificar a qual deles a solicitação se refere.</p>
                 <p class="Texto">O campo de cabeçalho <span class="code-color"><em>User-Agent</em></span> contém detalhes sobre o programa cliente que está fazendo a solicitação. Este campo pode ser usado pelo servidor para adaptar a resposta às necessidades de um cliente específico, mas é mais frequentemente empregado para produzir estatísticas sobre os clientes que usam o servidor.</p>
                 <p class="Texto">O campo <span class="code-color"><em>Accept</em></span> tem um valor mais imediato, pois informa ao servidor o formato do recurso solicitado. Se o formato do recurso for indiferente para o cliente, o campo <span class="code-color"><em>Accept</em></span> pode especificar <span class="code-color"><em>*/*</em></span> como formato.</p>
                 <p class="Texto">Existem muitos outros campos de cabeçalho que podem ser usados em uma mensagem HTTP, mas os campos mostrados no exemplo já bastam para solicitar um recurso do servidor.</p>
@@ -228,7 +228,7 @@
         <p class="Subtopico"><strong>Cache</strong></p>
         <p class="Texto">O HTTP foi criado para funcionar em qualquer tipo de conexão à internet, seja ela rápida ou lenta. Além disso, a maioria das trocas HTTP tem de atravessar muitos nós de rede devido à arquitetura distribuída da internet. Como resultado, é importante adotar alguma estratégia de cache de conteúdo para evitar a transferência redundante de conteúdo baixado anteriormente. As transferências HTTP trabalham com dois tipos básicos de cache: <em>compartilhada</em> e <em>privada</em>.</p>
         <p class="Texto">Uma cache compartilhada é usada por mais de um cliente. Por exemplo, um grande provedor de conteúdo pode usar caches em servidores distribuídos geograficamente para que os clientes obtenham os dados do servidor mais próximo. Quando um cliente faz uma solicitação, sua resposta é armazenada em uma cache compartilhada, e outros clientes que fizerem a mesma solicitação na mesma região receberão a resposta que está na cache.</p>
-        <p class="Texto">A cache privada é criada pelo próprio cliente para seu uso exclusivo. É o tipo de cache que o navegador web cria para imagens, arquivos CSS, JavaScript ou o próprio documento HTML, para que não seja necessário fazer download novamente se esses elementos forem solicitados em um futuro próximo</p>
+        <p class="Texto">A cache privada é criada pelo próprio cliente para seu uso exclusivo. É o tipo de cache que o navegador web cria para imagens, arquivos CSS, JavaScript ou o próprio documento HTML, para que não seja necessário fazer download novamente se esses elementos forem solicitados em um futuro próximo.</p>
         <br>
         <div class="destaques wow fadeIn" data-wow-delay="0.3s">
                     <div class="Caixa TituloExemplo">
@@ -242,7 +242,7 @@
                 <br>
         <p class="Texto">Tanto a estratégia de cache compartilhada quanto a privada usam cabeçalhos HTTP para controlar como o conteúdo baixado deve ser armazenado em cache. No caso da cache privada, o cliente consulta o cabeçalho da resposta e verifica se o conteúdo da cache local ainda corresponde ao conteúdo remoto atual. Em caso afirmativo, o cliente dispensa a transferência da carga da resposta e usa a versão local.</p>
         <p class="Texto">A validade do recurso em cache pode ser avaliada de várias maneiras. O servidor pode fornecer uma data de expiração no cabeçalho da resposta para a primeira solicitação, para que o cliente descarte o recurso armazenado em cache no final do prazo e solicite-o novamente para obter a versão atualizada. No entanto, o servidor nem sempre consegue determinar a data de expiração de um recurso, de modo que é comum usar o campo <span class="code-color"><strong>ETag</strong></span> no cabeçalho de resposta para identificar a versão do recurso, por exemplo <span class="code-color"><em>Etag: "606adcd4-46fa"</em></span>.</p>
-        <p class="Texto">Para verificar se um recurso armazenado em cache precisa ser atualizado, o cliente solicita apenas o cabeçalho de resposta do servidor. Se o campo <em>ETag</em> corresponder ao da versão armazenada localmente, o cliente reutiliza o conteúdo armazenado em cache. Caso contrário, o conteúdo atualizado do recurso é baixado do servidor</p>
+        <p class="Texto">Para verificar se um recurso armazenado em cache precisa ser atualizado, o cliente solicita apenas o cabeçalho de resposta do servidor. Se o campo <em>ETag</em> corresponder ao da versão armazenada localmente, o cliente reutiliza o conteúdo armazenado em cache. Caso contrário, o conteúdo atualizado do recurso é baixado do servidor.</p>
         <p class="Subtopico"><strong>Sessões HTTP</strong></p>
         <p class="Texto">Em um site convencional ou aplicativo web, os recursos responsáveis pelo controle da sessão baseiam-se em cabeçalhos HTTP. O servidor não pode pressupor, por exemplo, que todas as solicitações provenientes do mesmo endereço IP vêm do mesmo cliente. O método mais tradicional que permite ao servidor associar diferentes solicitações a um único cliente é o uso de <span class="code-color"><em>cookies</em></span>, uma etiqueta de identificação fornecida ao cliente pelo servidor e incluída no cabeçalho HTTP.</p>
         <p class="Texto">Os cookies permitem que o servidor preserve informações sobre um cliente específico, mesmo que a pessoa que está executando o cliente não se identifique explicitamente. Com os cookies, é possível implementar sessões em que os logins, cartões de compras, preferências, etc., são preservados entre diferentes solicitações feitas ao mesmo servidor que os forneceu. Os cookies também são usados para rastrear a navegação do usuário, por isso é importante ter a permissão dele antes de enviá-los.</p>
@@ -270,15 +270,15 @@
         </div>
     </div>
     <br>
-    <a href="../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Atividade!</span></a>
-    <br><br><br>     
+    <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Atividade!</span></a>
+    
     
 
 </body>
 </html>
 <?php
     // A_S - Footer
-    include('../layouts/footer.php');
+    include('../../layouts/footer.php');
 ?>
 
     
