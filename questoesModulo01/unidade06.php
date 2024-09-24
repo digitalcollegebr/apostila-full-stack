@@ -1,7 +1,7 @@
 <?php
     include_once('../process/questoes.php');
 ?>
-<a href="..modulo1/CSS/topico033-2.php" class="button-left"><img src="../assets/img/arrow-circle-left.png" alt="" class="left"></a>
+<a href="../modulo1/CSS/topico033-2.php" class="button-left"><img src="../assets/img/arrow-circle-left.png" alt="" class="left"></a>
 
 
 <!-- Adicionar um formulário HTML -->
@@ -73,4 +73,4 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
 });
 </script>
 
-<?php include('../layouts/footer.php') ?>
+<?php include('../layouts/footerQ.php') ?>

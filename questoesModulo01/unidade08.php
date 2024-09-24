@@ -73,4 +73,4 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
 });
 </script>
 
-<?php include('../layouts/footer.php') ?>
+<?php include('../layouts/footerQ.php') ?>
