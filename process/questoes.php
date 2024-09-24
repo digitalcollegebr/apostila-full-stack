@@ -1,6 +1,8 @@
 <?php
 include_once('conn.php');
-include_once('../layouts/header.php');  
+include_once('../layouts/headerQ.php'); 
+
+
 
 // Inicializar variáveis para o resultado
 $respostasCorretas = 0;
@@ -45,6 +47,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'C' => $questao['item_c'],
                 'D' => $questao['item_d']
             ];
+
+            if ($questao['unidade'] == 1) {
+                echo "<a href='../modulo1/HTML/topico032-1.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-left.png (2).png' alt='Próxima Atividade' class='next'></a>";
+            }elseif($questao['unidade']==2){
+                echo "<a href='../modulo1/HTML/topico032-2.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-left (2).png' alt='Próxima Atividade' class='next'></a>";
+            }elseif($questao['unidade']==3){
+                echo "<a href='../modulo1/HTML/topico032-3.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-left (2).png' alt='Próxima Atividade' class='next'></a>";
+            }elseif($questao['unidade']==4){
+                echo "<a href='../modulo1/CSS/topico032-4.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-left (2).png' alt='Próxima Atividade' class='next'></a>";
+            }elseif($questao['unidade']==5){
+                echo "<a href='../modulo1/HTML/topico033-1.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-left (2).png' alt='Próxima Atividade' class='next'></a>";
+            }elseif($questao['unidade']==6){
+                echo "<a href='../modulo1/HTML/topico033-2.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-left (2).png' alt='Próxima Atividade' class='next'></a>";
+            }elseif($questao['unidade']==7){
+                echo "<a href='../modulo1/HTML/topico033-3.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-left (2).png' alt='Próxima Atividade' class='next'></a>";
+            }elseif($questao['unidade']==8){
+                echo "<a href='../modulo1/HTML/topico033-4.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-left (2).png' alt='Próxima Atividade' class='next'></a>";
+            }
 
             // Comparar resposta do usuário com a resposta correta
             if ($resposta_usuario === $item_certo) {
