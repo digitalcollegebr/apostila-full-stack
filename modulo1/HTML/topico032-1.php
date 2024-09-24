@@ -318,7 +318,7 @@
         <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
         <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
         <br>
-        <div class="typewriter-small" style="width: 30%;">
+        <div class="typewriter-small" style="width: 50%;">
         <span class="code-color">&lt;meta</span> <span class="blue-code">charset=</span> <span class="orange-code">"utf-8"<span class="code-color">&gt;</span>
         </div>
         <p class="Texto">Este elemento especifica que a codificação de caracteres do documento é utf-8, um conjunto de caracteres universal que inclui praticamente qualquer caractere de qualquer idioma humano. Portanto, ao usá-lo, você evita problemas de exibição que poderiam surgir se escolhesse outros conjuntos de caracteres, como o ISO-8859-1 (o alfabeto latino).

@@ -29,9 +29,11 @@
                 <br>
                 <p class="Subtopico"><strong>Clientes e servidores</strong></p>
                 <p class="Texto">No modelo cliente/servidor, parte do trabalho é feito localmente no <em>lado do cliente</em> e parte do trabalho é feito remotamente, no <em>lado do servidor</em>. As tarefas realizadas por cada parte variam de acordo com a finalidade do aplicativo, mas em geral cabe ao cliente fornecer uma interface para o usuário e exibir o conteúdo de forma atraente. Cabe ao servidor executar a parte operacional do aplicativo, processando e respondendo às solicitações feitas pelo cliente. Em um aplicativo de compras, por exemplo, o aplicativo cliente apresenta uma interface para o usuário escolher e pagar pelos produtos, mas a fonte de dados e os registros da transação são mantidos no servidor remoto, acessado pela rede. Os aplicativos web realizam essa comunicação pela internet, geralmente por meio do <span class="code-color"><strong>Protocolo de Transferência de Hipertexto (HTTP)</strong></span>.</p>
+                <br>
                 <div class="image-content">
                     <img src="../../assets/img/server-side.png" alt="Modelo cliente/servidor">
                 </div>
+                <br>
                 <p class="Texto">Depois de carregado pelo navegador, o lado do cliente do aplicativo inicia a interação com o servidor sempre que necessário ou conveniente. Os servidores de aplicativos web oferecem uma <span class="code-color"><em>interface de programação de aplicativos (API)</em></span> que define as solicitações disponíveis e como devem ser feitas. Assim, o cliente constrói uma solicitação no formato definido pela API e a envia ao servidor, que verifica os pré-requisitos da solicitação e envia de volta a resposta apropriada.</p>
                 <p class="Texto">Enquanto o cliente, na forma de um aplicativo móvel ou navegador de desktop, é um programa independente em relação à interface do usuário e às instruções para se comunicar com o servidor, o navegador deve obter a página HTML e os componentes associados — como imagens, CSS e JavaScript — que definem a interface e as instruções para comunicação com o servidor.</p>
                 <p class="Texto">As linguagens de programação e as plataformas usadas por cliente e servidor são independentes, mas empregam um protocolo de comunicação mutuamente compreensível. A parte do servidor é quase sempre realizada por um programa sem interface gráfica, rodando em ambientes de computação de alta disponibilidade, de forma a estar sempre pronto para responder às solicitações. Já a parte do cliente é executada em qualquer dispositivo capaz de renderizar uma interface HTML, como os smartphones.</p>
@@ -40,7 +42,7 @@
                     <div class="text" style="margin-top: 0;  margin-bottom: 0;">
                         <p class="Texto">Os desenvolvedores têm controle direto sobre o servidor; assim, eles também podem modificar o cliente fornecido por ele. Isso permite que os desenvolvedores aprimorem o aplicativo, em maior ou menor grau, sem que o usuário precise formalmente instalar novas versões</p>
                     </div>
-                    <div class="image-side" id="image-content" style="margin: 0;">
+                    <div class="image-side" id="image-content">
                         <img src="../../assets/img/dev-meme.png" alt="Meme de programação">
                     </div>
                 </div>

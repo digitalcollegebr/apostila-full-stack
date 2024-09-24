@@ -29,12 +29,12 @@
                 <p class="Subtopico"><strong>Imagens</strong></p>
                 <p class="Texto">O tipo mais comum de conteúdo incorporado são as imagens que acompanham o texto. As imagens
                 são salvas separadamente e referenciadas dentro do arquivo HTML com a tag <span class="code-color"><strong>&lt;img&gt;</strong></span>:</p>
-                <div class="typewriter-small">
-                    <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
+                <div class="typewriter-small" style="width: 50%">
+                    <span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src=</span><span class="orange-code">"logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
                 </div>
                 <br>
                 <p class="Texto">A tag <span class="code-color"><strong>&lt;img&gt;</strong></span> não requer uma tag de fechamento. A propriedade src indica o local de origem do arquivo de imagem. Neste exemplo, o arquivo de imagem logo.png deve estar localizado no mesmo diretório do arquivo HTML, caso contrário o navegador não poderá exibi-lo. A propriedade de localização de origem aceita caminhos relativos, de forma que a notação de ponto pode ser usada para indicar o caminho até a imagem:</p>
-                <div class="typewriter-small">
+                <div class="typewriter-small" style="width: 50%">
                 <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"../logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
                 </div>
                 <br>
@@ -53,7 +53,7 @@
                     </div>
                 <br>
                 <p class="Texto">Se a imagem não puder ser carregada, o navegador HTML mostrará o texto fornecido no atributo alt em vez da imagem. Por exemplo:</p>
-                <div class="typewriter-small">
+                <div class="typewriter-small" style="width: 50%">
                     <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="code-color"><strong>&gt;</strong></span>
                 </div>
                 <br>
@@ -80,10 +80,10 @@
                 <p class="Texto">O formato GIF oferece a qualidade de imagem mais baixa dentre todos os formatos de bitmap populares. No entanto, ele ainda é amplamente utilizado devido ao seu suporte para animações. De fato, muitos sites empregam arquivos GIF para exibir vídeos curtos, mas existem maneiras melhores de exibir conteúdo de vídeo.</p>
                 <br>
                 <p class="Subtopico"><strong>Áudio e vídeo</strong></p>
-                <p class="Texto">Podemos adicionar conteúdos de áudio e vídeo a um documento HTML mais ou menos da mesma maneira que as imagens. Sem surpresa, a tag para adicionar áudio é <span class="code-color"><strong>&lt;audio&gt;</strong></span> e a tag para adicionar vídeo é <span class="code-color"><strong>&lt;video&gt;</strong></span>. Obviamente, os navegadores em modo texto não são capazes de reproduzir conteúdo multimídia, de forma que as tags <audio> e &lt;video&gt; empregam uma tag de fechamento para conter o texto usado como explicação para o elemento que não pôde ser mostrado. Por exemplo:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                <p class="Texto">Podemos adicionar conteúdos de áudio e vídeo a um documento HTML mais ou menos da mesma maneira que as imagens. Sem surpresa, a tag para adicionar áudio é <span class="code-color"><strong>&lt;audio&gt;</strong></span> e a tag para adicionar vídeo é <span class="code-color"><strong>&lt;video&gt;</strong></span>. Obviamente, os navegadores em modo texto não são capazes de reproduzir conteúdo multimídia, de forma que as tags <span class="code-color"><strong>&lt;audio&gt;</strong></span> e <span class="code-color"><strong>&lt;video&gt;</strong></span> empregam uma tag de fechamento para conter o texto usado como explicação para o elemento que não pôde ser mostrado. Por exemplo:</p>
+                <div class="typewriter-small" style="width: 90%;">
                     <pre>
-                        <code>
+                        <code class="Texto">
 <span class="code-color"><strong>&lt;audio&gt;</strong></span><span class="blue-code">controls src=</span><span class="orange-code">"/media/recording.mp3"</span><span class="code-color"><strong>&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>Áudio indisponível<span class="code-color"><strong>&lt;em&gt;</strong></span>recording.mp3<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
 <span class="code-color"><strong>&lt;/audio&gt;</strong></span>
@@ -91,14 +91,14 @@
                     </pre>
                 </div>
                 
-                <p class="Texto">Se o navegador não suportar a tag &lt;audio&gt;, a linha <em>“Unable to play recording.mp3”</em> será mostrada em seu lugar. O uso das tags de fechamento <strong>&lt;/audio&gt;</strong> ou &lt;/video&gt; permitem que a página web inclua conteúdos alternativos mais elaborados do que a simples linha de texto permitida pelo atributo <span class="code-color"><em>alt</em></span> da tag <span class="code-color"><strong></strong>&lt;img&gt;</span>.</p>
-                <p class="Texto">O atributo <span class="code-color"><em>src</em></span> das tags &lt;audio&gt; e &lt;video&gt; funcionam da mesma forma que em &lt;img&gt;, mas ele também aceita URLs apontando para uma transmissão ao vivo. O navegador cuida de armazenar em buffer, decodificar e exibir o conteúdo conforme ele é recebido. O atributo controls exibe os controles de reprodução. Sem ele, o visitante não poderá pausar, retroceder ou controlar a reprodução de qualquer outra maneira.</p>
+                <p class="Texto">Se o navegador não suportar a tag <span class="code-color"><strong>&lt;audio&gt;</strong></span>, a linha <em>“Unable to play recording.mp3”</em> será mostrada em seu lugar. O uso das tags de fechamento <span class="code-color"><strong>&lt;/audio&gt;</strong></span> ou <span class="code-color"><strong>&lt;/video&gt;</strong></span> permitem que a página web inclua conteúdos alternativos mais elaborados do que a simples linha de texto permitida pelo atributo <span class="code-color"><em>alt</em></span> da tag <span class="code-color"><strong>&lt;img&gt;</strong></span>.</p>
+                <p class="Texto">O atributo <span class="code-color"><em>src</em></span> das tags <span class="code-color"><strong>&lt;audio&gt;</strong></span> e <span class="code-color"><strong>&lt;video&gt;</strong></span> funcionam da mesma forma que em <span class="code-color"><strong>&lt;img&gt;</strong></span>, mas ele também aceita URLs apontando para uma transmissão ao vivo. O navegador cuida de armazenar em buffer, decodificar e exibir o conteúdo conforme ele é recebido. O atributo controls exibe os controles de reprodução. Sem ele, o visitante não poderá pausar, retroceder ou controlar a reprodução de qualquer outra maneira.</p>
                 <br>
                 <p class="Subtopico"><strong>Conteúdo genérico</strong>
                 <p class="Texto">Um documento HTML pode ser aninhado em outro documento HTML, de forma semelhante à inserção de uma imagem em um documento HTML, mas usando a tag <span class="code-color"><strong>&lt;iframe&gt;</strong></span>:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                <div class="typewriter-small" style="width: 80%; text-align: left;">
                     <pre>
-                        <code>
+                        <code class="Texto">
 <span class="code-color"><strong>&lt;iframe&gt;</strong></span><span class="blue-code">name=</span><span class="orange-code">"viewer"</span><span class="blue-code">src=</span><span class="orange-code">"gallery.html"</span><span class="code-color"><strong>&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>Unsupported browser<span class="code-color"><strong>&lt;/p&gt;</strong></span>
 <span class="code-color"><strong>&lt;/iframe&gt;</strong></span>
@@ -115,7 +115,7 @@
                 </div>
                 <p class="Texto">A localização pode ser informada como um caminho relativo ou absoluto, como acontece com o conteúdo incorporado de que falamos anteriormente. Somente o conteúdo de texto entre as tags (por exemplo, <span class="blue-code"><em><u>Contact Information</u></em></span>)e fica visível para o visitante, geralmente na forma de um texto em azul sublinhado e clicável, mas o item que contém o link também pode ser qualquer outro conteúdo visível, como imagens:</p>
                 <div class="typewriter-small">
-                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code">src</span><span class="orange-code">"contact.png"</span><span class="blue-code">alt=</span><span class="orange-code">"contact.png"</span>"Informações de contato"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code">src</span><span class="orange-code">"contact.png"</span><span class="blue-code">alt=</span><span class="orange-code">"contact.png"</span>"Informações de contato"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                 </div>
                 <p class="Texto">Prefixos especiais podem ser adicionados ao caminho para informar ao navegador como abri-lo. Se a âncora apontar para um endereço de email, por exemplo, seu atributo href deve incluir o prefixo <span class="code-color"><em>mailto:</em></span>:</p>
                 <div class="typewriter-small">
@@ -128,14 +128,14 @@
                 <p class="Texto">Quando o link é clicado, o navegador abre o conteúdo do caminho com o aplicativo associado.</p>
                 <p class="Texto">O uso mais comum das âncoras é carregar outros documentos da web. Por padrão, o navegador substitui o documento HTML atual pelo conteúdo do novo local. Esse comportamento pode ser modificado usando o atributo target. O destino _blank, por exemplo, diz ao navegador para abrir o local fornecido em uma nova janela ou nova guia do navegador, dependendo das preferências do visitante:</p>
                 <div class="typewriter-small">
-                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code">target=</span><span class="orange-code">"_blank"</span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code"> target=</span><span class="orange-code">"_blank"</span> <span class="code-color"><strong>&gt; </strong></span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                 </div>
                 <p class="Texto">O destino <span class="code-color"><em>_self</em></span> é o padrão quando o atributo <span class="code-color"><em>target</em></span> não é fornecido. Ele faz com que o documento referenciado substitua o documento atual.</p>
                 <p class="Texto">Outros tipos de destinos estão relacionados ao elemento <strong>&lt;iframe&gt;</strong>. Para carregar um documento referenciado dentro de um elemento <strong>&lt;iframe&gt;</strong>, o atributo <em>target</em> deve apontar para o nome do elemento iframe:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                <div class="typewriter-small" style="width: 90%; text-align: left;">
                     <pre>
-                        <code>
-<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"viewer"</span>Galeria de fotos<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
+                        <code class="Texto">
+<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code"> href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"viewer"</span> <span class="code-color"><strong>&gt; </strong></span>Galeria de fotos<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
 </span>
 <span class="code-color"><strong>&lt;iframe&gt;</strong></span><span class="blue-code">name=</span><span class="orange-code">"viewer"</span><span class="blue-code">src=</span><span class="orange-code">"gallery.html"</span><span class="code-color"><strong>&gt;</strong></span>
 <span class="code-color"><strong>&lt;p&gt;</strong></span>Seu navegador não suporta<span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -144,10 +144,10 @@
                     </pre>
                 </div>
                 <p class="Texto">O elemento iframe funciona como uma janela distinta do navegador e, portanto, quaisquer links carregados a partir do documento dentro do iframe substituirão apenas o conteúdo do quadro. Para mudar esse comportamento, os elementos âncora dentro do documento aninhado também podem usar o atributo <em>target</em>. O destino <span class="code-color"><em>_parent</em></span>, quando usado dentro de um documento aninhado, fará com que o local referenciado substitua o documento pai que contém a tag &lt;iframe&gt;. Por exemplo, o documento <em>gallery.html</em> incorporado pode conter uma âncora que carrega a si mesma e substitui o documento pai:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: left;">
+                <div class="typewriter-small" style="width: 70%;">
                     <pre>
-                        <code>
-<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a</strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code">target=</span><span class="orange-code">"_parent"</span>Abrir como documento pai<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
+                        <code class="Texto">
+<span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href</span><span class="orange-code">"gallery.html"</span><span class="blue-code"> target=</span><span class="orange-code">"_parent" <span class="code-color"><strong>&gt;</strong></span></span>Abrir como documento pai<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong>
 </span>
                 </code>
                     </pre>
@@ -158,8 +158,8 @@
                 <p class="Texto">O endereço de um documento HTML pode conter opcionalmente um <em>fragmento</em> que pode ser usado para identificar um recurso dentro do documento. Este fragmento, também conhecido como <em>âncora de URL</em>, é uma string iniciada por uma cerquilha <em>#</em> no final da URL. Por exemplo, a palavra <em>History</em> é a âncora da URL <span class="code-color"><em>https://en.wikipedia.org/wiki/Internet#History</em></span>.</p>
                 <p class="Texto">Quando a URL tem uma âncora, o navegador rola a página até o elemento correspondente no documento: ou seja, o elemento cujo atributo id é idêntico à âncora da URL. No caso da URL de nosso exemplo, https://en.wikipedia.org/wiki/Internet#History, o navegador irá diretamente para a seção “History”. Examinando o código HTML da página, descobrimos que o título da seção possui o atributo id correspondente:</p>
                 <p class="Texto">Quando a URL tem uma âncora, o navegador rola a página até o elemento correspondente no documento: ou seja, o elemento cujo atributo id é idêntico à âncora da URL. No caso da URL de nosso exemplo, <span class="code-color"><em>https://en.wikipedia.org/wiki/Internet#History</em></span>, o navegador irá diretamente para a seção “History”. Examinando o código HTML da página, descobrimos que o título da seção possui o atributo id correspondente:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: left;">
-                        <span class="code-color"><strong>&lt;span</strong></span><span class="blue-code">class=</span><span class="orange-code">"my-headline"</span><span class="blue-code">id=</span><span class="orange-code">"History"</span>History<span class="code-color"><strong>&lt;/span&gt;</strong></span><span class="code-color"></span>
+                <div class="typewriter-small" style="width: 70%; text-align: left;">
+                        <span class="code-color"><strong>&lt;span</strong></span><span class="blue-code"> class=</span><span class="orange-code">"my-headline"</span><span class="blue-code">id=</span><span class="orange-code">"history"</span><span class="code-color"> <strong>&gt;</strong></span>History<span class="code-color"><strong>&lt;/span&gt;</strong></span><span class="code-color"></span>
                 </div>
                 <p class="Texto">As âncoras de URL podem ser usadas no atributo <em>href</em> da tag <span class="code-color"><strong>a</strong></span>, tanto para apontar para páginas externas quanto para para locais dentro da página atual. Neste último caso, basta usar apenas a cerquilha com o fragmento da URL, como em <span class="code-color"><em>&lt;a href="#History"&gt;History&lt;/a&gt;</em></span>.</p>
                 <br>
