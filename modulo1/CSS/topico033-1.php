@@ -160,12 +160,13 @@
                    de CSS são interpretadas pelo navegador. Se escrevermos:
                    </p>
                    <br>
-                   <div  class="typewriter-small" style="width: 50%;">
-                    <span class="code-color"><strong>&lt;style type=</strong></span><span class="orange-code">"text/css"</span><span class="code-color"><strong>&gt;</strong></span>
-                    <br>
-                    <span class="code-color"><strong>p{</strong></span> <span class="blue-code">color: </span><span class="dark_blue_code">purple;</span> <span class="blue-code">font-size: </span><span class="dark_blue_code">larger;</span> <span class="code-color"><strong>}</strong></span>
-                    <br>
-                    <span class="code-color"><strong>&lt;style&gt;</strong></span>
+                   <div  class="typewriter-small">
+                    <pre>
+                    <code class="Texto">
+<span class="code-color"><strong>&lt;style type=</strong></span><span class="orange-code">"text/css"</span><span class="code-color"><strong>&gt;</strong></span>
+  <span class="code-color"><strong>p{</strong></span> <span class="blue-code">color: </span><span class="dark_blue_code">purple;</span> <span class="blue-code">font-size: </span><span class="dark_blue_code">larger;</span><span class="code-color"><strong>}</strong></span>
+<span class="code-color"><strong>&lt;style&gt;</strong></span>
+                    </code>  </pre>
                   </div>
                   <br>
                   <p class="Texto">o resultado será exatamente igual ao de:</p>
@@ -175,8 +176,7 @@
 <span class="code-color"><strong>&lt;style type=</strong></span><span class="orange-code">"text/css"</span><span class="code-color"><strong>&gt;</strong></span>
     <span class="code-color"><strong>p{</strong></span> 
      <span class="blue-code">color:</span><span class="dark_blue_code">purple;</span> 
-     <span class="blue-code">font-size:</span><span class="dark_blue_code">larger;
-    </span>
+     <span class="blue-code">font-size:</span><span class="dark_blue_code">larger;</span>
     <span class="code-color"><strong>}</strong></span>
     <span class="code-color"><strong>&lt;style&gt;</strong></span>
                   </pre></code>
@@ -235,7 +235,7 @@
                 A tag HTML <span class="code-color"><strong>&lt;link&gt;</strong></span> define uma folha de estilo externa a ser usada no documento atual e deve constar da seção <span class="code-color"><em>head</em></span> do documento HTML:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small">
   <pre><code class="Texto">
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
   <span class="code-color"><strong>&lt;meta</strong></span><span class="blue-code"> charset=</span><span class="orange-code">"utf-8"</span><span class="code-color"><strong>&gt;</strong></span>

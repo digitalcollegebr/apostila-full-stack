@@ -54,10 +54,12 @@
                     <div class="text">
                         <p class="Texto">Nesse sentido, o código-fonte não difere muito de qualquer outro texto em que o autor emprega as regras bem estabelecidas de uma linguagem natural para se comunicar com o leitor. No caso do código-fonte, o “leitor” é a própria máquina e, portanto, o texto não pode conter ambigüidades ou inconsistências, nem mesmo as mais sutis. E como qualquer texto que discuta algum tópico em profundidade, o código-fonte também precisa ser bem estruturado e organizado de forma lógica ao se desenvolver aplicativos complexos. Programas muito simples e exemplos didáticos podem ser armazenados em poucas linhas de um único arquivo de texto contendo todo o código-fonte do programa. Programas mais complexos podem ser subdivididos em milhares de arquivos, cada um com milhares de linhas.</p>
                     </div>
+                    <br>
                     <div class="image-side">
                         <img src="../../assets/img/codigo.gif" alt="GIF de código">
                     </div>
                 </div>
+                <br>
                 <p class="Texto">O código-fonte dos aplicativos profissionais deve ser organizado em pastas diferentes, geralmente associadas a uma finalidade específica. Um programa de chat, por exemplo, pode ser organizado em duas pastas: uma que contém os arquivos de código que tratam da transmissão e recepção de mensagens pela rede e outra com os arquivos que constituem a interface e reagem às ações do usuário. De fato, é comum que haja muitas pastas e subpastas com arquivos de código-fonte dedicados a tarefas extremamente específicas dentro do aplicativo.</p>
                 <p class="Texto">Além disso, o código-fonte nem sempre está isolado em seus próprios arquivos, com tudo escrito em uma única linguagem. No caso dos aplicativos web, por exemplo, um documento <span class="code-color"><strong>HTML</strong></span> pode incorporar código em  <span class="code-color"><strong>JavaScript</strong></span> para complementar o documento com funcionalidades extras.</p>
                 <br>
