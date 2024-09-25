@@ -1,4 +1,6 @@
 CREATE DATABASE questoes;
+DROP TABLE questoes;
+
 CREATE TABLE questoes(
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     numero INT NOT NULL,
@@ -125,3 +127,4 @@ INSERT INTO questoes (numero, enunciado, item_a, item_b, item_c, item_d, item_ce
 (8, 'Como a obtenção de um aplicativo web difere daquela de um aplicativo nativo?', 'Um aplicativo web é instalado no dispositivo do usuário.', 'Um aplicativo nativo é executado em um navegador web comum.', 'Um aplicativo web não está instalado. Em vez disso, partes dele são executadas no servidor e a interface do cliente é executada em um navegador web comum.', 'Um aplicativo nativo é executado em um navegador web comum.', 'C', 1, 2),
 (9, 'Como um aplicativo web difere de um aplicativo nativo no acesso ao hardware local?', 'Todos os acessos aos recursos locais são feitos diretamente pelo aplicativo nativo.', 'O navegador não requer autorização explícita do usuário para acessar recursos locais.', 'Todos os acessos aos recursos locais são mediadas pelo navegador e requerem autorização explícita do usuário para funcionar.', 'O navegador acessa os recursos locais sem a necessidade de autorização do usuário.', 'C', 1, 2),
 (10, 'Cite uma característica de um cliente de aplicativo web que o diferencia de uma página web comum.', 'A página web comum não pode enviar formulários.', 'A interação com as páginas web tradicionais é mais próxima de uma interface de aplicativo convencional.', 'A interação com os clientes de aplicativos web restringe-se basicamente a hiperlinks e envio de formulários.', 'Os clientes de aplicativos web oferecem uma experiência mais rica e interativa, mais próxima de uma interface de aplicativo convencional.', 'D', 1, 2);
+
