@@ -34,12 +34,12 @@
                 <p class="Subtopico"><strong>Formulários HTML simples</strong></p>
                 <p class="Texto">Antes de falar do código de marcação específico para formulários, vamos começar com um documento HTML simples em branco, sem nenhum conteúdo no corpo:</p>
                 <br>
-                <div style class="typewriter-small" style="width: 50%; text-align: left;">
-  <pre><code>
-  <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
-<span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="blue-color">"en"</span><span class="code-color"><strong>&gt;</strong></span>
+                <div class="typewriter-small">
+  <pre><code class="Texto">
+<span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
+<span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
-  <span class="code-color"><strong>&lt;meta</strong></span><span class="blue-code">charset=</span><span class="orange-color">"utf-8"</span>
+  <span class="code-color"><strong>&lt;meta</strong></span><span class="blue-code"> charset=</span><span class="orange-code">"utf-8"</span><span class="code-color"><strong>&gt;</strong></span>
     <span class="code-color"><strong>&lt;title&gt;</strong></span>Working with HTML Forms<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
@@ -51,12 +51,12 @@
   </div>
             <p class="Texto">Salve esse código de exemplo como um arquivo de texto simples com a extensão <span class="code-color"><em>.html</em></span> (por exemplo, <em>form.html</em>) e use seu navegador favorito para abri-lo. Após alterá-lo, pressione o botão de recarregar no navegador para exibir as modificações.</p>
             <p class="Texto">A estrutura básica do formulário é dada pela própria tag <span class="code-color"><strong>&lt;form&gt;</strong></span> e seus elementos internos:</p>
-            <div style class="typewriter-small" style="width: 50%; text-align: left;">
-  <pre><code>
+            <div class="typewriter-small">
+  <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
-<span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="blue-color">"en"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
-  <span class="code-color"><strong>&lt;meta</strong></span><span class="blue-code">charset=</span><span class="orange-color">"utf-8"</span>
+  <span class="code-color"><strong>&lt;meta</strong></span><span class="blue-code"> charset=</span><span class="orange-code">"utf-8"</span><span class="code-color"><strong>&gt;</strong></span>
     <span class="code-color"><strong>&lt;title&gt;</strong></span>Working with HTML Forms<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
@@ -65,9 +65,9 @@
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Personal Information<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>Nome completo:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
-        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-color">"text"</span><span class="blue-code">name=</span><span class="orange-color">"fullname"</span><span class="blue-code">id=</span><span class="orange-color">"fullname"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
-        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-color">"reset"</span><span class="blue-code">value=</span><span class="orange-color">"Clear form"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
-        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-color">"submit"</span><span class="blue-code">value=</span><span class="orange-color">"Submit form"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"text"</span><span class="blue-code"> name=</span><span class="orange-code">"fullname"</span><span class="blue-code"> id=</span><span class="orange-code">"fullname"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"reset"</span><span class="blue-code"> value=</span><span class="orange-code">"Clear form"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"submit"</span><span class="blue-code"> value=</span><span class="orange-code">"Submit form"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
 
 
     <span class="code-color"><strong>&lt;/form&gt;</strong></span>
@@ -79,12 +79,12 @@
             <p class="Texto">As aspas duplas não são obrigatórias para atributos de palavra única como <span class="code-color"><em>type</em></span>, portanto <span class="code-color"><em>type=text</em></span>funciona tão bem quanto <span class="code-color"><em>type="text"</em></span>. O desenvolvedor pode escolher a convenção que prefere usar.</p>
             <p class="Texto">Salve o novo conteúdo e recarregue a página no navegador. Você deverá ver o resultado mostrado <em>Figure 23</em>.</p>
             <br>
-            <div class="image-content"><img src="../assets/img/figure23.png" alt="Código" class="img-fluid">
+            <div class="image-content"><img src="../../assets/img/figure23.png" alt="Código" class="img-fluid">
             </div>
             <p><em>Figure 23. Um formulário bem básico</em></p>
-            <p class="Texto">A tag <strong>&lt;form&gt;</strong> em si não produz nenhum resultado perceptível na página. Os elementos dentro das
+            <p class="Texto">A tag <span class="code-color"><strong>&lt;form&gt;</strong></span> em si não produz nenhum resultado perceptível na página. Os elementos dentro das
             tags <span class="code-color"><strong>&lt;form&gt;</strong></span><strong>…</strong><span class="code-color"><strong>&lt;/form&gt;</strong></span> definirão os campos e outros auxílios visuais mostrados ao visitante.</p>
-            <p class="Texto">O código de exemplo contém tanto as tags gerais do HTML (<strong>&lt;h2&gt;</strong> e <strong>&lt;p&gt;</strong>) quanto a tag <span class="code-color"><strong>&lt;input&gt;</strong></span>, que é específica aos formulários. Ao passo que as tags gerais podem aparecer em qualquer lugar do documento, as tags específicas aos formulários devem ser usadas <strong>somente</strong> dentro do elemento <strong>&lt;form&gt;</strong>; isto é, entre a tag de abertura <strong>&lt;form&gt;</strong> e a de fechamento <strong>&lt;/form&gt;</strong>.</p>
+            <p class="Texto">O código de exemplo contém tanto as tags gerais do HTML (<span class="code-color"><strong>&lt;h2&gt;</strong></span> e <strong>&lt;p&gt;</strong>) quanto a tag <span class="code-color"><strong>&lt;input&gt;</strong></span>, que é específica aos formulários. Ao passo que as tags gerais podem aparecer em qualquer lugar do documento, as tags específicas aos formulários devem ser usadas <strong>somente</strong> dentro do elemento <span class="code-color"><strong>&lt;form&gt;</strong></span>; isto é, entre a tag de abertura <span class="code-color"><strong>&lt;form&gt;</strong></span> e a de fechamento <span class="code-color"><strong>&lt;/form&gt;</strong></span>.</p>
             <br>
             <div class="destaques wow fadeIn" data-wow-delay="0.3s">
                         <div class="Caixa TituloExemplo">
@@ -96,13 +96,13 @@
                         </div>
                     </div>
                 <br>
-                <p class="Texto">Como mostrado no exemplo, a tag de parágrafo <strong>&lt;p&gt;</strong> pode ser usada para descrever o campo para o visitante. No entanto, não há uma maneira óbvia de o navegador relacionar a descrição na tag <p> com o elemento correspondente de inserção de dados. A tag <span class="code-color"><strong>&lt;label&gt;</strong></span> é mais apropriada nesses casos (a partir de agora, considere todos os exemplos de código como estando dentro do corpo do documento HTML):</p>
-                <div style class="typewriter-small" style="width: 50%; text-align: left;">
-  <pre><code>
+                <p class="Texto">Como mostrado no exemplo, a tag de parágrafo <span class="code-color"><strong>&lt;p&gt;</strong></span> pode ser usada para descrever o campo para o visitante. No entanto, não há uma maneira óbvia de o navegador relacionar a descrição na tag <p> com o elemento correspondente de inserção de dados. A tag <span class="code-color"><strong>&lt;label&gt;</strong></span> é mais apropriada nesses casos (a partir de agora, considere todos os exemplos de código como estando dentro do corpo do documento HTML):</p>
+                <div class="typewriter-small">
+  <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
-<span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="blue-color">"en"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
-  <span class="code-color"><strong>&lt;meta</strong></span><span class="blue-code">charset=</span><span class="orange-color">"utf-8"</span>
+  <span class="code-color"><strong>&lt;meta</strong></span><span class="blue-code"> charset=</span><span class="orange-code">"utf-8"</span><span class="code-color"><strong>&gt;</strong></span>
     <span class="code-color"><strong>&lt;title&gt;</strong></span>Working with HTML Forms<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
@@ -114,20 +114,26 @@
   </div>
             <p class="Texto">Salve esse código de exemplo como um arquivo de texto simples com a extensão <span class="code-color"><em>.html</em></span> (por exemplo, <em>form.html</em>) e use seu navegador favorito para abri-lo. Após alterá-lo, pressione o botão de recarregar no navegador para exibir as modificações.</p>
             <p class="Texto">A estrutura básica do formulário é dada pela própria tag <span class="code-color"><strong>&lt;form&gt;</strong></span> e seus elementos internos:</p>
-            <div style class="typewriter-small" style="width: 50%; text-align: left;">
-  <pre><code>
+            <div class="typewriter-small">
+  <pre><code  class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Personal Information<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="code-color"><strong>&gt;</strong></span>Nome completo:<span class="code-color"><strong>&lt;/label&gt;</strong></span>
-        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-color">"text"</span><span class="blue-code">name=</span><span class="orange-color">"fullname"</span><span class="blue-code">id=</span><span class="orange-color">"fullname"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
-        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-color">"reset"</span><span class="blue-code">value=</span><span class="orange-color">"Clear form"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
-        <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-color">"submit"</span><span class="blue-code">value=</span><span class="orange-color">"Submit form"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"text"</span><span class="blue-code"> name=</span><span class="orange-code">"fullname"</span><span class="blue-code"> id=</span><span class="orange-code">"fullname"</span><span class="code-color"><strong>&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"reset"</span><span class="blue-code"> value=</span><span class="orange-code">"Clear form"</span><span class="code-color"><strong>&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"submit"</span><span class="blue-code"> value=</span><span class="orange-code">"Submit form"</span><span class="code-color"><strong>&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
 
     <span class="code-color"><strong>&lt;/form&gt;</strong></span>
     </pre></code>
   </div>
             <p class="Texto">O atributo <span class="code-color"><em>for</em></span> na tag <span class="code-color"><strong>label</strong></span> contém o <em>id</em> do elemento de inserção de dados correspondente. Isso torna a página mais acessível, pois os leitores de tela serão capazes de narrar o conteúdo do elemento de rótulo (label) quando o elemento de inserção de dados estiver selecionado. Além disso, os visitantes podem clicar no rótulo para selecionar o campo de inserção de dados correspondente.</p>
-            <p class="Texto">O atributo <em>id</em> nos elementos de formulário tem o mesmo papel que em qualquer outro elemento do documento. Ele fornece um identificador exclusivo para o elemento. O atributo name tem uma finalidade semelhante, mas é usado para identificar o elemento de inserção de dados no contexto do formulário. O navegador usa o atributo <em>name</em> para identificar o campo de inserção de dados ao enviar os dados do formulário para o servidor, por isso é importante usar atributos <em>name</em> significativos e exclusivos dentro do formulário.</p>
+            <p class="Texto">O atributo <span class="code-color"><em>id</em></span> nos elementos de formulário tem o mesmo papel que em qualquer outro elemento do documento. Ele fornece um identificador exclusivo para o elemento. O atributo name tem uma finalidade semelhante, mas é usado para identificar o elemento de inserção de dados no contexto do formulário. O navegador usa o atributo <span class="code-color"><em>name</em></span> para identificar o campo de inserção de dados ao enviar os dados do formulário para o servidor, por isso é importante usar atributos <span class="code-color"><em>name</em></span> significativos e exclusivos dentro do formulário.</p>
             <p class="Texto">O atributo <span class="code-color"><em>type</em></span> é o principal atributo do elemento de entrada de dados, <strong>pois controla o tipo de dados que o elemento aceita e sua apresentação visual ao visitante</strong>. Se o atributo type não for fornecido, por padrão é exibida uma caixa de texto. Os seguintes tipos de campos de entrada de dados são suportados pelos navegadores modernos:</p>
             <p><em>Table 1. Tipos de entrada em formulários</em></p>
             <table border="1" cellpadding="10">
@@ -254,19 +260,19 @@
               <p class="Texto">A aparência dos tipos de entrada <span class="code-color"><em>password</em></span>, <span class="code-color"><em>search</em></span>, <span class="code-color"><em>tel</em></span>, <span class="code-color"><em>url</em></span> e <span class="code-color"><em>email</em></span> é idêntica à do tipo text padrão. Sua finalidade é oferecer indicações ao navegador sobre o conteúdo esperado para esse campo de entrada de dados, de modo que o navegador ou o script em execução no lado do cliente possa realizar ações personalizadas para um tipo de entrada específico. A única diferença entre o tipo de entrada de texto e o tipo de campo de senha, por exemplo, é que o conteúdo do campo de senha <strong>não</strong> é exibido conforme o visitante digita sua senha. Nos dispositivos com tela de toque, nos quais o texto é digitado em um teclado virtual, o navegador pode exibir apenas o teclado numérico quando uma entrada do tipo <span class="code-color"><em>tel</em></span> é selecionada. Outra ação possível é sugerir uma lista de endereços de email conhecidos quando uma entrada do tipo email está no foco.</p>
               <p class="Texto">O tipo <span class="code-color"><em>number</em></span> também aparece como uma entrada de texto simples, mas com setas de aumentar/diminuir ao lado. Seu uso fará com que o teclado numérico apareça nos dispositivos com tela de toque quando o campo estiver selecionado.</p>
               <p class="Texto">Os outros elementos de inserção de dados têm sua própria aparência e comportamento. O tipo date, por exemplo, é representado de acordo com as configurações locais de formato de data e um calendário é exibido quando o campo está no foco:</p>
-              <div class="typewriter-small" style="width: 50%; text-align: left">
-  <pre><code>
+              <div class="typewriter-small">
+  <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"date"</span><span class="code-color"><strong>&gt;</strong></span> Date:<span class="code-color"><strong>&lt;/label&gt;</strong>
-        <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"date"</span><span class="blue-code">name=</span><span class="orange-color">"date" </span><span class="blue-code">id= </span><span class="orange-code">"date"</span><span class="code-code"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"date"</span><span class="blue-code">name=</span><span class="orange-code">"date" </span><span class="blue-code">id= </span><span class="orange-code">"date"</span><span class="code-code"><strong>&lt;/p&gt;</strong></span>
 
     <span class="code-color"><strong>&lt;/form&gt;</strong></span>
     </pre></code>
   </div>
               <p class="Texto">A <em>Figure 24</em> mostra como a versão para desktop do Firefox apresenta esse campo atualmente.</p>
               <div class="image-content">
-                <img src="../assets/img/figure24.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure24.png" alt="Código" class="img-fluid">
               </div>
               <br>
               <p><em>Figure 24. O tipo de entrada de data.</em></p>
@@ -283,26 +289,25 @@
                 <br>
                 <p class="Texto">Este é um recurso padrão em todos os navegadores modernos e não requer opções extras ou programação.</p>
                 <p class="Texto">Independentemente do tipo de entrada, o conteúdo de um campo de inserção de dados é chamado de valor. Todos os valores do campo aparecem vazios por padrão, mas o atributo value pode ser usado para definir um valor padrão para o campo. O valor do tipo de data deve usar o formato <span class="code-color"><strong>AAAA-MM-DD</strong></span>. O valor padrão do campo de data a seguir foi definido como 6 de agosto de 2020:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: left">
-  <pre><code>
+                <div class="typewriter-small">
+  <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"date"</span><span class="code-color"><strong>&gt;</strong></span> Date:<span class="code-color"><strong>&lt;/label&gt;</strong>
-        <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"date"</span><span class="blue-code">name=</span><span class="orange-color">"date" </span><span class="blue-code">id= </span><span class="orange-code">"date"</span> <span class="blue-code">value=</span> <span class="orange-code">"2024-09-20"</span><span class="code-code"><strong>&lt;/p&gt;</strong></span>
-
+        <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"date"</span><span class="blue-code">name=</span><span class="orange-code">"date" </span><span class="blue-code">id= </span><span class="orange-code">"date"</span> <span class="blue-code">value=</span> <span class="orange-code">"2024-09-20"</span><span class="code-code"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;/form&gt;</strong></span>
     </pre></code>
   </div>
                 <p class="Texto">Os tipos de entrada específicos ajudam o visitante a preencher os campos, mas não evitam que ele ignore as restrições e insira valores arbitrários em qualquer campo. Por isso, é importante que os valores dos campos sejam validados ao chegarem ao servidor.</p>
                 <p class="Texto">Os elementos do formulário cujos valores devem ser digitados pelo visitante podem ter atributos especiais que auxiliam no preenchimento. O atributo <span class="code-color"><em>placeholder</em></span> (marcador de posição) insere um valor de exemplo no elemento de inserção de dados:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: left">
+                <div class="typewriter-small">
                 <span class="code-color"><strong>&lt;p&gt;</strong></span>Adress:  <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span> <span class="orange-code">"text"</span><span class="blue-code">name=</span>  <span class="orange-code">"address"</span><span class="blue-code">placeholder=</span>  <span class="orange-code">"e.g. 41 John St., Upper Suite 1"</span><span class="code-code">&gt;</span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
                 </div>
                 <br>
                 <p class="Texto">O marcador de posição aparece dentro do elemento de inserção de dados, conforme mostrado na  <em>Figure 25</em>.</p>
                 <br>
                 <div class="image-content">
-                  <img src="../assets/img/figure25.png" alt="Código" class="img-fluid">
+                  <img src="../../assets/img/figure25.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
                 <p class="Texto">Assim que o visitante começa a digitar no campo, o texto do marcador de posição desaparece. O texto do marcador de posição não é enviado como o valor do campo caso o visitante deixe o campo vazio.</p>
@@ -312,11 +317,11 @@
                 <p class="Subtopico"><strong>Campo de entrada para textos grandes: textarea</strong></p>
                 <p class="Texto">Ao contrário do campo de texto, onde apenas uma linha de texto pode ser inserida, o elemento textarea permite que o visitante insira mais de uma linha de texto. O textarea é um elemento separado, mas não é baseado no elemento input:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left">
-  <pre><code>
+                <div class="typewriter-small">
+  <pre><code class="Texto">
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"comment"</span><span class="code-color"><strong>&gt;</strong></span> Digite seu comentário aqui:<span class="code-color"><strong>&lt;/label&gt;</strong> <span class="code-color"><strong>&lt;br&gt;</strong></span>
-        <span class="code-color"><strong>&lt;textarea</strong></span><span class="blue-code">id=</span><span class="orange-code">"comment"</span><span class="blue-code">name=</span><span class="orange-code">comment</span>  <span class="blue-code">rows=</span><span class="orange-code">"10"</span> <span class="blue-code">cols=</span>  <span class="orange-code">"30"</span><span class="code-code">&gt;</strong></span>Meu comentário de várias linhas em texto simples.
+        <span class="code-color"><strong>&lt;textarea</strong></span><span class="blue-code"> id=</span><span class="orange-code">"comment"</span><span class="blue-code"> name=</span><span class="orange-code">comment</span>  <span class="blue-code">rows=</span><span class="orange-code">"10"</span> <span class="blue-code">cols=</span>  <span class="orange-code">"30"</span><span class="code-color"><strong>&gt;</strong></span></span>Meu comentário de várias linhas em texto simples.
         <span class="code-color"><strong>&lt;/textarea&gt;</strong></span>
         <span class="code-code"><strong>&lt;/p&gt;</strong></span>
     </pre></code>
@@ -324,7 +329,7 @@
                   <p class="Texto">A aparência típica de um textarea é mostrado na <em>Figure 26</em>.</p>
                   <br>
                   <div class="image-content">
-                    <img src="../assets/img/figure26.png" alt="Código" class="img-fluid">
+                    <img src="../../assets/img/figure26.png" alt="Código" class="img-fluid">
                   </div>
                   <br>
                   <p><em>Figure 26. O elemento textarea.</em></p>
@@ -335,17 +340,17 @@
                   <p class="Texto">Diversos tipos de controles de formulário podem ser usados para apresentar uma lista de opções ao visitante: o elemento <span class="code-color"><strong>&lt;select&gt;</strong></span> e os tipos de entrada <span class="code-color"><em>radio</em></span> e <span class="code-color"><em>checkbox</em></span>.</p>
                   <p class="Texto">O elemento <span class="code-color"><strong>&lt;select&gt;</strong></span> é um controle suspenso com uma lista de entradas predefinidas:</p>
                   <br>
-                  <div class="typewriter-small" style="width: 50%; text-align: left">
-  <pre><code>
+                  <div class="typewriter-small">
+  <pre><code  class="Texto">
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"browser"</span><span class="code-color"><strong>&gt;</strong></span> Browser favorito:<span class="code-color"><strong>&lt;/label&gt;</strong>
-        <span class="code-color"><strong>&lt;select</strong></span><span class="blue-code">name=</span> <span class="orange-code">"browser"</span><span class="blue-code">id=</span> <span class="orange-code">"browser"</span><span class="code-color"><strong>&gt;</strong>
-        <span class="code-color"><strong>&lt;option</strong></span><span class="blue-code">value=</span>  <span class="orange-code">"Mozilla Firefox"</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
-        <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code">value=</span>  <span class="orange-code">"Google Chrome "</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
-        <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code">value=</span>  <span class="orange-code">"Opera "</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
-        <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code">value=</span>  <span class="orange-code">"Microsoft Edge"</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
-        <span class="code-color"><strong>&lt;/select&gt;</strong></span>
-        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;select</strong></span><span class="blue-code"> name=</span> <span class="orange-code">"browser"</span><span class="blue-code"> id=</span> <span class="orange-code">"browser"</span><span class="code-color"><strong>&gt;</strong>
+      <span class="code-color"><strong>&lt;option</strong></span><span class="blue-code"> value=</span> <span class="orange-code">"Mozilla Firefox"</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
+      <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code"> value=</span>  <span class="orange-code">"Google Chrome"</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
+      <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code"> value=</span>  <span class="orange-code">"Opera"</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
+      <span class="code-color"><strong>&lt;option</strong></span><span class ="blue-code"> value=</span>  <span class="orange-code">"Microsoft Edge"</span><span class="code-color"><strong>&lt;/option&gt;</strong></span>
+    <span class="code-color"><strong>&lt;/select&gt;</strong></span>
+  <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     </pre></code>
   </div>
                   <p class="Texto">A tag <span class="code-color"><strong>&lt;option&gt;</strong></span> representa uma entrada individual no controle <strong>&lt;select&gt;</strong> correspondente. A lista completa aparece quando o visitante toca ou clica no controle, como mostrado na <em>Figure 27</em>.</p>
@@ -359,25 +364,25 @@
                   <p class="Texto">A primeira entrada da lista é selecionada por padrão. Para alterar esse comportamento, você pode adicionar o atributo <span class="code-color"><em>selected</em></span> a outra entrada, para que ela esteja selecionada quando a página carregar.</p>
                   <p class="Texto">O tipo de entrada <span class="code-color"><em>radio</em></span> é semelhante ao controle <strong>&lt;select&gt;</strong>, mas em vez de uma lista suspensa ele mostra todas as entradas para que o visitante selecione uma delas. Os resultados do código a seguir são mostrados na <em>Figure 28</em>.</p>
                   <br>
-                  <div class="typewriter-small" style="width: 50%; text-align: left">
-  <pre><code>
-  <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                  <div class="typewriter-small">
+  <pre><code class="Texto">
 
-      <span class="code-color"><strong>&lt;p&gt;</strong></span>
-      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-code">radio</span><span class="blue-code">id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
-      <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-firefox"</ span><span class="code-color"><strong>&gt;</strong></span>Mozilla Firefox<span class ="code-color"><strong>&lt;/label&gt;</strong></span>
+  <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+  <span class="code-color"><strong>&lt;p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">radio</span><span class="blue-code"> id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
+      <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-firefox"</span><span class="code-color"><strong>&gt;</strong></span>Mozilla Firefox<span class ="code-color"><strong>&lt;/label&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">radio</span><span  class="blue-code">id=</span><span class="orange-code">"browser-chrome "</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class ="orange-code">"chrome "</span><span class="code-color"><strong>&gt;</strong ></span>
-    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome "</ span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">radio</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-chrome"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code"> value=</span><span class ="orange-code">"chrome"</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome"</span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
     <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">radio</span><span  class="blue-code">id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"opera "</span><span class="code-color"><strong>&gt;</strong ></span>
-    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</ span><span class="code-color"><strong>&gt;</strong></span>Opera<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">radio</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code"> name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"opera"</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</span><span class="code-color"><strong>&gt;</strong></span>Opera<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
 
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">radio</span><span  class="blue-code">id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"edge"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">radio</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code"> value=</span><span class  ="orange-code">"edge"</span><span class="code-color"><strong>&gt;</strong></span>
     <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-edge"</span><span class="code-color"><strong>&gt;</strong></span>>Microsoft Edge<span  class="code-color"><strong>&lt;/label&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -393,27 +398,27 @@
               <p class="Texto">Observe que todos os tipos de entrada <span class="code-color"><em>radio</em></span> no mesmo grupo têm o mesmo atributo <span class="code-color"><em>name</em></span>. Cada um deles é exclusivo, de modo que o atributo value correspondente à entrada escolhida será associado ao atributo name compartilhado. O atributo <span class="code-color"><em>checked</em></span> funciona como o atributo <span class="code-color"><em>selected</em></span> do controle <strong>&lt;select&gt;</strong>. Ele marca a entrada correspondente quando a página é carregada pela primeira vez. A tag <strong>&lt;label&gt;</strong> é especialmente útil para as entradas de radio, porque permite ao visitante marcar uma opção clicando ou tocando no texto correspondente, além do próprio controle.</p>
               <p class="Texto">Enquanto os controles radio se destinam a selecionar uma única opção em uma lista, o tipo de entrada <span class="code-color"><em>checkbox</em></span> (caixa de seleção) permite que o visitante marque diversas opções:</p>
               <br>
-              <div class="typewriter-small" style="width: 50%; text-align: left">
-  <pre><code>
-  <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+              <div class="typewriter-small">
+  <pre><code class="Texto">
 
-      <span class="code-color"><strong>&lt;p&gt;</strong></span>
-      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-code">"checkbox"</span><span class="blue-code">id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
+  <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+  <span class="code-color"><strong>&lt;p&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span class="blue-code"> id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code"> name=</span><span class="orange-code">"browser"</span> <span class="blue-code"> value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
       <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-firefox"</span><span class="code-color"><strong>&gt;</strong></span>Mozilla Firefox<span class ="code-color"><strong>&lt;/label&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-chrome "</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class ="orange-code">"chrome "</span><span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong ></span>
-    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome "</ span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-chrome "</span> <span class="blue-code"> name=</span><span class="orange-code ">"browser"</span> <span class="blue-code"> value=</span><span class ="orange-code">"chrome"</span><span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome"</span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
     <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"opera "</span><span class="code-color"><strong>&gt;</strong ></span>
-    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</span><span class="code-color"><strong>&gt;</strong></span>Opera<span  class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code"> name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"opera "</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</span><span class="code-color"><strong>&gt;</strong></span>Opera<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"edge"</span><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code"> name=</span><span class="orange-code ">"browser"</span> <span class="blue-code"> value=</span><span class  ="orange-code">"edge"</span><strong>&gt;</strong></span>
     <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-edge"</span><span class="code-color"><strong>&gt;</strong></span>Microsoft Edge<span  class="code-color"><strong>&lt;/label&gt;</strong></span>
-      <span class="code-color"><strong>&lt;/p&gt;</strong></span>
-        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+  <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+  <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     </pre></code>
   </div>
   <br>
@@ -428,24 +433,24 @@
             <p class="Texto">Se mais de uma opção for selecionada, o navegador as enviará com o mesmo nome, exigindo que o desenvolvedor de back-end escreva um código específico para ler corretamente os dados do formulário contendo caixas de seleção.</p>
             <p class="Texto">Para melhorar a usabilidade, os campos de entrada podem ser agrupados dentro de uma tag <span class="code-color"><strong>&lt;fieldset&gt;</strong></span>:</p>
             <br>
-            <div class="typewriter-small" style="width: 50%; text-align: left">
-  <pre><code>
+            <div class="typewriter-small">
+  <pre><code class="Texto">
   <span class="code-color"><strong>&lt;fieldset&gt;</strong></span>
   <span class="code-color"><strong>&lt;legend&gt;</strong></span> Browser favorito:<span class="code-color"><strong>&lt;/legend&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span><span class="orange-code">"checkbox"</span><span class="blue-code">id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span class="blue-code"> id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code"> name=</span><span class="orange-code">"browser"</span> <span class="blue-code"> value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
       <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-firefox"</span><span class="code-color"><strong>&gt;</strong></span>Mozilla Firefox<span class ="code-color"><strong>&lt;/label&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-chrome "</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class ="orange-code">"chrome "</span><span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong ></span>
-    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome "</ span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+      <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-chrome"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class ="orange-code">"chrome"</span><span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class ="blue-code"> for=</span><span class="orange-code">"browser-chrome "</span><span class="code-color"><strong>&gt;</strong></span>Google Chrome<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
     <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"opera "</span><span class="code-color"><strong>&gt;</strong ></span>
-    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</span><span class="code-color"><strong>&gt;</strong></span>Opera<span  class  ="code-color"><strong>&lt;/label&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-opera"</span> <span class="blue-code"> name=</span><span class="orange-code ">"browser"</span> <span class="blue-code"> value=</span><span class  ="orange-code">"opera "</span><span class="code-color"><strong>&gt;</strong ></span>
+    <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-opera"</span><span class="code-color"><strong>&gt;</strong></span>Opera<span class  ="code-color"><strong>&lt;/label&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code">id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code">name=</span><span class="orange-code ">"browser"</span> <span class="blue-code">value=</span><span class  ="orange-code">"edge"</span><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span  class="blue-code"> id=</span><span class="orange-code">"browser-edge"</span> <span class="blue-code"> name=</span><span class="orange-code ">"browser"</span> <span class="blue-code"> value=</span><span class  ="orange-code">"edge"</span><strong>&gt;</strong></span>
     <span class="code-color"><strong>&lt;label</strong></span><span class  ="blue-code"> for=</span><span class="orange-code">"browser-edge"</span><span class="code-color"><strong>&gt;</strong></span>Microsoft Edge<span  class="code-color"><strong>&lt;/label&gt;</strong></span>
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;/fieldset&gt;</strong></span>
@@ -472,7 +477,7 @@
                 <p class="Subtopico"><strong>O tipo de entrada de arquivo</strong></p>
                 <p class="Texto">Além dos dados textuais, que são digitados ou selecionados em uma lista, os formulários HTML também podem enviar arquivos arbitrários ao servidor. O tipo de entrada <span class="code-color"><em>file</em></span> permite ao visitante escolher um arquivo em seu sistema de arquivos local e enviá-lo diretamente pela página</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left ">
+                <div class="typewriter-small">
                 <span class="code-color"><strong>&lt;p&gt;</strong></span>
                 <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for=</span><span class="orange-code">"attachment"</span> <span class="code-color"><strong>&gt;</strong></span>>Attachment:  <span class="code-color"><strong>&lt;/label&gt;</strong></span><span class="code-color"><strong>&lt;br&gt;</strong></span>
                 <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"file"</span><span class="blue-code">id=</span><span class="orange-code">"attachment"</span><span class="blue-code">name=</span><span class="orange-code">" attachment"</span><span class="code-color"><strong>&gt;</strong></span>
