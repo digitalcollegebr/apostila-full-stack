@@ -72,7 +72,7 @@
                 <br>
                 <p class="Subtopico"><strong>A mensagem de solicitação</strong></p>
                 <p class="Texto">O HTTP opera através de uma conexão já estabelecida entre cliente e servidor, geralmente implementada em TCP e criptografada com TLS. Na verdade, uma vez que uma conexão que atenda aos requisitos impostos pelo servidor esteja pronta, uma solicitação HTTP digitada à mão em texto simples pode gerar a resposta do servidor. Na prática, porém, os programadores raramente precisam implementar rotinas para compor mensagens HTTP, pois a maioria das linguagens de programação fornece mecanismos que automatizam a criação dessas mensagens. No caso da URL de exemplo, <span class="code-color"><a href="https://learning.lpi.org/pt/" target="_blank">https://learning.lpi.org/pt/</a></span>, a mensagem de solicitação mais simples possível teria o seguinte conteúdo:</p>
-    <div class="code-section" style="width: 70%; text-align: left; font-size:20px">
+    <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px">
     <p><pre><code>
     GET /pt/ HTTP/1.1
     Host: learning.lpi.org
@@ -99,14 +99,14 @@
                 <p class="Texto">O campo <span class="code-color"><em>Accept</em></span> tem um valor mais imediato, pois informa ao servidor o formato do recurso solicitado. Se o formato do recurso for indiferente para o cliente, o campo <span class="code-color"><em>Accept</em></span> pode especificar <span class="code-color"><em>*/*</em></span> como formato.</p>
                 <p class="Texto">Existem muitos outros campos de cabeçalho que podem ser usados em uma mensagem HTTP, mas os campos mostrados no exemplo já bastam para solicitar um recurso do servidor.</p>
                 <p class="Texto">Além dos campos no cabeçalho da solicitação, o cliente pode incluir outros dados complementares na solicitação HTTP que será enviada ao servidor. Se esses dados consistirem apenas em parâmetros de texto simples, no formato name=value, eles podem ser adicionados ao caminho do método GET. Os parâmetros são incorporados ao caminho após um ponto de interrogação e são separados por <span class="code-color"><em> “&”</em></span>:</p>
-                <div class="code-smaller">
+                <div class="typewriter-small">
                     GET /cgi-bin/receive.cgi?name=LPI&email=info@lpi.org HTTP/1.1
                 </div>
                 <br>
                 <p class="Texto">Neste exemplo, <span class="code-color"><em>/cgi-bin/receive.cgi</em></span> é o caminho até o script no servidor que vai processar e, possivelmente, usar os parâmetros <span class="code-color"><em>name</em></span> e <span class="code-color"><em>email</em></span> obtidos no caminho da solicitação. A string que corresponde aos campos, no formato <span class="code-color"><em>name=LPI&email=info@lpi.org</em></span>, é chamada <em>string de solicitação e é fornecida ao script <span class="code-color"><em>receive.cgi</em></span> pelo servidor HTTP que recebe a solicitação.</em></p>
                 <p class="Texto">Quando os dados são compostos por mais do que campos curtos de texto, é mais apropriado enviálos no corpo de dados da mensagem. Neste caso, deve-se utilizar o método <span class="code-color"><strong>HTTP POST</strong></span> para que o servidor receba e processe o corpo de dados da mensagem, de acordo com as especificações indicadas no cabeçalho da solicitação. Quando o método POST é usado, o cabeçalho da solicitação deve fornecer o tamanho da carga que será enviada e a maneira como o corpo é formatado:</p>
                 <br>
-    <div class="code-section" style="width: 70%; text-align: left; font-size:20px;">
+    <div class="typewriter-small" style="width:50%; text-align: left; font-size:20px;">
     <p><pre><code>
     POST /cgi-bin/receive.cgi HTTP/1.1
     Host: learning.lpi.org
@@ -121,7 +121,7 @@
                 <p class="Subtopico"><strong>O cabeçalho de resposta</strong></p>
                 <p class="Texto">Depois que o servidor HTTP recebe o cabeçalho da mensagem de solicitação, o servidor retorna uma mensagem de resposta ao cliente. Uma solicitação de arquivo HTML normalmente tem um cabeçalho de resposta semelhante a este:</p>
                 <br>
-                <div class="code-section" style="width: 70%; text-align: left; font-size:20px;">
+                <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px;">
     <p><pre><code>
     HTTP/1.1 200 OK
     Accept-Ranges: bytes
@@ -247,7 +247,7 @@
         <p class="Texto">Em um site convencional ou aplicativo web, os recursos responsáveis pelo controle da sessão baseiam-se em cabeçalhos HTTP. O servidor não pode pressupor, por exemplo, que todas as solicitações provenientes do mesmo endereço IP vêm do mesmo cliente. O método mais tradicional que permite ao servidor associar diferentes solicitações a um único cliente é o uso de <span class="code-color"><em>cookies</em></span>, uma etiqueta de identificação fornecida ao cliente pelo servidor e incluída no cabeçalho HTTP.</p>
         <p class="Texto">Os cookies permitem que o servidor preserve informações sobre um cliente específico, mesmo que a pessoa que está executando o cliente não se identifique explicitamente. Com os cookies, é possível implementar sessões em que os logins, cartões de compras, preferências, etc., são preservados entre diferentes solicitações feitas ao mesmo servidor que os forneceu. Os cookies também são usados para rastrear a navegação do usuário, por isso é importante ter a permissão dele antes de enviá-los.</p>
         <p class="Texto">O servidor define o cookie no cabeçalho da resposta usando o campo Set-Cookie. O valor do campo é um par name=value escolhido de forma a representar algum atributo associado a um cliente específico. O servidor pode, por exemplo, criar um número de identificação para um cliente que solicita um recurso pela primeira vez e repassá-lo ao cliente no cabeçalho da resposta:</p>
-        <div class="code-section" style="width: 70%; text-align: left; font-size:20px;">
+        <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px;">
     <p><pre><code>
     HTTP/1.1 200 OK
     Accept-Ranges: bytes
@@ -256,7 +256,7 @@
     </div>
         <br>
         <p class="Texto">Se o cliente permitir o uso de cookies, as novas solicitações para este mesmo servidor terão o campo do cookie no cabeçalho:</p>
-        <div class="code-section" style="width: 70%; text-align: left; font-size:20px;">
+        <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px;">
     <p><pre><code>
     GET /en/ HTTP/1.1
     Host: learning.lpi.org

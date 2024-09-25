@@ -144,7 +144,7 @@
         <p class="Texto">A função <span class="code-color"><em>main()</em></span> ainda está presente. Mas agora temos uma nova palavra, <em>class</em> (classe), que introduz a definição de um objeto. A classe definida, chamada <em>Cube</em>, contém suas próprias variáveis e sub-rotinas. No POO, uma variável também é chamada de <em>atributo</em> e uma sub-rotina é chamada de <em>método</em>.</p>
         <p class="Texto">É possível criar vários objetos independentes pertencentes à mesma classe; as classes também podem ser compostas por outras classes Lembre-se de que esses mesmos recursos podem ser escritos de maneira diferente e que os exemplos deste capítulo são bem simplificados. C e C++ possuem recursos muito mais sofisticados, possibilitando construções bem mais complexas e práticas.</p>
         <p class="Texto">A maioria das linguagens de programação não impõe rigorosamente um paradigma, mas permite que os programadores escolham diversos aspectos de um paradigma ou de outro. O JavaScript, por exemplo, incorpora aspectos de diferentes paradigmas. O programador pode decompor o programa inteiro em funções que não compartilham um estado comum entre si:</p>
-        <div class="code-section" style="width: 50%; text-align: left;">
+        <div class="typewriter-small" style="width: 50%; text-align: left;">
                 <p><pre><code><span class="green-code"><strong>function</strong></span> cube(side) &lbrace;
                 <span class="green-code"><strong>return</strong></span> side*side*side;
         &rbrace;
@@ -160,7 +160,7 @@
         <p class="Texto">Independentemente do paradigma, toda linguagem possui bibliotecas de funções pré-construídas que podem ser incorporadas ao código. Funções matemáticas—como as ilustradas no código de exemplo—não precisam ser implementadas do zero, pois a linguagem já tem a função pronta para uso. O JavaScript, por exemplo, fornece o objeto <span class="code-color"><em>Math</em></span>, com as operações matemáticas mais comuns.</p>
         <p class="Texto">Geralmente há funções ainda mais especializadas disponibilizadas pelo fornecedor da linguagem ou por outros desenvolvedores. Essas bibliotecas de recursos extras podem estar na forma de códigofonte, ou seja, em arquivos extras que são incorporados ao arquivo em que serão usados. Em JavaScript, a incorporação é feita com <span class="code-color"><em>import from</em></span>:</p>
 
-        <div class="code-smaller">
+        <div class="typewriter-small">
                 <span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;
             </div>
             <br>

@@ -316,15 +316,17 @@
 }
 
 .typewriter-small {
-    padding: 10px 20px; 
-    width: 100; 
+    padding: 10px 20px;
+    width: 60%;
     font-size: 18px;
     line-height: 1.5;
     background-color: #f7f1f1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin: 0 auto; /* Centraliza horizontalmente */
     margin-bottom: 20px;
     box-sizing: border-box;
+    display: block;
 }
 
 
@@ -507,7 +509,7 @@ video {
   padding: 20px 0;
   text-align: center;
   clear: both;
-  margin-top: 100x;
+  margin-top: 200px;
 }
 
 

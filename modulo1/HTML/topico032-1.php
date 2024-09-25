@@ -34,7 +34,7 @@
                 <br>
                 <p class="Subtopico"><strong>Anatomia de um documento html</strong></p>
                 <div class="container-code">
-        <div class="code-section">
+        <div class="typewriter-small">
             <div class="typewriter">
                 <strong><pre><code>&lt;!DOCTYPE html&gt;
                &lt;html&gt;
@@ -57,7 +57,7 @@
         o título de um documento HTML. No entanto, um elemento possui dois outros componentes. Um
         elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> completo seria parecido com este:</p>
         <br>
-        <div class="code-smaller">
+        <div class="typewriter-small" style="width: 40%; text-align: center;">
                 <span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página HTML<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
         </div>
         <br>
@@ -115,7 +115,7 @@
         <br>
         <p class="Subtopico"><strong>Comentários em HTML</strong></p>
         <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:</p>
-        <div class="typewriter-small" style="width: 50%; color: #797979;">
+        <div class="typewriter-small" style="width: 40%; color: #797979; text-align: center;">
                 &lt;!--Isto é um comentário--&gt;<br>
                 &lt;!--Isto são<br>
                 múltiplos<br>
@@ -138,7 +138,7 @@
         <p class="Texto">As tags HTML podem incluir um ou mais atributos para especificar detalhes do elemento HTML.
         Uma tag simples com dois atributos tem o seguinte formato:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%;">
+        <div class="typewriter-small" style="width: 50%; text-align: center;">
                 <span class="code-color">&lt;tag</span> <span class="blue-code">attribute-a=</span> <span class="orange-code">"value-a"</span> <span class="blue-code">attribute-b=</span><span class="orange-code">"value-b"</span><span class="code-color">&gt;</span>
         </div>
         <p class="Texto">Os atributos devem ser definidos na tag de abertura.</p>
@@ -222,7 +222,7 @@
         <br>
         <p class="Texto">Eis um exemplo do uso desse elemento:</p>
         <br>
-        <div class="code-smaller">
+        <div class="typewriter-small" style="width: 40%; text-align: center;">
                 <span class="code-color"><strong>&lt;title&gt;</strong></span>My Test Page<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
         </div>
         <br>
@@ -276,9 +276,9 @@
         </div>
         <br>
         <p class="Subtopico"><strong>Adicionar um autor, descrição e palavras-chave</strong></p>
-        <p class="Texto">Usando a tag &lt;meta&gt;, podemos incluir informações adicionais sobre o autor da página HTML e descrever o conteúdo da página, desta forma:</p>
+        <p class="Texto">Usando a <span class="code-color"><strong>tag &lt;meta&gt;</strong></span>, podemos incluir informações adicionais sobre o autor da página HTML e descrever o conteúdo da página, desta forma:</p>
         <br>
-        <div class="typewriter-small">
+        <div class="typewriter-small" >
                 <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"author"</span> <span class="blue-code">content=</span><span class="orange-code">"Name Surname"</span><span class="code-color">&gt;</span><br>
                 <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"description"</span> <span class="blue-code">content=</span><span class="orange-code">"A short summary of the page content"</span><span class="code-color">&gt;</span><br>
         </div>
@@ -303,8 +303,8 @@
         <p class="Subtopico"><strong>Redirecionar uma página HTML e definir um intervalo de tempo para que o
         documento se atualize</strong></p>
         <br>
-        <p class="Texto">Usando a tag &lt;meta&gt;, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
-        <div class="typewriter-small" style="width: 50%;">
+        <p class="Texto">Usando a tag <span class="code-color"><strong>&lt;meta&gt;</strong></span>, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
+        <div class="typewriter-small" style="width: 40%; text-align:center;">
         <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30"</span><span class="code-color">&gt;</span>
         </div>
         <br>
@@ -318,7 +318,7 @@
         <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
         <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%;">
+        <div class="typewriter-small" style="width: 30%; text-align: center;">
         <span class="code-color">&lt;meta</span> <span class="blue-code">charset=</span> <span class="orange-code">"utf-8"<span class="code-color">&gt;</span>
         </div>
         <p class="Texto">Este elemento especifica que a codificação de caracteres do documento é utf-8, um conjunto de caracteres universal que inclui praticamente qualquer caractere de qualquer idioma humano. Portanto, ao usá-lo, você evita problemas de exibição que poderiam surgir se escolhesse outros conjuntos de caracteres, como o ISO-8859-1 (o alfabeto latino).
