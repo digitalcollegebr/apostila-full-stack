@@ -118,11 +118,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }elseif($questao['unidade']==4){
             echo "<a href='../modulo1/CSS/topico033-1.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-right (2).png' alt='Próxima Atividade' class='next'></a>";
         }elseif($questao['unidade']==5){
-            echo "<a href='../modulo1/HTML/topico033-2.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-right (2).png' alt='Próxima Atividade' class='next'></a>";
+            echo "<a href='../modulo1/CSS/topico033-2.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-right (2).png' alt='Próxima Atividade' class='next'></a>";
         }elseif($questao['unidade']==6){
-            echo "<a href='../modulo1/HTML/topico033-3.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-right (2).png' alt='Próxima Atividade' class='next'></a>";
+            echo "<a href='../modulo1/CSS/topico033-3.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-right (2).png' alt='Próxima Atividade' class='next'></a>";
         }elseif($questao['unidade']==7){
-            echo "<a href='../modulo1/HTML/topico033-4.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-right (2).png' alt='Próxima Atividade' class='next'></a>";
+            echo "<a href='../modulo1/CSS/topico033-4.php' class='button-prox-atv'><img src='../assets/img/arrow-circle-right (2).png' alt='Próxima Atividade' class='next'></a>";
         }
         echo "</div>";
         
