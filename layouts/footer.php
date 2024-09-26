@@ -6,6 +6,7 @@
             <br>
             © <?php echo date('Y'); ?> Todos os direitos reservados
         </p>
+        <script src="../../assets/js/copycode.js"></script>
     </div>
 </div>
 </body>

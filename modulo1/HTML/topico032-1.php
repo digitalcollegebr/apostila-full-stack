@@ -34,8 +34,11 @@
                 <br>
                 <p class="Subtopico"><strong>Anatomia de um documento html</strong></p>
                 <div class="container-code">
-        <div class="typewriter-small">
+        <div class="typewriter-small" id="copycode">
             <div class="typewriter">
+            <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                 <strong><pre><code>&lt;!DOCTYPE html&gt;
                &lt;html&gt;
                     &lt;head&gt;
@@ -115,9 +118,9 @@
         <br>
         <p class="Subtopico"><strong>Comentários em HTML</strong></p>
         <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:</p>
-        <div class="typewriter-small" style="width: 40%; color: #797979; text-align: center;">
+        <div class="typewriter-small" style="width: 40%; color: #797979;">
                 &lt;!--Isto é um comentário--&gt;<br>
-                &lt;!--Isto são<br>
+                &lt;!--Isto são
                 múltiplos<br>
                 comentários--&gt;
         </div>
@@ -342,6 +345,7 @@
     
 
 <?php include('../../layouts/footer.php') ?>
+
 
 </body>
 </html>

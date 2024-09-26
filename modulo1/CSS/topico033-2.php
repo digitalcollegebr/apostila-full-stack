@@ -32,7 +32,10 @@
                 Uma das vantagens de se usar CSS é não precisar escrever regras individuais para elementos que compartilham o mesmo estilo. Um asterisco aplica a regra a todos os elementos da página web, como mostrado no exemplo a seguir:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 *{
     <span class="blue-code">color:</span><span class="dark_blue_code"> purple</span>;
@@ -43,7 +46,10 @@
                 <br>
                 <p class="Texto">O seletor <span class="code-color"><em>*</em></span> não é o único método para se aplicar uma regra de estilo a todos os elementos da página. Um seletor que usa um nome de tag para aplicar estilos aos elementos contidos nessa tag é chamado de <em>seletor de tipo</em>; assim, qualquer nome de tag HTML, como <span class="code-color"><strong>body</strong></span>, <span class="code-color"><strong>p</strong></span>, <span class="code-color"><strong>table</strong></span>, <span class="code-color"><strong>em</strong></span>, etc., pode ser usado como seletor. No CSS, o estilo do pai é <em>herdado</em> pelos elementos filhos. Portanto, na prática, usar o seletor <span class="code-color"><em>*</em></span> tem o mesmo efeito que aplicar uma regra ao elemento body:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span>{
     <span class="blue-code">color:</span><span class="dark_blue_code"> purple</span>;
@@ -55,7 +61,10 @@
                 <p class="Texto">Além disso, o recurso de cascata do CSS permite ajustar as propriedades herdadas de um elemento. Você pode escrever uma regra CSS geral que se aplica a todos os elementos da página e, em seguida, escrever regras para elementos ou conjuntos de elementos específicos.</p>
                 <p class="Texto">Se o mesmo elemento corresponder a duas ou mais regras conflitantes, o navegador aplicará a regra do seletor mais específico. Veja por exemplo as seguintes regras de CSS:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span>{
     <span class="blue-code">color:</span><span class="dark_blue_code"> purple</span>;
@@ -76,7 +85,10 @@
                 possível definir duas ou mais regras usando o mesmo seletor:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>li</strong></span>{
     <span class="blue-code">font-size:</span><span class="dark_blue_code"> small</span>;
@@ -95,7 +107,10 @@
                 A ordem em que as regras aparecem na folha de estilo afeta a forma como são aplicadas no documento, mas podemos contornar esse comportamento usando uma regra important. Se, por algum motivo, você quiser manter as duas regras <span class="code-color"><strong>li</strong></span> separadas, mas forçar a aplicação da primeira em vez da segunda, marque a primeira regra como importante:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>li</strong></span>{
     <span class="blue-code">font-size:</span><span class="dark_blue_code"> small</span> <span class="red-color"><strong>!important</strong></span>;
@@ -119,7 +134,10 @@
                 Podemos incorporar atributos de tags HTML aos seletores para restringir o conjunto de elementos aos quais eles se referem. Suponha que a página HTML em que você está trabalhando tem dois tipos de listas não ordenadas (<span class="code-color"><strong>&lt;u&gt;</strong></span>): um deles é usado no topo da página como um menu para as seções do site e o outro em listas convencionais no corpo do texto:
                 </p>
                 <br>
-                <div style class="typewriter-small" style=" align-itens: center; display: flex; justify-content: center;">
+                <div style class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
 <span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -165,7 +183,6 @@
     
 
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
-
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>
     </pre></code>
   </div>
@@ -179,7 +196,10 @@
             O atributo <span class="code-color"><em>id</em></span> atribui um identificador único ao elemento correspondente, que podemos usar como parte do seletor da regra de CSS. Antes de escrever a regra, edite o arquivo HTML de exemplo e adicione <span class="code-color"><em>id="menu"</em></span> ao elemento <span class="code-color"><strong>ul</strong></span> usado para o menu superior:
             </p>
             <br>
-            <div class="typewriter-small" style="width: 50%;">
+            <div class="typewriter-small" style="width: 50%;" id="copycode">
+            <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;ul&gt;</strong></span>
     <span class="code-color"><strong>&lt;li&gt;</strong></span>Home<span class="code-color"><strong>&lt;li&gt;</strong></span>
@@ -194,7 +214,10 @@
                 de estilo <span class="code-color"><em>style.css</em></span> na mesma pasta, por isso podemos adicionar as seguintes regras CSS a ele:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>ul</strong></span><span class="dark_blue_code"><strong>#topmenu</strong></span>{
     <span class="blue-code">list-style-type:</span><span class="dark_blue_code"> none;</span>
@@ -215,7 +238,10 @@
                 No entanto, o elemento div não está diretamente relacionado às listas em HTML; portanto, adicionar a propriedade <span class="code-color"><em>list-style-type</em></span> a ele não terá efeito em seus filhos. Assim, para trocar o círculo preto nas listas dentro do conteúdo div por um círculo vazado, precisamos usar um seletor <em>descendente</em>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="dark_blue_code"><strong>#topmenu</strong></span>{
     <span class="blue-code">list-style-type:</span><span class="dark_blue_code"> none;</span>
@@ -234,7 +260,10 @@
                 Digamos que agora você deseja alterar a propriedade <span class="code-color"><em>font-style</em></span> dos itens da lista <em>topmenu</em> e da lista no <em>div de rodapé</em> para torná-los oblíquos. Não é possível simplesmente escrever uma regra de CSS usando ul como seletor, porque isso também vai alterar os itens da lista no <em>div de conteúdo</em>. Até agora, modificamos as propriedades CSS usando um seletor por vez, e esse método também pode ser usado para esta tarefa:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"   id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="dark_blue_code"><strong>#topmenu</strong></span>{
     <span class="blue-code">font-style:</span><span class="dark_blue_code"> oblique;</span>
@@ -251,7 +280,10 @@
                 seletores que compartilham um ou mais estilos, usando uma lista de seletores separados por vírgulas:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"   id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="dark_blue_code"><strong>#topmenu</strong></span>, <span class="dark_blue_code"><strong>footer</strong></span> <span class="code-color"><strong>ul</strong></span> {
     <span class="blue-code">font-style:</span><span class="dark_blue_code"> oblique;</span>
@@ -271,7 +303,10 @@
                 Veja por exemplo a página HTML na qual estamos trabalhando nesta lição. É improvável que nas páginas do mundo real encontremos estruturas simples assim, então seria mais prático selecionar um elemento usando apenas as classes ou uma combinação de classes e descendência. Para aplicar a propriedade <span class="code-color"><em>font-style: oblique</em></span> às listas de menu usando classes, primeiro precisamos adicionar a propriedade <span class="code-color"><em>class</em></span> aos elementos no arquivo HTML. Faremos isso primeiro no menu superior:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;ul</strong></span> <span class="blue-code">id=</span><span class="orange-code">"topmenu"</span> <span class="blue-code">class=</span><span class="orange-code">"menu"</span><span class="code-color"><strong>&gt;</strong></span>
     <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>a</strong></span> <span class="blue-code">href=</span><span class="orange-code">"/"</span><span class="code-color"><strong>&gt;</strong></span>Home<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;li&gt;</strong></span>
@@ -283,12 +318,15 @@
 <br>
                 <p class="Texto">E depois no menu do rodapé:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
-<span class="code-color"><strong>&lt;div</strong></span> <span class="blue-code">id=</span><span class="orange-code">"footer"</span>
+<span class="code-color"><strong>&lt;div</strong></span> <span class="blue-code"> id=</span><span class="orange-code">"footer"</span>
 <span class="code-color"><strong>&lt;ul</strong></span> <span class="blue-code">class=</span><span class="orange-code">"menu"</span><span class="code-color"><strong>&gt;</strong></span>
-    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>a</strong></span> <span class="blue-code">href=</span><span class="orange-code">"/"</span><span class="code-color"><strong>&gt;</strong></span>Home<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;li&gt;</strong></span>
-    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>a</strong></span> <span class="blue-code">href=</span><span class="orange-code">"/articles"</span><span class="code-color"><strong>&gt;</strong></span>Artigos <span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;li&gt;</strong></span>
+    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>a</strong></span> <span class="blue-code"> href=</span><span class="orange-code">"/"</span><span class="code-color"><strong>&gt;</strong></span>Home<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;li&gt;</strong></span>
+    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>a</strong></span> <span class="blue-code"> href=</span><span class="orange-code">"/articles"</span><span class="code-color"><strong>&gt;</strong></span>Artigos <span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;li&gt;</strong></span>
     <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>a</strong></span> <span class="blue-code">href=</span><span class="orange-code">"/about"</span><span class="code-color"><strong>&gt;</strong></span>Sobre<span class="code-color"><strong>&lt;/a&gt;</strong></span><span class="code-color"><strong>&lt;li&gt;</strong></span>
 <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
 <span class="code-color"><strong>&lt;/div&gt;</strong></span>
@@ -299,7 +337,11 @@
                 Com isso, podemos substituir o grupo de seletores <span class="code-color"><em>#topmenu</em></span>, <span class="code-color"><em>#footer ul</em></span> pelo seletor baseado em classe <span class="code-color"><em>.menu</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+
                     <pre><code class="Texto">
 <span class="code-color"><strong>.menu</strong></span>{
     <span class="blue-code">font-style:</span><span class="dark_blue_code"> oblique;</span>
@@ -315,23 +357,36 @@
                 menu superior e o inferior adicionando uma classe extra a cada um deles:
                 </p>
                 <br>
-                <div class="code-smaller">
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
                     <span class="code-color"><strong>&lt;ul id</strong></span>= <span class="orange-code">"topmenu"</span> <span class="code-color"><strong>class</strong></span>= <span class="orange-code">"menu top"</span><span class="code-color"><strong>&gt;</strong></span>
+            </code></pre>
                 </div>
                 <br>
                 <p class="Texto">
                 E no menu do rodapé:
                 </p>
                 <br>
-                <div class="code-smaller">
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
                     <span class="code-color"><strong>&lt;ul</strong></span><span class="code-color"><strong> class</strong></span>= <span class="orange-code">"menu footer"</span><span class="code-color"><strong>&gt;</strong></span>
+            </code></pre>
                 </div>
                 <br>
                 <p class="Texto">
                 Quando o atributo class possui mais de uma classe, elas devem ser separadas por espaços. Agora, além da regra CSS compartilhada entre os elementos da classe menu, podemos abordar o menu superior e o rodapé usando suas classes correspondentes:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.menu</strong></span>{
     <span class="blue-code">font-style:</span><span class="dark_blue_code"> oblique;</span>
@@ -359,7 +414,10 @@
                 De volta à página de exemplo, poderíamos remover os sublinhados dos links no menu superior e exibir uma linha apenas quando o ponteiro do mouse se movesse sobre o link correspondente. Para fazer isso, primeiro escrevemos uma regra para remover o sublinhado dos links no menu superior:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.menu.top a</strong></span>{
     <span class="blue-code">text-decoration:</span><span class="dark_blue_code"> none;</span>
@@ -372,7 +430,10 @@
                 ser aplicada somente quando o ponteiro do mouse estiver sobre o elemento correspondente:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.menu.top a</strong></span><span style="color: #797979;">:hover</span>{
     <span class="blue-code">text-decoration:</span><span class="dark_blue_code"> underline;</span>

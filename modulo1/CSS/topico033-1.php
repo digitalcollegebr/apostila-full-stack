@@ -45,8 +45,13 @@
                 A maneira mais simples de modificar o estilo de um elemento específico é escrevê-lo diretamente na tag do elemento usando o atributo <span class="code-color"><em>style</em></span>. Todos os elementos HTML visíveis aceitam um atributo <span class="code-color"><em>style</em></span>, cujo valor pode ser uma ou mais regras de CSS, também conhecidas como <span class="code-color"><em>propriedades</em></span>. Vamos começar com um exemplo simples, um elemento de parágrafo:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
                     <span class="code-color"><strong>&lt;p&gt;</strong></span>Meu parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                    </code></pre>
                 </div>
                 <br>
                 <p class="Texto">A sintaxe básica de uma propriedade CSS personalizada é <span class="code-color"><em>property: value</em></span>, onde <span class="code-color"><em>property</em></span> é o aspecto particular que você deseja alterar no elemento e <span class="code-color"><em>value</em></span> define o que substituirá a opção padrão feita pelo navegador. Algumas propriedades se aplicam a todos os elementos e outras se aplicam apenas a elementos específicos. Da mesma forma, existem valores adequados a serem utilizados em cada propriedade.</p>
@@ -54,15 +59,21 @@
                 Para mudar a cor do nosso parágrafo simples, por exemplo, usamos a propriedade <span class="code-color"><em>color</em></span>. A propriedade <span class="code-color"><em>color</em></span> refere-se à cor do <em>primeiro plano</em>, ou seja, a cor das letras do parágrafo. A cor em si é indicada na parte do valor da regra e pode ser especificada em vários formatos diferentes, incluindo nomes simples como <em>red</em>, <em>green</em>, <em>blue</em>, <em>yellow</em> etc. Assim, para deixar a letra do parágrafo roxa, adicione a propriedade personalizada <span class="code-color"><em>color: purple</em></span> ao atributo <span class="code-color"><em>style</em></span> do elemento:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                            <i class="fas fa-copy"></i>
+                </button>
+            <pre><code class="Texto">
                     <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"</span><span class="code-color"><strong>&gt;</strong></span> Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
                     </div>
+                </pre></code>
                     <br>
                     <p class="Texto">Outras propriedades personalizadas podem entrar na mesma propriedade style, mas devem ser separadas por ponto e vírgula. Se você quiser aumentar o tamanho da fonte, por exemplo, adicione <span class="code-color"><em>font-size: larger</em></span> à propriedade style:</p>
                     <br>
                     <div class="typewriter-small" style="width: 50%;">
                     <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"; font-size: larger</span><span class="code-color"><strong>&gt;</strong></span>Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
                     </div>
+                    </code></pre>
                     <br>
                     <div class="destaques wow fadeIn" data-wow-delay="0.3s">
                         <div class="Caixa TituloExemplo">
@@ -81,7 +92,7 @@
                         navegador web (os resultados são mostrados na <em>Figure 32</em>):
                     </p>
                     <br>
-                    <div class="typewriter-small" style="width: 50%; text-align: center;" id="copycode">
+                    <div class="typewriter-small" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
@@ -97,7 +108,6 @@
 <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: green"; font-size: larger;<span class="code-color"><strong>&gt;</strong></span></span> Meu segundo parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
   
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
-
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>
     </pre></code>
   </div>
@@ -113,9 +123,14 @@
             </p>
             <p class="Texto">O retângulo correspondente ao elemento p no corpo do documento HTML de amostra ficará visível se adicionarmos a propriedade background-color à regra (<em>Figure 33</em>):</p>
             <br>
-            <div style class="typewriter-small" style="width: 50%; text-align: center">
-            <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple; font-size: larger; background-color: silver"<span class="code-color"><strong>&gt;</strong></span></span>Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span><br>
-            <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: green; font-size: larger; background-color: silver"<span class="code-color"><strong>&gt;</strong></span></span> Meu segundo parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+            <div style class="typewriter-small" style="width: 50%;"  id="copycode">
+            <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+                <pre><code class="Texto">
+    <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple; font-size: larger; background-color: silver"<span class="code-color"><strong>&gt;</strong></span></span>Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span><br>
+    <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: green; font-size: larger; background-color: silver"<span class="code-color"><strong>&gt;</strong></span></span> Meu segundo parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+            </pre></code>
             </div>
             <br>
             <div class="image-content">
@@ -139,7 +154,10 @@
                   A tag <span class="code-color"><strong>&lt;style&gt;</strong></span> permite escrever regras de CSS dentro da página HTML que queremos estilizar. Ela permite ao navegador diferenciar o código CSS do código HTML. A tag <span class="code-color"><strong>&lt;style&gt;</strong></span> entra na seção <span class="code-color"><em>head</em></span> do documento:
                   </p>
                   <br>
-                  <div style class="typewriter-small" style="width: 50%; text-align: left;">
+                  <div style class="typewriter-small" style="width: 50%; text-align: left;" id="copycode">
+                  <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
 <span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -163,7 +181,10 @@
                    de CSS são interpretadas pelo navegador. Se escrevermos:
                    </p>
                    <br>
-                   <div  class="typewriter-small">
+                   <div  class="typewriter-small" id="copycode">
+                   <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre>
                     <code class="Texto">
 <span class="code-color"><strong>&lt;style type=</strong></span><span class="orange-code">"text/css"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -174,7 +195,10 @@
                   <br>
                   <p class="Texto">o resultado será exatamente igual ao de:</p>
                   <br>
-    <div class="typewriter-small" style="width: 50%;">
+    <div class="typewriter-small" style="width: 50%;"  id="copycode">
+    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;style type=</strong></span><span class="orange-code">"text/css"</span><span class="code-color"><strong>&gt;</strong></span>
     <span class="code-color"><strong>p{</strong></span> 
@@ -187,7 +211,10 @@
                   <p class="Texto">Os bytes extras ocupados pelos espaços e quebras de linha fazem pouca diferença no tamanho final do documento e não têm um impacto significativo no tempo de carregamento da página, portanto a escolha do layout é questão de gosto. Observe o ponto e vírgula após a última declaração <span class="code-color"><em>(fontsize: larger;)</em></span> da regra de CSS. Esse ponto e vírgula não é obrigatório, mas sua presença facilita a inclusão de outra declaração na linha seguinte sem se preocupar com a falta de um ponto e vírgula.</p>
                   <p class="Texto">As declarações em linhas separadas também ajudam quando precisamos comentar uma declaração. Sempre que você quiser desabilitar temporariamente uma declaração para, por exemplo, resolver um problema na página, basta colocar a linha correspondente entre <span class="code-color"><em>/*</em></span> e <span class="code-color"><em>*/</em></span>:</p>
                   <br>
-                  <div class="typewriter-small" style="width: 50%;">
+                  <div class="typewriter-small" style="width: 50%" id="copycode">
+                  <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>p;{</strong></span>
      <span class="blue-code">color: </span><span class="dark_blue_code">purple</span>;
@@ -200,7 +227,10 @@
                 <br>
                 <p class="Texto">ou:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>p;{</strong></span>
      <span class="blue-code">color: </span><span class="dark_blue_code">purple</span>;
@@ -213,6 +243,9 @@
                 <p class="Texto">Os comentários também são úteis para escrever lembretes sobre as regras:</p>
                 <br>
                 <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
     <pre><code class="Texto">
     <span style="color: #797979;">/* O texto dentro de &lt;p&gt; é roxo e largo */</span>
 <span class="code-color"><strong>p;{</strong></span>
@@ -238,7 +271,10 @@
                 A tag HTML <span class="code-color"><strong>&lt;link&gt;</strong></span> define uma folha de estilo externa a ser usada no documento atual e deve constar da seção <span class="code-color"><em>head</em></span> do documento HTML:
                 </p>
                 <br>
-                <div class="typewriter-small">
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
   <span class="code-color"><strong>&lt;meta</strong></span><span class="blue-code"> charset=</span><span class="orange-code">"utf-8"</span><span class="code-color"><strong>&gt;</strong></span>

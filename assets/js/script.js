@@ -14,5 +14,11 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
-// A_S - Back to top
+//  A_S - End of Back to top
+
+//  A_S - Copycode
+
+
+
+
 

@@ -34,7 +34,10 @@
                 <p class="Subtopico"><strong>Formulários HTML simples</strong></p>
                 <p class="Texto">Antes de falar do código de marcação específico para formulários, vamos começar com um documento HTML simples em branco, sem nenhum conteúdo no corpo:</p>
                 <br>
-                <div class="typewriter-small">
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
 <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
 <span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -51,8 +54,11 @@
   </div>
             <p class="Texto">Salve esse código de exemplo como um arquivo de texto simples com a extensão <span class="code-color"><em>.html</em></span> (por exemplo, <em>form.html</em>) e use seu navegador favorito para abri-lo. Após alterá-lo, pressione o botão de recarregar no navegador para exibir as modificações.</p>
             <p class="Texto">A estrutura básica do formulário é dada pela própria tag <span class="code-color"><strong>&lt;form&gt;</strong></span> e seus elementos internos:</p>
-            <div class="typewriter-small">
+            <div class="typewriter-small" id="copycode">
   <pre><code class="Texto">
+            <button class="copy-btn" onclick="copyCode()">
+                <i class="fas fa-copy"></i>
+            </button>
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
 <span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
@@ -68,8 +74,6 @@
         <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"text"</span><span class="blue-code"> name=</span><span class="orange-code">"fullname"</span><span class="blue-code"> id=</span><span class="orange-code">"fullname"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"reset"</span><span class="blue-code"> value=</span><span class="orange-code">"Clear form"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span><span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"submit"</span><span class="blue-code"> value=</span><span class="orange-code">"Submit form"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
-
-
     <span class="code-color"><strong>&lt;/form&gt;</strong></span>
   
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
@@ -97,7 +101,10 @@
                     </div>
                 <br>
                 <p class="Texto">Como mostrado no exemplo, a tag de parágrafo <span class="code-color"><strong>&lt;p&gt;</strong></span> pode ser usada para descrever o campo para o visitante. No entanto, não há uma maneira óbvia de o navegador relacionar a descrição na tag <p> com o elemento correspondente de inserção de dados. A tag <span class="code-color"><strong>&lt;label&gt;</strong></span> é mais apropriada nesses casos (a partir de agora, considere todos os exemplos de código como estando dentro do corpo do documento HTML):</p>
-                <div class="typewriter-small">
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
 <span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -114,7 +121,10 @@
   </div>
             <p class="Texto">Salve esse código de exemplo como um arquivo de texto simples com a extensão <span class="code-color"><em>.html</em></span> (por exemplo, <em>form.html</em>) e use seu navegador favorito para abri-lo. Após alterá-lo, pressione o botão de recarregar no navegador para exibir as modificações.</p>
             <p class="Texto">A estrutura básica do formulário é dada pela própria tag <span class="code-color"><strong>&lt;form&gt;</strong></span> e seus elementos internos:</p>
-            <div class="typewriter-small">
+            <div class="typewriter-small" id="copycode">
+            <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code  class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Personal Information<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
@@ -260,7 +270,10 @@
               <p class="Texto">A aparência dos tipos de entrada <span class="code-color"><em>password</em></span>, <span class="code-color"><em>search</em></span>, <span class="code-color"><em>tel</em></span>, <span class="code-color"><em>url</em></span> e <span class="code-color"><em>email</em></span> é idêntica à do tipo text padrão. Sua finalidade é oferecer indicações ao navegador sobre o conteúdo esperado para esse campo de entrada de dados, de modo que o navegador ou o script em execução no lado do cliente possa realizar ações personalizadas para um tipo de entrada específico. A única diferença entre o tipo de entrada de texto e o tipo de campo de senha, por exemplo, é que o conteúdo do campo de senha <strong>não</strong> é exibido conforme o visitante digita sua senha. Nos dispositivos com tela de toque, nos quais o texto é digitado em um teclado virtual, o navegador pode exibir apenas o teclado numérico quando uma entrada do tipo <span class="code-color"><em>tel</em></span> é selecionada. Outra ação possível é sugerir uma lista de endereços de email conhecidos quando uma entrada do tipo email está no foco.</p>
               <p class="Texto">O tipo <span class="code-color"><em>number</em></span> também aparece como uma entrada de texto simples, mas com setas de aumentar/diminuir ao lado. Seu uso fará com que o teclado numérico apareça nos dispositivos com tela de toque quando o campo estiver selecionado.</p>
               <p class="Texto">Os outros elementos de inserção de dados têm sua própria aparência e comportamento. O tipo date, por exemplo, é representado de acordo com as configurações locais de formato de data e um calendário é exibido quando o campo está no foco:</p>
-              <div class="typewriter-small">
+              <div class="typewriter-small" id="copycode">
+              <button class="copy-btn" onclick="copyCode()">
+                <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
@@ -289,7 +302,10 @@
                 <br>
                 <p class="Texto">Este é um recurso padrão em todos os navegadores modernos e não requer opções extras ou programação.</p>
                 <p class="Texto">Independentemente do tipo de entrada, o conteúdo de um campo de inserção de dados é chamado de valor. Todos os valores do campo aparecem vazios por padrão, mas o atributo value pode ser usado para definir um valor padrão para o campo. O valor do tipo de data deve usar o formato <span class="code-color"><strong>AAAA-MM-DD</strong></span>. O valor padrão do campo de data a seguir foi definido como 6 de agosto de 2020:</p>
-                <div class="typewriter-small">
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
@@ -300,7 +316,10 @@
   </div>
                 <p class="Texto">Os tipos de entrada específicos ajudam o visitante a preencher os campos, mas não evitam que ele ignore as restrições e insira valores arbitrários em qualquer campo. Por isso, é importante que os valores dos campos sejam validados ao chegarem ao servidor.</p>
                 <p class="Texto">Os elementos do formulário cujos valores devem ser digitados pelo visitante podem ter atributos especiais que auxiliam no preenchimento. O atributo <span class="code-color"><em>placeholder</em></span> (marcador de posição) insere um valor de exemplo no elemento de inserção de dados:</p>
-                <div class="typewriter-small">
+                <div class="typewriter-small"  id="copycode">
+                  <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+                  </button>
                 <span class="code-color"><strong>&lt;p&gt;</strong></span>Adress:  <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span> <span class="orange-code">"text"</span><span class="blue-code">name=</span>  <span class="orange-code">"address"</span><span class="blue-code">placeholder=</span>  <span class="orange-code">"e.g. 41 John St., Upper Suite 1"</span><span class="code-code">&gt;</span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
                 </div>
                 <br>
@@ -317,7 +336,10 @@
                 <p class="Subtopico"><strong>Campo de entrada para textos grandes: textarea</strong></p>
                 <p class="Texto">Ao contrário do campo de texto, onde apenas uma linha de texto pode ser inserida, o elemento textarea permite que o visitante insira mais de uma linha de texto. O textarea é um elemento separado, mas não é baseado no elemento input:</p>
                 <br>
-                <div class="typewriter-small">
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"comment"</span><span class="code-color"><strong>&gt;</strong></span> Digite seu comentário aqui:<span class="code-color"><strong>&lt;/label&gt;</strong> <span class="code-color"><strong>&lt;br&gt;</strong></span>
@@ -340,7 +362,10 @@
                   <p class="Texto">Diversos tipos de controles de formulário podem ser usados para apresentar uma lista de opções ao visitante: o elemento <span class="code-color"><strong>&lt;select&gt;</strong></span> e os tipos de entrada <span class="code-color"><em>radio</em></span> e <span class="code-color"><em>checkbox</em></span>.</p>
                   <p class="Texto">O elemento <span class="code-color"><strong>&lt;select&gt;</strong></span> é um controle suspenso com uma lista de entradas predefinidas:</p>
                   <br>
-                  <div class="typewriter-small">
+                  <div class="typewriter-small" id="copycode">
+                  <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code  class="Texto">
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"browser"</span><span class="code-color"><strong>&gt;</strong></span> Browser favorito:<span class="code-color"><strong>&lt;/label&gt;</strong>
@@ -364,9 +389,11 @@
                   <p class="Texto">A primeira entrada da lista é selecionada por padrão. Para alterar esse comportamento, você pode adicionar o atributo <span class="code-color"><em>selected</em></span> a outra entrada, para que ela esteja selecionada quando a página carregar.</p>
                   <p class="Texto">O tipo de entrada <span class="code-color"><em>radio</em></span> é semelhante ao controle <strong>&lt;select&gt;</strong>, mas em vez de uma lista suspensa ele mostra todas as entradas para que o visitante selecione uma delas. Os resultados do código a seguir são mostrados na <em>Figure 28</em>.</p>
                   <br>
-                  <div class="typewriter-small">
+                  <div class="typewriter-small" id="copycode">
+                  <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
-
   <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
   <span class="code-color"><strong>&lt;p&gt;</strong></span>
       <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">radio</span><span class="blue-code"> id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code">name=</span><span class="orange-code">"browser"</span> <span class="blue-code">value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
@@ -398,9 +425,11 @@
               <p class="Texto">Observe que todos os tipos de entrada <span class="code-color"><em>radio</em></span> no mesmo grupo têm o mesmo atributo <span class="code-color"><em>name</em></span>. Cada um deles é exclusivo, de modo que o atributo value correspondente à entrada escolhida será associado ao atributo name compartilhado. O atributo <span class="code-color"><em>checked</em></span> funciona como o atributo <span class="code-color"><em>selected</em></span> do controle <strong>&lt;select&gt;</strong>. Ele marca a entrada correspondente quando a página é carregada pela primeira vez. A tag <strong>&lt;label&gt;</strong> é especialmente útil para as entradas de radio, porque permite ao visitante marcar uma opção clicando ou tocando no texto correspondente, além do próprio controle.</p>
               <p class="Texto">Enquanto os controles radio se destinam a selecionar uma única opção em uma lista, o tipo de entrada <span class="code-color"><em>checkbox</em></span> (caixa de seleção) permite que o visitante marque diversas opções:</p>
               <br>
-              <div class="typewriter-small">
+              <div class="typewriter-small"  id="copycode">
+              <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
-
   <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
   <span class="code-color"><strong>&lt;p&gt;</strong></span>
       <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"checkbox"</span><span class="blue-code"> id=</span><span class="orange-code">"browser-firefox"</span> <span class="blue-code"> name=</span><span class="orange-code">"browser"</span> <span class="blue-code"> value=</span><span class="orange-code">"firefox"</span> <span class="blue-code">checked</span><span class="code-color"><strong>&gt;</strong></span>
@@ -433,7 +462,11 @@
             <p class="Texto">Se mais de uma opção for selecionada, o navegador as enviará com o mesmo nome, exigindo que o desenvolvedor de back-end escreva um código específico para ler corretamente os dados do formulário contendo caixas de seleção.</p>
             <p class="Texto">Para melhorar a usabilidade, os campos de entrada podem ser agrupados dentro de uma tag <span class="code-color"><strong>&lt;fieldset&gt;</strong></span>:</p>
             <br>
-            <div class="typewriter-small">
+            <div class="typewriter-small"  id="copycode">
+            <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+
   <pre><code class="Texto">
   <span class="code-color"><strong>&lt;fieldset&gt;</strong></span>
   <span class="code-color"><strong>&lt;legend&gt;</strong></span> Browser favorito:<span class="code-color"><strong>&lt;/legend&gt;</strong></span>
@@ -468,8 +501,13 @@
                 <p class="Subtopico"><strong>O tipo de elemento hidden</strong></p>
                 <p class="Texto">Em certas situações, o desenvolvedor precisa incluir no formulário informações que não podem ser manipuladas pelo visitante, ou seja, enviar um valor escolhido pelo desenvolvedor sem que haja um campo no formulário onde o visitante possa digitar ou alterar o valor. Isso serviria, por exemplo, para incluir um token de identificação, que não precisa ser visto pelo visitante, para aquele formulário específico. Um elemento oculto de formulário seria escrito como no exemplo a seguir:</p>
                 <br>
-                <div style class="typewriter-small" style="width: 50%; text-align: left;">
+                <div style class="typewriter-small" style="width: 50%; text-align: left;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+                </button>
+              <pre><code class="Texto">
                 <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code">type=</span><span class="orange-code">"hidden "</span> <span class="blue-code">id=</span><span class="orange-code">"form-token"</span> <span class="blue-code">name=</span><span class ="orange-code">"form-token"</span> <span class="blue-code">value=</span><span class="orange-code">"e730a375-b953-4393-847d-2dab065bbc92"</span><span class="code-color"><strong>&gt;</strong></span>
+                </code></pre>
                 </div>
                 <br>
                 <p class="Texto">O valor de um campo de entrada oculto é geralmente adicionado ao documento no lado do servidor, no momento de renderizar o documento. As entradas ocultas são tratadas como campos comuns quando o navegador as envia ao servidor, que também as lê como campos de entrada comuns.</p>
@@ -477,11 +515,16 @@
                 <p class="Subtopico"><strong>O tipo de entrada de arquivo</strong></p>
                 <p class="Texto">Além dos dados textuais, que são digitados ou selecionados em uma lista, os formulários HTML também podem enviar arquivos arbitrários ao servidor. O tipo de entrada <span class="code-color"><em>file</em></span> permite ao visitante escolher um arquivo em seu sistema de arquivos local e enviá-lo diretamente pela página</p>
                 <br>
-                <div class="typewriter-small">
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+                </button>
+                <pre><code class="Texto">
                 <span class="code-color"><strong>&lt;p&gt;</strong></span>
-                <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for=</span><span class="orange-code">"attachment"</span> <span class="code-color"><strong>&gt;</strong></span>>Attachment:  <span class="code-color"><strong>&lt;/label&gt;</strong></span><span class="code-color"><strong>&lt;br&gt;</strong></span>
-                <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code">type=</span><span class="orange-code">"file"</span><span class="blue-code">id=</span><span class="orange-code">"attachment"</span><span class="blue-code">name=</span><span class="orange-code">" attachment"</span><span class="code-color"><strong>&gt;</strong></span>
+                <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for=</span><span class="orange-code">"attachment"</span> <span class="code-color"><strong>&gt;</strong></span>Attachment:  <span class="code-color"><strong>&lt;/label&gt;</strong></span><span class="code-color"><strong>&lt;br&gt;</strong></span>
+                <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"file"</span><span class="blue-code"> id=</span><span class="orange-code">"attachment"</span><span class="blue-code"> name=</span><span class="orange-code">" attachment"</span><span class="code-color"><strong>&gt;</strong></span>
                 <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                </code></pre>
                 </div>
                 <br>
                 <p class="Texto">Em vez de um campo de formulário para escrever ou selecionar um valor, o tipo de entrada file mostra um botão <span class="code-color"><em>browse</em></span> que abre uma caixa de diálogo de arquivo. Qualquer tipo de arquivo é aceito pelo tipo de entrada <span class="code-color"><em>file</em></span>, mas normalmente o desenvolvedor back-end restringe os tipos de arquivo permitidos e seu tamanho máximo. A verificação do tipo de arquivo também pode ser realizada no front-end, adicionando-se o atributo <span class="code-color"><em>accept</em></span>. Para aceitar apenas imagens JPEG e PNG, por exemplo, o atributo <span class="code-color"><em>accept</em></span> deve ser <em>accept="image/jpeg, image/png"</em>.</p>
@@ -489,8 +532,13 @@
                 <p class="Subtopico"><strong>Botões de ação</strong></p>
                 <p class="Texto">Por padrão, o formulário é enviado quando o visitante pressiona a tecla Enter em qualquer campo de entrada. Para tornar as coisas mais intuitivas, um botão de envio deve ser adicionado com o tipo de entrada <span class="code-color"><em>submit</em></span>:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left ">
-                <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code">type=</span><span class="orange-code">"submit "</span> <span class="blue-code">value=</span><span class="orange-code">"Enviar"</span><span class="code-color"><strong>&gt;</strong></span>
+                <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode">
+                  <button class="copy-btn" onclick="copyCode()">
+                          <i class="fas fa-copy"></i>
+                  </button>
+                  <pre><code class="Texto">
+                <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code"> type=</span><span class="orange-code">"submit "</span> <span class="blue-code"> value=</span><span class="orange-code">"Enviar"</span><span class="code-color"><strong>&gt;</strong></span>
+                </code></pre>
                 </div>
                 <br>
                 <div class="image-content">
@@ -501,13 +549,24 @@
                 <br>
                 <p class="Texto">Outro botão útil a se incluir em formulários complexos é o botão <span class="code-color"><em>reset</em></span>, que limpa o formulário e o devolve ao seu estado original:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left"><span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"reset"</span><span class="code-color"><strong>&gt;</strong></span>
+                <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
+                  <span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"reset"</span><span class="code-color"><strong>&gt;</strong></span>
+                  </code></pre>
                 </div>
                 <br>
                 <p class="Texto">Como no caso do botão de enviar, o texto do atributo <span class="code-color"><em>value</em></span> é usado para rotular o botão. Alternativamente, a tag <span class="code-color"><strong>&lt;button&gt;</strong></span> pode ser usada para adicionar botões em formulários ou em qualquer outro lugar da página. Ao contrário dos botões feitos com a tag <span class="code-color"><strong>&lt;input&gt;</strong></span>, o elemento de botão tem uma tag de fechamento e o rótulo do botão é seu conteúdo interno:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left ">
+                <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+                </button>
+                <pre><code class="Texto">
                 <span class="code-color"><strong>&lt;button</strong></span>Enviar formulário<span class="code-color"><strong>&lt;/button&gt;</strong></span>
+                </code></pre>
                 </div>
                 <br>
                 <p class="Texto">Quando dentro de um formulário, a ação padrão do elemento <span class="code-color"><strong>button</strong></span> é enviar o formulário. Como no caso dos botões de input, o atributo do tipo button pode ser alterado para <span class="code-color"><em>reset</em></span>.</p>
@@ -516,21 +575,36 @@
                 <p class="Texto">A última etapa ao se escrever um formulário HTML é definir como e para onde os dados devem ser enviados. Esses aspectos dependem dos detalhes do cliente e do servidor.</p>
                 <p class="Texto">No lado do servidor, a abordagem mais comum é configurar um arquivo de script para analisar, validar e processar os dados do formulário de acordo com a finalidade do aplicativo. Por exemplo, o desenvolvedor back-end pode escrever um script chamado <em>receive_form.php</em> para receber os dados enviados do formulário. No lado do cliente, o script é indicado no atributo action da tag do  formulário:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align:left">
+                <div class="typewriter-small" style="width: 50%; text-align:left" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
                   <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="code-color"><strong>&gt;</strong></span>
+              </code></pre>
                 </div>
                 <br>
                 <p class="Texto">O atributo <span class="code-color"><em>action</em></span> segue as mesmas convenções de todos os endereços HTTP. Se o script estiver no mesmo nível de hierarquia da página que contém o formulário, ele pode ser escrito sem o caminho completo. Caso contrário, o caminho absoluto ou relativo deve ser fornecido. O script também deve gerar a resposta que servirá como página de destino, carregada pelo navegador após o visitante enviar o formulário.</p>
                 <p class="Texto">O HTTP proporciona métodos distintos para enviar dados de formulário por meio de uma conexão com o servidor. Os métodos mais comuns são <span class="code-color"><em>get</em></span> e <span class="code-color"><em>post</em></span>, que devem ser indicados no atributo method da tag <span class="code-color"><strong>form</strong></span>:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left ">
+                <div class="typewriter-small" style="width: 50%; text-align: left"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
                   <span class="code-color"><strong>&lt;form</strong></span> <span class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code">"get"</span> <span class="code-color"><strong>&gt;</strong></span>
+              </code></pre>
                 </div>
                 <br>
                 <p class="Texto">Ou:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left  "> 
+                <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode"> 
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
                   <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code ">"post"</span><span class="code-color"><strong>&gt;</strong></span>
+              </code></pre>
                 </div>
                 <br>
                 <p class="Texto">No método <span class="code-color"><em>get</em></span>, os dados do formulário são codificados diretamente na URL de solicitação. Quando o visitante envia o formulário, o navegador carrega a URL definida no atributo action com os campos do formulário anexados a ela.</p>

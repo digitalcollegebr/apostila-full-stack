@@ -45,7 +45,10 @@
                 Cada componente de uma cor é representado por um número binário de oito bits, variando de <span class="code-color"><strong>0 a 255</strong></span>. Todos os três componentes devem ser especificados na mistura de cores, sempre na ordem <span class="red-code"><strong>vermelho</strong></span>, <span class="green-color"><strong>verde</strong></span>, <span class="dark_blue_code"><strong>azul</strong></span>. Portanto, para trocar a cor de todo o texto da página para vermelho usando a notação RGB, usamos <span class="code-color"><em>rgb(255,0,0)</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
     <span class="blue-code">color:</span><span class="dark_blue_code"> rgb</span>(<span class="code-color"><strong>255,0,0</strong></span>);
@@ -55,7 +58,10 @@
                 <br>
                 <p class="Texto">Um componente definido como <span class="code-color"><em>0</em></span> indica que a cor básica correspondente não é usada na mistura de cores. Também é possível usar porcentagens em vez de números:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
     <span class="blue-code">color:</span><span class="dark_blue_code"> rgb</span>(<span class="code-color"><strong>100%,0%,0%</strong></span>);
@@ -158,7 +164,10 @@
               O caminho para a imagem deve ser especificado usando um designador <span class="code-color"><em>url()</em></span>. Se a imagem que você deseja usar estiver na mesma pasta do arquivo HTML, basta incluir o nome do arquivo:
               </p>
               <br>
-              <div class="typewriter-small" style="width: 50%;">
+              <div class="typewriter-small" style="width: 50%;" id="copycode">
+              <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span> {
     <span class="blue-code">background-image:</span><span class="green-code"> url("background.jpg")</span>;
@@ -170,7 +179,10 @@
                 Neste exemplo, o arquivo de imagem <em>background.jpg</em> será usado como imagem de fundo para todo o corpo da página. Por padrão, a imagem de fundo é repetida se seu tamanho não bastar para cobrir a página inteira, começando no canto superior esquerdo da área correspondente ao seletor da regra. Esse comportamento pode ser modificado com a propriedade <span class="code-color"><em>background-repeat</em></span>. Se você quiser que a imagem de fundo seja posta na área do elemento sem repeti-la, use o valor <span class="code-color"><em>no-repeat</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span> {
     <span class="blue-code">background-image:</span><span class="green-code"> url("background.jpg")</span>;
@@ -308,7 +320,10 @@
                 As três famílias de fontes genéricas mais comuns são <sapn class="code-color"><em>serif</em></sapn>, <span class="code-color"><em>sans-serif</em></span> e <span class="code-color"><em>monospace</em></span>. Serif é a família de fontes padrão da maioria dos navegadores. Se você preferir usar sans-serif para a página inteira, adicione a seguinte regra à sua folha de estilo:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
     <span class="blue-code">font-family: </span><span class="dark_blue_code"> sans-serif</span>;
@@ -320,7 +335,10 @@
                 Opcionalmente, podemos primeiro definir um nome específico de família de fonte, seguido pelo nome de família genérico:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
     <span class="blue-code">font-family: </span><span class="orange-code">"DejaVu Sans"</span>,<span class="dark_blue_code"> sans-serif</span>;
@@ -350,15 +368,23 @@
                 Existem outras propriedades que alteram a forma como o texto é processado no documento. Você pode, por exemplo, adicionar um sublinhado a algumas partes do texto que deseja enfatizar. Primeiro, use uma tag <span> para delimitar o texto:
                 </p>
                 <br>
-                <div class="typewriter-small">
-                    <span class="code-color"><strong>&lt;p&gt;</strong></span>CSS é o <span class="code-color"><strong>&lt;span</strong></span> <span class="blue-code">class=</span><span class="orange-code">"under"</span><span class="code-color"><strong>&gt;</strong></span>mecanismo dedicado <span class="code-color"><strong>&lt;/span&gt;</strong></span> para estilizar documentos HTML. <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
+<span class="code-color"><strong>&lt;p&gt;</strong></span>CSS é o <span class="code-color"><strong>&lt;span</strong></span> <span class="blue-code">class=</span><span class="orange-code">"under"</span><span class="code-color"><strong>&gt;</strong></span>mecanismo dedicado <span class="code-color"><strong>&lt;/span&gt;</strong></span> para estilizar documentos HTML. <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+            </code></pre>
                 </div>
                 <br>
                 <p class="Texto">
                 Use então o seletor <span class="code-color"><em>.under</em></span> para alterar a propriedade <span class="code-color"><em>text-decoration</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.under</strong></span> {
     <span class="blue-code">text-decoration: </span><span class="dark_blue_code"> underline</span>;
@@ -370,7 +396,7 @@
                 Por padrão, todos os elementos a (link) são sublinhados. Para remover o sublinhado, use o valor none em <span class="code-color"><em>text-decoration</em></span> de todos os elementos a:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
                     <pre><code class="Texto">
 <span class="code-color"><strong>a</strong></span> {
     <span class="blue-code">text-decoration: </span><span class="dark_blue_code"> none</span>;
@@ -382,7 +408,10 @@
                 Ao revisar o conteúdo, alguns autores gostam de riscar as partes incorretas ou desatualizadas do texto, para que o leitor saiba que o texto foi atualizado e o que foi removido. Para fazer isso, use o valor <span class="code-color"><em>line-through</em></span> da propriedade <span class="code-color"><em>text-decoration</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.disregard</strong></span> {
     <span class="blue-code">text-decoration: </span><span class="dark_blue_code"> line-through</span>;
@@ -394,8 +423,13 @@
                 Mais uma vez, uma tag <span class="code-color"><strong>&lt;span&gt;</strong></span> pode ser usada para aplicar o estilo:
                 </p>
                 <br>
-                <div class="typewriter-small">
-                    <span class="code-color"><strong>&lt;p&gt;</strong></span>Netscape Navigator <span class="code-color"><strong>&lt;span</strong></span> <span class="blue-code">class=</span><span class="orange-code">"disregard"</span><span class="code-color"><strong>&gt;</strong></span>is<span class="code-color"><strong>&lt;/span&gt;</strong></span> era o mais popular dos web browsers. <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                <div class="typewriter-small" id="copycode">
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
+            <pre><code class="Texto">
+<span class="code-color"><strong>&lt;p&gt;</strong></span>Netscape Navigator <span class="code-color"><strong>&lt;span</strong></span> <span class="blue-code">class=</span><span class="orange-code">"disregard"</span><span class="code-color"><strong>&gt;</strong></span>é<span class="code-color"><strong>&lt;/span&gt;</strong></span> era o mais popular dos web browsers. <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                </code></pre>
                 </div>
                 <br>
                 <p class="Texto">

@@ -166,9 +166,9 @@
         <p class="Texto">Um aplicativo web que será executado pelo navegador, por exemplo, precisa ser escrito em <span class="code-color"><strong>JavaScript</strong></span>, que é uma linguagem universalmente suportada pelos navegadores (na verdade, algumas outras linguagens podem ser usadas porque fornecem conversores para criar JavaScript). Assim, para o navegador web—às vezes chamado de <em>lado do cliente</em> ou <em>front end</em> do aplicativo web—o desenvolvedor terá de usar os paradigmas permitidos em JavaScript. O <em>lado do servidor</em> ou <em>back end</em> do aplicativo, que lida com as solicitações do navegador, normalmente é programado em uma linguagem diferente; o <span class="code-color"><strong>PHP</strong></span> é mais popular para essa finalidade.</p>
         <p class="Texto">Independentemente do paradigma, toda linguagem possui bibliotecas de funções pré-construídas que podem ser incorporadas ao código. Funções matemáticas—como as ilustradas no código de exemplo—não precisam ser implementadas do zero, pois a linguagem já tem a função pronta para uso. O JavaScript, por exemplo, fornece o objeto <span class="code-color"><em>Math</em></span>, com as operações matemáticas mais comuns.</p>
         <p class="Texto">Geralmente há funções ainda mais especializadas disponibilizadas pelo fornecedor da linguagem ou por outros desenvolvedores. Essas bibliotecas de recursos extras podem estar na forma de códigofonte, ou seja, em arquivos extras que são incorporados ao arquivo em que serão usados. Em JavaScript, a incorporação é feita com <span class="code-color"><em>import from</em></span>:</p>
-
-        <div class="typewriter-small" id="copycode" style=" width: 80%; text-align: center;">
-        <button class="copy-btn" onclick="copyCode()" style="margin-left: 80px; margin-top: -10px;">            <i class="fas fa-copy"></i>
+        <div class="typewriter-small" id="copycode" style=" width: 82%; text-align: center;">
+        <button class="copy-btn" onclick="copyCode()">
+            <i class="fas fa-copy"></i>
          </button>
          <pre><code class="Texto">
                 <span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;
@@ -207,6 +207,7 @@
             <p class="Texto">A linguagem Python, por exemplo, possui recursos muito sofisticados de mineração e tabulação de dados. O desenvolvedor pode escolher o Python para escrever as partes do programa que lidam com esses aspectos e outra linguagem, como o C++, para realizar o processamento numérico mais pesado.</p>
             <p class="Texto">É possível adotar essa estratégia mesmo quando não existe uma API que permita a comunicação direta entre os dois componentes. O código escrito em Python pode gerar um arquivo no formato adequado para ser usado por um programa escrito em C++, por exemplo.</p>
             <p class="Texto">Embora seja possível escrever quase qualquer programa em qualquer linguagem, o desenvolvedor deve adotar aquela que estiver mais de acordo com o propósito do aplicativo. Ao fazer isso, você se beneficia da reutilização de componentes já testados e bem documentados.</p>
+            
             </div>
         </div>
     </div>
@@ -215,3 +216,4 @@
     // A_S - Footer
     include('../../layouts/footer.php');
 ?>
+
