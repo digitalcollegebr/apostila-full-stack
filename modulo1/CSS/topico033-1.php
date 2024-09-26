@@ -81,7 +81,10 @@
                         navegador web (os resultados são mostrados na <em>Figure 32</em>):
                     </p>
                     <br>
-                    <div style class="typewriter-small" style="width: 50%;">
+                    <div class="typewriter-small" style="width: 50%; text-align: center;" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+            </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
 <span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -209,7 +212,7 @@
                 <p class="Texto">Escrita assim, a declaração <span class="code-color"><em>font-size: larger</em></span> será ignorada pelo navegador. Tenha o cuidado de abrir e fechar os comentários corretamente; caso contrário, o navegador pode não ser capaz de interpretar as regras.</p>
                 <p class="Texto">Os comentários também são úteis para escrever lembretes sobre as regras:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 50%;" id="copycode">
     <pre><code class="Texto">
     <span style="color: #797979;">/* O texto dentro de &lt;p&gt; é roxo e largo */</span>
 <span class="code-color"><strong>p;{</strong></span>
@@ -255,5 +258,15 @@
     <a href="../../questoesModulo01/unidade05.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
 
     <?php include('../../layouts/footer.php') ?>
+    <script>
+function copyCode() {
+    const code = document.querySelector('#copycode').textContent;
+    navigator.clipboard.writeText(code).then(() => {
+        alert('Código copiado!');
+    }).catch(err => {
+        console.error('Erro ao copiar:', err);
+    });
+}
+</script>
 </body>
 </html>

@@ -316,6 +316,7 @@
 }
 
 .typewriter-small {
+    position: relative;
     padding: 10px 20px;
     width: 60%;
     font-size: 18px;
@@ -328,12 +329,27 @@
     box-sizing: border-box;
     display: block;
 }
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    left: 70%; /* Botão fixado à esquerda */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+.copy-btn:hover {
+    color: #c51967;
+    background-color: transparent;
+}
 
 
 
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
     .typewriter-small {
+        width: 90%;
         font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
         padding: 8px 16px; /* Ajusta o padding para telas menores */
     }
@@ -343,6 +359,13 @@
     .typewriter-small {
         font-size: 14px; /* Ajuste do tamanho da fonte para telas muito pequenas */
         padding: 6px 12px; /* Ajusta o padding para telas muito pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .copy-btn {
+        left: 5px; /* Ajuste do botão para a esquerda em telas menores */
+        font-size: 16px;
     }
 }
 

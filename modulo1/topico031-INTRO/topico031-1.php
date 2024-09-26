@@ -93,9 +93,10 @@
                 <p class="Texto">O desenvolvedor parte do paradigma da linguagem para formular as tarefas a serem executadas pela máquina. Essas tarefas, por sua vez, são expressas simbolicamente com as palavras e construções sintáticas oferecidas pela linguagem.</p>
                 <p class="Texto">O código a seguir é um exemplo de linguagem procedural. Escrito em <span class="code-color"><strong>C</strong></span>, ele define variáveis que representam as faces, a área e o volume de formas geográficas. O valor da variável side é atribuído em <span class="code-color"><em>main()</em></span>, que é a função invocada quando o programa é executado. As variáveis <em>area e volume</em> são calculadas nas sub-rotinas <span class="code-color"><em>square()</em></span> e <span class="code-color"><em>cube()</em></span> que precedem a função principal:</p>
                 <br>
-                <div class="container-code">
-        <div class="code-section">
-            <div class="typewriter">
+            <div class="typewriter-small" id="copycode">
+            <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
                   <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;stdio.h&gt;</span>
         <span class="C_inicializeted"><strong>float</strong></span> side;
         <span class="C_inicializeted"><strong>float</strong></span> area;
@@ -123,7 +124,10 @@
         <br>
         <p class="Texto">Os diferentes paradigmas não restringem necessariamente o tipo de tarefa que pode ser executada por um programa. O código do exemplo anterior pode ser reescrito de acordo com o paradigma POO usando a linguagem <span class="code-color"><strong>C++</strong></span>:</p>
         <br>
-        <div class="code-section" style="width: 50%; margin: 0 auto;">
+        <div class="typewriter-small" style=" margin: 0 auto;">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
                   <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;iostream&gt;</span>
         <span class="green-code"><strong>class</strong></span><span class="code-color"><strong> Cube</strong></span>&lbrace;
         <span class="C_inicializeted"><strong>float</strong></span> side;
@@ -144,7 +148,10 @@
         <p class="Texto">A função <span class="code-color"><em>main()</em></span> ainda está presente. Mas agora temos uma nova palavra, <em>class</em> (classe), que introduz a definição de um objeto. A classe definida, chamada <em>Cube</em>, contém suas próprias variáveis e sub-rotinas. No POO, uma variável também é chamada de <em>atributo</em> e uma sub-rotina é chamada de <em>método</em>.</p>
         <p class="Texto">É possível criar vários objetos independentes pertencentes à mesma classe; as classes também podem ser compostas por outras classes Lembre-se de que esses mesmos recursos podem ser escritos de maneira diferente e que os exemplos deste capítulo são bem simplificados. C e C++ possuem recursos muito mais sofisticados, possibilitando construções bem mais complexas e práticas.</p>
         <p class="Texto">A maioria das linguagens de programação não impõe rigorosamente um paradigma, mas permite que os programadores escolham diversos aspectos de um paradigma ou de outro. O JavaScript, por exemplo, incorpora aspectos de diferentes paradigmas. O programador pode decompor o programa inteiro em funções que não compartilham um estado comum entre si:</p>
-        <div class="typewriter-small" style="width: 50%; text-align: left;">
+        <div class="typewriter-small" style="" id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
                 <p><pre><code><span class="green-code"><strong>function</strong></span> cube(side) &lbrace;
                 <span class="green-code"><strong>return</strong></span> side*side*side;
         &rbrace;
@@ -160,8 +167,12 @@
         <p class="Texto">Independentemente do paradigma, toda linguagem possui bibliotecas de funções pré-construídas que podem ser incorporadas ao código. Funções matemáticas—como as ilustradas no código de exemplo—não precisam ser implementadas do zero, pois a linguagem já tem a função pronta para uso. O JavaScript, por exemplo, fornece o objeto <span class="code-color"><em>Math</em></span>, com as operações matemáticas mais comuns.</p>
         <p class="Texto">Geralmente há funções ainda mais especializadas disponibilizadas pelo fornecedor da linguagem ou por outros desenvolvedores. Essas bibliotecas de recursos extras podem estar na forma de códigofonte, ou seja, em arquivos extras que são incorporados ao arquivo em que serão usados. Em JavaScript, a incorporação é feita com <span class="code-color"><em>import from</em></span>:</p>
 
-        <div class="typewriter-small">
+        <div class="typewriter-small" id="copycode" style=" width: 80%; text-align: center;">
+        <button class="copy-btn" onclick="copyCode()" style="margin-left: 80px; margin-top: -10px;">            <i class="fas fa-copy"></i>
+         </button>
+         <pre><code class="Texto">
                 <span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;
+                </code></pre>
             </div>
             <br>
             <p class="Texto">Esse tipo de importação, em que o recurso incorporado também é um arquivo de código-fonte, é mais frequentemente usado nas chamadas <em>linguagens interpretadas</em>. As <em>linguagens compiladas</em> permitem, entre outras coisas, a incorporação de funcionalidades pré-compiladas em linguagem de máquina, ou seja, bibliotecas <em>compiladas</em>. A próxima seção explica as diferenças entre esses tipos de linguagem.</p>
