@@ -67,7 +67,8 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-    <span class="code-color"><strong>&lt;h1&gt;</strong></span>Nível de cabeçalho 1 para identificar de forma única a página<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+    <span class="code-color"><strong>&lt;h1&gt;</strong></span>Nível de cabeçalho 1 para identificar de forma única a 
+    página<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
     <span class="code-color"><strong>&lt;h2&gt;</strong></span>Nível de cabeçalho 2<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
     <span class="code-color"><strong>&lt;h3&gt;</strong></span>Nível de cabeçalho 3<span class="code-color"><strong>&lt;/h3&gt;</strong></span>
     <span class="code-color"><strong>&lt;h4&gt;</strong></span>Nível de cabeçalho 4<span class="code-color"><strong>&lt;/h4&gt;</strong></span>
@@ -401,7 +402,7 @@
                 <p class="Subtopico"><strong>Texto em itálico</strong></p>
                 <p class="Texto">Para colocar o texto em itálico, usamos o elemento <span class="code-color"><strong>&lt;i&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na <em>Figure 12</em>.</p>
                 <br>
-                <div class="typewriter-small" style="text-align: center; width: 60%" id="copycode">
+                <div class="typewriter-small" style=" width: 50%" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
@@ -419,12 +420,12 @@
                 <br>
                 <p class="Subtopico"><strong>Texto sublinhado</strong></p>
                 <p class="Texto">Para sublinhar o texto, usamos o elemento <span class="code-color"><strong>&lt;u&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na <em>Figure 13</em>.</p>
-                <div class="typewriter-small" style="text-align: center; width: 60%"  id="copycode">
+                <div class="typewriter-small" style=" width: 50%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
+                Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
                 </div>
                 </code></pre>
                 <br>
@@ -438,12 +439,11 @@
                 <p class="Subtopico"><strong>Largura fixa ou fonte monoespaçada</strong></p>
                 <p class="Texto">Para exibir texto em fonte monoespaçada (largura fixa), freqüentemente usada para exibir código de computador, usamos o elemento <span class="code-color"><strong>&lt;tt&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na  <em>Figure 14</em>.</p>
                 <div class="typewriter-small" id="copycode">
-
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
+                Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
                 </div>
                 </code></pre>
                 <br>
@@ -460,12 +460,11 @@
                 <p class="Texto">Para enfatizar um texto, usamos o elemento <span class="code-color"><strong>&lt;em&gt;</strong></span>, como mostrado no exemplo a seguir:</p>
                 <br>
                 <div class="typewriter-small" style="text-align: center; width: 60%"   id="copycode">
-
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
+                Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
                 </div>
                 </code></pre>
                 <br>

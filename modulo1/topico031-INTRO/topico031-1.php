@@ -93,7 +93,7 @@
                 <p class="Texto">O desenvolvedor parte do paradigma da linguagem para formular as tarefas a serem executadas pela máquina. Essas tarefas, por sua vez, são expressas simbolicamente com as palavras e construções sintáticas oferecidas pela linguagem.</p>
                 <p class="Texto">O código a seguir é um exemplo de linguagem procedural. Escrito em <span class="code-color"><strong>C</strong></span>, ele define variáveis que representam as faces, a área e o volume de formas geográficas. O valor da variável side é atribuído em <span class="code-color"><em>main()</em></span>, que é a função invocada quando o programa é executado. As variáveis <em>area e volume</em> são calculadas nas sub-rotinas <span class="code-color"><em>square()</em></span> e <span class="code-color"><em>cube()</em></span> que precedem a função principal:</p>
                 <br>
-            <div class="typewriter-small" id="copycode">
+            <div class="typewriter-small" id="copycode"  style="width: 60%;">
             <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
     </button>
@@ -166,12 +166,12 @@
         <p class="Texto">Um aplicativo web que será executado pelo navegador, por exemplo, precisa ser escrito em <span class="code-color"><strong>JavaScript</strong></span>, que é uma linguagem universalmente suportada pelos navegadores (na verdade, algumas outras linguagens podem ser usadas porque fornecem conversores para criar JavaScript). Assim, para o navegador web—às vezes chamado de <em>lado do cliente</em> ou <em>front end</em> do aplicativo web—o desenvolvedor terá de usar os paradigmas permitidos em JavaScript. O <em>lado do servidor</em> ou <em>back end</em> do aplicativo, que lida com as solicitações do navegador, normalmente é programado em uma linguagem diferente; o <span class="code-color"><strong>PHP</strong></span> é mais popular para essa finalidade.</p>
         <p class="Texto">Independentemente do paradigma, toda linguagem possui bibliotecas de funções pré-construídas que podem ser incorporadas ao código. Funções matemáticas—como as ilustradas no código de exemplo—não precisam ser implementadas do zero, pois a linguagem já tem a função pronta para uso. O JavaScript, por exemplo, fornece o objeto <span class="code-color"><em>Math</em></span>, com as operações matemáticas mais comuns.</p>
         <p class="Texto">Geralmente há funções ainda mais especializadas disponibilizadas pelo fornecedor da linguagem ou por outros desenvolvedores. Essas bibliotecas de recursos extras podem estar na forma de códigofonte, ou seja, em arquivos extras que são incorporados ao arquivo em que serão usados. Em JavaScript, a incorporação é feita com <span class="code-color"><em>import from</em></span>:</p>
-        <div class="typewriter-small" id="copycode" style=" width: 82%; text-align: center;">
+        <div class="typewriter-small" id="copycode"  style=" width: 45%; font-size: 12px;">
         <button class="copy-btn" onclick="copyCode()">
             <i class="fas fa-copy"></i>
          </button>
          <pre><code class="Texto">
-                <span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;
+<span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;
                 </code></pre>
             </div>
             <br>

@@ -17,7 +17,7 @@ document.querySelectorAll('.copy-btn').forEach(button => {
         document.body.removeChild(tempElement);
         
         // Modifica o texto e o ícone do botão
-        this.innerHTML = '<i class="fas fa-check"></i> Código Copiado';
+        this.innerHTML = 'Copiado <i class="fas fa-check"></i>';
         
         // Restaura o texto original após 2 segundos
         setTimeout(() => {

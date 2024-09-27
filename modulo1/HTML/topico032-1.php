@@ -60,8 +60,12 @@
         o título de um documento HTML. No entanto, um elemento possui dois outros componentes. Um
         elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> completo seria parecido com este:</p>
         <br>
-        <div class="typewriter-small" style="width: 40%; text-align: center;">
-                <span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página HTML<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
+        <div class="typewriter-small" style="width: 40%;" id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+    <pre><code class="Texto"><span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página HTML<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
+</code></pre>
         </div>
         <br>
         <p class="Texto">Aqui, Minha página HTML representa o conteúdo do elemento, ao passo que </title> é a tag de fechamento que declara que este elemento está completo.</p>
@@ -118,12 +122,17 @@
         <br>
         <p class="Subtopico"><strong>Comentários em HTML</strong></p>
         <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:</p>
-        <div class="typewriter-small" style="width: 40%; color: #797979;">
-                &lt;!--Isto é um comentário--&gt;<br>
-                &lt;!--Isto são
-                múltiplos<br>
-                comentários--&gt;
+        <div class="typewriter-small" style="width: 40%; color: #797979;" id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+    <pre><code class="Texto">
+&lt;!--Isto é um comentário--&gt;<br>
+&lt;!--Isto são múltiplos
+comentários--&gt;
+                </code></pre>
         </div>
+        <br>
         <p class="Texto">O exemplo demonstra que os comentários, no HTML, podem ser postos em uma única linha, mas também podem se estender por várias linhas. De qualquer maneira, o resultado é que o texto entre &lt;!-- e --&gt; é ignorado pelo navegador web e, portanto, não é exibido na página HTML. Com base nessas considerações, podemos deduzir que a página HTML básica mostrada no parágrafo <strong>“Anatomia de um documento HTML”</strong> não exibe nenhum texto, porque as linhas &lt;!-- This is the Document Header --&gt; e &lt;!-- This is the Document Body --&gt; são apenas dois comentários.</p>
         <br>
         <!-- Importante -->
@@ -141,9 +150,15 @@
         <p class="Texto">As tags HTML podem incluir um ou mais atributos para especificar detalhes do elemento HTML.
         Uma tag simples com dois atributos tem o seguinte formato:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%; text-align: center;">
-                <span class="code-color">&lt;tag</span> <span class="blue-code">attribute-a=</span> <span class="orange-code">"value-a"</span> <span class="blue-code">attribute-b=</span><span class="orange-code">"value-b"</span><span class="code-color">&gt;</span>
+        <div class="typewriter-small" style="width: 50%; text-align: center;"  id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+            <pre><code class="Texto">
+<span class="code-color">&lt;tag</span> <span class="blue-code">attribute-a=</span> <span class="orange-code">"value-a"</span> <span class="blue-code">attribute-b=</span><span class="orange-code">"value-b"</span><span class="code-color">&gt;</span>
+            </code></pre>
         </div>
+        <br>
         <p class="Texto">Os atributos devem ser definidos na tag de abertura.</p>
         <p class="Texto">Um atributo consiste em um nome, que indica a propriedade a ser definida, um sinal de igual, mais o valor desejado entre aspas. As aspas podem ser simples ou duplas, mas recomenda-se manter o uso de aspas simples ou duplas de forma consistente em todo o projeto. É importante não misturar aspas simples e duplas em um mesmo valor de atributo, pois o navegador web não reconhecerá aspas mistas como uma unidade.</p>
         <br>
@@ -217,19 +232,24 @@
         <p class="Texto">Outros atributos são específicos a cada elemento HTML. Por exemplo, o atributo src de um elemento HTML <span class="code-color"><strong> &lt;img&gt;</strong></span> especifica a URL de uma imagem. Existem muitos outros atributos específicos, que serão abordados nas próximas lições.</p>
         <br>
         <p class="Subtopico"><strong>Cabeçalho do documento</strong></p>
-        <p class="Texto">O cabeçalho do documento define as metainformações sobre a página e é descrito pelo elemento &lt;head&gt;. Por padrão, as informações no cabeçalho do documento não são processadas pelo navegador web. Embora seja possível incluir, dentro do elemento &lt;head&gt;, elementos HTML que podem ser exibidos na página, a prática não é recomendada.</p>
+        <p class="Texto">O cabeçalho do documento define as metainformações sobre a página e é descrito pelo elemento <span class="code-color"><strong>&lt;head&gt</strong></span>;. Por padrão, as informações no cabeçalho do documento não são processadas pelo navegador web. Embora seja possível incluir, dentro do elemento <span class="code-color"><strong>&lt;head&gt;</strong></span>, elementos HTML que podem ser exibidos na página, a prática não é recomendada.</p>
         <br>
             <ul class="Texto">
-                <li><strong>Título:</strong> O título do documento é especificado com o elemento &lt;title&gt;. O título definido entre as tags aparece na barra de título do navegador e é o nome sugerido quando a página é salva nos Favoritos. Ele também é exibido como título da página nos resultados do mecanismo de busca. </li>
+                <li><strong>Título:</strong> O título do documento é especificado com o elemento <span class="code-color"><strong>&lt;title&gt;</strong></span>. O título definido entre as tags aparece na barra de título do navegador e é o nome sugerido quando a página é salva nos Favoritos. Ele também é exibido como título da página nos resultados do mecanismo de busca. </li>
             </ul>
         <br>
         <p class="Texto">Eis um exemplo do uso desse elemento:</p>
         <br>
-        <div class="typewriter-small" style="width: 40%; text-align: center;">
-                <span class="code-color"><strong>&lt;title&gt;</strong></span>My Test Page<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
+        <div class="typewriter-small" style="width: 40%; text-align: center;" id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+    <pre><code class="Texto">
+<span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página teste<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
+    </pre></code>
         </div>
         <br>
-        <p class="Texto">A tag &lt;title&gt; é obrigatória em todos os documentos HTML e deve aparecer somente uma vez por documento.</p>
+        <p class="Texto">A tag <span class="code-color"><strong>&lt;title&gt;</strong></span> é obrigatória em todos os documentos HTML e deve aparecer somente uma vez por documento.</p>
         <br>
         <div class="destaques wow fadeIn" data-wow-delay="0.3s">
                     <div class="Caixa TituloExemplo">
@@ -279,18 +299,28 @@
         </div>
         <br>
         <p class="Subtopico"><strong>Adicionar um autor, descrição e palavras-chave</strong></p>
-        <p class="Texto">Usando a <span class="code-color"><strong>tag &lt;meta&gt;</strong></span>, podemos incluir informações adicionais sobre o autor da página HTML e descrever o conteúdo da página, desta forma:</p>
+        <p class="Texto">Usando a tag<span class="code-color"><strong> &lt;meta&gt;</strong></span>, podemos incluir informações adicionais sobre o autor da página HTML e descrever o conteúdo da página, desta forma:</p>
         <br>
-        <div class="typewriter-small" >
-                <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"author"</span> <span class="blue-code">content=</span><span class="orange-code">"Name Surname"</span><span class="code-color">&gt;</span><br>
-                <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"description"</span> <span class="blue-code">content=</span><span class="orange-code">"A short summary of the page content"</span><span class="code-color">&gt;</span><br>
+        <div class="typewriter-small"  id="copycode" >
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+    <pre><code class="Texto">
+<span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"author"</span> <span class="blue-code">content=</span><span class="orange-code">"Name Surname"</span><span class="code-color">&gt;</span>
+<span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"description"</span> <span class="blue-code">content=</span><span class="orange-code">"A short summary of the page content"</span><span class="code-color">&gt;</span><br>
+                </code></pre>
         </div>
         <br>
         <p class="Texto">Procure incluir uma série de palavras-chave relacionadas ao conteúdo da página na descrição. Essa descrição costuma ser a primeira coisa que um usuário vê ao navegar com um mecanismo de busca.</p>
         <p class="Texto">Se quiser incluir palavras-chave adicionais relacionadas à página para os mecanismos de busca, adicione o seguinte elemento:</p>
         <br>
-        <div class="typewriter-small">
-        <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"keywords"</span> <span class="blue-code">content=</span><span class="orange-code">"keyword1, keyword2, keyword3, keyword4, keyword5"</span><span class="code-color">&gt;</span>
+    <div class="typewriter-small" id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+    <pre><code class="Texto">
+<span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"keywords"</span> <span class="blue-code">content=</span><span class="orange-code">"keyword1, keyword2, keyword3, keyword4, keyword5"</span><span class="code-color">&gt;</span>
+        </code></pre>
         </div>
         <br>
         <div class="destaques wow fadeIn" data-wow-delay="0.3s">
@@ -307,28 +337,45 @@
         documento se atualize</strong></p>
         <br>
         <p class="Texto">Usando a tag <span class="code-color"><strong>&lt;meta&gt;</strong></span>, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
-        <div class="typewriter-small" style="width: 40%; text-align:center;">
-        <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30"</span><span class="code-color">&gt;</span>
+        <div class="typewriter-small" style="width: 40%;" id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+    <pre><code class="Texto">
+    <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30"</span><span class="code-color">&gt;</span>
+        </code></pre>
         </div>
         <br>
         <p class="Texto">Outra alternativa é redirecionar uma página web para outra página web após o mesmo período de tempo com o seguinte código:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%;">
-        <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30;url=http://www.lpi.org"</span><span class="code-color">&gt;</span>
+        <div class="typewriter-small" style="width: 50%;" id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+    <pre><code class="Texto">
+<span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30;url=http://www.lpi.org"</span><span class="code-color">&gt;</span>
+        </code></pre>
         </div>
+        <br>
         <p class="Texto">Neste exemplo, o usuário é redirecionado da página atual para <a class="code-color"href="http://www.lpi.org" target="_blank">http://www.lpi.org</a> após 30 segundos. Os valores podem ser os que você preferir. Se especificarmos, por exemplo, content="0;url=http://www.lpi.org", a página será redirecionada imediatamente.</p>
         <br>
         <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
         <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
         <br>
-        <div class="typewriter-small" style="width: 30%; text-align: center;">
-        <span class="code-color">&lt;meta</span> <span class="blue-code">charset=</span> <span class="orange-code">"utf-8"<span class="code-color">&gt;</span>
+        <div class="typewriter-small" style="width: 30%; text-align: center;" id="copycode">
+        <button class="copy-btn" onclick="copyCode()">
+        <i class="fas fa-copy"></i>
+    </button>
+    <pre><code class="Texto">
+<span class="code-color">&lt;meta</span> <span class="blue-code">charset=</span> <span class="orange-code">"utf-8"<span class="code-color">&gt;</span>
+        </code></pre>
         </div>
+        <br>
         <p class="Texto">Este elemento especifica que a codificação de caracteres do documento é utf-8, um conjunto de caracteres universal que inclui praticamente qualquer caractere de qualquer idioma humano. Portanto, ao usá-lo, você evita problemas de exibição que poderiam surgir se escolhesse outros conjuntos de caracteres, como o ISO-8859-1 (o alfabeto latino).
         </p>
         <br>
         <p class="Subtopico"><strong>Outros exemplos úteis</strong></p>
-        <p class="Texto">Eis duas outras aplicações úteis da tag &lt;meta&gt;:</p>
+        <p class="Texto">Eis duas outras aplicações úteis da tag <span class="code-color"><strong>&lt;meta&gt;</strong></span>:</p>
         <br>
         <ul class="Texto">
             <li>Configurar cookies para rastrear um visitante do site.</li>

@@ -362,8 +362,7 @@
 }
 
 @media (max-width: 480px) {
-    .copy-btn {
-        left: 5px; /* Ajuste do botão para a esquerda em telas menores */
+    .copy-btn { /* Ajuste do botão para a esquerda em telas menores */
         font-size: 16px;
     }
 }
