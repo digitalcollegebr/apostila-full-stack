@@ -9,6 +9,12 @@
     padding: 0%;
 }
 
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
 /* A_S - Root - Begin */
 :root {
     --FonteMontserrat: 'Montserrat', sans-serif !important;
@@ -258,11 +264,9 @@
 /* A_S - Code - BEGAN */
 
 .container-code {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 0;
     width: 90%;
-    max-width: 1200px;
+    max-width: 100%x;
     margin: 0 auto; /* Centraliza o container */
     box-sizing: border-box; /* Inclui padding e border no width total */
 }
@@ -318,9 +322,11 @@
 .typewriter-small {
     position: relative;
     padding: 10px 20px;
-    width: 60%;
+    width: 100%;
+    max-width: 600px;
     font-size: 18px;
     line-height: 1.5;
+    margin: 0 auto;
     background-color: #f7f1f1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -332,7 +338,7 @@
 .copy-btn {
     position: absolute;
     top: 10px;
-    left: 70%; /* Botão fixado à esquerda */
+    right: 10px;
     background-color: transparent;
     border: none;
     color: #333;

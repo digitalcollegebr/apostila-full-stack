@@ -459,30 +459,30 @@
                 <p class="Subtopico"><strong>Texto enfatizado</strong></p>
                 <p class="Texto">Para enfatizar um texto, usamos o elemento <span class="code-color"><strong>&lt;em&gt;</strong></span>, como mostrado no exemplo a seguir:</p>
                 <br>
-                <div class="typewriter-small" style="text-align: center; width: 60%"   id="copycode">
+                <div class="typewriter-small" style="text-align: center; width: 50%"   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
+    Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
                 </div>
                 </code></pre>
                 <br>
                 <div class="image-content">
                     <img src="../../assets/img/figure15.png" alt="Código" class="img-fluid">
                 </div>
-                <p><em>Figure 15. A tag &lt;em&gt; é usada para enfatizar o texto</em></p>
+                <p><em>Figure 15. A tag <span class="code-color">&lt;em&gt;</span> é usada para enfatizar o texto</em></p>
                 <br>
-                <p class="Texto">Como vemos, os navegadores web exibem &lt;em&gt; com a mesma aparência de &lt;i&gt;, mas &lt;em&gt; adiciona  importância semântica ao elemento de frase, o que melhora a acessibilidade para visitantes com deficiência visual.</p>
+                <p class="Texto">Como vemos, os navegadores web exibem <span class="code-color"><strong>&lt;em&gt;</strong></span> com a mesma aparência de <span class="code-color"><strong>&lt;i&gt;</strong></span>, mas <span class="code-color"><strong>&lt;em&gt;</strong></span> adiciona importância semântica ao elemento de frase, o que melhora a acessibilidade para visitantes com deficiência visual.</p>
                 <br>
                 <p class="Subtopico"><strong>Texto forte</strong></p>
                 <p class="Texto">Para demonstrar que um texto é importante, usamos o elemento <span class="code-color"><strong>&lt;strong&gt;</strong></span> como no exemplo a seguir. O resultado aparece na <em>Figure 16</em>.</p>
-                <div class="typewriter-small" style="text-align: center; width: 60%" id="copycode">
+                <div class="typewriter-small" style="text-align: center; width: 50%" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    Esta <span class="code-color"><strong>palavra</strong></span> é importante.
+    Esta <span class="code-color"><strong>palavra</strong></span> é importante.
                 </div>
                 <br>
                 <div class="image-content">
@@ -578,16 +578,16 @@
             <br>
             <p class="Subtopico"><strong>Texto pré-formatado</strong></p>
             <p class="Texto">Na maioria dos elementos HTML, o espaço em branco geralmente é reduzido a um espaçamento simples ou mesmo totalmente ignorado. No entanto, existe um elemento HTML chamado <span class="code-color"><strong>&lt;pre&gt;</strong></span> que permite definir o chamado texto pré-formatado. Qualquer espaço em branco incluído no conteúdo deste elemento, incluindo espaços e quebras de linha, é preservado e exibido no navegador web. Além disso, o texto é exibido em uma fonte de largura fixa, semelhante ao elemento &lt;code&gt;.</p>
-    <div class="typewriter-small" style=" width: 60%" id="copycode">
+    <div class="typewriter-small" style=" width: 50%" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
             <i class="fas fa-copy"></i>
         </button>
     <pre><code class="Texto">
-<span class="code-color"><strong>&lt;pre&gt;</strong></span>
-field() {
-    shift $1 ; echo $1
-    }
-<span class="code-color"><strong>&lt;/pre&gt;</strong></span>
+        <span class="code-color"><strong>&lt;pre&gt;</strong></span>
+        field() {
+            shift $1 ; echo $1
+            }
+        <span class="code-color"><strong>&lt;/pre&gt;</strong></span>
     </pre></code>
     </div>
             <p><em>Figure 20. Representação do código HTML em um navegador, ilustrando como o elemento &lt;pre&gt; preserva os espaços em branco.</em></p>
