@@ -64,6 +64,7 @@
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
     </button>
+    <br>
     <pre><code class="Texto"><span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página HTML<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
 </code></pre>
         </div>

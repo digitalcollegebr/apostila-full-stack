@@ -34,7 +34,7 @@
                         <i class="fas fa-copy"></i>
             </button>
                     <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src=</span><span class="orange-code">"logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src=</span><span class="orange-code">"logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
                 </div>
                 </code></pre>
                 <br>
@@ -44,7 +44,7 @@
                     <i class="fas fa-copy"></i>
                 </button>
                 <pre><code class="Texto">
-                <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"../logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"../logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
                 </code></pre>
                 </div>
                 <br>
@@ -68,7 +68,7 @@
                      <i class="fas fa-copy"></i>
                 </button>
                 <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="code-color"><strong>&gt;</strong></span>
                     </code></pre>
                 </div>
                 <br>
@@ -81,7 +81,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="blue-code">width=</span><span class="orange-code">"300"</span><span class="blue-code">height=</span><span class="orange-code">"100"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="blue-code">width=</span><span class="orange-code">"300"</span><span class="blue-code">height=</span><span class="orange-code">"100"</span><span class="code-color"><strong>&gt;</strong></span>
                     </code></pre>
                 </div>
                 <p class="Texto">A única razão para incluir atributos de dimensão à tag <img> é evitar quebrar o layout quando a imagem demorar muito para carregar ou quando não puder ser carregada. O uso dos atributos <span class="code-color"><em>width</em></span> e <span class="code-color"><em>height</em></span> para alterar as dimensões originais da imagem pode ter resultados indesejáveis:</p>
@@ -107,7 +107,7 @@
             </button>
                     <pre>
                         <code class="Texto">
-<span class="code-color"><strong>&lt;audio</strong></span><span class="blue-code">controls src=</span><span class="orange-code">"/media/recording.mp3"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;audio</strong></span><span class="blue-code"> controls src=</span><span                    class="orange-code">"/media/recording.mp3"</span><span class="code-color"><strong>&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>Áudio indisponível<span class="code-color"><strong>&lt;em&gt;</strong></span>recording.mp3<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
 <span class="code-color"><strong>&lt;/audio&gt;</strong></span>
                 </code>
@@ -140,7 +140,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
             </code></pre>
                 </div>
                 <p class="Texto">A localização pode ser informada como um caminho relativo ou absoluto, como acontece com o conteúdo incorporado de que falamos anteriormente. Somente o conteúdo de texto entre as tags (por exemplo, <span class="blue-code"><em><u>Contact Information</u></em></span>)e fica visível para o visitante, geralmente na forma de um texto em azul sublinhado e clicável, mas o item que contém o link também pode ser qualquer outro conteúdo visível, como imagens:</p>
@@ -149,7 +149,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src</span><span class="orange-code">"contact.png"</span><span class="blue-code"> alt=</span><span class="orange-code">"contact.png"</span>"Informações de contato"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src</span><span class="orange-code">"contact.png"</span><span class="blue-code"> alt=</span><span class="orange-code">"contact.png"</span><span class="code-color"><strong>&gt; </strong></span>"Informações de contato"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                     </code></pre>
                 </div>
                 <p class="Texto">Prefixos especiais podem ser adicionados ao caminho para informar ao navegador como abri-lo. Se a âncora apontar para um endereço de email, por exemplo, seu atributo href deve incluir o prefixo <span class="code-color"><em>mailto:</em></span>:</p>
@@ -158,7 +158,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-        <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span><span class="code-color"><strong>&gt;</strong></span>Contato via Email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+<span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span><span class="code-color"><strong>&gt;</strong></span>Contato via Email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
             </code></pre>
                 </div>
                 <p class="Texto">O prefixo tel: indica um número de telefone. Essa indicação é particularmente útil para visitantes que visualizam a página em dispositivos móveis:</p>
@@ -167,7 +167,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-        <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"<span class="code-color"><strong>&gt;</strong></span></span>Contato via telefone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+<span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"<span class="code-color"><strong>&gt;</strong></span></span>Contato via telefone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                 </code></pre>
                 </div>
                 <p class="Texto">Quando o link é clicado, o navegador abre o conteúdo do caminho com o aplicativo associado.</p>
@@ -177,7 +177,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code"> target=</span><span class="orange-code">"_blank"</span> <span class="code-color"><strong>&gt; </strong></span>Contate para mais informaçãoes<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+<span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code"> target=</span><span class="orange-code">"_blank"</span> <span class="code-color"><strong>&gt; </strong></span>Contate para mais informaçãoes<span class="code-color"><strong>&lt;/a&gt;</strong></span>
             </code></pre>
                 </div>
                 <p class="Texto">O destino <span class="code-color"><em>_self</em></span> é o padrão quando o atributo <span class="code-color"><em>target</em></span> não é fornecido. Ele faz com que o documento referenciado substitua o documento atual.</p>
@@ -220,7 +220,7 @@
                         <i class="fas fa-copy"></i>
                 </button>
                 <pre><code class="Texto">
-                        <span class="code-color"><strong>&lt;span</strong></span><span class="blue-code"> class=</span><span class="orange-code">"my-headline"</span><span class="blue-code">id=</span><span class="orange-code">"history"</span><span class="code-color"> <strong>&gt;</strong></span>History<span class="code-color"><strong>&lt;/span&gt;</strong></span><span class="code-color"></span>
+<span class="code-color"><strong>&lt;span</strong></span><span class="blue-code"> class=</span><span class="orange-code">"my-headline"</span><span class="blue-code">id=</span><span class="orange-code">"history"</span><span class="code-color"> <strong>&gt;</strong></span>History<span class="code-color"><strong>&lt;/span&gt;</strong></span><span class="code-color"></span>
                         </code></pre>
                 </div>
                 <p class="Texto">As âncoras de URL podem ser usadas no atributo <em>href</em> da tag <span class="code-color"><strong>a</strong></span>, tanto para apontar para páginas externas quanto para para locais dentro da página atual. Neste último caso, basta usar apenas a cerquilha com o fragmento da URL, como em <span class="code-color"><em>&lt;a href="#History"&gt;History&lt;/a&gt;</em></span>.</p>

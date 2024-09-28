@@ -506,24 +506,24 @@
                         <i class="fas fa-copy"></i>
                 </button>
               <pre><code class="Texto">
-                <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code">type=</span><span class="orange-code">"hidden "</span> <span class="blue-code">id=</span><span class="orange-code">"form-token"</span> <span class="blue-code">name=</span><span class ="orange-code">"form-token"</span> <span class="blue-code">value=</span><span class="orange-code">"e730a375-b953-4393-847d-2dab065bbc92"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code">type=</span><span class="orange-code">"hidden "</span> <span class="blue-code">id=</span><span class="orange-code">"form-token"</span> <span class="blue-code">name=</span><span class ="orange-code">"form-token"</span> <span class="blue-code">value=</span><span class="orange-code">"e730a375-b953-4393-847d-2dab065bbc92"</span><span class="code-color"><strong>&gt;</strong></span>
                 </code></pre>
                 </div>
                 <br>
                 <p class="Texto">O valor de um campo de entrada oculto é geralmente adicionado ao documento no lado do servidor, no momento de renderizar o documento. As entradas ocultas são tratadas como campos comuns quando o navegador as envia ao servidor, que também as lê como campos de entrada comuns.</p>
                 <br>
                 <p class="Subtopico"><strong>O tipo de entrada de arquivo</strong></p>
-                <p class="Texto">Além dos dados textuais, que são digitados ou selecionados em uma lista, os formulários HTML também podem enviar arquivos arbitrários ao servidor. O tipo de entrada <span class="code-color"><em>file</em></span> permite ao visitante escolher um arquivo em seu sistema de arquivos local e enviá-lo diretamente pela página</p>
+                <p class="Texto">Além dos dados textuais, que são digitados ou selecionados em uma lista, os formulários HTML também podem enviar arquivos arbitrários ao servidor. O tipo de entrada <span class="code-color"><em>file</em></span> permite ao visitante escolher um arquivo em seu sistema de arquivos local e enviá-lo diretamente pela página.</p>
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                 </button>
                 <pre><code class="Texto">
-                <span class="code-color"><strong>&lt;p&gt;</strong></span>
-                <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for=</span><span class="orange-code">"attachment"</span> <span class="code-color"><strong>&gt;</strong></span>Attachment:  <span class="code-color"><strong>&lt;/label&gt;</strong></span><span class="code-color"><strong>&lt;br&gt;</strong></span>
-                <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"file"</span><span class="blue-code"> id=</span><span class="orange-code">"attachment"</span><span class="blue-code"> name=</span><span class="orange-code">" attachment"</span><span class="code-color"><strong>&gt;</strong></span>
-                <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+        <span class="code-color"><strong>&lt;p&gt;</strong></span>
+            <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for=</span><span class="orange-code">"attachment"</span> <span class="code-color"><strong>&gt;</strong></span>Attachment:  <span class="code-color"><strong>&lt;/label&gt;</strong></span><span class="code-color"><strong>&lt;br&gt;</strong></span>
+            <span class="code-color"><strong>&lt;input</strong></span><span class ="blue-code"> type=</span><span class="orange-code">"file"</span><span class="blue-code"> id=</span><span class="orange-code">"attachment"</span><span class="blue-code"> name=</span><span class="orange-code">" attachment"</span><span class="code-color"><strong>&gt;</strong></span>
+        <span class="code-color"><strong>&lt;/p&gt;</strong></span>
                 </code></pre>
                 </div>
                 <br>
@@ -532,12 +532,12 @@
                 <p class="Subtopico"><strong>Botões de ação</strong></p>
                 <p class="Texto">Por padrão, o formulário é enviado quando o visitante pressiona a tecla Enter em qualquer campo de entrada. Para tornar as coisas mais intuitivas, um botão de envio deve ser adicionado com o tipo de entrada <span class="code-color"><em>submit</em></span>:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode">
+                <div class="typewriter-small" style="width: 60%; text-align: left" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                           <i class="fas fa-copy"></i>
                   </button>
                   <pre><code class="Texto">
-                <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code"> type=</span><span class="orange-code">"submit "</span> <span class="blue-code"> value=</span><span class="orange-code">"Enviar"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code"> type=</span><span class="orange-code">"submit "</span> <span class="blue-code"> value=</span><span class="orange-code">"Enviar"</span><span class="code-color"><strong>&gt;</strong></span>
                 </code></pre>
                 </div>
                 <br>
@@ -554,18 +554,18 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                  <span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"reset"</span><span class="code-color"><strong>&gt;</strong></span>
+        <span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"reset"</span><span class="code-color"><strong>&gt;</strong></span>
                   </code></pre>
                 </div>
                 <br>
                 <p class="Texto">Como no caso do botão de enviar, o texto do atributo <span class="code-color"><em>value</em></span> é usado para rotular o botão. Alternativamente, a tag <span class="code-color"><strong>&lt;button&gt;</strong></span> pode ser usada para adicionar botões em formulários ou em qualquer outro lugar da página. Ao contrário dos botões feitos com a tag <span class="code-color"><strong>&lt;input&gt;</strong></span>, o elemento de botão tem uma tag de fechamento e o rótulo do botão é seu conteúdo interno:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode">
+                <div class="typewriter-small" style="width: 50%; text-align: center" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                 </button>
                 <pre><code class="Texto">
-                <span class="code-color"><strong>&lt;button</strong></span>Enviar formulário<span class="code-color"><strong>&lt;/button&gt;</strong></span>
+  <span class="code-color"><strong>&lt;button</strong></span><span class="code-color"><strong>&gt;</strong></span>Enviar formulário<span class="code-color"><strong>&lt;/button&gt;</strong></span>
                 </code></pre>
                 </div>
                 <br>
@@ -580,7 +580,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                  <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="code-color"><strong>&gt;</strong></span>
+      <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="code-color"><strong>&gt;</strong></span>
               </code></pre>
                 </div>
                 <br>
@@ -592,7 +592,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                  <span class="code-color"><strong>&lt;form</strong></span> <span class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code">"get"</span> <span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;form</strong></span> <span class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code">"get"</span> <span class="code-color"><strong>&gt;</strong></span>
               </code></pre>
                 </div>
                 <br>
@@ -603,7 +603,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                  <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code ">"post"</span><span class="code-color"><strong>&gt;</strong></span>
+      <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code ">"post"</span><span class="code-color"><strong>&gt;</strong></span>
               </code></pre>
                 </div>
                 <br>

@@ -45,12 +45,12 @@
                 A maneira mais simples de modificar o estilo de um elemento específico é escrevê-lo diretamente na tag do elemento usando o atributo <span class="code-color"><em>style</em></span>. Todos os elementos HTML visíveis aceitam um atributo <span class="code-color"><em>style</em></span>, cujo valor pode ser uma ou mais regras de CSS, também conhecidas como <span class="code-color"><em>propriedades</em></span>. Vamos começar com um exemplo simples, um elemento de parágrafo:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%; text-align:center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;p&gt;</strong></span>Meu parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+<span class="code-color"><strong>&lt;p&gt;</strong></span>Meu parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
                     </code></pre>
                 </div>
                 <br>
@@ -64,7 +64,7 @@
                             <i class="fas fa-copy"></i>
                 </button>
             <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"</span><span class="code-color"><strong>&gt;</strong></span> Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"</span><span class="code-color"><strong>&gt;</strong></span> Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
                     </div>
                 </pre></code>
                     <br>

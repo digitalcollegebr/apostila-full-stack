@@ -389,7 +389,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
+Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
                 </div>
                 </code></pre>
                 <br>
@@ -407,7 +407,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
+Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
                 </div>
                 </code></pre>
                 <br>
@@ -425,7 +425,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
+Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
                 </div>
                 </code></pre>
                 <br>
@@ -443,7 +443,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
+    Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
                 </div>
                 </code></pre>
                 <br>
@@ -464,7 +464,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
+Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
                 </div>
                 </code></pre>
                 <br>
@@ -482,7 +482,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    Esta <span class="code-color"><strong>palavra</strong></span> é importante.
+Esta <span class="code-color"><strong>palavra</strong></span> é importante.
                 </div>
                 <br>
                 <div class="image-content">
@@ -497,12 +497,12 @@
                 <p class="Subtopico"><strong>Código de Computador</strong></p>
                 <p class="Texto">Para inserir um trecho de código, podemos colocá-lo dentro do elemento &lt;code&gt; como ilustrado no
                 exemplo a seguir. O resultado aparece na <em>Figure 17</em>.</p>
-                <div class="typewriter-small" style="text-align: center; width: 60%" id="copycode">
+                <div class="typewriter-small" style=" width: 60%" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                     </button>
                     <pre><code class="Texto">
-                  O código Markdown<span class="code-color"><strong>&lt;code&gt;</strong></span># Heading<span class="code-color"><strong>&lt;/code&gt;</strong></span> cria um título no nível mais alto da hierarquia.
+    O código Markdown<span class="code-color"><strong>&lt;code&gt;</strong></span># Heading<span class="code-color"><strong>&lt;/code&gt;</strong></span> cria um título no nível mais alto da hierarquia.
                 </div>
                 </code></pre>
                 <br>
@@ -518,7 +518,7 @@
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    Esta <span class="code-color"><strong>&lt;mark&gt;</strong></span>palavra <span class="code-color"><strong>&lt;/mark&gt;</strong></span> está destacada.
+    Esta <span class="code-color"><strong>&lt;mark&gt;</strong></span>palavra <span class="code-color"><strong>&lt;/mark&gt;</strong></span> está destacada.
                 </div>
             </code></pre>
                 <br>
