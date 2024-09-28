@@ -348,7 +348,7 @@
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
     .typewriter-small {
-        width: 90%;
+        width: 80%;
         font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
         padding: 8px 16px; /* Ajusta o padding para telas menores */
     }
@@ -356,16 +356,39 @@
 
 @media (max-width: 480px) {
     .typewriter-small {
-        font-size: 14px; /* Ajuste do tamanho da fonte para telas muito pequenas */
+        font-size: 10px; /* Ajuste do tamanho da fonte para telas muito pequenas */
         padding: 6px 12px; /* Ajusta o padding para telas muito pequenas */
+    }
+    .copy-btn {
+        font-size: 6px; /* Ajuste do tamanho da fonte para telas muito pequenas */
+        left: 50%; /* Ajuste da posição do botão para telas muito pequenas */
     }
 }
 
-@media (max-width: 480px) {
-    .copy-btn { /* Ajuste do botão para a esquerda em telas menores */
-        font-size: 16px;
+@media (max-width: 540px) {
+    .typewriter-small {
+        font-size: 10px; /* Ajuste do tamanho da fonte para telas muito pequenas */
+        padding: 6px 10px; /* Ajusta o padding para telas muito pequenas */
+    }
+    .copy-btn {
+        font-size: 6px; /* Ajuste do tamanho da fonte para telas muito pequenas */
+        left: 45%; /* Ajuste da posição do botão para telas muito pequenas */
     }
 }
+
+
+
+@media (max-width: 715px) {
+    .typewriter-small {
+        font-size: 10px; /* Ajuste do tamanho da fonte para telas muito pequenas */
+        padding: 6px 10px; /* Ajusta o padding para telas muito pequenas */
+    }
+    .copy-btn {
+        font-size: 10px; /* Ajuste do tamanho da fonte para telas muito pequenas */
+        left: 45%; /* Ajuste da posição do botão para telas muito pequenas */
+    }
+}
+
 
 .code-color {
     color: #c51967;

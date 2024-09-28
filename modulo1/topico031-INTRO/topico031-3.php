@@ -63,7 +63,7 @@
                             NOTE 
                     </div>
                     <div class="CaixaConteudo ConteudoExemplo">
-                        <p class="Texto">Existem outros protocolos usados por aplicativos web para implementar a comunicação cliente/servidor. Para chamadas de áudio e vídeo, por exemplo, é mais apropriado usar <span class="code-color"><strong>WebSockets</strong></span>, um protocolo de nível inferior que é mais eficiente do que o HTTP para transferir fluxos de dados em ambas as direções.</p>
+                        <p class="Texto">Existem outros protocolos usados por aplicativos web para implementar a comunicação cliente/servidor. Para chamadas de áudio e vídeo, por exemplo, é mais apropriado usar WebSockets, um protocolo de nível inferior que é mais eficiente do que o HTTP para transferir fluxos de dados em ambas as direções.</p>
                     </div>
                 </div>
                 <br>

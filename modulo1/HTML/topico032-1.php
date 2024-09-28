@@ -60,7 +60,7 @@
         o título de um documento HTML. No entanto, um elemento possui dois outros componentes. Um
         elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> completo seria parecido com este:</p>
         <br>
-        <div class="typewriter-small" style="width: 40%;" id="copycode">
+        <div class="typewriter-small" style="width: 60%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
     </button>
@@ -122,7 +122,7 @@
         <br>
         <p class="Subtopico"><strong>Comentários em HTML</strong></p>
         <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:</p>
-        <div class="typewriter-small" style="width: 40%; color: #797979;" id="copycode">
+        <div class="typewriter-small" style="width: 60%; color: #797979;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
     </button>
@@ -240,7 +240,7 @@ comentários--&gt;
         <br>
         <p class="Texto">Eis um exemplo do uso desse elemento:</p>
         <br>
-        <div class="typewriter-small" style="width: 40%; text-align: center;" id="copycode">
+        <div class="typewriter-small" style="width: 60%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
     </button>
@@ -262,7 +262,7 @@ comentários--&gt;
         </div>
         <br>
         <p class="Subtopico"><strong>Metadados</strong></p>
-        <p class="Texto">O elemento &lt;meta&gt; é usado para especificar metainformações, de maneira a descrever melhor o conteúdo de um documento HTML. Trata-se de um elemento de auto-fechamento, ou seja, ele não tem uma tag de fechamento. Além dos atributos genéricos, que são válidos para todos os elementos HTML, o elemento &lt;meta&gt; também usa os seguintes atributos:
+        <p class="Texto">O elemento <span class="code-color"><strong>&lt;meta&gt;</strong></span> é usado para especificar metainformações, de maneira a descrever melhor o conteúdo de um documento HTML. Trata-se de um elemento de auto-fechamento, ou seja, ele não tem uma tag de fechamento. Além dos atributos genéricos, que são válidos para todos os elementos HTML, o elemento &lt;meta&gt; também usa os seguintes atributos:
         </p>
         <br>
         <div class="attecion">
@@ -337,7 +337,7 @@ comentários--&gt;
         documento se atualize</strong></p>
         <br>
         <p class="Texto">Usando a tag <span class="code-color"><strong>&lt;meta&gt;</strong></span>, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
-        <div class="typewriter-small" style="width: 40%;" id="copycode">
+        <div class="typewriter-small" style="width: 50%;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
     </button>
@@ -362,7 +362,7 @@ comentários--&gt;
         <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
         <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
         <br>
-        <div class="typewriter-small" style="width: 30%; text-align: center;" id="copycode">
+        <div class="typewriter-small" style="width: 50%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
     </button>
