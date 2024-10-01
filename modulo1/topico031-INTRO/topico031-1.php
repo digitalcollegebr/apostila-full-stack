@@ -93,9 +93,10 @@
                 <p class="Texto">O desenvolvedor parte do paradigma da linguagem para formular as tarefas a serem executadas pela máquina. Essas tarefas, por sua vez, são expressas simbolicamente com as palavras e construções sintáticas oferecidas pela linguagem.</p>
                 <p class="Texto">O código a seguir é um exemplo de linguagem procedural. Escrito em <span class="code-color"><strong>C</strong></span>, ele define variáveis que representam as faces, a área e o volume de formas geográficas. O valor da variável side é atribuído em <span class="code-color"><em>main()</em></span>, que é a função invocada quando o programa é executado. As variáveis <em>area e volume</em> são calculadas nas sub-rotinas <span class="code-color"><em>square()</em></span> e <span class="code-color"><em>cube()</em></span> que precedem a função principal:</p>
                 <br>
-            <div class="typewriter-small" id="copycode"  style="width: 60%;">
+            <div class="typewriter-small" id="copycode"  style="width: 70%;">
             <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
                   <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;stdio.h&gt;</span>
         <span class="C_inicializeted"><strong>float</strong></span> side;
@@ -127,6 +128,7 @@
         <div class="typewriter-small" style=" margin: 0 auto;">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
                   <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;iostream&gt;</span>
         <span class="green-code"><strong>class</strong></span><span class="code-color"><strong> Cube</strong></span>&lbrace;
@@ -151,6 +153,7 @@
         <div class="typewriter-small" style="" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
                 <p><pre><code><span class="green-code"><strong>function</strong></span> cube(side) &lbrace;
                 <span class="green-code"><strong>return</strong></span> side*side*side;
@@ -169,6 +172,7 @@
         <div class="typewriter-small" id="copycode"  style=" width: 45%; font-size: 12px;">
         <button class="copy-btn" onclick="copyCode()">
             <i class="fas fa-copy"></i>
+            Copiar
          </button>
          <pre><code class="Texto">
 <span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;

@@ -37,6 +37,7 @@
                 <div  class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
 <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -88,6 +89,7 @@
             <div class="typewriter-small" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="code-color"><strong>* </strong></span> {
@@ -162,9 +164,10 @@
                 <p class="Texto">
                 As propriedades <span class="code-color"><em>margin</em></span> e <span class="code-color"><em>padding</em></span> afetam todos os tipos de caixa. Se você não definir essas propriedades explicitamente, o navegador definirá algumas delas usando valores padrão. Conforme visto na <em>Figure 35</em>, os elementos h2 e p foram exibidos com um espacinho entre eles. Essas lacunas são as margens superior e inferior que o navegador adiciona por padrão a esses elementos. Podemos removê-las modificando as regras de CSS para os seletores h2 e p:
                 </p>
-                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="code-color"><strong>h2 </strong></span>{
@@ -196,9 +199,10 @@
             <p class="Texto">
             Enquanto a propriedade margin (margem) define o espaço entre o elemento e seus arredores, a propriedade padding (preenchimento) do elemento define o espaço interno entre os limites do contêiner e seus elementos filhos. Considere os elementos h2 e p dentro de cada div em nosso código, por exemplo. Poderíamos usar a propriedade de margem deles para criar um espaço nas bordas do div correspondente, mas é mais simples alterar a propriedade padding do contêiner:
             </p>
-            <div class="typewriter-small" style="width: 50%;"  id="copycode">
+            <div class="typewriter-small" style="width: 70%;"  id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#second</strong></span> {
@@ -230,9 +234,10 @@
             Em seu comportamento padrão, os elementos de bloco são esticados para se ajustar à largura disponível. Mas isso não é obrigatório. A propriedade <span class="code-color"><em>width</em></span> define um tamanho horizontal fixo para a caixa:
             </p>
             <br>
-            <div class="typewriter-small" style="width: 50%;" id="copycode">
+            <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#first</strong></span> {
@@ -255,9 +260,10 @@
             <p class="Texto">
             Em vez de deixar o primeiro <span class="code-color"><em>div</em></span> alinhado à esquerda, vamos centralizá-lo. Centralizar uma caixa é equivalente a definir margens do mesmo tamanho em ambos os lados; assim, podemos usar a propriedade de margem para centralizá-la. O tamanho do espaço disponível costuma variar, por isso usamos o valor <span class="code-color"><em>auto</em></span> para as margens esquerda e direita:
             </p>
-            <div class="typewriter-small" style="width: 50%;"  id="copycode">
+            <div class="typewriter-small" style="width: 70%;"  id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#first</strong></span> {
@@ -280,9 +286,10 @@
             <p class="Texto">
             O fluxo normal é simples e sequencial. O CSS também permite interromper o fluxo normal e posicionar elementos de maneiras bastante específicas, até mesmo neutralizando a rolagem da página, se desejado. Veremos várias maneiras de controlar o posicionamento dos elementos nesta seção.
             </p>
-            <div class="typewriter-small" style="width: 60%;" id="copycode">
+            <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#first</strong></span> {
@@ -307,9 +314,10 @@
             A imagem anterior mostra como o primeiro div cobre o segundo div e parte do terceiro div. Vamos supor que queremos que o primeiro div flutue sobre o segundo div, mas não sobre o terceiro. A solução é incluir a propriedade clear na regra CSS correspondente ao terceiro div:
             </p>
             <br>
-            <div class="typewriter-small" style="width: 50%;" id="copycode">
+            <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#third</strong></span> {
@@ -389,6 +397,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
 <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -440,6 +449,7 @@
             <div class="typewriter-small" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
                 <span class="code-color"><strong>&lt;div&gt;</strong></span> <span class="blue-code">id=</span><span class="orange-code">"container"</span>
@@ -482,9 +492,10 @@
             flexbox:
             </p>
             <br>
-            <div class="typewriter-small" style="width: 50%;" id="copycode">
+            <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-                        <i class="fas fa-copy"></i>
+                    <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#container</strong></span> {
@@ -515,9 +526,10 @@
             <p class="Texto">
             No exemplo anterior, modificamos o layout da página para colocar os elementos div lado a lado nas colunas. Esse layout é adequado para telas maiores, mas ficaria muito confuso em telas menores. Para resolver esse problema, podemos adicionar à folha de estilo uma consulta de mídia correspondente apenas a telas com pelo menos <span class="code-color"><em>600px</em></span> de largura:
             </p>
-            <div class="typewriter-small" style="width: 50%;" id="copycode">
+            <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="green-code"><strong>@media</strong></span> (min-width: <span class="dark_blue_code"><strong>600px</strong></span>) {

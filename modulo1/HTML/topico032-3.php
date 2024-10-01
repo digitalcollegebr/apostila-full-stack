@@ -32,6 +32,7 @@
                 <div class="typewriter-small" style="width: 50%; text-align: center;" id="codecopy">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
     <span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src=</span><span class="orange-code">"logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -42,6 +43,7 @@
                 <div class="typewriter-small" style="width: 50%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                     <i class="fas fa-copy"></i>
+                    Copiar
                 </button>
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"../logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -66,6 +68,7 @@
                 <div class="typewriter-small" id="copycode" style="width: 50%">
                 <button class="copy-btn" onclick="copyCode()">
                      <i class="fas fa-copy"></i>
+                     Copiar
                 </button>
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -79,6 +82,7 @@
                 <div class="typewriter-small"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="blue-code">width=</span><span class="orange-code">"300"</span><span class="blue-code">height=</span><span class="orange-code">"100"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -104,6 +108,7 @@
                 <div class="typewriter-small" style="width: 90%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre>
                         <code class="Texto">
@@ -122,6 +127,7 @@
                 <div class="typewriter-small" style="width: 80%; text-align: left;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                     <i class="fas fa-copy"></i>
+                    Copiar
                 </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;iframe&gt;</strong></span><span class="blue-code">name=</span><span class="orange-code">"viewer"</span><span class="blue-code">src=</span><span class="orange-code">"gallery.html"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -138,6 +144,7 @@
                 <div class="typewriter-small" style="width: 100%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -147,6 +154,7 @@
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src</span><span class="orange-code">"contact.png"</span><span class="blue-code"> alt=</span><span class="orange-code">"contact.png"</span><span class="code-color"><strong>&gt; </strong></span>"Informações de contato"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -156,6 +164,7 @@
                 <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span><span class="code-color"><strong>&gt;</strong></span>Contato via Email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -165,6 +174,7 @@
                 <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"<span class="code-color"><strong>&gt;</strong></span></span>Contato via telefone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -175,6 +185,7 @@
                 <div class="typewriter-small" style="width: 70%; text-align: center;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code"> target=</span><span class="orange-code">"_blank"</span> <span class="code-color"><strong>&gt; </strong></span>Contate para mais informaçãoes<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -185,6 +196,7 @@
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
 
                     <pre>
@@ -201,6 +213,7 @@
                 <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre>
                         <code class="Texto">
@@ -218,6 +231,7 @@
                 <div class="typewriter-small" style="width: 70%; text-align: center;"   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;span</strong></span><span class="blue-code"> class=</span><span class="orange-code">"my-headline"</span><span class="blue-code">id=</span><span class="orange-code">"history"</span><span class="code-color"> <strong>&gt;</strong></span>History<span class="code-color"><strong>&lt;/span&gt;</strong></span><span class="code-color"></span>

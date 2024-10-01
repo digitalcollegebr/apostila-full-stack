@@ -37,6 +37,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
 <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -58,6 +59,7 @@
   <pre><code class="Texto">
             <button class="copy-btn" onclick="copyCode()">
                 <i class="fas fa-copy"></i>
+                Copiar
             </button>
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
 <span class="code-color"><strong>&lt;html</strong></span> <span class="blue-code">lang=</span> <span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -104,6 +106,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -124,6 +127,7 @@
             <div class="typewriter-small" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code  class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
@@ -273,6 +277,7 @@
               <div class="typewriter-small" id="copycode">
               <button class="copy-btn" onclick="copyCode()">
                 <i class="fas fa-copy"></i>
+                Copiar
             </button>
   <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
@@ -305,6 +310,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
@@ -319,6 +325,7 @@
                 <div class="typewriter-small"  id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                   </button>
                 <span class="code-color"><strong>&lt;p&gt;</strong></span>Adress:  <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span> <span class="orange-code">"text"</span><span class="blue-code">name=</span>  <span class="orange-code">"address"</span><span class="blue-code">placeholder=</span>  <span class="orange-code">"e.g. 41 John St., Upper Suite 1"</span><span class="code-code">&gt;</span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
                 </div>
@@ -339,6 +346,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
@@ -365,6 +373,7 @@
                   <div class="typewriter-small" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code  class="Texto">
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
@@ -392,6 +401,7 @@
                   <div class="typewriter-small" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -428,6 +438,7 @@
               <div class="typewriter-small"  id="copycode">
               <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -465,6 +476,7 @@
             <div class="typewriter-small"  id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
 
   <pre><code class="Texto">
@@ -504,6 +516,7 @@
                 <div style class="typewriter-small" style="width: 50%; text-align: left;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
               <pre><code class="Texto">
 <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code">type=</span><span class="orange-code">"hidden "</span> <span class="blue-code">id=</span><span class="orange-code">"form-token"</span> <span class="blue-code">name=</span><span class ="orange-code">"form-token"</span> <span class="blue-code">value=</span><span class="orange-code">"e730a375-b953-4393-847d-2dab065bbc92"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -518,6 +531,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
                 <pre><code class="Texto">
         <span class="code-color"><strong>&lt;p&gt;</strong></span>
@@ -535,6 +549,7 @@
                 <div class="typewriter-small" style="width: 60%; text-align: left" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                           <i class="fas fa-copy"></i>
+                          Copiar
                   </button>
                   <pre><code class="Texto">
     <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code"> type=</span><span class="orange-code">"submit "</span> <span class="blue-code"> value=</span><span class="orange-code">"Enviar"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -552,6 +567,7 @@
                 <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
         <span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"reset"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -563,6 +579,7 @@
                 <div class="typewriter-small" style="width: 50%; text-align: center" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
                 <pre><code class="Texto">
   <span class="code-color"><strong>&lt;button</strong></span><span class="code-color"><strong>&gt;</strong></span>Enviar formulário<span class="code-color"><strong>&lt;/button&gt;</strong></span>
@@ -578,6 +595,7 @@
                 <div class="typewriter-small" style="width: 50%; text-align:left" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
       <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="code-color"><strong>&gt;</strong></span>
@@ -590,6 +608,7 @@
                 <div class="typewriter-small" style="width: 50%; text-align: left"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form</strong></span> <span class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code">"get"</span> <span class="code-color"><strong>&gt;</strong></span>
@@ -601,6 +620,7 @@
                 <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode"> 
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
       <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code ">"post"</span><span class="code-color"><strong>&gt;</strong></span>

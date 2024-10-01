@@ -21,7 +21,7 @@ document.querySelectorAll('.copy-btn').forEach(button => {
         
         // Restaura o texto original após 2 segundos
         setTimeout(() => {
-            this.innerHTML = '<i class="fas fa-copy"></i>';
+            this.innerHTML = '<i class="fas fa-copy"></i> Copiar';
         }, 2000);
     });
 });

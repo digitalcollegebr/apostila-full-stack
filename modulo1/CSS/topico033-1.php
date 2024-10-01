@@ -45,9 +45,10 @@
                 A maneira mais simples de modificar o estilo de um elemento específico é escrevê-lo diretamente na tag do elemento usando o atributo <span class="code-color"><em>style</em></span>. Todos os elementos HTML visíveis aceitam um atributo <span class="code-color"><em>style</em></span>, cujo valor pode ser uma ou mais regras de CSS, também conhecidas como <span class="code-color"><em>propriedades</em></span>. Vamos começar com um exemplo simples, um elemento de parágrafo:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 60%; text-align:center;" id="copycode">
+                <div class="typewriter-small" style="width: 70%; text-align:center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p&gt;</strong></span>Meu parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -59,9 +60,10 @@
                 Para mudar a cor do nosso parágrafo simples, por exemplo, usamos a propriedade <span class="code-color"><em>color</em></span>. A propriedade <span class="code-color"><em>color</em></span> refere-se à cor do <em>primeiro plano</em>, ou seja, a cor das letras do parágrafo. A cor em si é indicada na parte do valor da regra e pode ser especificada em vários formatos diferentes, incluindo nomes simples como <em>red</em>, <em>green</em>, <em>blue</em>, <em>yellow</em> etc. Assim, para deixar a letra do parágrafo roxa, adicione a propriedade personalizada <span class="code-color"><em>color: purple</em></span> ao atributo <span class="code-color"><em>style</em></span> do elemento:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <div class="typewriter-small" style="width: 70%;"  id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
                             <i class="fas fa-copy"></i>
+                            Copiar
                 </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"</span><span class="code-color"><strong>&gt;</strong></span> Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -70,7 +72,9 @@
                     <br>
                     <p class="Texto">Outras propriedades personalizadas podem entrar na mesma propriedade style, mas devem ser separadas por ponto e vírgula. Se você quiser aumentar o tamanho da fonte, por exemplo, adicione <span class="code-color"><em>font-size: larger</em></span> à propriedade style:</p>
                     <br>
-                    <div class="typewriter-small" style="width: 60%;">
+                    <div class="typewriter-small" style="width: 70%;">
+                        <button class="copy-btn" onclick="copyCode()">  <i class="fas fa-copy"></i> Copiar</button>
+
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"; font-size: larger</span><span class="code-color"><strong>&gt;</strong></span>Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
                     </div>
@@ -96,6 +100,7 @@
                     <div class="typewriter-small" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -124,9 +129,10 @@
             </p>
             <p class="Texto">O retângulo correspondente ao elemento p no corpo do documento HTML de amostra ficará visível se adicionarmos a propriedade background-color à regra (<em>Figure 33</em>):</p>
             <br>
-            <div style class="typewriter-small" style="width: 50%;"  id="copycode">
+            <div style class="typewriter-small" style="width: 70%;"  id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                 <pre><code class="Texto">
     <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple; font-size: larger; background-color: silver"<span class="code-color"><strong>&gt;</strong></span></span>Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span><br>
@@ -155,9 +161,10 @@
                   A tag <span class="code-color"><strong>&lt;style&gt;</strong></span> permite escrever regras de CSS dentro da página HTML que queremos estilizar. Ela permite ao navegador diferenciar o código CSS do código HTML. A tag <span class="code-color"><strong>&lt;style&gt;</strong></span> entra na seção <span class="code-color"><em>head</em></span> do documento:
                   </p>
                   <br>
-                  <div style class="typewriter-small" style="width: 50%; text-align: left;" id="copycode">
+                  <div style class="typewriter-small" style="width: 70%; text-align: left;" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -185,6 +192,7 @@
                    <div  class="typewriter-small" id="copycode">
                    <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre>
                     <code class="Texto">
@@ -194,11 +202,12 @@
                     </code>  </pre>
                   </div>
                   <br>
-                  <p class="Texto">o resultado será exatamente igual ao de:</p>
+                  <p class="Texto">O resultado será exatamente igual ao de:</p>
                   <br>
-    <div class="typewriter-small" style="width: 50%;"  id="copycode">
+    <div class="typewriter-small" style="width: 70%;"  id="copycode">
     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;style type=</strong></span><span class="orange-code">"text/css"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -212,9 +221,10 @@
                   <p class="Texto">Os bytes extras ocupados pelos espaços e quebras de linha fazem pouca diferença no tamanho final do documento e não têm um impacto significativo no tempo de carregamento da página, portanto a escolha do layout é questão de gosto. Observe o ponto e vírgula após a última declaração <span class="code-color"><em>(fontsize: larger;)</em></span> da regra de CSS. Esse ponto e vírgula não é obrigatório, mas sua presença facilita a inclusão de outra declaração na linha seguinte sem se preocupar com a falta de um ponto e vírgula.</p>
                   <p class="Texto">As declarações em linhas separadas também ajudam quando precisamos comentar uma declaração. Sempre que você quiser desabilitar temporariamente uma declaração para, por exemplo, resolver um problema na página, basta colocar a linha correspondente entre <span class="code-color"><em>/*</em></span> e <span class="code-color"><em>*/</em></span>:</p>
                   <br>
-                  <div class="typewriter-small" style="width: 50%" id="copycode">
+                  <div class="typewriter-small" style="width: 70%" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>p;{</strong></span>
@@ -228,9 +238,10 @@
                 <br>
                 <p class="Texto">ou:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>p;{</strong></span>
@@ -243,9 +254,10 @@
                 <p class="Texto">Escrita assim, a declaração <span class="code-color"><em>font-size: larger</em></span> será ignorada pelo navegador. Tenha o cuidado de abrir e fechar os comentários corretamente; caso contrário, o navegador pode não ser capaz de interpretar as regras.</p>
                 <p class="Texto">Os comentários também são úteis para escrever lembretes sobre as regras:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
     <span style="color: #797979;">/* O texto dentro de &lt;p&gt; é roxo e largo */</span>
@@ -276,6 +288,7 @@
 
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
@@ -296,15 +309,5 @@
     <a href="../../questoesModulo01/unidade05.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
 
     <?php include('../../layouts/footer.php') ?>
-    <script>
-function copyCode() {
-    const code = document.querySelector('#copycode').textContent;
-    navigator.clipboard.writeText(code).then(() => {
-        alert('Código copiado!');
-    }).catch(err => {
-        console.error('Erro ao copiar:', err);
-    });
-}
-</script>
 </body>
 </html>
