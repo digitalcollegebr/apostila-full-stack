@@ -61,12 +61,11 @@
         o título de um documento HTML. No entanto, um elemento possui dois outros componentes. Um
         elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> completo seria parecido com este:</p>
         <br>
-        <div class="typewriter-small" style="width: 60%; text-align: center;" id="copycode">
+        <div class="typewriter-small" style="width: 70%; text-align: center; height: 130px; padding-top: 55px;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
         Copiar
     </button>
-    <br>
     <pre><code class="Texto"><span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página HTML<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
 </code></pre>
         </div>
@@ -245,7 +244,7 @@ comentários--&gt;
         <br>
         <p class="Texto">Eis um exemplo do uso desse elemento:</p>
         <br>
-        <div class="typewriter-small" style="width: 60%; text-align: center;" id="copycode">
+        <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
         Copiar
@@ -345,7 +344,8 @@ comentários--&gt;
         documento se atualize</strong></p>
         <br>
         <p class="Texto">Usando a tag <span class="code-color"><strong>&lt;meta&gt;</strong></span>, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
-        <div class="typewriter-small" style="width: 50%;" id="copycode">
+        <div class="typewriter-small" style="width:
+        70%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
         Copiar
@@ -357,7 +357,7 @@ comentários--&gt;
         <br>
         <p class="Texto">Outra alternativa é redirecionar uma página web para outra página web após o mesmo período de tempo com o seguinte código:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%;" id="copycode">
+        <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
         Copiar

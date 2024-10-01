@@ -413,7 +413,7 @@ Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span clas
                 <p class="Subtopico"><strong>Texto em itálico</strong></p>
                 <p class="Texto">Para colocar o texto em itálico, usamos o elemento <span class="code-color"><strong>&lt;i&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na <em>Figure 12</em>.</p>
                 <br>
-                <div class="typewriter-small" style=" width: 50%" id="copycode">
+                <div class="typewriter-small" style=" width: 70%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -432,7 +432,7 @@ Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span clas
                 <br>
                 <p class="Subtopico"><strong>Texto sublinhado</strong></p>
                 <p class="Texto">Para sublinhar o texto, usamos o elemento <span class="code-color"><strong>&lt;u&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na <em>Figure 13</em>.</p>
-                <div class="typewriter-small" style=" width: 50%;"  id="copycode">
+                <div class="typewriter-small" style=" width: 50%; text-align: center;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -451,7 +451,7 @@ Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span clas
                 <br>
                 <p class="Subtopico"><strong>Largura fixa ou fonte monoespaçada</strong></p>
                 <p class="Texto">Para exibir texto em fonte monoespaçada (largura fixa), freqüentemente usada para exibir código de computador, usamos o elemento <span class="code-color"><strong>&lt;tt&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na  <em>Figure 14</em>.</p>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small" style="text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -529,7 +529,8 @@ Esta <span class="code-color"><strong>palavra</strong></span> é importante.
                 <br>
                 <p class="Subtopico"><strong>Texto destacado</strong></p>
                 <p class="Texto">Para destacar o texto com um fundo amarelo, semelhante ao estilo de um marca-texto, usamos o elemento <span class="code-color"><strong>&lt;mark&gt;</strong></span> como no exemplo a seguir. O resultado aparece na <em>Figure 18</em>.</p>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small"  style="text-align: center;" id="copycode">
+
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -680,14 +681,14 @@ field() {
                 </p>
                 <p class="Texto">Por exemplo, para adicionar um cabeçalho ao nosso documento de exemplo, podemos fazer o
                 seguinte:</p>
-    <div class="typewriter-small" style="width: 40%;" id="copycode">
+    <div class="typewriter-small" style="width: 70%;" id="copycode">
     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
             </button>
     <pre><code class="Texto">
     <span class="code-color"><strong>&lt;header&gt;</strong></span>
-    <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardin.<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+    <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardim.<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
     <span class="code-color"><strong>&lt;/header&gt;</strong></span>
     </pre></code>
     </div>

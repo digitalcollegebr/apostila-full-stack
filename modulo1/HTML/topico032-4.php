@@ -327,7 +327,9 @@
                         <i class="fas fa-copy"></i>
                         Copiar
                   </button>
-                <span class="code-color"><strong>&lt;p&gt;</strong></span>Adress:  <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span> <span class="orange-code">"text"</span><span class="blue-code">name=</span>  <span class="orange-code">"address"</span><span class="blue-code">placeholder=</span>  <span class="orange-code">"e.g. 41 John St., Upper Suite 1"</span><span class="code-code">&gt;</span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                  <pre><code class="Texto">
+<span class="code-color"><strong>&lt;p&gt;</strong></span>Adress:  <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code">type=</span> <span class="orange-code">"text"</span><span class="blue-code">name=</span>  <span class="orange-code">"address"</span><span class="blue-code">placeholder=</span>  <span class="orange-code">"e.g. 41 John St., Upper Suite 1"</span><span class="code-code">&gt;</span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
+                </code></pre>
                 </div>
                 <br>
                 <p class="Texto">O marcador de posição aparece dentro do elemento de inserção de dados, conforme mostrado na  <em>Figure 25</em>.</p>
@@ -438,6 +440,7 @@
               <div class="typewriter-small"  id="copycode">
               <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="code-color"><strong>&lt;p&gt;</strong></span>Browser favorito:<span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -475,6 +478,7 @@
             <div class="typewriter-small"  id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
 
   <pre><code class="Texto">
@@ -511,9 +515,10 @@
                 <p class="Subtopico"><strong>O tipo de elemento hidden</strong></p>
                 <p class="Texto">Em certas situações, o desenvolvedor precisa incluir no formulário informações que não podem ser manipuladas pelo visitante, ou seja, enviar um valor escolhido pelo desenvolvedor sem que haja um campo no formulário onde o visitante possa digitar ou alterar o valor. Isso serviria, por exemplo, para incluir um token de identificação, que não precisa ser visto pelo visitante, para aquele formulário específico. Um elemento oculto de formulário seria escrito como no exemplo a seguir:</p>
                 <br>
-                <div style class="typewriter-small" style="width: 50%; text-align: left;" id="copycode">
+                <div style class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
               <pre><code class="Texto">
 <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code">type=</span><span class="orange-code">"hidden "</span> <span class="blue-code">id=</span><span class="orange-code">"form-token"</span> <span class="blue-code">name=</span><span class ="orange-code">"form-token"</span> <span class="blue-code">value=</span><span class="orange-code">"e730a375-b953-4393-847d-2dab065bbc92"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -528,6 +533,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
                 <pre><code class="Texto">
         <span class="code-color"><strong>&lt;p&gt;</strong></span>
@@ -542,9 +548,10 @@
                 <p class="Subtopico"><strong>Botões de ação</strong></p>
                 <p class="Texto">Por padrão, o formulário é enviado quando o visitante pressiona a tecla Enter em qualquer campo de entrada. Para tornar as coisas mais intuitivas, um botão de envio deve ser adicionado com o tipo de entrada <span class="code-color"><em>submit</em></span>:</p>
                 <br>
-                <div class="typewriter-small" style="width: 60%; text-align: left" id="copycode">
+                <div class="typewriter-small" style="width: 60%; text-align: center" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                           <i class="fas fa-copy"></i>
+                          Copiar
                   </button>
                   <pre><code class="Texto">
     <span class="code-color"><strong>&lt;input</strong></span>  <span class="blue-code"> type=</span><span class="orange-code">"submit "</span> <span class="blue-code"> value=</span><span class="orange-code">"Enviar"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -559,20 +566,22 @@
                 <br>
                 <p class="Texto">Outro botão útil a se incluir em formulários complexos é o botão <span class="code-color"><em>reset</em></span>, que limpa o formulário e o devolve ao seu estado original:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode">
+                <div class="typewriter-small" style="width: 50%; text-align: center" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
-        <span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"reset"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"reset"</span><span class="code-color"><strong>&gt;</strong></span>
                   </code></pre>
                 </div>
                 <br>
                 <p class="Texto">Como no caso do botão de enviar, o texto do atributo <span class="code-color"><em>value</em></span> é usado para rotular o botão. Alternativamente, a tag <span class="code-color"><strong>&lt;button&gt;</strong></span> pode ser usada para adicionar botões em formulários ou em qualquer outro lugar da página. Ao contrário dos botões feitos com a tag <span class="code-color"><strong>&lt;input&gt;</strong></span>, o elemento de botão tem uma tag de fechamento e o rótulo do botão é seu conteúdo interno:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: center" id="copycode">
+                <div class="typewriter-small" style="width: 70%; text-align: center" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
                 <pre><code class="Texto">
   <span class="code-color"><strong>&lt;button</strong></span><span class="code-color"><strong>&gt;</strong></span>Enviar formulário<span class="code-color"><strong>&lt;/button&gt;</strong></span>
@@ -585,9 +594,10 @@
                 <p class="Texto">A última etapa ao se escrever um formulário HTML é definir como e para onde os dados devem ser enviados. Esses aspectos dependem dos detalhes do cliente e do servidor.</p>
                 <p class="Texto">No lado do servidor, a abordagem mais comum é configurar um arquivo de script para analisar, validar e processar os dados do formulário de acordo com a finalidade do aplicativo. Por exemplo, o desenvolvedor back-end pode escrever um script chamado <em>receive_form.php</em> para receber os dados enviados do formulário. No lado do cliente, o script é indicado no atributo action da tag do  formulário:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align:left" id="copycode">
+                <div class="typewriter-small" style="width: 70%; text-align:center" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
       <span class="code-color"><strong>&lt;form</strong></span> <span  class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="code-color"><strong>&gt;</strong></span>
@@ -597,9 +607,10 @@
                 <p class="Texto">O atributo <span class="code-color"><em>action</em></span> segue as mesmas convenções de todos os endereços HTTP. Se o script estiver no mesmo nível de hierarquia da página que contém o formulário, ele pode ser escrito sem o caminho completo. Caso contrário, o caminho absoluto ou relativo deve ser fornecido. O script também deve gerar a resposta que servirá como página de destino, carregada pelo navegador após o visitante enviar o formulário.</p>
                 <p class="Texto">O HTTP proporciona métodos distintos para enviar dados de formulário por meio de uma conexão com o servidor. Os métodos mais comuns são <span class="code-color"><em>get</em></span> e <span class="code-color"><em>post</em></span>, que devem ser indicados no atributo method da tag <span class="code-color"><strong>form</strong></span>:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left"  id="copycode">
+                <div class="typewriter-small" style="width: 60%; text-align: center;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form</strong></span> <span class="blue-code">action=</span><span class="orange-code">"receive_form.php"</span> <span class="blue-code">method=</span><span class="orange-code">"get"</span> <span class="code-color"><strong>&gt;</strong></span>
@@ -608,7 +619,7 @@
                 <br>
                 <p class="Texto">Ou:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left" id="copycode"> 
+                <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode"> 
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>

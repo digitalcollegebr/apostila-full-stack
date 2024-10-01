@@ -45,7 +45,7 @@
                 Cada componente de uma cor é representado por um número binário de oito bits, variando de <span class="code-color"><strong>0 a 255</strong></span>. Todos os três componentes devem ser especificados na mistura de cores, sempre na ordem <span class="red-code"><strong>vermelho</strong></span>, <span class="green-color"><strong>verde</strong></span>, <span class="dark_blue_code"><strong>azul</strong></span>. Portanto, para trocar a cor de todo o texto da página para vermelho usando a notação RGB, usamos <span class="code-color"><em>rgb(255,0,0)</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -59,7 +59,7 @@
                 <br>
                 <p class="Texto">Um componente definido como <span class="code-color"><em>0</em></span> indica que a cor básica correspondente não é usada na mistura de cores. Também é possível usar porcentagens em vez de números:</p>
                 <br>
-                <div class="typewriter-small" style="width: 70%"  id="copycode">
+                <div class="typewriter-small" style="width: 60%"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -166,7 +166,7 @@
               O caminho para a imagem deve ser especificado usando um designador <span class="code-color"><em>url()</em></span>. Se a imagem que você deseja usar estiver na mesma pasta do arquivo HTML, basta incluir o nome do arquivo:
               </p>
               <br>
-              <div class="typewriter-small" style="width: 70%;" id="copycode">
+              <div class="typewriter-small" style="width: 60%;" id="copycode">
               <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -182,7 +182,7 @@
                 Neste exemplo, o arquivo de imagem <em>background.jpg</em> será usado como imagem de fundo para todo o corpo da página. Por padrão, a imagem de fundo é repetida se seu tamanho não bastar para cobrir a página inteira, começando no canto superior esquerdo da área correspondente ao seletor da regra. Esse comportamento pode ser modificado com a propriedade <span class="code-color"><em>background-repeat</em></span>. Se você quiser que a imagem de fundo seja posta na área do elemento sem repeti-la, use o valor <span class="code-color"><em>no-repeat</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;"  id="copycode">
+                <div class="typewriter-small" style="width: 60%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -325,7 +325,7 @@
                 As três famílias de fontes genéricas mais comuns são <sapn class="code-color"><em>serif</em></sapn>, <span class="code-color"><em>sans-serif</em></span> e <span class="code-color"><em>monospace</em></span>. Serif é a família de fontes padrão da maioria dos navegadores. Se você preferir usar sans-serif para a página inteira, adicione a seguinte regra à sua folha de estilo:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -341,7 +341,7 @@
                 Opcionalmente, podemos primeiro definir um nome específico de família de fonte, seguido pelo nome de família genérico:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -389,7 +389,7 @@
                 Use então o seletor <span class="code-color"><em>.under</em></span> para alterar a propriedade <span class="code-color"><em>text-decoration</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;"  id="copycode">
+                <div class="typewriter-small" style="width: 60%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -405,7 +405,11 @@
                 Por padrão, todos os elementos a (link) são sublinhados. Para remover o sublinhado, use o valor none em <span class="code-color"><em>text-decoration</em></span> de todos os elementos a:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;" id="copycode">
+                <div class="typewriter-small" style="width:60%;" id="copycode">]
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+                        Copiar
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>a</strong></span> {
     <span class="blue-code">text-decoration: </span><span class="dark_blue_code"> none</span>;
@@ -417,7 +421,7 @@
                 Ao revisar o conteúdo, alguns autores gostam de riscar as partes incorretas ou desatualizadas do texto, para que o leitor saiba que o texto foi atualizado e o que foi removido. Para fazer isso, use o valor <span class="code-color"><em>line-through</em></span> da propriedade <span class="code-color"><em>text-decoration</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar

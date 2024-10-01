@@ -204,7 +204,7 @@
                   <br>
                   <p class="Texto">O resultado será exatamente igual ao de:</p>
                   <br>
-    <div class="typewriter-small" style="width: 70%;"  id="copycode">
+    <div class="typewriter-small" style="width: 60%;"  id="copycode">
     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -221,7 +221,7 @@
                   <p class="Texto">Os bytes extras ocupados pelos espaços e quebras de linha fazem pouca diferença no tamanho final do documento e não têm um impacto significativo no tempo de carregamento da página, portanto a escolha do layout é questão de gosto. Observe o ponto e vírgula após a última declaração <span class="code-color"><em>(fontsize: larger;)</em></span> da regra de CSS. Esse ponto e vírgula não é obrigatório, mas sua presença facilita a inclusão de outra declaração na linha seguinte sem se preocupar com a falta de um ponto e vírgula.</p>
                   <p class="Texto">As declarações em linhas separadas também ajudam quando precisamos comentar uma declaração. Sempre que você quiser desabilitar temporariamente uma declaração para, por exemplo, resolver um problema na página, basta colocar a linha correspondente entre <span class="code-color"><em>/*</em></span> e <span class="code-color"><em>*/</em></span>:</p>
                   <br>
-                  <div class="typewriter-small" style="width: 70%" id="copycode">
+                  <div class="typewriter-small" style="width: 60%" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -238,7 +238,7 @@
                 <br>
                 <p class="Texto">ou:</p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;"  id="copycode">
+                <div class="typewriter-small" style="width: 60%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -254,7 +254,7 @@
                 <p class="Texto">Escrita assim, a declaração <span class="code-color"><em>font-size: larger</em></span> será ignorada pelo navegador. Tenha o cuidado de abrir e fechar os comentários corretamente; caso contrário, o navegador pode não ser capaz de interpretar as regras.</p>
                 <p class="Texto">Os comentários também são úteis para escrever lembretes sobre as regras:</p>
                 <br>
-                <div class="typewriter-small" style="width: 70%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
