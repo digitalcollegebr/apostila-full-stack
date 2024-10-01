@@ -72,7 +72,7 @@
                 <br>
                 <p class="Subtopico"><strong>A mensagem de solicitação</strong></p>
                 <p class="Texto">O HTTP opera através de uma conexão já estabelecida entre cliente e servidor, geralmente implementada em TCP e criptografada com TLS. Na verdade, uma vez que uma conexão que atenda aos requisitos impostos pelo servidor esteja pronta, uma solicitação HTTP digitada à mão em texto simples pode gerar a resposta do servidor. Na prática, porém, os programadores raramente precisam implementar rotinas para compor mensagens HTTP, pois a maioria das linguagens de programação fornece mecanismos que automatizam a criação dessas mensagens. No caso da URL de exemplo, <span class="code-color"><a href="https://learning.lpi.org/pt/" target="_blank">https://learning.lpi.org/pt/</a></span>, a mensagem de solicitação mais simples possível teria o seguinte conteúdo:</p>
-    <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px">
+    <div class="typewriter-small" style="width: 60%; text-align: left; font-size:20px">
     <pre><code>
     GET /pt/ HTTP/1.1
     Host: learning.lpi.org
@@ -100,8 +100,9 @@
                 <p class="Texto">Existem muitos outros campos de cabeçalho que podem ser usados em uma mensagem HTTP, mas os campos mostrados no exemplo já bastam para solicitar um recurso do servidor.</p>
                 <p class="Texto">Além dos campos no cabeçalho da solicitação, o cliente pode incluir outros dados complementares na solicitação HTTP que será enviada ao servidor. Se esses dados consistirem apenas em parâmetros de texto simples, no formato name=value, eles podem ser adicionados ao caminho do método GET. Os parâmetros são incorporados ao caminho após um ponto de interrogação e são separados por <span class="code-color"><em> “&”</em></span>:</p>
                 <div class="typewriter-small"  style="width: 60%; text-align: center; font-size:20px">
-
-                    GET /cgi-bin/receive.cgi?name=LPI&email=info@lpi.org HTTP/1.1
+                    <pre><code>
+GET /cgi-bin/receive.cgi?name=LPI&email=info@lpi.org HTTP/1.1
+                    </code></pre>
                 </div>
                 <br>
                 <p class="Texto">Neste exemplo, <span class="code-color"><em>/cgi-bin/receive.cgi</em></span> é o caminho até o script no servidor que vai processar e, possivelmente, usar os parâmetros <span class="code-color"><em>name</em></span> e <span class="code-color"><em>email</em></span> obtidos no caminho da solicitação. A string que corresponde aos campos, no formato <span class="code-color"><em>name=LPI&email=info@lpi.org</em></span>, é chamada <em>string de solicitação e é fornecida ao script <span class="code-color"><em>receive.cgi</em></span> pelo servidor HTTP que recebe a solicitação.</em></p>

@@ -58,13 +58,13 @@
                 <br>
                 <p class="Texto">Um componente definido como <span class="code-color"><em>0</em></span> indica que a cor básica correspondente não é usada na mistura de cores. Também é possível usar porcentagens em vez de números:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <div class="typewriter-small" style="width: 60%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
-    <span class="blue-code">color:</span><span class="dark_blue_code"> rgb</span>(<span class="code-color"><strong>100%,0%,0%</strong></span>);
+<span class="blue-code">color:</span><span class="dark_blue_code"> rgb</span>(<span class="code-color"><strong>100%,0%,0%</strong></span>);
 }
                     </code></pre>
                 </div>
@@ -228,6 +228,7 @@
                 As bordas podem ser traçadas em um estilo diferente de uma linha sólida. A propriedade <span class="code-color"><em>borderstyle: dashed</em></span>, por exemplo, criaria uma borda tracejada. Os outros valores de estilo possíveis são:
                 </p>
                 <br>
+                
                 <div class="typewriter-small" style="width: 50%;">
                 <strong>dotted</strong><p>Uma sequência de pontos redondos.</p>
                 </div>

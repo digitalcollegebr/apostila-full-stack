@@ -280,15 +280,15 @@
             <p class="Texto">
             O fluxo normal é simples e sequencial. O CSS também permite interromper o fluxo normal e posicionar elementos de maneiras bastante específicas, até mesmo neutralizando a rolagem da página, se desejado. Veremos várias maneiras de controlar o posicionamento dos elementos nesta seção.
             </p>
-            <div class="typewriter-small" style="width: 50%;" id="copycode">
+            <div class="typewriter-small" style="width: 60%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#first</strong></span> {
   <span class="blue-code">background-color:</span> <span class="dark_blue_code"> <strong>#c4a000ff</strong></span>;
-  <span class="blue code">width: </span> <span class="dark_blue_code"><strong>6em</strong></span>;
-  <span class="blue-code">float: </span><span class="blue-code">right</span>
+  <span class="blue-code">width: </span> <span class="dark_blue_code"><strong>6em</strong></span>;
+  <span class="blue-code">float: </span><span class="dark_blue_code">right</span>
 }
 </pre></code>
             </div>

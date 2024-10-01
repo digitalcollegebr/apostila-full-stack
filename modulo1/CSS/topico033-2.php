@@ -357,12 +357,12 @@
                 menu superior e o inferior adicionando uma classe extra a cada um deles:
                 </p>
                 <br>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small" id="copycode" >
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;ul id</strong></span>= <span class="orange-code">"topmenu"</span> <span class="code-color"><strong>class</strong></span>= <span class="orange-code">"menu top"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;ul id</strong></span>= <span class="orange-code">"topmenu"</span> <span class="code-color"><strong>class</strong></span>= <span class="orange-code">"menu top"</span><span class="code-color"><strong>&gt;</strong></span>
             </code></pre>
                 </div>
                 <br>
@@ -370,12 +370,12 @@
                 E no menu do rodapé:
                 </p>
                 <br>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small" id="copycode" style="text-align: center;">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
-                    <span class="code-color"><strong>&lt;ul</strong></span><span class="code-color"><strong> class</strong></span>= <span class="orange-code">"menu footer"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;ul</strong></span><span class="code-color"><strong> class</strong></span>= <span class="orange-code">"menu footer"</span><span class="code-color"><strong>&gt;</strong></span>
             </code></pre>
                 </div>
                 <br>
