@@ -66,7 +66,7 @@
                             Copiar
                 </button>
             <pre><code class="Texto">
-<span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"</span><span class="code-color"><strong>&gt;</strong></span> Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
+            <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"</span><span class="code-color"><strong>&gt;</strong></span> Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
                     </div>
                 </pre></code>
                     <br>
@@ -274,8 +274,8 @@
                 <p class="Subtopico"><strong>CSS em arquivos externos</strong></p>
                 <p class="Texto">O método mais usado para associar definições CSS a um documento HTML é armazenar o CSS em um arquivo separado. Este método oferece duas vantagens principais sobre os anteriores:</p>
                 <ul>
-                    <li>As mesmas regras de estilo podem ser compartilhadas entre documentos distintos.</li>
-                    <li>O arquivo CSS geralmente é armazenado em cache pelo navegador, acelerando os tempos de carregamento futuros. Os arquivos CSS têm a extensão <span class="code-color"><em>.css</em></span> e, como os arquivos HTML, podem ser editados em qualquer editor de texto simples. Ao contrário dos arquivos HTML, os arquivos CSS não têm uma estrutura em níveis construída com tags hierárquicas, como <span class="code-color"><strong>&lt;head&gt;</strong></span> ou <span class="code-color"><strong>&lt;body&gt;</strong></span>. Em vez disso, o arquivo CSS é apenas uma lista de regras processadas em ordem sequencial pelo navegador. As mesmas regras escritas dentro de uma tag <span class="code-color"><strong>&lt;style&gt;</strong></span> poderiam constar em um arquivo CSS</li>
+                    <li class="Texto">As mesmas regras de estilo podem ser compartilhadas entre documentos distintos.</li>
+                    <li class="Texto">O arquivo CSS geralmente é armazenado em cache pelo navegador, acelerando os tempos de carregamento futuros. Os arquivos CSS têm a extensão <span class="code-color"><em>.css</em></span> e, como os arquivos HTML, podem ser editados em qualquer editor de texto simples. Ao contrário dos arquivos HTML, os arquivos CSS não têm uma estrutura em níveis construída com tags hierárquicas, como <span class="code-color"><strong>&lt;head&gt;</strong></span> ou <span class="code-color"><strong>&lt;body&gt;</strong></span>. Em vez disso, o arquivo CSS é apenas uma lista de regras processadas em ordem sequencial pelo navegador. As mesmas regras escritas dentro de uma tag <span class="code-color"><strong>&lt;style&gt;</strong></span> poderiam constar em um arquivo CSS</li>
                 </ul>
                 <p class="Texto">
                 A associação entre o documento HTML e as regras de CSS armazenadas em um arquivo é definida apenas no documento HTML. Para o arquivo CSS, não importa se existem elementos que correspondem às suas regras e, portanto, não há necessidade de enumerar no arquivo CSS os documentos HTML aos quais ele está vinculado. No lado do HTML, todas as folhas de estilo vinculadas serão aplicadas ao documento, como se as regras estivessem escritas em uma tag <span class="code-color"><strong>&lt;style&gt;</strong></span>.
