@@ -31,8 +31,8 @@
                 são salvas separadamente e referenciadas dentro do arquivo HTML com a tag <span class="code-color"><strong>&lt;img&gt;</strong></span>:</p>
                 <div class="typewriter-small" style="width: 50%; text-align: center;" id="codecopy">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
     <span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src=</span><span class="orange-code">"logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -42,8 +42,8 @@
                 <p class="Texto">A tag <span class="code-color"><strong>&lt;img&gt;</strong></span> não requer uma tag de fechamento. A propriedade src indica o local de origem do arquivo de imagem. Neste exemplo, o arquivo de imagem logo.png deve estar localizado no mesmo diretório do arquivo HTML, caso contrário o navegador não poderá exibi-lo. A propriedade de localização de origem aceita caminhos relativos, de forma que a notação de ponto pode ser usada para indicar o caminho até a imagem:</p>
                 <div class="typewriter-small" style="width: 50%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                     <i class="fas fa-copy"></i>
+                    Copiar
                 </button>
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"../logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -67,7 +67,6 @@
                 <p class="Texto">Se a imagem não puder ser carregada, o navegador HTML mostrará o texto fornecido no atributo alt em vez da imagem. Por exemplo:</p>
                 <div class="typewriter-small" id="copycode" style="width: 50%">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                      <i class="fas fa-copy"></i>
                 </button>
                 <pre><code class="Texto">
@@ -81,7 +80,6 @@
                 <p class="Texto">Os navegadores podem exibir todos os tipos mais populares de imagem, como <span class="code-color"><em>JPEG</em></span>, <span class="code-color"><em>PNG</em></span>, <span class="code-color"><em>GIF</em></span> e <span class="code-color"><em>SVG</em></span>. As dimensões das imagens são detectadas no momento em que elas são carregadas, mas também podem ser predefinidas com os atributos <span class="code-color"><strong>width</strong></span> e <span class="code-color"><strong>height</strong></span> <em>(largura e altura)</em>:</p>
                 <div class="typewriter-small"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
             </button>
             <pre><code class="Texto">
@@ -107,7 +105,6 @@
                 <p class="Texto">Podemos adicionar conteúdos de áudio e vídeo a um documento HTML mais ou menos da mesma maneira que as imagens. Sem surpresa, a tag para adicionar áudio é <span class="code-color"><strong>&lt;audio&gt;</strong></span> e a tag para adicionar vídeo é <span class="code-color"><strong>&lt;video&gt;</strong></span>. Obviamente, os navegadores em modo texto não são capazes de reproduzir conteúdo multimídia, de forma que as tags <span class="code-color"><strong>&lt;audio&gt;</strong></span> e <span class="code-color"><strong>&lt;video&gt;</strong></span> empregam uma tag de fechamento para conter o texto usado como explicação para o elemento que não pôde ser mostrado. Por exemplo:</p>
                 <div class="typewriter-small" style="width: 90%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
             </button>
                     <pre>
@@ -126,7 +123,6 @@
                 <p class="Texto">Um documento HTML pode ser aninhado em outro documento HTML, de forma semelhante à inserção de uma imagem em um documento HTML, mas usando a tag <span class="code-color"><strong>&lt;iframe&gt;</strong></span>:</p>
                 <div class="typewriter-small" style="width: 80%; text-align: left;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                     <i class="fas fa-copy"></i>
                 </button>
                     <pre><code class="Texto">
@@ -143,8 +139,8 @@
                 <p class="Texto">O elemento de página comumente chamado de <em>link</em> da web também é conhecido pelo termo técnico <em>âncora</em> (anchor), o que explica o uso da tag <span class="code-color"><strong>a</strong></span>. A âncora leva a outro local, que pode ser qualquer endereço compatível com o navegador. A localização é indicada pelo atributo <span class="code-color"><em>href</em></span> <em>(hyperlink reference)</em>:</p>
                 <div class="typewriter-small" style="width: 100%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&lt;</strong></span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -153,8 +149,8 @@
                 <p class="Texto">A localização pode ser informada como um caminho relativo ou absoluto, como acontece com o conteúdo incorporado de que falamos anteriormente. Somente o conteúdo de texto entre as tags (por exemplo, <span class="blue-code"><em><u>Contact Information</u></em></span>)e fica visível para o visitante, geralmente na forma de um texto em azul sublinhado e clicável, mas o item que contém o link também pode ser qualquer outro conteúdo visível, como imagens:</p>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src</span><span class="orange-code">"contact.png"</span><span class="blue-code"> alt=</span><span class="orange-code">"contact.png"</span><span class="code-color"><strong>&gt; </strong></span>"Informações de contato"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -163,8 +159,8 @@
                 <p class="Texto">Prefixos especiais podem ser adicionados ao caminho para informar ao navegador como abri-lo. Se a âncora apontar para um endereço de email, por exemplo, seu atributo href deve incluir o prefixo <span class="code-color"><em>mailto:</em></span>:</p>
                 <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span><span class="code-color"><strong>&gt;</strong></span>Contato via Email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -173,8 +169,8 @@
                 <p class="Texto">O prefixo tel: indica um número de telefone. Essa indicação é particularmente útil para visitantes que visualizam a página em dispositivos móveis:</p>
                 <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"<span class="code-color"><strong>&gt;</strong></span></span>Contato via telefone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -184,8 +180,8 @@
                 <p class="Texto">O uso mais comum das âncoras é carregar outros documentos da web. Por padrão, o navegador substitui o documento HTML atual pelo conteúdo do novo local. Esse comportamento pode ser modificado usando o atributo target. O destino _blank, por exemplo, diz ao navegador para abrir o local fornecido em uma nova janela ou nova guia do navegador, dependendo das preferências do visitante:</p>
                 <div class="typewriter-small" style="width: 70%; text-align: center;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code"> target=</span><span class="orange-code">"_blank"</span> <span class="code-color"><strong>&gt; </strong></span>Contate para mais informaçãoes<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -195,8 +191,8 @@
                 <p class="Texto">Outros tipos de destinos estão relacionados ao elemento <span class="code-color"><strong>&lt;iframe&gt;</strong></span>. Para carregar um documento referenciado dentro de um elemento <span class="code-color"><strong>&lt;iframe&gt;</strong></span>, o atributo <span class="code-color"><em>target</em></span> deve apontar para o nome do elemento iframe:</p>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
 
                     <pre>
@@ -212,8 +208,8 @@
                 <p class="Texto">O elemento iframe funciona como uma janela distinta do navegador e, portanto, quaisquer links carregados a partir do documento dentro do iframe substituirão apenas o conteúdo do quadro. Para mudar esse comportamento, os elementos âncora dentro do documento aninhado também podem usar o atributo <span class="code-color"><em>target</em></span>. O destino <span class="code-color"><em>_parent</em></span>, quando usado dentro de um documento aninhado, fará com que o local referenciado substitua o documento pai que contém a tag <span class="code-color"><strong>&lt;iframe&gt;</strong></span>. Por exemplo, o documento <em>gallery.html</em> incorporado pode conter uma âncora que carrega a si mesma e substitui o documento pai:</p>
                 <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre>
                         <code class="Texto">
@@ -230,8 +226,8 @@
                 <p class="Texto">Quando a URL tem uma âncora, o navegador rola a página até o elemento correspondente no documento: ou seja, o elemento cujo atributo id é idêntico à âncora da URL. No caso da URL de nosso exemplo, <span class="code-color"><em>https://en.wikipedia.org/wiki/Internet#History</em></span>, o navegador irá diretamente para a seção “History”. Examinando o código HTML da página, descobrimos que o título da seção possui o atributo id correspondente:</p>
                 <div class="typewriter-small" style="width: 70%; text-align: center;"   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;span</strong></span><span class="blue-code"> class=</span><span class="orange-code">"my-headline"</span><span class="blue-code">id=</span><span class="orange-code">"history"</span><span class="code-color"> <strong>&gt;</strong></span>History<span class="code-color"><strong>&lt;/span&gt;</strong></span><span class="code-color"></span>

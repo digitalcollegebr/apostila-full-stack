@@ -47,8 +47,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
@@ -61,8 +61,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
@@ -168,8 +168,8 @@
               <br>
               <div class="typewriter-small" style="width: 70%;" id="copycode">
               <button class="copy-btn" onclick="copyCode()">
-              Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span> {
@@ -184,8 +184,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span> {
@@ -327,8 +327,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
@@ -343,8 +343,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
@@ -377,8 +377,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p&gt;</strong></span>CSS é o <span class="code-color"><strong>&lt;span</strong></span> <span class="blue-code">class=</span><span class="orange-code">"under"</span><span class="code-color"><strong>&gt;</strong></span>mecanismo dedicado <span class="code-color"><strong>&lt;/span&gt;</strong></span> para estilizar documentos HTML. <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -391,8 +391,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.under</strong></span> {
@@ -419,8 +419,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.disregard</strong></span> {
@@ -435,8 +435,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p&gt;</strong></span>Netscape Navigator <span class="code-color"><strong>&lt;span</strong></span> <span class="blue-code">class=</span><span class="orange-code">"disregard"</span><span class="code-color"><strong>&gt;</strong></span>é<span class="code-color"><strong>&lt;/span&gt;</strong></span> era o mais popular dos web browsers. <span class="code-color"><strong>&lt;/p&gt;</strong></span>

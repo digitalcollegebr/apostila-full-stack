@@ -36,8 +36,8 @@
                 <br>
                 <div  class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
 <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -88,8 +88,8 @@
             <br>
             <div class="typewriter-small" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="code-color"><strong>* </strong></span> {
@@ -166,9 +166,8 @@
                 </p>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="code-color"><strong>h2 </strong></span>{
@@ -202,9 +201,8 @@
             </p>
             <div class="typewriter-small" style="width: 70%;"  id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#second</strong></span> {
@@ -238,9 +236,8 @@
             <br>
             <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#first</strong></span> {
@@ -265,8 +262,8 @@
             </p>
             <div class="typewriter-small" style="width: 70%;"  id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#first</strong></span> {
@@ -291,9 +288,8 @@
             </p>
             <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar 
-
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#first</strong></span> {
@@ -320,8 +316,8 @@
             <br>
             <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#third</strong></span> {
@@ -400,8 +396,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
 <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -452,8 +448,8 @@
             <br>
             <div class="typewriter-small" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
                 <span class="code-color"><strong>&lt;div&gt;</strong></span> <span class="blue-code">id=</span><span class="orange-code">"container"</span>
@@ -498,8 +494,8 @@
             <br>
             <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                     <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="blue-code"><strong>#container</strong></span> {
@@ -532,8 +528,8 @@
             </p>
             <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
               <pre><code class="Texto">
 <span class="green-code"><strong>@media</strong></span> (min-width: <span class="dark_blue_code"><strong>600px</strong></span>) {

@@ -41,9 +41,8 @@
                 <p class="Texto">Em HTML, nenhum bloco de texto deve estar nu, fora de um elemento. Até mesmo um parágrafo curto deve ser rodeado pelas tags HTML <span class="code-color"><strong>&lt;p&gt;</strong></span>, que representam um <span class="code-color"><em>parágrafo</em></span>.</p>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p&gt;</strong></span>Elemento de texto curto que ocupa apenas uma linha.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -66,9 +65,8 @@
                 <p class="Subtopico"><strong>Títulos</strong></p>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;h1&gt;</strong></span>Nível de cabeçalho 1 para identificar de forma única a 
@@ -104,9 +102,8 @@
                 <p class="Texto">Vamos começar a criação de nossa lista de compras em HTML definindo sua estrutura. Criamos primeiro um elemento <span class="code-color"><strong>&lt;h1&gt;</strong></span> para conter o título da página, neste caso Festa no jardim, seguido por um pequeno texto inserido em um elemento <span class="code-color"><strong>&lt;p&gt;</strong></span>. Em seguida, usamos dois elementos <span class="code-color"><strong>&lt;h2&gt;</strong></span> para introduzir as duas seções do conteúdo: <em>Agenda e Por favor traga</em>.</p>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardim<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
@@ -129,9 +126,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;p&gt;</strong></span> Convite para Festa no jardim do João <span class="span code-color"><strong>&lt;br&gt;</strong></span>Sábado, próxima    semana.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -150,9 +146,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardim<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
@@ -200,8 +195,8 @@
                         <p class="Texto">Em nosso exemplo, podemos preencher a programação da festa ao ar livre usando um elemento <span class="code-color"><strong>&lt;ol&gt;</strong></span> com o seguinte código:</p>
                     <div class="typewriter-small" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
-                    Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
@@ -226,8 +221,8 @@
                         <p class="Texto">Por exemplo, poderíamos ajustar a lista ordenada do exemplo anterior para que os itens da lista sejam prefixados com letras maiúsculas, começando com a letra C, como mostrado no exemplo a seguir:</p>
         <div class="typewriter-small" style="width: 60%;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
         <pre><code class="Texto">
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
@@ -274,8 +269,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;h2&gt;</strong></span>Por favor traga:<span class="code-color"><strong>&gt;/h2&gt;</strong></span>
@@ -309,8 +304,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
     <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
@@ -346,9 +341,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;h3&gt;</strong></span>Frutas Exóticas<span class="code-color"><strong>&lt;/h3&gt;</strong></span>
@@ -402,9 +396,8 @@
                 <p class="Texto">Para deixar o texto em negrito, usamos o elemento <span class="code-color"><strong>&lt;b&gt;</strong></span> como ilustrado no exemplo a seguir. O resultado aparece na Figure 11.</p>
                 <div class="typewriter-small" style= "text-align: center; width: 60%" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
             <pre><code class="Texto">
 Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
@@ -422,9 +415,8 @@ Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span clas
                 <br>
                 <div class="typewriter-small" style=" width: 50%" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                    Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
             <pre><code class="Texto">
 Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
@@ -442,9 +434,8 @@ Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span clas
                 <p class="Texto">Para sublinhar o texto, usamos o elemento <span class="code-color"><strong>&lt;u&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na <em>Figure 13</em>.</p>
                 <div class="typewriter-small" style=" width: 50%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
             <pre><code class="Texto">
 Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
@@ -462,8 +453,8 @@ Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span clas
                 <p class="Texto">Para exibir texto em fonte monoespaçada (largura fixa), freqüentemente usada para exibir código de computador, usamos o elemento <span class="code-color"><strong>&lt;tt&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na  <em>Figure 14</em>.</p>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
@@ -484,8 +475,8 @@ Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span clas
                 <br>
                 <div class="typewriter-small" style="text-align: center; width: 60%"   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
@@ -503,8 +494,8 @@ Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span cla
                 <p class="Texto">Para demonstrar que um texto é importante, usamos o elemento <span class="code-color"><strong>&lt;strong&gt;</strong></span> como no exemplo a seguir. O resultado aparece na <em>Figure 16</em>.</p>
                 <div class="typewriter-small" style="text-align: center; width: 60%" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 Esta <span class="code-color"><strong>palavra</strong></span> é importante.
@@ -524,9 +515,7 @@ Esta <span class="code-color"><strong>palavra</strong></span> é importante.
                 exemplo a seguir. O resultado aparece na <em>Figure 17</em>.</p>
                 <div class="typewriter-small" style=" width: 60%" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
-                    Copiar
                         <i class="fas fa-copy"></i>
-                        
                     </button>
                     <pre><code class="Texto">
     O código Markdown<span class="code-color"><strong>&lt;code&gt;</strong></span># Heading<span class="code-color"><strong>&lt;/code&gt;</strong></span> cria um título no nível mais alto da hierarquia.
@@ -540,11 +529,10 @@ Esta <span class="code-color"><strong>palavra</strong></span> é importante.
                 <br>
                 <p class="Subtopico"><strong>Texto destacado</strong></p>
                 <p class="Texto">Para destacar o texto com um fundo amarelo, semelhante ao estilo de um marca-texto, usamos o elemento <span class="code-color"><strong>&lt;mark&gt;</strong></span> como no exemplo a seguir. O resultado aparece na <em>Figure 18</em>.</p>
-                <div class="typewriter-small" id="copycode" style="text-align: center;">
+                <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
-                        
+                        Copiar
             </button>
             <pre><code class="Texto">
     Esta <span class="code-color"><strong>&lt;mark&gt;</strong></span>palavra <span class="code-color"><strong>&lt;/mark&gt;</strong></span> está destacada.
@@ -562,8 +550,8 @@ Esta <span class="code-color"><strong>palavra</strong></span> é importante.
                 <br>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar <i class="fas fa-copy"></i>
-                        
+                        <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
  <span class="code-color"><strong>&lt;h1&gt;</strong></span>Festa no jardim<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
@@ -610,8 +598,8 @@ Esta <span class="code-color"><strong>palavra</strong></span> é importante.
             <p class="Texto">Na maioria dos elementos HTML, o espaço em branco geralmente é reduzido a um espaçamento simples ou mesmo totalmente ignorado. No entanto, existe um elemento HTML chamado <span class="code-color"><strong>&lt;pre&gt;</strong></span> que permite definir o chamado texto pré-formatado. Qualquer espaço em branco incluído no conteúdo deste elemento, incluindo espaços e quebras de linha, é preservado e exibido no navegador web. Além disso, o texto é exibido em uma fonte de largura fixa, semelhante ao elemento &lt;code&gt;.</p>
     <div class="typewriter-small" style=" width: 60%" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
             <i class="fas fa-copy"></i>
+            Copiar
         </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;pre&gt;</strong></span>
@@ -650,8 +638,8 @@ field() {
                 <p class="Texto">O exemplo a seguir compara a representação visual do elemento semântico <span class="code-color"><strong>&lt;p&gt;</strong></span> e os elementos de agrupamento <span class="code-color"><strong>&lt;div&gt;</strong></span> e <span class="code-color"><strong>&lt;span&gt;</strong></span>:</p>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
         <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p&gt;</strong></span>Texto dentro de um parágrafo<span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -694,8 +682,8 @@ field() {
                 seguinte:</p>
     <div class="typewriter-small" style="width: 40%;" id="copycode">
     <button class="copy-btn" onclick="copyCode()">
-    Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
     <span class="code-color"><strong>&lt;header&gt;</strong></span>
@@ -712,8 +700,8 @@ field() {
                 <p class="Texto">Em nosso documento de exemplo, todo o código HTML que escrevemos até agora teria sido posto dentro do elemento &lt;main&gt;.</p>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
 <span class="code-color"><strong>&lt;main&gt;</strong></span>
@@ -756,8 +744,8 @@ field() {
                 <br>
                 <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code  class="Texto">
 <span class="code-color"><strong>&lt;footer&gt;</strong></span>
@@ -788,8 +776,8 @@ field() {
                 <p class="Texto">Em nosso exemplo, podemos adicionar informações de endereço e rota, que são apenas indiretamente relacionados ao resto do conteúdo, usando o elemento <span class="code-color"><strong>&lt;aside&gt;</strong></span>.</p>
                 <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
     <span class="code-color"><strong>&lt;aside&gt;</strong></span>
@@ -805,8 +793,8 @@ field() {
                 <p class="Texto">Em nosso documento de exemplo, podemos agrupar as seções de conteúdo da programação e incluir seções de listagem, como mostrado no exemplo a seguir:</p>
                 <div class="typewriter-small"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
 <span class="code-color"><strong>&lt;section&gt;</strong></span>
@@ -856,8 +844,8 @@ field() {
                 <p class="Texto">Em nosso exemplo, podemos substituir a primeira <strong>&lt;section&gt;</strong> que envolve a programação por um elemento <strong>&lt;article&gt;</strong>.</p>
             <div class="typewriter-small"  style="width: 50%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
     <span class="code-color"><strong>&lt;aside&gt;</strong></span>
@@ -873,8 +861,8 @@ field() {
                 <p class="Texto">Em nosso documento de exemplo, podemos agrupar as seções de conteúdo da programação e incluir seções de listagem, como mostrado no exemplo a seguir:</p>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
 <span class="code-color"><strong>&lt;article&gt;</strong></span>
@@ -921,8 +909,8 @@ field() {
                 <p class="Texto">Se combinarmos todos os exemplos anteriores, o documento HTML final de nosso convite fica assim:</p>
                 <div class="typewriter-small" style="width: 60%;"   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;aside&gt;</strong></span>
@@ -938,8 +926,8 @@ field() {
                 <p class="Texto">Em nosso documento de exemplo, podemos agrupar as seções de conteúdo da programação e incluir seções de listagem, como mostrado no exemplo a seguir:</p>
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>

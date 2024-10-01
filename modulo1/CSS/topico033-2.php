@@ -34,8 +34,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 *{
@@ -49,8 +49,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span>{
@@ -90,8 +90,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>li</strong></span>{
@@ -113,8 +113,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>li</strong></span>{
@@ -141,8 +141,8 @@
                 <br>
                 <div style class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -204,8 +204,8 @@
             <br>
             <div class="typewriter-small" style="width: 70%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
-            Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;ul&gt;</strong></span>
@@ -223,8 +223,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>ul</strong></span><span class="dark_blue_code"><strong>#topmenu</strong></span>{
@@ -248,8 +248,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="dark_blue_code"><strong>#topmenu</strong></span>{
@@ -271,8 +271,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="dark_blue_code"><strong>#topmenu</strong></span>{
@@ -292,8 +292,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="dark_blue_code"><strong>#topmenu</strong></span>, <span class="dark_blue_code"><strong>footer</strong></span> <span class="code-color"><strong>ul</strong></span> {
@@ -316,8 +316,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;ul</strong></span> <span class="blue-code">id=</span><span class="orange-code">"topmenu"</span> <span class="blue-code">class=</span><span class="orange-code">"menu"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -332,8 +332,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;div</strong></span> <span class="blue-code"> id=</span><span class="orange-code">"footer"</span>
@@ -352,8 +352,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
-                        <i class="fas fa-copy"></i> 
+                        <i class="fas fa-copy"></i>
+                        Copiar
             </button>
 
                     <pre><code class="Texto">
@@ -373,8 +373,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode" style="text-align: center;">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
  <span class="code-color"><strong>&lt;ul id</strong></span>= <span class="orange-code">"topmenu"</span> <span class="code-color"><strong>class</strong></span>= <span class="orange-code">"menu top"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -387,8 +387,8 @@
                 <br>
                 <div class="typewriter-small" id="copycode" style="text-align: center;">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;ul</strong></span><span class="code-color"><strong> class</strong></span>= <span class="orange-code">"menu footer"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -401,8 +401,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.menu</strong></span>{
@@ -433,8 +433,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.menu.top a</strong></span>{
@@ -450,8 +450,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
-                Copiar
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.menu.top a</strong></span><span style="color: #797979;">:hover</span>{

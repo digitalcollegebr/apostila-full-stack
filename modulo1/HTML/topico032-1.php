@@ -156,8 +156,8 @@ comentários--&gt;
         <br>
         <div class="typewriter-small" style="width: 50%; text-align: center;"  id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
             <pre><code class="Texto">
 <span class="code-color">&lt;tag</span> <span class="blue-code">attribute-a=</span> <span class="orange-code">"value-a"</span> <span class="blue-code">attribute-b=</span><span class="orange-code">"value-b"</span><span class="code-color">&gt;</span>
@@ -247,9 +247,8 @@ comentários--&gt;
         <br>
         <div class="typewriter-small" style="width: 60%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
         <i class="fas fa-copy"></i>
-        
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página teste<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
@@ -310,8 +309,8 @@ comentários--&gt;
         <br>
         <div class="typewriter-small"  id="copycode" >
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"author"</span> <span class="blue-code">content=</span><span class="orange-code">"Name Surname"</span><span class="code-color">&gt;</span>
@@ -324,8 +323,8 @@ comentários--&gt;
         <br>
     <div class="typewriter-small" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"keywords"</span> <span class="blue-code">content=</span><span class="orange-code">"keyword1, keyword2, keyword3, keyword4, keyword5"</span><span class="code-color">&gt;</span>
@@ -348,8 +347,8 @@ comentários--&gt;
         <p class="Texto">Usando a tag <span class="code-color"><strong>&lt;meta&gt;</strong></span>, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
         <div class="typewriter-small" style="width: 50%;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
     <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30"</span><span class="code-color">&gt;</span>
@@ -360,8 +359,8 @@ comentários--&gt;
         <br>
         <div class="typewriter-small" style="width: 50%;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30;url=http://www.lpi.org"</span><span class="code-color">&gt;</span>
@@ -375,8 +374,8 @@ comentários--&gt;
         <br>
         <div class="typewriter-small" style="width: 50%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        Copiar
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color">&lt;meta</span> <span class="blue-code">charset=</span> <span class="orange-code">"utf-8"<span class="code-color">&gt;</span>
