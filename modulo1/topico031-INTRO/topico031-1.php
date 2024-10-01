@@ -95,8 +95,8 @@
                 <br>
             <div class="typewriter-small" id="copycode"  style="width: 70%;">
             <button class="copy-btn" onclick="copyCode()">
-        <i class="fas fa-copy"></i>
-        Copiar
+            Copiar
+            <i class="fas fa-copy"></i>
     </button>
                   <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;stdio.h&gt;</span>
         <span class="C_inicializeted"><strong>float</strong></span> side;
@@ -127,8 +127,8 @@
         <br>
         <div class="typewriter-small" style=" margin: 0 auto;">
         <button class="copy-btn" onclick="copyCode()">
-        <i class="fas fa-copy"></i>
         Copiar
+        <i class="fas fa-copy"></i>
     </button>
                   <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;iostream&gt;</span>
         <span class="green-code"><strong>class</strong></span><span class="code-color"><strong> Cube</strong></span>&lbrace;
@@ -152,8 +152,9 @@
         <p class="Texto">A maioria das linguagens de programação não impõe rigorosamente um paradigma, mas permite que os programadores escolham diversos aspectos de um paradigma ou de outro. O JavaScript, por exemplo, incorpora aspectos de diferentes paradigmas. O programador pode decompor o programa inteiro em funções que não compartilham um estado comum entre si:</p>
         <div class="typewriter-small" style="" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
-        <i class="fas fa-copy"></i>
         Copiar
+        <i class="fas fa-copy"></i>
+        
     </button>
                 <p><pre><code><span class="green-code"><strong>function</strong></span> cube(side) &lbrace;
                 <span class="green-code"><strong>return</strong></span> side*side*side;
@@ -171,8 +172,8 @@
         <p class="Texto">Geralmente há funções ainda mais especializadas disponibilizadas pelo fornecedor da linguagem ou por outros desenvolvedores. Essas bibliotecas de recursos extras podem estar na forma de códigofonte, ou seja, em arquivos extras que são incorporados ao arquivo em que serão usados. Em JavaScript, a incorporação é feita com <span class="code-color"><em>import from</em></span>:</p>
         <div class="typewriter-small" id="copycode"  style=" width: 45%; font-size: 12px;">
         <button class="copy-btn" onclick="copyCode()">
-            <i class="fas fa-copy"></i>
-            Copiar
+        Copiar
+            <i class="fas fa-copy"></i> 
          </button>
          <pre><code class="Texto">
 <span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;

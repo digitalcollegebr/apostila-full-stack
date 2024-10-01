@@ -47,8 +47,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%; text-align:center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
+                Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p&gt;</strong></span>Meu parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -62,8 +62,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
+                    Copiar
                             <i class="fas fa-copy"></i>
-                            Copiar
                 </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"</span><span class="code-color"><strong>&gt;</strong></span> Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -73,7 +73,10 @@
                     <p class="Texto">Outras propriedades personalizadas podem entrar na mesma propriedade style, mas devem ser separadas por ponto e vírgula. Se você quiser aumentar o tamanho da fonte, por exemplo, adicione <span class="code-color"><em>font-size: larger</em></span> à propriedade style:</p>
                     <br>
                     <div class="typewriter-small" style="width: 70%;">
-                        <button class="copy-btn" onclick="copyCode()">  <i class="fas fa-copy"></i> Copiar</button>
+                        <button class="copy-btn" onclick="copyCode()">
+                        Copiar
+                        <i class="fas fa-copy"></i>
+                    </button>
 
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple"; font-size: larger</span><span class="code-color"><strong>&gt;</strong></span>Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -99,8 +102,8 @@
                     <br>
                     <div class="typewriter-small" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
+                    Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -131,8 +134,8 @@
             <br>
             <div style class="typewriter-small" style="width: 70%;"  id="copycode">
             <button class="copy-btn" onclick="copyCode()">
+            Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
                 <pre><code class="Texto">
     <span class="code-color"><strong>&lt;p</strong></span> <span class="blue-code">style=</span><span class="orange-code">"color: purple; font-size: larger; background-color: silver"<span class="code-color"><strong>&gt;</strong></span></span>Meu primeiro parágrafo estilizado <span class="code-color"><strong>&lt;/p&gt;</strong></span><br>
@@ -163,8 +166,8 @@
                   <br>
                   <div style class="typewriter-small" style="width: 70%; text-align: left;" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
+                  Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
@@ -191,8 +194,8 @@
                    <br>
                    <div  class="typewriter-small" id="copycode">
                    <button class="copy-btn" onclick="copyCode()">
+                   Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
                     <pre>
                     <code class="Texto">
@@ -206,8 +209,8 @@
                   <br>
     <div class="typewriter-small" style="width: 70%;"  id="copycode">
     <button class="copy-btn" onclick="copyCode()">
+    Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;style type=</strong></span><span class="orange-code">"text/css"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -223,8 +226,8 @@
                   <br>
                   <div class="typewriter-small" style="width: 70%" id="copycode">
                   <button class="copy-btn" onclick="copyCode()">
+                  Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>p;{</strong></span>
@@ -240,8 +243,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
+                Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>p;{</strong></span>
@@ -256,8 +259,8 @@
                 <br>
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
+                Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
     <pre><code class="Texto">
     <span style="color: #797979;">/* O texto dentro de &lt;p&gt; é roxo e largo */</span>
@@ -287,8 +290,8 @@
                 <div class="typewriter-small" id="copycode">
 
                 <button class="copy-btn" onclick="copyCode()">
+                Copiar
                         <i class="fas fa-copy"></i>
-                        Copiar
             </button>
   <pre><code class="Texto">
   <span class="code-color"><strong>&lt;head&gt;</strong></span>
