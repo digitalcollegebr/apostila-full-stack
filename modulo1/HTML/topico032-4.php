@@ -100,7 +100,7 @@
                         <div class="CaixaConteudo ConteudoExemplo">
                             <p class="Texto">O HTML inclui apenas as tags e propriedades básicas para modificar a aparência padrão dos formulários. O CSS fornece mecanismos elaborados para modificar a aparência do formulário e, portanto, a recomendação é escrever um código HTML incluindo apenas os aspectos funcionais do formulário, modificando sua aparência com o CSS.</p>
                         </div>
-                    </div>
+              </div>
                 <br>
                 <p class="Texto">Como mostrado no exemplo, a tag de parágrafo <span class="code-color"><strong>&lt;p&gt;</strong></span> pode ser usada para descrever o campo para o visitante. No entanto, não há uma maneira óbvia de o navegador relacionar a descrição na tag <p> com o elemento correspondente de inserção de dados. A tag <span class="code-color"><strong>&lt;label&gt;</strong></span> é mais apropriada nesses casos (a partir de agora, considere todos os exemplos de código como estando dentro do corpo do documento HTML):</p>
                 <div class="typewriter-small" id="copycode">
@@ -150,7 +150,7 @@
             <p class="Texto">O atributo <span class="code-color"><em>id</em></span> nos elementos de formulário tem o mesmo papel que em qualquer outro elemento do documento. Ele fornece um identificador exclusivo para o elemento. O atributo name tem uma finalidade semelhante, mas é usado para identificar o elemento de inserção de dados no contexto do formulário. O navegador usa o atributo <span class="code-color"><em>name</em></span> para identificar o campo de inserção de dados ao enviar os dados do formulário para o servidor, por isso é importante usar atributos <span class="code-color"><em>name</em></span> significativos e exclusivos dentro do formulário.</p>
             <p class="Texto">O atributo <span class="code-color"><em>type</em></span> é o principal atributo do elemento de entrada de dados, <strong>pois controla o tipo de dados que o elemento aceita e sua apresentação visual ao visitante</strong>. Se o atributo type não for fornecido, por padrão é exibida uma caixa de texto. Os seguintes tipos de campos de entrada de dados são suportados pelos navegadores modernos:</p>
             <p><em>Table 1. Tipos de entrada em formulários</em></p>
-            <table border="1" cellpadding="10">
+            <table border="1" cellpadding="10" class="table">
                 <thead>
                   <tr>
                     <th>Atributo do tipo</th>
