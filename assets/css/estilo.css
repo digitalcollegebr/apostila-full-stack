@@ -6,7 +6,7 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
 
 /* A_S - Root - Begin */
@@ -59,9 +59,8 @@
     transition: .5s;
 }
 
-.container {
-    margin-bottom: 5rem; /* Adjust this value as needed */
-  }
+
+  
 /* Navbar preto */
 .navbarpreto {
     position: fixed;

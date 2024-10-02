@@ -1,8 +1,6 @@
 
 <?php include '../../layouts/header.php'; ?>
 
-
-
 <body>
     <!-- A_S - Habilita o VLibras -->
     <div vw class="enabled">
@@ -153,7 +151,7 @@ comentários--&gt;
         <p class="Texto">As tags HTML podem incluir um ou mais atributos para especificar detalhes do elemento HTML.
         Uma tag simples com dois atributos tem o seguinte formato:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%; text-align: center;"  id="copycode">
+        <div class="typewriter-small" style="width: 60%; text-align: center;"  id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
         Copiar
@@ -372,7 +370,7 @@ comentários--&gt;
         <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
         <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%; text-align: center;" id="copycode">
+        <div class="typewriter-small" style="width: 60%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
         Copiar
@@ -395,15 +393,12 @@ comentários--&gt;
         <br>
         <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
         curiosidade.</p>
-        <br>
         </div>
         </div>
     </div>
+    </body>
+
     <a href="../../questoesModulo01/unidade01.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
     
 
 <?php include('../../layouts/footer.php') ?>
-
-
-</body>
-</html>
