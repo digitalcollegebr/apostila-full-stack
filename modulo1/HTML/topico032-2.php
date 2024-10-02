@@ -17,10 +17,9 @@
     </script>    
 
 
-    <div class="container" style="margin-top: 100px">
+    <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-                <div class="container-main">
                 <p class="Titulo">032.2 - A semântica do HTML e a hierarquia de documentos</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <!-- Texto -->

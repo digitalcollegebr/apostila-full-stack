@@ -60,6 +60,7 @@
 }
 
 
+
   
 /* Navbar preto */
 .navbarpreto {
@@ -127,6 +128,8 @@
 .Texto {
     font-family: var(--FonteMontserrat);
     font-size: 1.3rem !important;
+    word-wrap: break-word; /* Quebra palavras longas para evitar overflow */
+    max-width: 100%; /* Garante que o parágrafo não exceda a largura do contêiner */
 }
 /* A_S - Textos - END */
 

@@ -1,4 +1,3 @@
-
 <?php
     // A_S - Header
     include('../../layouts/header.php');
@@ -18,7 +17,7 @@
     </script>    
 
 
-    <div class="container" style="margin-top: 100px">
+    <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
                 <p class="Titulo">Formulários  HTML</p>
@@ -558,7 +557,7 @@
                 <br>
                 <p class="Texto">Outro botão útil a se incluir em formulários complexos é o botão <span class="code-color"><em>reset</em></span>, que limpa o formulário e o devolve ao seu estado original:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: center" id="copycode">
+                <div class="typewriter-small" style="width: 60%; text-align: center" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -625,12 +624,9 @@
                 <p class="Texto">O método <span class="code-color"><em>post</em></span> faz com que o navegador envie os dados do formulário na seção do corpo da solicitação HTTP. Embora necessário para dados binários que excedem o limite de tamanho de uma URL, o método post adiciona uma sobrecarga desnecessária à conexão quando usado com formas textuais mais simples, por isso o método get é preferível nesses casos.</p>
                 <p class="Texto">O método escolhido não afeta a forma como o visitante interage com o formulário. Os métodos get e post são processados de forma diferente pelo script do lado do servidor que recebe o formulário.</p>
                 <p class="Texto">Ao usar o método post, também é possível alterar o tipo MIME do conteúdo do formulário com o atributo de formulário enctype. Ele afeta a maneira como os campos e valores do formulário serão empilhados na comunicação HTTP com o servidor. O valor padrão para enctype é <em>application/xwww-form-urlencoded</em>, semelhante ao formato usado no método get. Se o formulário contiver campos de entrada do tipo file, é necessário usar o enctype <em>multipart/form-data</em>.</p>
-                
+                <a href="../../questoesModulo01/unidade04.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
             </div>
         </div>
-        <a href="../../questoesModulo01/unidade04.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
     </div>
     
   <?php include('../../layouts/footer.php') ?>
-</body>
-</html>
