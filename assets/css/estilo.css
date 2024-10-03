@@ -1041,3 +1041,31 @@ a{
     visibility: visible;
     opacity: 1;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .image-content {
+        margin: 20px 10px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        overflow-x: auto;
+        display: block;
+    }
+
+    
+}
