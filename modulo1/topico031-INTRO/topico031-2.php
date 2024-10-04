@@ -94,7 +94,6 @@
                 <br>
                 <p class="Subtopico"><strong>Manutenção de código</strong></p>
                 <p class="Texto">Qualquer que seja o modelo de banco de dados adotado, os aplicativos precisam adicionar dados e provavelmente atualizá-los ao longo da vida útil dos aplicativos. Em alguns aplicativos, como o webmail, os próprios usuários fornecem dados ao banco de dados ao usar o cliente para enviar e receber mensagens. Em outros casos, como em um aplicativo de compras, é importante permitir que os mantenedores do aplicativo modifiquem o banco de dados sem ter de recorrer à programação. Muitas empresas, portanto, adotam algum tipo de <em>sistema de gerenciamento de conteúdo (CMS)</em>, que permite que usuários não-técnicos administrem o aplicativo. Portanto, para a maioria dos aplicativos web, é necessário implementar pelo menos dois tipos de clientes: o cliente não-privilegiado, empregado por usuários comuns, e o cliente privilegiado, empregado por usuários especiais para manter e atualizar as informações apresentadas pelo aplicativo.</p>
-
             </div>
         </div>
     </div>

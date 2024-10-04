@@ -17,10 +17,9 @@
     </script>    
 
 
-    <div class="container" style="margin-top: 100px">
+    <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-                <div class="container-main">
                 <p class="Titulo">032.2 - A semântica do HTML e a hierarquia de documentos</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <!-- Texto -->
@@ -400,7 +399,7 @@
                         Copiar
             </button>
             <pre><code class="Texto">
-Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
+Esta<span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
                 </div>
                 </code></pre>
                 <br>
@@ -419,7 +418,7 @@ Esta <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span clas
                         Copiar
             </button>
             <pre><code class="Texto">
-Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
+Esta<span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/i&gt;</strong></span>está em itálico.
                 </div>
                 </code></pre>
                 <br>
@@ -432,13 +431,13 @@ Esta <span class="code-color"><strong>&lt;i&gt;</strong></span>palavra<span clas
                 <br>
                 <p class="Subtopico"><strong>Texto sublinhado</strong></p>
                 <p class="Texto">Para sublinhar o texto, usamos o elemento <span class="code-color"><strong>&lt;u&gt;</strong></span>, como ilustrado no exemplo a seguir. O resultado aparece na <em>Figure 13</em>.</p>
-                <div class="typewriter-small" style=" width: 50%; text-align: center;"  id="copycode">
+                <div class="typewriter-small" style=" width: 60%; text-align: center;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
             </button>
             <pre><code class="Texto">
-Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
+Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/u&gt;</strong></span>está sublinhada.
                 </div>
                 </code></pre>
                 <br>
@@ -473,13 +472,13 @@ Esta <span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span clas
                 <p class="Subtopico"><strong>Texto enfatizado</strong></p>
                 <p class="Texto">Para enfatizar um texto, usamos o elemento <span class="code-color"><strong>&lt;em&gt;</strong></span>, como mostrado no exemplo a seguir:</p>
                 <br>
-                <div class="typewriter-small" style="text-align: center; width: 60%"   id="copycode">
+                <div class="typewriter-small" style="text-align: center; width: 70%"   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
             </button>
             <pre><code class="Texto">
-Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
+Esta<span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
                 </div>
                 </code></pre>
                 <br>
@@ -488,17 +487,17 @@ Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span cla
                 </div>
                 <p><em>Figure 15. A tag &lt;em&gt; é usada para enfatizar o texto</em></p>
                 <br>
-                <p class="Texto">Como vemos, os navegadores web exibem &lt;em&gt; com a mesma aparência de &lt;i&gt;, mas &lt;em&gt; adiciona  importância semântica ao elemento de frase, o que melhora a acessibilidade para visitantes com deficiência visual.</p>
+                <p class="Texto">Como vemos, os navegadores web <exibemspan class="code-color"><strong> &lt;em&gt;</strong></exibemspan> com a mesma aparência de <span class="code-color"><strong>&lt;i&gt;</strong></span>, mas <span class="code-color"><strong>&lt;em&gt;</strong></span> adiciona  importância semântica ao elemento de frase, o que melhora a acessibilidade para visitantes com deficiência visual.</p>
                 <br>
                 <p class="Subtopico"><strong>Texto forte</strong></p>
                 <p class="Texto">Para demonstrar que um texto é importante, usamos o elemento <span class="code-color"><strong>&lt;strong&gt;</strong></span> como no exemplo a seguir. O resultado aparece na <em>Figure 16</em>.</p>
-                <div class="typewriter-small" style="text-align: center; width: 60%" id="copycode">
+                <div class="typewriter-small" style="text-align: center; width: 70%" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
             </button>
             <pre><code class="Texto">
-Esta <span class="code-color"><strong>palavra</strong></span> é importante.
+Esta<span class="code-color"><strong> palavra</strong></span> é importante.
                 </div>
                 <br>
                 <div class="image-content">

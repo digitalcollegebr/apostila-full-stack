@@ -176,7 +176,7 @@
     <span class="blue-code">background-image:</span><span class="green-code"> url("background.jpg")</span>;
 }
                     </code></pre>
-                </div>
+              </div>
                 <br>
                 <p class="Texto">
                 Neste exemplo, o arquivo de imagem <em>background.jpg</em> será usado como imagem de fundo para todo o corpo da página. Por padrão, a imagem de fundo é repetida se seu tamanho não bastar para cobrir a página inteira, começando no canto superior esquerdo da área correspondente ao seletor da regra. Esse comportamento pode ser modificado com a propriedade <span class="code-color"><em>background-repeat</em></span>. Se você quiser que a imagem de fundo seja posta na área do elemento sem repeti-la, use o valor <span class="code-color"><em>no-repeat</em></span>:

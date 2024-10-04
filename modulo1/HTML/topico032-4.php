@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários HTML</title>
-</head>
-<body>
 <?php
     // A_S - Header
     include('../../layouts/header.php');
@@ -25,7 +17,7 @@
     </script>    
 
 
-    <div class="container" style="margin-top: 100px">
+    <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
                 <p class="Titulo">Formulários  HTML</p>
@@ -52,7 +44,7 @@
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>
     </pre></code>
-  </div>
+                </div>
             <p class="Texto">Salve esse código de exemplo como um arquivo de texto simples com a extensão <span class="code-color"><em>.html</em></span> (por exemplo, <em>form.html</em>) e use seu navegador favorito para abri-lo. Após alterá-lo, pressione o botão de recarregar no navegador para exibir as modificações.</p>
             <p class="Texto">A estrutura básica do formulário é dada pela própria tag <span class="code-color"><strong>&lt;form&gt;</strong></span> e seus elementos internos:</p>
             <div class="typewriter-small" id="copycode">
@@ -81,7 +73,7 @@
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>
     </pre></code>
-  </div>
+            </div>
             <p class="Texto">As aspas duplas não são obrigatórias para atributos de palavra única como <span class="code-color"><em>type</em></span>, portanto <span class="code-color"><em>type=text</em></span>funciona tão bem quanto <span class="code-color"><em>type="text"</em></span>. O desenvolvedor pode escolher a convenção que prefere usar.</p>
             <p class="Texto">Salve o novo conteúdo e recarregue a página no navegador. Você deverá ver o resultado mostrado <em>Figure 23</em>.</p>
             <br>
@@ -100,7 +92,7 @@
                         <div class="CaixaConteudo ConteudoExemplo">
                             <p class="Texto">O HTML inclui apenas as tags e propriedades básicas para modificar a aparência padrão dos formulários. O CSS fornece mecanismos elaborados para modificar a aparência do formulário e, portanto, a recomendação é escrever um código HTML incluindo apenas os aspectos funcionais do formulário, modificando sua aparência com o CSS.</p>
                         </div>
-              </div>
+                    </div>
                 <br>
                 <p class="Texto">Como mostrado no exemplo, a tag de parágrafo <span class="code-color"><strong>&lt;p&gt;</strong></span> pode ser usada para descrever o campo para o visitante. No entanto, não há uma maneira óbvia de o navegador relacionar a descrição na tag <p> com o elemento correspondente de inserção de dados. A tag <span class="code-color"><strong>&lt;label&gt;</strong></span> é mais apropriada nesses casos (a partir de agora, considere todos os exemplos de código como estando dentro do corpo do documento HTML):</p>
                 <div class="typewriter-small" id="copycode">
@@ -121,15 +113,15 @@
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>
     </pre></code>
-  </div>
-            <p class="Texto">Salve esse código de exemplo como um arquivo de texto simples com a extensão <span class="code-color"><em>.html</em></span> (por exemplo, <em>form.html</em>) e use seu navegador favorito para abri-lo. Após alterá-lo, pressione o botão de recarregar no navegador para exibir as modificações.</p>
-            <p class="Texto">A estrutura básica do formulário é dada pela própria tag <span class="code-color"><strong>&lt;form&gt;</strong></span> e seus elementos internos:</p>
-            <div class="typewriter-small" id="copycode">
-            <button class="copy-btn" onclick="copyCode()">
-                        <i class="fas fa-copy"></i>
-                        Copiar
-            </button>
-  <pre><code  class="Texto">
+              </div>
+              <p class="Texto">Salve esse código de exemplo como um arquivo de texto simples com a extensão <span class="code-color"><em>.html</em></span> (por exemplo, <em>form.html</em>) e use seu navegador favorito para abri-lo. Após alterá-lo, pressione o botão de recarregar no navegador para exibir as modificações.</p>
+              <p class="Texto">A estrutura básica do formulário é dada pela própria tag <span class="code-color"><strong>&lt;form&gt;</strong></span> e seus elementos internos:</p>
+              <div class="typewriter-small" id="copycode">
+              <button class="copy-btn" onclick="copyCode()">
+                          <i class="fas fa-copy"></i>
+                          Copiar
+              </button>
+              <pre><code  class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Personal Information<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="code-color"><strong>&gt;</strong></span>Nome completo:<span class="code-color"><strong>&lt;/label&gt;</strong></span>
@@ -142,10 +134,9 @@
         <span class="code-color"><strong>&lt;p&gt;</strong></span>
         <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"submit"</span><span class="blue-code"> value=</span><span class="orange-code">"Submit form"</span><span class="code-color"><strong>&gt;</strong></span>
         <span class="code-color"><strong>&lt;/p&gt;</strong></span>
-
-    <span class="code-color"><strong>&lt;/form&gt;</strong></span>
-    </pre></code>
-  </div>
+        <span class="code-color"><strong>&lt;/form&gt;</strong></span>
+              </pre></code>
+              </div>
             <p class="Texto">O atributo <span class="code-color"><em>for</em></span> na tag <span class="code-color"><strong>label</strong></span> contém o <em>id</em> do elemento de inserção de dados correspondente. Isso torna a página mais acessível, pois os leitores de tela serão capazes de narrar o conteúdo do elemento de rótulo (label) quando o elemento de inserção de dados estiver selecionado. Além disso, os visitantes podem clicar no rótulo para selecionar o campo de inserção de dados correspondente.</p>
             <p class="Texto">O atributo <span class="code-color"><em>id</em></span> nos elementos de formulário tem o mesmo papel que em qualquer outro elemento do documento. Ele fornece um identificador exclusivo para o elemento. O atributo name tem uma finalidade semelhante, mas é usado para identificar o elemento de inserção de dados no contexto do formulário. O navegador usa o atributo <span class="code-color"><em>name</em></span> para identificar o campo de inserção de dados ao enviar os dados do formulário para o servidor, por isso é importante usar atributos <span class="code-color"><em>name</em></span> significativos e exclusivos dentro do formulário.</p>
             <p class="Texto">O atributo <span class="code-color"><em>type</em></span> é o principal atributo do elemento de entrada de dados, <strong>pois controla o tipo de dados que o elemento aceita e sua apresentação visual ao visitante</strong>. Se o atributo type não for fornecido, por padrão é exibida uma caixa de texto. Os seguintes tipos de campos de entrada de dados são suportados pelos navegadores modernos:</p>
@@ -279,7 +270,7 @@
                 <i class="fas fa-copy"></i>
                 Copiar
             </button>
-  <pre><code class="Texto">
+            <pre><code class="Texto">
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
       <span class="code-color"><strong>&lt;p&gt;</strong></span>
         <span class="code-color"><strong>&lt;label</strong></span><span class="blue-code"> for= </span><span class="orange-code">"date"</span><span class="code-color"><strong>&gt;</strong></span> Date:<span class="code-color"><strong>&lt;/label&gt;</strong>
@@ -287,7 +278,7 @@
 
     <span class="code-color"><strong>&lt;/form&gt;</strong></span>
     </pre></code>
-  </div>
+              </div>
               <p class="Texto">A <em>Figure 24</em> mostra como a versão para desktop do Firefox apresenta esse campo atualmente.</p>
               <div class="image-content">
                 <img src="../../assets/img/figure24.png" alt="Código" class="img-fluid">
@@ -319,7 +310,7 @@
         <span class="code-color"><strong>&lt;input</strong></span><span class="blue-code"> type=</span><span class="orange-code">"date"</span><span class="blue-code">name=</span><span class="orange-code">"date" </span><span class="blue-code">id= </span><span class="orange-code">"date"</span> <span class="blue-code">value=</span> <span class="orange-code">"2024-09-20"</span><span class="code-code"><strong>&lt;/p&gt;</strong></span>
     <span class="code-color"><strong>&lt;/form&gt;</strong></span>
     </pre></code>
-  </div>
+                  </div>
                 <p class="Texto">Os tipos de entrada específicos ajudam o visitante a preencher os campos, mas não evitam que ele ignore as restrições e insira valores arbitrários em qualquer campo. Por isso, é importante que os valores dos campos sejam validados ao chegarem ao servidor.</p>
                 <p class="Texto">Os elementos do formulário cujos valores devem ser digitados pelo visitante podem ter atributos especiais que auxiliam no preenchimento. O atributo <span class="code-color"><em>placeholder</em></span> (marcador de posição) insere um valor de exemplo no elemento de inserção de dados:</p>
                 <div class="typewriter-small"  id="copycode">
@@ -357,7 +348,7 @@
         <span class="code-color"><strong>&lt;/textarea&gt;</strong></span>
         <span class="code-code"><strong>&lt;/p&gt;</strong></span>
     </pre></code>
-  </div>
+                </div>
                   <p class="Texto">A aparência típica de um textarea é mostrado na <em>Figure 26</em>.</p>
                   <br>
                   <div class="image-content">
@@ -388,7 +379,7 @@
     <span class="code-color"><strong>&lt;/select&gt;</strong></span>
   <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     </pre></code>
-  </div>
+                  </div>
                   <p class="Texto">A tag <span class="code-color"><strong>&lt;option&gt;</strong></span> representa uma entrada individual no controle <strong>&lt;select&gt;</strong> correspondente. A lista completa aparece quando o visitante toca ou clica no controle, como mostrado na <em>Figure 27</em>.</p>
                   <br>
                   <div class="image-content">
@@ -426,7 +417,7 @@
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     </pre></code>
-  </div>
+              </div>
   <br>
               <div class="image-content">
                 <img src="../../assets/img/figure28.png" alt="Código" class="img-fluid">
@@ -462,7 +453,7 @@
   <span class="code-color"><strong>&lt;/p&gt;</strong></span>
   <span class="code-color"><strong>&lt;/p&gt;</strong></span>
     </pre></code>
-  </div>
+            </div>
   <br>
             <p class="Texto">As caixas de seleção também podem usar o atributo checked para pré-selecionar opções por padrão. Em vez dos controles redondos da entrada radio, as caixas de seleção são apresentadas comocontroles quadrados, como mostrado na <em>Figure 29</em>.</p>
             <br>
@@ -502,7 +493,7 @@
       <span class="code-color"><strong>&lt;/p&gt;</strong></span>
         <span class="code-color"><strong>&lt;/fieldset&gt;</strong></span>
     </pre></code>
-  </div>
+            </div>
   <br>
                 <div class="image-content">
                   <img src="../../assets/img/figure30.png" alt="Código" class="img-fluid">
@@ -566,7 +557,7 @@
                 <br>
                 <p class="Texto">Outro botão útil a se incluir em formulários complexos é o botão <span class="code-color"><em>reset</em></span>, que limpa o formulário e o devolve ao seu estado original:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: center" id="copycode">
+                <div class="typewriter-small" style="width: 60%; text-align: center" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -633,19 +624,9 @@
                 <p class="Texto">O método <span class="code-color"><em>post</em></span> faz com que o navegador envie os dados do formulário na seção do corpo da solicitação HTTP. Embora necessário para dados binários que excedem o limite de tamanho de uma URL, o método post adiciona uma sobrecarga desnecessária à conexão quando usado com formas textuais mais simples, por isso o método get é preferível nesses casos.</p>
                 <p class="Texto">O método escolhido não afeta a forma como o visitante interage com o formulário. Os métodos get e post são processados de forma diferente pelo script do lado do servidor que recebe o formulário.</p>
                 <p class="Texto">Ao usar o método post, também é possível alterar o tipo MIME do conteúdo do formulário com o atributo de formulário enctype. Ele afeta a maneira como os campos e valores do formulário serão empilhados na comunicação HTTP com o servidor. O valor padrão para enctype é <em>application/xwww-form-urlencoded</em>, semelhante ao formato usado no método get. Se o formulário contiver campos de entrada do tipo file, é necessário usar o enctype <em>multipart/form-data</em>.</p>
-
-
-
-
-                
-
-
-
+                <a href="../../questoesModulo01/unidade04.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
             </div>
         </div>
     </div>
-    <a href="../../questoesModulo01/unidade04.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
-
-    <?php include('../../layouts/footer.php') ?>
-</body>
-</html>
+    
+  <?php include('../../layouts/footer.php') ?>
