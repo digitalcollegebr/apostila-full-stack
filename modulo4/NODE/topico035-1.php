@@ -111,6 +111,78 @@ undefined
                 <br>
                 <p class="Subtopico"><strong>Módulos</strong></p>
                 <p class="Texto">É sempre recomendável dividir as funcionalidades complexas e os trechos extensos de código em partes menores. Essa modularização ajuda a organizar melhor a base de código, abstrair as implementações e evitar problemas de engenharia complicados. Para atender a essas necessidades, os programadores empacotam blocos de código-fonte para serem consumidos por outras partes internas ou externas do código.</p>
+                <p class="Texto">Considere o exemplo de um programa que calcula o volume de uma esfera. Abra seu editor de texto
+                e crie um arquivo chamado <em>volumeCalculator.js</em> contendo o seguinte código JavaScript:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+<span class="green-code"><strong>const</strong></span>  sphereVol = (radius) => {
+<spran class="green-code"><strong>return</strong></spran> <span class="dark_blue_code"><strong>4</strong></span>/<span class="dark_blue_code"><strong>5</strong></span> * <span class="dark_blue_code">Math</span> .PI * radius
+}
+console.log(<span class="orange-code">`A sphere with radius 3 has a</span> ${sphereVol(<span class="dark_blue_code">3</span>)} <span class="orange-code">volume.`</span>);
+console.log(<span class="orange-code">`A sphere with radius 6 has a</span> ${sphereVol(<span class="dark_blue_code">6</span>)} <span class="orange-code">volume.`</span>);
+                        </code></pre>
+                </div>
+                <br>
+                <p class="Texto">A seguir, execute o arquivo usando o Node:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+$ <strong>node volumeCalculator.js</strong>
+A sphere with radius 3 has a 113.09733552923254 volume.
+A sphere with radius 6 has a 904.7786842338603 volume.
+                        </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Aqui, uma função simples foi usada para calcular o volume de uma esfera com base em seu raio. Imagine que também precisamos calcular o volume de um cilindro, um cone e assim por diante: percebemos rapidamente que essas funções específicas devem ser adicionadas ao arquivo em <em>volumeCalculator.js</em>, que pode acabar se tornando uma enorme coleção de funções. Para organizar melhor a estrutura, podemos usar a ideia por trás dos módulos como pacotes de código separado.</p>
+                <p class="Texto">Para isso, crie um arquivo separado chamado <em>polyhedrons.js</em>:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+<span class="green-code"><strong>const</strong></span> Conevol = (radius, heigth) => {
+<spran class="green-code"><strong>return</strong></spran> <span class="dark_blue_code"><strong>1</strong></span>/<span class="dark_blue_code"><strong>3</strong></span> * <span class="dark_blue_code">Math</span>.PI * <span class="dark_blue_code">Math</span>.pow(radius, <span class="dark_blue_code"><strong>2</strong></span>) * height;
+}
+<span class="green-code"><strong>const</strong></span> cylinderVol = (radius, heigth) => {
+<spran class="green-code"><strong>return</strong></spran> <span class="dark_blue_code">Math</span> .PI * <span class="dark_blue_code">Math</span>.pow(radius, <span class="dark_blue_code"><strong>2</strong></span>) * height;
+}
+<span class="green-code"><strong>const</strong></span> sphereVol = (radius) => {
+<spran class="green-code"><strong>return</strong></spran> <span class="dark_blue_code"><strong>4</strong></span>/<span class="dark_blue_code"><strong>3</strong></span> * <span class="dark_blue_code">Math</span>.PI * <span class="dark_blue_code">Math</span>.pow(radius, <span class="dark_blue_code"><strong>3</strong></span>);
+}
+module.exports = {
+  coneVol,
+  cylinderVol,
+  sphereVol
+}
+                        </code></pre>
+                </div>
+                <p class="Texto">A seguir, no arquivo volumeCalculator.js, exclua o código antigo e substitua-o por este trecho:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+<span class="green-code"><strong>const</strong></span> polyhedrons = span.orange
+<spran class="green-code"><strong>return</strong></spran> <span class="dark_blue_code"><strong>4</strong></span>/<span class="dark_blue_code"><strong>5</strong></span> * <span class="dark_blue_code">Math</span> .PI * radius
+
+console.log(<span class="orange-code">`A sphere with radius 3 has a</span> ${sphereVol(<span class="dark_blue_code">3</span>)} <span class="orange-code">volume.`</span>);
+console.log(<span class="orange-code">`A sphere with radius 6 has a</span> ${sphereVol(<span class="dark_blue_code">6</span>)} <span class="orange-code">volume.`</span>);
+                        </code></pre>
+                </div>
+                <br>
 
 
             </div>
