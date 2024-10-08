@@ -48,6 +48,22 @@ $ <strong>npm init</strong>
                 </div>
                 <br>
                 <p class="Texto">No ponto de entrada, qualquer nome de arquivo pode ser usado. Aqui, usaremos o nome de arquivo padrão: <span class="code-color"><em>index.js</em></span>. A lista a seguir mostra um arquivo index.js básico que será usado como ponto de entrada para o nosso servidor:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+<span class="green-code"><strong>const</strong></span> eexpress = require(<span class="orange-code">'express'</span>)
+<span class="green-code">const</span> app = express()
+<span class="green-code"><strong>const</strong></span> host = <span class="orange-code">"myserver"</span>
+<span class="green-code"><strong>const</strong></span> port = <span class="dark_blue_code"><strong>8080</strong></span>
+
+app.<span class="green-code"><strong>get</strong></span>
+
+                        </code></pre>
+                </div>
             </div>
         </div>
     </div>
