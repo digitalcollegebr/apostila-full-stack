@@ -420,6 +420,7 @@ pre {
     margin: 0;
     padding: 0;
     white-space: pre-wrap; /* Mantém a formatação do texto */
+    font-size: 21px;
 }
 
 @keyframes typing {
