@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../../layouts/header.php');
 ?>
 
 <body>
@@ -373,4 +373,4 @@ console.log(<span class="C_inicializeted">/* what we want to log: */</span> <spa
         </div>
     </div>    
 </body>
-<?php include('../layouts/footer.php') ?>
+<?php include('../../layouts/footer.php') ?>
