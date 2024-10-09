@@ -78,7 +78,7 @@ app.listen(port, host, () => {
                 <p class="Texto">Este script anexa apenas dois procedimentos ao objeto <span class="code-color"><em>app</em></span>: a ação <span class="code-color"><em>app.get()</em></span>, que responde às solicitações feitas por clientes através de HTTP <span class="code-color"><em>GET</em></span>, e a chamada <span class="code-color"><em>app.listen()</em></span>, necessária para ativar o servidor e que atribui a ele um host e uma porta.</p>
                 <p class="Texto">Para iniciar o servidor, basta executar o comando <span class="code-color"><strong>node</strong></span>, fornecendo o nome do script como argumento:</p>
                 <br>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small" id="copycode" style="text-align: center;">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -247,6 +247,180 @@ app.post(<span class="orange-code">'/echo'</span>, (req, res) => {
                 </div>
                 <br>
                 <p class="Texto">O parâmetro <span class="code-color"><em>req</em></span> da função de manipulação (handler) contém todos os detalhes da solicitação armazenados como propriedades. O conteúdo do campo message no corpo da solicitação está disponível na propriedade req.body.message. O exemplo simplesmente envia este campo de volta ao cliente através da chamada res.send(req.body.message).</p>
+                <p class="Texto">Lembre-se de que as alterações feitas só entram em vigor depois que o servidor é reiniciado. Como estamos executando o servidor a partir de uma janela de terminal para os exemplos dados neste capítulo, você pode desligar o servidor pressionando <span class="keyboard">Ctrl</span> + <span class="keyboard">C</span> nesse terminal. Em seguida, execute novamente o servidor por meio do comando <span class="code-color"><em>node index.js</em></span>. A resposta obtida pelo cliente para a solicitação <span class="code-color"><em>curl</em></span> mostrada anteriormente agora é bem-sucedida:</p>
+                <br>
+                <div class="typewriter-small">
+                    <pre><code class="Texto">
+$ <strong> curl http://myserver:8080/echo --data message="This is the POST request body"</strong>
+This is the POST request body
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Subtopico"><strong>Outras maneiras de passar e devolver informações em uma solicitação GET</strong></p>
+                <p class="Texto">Pode ser excessivo usar o método HTTP <span class="code-color"><em>POST</em></span> para enviar apenas mensagens de texto curtas, como a usada no exemplo. Nesses casos, os dados podem ser enviados em uma <em>string de solicitação</em> iniciada por um ponto de interrogação. Assim, a string <span class="code-color"><em>?message=This+is+the+message</em></span> poderia ser incluída no caminho de solicitação do método HTTP <span class="code-color"><em>GET</em></span>. Os campos usados na string de solicitação estão disponíveis para o servidor na propriedade <span class="code-color"><em>req.query</em></span>. Portanto, um campo denominado message está disponível na propriedade <span class="code-color"><em>req.query</em></span>.message. Outra maneira de enviar dados através do método HTTP <span class="code-color"><em>GET</em></span> é usar os <em>parâmetros de rota do Express</em>:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+app.<span class="green-code"><strong>get</strong></span>(<span class="orange-code">'/echo/:message'</span>, (req, res) => {
+    res.send(req.params.message)
+})
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">A rota neste exemplo corresponde às solicitações feitas com o método <span class="code-color"><em>GET</em></span> usando o caminho <span class="code-color"><em>/echo/:message</em></span>, onde <span class="code-color"><em>:message</em></span> é um espaço reservado para qualquer termo enviado com esse rótulo pelo cliente. Esses parâmetros estão acessíveis na propriedade <span class="code-color"><em>req.params</em></span>. Com esta nova rota, a função echo do servidor pode ser solicitada de forma mais sucinta pelo cliente:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+$ <strong> curl http://myserver:8080/echo/hello</strong>
+hello
+                    </code></pre>
+                </div>
+                <p class="Texto">Em outras situações, as informações de que o servidor precisa para processar a solicitação não precisam ser fornecidas explicitamente pelo cliente. Por exemplo, o servidor tem outra maneira de recuperar o endereço IP público do cliente. Essa informação está presente no objeto <span class="code-color"><em>req</em></span> por padrão, na propriedade <span class="code-color"><em>req.ip</em></span>:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+app.<span class="green-code"><strong>get</strong></span>(<span class="orange-code">'/ip'</span>, (req, res) => {
+    res.send(req.ip)
+})
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Agora o cliente pode solicitar o caminho <span class="code-color"><em>/ip</em></span> com o método <span class="code-color"><em>GET</em></span> para encontrar seu próprio endereço
+                IP público:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+$ <strong> curl http://myserver:8080/ip</strong>
+187.34.178.12
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Outras propriedades do objeto <span class="code-color"><em>req</em></span> podem ser modificadas pelo cliente, especialmente os cabeçalhos de solicitação disponíveis em <span class="code-color"><em>req.headers</em></span>. A propriedade <span class="code-color"><em>req.headers.user-agent</em></span>, por exemplo, identifica qual programa está fazendo a solicitação. Embora não seja uma prática comum, o cliente pode alterar o conteúdo deste campo; assim, o servidor não deve usá-lo para identificar de forma confiável um cliente específico. É ainda mais importante validar os dados fornecidos explicitamente pelo cliente, evitando assim inconsistências nos limites e formatos que podem afetar adversamente o aplicativo.</p>
+                <br>
+                <p class="Subtopico"><strong>Ajustes à resposta</strong></p>
+                <p class="Texto">Como vimos nos exemplos anteriores, o parâmetro <span class="code-color"><em>res</em></span> é responsável por retornar uma resposta ao cliente. Além disso, o objeto <span class="code-color"><em>res</em></span> pode alterar outros aspectos da resposta. Você deve ter notado que, embora as respostas que implementamos até agora sejam apenas breves mensagens de texto puro, o cabeçalho <span class="code-color"><em>Content-Type</em></span> das respostas está usando <span class="code-color"><em>text/html; charset=utf-8</em></span>. Embora isso não impeça que a resposta em texto puro seja aceita, será mais correto redefinir este campo no cabeçalho da resposta como <span class="code-color"><em>text/plain</em></span> com a configuração <span class="code-color"><em>res.type('text/plain')</em></span>.</p>
+                <p class="Texto">Outros tipos de ajustes de resposta envolvem o uso de <span class="code-color"><strong>cookies</strong></span>, que permitem ao servidor identificar um cliente que já fez uma solicitação anteriormente. Os cookies são importantes para a <strong>utilização de recursos avançados, como a criação de sessões privadas que associam solicitações a um usuário específico</strong>, mas aqui veremos apenas um exemplo simples de como usar um cookie para identificar um cliente que já acessou o servidor.</p>
+                <p class="Texto">Dado o design modularizado do Express, o gerenciamento de cookies deve ser instalado com o comando <span class="code-color"><strong>npm</strong></span> antes de ser usado no script:</p>
+                <br>
+                <div class="typewriter-small" id="copycode" style="text-align: center;">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+$ <strong>npm install cookie-parser</strong>
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Após a instalação, o gerenciamento de cookies precisa ser incluído no script do servidor. A seguinte definição deve ser adicionada perto do início do arquivo:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+<span class="green-code"><strong>const</strong></span> cookieParser = require(<span class="orange-code">'cookie-parser'</span>)
+app.use(cookieParser())
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Para ilustrar o uso dos cookies, vamos modificar a função de manipulação da rota com o caminho raiz <span class="code-color"><em>/</em></span> já existente no script. O objeto <span class="code-color"><em>req</em></span> possui uma propriedade <span class="code-color"><em>req.cookies</em></span>, em que os cookies enviados no cabeçalho da solicitação são preservados. O objeto <span class="code-color"><em>res</em></span>, por sua vez, possui um método <span class="code-color"><em>res.cookie()</em></span> que cria um novo cookie a ser enviado ao cliente. A função de manipulação no exemplo a seguir verifica se um cookie com o nome <span class="code-color"><em>known</em></span> existe na solicitação. Se tal cookie não existir, o servidor pressupõe que se trata de um visitante que chegou ao site pela primeira vez e envia a ele um cookie com esse nome através da chamada <span class="code-color"><em>res.cookie('known', '1')</em></span>. Atribuímos arbitrariamente o valor <span class="code-color"><em>1</em></span> ao cookie porque ele precisa ter algum conteúdo, mas o servidor não consulta esse valor. Este aplicativo pressupõe que a simples presença do cookie indica que o cliente já solicitou esta rota antes:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
+                        <pre><code class="Texto">
+app.<span class="green-code"><strong>get</strong></span>(<span class="orange-code">'/'</span>, (req,res) => {
+    res.type(<span class="orange-code">'text-plain'</span>)
+    <span class="green-code"><strong>if</strong></span> (req.cookies.know === <span class="green-code"><strong>undefined</strong></span>){
+        res.cookie(<span class="orange-code">'know'</span>, <span class="orange-code">'1'</span>)
+        res.send(<span class="orange-code">'Bem-vindo, novo visitante!'</span>)
+    }
+    <span class="green-code"><strong>else</strong></span>
+    res.send(<span class="orange-code">'Bem-vindo de volta!, visitante'</span>);
+})
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Por padrão, o <span class="code-color">curl</span> não usa cookies nas transações. Mas ele tem opções para armazenar (<span class="code-color">-c cookies.txt</span>) e enviar cookies armazenados (<span class="code-color">-b cookies.txt</span>):</p>
+                <br>
+                <div class="typewriter-small">
+                    <pre><code class="Texto">
+$ <strong>curl http://myserver:8080/ -c cookies.txt -b cookies.txt -v</strong>
+* Trying 192.168.1.225:8080...
+* TCP_NODELAY set
+* Connected to myserver (192.168.1.225) port 8080 (#0)
+> GET / HTTP/1.1
+> Host: myserver:8080
+> User-Agent: curl/7.68.0
+>Accept: /
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Content-Type: text/plain; charset=utf-8
+* Added cookie known="1" for domain myserver, path /, expire 0
+< Set-Cookie: known=1; Path=/
+< Content-Length: 21
+< ETag: W/"15-l7qrxcqicl4xv6EfA5fZFWCFrgY"
+< Date: Sat, 03 Jul 2021 23:45:03 GMT
+< Connection: keep-alive
+<
+* Connection #0 to host myserver left intact
+Welcome, new visitor!
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Como esse comando foi o primeiro acesso desde que os cookies foram implementados no servidor, o cliente não tinha cookies para incluir na solicitação. Como seria de se esperar, o servidor não identificou o cookie na solicitação e, portanto, incluiu o cookie nos cabeçalhos de resposta, conforme indicado na linha <span class="code-color"><em>Set-Cookie: known=1; Path=/</em></span> da saída. Como habilitamos os cookies em curl, uma nova solicitação incluirá o cookie <span class="code-color"><em>known=1</em></span> nos cabeçalhos da solicitação, permitindo que o servidor identifique a presença do cookie:</p>
+                <br>
+                <div class="typewriter-small">
+                    <pre><code class="Texto">
+$ <strong>curl http://myserver:8080/ -c cookies.txt -b cookies.txt -v</strong>
+* Trying 192.168.1.225:8080...
+* TCP_NODELAY set
+* Connected to myserver (192.168.1.225) port 8080 (#0)
+> GET / HTTP/1.1
+> Host: myserver:8080
+> User-Agent: curl/7.68.0
+>Accept: /
+> Cookie: known=1
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Content-Type: text/plain; charset=utf-8
+< Content-Length: 21
+< ETag: W/"15-ATq2flQYtLMYIUpJwwpb5SjV9Ww"
+< Date: Sat, 03 Jul 2021 23:45:47 GMT
+< Connection: keep-alive
+<
+* Connection #0 to host myserver left intact
+Welcome back, visitor
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Subtopico"><strong>Segurança dos cookies</strong></p>
+                <p class="Texto">O desenvolvedor deve estar ciente das potenciais vulnerabilidades ao usar cookies para identificar os clientes que fazem solicitações. Os invasores podem usar técnicas como <em>cross-site scripting (XSS)</em> e <em>cross-site request forgery (CSRF)</em> para roubar os cookies de um cliente e, assim, personificá-lo ao fazer uma solicitação ao servidor. De modo geral, esses tipos de ataques usam campos de comentários não validados ou URLs construídas meticulosamente para inserir código JavaScript malicioso na página. Quando executado por um cliente autêntico, esse código pode copiar cookies válidos e armazená-los, ou encaminhá-los para outro destino.</p>
+                <p class="Texto">Portanto, especialmente em aplicativos profissionais, é importante instalar e empregar recursos mais especializados do Express, conhecidos como <em>middleware</em>. Os módulos <span class="code-color"><em>express-session</em></span> ou <span class="code-color"><em>cookie-session</em></span> permitem um controle mais completo e seguro sobre a sessão e o gerenciamento de cookies. Esses componentes oferecem controles extras para evitar que os cookies sejam desviados de seu emissor original.</p>
             </div>
         </div>
     </div>

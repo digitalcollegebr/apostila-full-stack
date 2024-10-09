@@ -416,6 +416,11 @@
     color: #1b942a;
 }
 
+.keyboard{
+    background-color: #df177191;
+    border: 1px solid #64585d;
+}
+
 pre {
     margin: 0;
     padding: 0;
