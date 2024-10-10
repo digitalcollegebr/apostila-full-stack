@@ -149,7 +149,7 @@
                         <div class="CaixaConteudo ConteudoExemplo">
                           <p class="Texto">Alguns elementos de bloco não se destinam a ser usados como contêineres para outros elementos de bloco. É possível, por exemplo, inserir um elemento de bloco dentro de um elemento h1 ou p, mas isso não é muito aconselhável. Em vez disso, é melhor usar uma tag apropriada como contêiner. As tags de contêiner mais comuns são div, section e aside.</p>
                         </div>
-                    </div>
+            </div>
                 <br>
                 <p class="Texto">
                 Além do texto em si, elementos como <span class="code-color"><em>h1</em></span>, <span class="code-color"><em>p</em></span> e <span class="code-color"><em>li</em></span> esperam conter apenas elementos <em>de linha</em> como filhos. Como a maioria dos modos de escrita ocidentais, os elementos de linha seguem o fluxo de texto da esquerda para a direita. Quando não há espaço restante no lado direito, o fluxo de elementos de linha continua na linha seguinte, assim como o texto. Algumas tags HTML comuns tratadas como caixas de linha são <span class="code-color"><em>span</em></span>, <span class="code-color"><em>a</em></span>, <span class="code-color"><em>em</em></span>, <span class="code-color"><em>strong</em></span>, <span class="code-color"><em>img</em></span>, <span class="code-color"><em>input</em></span> e <span class="code-color"><em>label</em></span>.

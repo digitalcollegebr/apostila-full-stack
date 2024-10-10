@@ -168,7 +168,7 @@
                         </div>
                 </div>
                 <br>
-                <div class="Titulo">Console do navegador</div>
+                <div class="Subtopico">Console do navegador</div>
                 <div class="Texto">
                     Embora ele geralmente seja executado como parte de um site, existe outra maneira de executar o
                     JavaScript: usando o console do navegador. Todos os navegadores modernos para desktop incluem
@@ -197,7 +197,7 @@
                     diretamente no campo de entrada. O resultado de qualquer código executado será mostrado em uma
                     linha separada.
                 </p>
-                <p class="Titulo">
+                <p class="Subtopico">
                     Declarações de JavaScript
                 </p>
                 <p class="Texto">
@@ -275,7 +275,7 @@ console.log(<span class='orange-code'>"world"</span>);
                     inserção automática de ponto e vírgula são complexas, recomendamos sempre encerrar
                     adequadamente suas declarações para evitar erros indesejados.
                 </p>
-                <p class="Titulo">
+                <p class="Subtopico">
                     Comentários em JavaScript
                 </p>
                 <p class="Texto">
@@ -313,7 +313,7 @@ console.log(message); <span class="C_inicializeted">//Then, we output the messag
                     duas maneiras de escrever comentários em JavaScript:
                 </p>
 
-                <p class="Titulo">
+                <p class="Subtopico">
                     Comentários multilinhas
                 </p>
                 <p class="Texto">
@@ -335,7 +335,7 @@ console.log(<span class="C_inicializeted">/* what we want to log: */</span> <spa
                     Como o objetivo dos comentários geralmente é aumentar a legibilidade de um script, evite usar
                     esse estilo de comentário dentro de uma linha.
                 </p>
-                <p class="Titulo">
+                <p class="Subtopico">
                     Comentário de uma linha
                 </p>
                 <p class="Texto">
@@ -369,6 +369,7 @@ console.log(<span class="C_inicializeted">/* what we want to log: */</span> <spa
 <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"something else"</span>;
                 </code></pre>
                 </div>
+                
             </div>
         </div>
     </div>    
