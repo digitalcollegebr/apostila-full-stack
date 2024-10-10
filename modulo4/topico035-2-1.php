@@ -23,6 +23,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+                <p class="Subtopico" style="font-size: 13px;"><strong>Parte 01</strong></p>
                 <p class="Titulo">035.2 - Noções básicas de NodeJs Express</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">O <span class="code-color"><strong>Express.js</strong></span>, ou simplesmente Express, é um framework popular que roda em Node.js e é usado para escrever servidores HTTP que lidam com solicitações de clientes de aplicativos web. O Express oferece suporte a diversas maneiras de ler parâmetros enviados por HTTP.</p>
@@ -55,7 +56,7 @@ $ <strong>npm init</strong>
                                 Copiar
                         </button>
                         <pre><code class="Texto">
-<span class="green-code"><strong>const</strong></span> eexpress = require(<span class="orange-code">'express'</span>)
+<span class="green-code"><strong>const</strong></span> express = require(<span class="orange-code">'express'</span>)
 <span class="green-code">const</span> app = express()
 <span class="green-code"><strong>const</strong></span> host = <span class="orange-code">"myserver"</span>
 <span class="green-code"><strong>const</strong></span> port = <span class="dark_blue_code"><strong>8080</strong></span>
@@ -424,5 +425,6 @@ Welcome back, visitor
             </div>
         </div>
     </div>
+    
 
     <?php include('../layouts/footerQ.php') ?>
