@@ -194,13 +194,11 @@ app.get(<span class="orange-code">'/'</span>, (req, res) => {
 app.listen(<span class="dark_blue_code">port</span>, <span class="dark_blue_code">host</span>, () => {
     console.log(<span class="orange-code">`Server ready at http://${host}:${port}`</span>);
 });
-
-
-
                         </code></pre>
                 </div>
                 <br>
-                <span class="green-code">conteúdo</span>
+                <p class="Texto">Mantivemos a configuração dos arquivos estáticos no topo, porque em breve será útil fornecer arquivos estáticos como layout.css. Além do middleware cookie-parser apresentado na lição anterior, o exemplo também inclui o middleware uuid para gerar um número de identificação único que é passado como um cookie para cada cliente que envia uma mensagem. Se eles ainda não estiverem no diretório do servidor de exemplo, instale esses módulos com o comando npm install cookie-parser uuid</p>
+             
             </div>
         </div>
     </div>
