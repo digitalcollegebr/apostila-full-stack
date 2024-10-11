@@ -95,7 +95,7 @@ $ <strong>node index.js</strong>
                 solicitação HTTP ao servidor recém-implantado:</p>
                 <br>
                 <div class="typewriter-small">
-                    <pre><code class="Texto">
+                    <pre><code>
 $ <strong>curl http://myserver:8080 -v</strong>
 * Trying 192.168.1.225:8080...
 * TCP_NODELAY set
