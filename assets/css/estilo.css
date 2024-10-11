@@ -305,6 +305,24 @@
     line-height: 1.5;
     animation: typing 6s steps(60, end), blink-caret 0.75s step-end infinite;
 }
+
+.console {
+    position: relative;
+    padding: 10px 20px;
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: block;
+    background-color: #20191c;
+    color: #1de203;
+}
+
+
 .code-smaller{
     width: 65%;
     height: 0.5%;
@@ -349,7 +367,7 @@
 
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
-    .typewriter-small {
+    .typewriter-small, .console {
         width: 80%;
         font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
         padding: 8px 16px; /* Ajusta o padding para telas menores */
@@ -357,7 +375,7 @@
 }
 
 @media (max-width: 480px) {
-    .typewriter-small {
+    .typewriter-small, .console {
         font-size: 10px; /* Ajuste do tamanho da fonte para telas muito pequenas */
         padding: 6px 12px; /* Ajusta o padding para telas muito pequenas */
     }
@@ -368,7 +386,7 @@
 }
 
 @media (max-width: 540px) {
-    .typewriter-small {
+    .typewriter-small, .console {
         font-size: 10px; /* Ajuste do tamanho da fonte para telas muito pequenas */
         padding: 6px 10px; /* Ajusta o padding para telas muito pequenas */
     }
@@ -381,7 +399,7 @@
 
 
 @media (max-width: 715px) {
-    .typewriter-small {
+    .typewriter-small, .console  {
         font-size: 10px; /* Ajuste do tamanho da fonte para telas muito pequenas */
         padding: 6px 10px; /* Ajusta o padding para telas muito pequenas */
     }
@@ -416,9 +434,18 @@
     color: #1b942a;
 }
 
-.keyboard{
-    background-color: #df177191;
-    border: 1px solid #64585d;
+.keyboard {
+    padding: 10px 15px;
+    background-color: #df1771;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px #00000050;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #000000;
+    text-align: center;
+    user-select: none;
 }
 
 pre {
@@ -1007,7 +1034,7 @@ button:hover {
 
 .button-left:hover {
     transform: scale(1.1);
-    color: #c51967;
+    color: #2dc519;
     text-decoration: none;
 
 }

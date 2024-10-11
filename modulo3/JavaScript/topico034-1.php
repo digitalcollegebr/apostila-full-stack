@@ -109,7 +109,7 @@
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;html&gt;</strong></span>
     <span class="code-color"><strong>&lt;head&gt;</strong></span>
-        <span class="code-color"><strong>&lt;script <span class="blue-code">src=</span> =<span class="orange-code">"/button-interaction.js"</span>&gt;</strong></span><span class="code-color"><strong>&lt;/script&gt;</strong></span>
+        <span class="code-color"><strong>&lt;script </strong><span class="blue-code">src=</span> =<span class="orange-code">"/button-interaction.js"</span>&gt;</span><span class="code-color"><strong>&lt;/script&gt;</strong></span>
     <span class="code-color"><strong>&lt;/head&gt;</strong></span>
     <span class="code-color"><strong>&lt;body&gt;</strong></span>
     <span class="code-color"><strong>&lt;/body&gt;</strong></span>
@@ -122,7 +122,7 @@
                     URL acessível pela web, como <a href="https://www.lpi.org/example.js">https://www.lpi.org/example.js</a>. O valor do atributo src segue a
                     mesma convenção da importação de arquivos CSS ou de imagem, podendo ser relativo ou absoluto.
                     Ao encontrar uma tag de script com o atributo src, o navegador tentará obter o arquivo de origem
-                    usando uma solicitação HTTP <span class="blue-code">GET</span>. Portanto, os arquivos externos precisam estar acessíveis.
+                    usando uma solicitação HTTP <span class="code-color"><em>GET</em></span>. Portanto, os arquivos externos precisam estar acessíveis.
                 </p>
                 <p class="Texto">
                     Quando usamos o atributo src, qualquer código ou texto posto entre as tags <span class="code-color"><strong>&lt;script&gt;</strong></span>…<span class="code-color"><strong>&lt;/script&gt;</strong></span> é
@@ -136,7 +136,7 @@
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;html&gt;</strong></span>
     <span class="code-color"><strong>&lt;head&gt;</strong></span>
-        <span class="code-color"><strong>&lt;script <span class="blue-code">src=</span> =<span class="orange-code">"/button-interaction.js"</span>&gt;</strong></span><span class="code-color"><strong>&lt;/script&gt;</strong></span>
+        <span class="code-color"><strong>&lt;script </strong><span class="blue-code">src=</span> =<span class="orange-code">"/button-interaction.js"</span>&gt;</span><span class="code-color"><strong>&lt;/script&gt;</strong></span>
             console.log(<span class="orange-code">"test"</span> ); // <-- This is ignored
     <span class="code-color"><strong>&lt;/head&gt;</strong></span>
     <span class="code-color"><strong>&lt;body&gt;</strong></span>
@@ -181,9 +181,18 @@
                 </div>
                 <p class="Texto">
                     <ul>
-                        <li>Chrome</li>
-                        <li>Firefox</li>
-                        <li>Safari</li>
+                    
+                        <strong>Chrome</strong>
+                        <p><span class="keyboard">Ctrl</span>+<span class="keyboard">Shift</span>+<span class="keyboard">j</span>(<span class="keyboard">Cmd</span>+<span class="keyboard">Option</span>+<span class="keyboard">j</span> no mac)</p>
+
+                
+                        <strong>Firefox</strong>
+                        <p><span class="keyboard">Ctrl</span>+<span class="keyboard">Shift</span>+<span class="keyboard">k</span>(<span class="keyboard">Cmd</span>+<span class="keyboard">Option</span>+<span class="keyboard">j</span> no mac)</p>
+
+
+                        <strong>Safari</strong>
+                        <p><span class="keyboard">Ctrl</span>+<span class="keyboard">Shift</span>+<span class="keyboard">?</span>(<span class="keyboard">Cmd</span>+<span class="keyboard">Option</span>+<span class="keyboard">?</span> no mac)</p>
+
                     </ul>
                 </p>
                 <p class="Texto">
@@ -369,7 +378,6 @@ console.log(<span class="C_inicializeted">/* what we want to log: */</span> <spa
 <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"something else"</span>;
                 </code></pre>
                 </div>
-                
             </div>
         </div>
     </div>    
