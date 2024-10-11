@@ -205,10 +205,136 @@ app.listen(<span class="dark_blue_code">port</span>, <span class="dark_blue_code
                 <br>
                 <div class="typewriter-small" id="copycode">
                     <pre><code class="Texto">
-                        <span class="C_inicializeted">Envia de volta a resposta JSON</span>
+<span class="C_inicializeted">// Envia de volta a resposta JSON</span>
+res.json(user_entries)
                     </code></pre>
                 </div>
-             
+                <br>
+                <p class="Texto">JSON é um formato de texto simples que permite agrupar um conjunto de dados em uma única estrutura associativa: ou seja, o conteúdo é expresso na forma de chaves e valores. O JSON é particularmente útil quando as respostas serão processadas pelo cliente. Usando esse formato, um objeto ou matriz JavaScript pode ser facilmente reconstruído no lado do cliente com todas as propriedades e índices do objeto original no servidor.</p>
+                <p class="Texto">Como estamos estruturando todas as mensagens em JSON, recusamos as solicitações que não
+                contenham application/json em seu cabeçalho accept:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+<span class="C_inicializeted">// Somente solicitações habilitadas para JSON</span>
+<span class="green-code">if</span> ( req.headers.accept != <span class="orange-code">"application/json"</span>)
+{
+    res.sendStatus(<span class="dark_blue_code">404</span>)
+    <span class="green-code">return</span>
+}
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Uma solicitação feita com um comando curl simples para inserir uma nova mensagem não será aceita, porque <span class="code-color">curl</span>, por padrão, não especifica <span class="code-color">application/json</span> no cabeçalho <span class="code-color">accept</span>:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <pre><code class="Texto">
+$ <strong> curl http://myserver:8080/ --data message="My first message" -c cookies.txt -b
+cookies.txt -H "accept: application/json"</strong>
+["My first message"]
+                    </code></pre>
+                </div>
+                <p class="Texto">Para obter mensagens usando a outra rota, o processo é semelhante, mas desta vez usando o método HTTP <span class="code-color">GET</span>:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <pre><code class="Texto">
+$ <strong>curl http://myserver:8080/ -c cookies.txt -b cookies.txt -H "accept:application/json"</strong>
+["Another message","My first message"]
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Subtopico"><strong>Modelos</strong></p>
+                <p class="Texto">As respostas em formatos como o JSON são convenientes para a comunicação entre programas, mas o objetivo principal da maioria dos servidores de aplicativos web é produzir conteúdo HTML para o consumo humano. Não é uma boa ideia incorporar código HTML dentro de um código JavaScript, pois a mistura de linguagens no mesmo arquivo torna o programa mais suscetível a erros e atrapalha a manutenção do código.</p>
+                <p class="Texto">contO Express pode trabalhar com diferentes <em>mecanismos de modelo</em> (template engines) que separam o HTML para o conteúdo dinâmico; a lista completa pode ser encontrada no site de mecanismos de modelo do Express. Um dos mecanismos de modelo mais populares é o <em>Embedded JavaScript</em> (EJS), que permite criar arquivos HTML com tags específicas para a inserção de conteúdo dinâmico.eúdo</p>
+                <p class="Texto">Como outros componentes do Express, o EJS precisa ser instalado no diretório em que o servidor
+                está sendo executado:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <pre><code class="Texto">
+$ <strong>npm install ejs</strong>
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Em seguida, o mecanismo EJS deve ser definido como o renderizador padrão no script do servidor (próximo ao início do arquivo index.js, antes das definições de rota):</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+app.<span class="green-code"><strong>set</strong></span>(<span class="orange-code">'view engine',</span>, <span class="orange-code">'ejs'</span>)
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">A resposta gerada com o modelo é enviada ao cliente com a função <span class="code-color"><em>res.render()</em></span>, que recebe como parâmetros o nome do arquivo do modelo e um objeto contendo valores que estarão acessíveis de dentro do modelo. As rotas usadas no exemplo anterior podem ser reescritas para gerar respostas em HTML, bem como em JSON:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+                    app.post('/', (req, res) => {
+  <span class="green-code"><strong>let</strong></span> uuid = req.cookies.uuid
+  <span class="green-code"><strong>if</strong></span> (uuid === <span class="green-code"><strong>undefined</strong></span>)
+    uuid = uuidv4()
+  messages.unshift({ uuid: uuid, message: req.body.message })
+  <span class="green-code"><strong>let</strong></span> user_entries = []
+  messages.forEach((entry) => {
+    <span class="green-code"><strong>if</strong></span> (entry.uuid == req.cookies.uuid)
+      user_entries.push(entry.message)
+  })
+  <span class="green-code"><strong>let</strong></span> expires = <span class="green-code"><strong>new</strong></span> <span class="dark_blue_code">Date</span>(<span class="dark_blue_code">Date</span>.now());
+  expires.setDate(expires.getDate() + <span class="dark_blue_code">30</span>);
+  res.cookie(<span class="orange-code">'uuid'</span>, uuid, { <span class="dark_blue_code">expires</span>: expires })
+  <span class="green-code"><strong>if</strong></span> (req.headers.accept == <span class="orange-code">"application/json"</span>)
+    res.json(user_entries)
+  <span class="green-code"><strong>else</strong></span>
+    res.render(<span class="orange-code">'index'</span>, { title: <span class="orange-code">"My messages"</span>, messages: user_entries })
+})
+
+app.get('/', (req, res) => {
+  <span class="green-code"><strong>let</strong></span> uuid = req.cookies.uuid
+  <span class="green-code"><strong>let</strong></span> user_entries = []
+  <span class="green-code"><strong>if</strong></span> (uuid === <span class="green-code"><strong>undefined</strong></span>) {
+    uuid = uuidv4()
+  } <span class="green-code"><strong>else</strong></span> {
+    messages.forEach((entry) => {
+      <span class="green-code"><strong>if</strong></span> (entry.uuid == req.cookies.uuid)
+        user_entries.push(entry.message)
+    })
+  }
+  <span class="green-code"><strong>let</strong></span> expires = <span class="green-code"><strong>new</strong></span> <span class="dark_blue_code">Date</span>(<span class="dark_blue_code">Date</span>.now());
+  expires.setDate(expires.getDate() + <span class="dark_blue_code">30</span>);
+  res.cookie(<span class="orange-code">'uuid'</span>, uuid, { <span class="dark_blue_code">expires</span>: expires })
+  <span class="green-code"><strong>if</strong></span> (req.headers.accept == <span class="orange-code">"application/json"</span>)
+    res.json(user_entries)
+  <span class="green-code"><strong>else</strong></span>
+    res.render(<span class="orange-code">'index'</span>, { title: <span class="orange-code">"My messages"</span>, messages: user_entries })
+})
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Note que o formato da resposta depende do cabeçalho accept encontrado na solicitação:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+<span class="green-code"><strong>if</strong></span> ( req.headers.accept == <span class="orange-code">"application/json"</span>)
+    res.json(user_entries)
+<span class="green-code"><strong>else</strong></span>
+    res.render(<span class="orange-code">'index'</span>, {<span class="blue-code">title</span>: <span class="orange-code">"My messages"</span>, <span class="blue-code">messages</span>: user_entries})
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">contUma resposta em formato JSON é enviada apenas se o cliente fizer expressamente essa solicitação. Caso contrário, a resposta é gerada a partir do modelo index. A mesma matriz user_entries alimenta a saída em JSON e o modelo, mas o objeto usado como parâmetro para este último também possui a propriedade title: "My messages", que será usada como um título dentro do template.</p>
+                <br>
+                <p class="Subtopico"><strong>Modelos HTML</strong></p>
+                <p class="Texto">A exemplo dos arquivos estáticos, os arquivos que contêm modelos HTML residem em seu próprio diretório. Por padrão, o EJS pressupõe que os arquivos de modelo estão no diretório <span class="code-color"><em>views/</em></span>. No exemplo, um modelo chamado <span class="code-color"><em>index</em></span> foi usado, por isso o EJS procura pelo arquivo <span class="code-color">views/index.ejs</span>. A lista a seguir é o conteúdo de um modelo views/index.ejs simples que pode ser usado com o código de exemplo:</p>
             </div>
         </div>
     </div>
