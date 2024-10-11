@@ -197,7 +197,17 @@ app.listen(<span class="dark_blue_code">port</span>, <span class="dark_blue_code
                         </code></pre>
                 </div>
                 <br>
-                <p class="Texto">Mantivemos a configuração dos arquivos estáticos no topo, porque em breve será útil fornecer arquivos estáticos como layout.css. Além do middleware cookie-parser apresentado na lição anterior, o exemplo também inclui o middleware uuid para gerar um número de identificação único que é passado como um cookie para cada cliente que envia uma mensagem. Se eles ainda não estiverem no diretório do servidor de exemplo, instale esses módulos com o comando npm install cookie-parser uuid</p>
+                <p class="Texto">Mantivemos a configuração dos arquivos estáticos no topo, porque em breve será útil fornecer arquivos estáticos como <span class="code-color"><em>layout.css</em></span>. Além do middleware <span class="code-color"><em>cookie-parser</em></span> apresentado na lição anterior, o exemplo também inclui o middleware <em>uuid</em> para gerar um número de identificação único que é passado como um cookie para cada cliente que envia uma mensagem. Se eles ainda não estiverem no diretório do servidor de exemplo, instale esses módulos com o comando <span class="code-color"><strong>npm install cookie-parser uuid</strong></span>.</p>
+                <p class="Texto">A matriz global <span class="code-color"><em>messages</em></span> armazena as mensagens enviadas por todos os clientes. Cada item desta
+                matriz consiste em um objeto com as propriedades <span class="code-color"><em>uuid</em></span> e <span class="code-color"><em>message</em></span>.</p>
+                <p class="Texto">A novidade nesse script é o método <span class="code-color"><em>res.json()</em></span>, usado ao final das duas rotas para gerar uma
+                resposta no formato JSON com a matriz contendo as mensagens já enviadas pelo cliente:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <pre><code class="Texto">
+                        <span class="C_inicializeted">Envia de volta a resposta JSON</span>
+                    </code></pre>
+                </div>
              
             </div>
         </div>
