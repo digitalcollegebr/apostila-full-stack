@@ -45,7 +45,7 @@ $ <strong>npm install express</strong>
                 </code></pre>
                 </div>
                 <br>
-                <p class="Texto">Para o ponto de entrada, qualquer nome de arquivo pode ser empregado, mas aqui usaremos o nome de arquivo padrão: index.js. A lista a seguir mostra um arquivo index.js básico que será usado como ponto de partida para o nosso servidor:</p>
+                <p class="Texto">Para o ponto de entrada, qualquer nome de arquivo pode ser empregado, mas aqui usaremos o nome de arquivo padrão: <span class="code-color"><em>index.js</em></span>. A lista a seguir mostra um arquivo index.js básico que será usado como ponto de partida para o nosso servidor:</p>
                 <br>
                 <div class="typewriter-small" id="copycode">
                         <button class="copy-btn" onclick="copyCode()">
@@ -228,7 +228,7 @@ res.json(user_entries)
                     </code></pre>
                 </div>
                 <br>
-                <p class="Texto">Uma solicitação feita com um comando curl simples para inserir uma nova mensagem não será aceita, porque <span class="code-color">curl</span>, por padrão, não especifica <span class="code-color">application/json</span> no cabeçalho <span class="code-color">accept</span>:</p>
+                <p class="Texto">Uma solicitação feita com um comando <span class="code-color"><em>curl</em></span> simples para inserir uma nova mensagem não será aceita, porque <span class="code-color"><em>curl</em></span>, por padrão, não especifica <span class="code-color"><em>application/json</em></span> no cabeçalho <span class="code-color"><em>accept</em></span>:</p>
                 <br>
                 <div class="typewriter-small" id="copycode">
                     <pre><code class="Texto">
@@ -335,6 +335,123 @@ app.get('/', (req, res) => {
                 <br>
                 <p class="Subtopico"><strong>Modelos HTML</strong></p>
                 <p class="Texto">A exemplo dos arquivos estáticos, os arquivos que contêm modelos HTML residem em seu próprio diretório. Por padrão, o EJS pressupõe que os arquivos de modelo estão no diretório <span class="code-color"><em>views/</em></span>. No exemplo, um modelo chamado <span class="code-color"><em>index</em></span> foi usado, por isso o EJS procura pelo arquivo <span class="code-color">views/index.ejs</span>. A lista a seguir é o conteúdo de um modelo views/index.ejs simples que pode ser usado com o código de exemplo:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+<span class="red-color"><strong>&lt;!DOCTYPE html&gt;</strong></span>
+<span class="code-color">&lt;<strong>html</strong></span> <span class="blue-code">lang=</span><span class="orange-code">"en"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;head&gt;</strong></span>
+  <span class="code-color"><strong>&lt;meta</strong></span> <span class="blue-code">charset=</span><span class="orange-code">"utf-8"</span><span class="code-color"><strong>&gt;</strong></span>
+  <span class="code-color"><strong>&lt;title&gt;&lt;%=</strong></span><span class="blue-code"> title</span><span class="code-color"><strong>%&gt;&lt;/title&gt;</strong></span>
+  <span class="code-color"><strong>&lt;meta</strong></span> <span class="blue-code">name=</span><span class="orange-code">"viewport"</span> <span class="blue-code">content=</span><span class="orange-code">"width=device-width, initial-scale=1"</span><span class="code-color"><strong>&gt;</strong></span>
+  <span class="code-color"><strong>&lt;link rel=</strong></span><span class="orange-code">"stylesheet"</span> <span class="blue-code">href=</span><span class="orange-code">"/layout.css"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;/head&gt;</strong></span>
+<span class="code-color"><strong>&lt;body&gt;</strong></span>
+<span class="code-color"><strong>&lt;div</strong></span> <span class="blue-code">id=</span><span class="orange-code">"interface"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;form</strong></span> <span class="blue-code">action=</span><span class="orange-code">"/"</span> <span class="blue-code">method=</span><span class="orange-code">"post"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;p&gt;</strong></span>
+  <span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"text"</span> <span class="blue-code">name=</span><span class="orange-code">"message"</span><span class="code-color"><strong>&gt;</strong></span>
+  <span class="code-color"><strong>&lt;input</strong></span> <span class="blue-code">type=</span><span class="orange-code">"submit"</span> <span class="blue-code">value=</span><span class="orange-code">"Submit"</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+<span class="code-color"><strong>&lt;/form&gt;</strong></span>
+<span class="code-color"><strong>&lt;ul&gt;</strong></span>
+<span class="code-color"><strong>&lt;</strong></span><span class="red-color"><strong>%</strong></span> <span class="blue-code">messages.forEach</span><span class="red-color">(</span><span class="blue-code">(message) =</span> <span class="red-color"><strong>&gt;</strong></span><span class="orange-code">{</span> <span class="red-color"><strong>%</strong></span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;</strong></span><span class="red-color"><strong>%=</strong></span><span class="blue-code"> message</span><span class="code-color"><strong>%&gt;&lt;/li&gt;</strong></span>
+<span class="code-color"><strong>&lt;</strong></span><span class="red-color"> <strong>%</strong></span><span class="orange-code">}</span><span class="code-color">)</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+
+<span class="code-color"><strong>&lt;/body&gt;</strong></span>
+<span class="code-color"><strong>&lt;/html&gt;</strong></span>
+
+</div>
+
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">A primeira tag EJS especial é o elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> na seção <span class="code-color"><strong>&lt;head&gt;</strong></span>:</p>
+                <br>
+                <div class="typewriter-small" id="copycode" style="text-align:center; width: 50%;">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+<span class="code-color"><strong>&lt;</strong></span><span class="red-color"><strong>%=</strong></span> title <span class="red-color"><strong>%</strong></span><span class="red-color"><strong>&gt;</strong></span>
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Durante o processo de renderização, essa tag especial será substituída pelo valor da propriedade <span class="code-color">title</span> do objeto passado como parâmetro para a função <span class="code-color"><em>res.render()</em></span>.</p>
+                <p class="Texto">A maior parte do modelo é composta de código HTML convencional; assim, o modelo contém o formulário HTML para o envio de novas mensagens. O servidor de teste responde aos métodos HTTP <span class="code-color">GET</span> e <span class="code-color"><em>POST</em></span> para o mesmo caminho <span class="code-color">/</span>, por isso temos os atributos <span class="code-color"><em>action="/"</em></span> e <span class="code-color"><em>method="post"</em></span> na tag de formulário.</p>
+                <p class="Texto">Outras partes do modelo são uma mistura de código HTML e tags EJS. O EJS tem tags para fins específicos dentro do modelo:</p>
+                <br>
+                <div class="typewriter-small" style="width: 70%;">
+                <strong><% … %></strong><p class="Texto">Insere controle de fluxo. Nenhum conteúdo é inserido diretamente por esta tag, mas pode ser usado com JavaScript estruturas para escolher, repetir ou suprimir seções de HTML. Exemplo iniciando um loop: <% mensagens.forEach( (mensagem) => { %>Uma sequência de pontos redondos.</p>
+                </div>
+                <div class="typewriter-small" style="width: 70%;">
+                    <strong><%# … %></strong>
+                    <p class="Texto">Define um comentário cujo conteúdo é ignorado pelo analisador. Ao contrário dos comentários
+                    escritos em HTML, esses comentários não são visíveis para o cliente.</p>
+                </div>
+                <div class="typewriter-small" style="width: 70%;">
+                    <strong><%= … %></strong>
+                    <p class="Texto">Insere o conteúdo escapado da variável. É importante escapar o conteúdo desconhecido para evitar a execução de código em JavaScript, o que abriria brechas para ataques de Cross-Site Scripting (XSS). Exemplo: <%= title %></p>
+                </div>
+                <div class="typewriter-small" style="width: 70%;">
+                    <strong><%- … %></strong>
+                    <p class="Texto">Insere o conteúdo da variável sem escapar.</p>
+                </div>
+                <br>
+                <p class="Texto">A combinação de código HTML e tags EJS é evidente no trecho em que as mensagens do cliente são renderizadas como uma lista HTML:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+<span class="code-color"><strong>&lt;ul&gt;</strong></span>
+    <span class="code-color"><strong>&lt;</strong></span><span class="red-color"><strong>%</strong></span> <span class="blue-code">messages.forEach</span><span class="red-color">(</span><span class="blue-code">(message) =</span> <span class="red-color"><strong>&gt;</strong></span><span class="orange-code">{</span> <span class="red-color"><strong>%</strong></span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;</strong></span><span class="red-color"><strong>%=</strong></span><span class="blue-code"> message</span><span class="code-color"><strong>%&gt;&lt;/li&gt;</strong></span>
+    <span class="code-color"><strong>&lt;</strong></span><span class="red-color"> <strong>%</strong></span> <span class="orange-code">}</span><span class="red-color">)</span><span class="code-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;/ul&gt;</strong></span>
+                    </code></pre>
+                </div>
+                <br>
+                <p class="Texto">Neste trecho, a primeira tag <span class="code-color"><strong><% … %></strong></span> inicia uma instrução <span class="code-color"><em>forEach</em></span> que percorre todos os elementos da matriz message. Os delimitadores <span class="code-color"><strong><% e %></strong></span> permitem controlar os trechos de HTML. Um novo item de lista HTML, <span class="code-color"><strong>&lt;li&gt;<%= message %>&lt;/li&gt;</strong></span>, será criado para cada elemento de <span class="code-color"><em>messages</em></span>. Com essas mudanças, o servidor enviará a resposta em HTML quando uma solicitação como a seguinte for recebida:</p>
+                <br>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+$ <strong>curl http://myserver:8080/ --data message="This time" -c cookies.txt -b cookies.txt</strong>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;My messages&lt;/title&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="/layout.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="interface"&gt;
+&lt;form action="/" method="post"&gt;
+&lt;p&gt;
+  &lt;input type="text" name="message"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/p&gt;
+&lt;/form&gt;
+&lt;ul&gt;
+&lt;li&gt;This time&lt;/li&gt;
+&lt;li&gt;in HTML&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                </div>
+                <p class="Texto">A separação entre o código de processamento das solicitações e o código de apresentação da resposta torna o código mais limpo e permite que uma equipe divida o desenvolvimento do aplicativo entre diferentes especialistas. Um webdesigner, por exemplo, pode se concentrar nos arquivos de modelo em <span class="code-color"><em>views/</em></span> e nas folhas de estilo relacionadas, que são fornecidas como arquivos estáticos armazenados no diretório <span class="code-color"><em>public/</em></span> no servidor de exemplo.</p>
             </div>
         </div>
     </div>
