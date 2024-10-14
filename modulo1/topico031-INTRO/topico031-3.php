@@ -47,7 +47,7 @@
                             NOTE 
                     </div>
                     <div class="CaixaConteudo ConteudoExemplo">
-                        <p class="Texto">A <span class="code-color"><strong>URL</strong></span> <span class="code-color"><em>(Uniform Resource Locator)</em></span> é um endereço que aponta para um recurso na internet. Esse recurso geralmente é um arquivo que pode ser copiado de um servidor remoto, mas as URLs também podem indicar conteúdos gerados dinamicamente e fluxos de dados.</p>
+                        <p class="Texto">A URL(Uniform Resource Locator) é um endereço que aponta para um recurso na internet. Esse recurso geralmente é um arquivo que pode ser copiado de um servidor remoto, mas as URLs também podem indicar conteúdos gerados dinamicamente e fluxos de dados.</p>
                     </div>
                 </div>
                 <br>
@@ -161,64 +161,38 @@ GET /cgi-bin/receive.cgi?name=LPI&email=info@lpi.org HTTP/1.1
                 </div>
                 <p class="Texto">O segundo e o terceiro dígitos são usados para indicar detalhes adicionais. O código 200, por exemplo, indica que a solicitação pode ser atendida sem problemas. Como mostrado no exemplo, também é possível fornecer uma breve descrição após o código de resposta <span class="code-color"><em>(OK)</em></span>. Alguns códigos específicos servem para garantir que o cliente HTTP possa acessar o recurso em situações adversas ou para ajudar a identificar o motivo da falha no caso de uma solicitação malsucedida:</p>
                 <br>
-                <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">301 Moved Permanently</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O recurso de destino recebeu uma nova URL permanente, fornecida pelo campo de cabeçalho <span class="code-color"><em>Location</em></span> na resposta.</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">302 Found</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O recurso de destino reside temporariamente em uma URL diferente</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">401 Unauthorized</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">A solicitação não foi aplicada porque não possui credenciais de autenticação válidas para o recurso de destino.</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">403 Forbidden</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">A resposta <span class="code-color"><em>Forbidden</em>
-                </span> indica que, embora a solicitação seja válida, o servidor está configurado para não fornecê-la</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">404 Not Found</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O servidor de origem não encontrou uma representação atual do recurso de destino ou não está disposto a divulgar uma representação existente.</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">500 Internal Server Error</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O servidor encontrou uma condição inesperada que o impediu de atender à solicitação.</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">502 Bad Gateway</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O servidor, ao atuar como um gateway ou proxy, recebeu uma resposta inválida de um servidor
-                de entrada que ele acessou ao tentar atender a solicitação.</p>
-            </div>
-        </div>
-        <br>
+                <p class="Texto">A seguir estão alguns códigos de status HTTP, cada um indicando um tipo de resposta específica:</p>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>302 Found</strong></span>
+    <p>O recurso de destino reside temporariamente em uma URL diferente.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>401 Unauthorized</strong></span>
+    <p>A solicitação não foi aplicada porque não possui credenciais de autenticação válidas para o recurso de destino.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>403 Forbidden</strong></span>
+    <p>A resposta <em>Forbidden</em> indica que, embora a solicitação seja válida, o servidor está configurado para não fornecê-la.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>404 Not Found</strong></span>
+    <p>O servidor de origem não encontrou uma representação atual do recurso de destino ou não está disposto a divulgar uma representação existente.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>500 Internal Server Error</strong></span>
+    <p>O servidor encontrou uma condição inesperada que o impediu de atender à solicitação.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>502 Bad Gateway</strong></span>
+    <p>O servidor, ao atuar como um gateway ou proxy, recebeu uma resposta inválida de um servidor de entrada que ele acessou ao tentar atender a solicitação.</p>
+</div>
+
         <p class="Texto">Embora indiquem que não foi possível atender à solicitação, os códigos de status <span class="code-color"><em>4xx</em></span> e <span class="code-color"><em>5xx</em></span> pelo menos informam que o servidor HTTP está rodando e é capaz de receber solicitações. Os códigos <span class="code-color"><em>4xx</em></span> requerem que uma ação seja realizada no lado do cliente, pois sua URL ou credenciais estão incorretos. Por sua vez, os códigos <span class="code-color"><em>5xx</em></span> indicam algo errado no lado do servidor. Portanto, no contexto dos aplicativos web, essas duas classes de códigos de status indicam que a origem do erro está no próprio aplicativo, seja no cliente ou no servidor, e não na infraestrutura subjacente.</p>
         <br>
         <p class="Subtopico"><strong>Conteúdo estático e dinâmico</strong></p>
