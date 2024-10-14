@@ -67,7 +67,7 @@ app.listen(port, host, () => {
                 <br>
                 <p class="Texto">Não é necessário escrever código explícito para enviar um arquivo estático. O Express possui um middleware para esse fim, chamado <span class="code-color"><em>express.static</em></span>. Se o seu servidor precisa enviar arquivos estáticos para o cliente, basta carregar o middleware <span class="code-color"><em>express.static</em></span> no início do script:</p>
                 <br>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small" id="copycode" style="text-align: center;">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -252,7 +252,7 @@ $ <strong>curl http://myserver:8080/ -c cookies.txt -b cookies.txt -H "accept:ap
                 <p class="Texto">Como outros componentes do Express, o EJS precisa ser instalado no diretório em que o servidor
                 está sendo executado:</p>
                 <br>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small" id="copycode" style="text-align: center;">
                     <pre><code class="Texto">
 $ <strong>npm install ejs</strong>
                     </code></pre>
@@ -260,7 +260,7 @@ $ <strong>npm install ejs</strong>
                 <br>
                 <p class="Texto">Em seguida, o mecanismo EJS deve ser definido como o renderizador padrão no script do servidor (próximo ao início do arquivo index.js, antes das definições de rota):</p>
                 <br>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small" id="copycode" style="text-align: center;">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i> Copiar
                     </button>
