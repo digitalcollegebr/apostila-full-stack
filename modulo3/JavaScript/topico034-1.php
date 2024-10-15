@@ -88,7 +88,7 @@
                     </li>
                     <br>
                     <li>
-                    Dentro do elemento <head> do HTML. Esse posicionamento garante que o script seja executado
+                    Dentro do elemento <span class="code-color"><strong>&lt;head&gt;</strong></span> do HTML. Esse posicionamento garante que o script seja executado
                     antes de o corpo do HTML ser analisado. Se você quiser alterar o comportamento de
                     carregamento da página, ou tiver algo que precisa ser executado enquanto a página ainda não
                     está totalmente carregada, coloque o script aqui. Além disso, se houver vários scripts que
@@ -137,7 +137,7 @@
 <span class="code-color"><strong>&lt;html&gt;</strong></span>
     <span class="code-color"><strong>&lt;head&gt;</strong></span>
         <span class="code-color"><strong>&lt;script </strong><span class="blue-code">src=</span> =<span class="orange-code">"/button-interaction.js"</span>&gt;</span><span class="code-color"><strong>&lt;/script&gt;</strong></span>
-            console.log(<span class="orange-code">"test"</span> ); // <-- This is ignored
+            console.log(<span class="orange-code">"test"</span> ); <span class="comment">// <-- Isto é ignorado</span>
     <span class="code-color"><strong>&lt;/head&gt;</strong></span>
     <span class="code-color"><strong>&lt;body&gt;</strong></span>
     <span class="code-color"><strong>&lt;/body&gt;</strong></span>
@@ -160,15 +160,15 @@
                         </div>
                         <div class="CaixaConteudo ConteudoImportante">
                             <p class="Texto">
-                            Quando múltiplos scripts têm o atributo <span class="blue-code">async</span>, eles serão executados na
-                            ordem em que o download for concluído, e não na ordem das tags <span class="blue-code">script</span> do
+                            Quando múltiplos scripts têm o atributo async, eles serão executados na
+                            ordem em que o download for concluído, e não na ordem das tags script do
                             documento. O atributo defer, por outro lado, preserva a ordem das tags
-                            <span class="blue-code">script</span>.
+                            script.
                             </p>
                         </div>
                 </div>
                 <br>
-                <div class="Subtopico">Console do navegador</div>
+                <div class="Subtopico"><strong>Console do navegador</strong></div>
                 <div class="Texto">
                     Embora ele geralmente seja executado como parte de um site, existe outra maneira de executar o
                     JavaScript: usando o console do navegador. Todos os navegadores modernos para desktop incluem
@@ -206,9 +206,7 @@
                     diretamente no campo de entrada. O resultado de qualquer código executado será mostrado em uma
                     linha separada.
                 </p>
-                <p class="Subtopico">
-                    Declarações de JavaScript
-                </p>
+                <p class="Subtopico"><strong>Declarações de JavaScript</strong></p>
                 <p class="Texto">
                     Agora que sabemos como começar a executar um script, vamos tratar dos fundamentos dessa
                     execução. Um script JavaScript é uma coleção de declarações e blocos. Um exemplo de declaração é
@@ -219,7 +217,7 @@
                     Cada declaração em JavaScript é encerrada por um ponto e vírgula (;). Graças a isso, o navegador
                     sabe que a declaração foi concluída e uma nova pode ser iniciada. Veja o seguinte script:
                 </p>
-                <div class="typewriter-small" id="copycode">
+                <div class="typewriter-small" id="copycode" style="text-align: center;">
                     <button class="copy-btn" onclick="copyCode()">
                                     <i class="fas fa-copy"></i>
                                     Copiar
@@ -284,9 +282,7 @@ console.log(<span class='orange-code'>"world"</span>);
                     inserção automática de ponto e vírgula são complexas, recomendamos sempre encerrar
                     adequadamente suas declarações para evitar erros indesejados.
                 </p>
-                <p class="Subtopico">
-                    Comentários em JavaScript
-                </p>
+                <p class="Subtopico"><strong>Comentários em JavaScript</strong></p>
                 <p class="Texto">
                     Assim, é possível omitir o ponto e vírgula em certos casos. No entanto, como as regras para a
                     inserção automática de ponto e vírgula são complexas, recomendamos sempre encerrar
@@ -322,9 +318,7 @@ console.log(message); <span class="comment">//Then, we output the message to the
                     duas maneiras de escrever comentários em JavaScript:
                 </p>
 
-                <p class="Subtopico">
-                    Comentários multilinhas
-                </p>
+                <p class="Subtopico"><strong>Comentários multilinhas</strong></p>
                 <p class="Texto">
                 Use <span class="code-color"><strong>*/ </strong></span>  e <span class="code-color"><strong>*/ </strong></span> para indicar o início e o fim de um comentário multilinhas. Tudo o que vier após <span class="code-color"><strong>*/ </strong></span>,
                 até a primeira ocorrência de <span class="code-color"><strong>*/ </strong></span>, é ignorado. Esse tipo de comentário geralmente abrange mais de
@@ -344,9 +338,7 @@ console.log(<span class="comment">/* what we want to log: */</span> <span class=
                     Como o objetivo dos comentários geralmente é aumentar a legibilidade de um script, evite usar
                     esse estilo de comentário dentro de uma linha.
                 </p>
-                <p class="Subtopico">
-                    Comentário de uma linha
-                </p>
+                <p class="Subtopico"><strong>Comentário de uma linha</strong></p>
                 <p class="Texto">
                     Use <span class="code-color"><strong>//</strong></span> (duas barras) para comentar uma linha. Tudo o que vem após a barra dupla na mesma
                     linha é ignorado. No exemplo mostrado anteriormente, esse padrão é usado primeiro para
@@ -371,10 +363,8 @@ console.log(<span class="comment">/* what we want to log: */</span> <span class=
                                     Copiar
                     </button>
                 <pre><code class="Texto">
-<span class="comment">
-// We temporarily want to use a different message
-// var message = "test";
-</span>
+<span class="comment">// We temporarily want to use a different message
+// var message = "test";</span>
 <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"something else"</span>;
                 </code></pre>
                 </div>

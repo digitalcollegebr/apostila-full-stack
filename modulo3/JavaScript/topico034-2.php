@@ -31,7 +31,7 @@
                 </p>
                 <p class="Texto">
                     Cada uma das muitas linguagens de programação adota um paradigma para representar as
-                    informações. O JavaScript utiliza as convenções típicas das linguagens de alto nível, nas quais a
+                    informações. O <span class="code-color"><strong>JavaScript</strong></span> utiliza as convenções típicas das linguagens de alto nível, nas quais a
                     maioria dos detalhes, como a alocação de memória, está implícita, permitindo que o programador se
                     concentre na finalidade do script no contexto do aplicativo.
                 </p>
@@ -39,7 +39,7 @@
                 <p class="Subtopico"><strong>Linguagens de alto nível</strong></p>
                 <p class="Texto">
                     Linguagens de alto nível fornecem regras abstratas que permitem ao programador escrever menos
-                    código para expressar uma ideia. O JavaScript oferece maneiras convenientes para aproveitar a
+                    código para expressar uma ideia. O <span class="code-color"><strong>JavaScript</strong></span> oferece maneiras convenientes para aproveitar a
                     memória do computador, com conceitos de programação que simplificam a escrita de práticas
                     recorrentes e que geralmente bastam para as finalidades de um desenvolvedor web.
                 </p>
@@ -69,7 +69,7 @@
                             linguagem de programação. O JavaScript adota a convenção da maioria das linguagens de
                             programação, atribuindo valores a constantes ou variáveis com a sintaxe <span class="code-color"><strong>name = value</strong></span>. A constante
                             ou variável à esquerda assume o valor mostrado à direita. O nome da constante ou variável deve
-                            começar com uma letra ou sublinhado (underscore)
+                            começar com uma <strong>letra</strong> ou <strong>sublinhado</strong> (underscore).
                         </p>
                         <p class="Texto">
                             O tipo de dados armazenados na variável não precisa ser indicado, pois o JavaScript é uma
@@ -93,7 +93,7 @@
                         <p class="Texto">
                             Uma constante é um símbolo atribuído uma única vez, quando o programa é iniciado, mantendo-se
                             sempre igual. As constantes são úteis para especificar valores fixos, por exemplo a constante PI
-                            como 3,14159265 ou <span class="code-color"><strong>COMPANY_NAME</strong></span> como o nome de sua empresa.
+                            como 3,14159265 ou COMPANY_NAME como o nome de sua empresa.
                         </p>
                         <p class="Texto">
                             Assim, por exemplo, em um aplicativo web poderíamos ter um cliente que recebe informações
@@ -113,19 +113,19 @@
                             <pre><code class="Texto">
 <span class="green-code"><strong>const</strong></span> update_interval = <span class="blue-code">10</span>;
 <span class="green-code"><strong>function</strong></span> setup_app( ){
-    console.log( <span class="orange-code">"Update every"</span> + update_interval + <span class="orange-code">"minutes"</span>);
+    console.log( <span class="orange-code">"Atualize a cada"</span> + update_interval + <span class="orange-code">"minuto"</span>);
 }
                             </code></pre>
                         </div>
                         <p class="Texto">
-                            Quando invocada, a função setup_app() exibe a mensagem Update every 10 minutes no console. O
+                            Quando invocada, a função <span class="code-color"><em>setup_app()</em></span> exibe a mensagem <span class="code-color"><em>"Atualize a cada 10 minutos"</em></span> no console. O
                             termo const, colocado antes do nome update_interval, garante que seu valor permanecerá o mesmo
                             durante toda a execução do script. Se for feita uma tentativa de redefinir o valor de uma constante, é
                             emitido um erro <span class="code-color">TypeError: Assignment to constant variable</span>.
                         </p>
                         <p class="Subtopico"><strong>Variáveis</strong></p>
                         <p class="Texto">
-                            Sem o termo const, o JavaScript pressupõe automaticamente que update_interval é uma variável e
+                            Sem o termo <span class="code-color"><strong>const</strong></span>, o JavaScript pressupõe automaticamente que update_interval é uma variável e
                             que seu valor pode ser modificado. Isso equivale a declarar a variável explicitamente com var:
                         </p>
                         <div class="typewriter-small" id="copycode">
@@ -138,18 +138,18 @@
 update_iterval = <span class="blue-code">10</span>;
 
 <span class="green-code"><strong>function</strong></span> setup_app( ){
-    console.log( <span class="orange-code">"Update every"</span> + update_interval + <span class="orange-code">"minutes"</span> );
+    console.log( <span class="orange-code">"Atualize a cada"</span> + update_interval + <span class="orange-code">"minutos"</span> );
 }
                             </code></pre>
                         </div>
                         <p class="Texto">
                             Observe que, embora a variável <span class="code-color">update_interval</span> tenha sido definida fora da função, ela foi acessada
                             de dentro da função. Qualquer constante ou variável declarada fora de funções ou blocos de código
-                            definidos por chaves ( <span class="code-color">{}</span> ) tem escopo global; ou seja, pode ser acessada de qualquer parte do código. O
+                            definidos por chaves ( <span class="code-color">{}</span> ) tem <span class="code-color"><strong>escopo global</strong></span>; ou seja, pode ser acessada de qualquer parte do código. O
                             oposto não é verdadeiro: uma constante ou variável declarada dentro de uma função tem escopo local,
                             sendo acessível apenas de dentro da própria função. Os blocos de código delimitados por chaves,
-                            como aqueles colocados em estruturas de decisão <span class="code-color">if</span> ou loops <span class="code-color">for</span>, delimitam o escopo das
-                            constantes, mas não das variáveis declaradas como <span class="code-color">var</span>. O código a seguir, por exemplo, é válido:
+                            como aqueles colocados em estruturas de decisão <span class="code-color"><strong>if</strong></span> ou loops <span class="code-color"><strong>for</strong></span>, delimitam o escopo das
+                            constantes, mas não das variáveis declaradas como <span class="code-color"><strong>var</strong></span>. O código a seguir, por exemplo, é válido:
                         </p>
                         <div class="typewriter-small" id="copycode">
                             <button class="copy-btn" onclick="copyCode()">
@@ -160,12 +160,12 @@ update_iterval = <span class="blue-code">10</span>;
 <span class="green-code"><strong>var</strong></span> success = <span class="green-code"><strong>true</strong></span>;
 <span class="green-code"><strong>if</strong></span> (success == <span class="green-code">true</span> )
 {
-    <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"Trainsaction succeeded"</span>;
+    <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"Transação foi bem-sucedida"</span>;
     <span class="green-code"><strong>var</strong></span> retry = <span class="blue-code">0</span>;
 }
 else
 {
-    <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"Transaction failed"</span>;
+    <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"Transação falha"</span>;
     <span class="green-code"><strong>var</strong></span> retry = <span class="blue-code">1</span>;
 }
 
@@ -173,8 +173,8 @@ console.log(message);
                             </code></pre>
                         </div>
                         <p class="Texto">
-                            A declaração <span class="code-color"> console.log(message)</span> é capaz de acessar a variável <span class="code-color">message</span>, mesmo que ela tenha sido
-                            declarada dentro do bloco de código da estrutura <span class="code-color">if</span>. O mesmo não aconteceria se <span class="code-color">message</span> fosse uma
+                            A declaração <span class="code-color"><strong>console.log</strong></span><span class="code-color"> (message)</span> é capaz de acessar a variável <span class="code-color">message</span>, mesmo que ela tenha sido
+                            declarada dentro do bloco de código da estrutura <span class="code-color"><strong>if</strong></span>. O mesmo não aconteceria se <span class="code-color">message</span> fosse uma
                             constante, conforme exemplificado a seguir:
                         </p>
                         <div class="typewriter-small" id="copycode">
@@ -186,12 +186,12 @@ console.log(message);
 <span class="green-code"><strong>var</strong></span> success = <span class="green-code"><strong>true</strong></span>;
 <span class="green-code"><strong>if</strong></span> (success == <span class="green-code"><strong>true</strong></span> )
 {
-    <span class="green-code"><strong>const</strong></span> message = <span class="orange-code">"Trainsaction succeeded"</span>;
+    <span class="green-code"><strong>const</strong></span> message = <span class="orange-code">"Transação bem-sucedida"</span>;
     <span class="green-code"><strong>var</strong></span> retry = <span class="blue-code">0</span>;
 }
 else
 {
-    <span class="green-code"><strong>const</strong></span> message = <span class="orange-code">"Transaction failed"</span>;
+    <span class="green-code"><strong>const</strong></span> message = <span class="orange-code">"Transação falha"</span>;
     <span class="green-code"><strong>var</strong></span> retry = <span class="blue-code">1</span>;
 }
 
@@ -222,28 +222,29 @@ console.log(message);
                     tipos são definidos implicitamente, de modo que o operador typeof pode ser usado para identificar o
                     tipo de valor que é armazenado em uma variável:
                 </p>
+                <br>
                 <div class="typewriter-small" id="copycode">
                             <button class="copy-btn" onclick="copyCode()">
-                                            <i class="fas fa-copy"></i>
-                                            Copiar
+                                <i class="fas fa-copy"></i>
+                                Copiar
                             </button>
                             <pre><code class="Texto">
-console.log(<span class="orange-code"> "Undefined variables are of type"</span>, <span class="green-code"><strong>typeof</strong></span> variable);
+console.log(<span class="orange-code"> "Variáveis ​​indefinidas são do tipo"</span>, <span class="green-code"><strong>typeof</strong></span> variable);
 {
   <span class="green-code"><strong>let</strong></span>  variable = <span class="green-code"><strong>true</strong></span> ;
-  console.log("Value `true` is of type " + typeof variable);
+  console.log(<span class="orange-code">"Valor `true` é do tipo "</span> + <span class="green-code"><strong>typeof</strong></span> variable);
 }
 {
   let variable = <span class="blue-code"><strong>3.14159265</strong></span>;
-  console.log(<span class="orange-code"> "Value `3.14159265` is of type "</span> + <span class="green-code"><strong>typeof</strong></span> variable);
+  console.log(<span class="orange-code"> "Valor `3.14159265` é do tipo "</span> + <span class="green-code"><strong>typeof</strong></span> variable);
 }
 {
   let variable = <span class="orange-code"> "Text content"</span>;
-  console.log(<span class="orange-code">"Value `Text content` is of type "</span> + <span class="green-code"><strong>typeof</strong></span> variable);
+  console.log(<span class="orange-code">"Value `Texto` é do tipo "</span> + <span class="green-code"><strong>typeof</strong></span> variable);
 }
 {
   let variable = <span class="blue-code">Symbol()</span>;
-  console.log(<span class="orange-code"> "A symbol is of type "</span> + <span class="green-code"><strong>typeof</strong></span> variable);
+  console.log(<span class="orange-code"> "Um símbolo é do tipo"</span> + <span class="green-code"><strong>typeof</strong></span> variable);
 }
                             </code></pre>
                         </div>
@@ -262,7 +263,7 @@ A symbol is of type symbol
                             variável dada seja identificada como undefined. O tipo symbol é o primitivo menos intuitivo. Sua
                             finalidade é fornecer um nome de atributo único dentro de um objeto quando não existir a
                             necessidade de definir um nome de atributo específico. Um objeto é uma das estruturas de dados que
-                            veremos a seguir
+                            veremos a seguir.
                         </p>
                         <p class="Subtopico"><strong>Tipos estruturados</strong></p>
                         <p class="Texto">
@@ -274,16 +275,15 @@ A symbol is of type symbol
                         <p class="Texto">
                             Os tipos estruturados simplificam a tarefa de agrupar informações da mesma natureza em uma única
                             variável. Uma lista de itens em um carrinho de compras, por exemplo, pode ser armazenada em uma
-                            única variável do tipo <i>matriz</i> (array)
+                            única variável do tipo <i>matriz</i> (array).
                         </p>
-                        <div class="typewriter-small" id="copycode">
+                        <div class="typewriter-small" id="copycode" style="text-align: center;">
                             <button class="copy-btn" onclick="copyCode()">
                                             <i class="fas fa-copy"></i>
                                             Copiar
                             </button>
                             <pre><code class="Texto">
-<span class="green-code"><strong>let</strong></span> cart = [<span class="orange-code">'Milk'</span> , <span class="orange-code">'Bread'</span>, <span class="orange-code">'Eggs'</span>];
-
+<span class="green-code"><strong>let</strong></span> cart = [<span class="orange-code">'Leite'</span> , <span class="orange-code">'Pão'</span>, <span class="orange-code">'Ovos'</span>];
                             </code></pre>
                         </div>
                         <p class="Texto">
@@ -298,13 +298,14 @@ A symbol is of type symbol
                                             Copiar
                             </button>
                             <pre><code class="Texto">
-<span class="green-code"><strong>let</strong></span> cart = [<span class="orange-code">'Milk'</span> , <span class="orange-code">'Bread'</span>, <span class="orange-code">'Eggs'</span>];
+<span class="green-code"><strong>let</strong></span> cart = [<span class="orange-code">'Leite'</span> , <span class="orange-code">'Pão'</span>, <span class="orange-code">'Ovos'</span>];
 console.log(cart.length);
                             </code></pre>
                         </div>
                         <p class="Texto">
                         O número 3 será exibido na saída do console. Novos itens podem ser adicionados à matriz com o
-                        método <span class="code-color">push()</span>:
+                        método <span class="code-color"><strong>push()
+                        </strong></span>:
                         </p>
                         <div class="typewriter-small" id="copycode">
                             <button class="copy-btn" onclick="copyCode()">
@@ -333,12 +334,12 @@ console.log(cart[<span class="blue-code"><strong>3</strong></span>]);
                         <p class="Texto">A saída exibida no console será:</p>
                         <div class="console" id="copycode">
                             <pre><code>
-Milk
+Leite
 Candy
                             </code></pre>
                         </div>
                         <p class="Texto">
-                            Assim como se pode usar <span class="code-color">push()</span> para adicionar um elemento, usamos <span class="code-color">popr()</span> para remover o último
+                            Assim como se pode usar <span class="code-color"><strong>push()</strong></span> para adicionar um elemento, usamos <span class="code-color"><strong>popr()</strong></span> para remover o último
                             elemento de uma matriz.
                         </p>
                         <p class="Texto">
@@ -352,7 +353,7 @@ Candy
                                             Copiar
                             </button>
                             <pre><code class="Texto">
-<span class="green-code"><strong>let</strong></span> cart = [<span class="orange-code">'Milk'</span>, <span class="blue-code"><strong>1</strong></span>, <span class="orange-code">'Bread'</span>, <span class="blue-code"><strong>4</strong></span>, <span class="orange-code">'Eggs'</span>, <span class="blue-code"><strong>12</strong></span>, <span class="orange-code">'Candy'</span>, <span class="blue-code"><strong>2</strong></span>];
+<span class="green-code"><strong>let</strong></span> cart = [<span class="orange-code">'Leite'</span>, <span class="blue-code"><strong>1</strong></span>, <span class="orange-code">'Pão'</span>, <span class="blue-code"><strong>4</strong></span>, <span class="orange-code">'Ovos'</span>, <span class="blue-code"><strong>12</strong></span>, <span class="orange-code">'Candy'</span>, <span class="blue-code"><strong>2</strong></span>];
 <span class="comment">// Item indexes are even</span>
 <span class="green-code"><strong>let</strong></span> item = <span class="blue-code"><strong>2</strong></span>;
 <span class="comment">// Quantities indexes are odd</span> 
@@ -365,7 +366,7 @@ console.log(<span class="orange-code">"Quantity: "</span> + cart[quantity]);
                         <div class="console" id="copycode">
                             
                             <pre><code>
-Item: Bread
+Item: Pão
 Quantity: 4
                             </code></pre>
                         </div>
@@ -388,7 +389,7 @@ Quantity: 4
                                             Copiar
                             </button>
                             <pre><code class="Texto">
-<span class="green-code"><strong>let</strong></span> item = {<span class="blue-code">name</span> : <span class="orange-code">'Milk'</span>, <span class="blue-code">quantity</span>: <span class="blue-code"><strong>1</strong></span>};
+<span class="green-code"><strong>let</strong></span> item = {<span class="blue-code">name</span> : <span class="orange-code">'Leite'</span>, <span class="blue-code">quantity</span>: <span class="blue-code"><strong>1</strong></span>};
 console.log(<span class="orange-code">"Name :"</span> + item.name);
 console.log(<span class="orange-code">"Quantity :"</span> + item.quantity);
                             </code></pre>
@@ -402,7 +403,7 @@ console.log(<span class="orange-code">"Quantity :"</span> + item.quantity);
                         <div class="console" id="copycode">
                 
                             <pre><code>
-Item: Milk
+Item: Leite
 Quantity: 1
                             </code></pre>
                         </div>
@@ -416,7 +417,7 @@ Quantity: 1
                                             Copiar
                             </button>
                             <pre><code class="Texto">
-<span class="green-code"><strong>let</strong></span> cart = [{  <span class="blue-code">name:</span> <span class="orange-code">'Milk'</span>,  <span class="blue-code">quantity:</span> <span class="blue-code"><strong>1</strong></span>}, {  <span class="blue-code">name:</span> <span class="orange-code">'Bread'</span>, <span class="blue-code">quantity:</span> <span class="blue-code"><strong>4</strong></span> }];
+<span class="green-code"><strong>let</strong></span> cart = [{  <span class="blue-code">name:</span> <span class="orange-code">'Leite'</span>,  <span class="blue-code">quantity:</span> <span class="blue-code"><strong>1</strong></span>}, {  <span class="blue-code">name:</span> <span class="orange-code">'Pão'</span>, <span class="blue-code">quantity:</span> <span class="blue-code"><strong>4</strong></span> }];
                             </code></pre>
                         </div>
                         <p class="Texto">
@@ -429,7 +430,7 @@ Quantity: 1
                                             Copiar
                             </button>
                             <pre><code class="Texto">
-cart.push({  <span class="blue-code">name:</span> <span class="orange-code">'Eggs'</span>,  <span class="blue-code">quantity:</span> <span class="blue-code"><strong>12</strong></span> });
+cart.push({  <span class="blue-code">name:</span> <span class="orange-code">'Ovos'</span>,  <span class="blue-code">quantity:</span> <span class="blue-code"><strong>12</strong></span> });
                             </code></pre>
                         </div>
                         <p class="Texto">
@@ -448,8 +449,8 @@ console.log(cart[<span class="dark_blue_code">2</span>].name + <span class="oran
                         <p class="Texto">A saída exibida no console após a execução deste código é:</p>
                         <div class="console" id="copycode">
                             <pre><code>
-third item: eggs
-Eggs quantity: 12
+third item: Ovos
+Ovos quantity: 12
                             </code></pre>
                         </div>
                         <p class="Texto">
@@ -467,9 +468,9 @@ Eggs quantity: 12
                         </p>
                         <p class="Texto">
                             A maioria dos operadores é orientada para operações aritméticas. Para aumentar a quantidade de um
-                            item na lista de compras, por exemplo, basta usar o operador de adição <span class="code-color"><em>+</em></span>:
+                            item na lista de compras, por exemplo, basta usar o operador de adição <span class="code-color"><strong>+</em></strong>:
                         </p>
-                        <div class="typewriter-small" id="copycode">
+                        <div class="typewriter-small" id="copycode" style="text-align: center;">
                             <button class="copy-btn" onclick="copyCode()">
                                 <i class="fas fa-copy"></i> Copiar
                             </button>
@@ -487,7 +488,7 @@ item.quantity = item.quantity + <span class="dark_blue_code">1</span>;
                                 <i class="fas fa-copy"></i> Copiar
                             </button>
                             <pre><code class="Texto">
-<span class="green-code"><strong>let</strong></span>item = {<span class="blue-code">name</span> : <span class="orange-code">'Milk'</span>, <span class="blue-code">quantity</span> : <span class="dark_blue_code">1</span> };
+<span class="green-code"><strong>let</strong></span>item = {<span class="blue-code">name</span> : <span class="orange-code">'Leite'</span>, <span class="blue-code">quantity</span> : <span class="dark_blue_code">1</span> };
 console.log(<span class="orange-code">"Item: "</span> + item.name);
 console.log(<span class="orange-code">"Quantity: "</span> + item.quantity);
 item.quantity = item.quantity + <span class="blue-code">1</span>;
@@ -497,7 +498,7 @@ console.log(<span class="orange-code">"New quantity: "</span> + item.quantity);
                         <p class="Texto">A saída exibida no console após a execução deste código é:</p>
                         <div class="console" id="copycode">
                             <pre><code>         
-Item: Milk
+Item: Leite
 Quantity: 1
 New quantity: 2
                             </code></pre>
@@ -508,7 +509,7 @@ New quantity: 2
                             valor atual da variável de destino é bastante comum, e assim existem operadores abreviados que
                             permitem escrever a mesma operação em um formato reduzido:
                         </p>
-                        <div class="typewriter-small" id="copycode">
+                        <div class="typewriter-small" id="copycode" style="text-align: center;">
                             <button class="copy-btn" onclick="copyCode()">
                                 <i class="fas fa-copy"></i> Copiar
                             </button>
@@ -533,7 +534,7 @@ item.quantity += <span class="code-color">1</span>;
                             É possível combinar mais de um operador na mesma operação e armazenar o resultado em uma nova
                             variável. Por exemplo, a seguinte declaração calcula o preço total de um item mais o custo de envio:
                         </p>
-                        <div class="typewriter-small" id="copycode">
+                        <div class="typewriter-small" id="copycode" style="text-align: center;">
                             <button class="copy-btn" onclick="copyCode()">
                                 <i class="fas fa-copy"></i> Copiar
                             </button>
@@ -567,34 +568,35 @@ Esse é o caso quando queremos avaliar o resultado de uma expressão dentro de u
                             </code></pre>
                         </div>
                         <p class="Texto">
-                        O operador % (módulo) retorna o restante da divisão do primeiro operando pelo segundo operando.
+                        O operador <span class="code-color"><strong>%</strong></span> (módulo) retorna o restante da divisão do primeiro operando pelo segundo operando.
                         No exemplo, a instrução if verifica se o resto da divisão de item.quantity por 2 é igual a zero, ou
                         seja, se item.quantity é um múltiplo de 2.
                         </p>
                         <p class="Texto">
                         Quando um dos operandos do operador + é uma string, os outros operadores sofrem uma coerção em
                         strings e o resultado é uma concatenação de strings. Nos exemplos anteriores, esse tipo de operação
-                        foi usado para concatenar strings e variáveis no argumento da declaração console.log.
+                        foi usado para concatenar strings e variáveis no argumento da declaração <span class="code-color"><strong>console.log</strong></span>.
                         </p> 
                         <p class="Texto">
                         Essa conversão automática pode não ser o comportamento desejado. Um valor fornecido pelo
                         usuário em um campo de formulário, por exemplo, pode ser identificado como uma string, mas na
                         verdade é um valor numérico. Em casos como esse, a variável deve primeiro ser convertida em um
-                        número com a função Number():
+                        número com a função <span class="code-color"><em>Number()</em></span>:
                         </p>
-                        <div class="typewriter-small" id="copycode">
+                        <br>
+                        <div class="typewriter-small" id="copycode" style="text-align: center;">
                             <button class="copy-btn" onclick="copyCode()">
                                 <i class="fas fa-copy"></i> Copiar
                             </button>
                             <pre><code class="Texto">
 sum = <span class="blue-code">Number</span>(value1) + value2;
-
                             </code></pre>
                         </div>
+                        <br>
                         <p class="Texto">
                         Além disso, é importante verificar se o usuário forneceu um valor válido antes de prosseguir com a
                         operação. Em JavaScript, uma variável sem um valor atribuído contém o valor null. Isso permite que
-                        o programador use uma declaração de decisão como if (value1 == null) para verificar se uma
+                        o programador use uma declaração de decisão como <span class="code-color"><em>if (value1 == null)</em></span> para verificar se uma
                         variável teve um valor atribuído, independentemente do tipo de valor atribuído à variável.
                         </p>
 

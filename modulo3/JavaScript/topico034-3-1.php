@@ -41,22 +41,25 @@
                     parênteses após a palavra if (os espaços são ignorados) será interpretado como uma condição. No
                     exemplo a seguir, o número literal 1 é a condição:
                 </p>
-                <div class="typewriter-small" id="copycode">
+                <br>
+                <div class="typewriter-small" id="copycode" style="text-align: center;">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="green-code"><strong>if</strong></span> ( <span class="dark_blue_code"><strong>1</strong></span> ) console.log(<span class="orange-code">"1 is always true"</span>);
+<span class="green-code"><strong>if</strong></span> ( <span class="dark_blue_code"><strong>1</strong></span> ) console.log(<span class="orange-code">"1 é sempre true"</span>);
                     </code>
                 </pre>
                 </div>
+                <br>
                 <p class="Texto">
                     O número 1 foi explicitamente escrito nesta condição de exemplo, então ele é tratado como um valor
                     constante (permanece o mesmo durante a execução do script) e sempre resultará em verdadeiro
                     quando usado como uma expressão condicional. A palavra <span class="code-color">true</span> (sem as aspas duplas) também pode
                     ser usada no lugar de <span class="code-color">1</span>, pois também é tratada como um valor verdadeiro literal pela linguagem. A
                     instrução <span class="code-color">console.log</span> imprime seus argumentos na <em>janela do console</em> do navegador.
-                </p> 
+                </p>
+                <br>
                 <div class="destaques wow fadeIn" data-wow-delay="0.3s">
                     <div class="Caixa TituloCuriosidade">
                         <i class="fa-solid fa-head-side-virus"></i>
@@ -77,6 +80,7 @@
                     Embora sintaticamente correto, o uso de expressões constantes em condições não é muito útil. Em
                     uma aplicação real, é aconselhável testar a veracidade de uma variável:
                 </p> 
+                <br>
                 <div class="typewriter-small" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i> Copiar
@@ -84,15 +88,13 @@
                     <pre><code class="Texto">
 <span class="green-code"><strong>let</strong></span> my_number = <span class="blue-code"><strong>3</strong></span>;
 <span class="green-code"><strong>if</strong></span>( my_number )
-console.log(<span class="orange-code">"The value of my_number is"</span>, my_number, <span class="orange   -code">"and it yields true"</span>);
-
+console.log(<span class="orange-code">"O valor de my_number is"</span>, my_number, <span class="orange   -code">"e retorna verdadeiro"</span>);
                     </code>
                 </pre>
-                    
-                    
                 </div>
+                <br>
                 <p class="Texto">
-                        O valor atribuído à variável my_number (3) é diferente de zero e, portanto, resulta verdadeiro. Mas
+                        O valor atribuído à variável <span class="code-color"><em>my_number (3)</em></span> é diferente de zero e, portanto, resulta verdadeiro. Mas
                         este exemplo não é de uso comum, porque é raro ser preciso testar se um número é igual a zero. É
                         muito mais comum comparar um valor com outro e testar se o resultado é verdadeiro:
                     </p>
@@ -103,7 +105,7 @@ console.log(<span class="orange-code">"The value of my_number is"</span>, my_num
                         <pre><code class="Texto">
 <span class="green-code"><strong>let</strong></span> my_number = <span class="blue-code"><strong>3</strong></span>;
 <span class="green-code"><strong>if</strong></span>( my_number )
-console.log(<span class="orange-code">"The value of my_number is"</span>, my_number, <span class="orange-code">"indeed"</span>);
+console.log(<span class="orange-code">"O valor de my_number is"</span>, my_number, <span class="orange-code">"de fato"</span>);
 
                         </code></pre>
                     </div>
