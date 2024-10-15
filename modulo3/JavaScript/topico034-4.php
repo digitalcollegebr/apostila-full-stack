@@ -513,12 +513,61 @@ Third
                     </code></pre>
                 </div>
                 <p class="Texto">
-                    O método <span class="code-color">conteúdo</span>classList.toggle() adiciona a classe especificada ao elemento se ela não estiver presente
+                    O método <span class="code-color"><em>classList.toggle()</em></span> adiciona a classe especificada ao elemento se ela não estiver presente
                     e remove essa classe se ela já estiver presente. Se você executar o exemplo, notará que mais de um
-                    div pode ser destacado ao mesmo tempo. Para destacar apenas o div correspondente ao botão
-                    pressionado, é necessário remover a classe highlight dos outros elementos div. No entanto, se a
+                    <span class="code-color"><em>div</em></span> pode ser destacado ao mesmo tempo. Para destacar apenas o <span class="code-color"><em>div</em></span> correspondente ao botão
+                    pressionado, é necessário remover a classe <span class="code-color"><em>highlight</em></span> dos outros elementos <span class="code-color"><em>div</em></span>. No entanto, se a
                     ação personalizada for muito longa ou envolver mais de uma linha de código, é mais prático escrever
                     uma função separada da tag do elemento:
+                </p>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+<span class="green-code"><strong>function</strong></span> highlight(id)
+{
+  <span class="comment">// Remove the "highlight" class from all content elements</span>
+  <span class="green-code"><strong>for</strong></span> (element <span class="green-code"><strong>of</strong></span> <span class="blue-code">document</span>.querySelectorAll(<span class="orange-code">".content"</span>))
+  {
+    element.classList.remove(<span class="orange-code">'highlight'</span>);
+  }
+  <span class="comment">// Add the "highlight" class to the corresponding element</span>
+  <span class="blue-code">document</span>.getElementById(<span class="orange-code">id</span>).classList.add(<span class="orange-code">'highlight'</span>);
+}
+                    </code></pre>
+                </div>
+                <p class="Texto">
+                    Como nos exemplos anteriores, esta função pode ser posta dentro de uma tag <span class="code-color"><em>&lt;script&gt;</em></span> ou em um
+                    arquivo JavaScript externo associado ao documento. A função <span class="code-color"><em>highlight</em></span> remove primeiro a classe
+                    <span class="code-color"><em>highlight</em></span> de todos os elementos <span class="code-color"><em>div</em></span> associados à classe <span class="code-color"><em>content</em></span>, adicionando em seguida a classe
+                    <span class="code-color"><em>highlight</em></span> ao elemento escolhido. Cada botão deve então chamar esta função a partir de seu atributo
+                    <span class="code-color"><em>onClick</em></span>, usando o ID correspondente como argumento da função:
+                </p>
+                <div class="typewriter-small" id="copycode">
+                    <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <pre><code class="Texto">
+<span class="code-color">&lt;p&gt;</span>
+    <span class="code-color">&lt;button <span class="blue-code">onClick</span>=&quot;<span class="orange-code">highlight('content_first')</span>&quot;&gt;</span>
+        Primeiro
+    <span class="code-color">&lt;/button&gt;</span>
+    <span class="code-color">&lt;button <span class="blue-code">onClick</span>=&quot;<span class="orange-code">highlight('content_second')</span>&quot;&gt;</span>
+        Segundo
+    <span class="code-color">&lt;/button&gt;</span>
+    <span class="code-color">&lt;button <span class="blue-code">onClick</span>=&quot;<span class="orange-code">highlight('content_third')</span>&quot;&gt;</span>
+        Terceiro
+    <span class="code-color">&lt;/button&gt;</span>
+<span class="code-color">&lt;/p&gt;</span>
+                    </code></pre>
+                </div>
+                <p class="Texto">
+                    Além do atributo <span class="code-color"><em>onClick</em></span>, poderíamos usar o atributo <span class="code-color"><em>onMouseOver</em></span> (disparado quando o dispositivo
+                    apontador é usado para mover o cursor sobre o elemento), o atributo<span class="code-color"><em>onMouseOut</em></span> (disparado quando
+                    o dispositivo apontador não está mais sobre o elemento), etc. Além disso, os manipuladores de
+                    eventos não se restringem aos botões; portanto, podemos atribuir ações personalizadas a esses
+                    manipuladores de eventos para todos os elementos HTML visíveis.
                 </p>
 
             </div>

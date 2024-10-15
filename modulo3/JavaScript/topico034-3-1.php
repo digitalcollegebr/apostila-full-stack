@@ -620,6 +620,9 @@ else
             </div>
         </div>
     </div>
+    <a href="topico034-3-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+    
+</body>
     <?php
     include('../../layouts/footer.php')
 ?>

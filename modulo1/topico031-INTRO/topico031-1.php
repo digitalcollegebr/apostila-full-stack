@@ -215,7 +215,7 @@
             </div>
         </div>
     </div>
-    <a href="topico031-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
+    <a href="topico031-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     <?php
     // A_S - Footer
     include('../../layouts/footer.php');
