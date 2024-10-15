@@ -21,6 +21,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+                <p class="Subtopico" style="font-size: 13px;"><strong>Parte 01</strong></p>
                 <p class="Titulo">034.3 Estrututras de controle e funções do JavaScript</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">
