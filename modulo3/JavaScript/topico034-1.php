@@ -305,7 +305,7 @@ console.log(<span class='orange-code'>"world"</span>);
                                     Copiar
                     </button>
                 <pre><code class="Texto">
-<span class="C_inicializeted">
+<span class="comment">
 /*
  This script was written by the author of this lesson in May, 2020.
  It has exactly the same effect as the previous script, but includes comments.
@@ -313,7 +313,7 @@ console.log(<span class='orange-code'>"world"</span>);
 </span>
 <span class="green-code">var</span> message = <span class="orange-code">"test"</span>;
 
-console.log(message); <span class="C_inicializeted">//Then, we output the message to the console</span> 
+console.log(message); <span class="comment">//Then, we output the message to the console</span> 
                 </code></pre>
                 </div>
                 <p class="Texto">
@@ -337,7 +337,7 @@ console.log(message); <span class="C_inicializeted">//Then, we output the messag
                                     Copiar
                     </button>
                 <pre><code class="Texto">
-console.log(<span class="C_inicializeted">/* what we want to log: */</span> <span class="orange-code">"hello world"</span> ) 
+console.log(<span class="comment">/* what we want to log: */</span> <span class="orange-code">"hello world"</span> ) 
                 </code></pre>
                 </div>
                 <p class="Texto">
@@ -371,7 +371,7 @@ console.log(<span class="C_inicializeted">/* what we want to log: */</span> <spa
                                     Copiar
                     </button>
                 <pre><code class="Texto">
-<span class="C_inicializeted">
+<span class="comment">
 // We temporarily want to use a different message
 // var message = "test";
 </span>

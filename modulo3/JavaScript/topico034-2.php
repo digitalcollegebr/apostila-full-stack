@@ -353,9 +353,9 @@ Candy
                             </button>
                             <pre><code class="Texto">
 <span class="green-code"><strong>let</strong></span> cart = [<span class="orange-code">'Milk'</span>, <span class="blue-code"><strong>1</strong></span>, <span class="orange-code">'Bread'</span>, <span class="blue-code"><strong>4</strong></span>, <span class="orange-code">'Eggs'</span>, <span class="blue-code"><strong>12</strong></span>, <span class="orange-code">'Candy'</span>, <span class="blue-code"><strong>2</strong></span>];
-<span class="C_inicializeted">// Item indexes are even</span>
+<span class="comment">// Item indexes are even</span>
 <span class="green-code"><strong>let</strong></span> item = <span class="blue-code"><strong>2</strong></span>;
-<span class="C_inicializeted">// Quantities indexes are odd</span> 
+<span class="comment">// Quantities indexes are odd</span> 
 <span class="green-code"><strong>let</strong></span> quantity = <span class="blue-code"><strong>3</strong></span>;
 console.log(<span class="orange-code">"Item: "</span> + cart[item]);
 console.log(<span class="orange-code">"Quantity: "</span> + cart[quantity]);

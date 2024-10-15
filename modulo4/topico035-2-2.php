@@ -118,79 +118,79 @@ app.use(cookieParser())
 <span class="green-code"><strong>const</strong></span> { <span class="blue-code">v4</span>: uuidv4 } = require( <span class="orange-code">'uuid'</span>)
 app.use(express.urlencoded({ <span class="blue-code">extended</span>: <span class="green-code"><strong>true</strong></span>}))
 
-<span class="C_inicializeted">// Array para armazenar mensagens</span>
+<span class="comment">// Array para armazenar mensagens</span>
 <span class="green-code"><strong>let</strong></span> messages = []
 
 app.post(<span class="orange-code">'/'</span>, (req, res) => {
 
-    <span class="C_inicializeted">// Apenas solicitações habilitadas para JSON</span>
+    <span class="comment">// Apenas solicitações habilitadas para JSON</span>
     <span class="green-code"><strong>if</strong></span> (req.headers.accept != <span class="orange-code">"application/json"</span>) {
         res.sendStatus(<span class="dark_blue_code"><strong>404</strong></span>);
         <span class="green-code"><strong>return</strong></span>;
     }
 
-    <span class="C_inicializeted">// Localiza o cookie na solicitação</span>
+    <span class="comment">// Localiza o cookie na solicitação</span>
     <span class="green-code"><strong>let</strong></span> uuid = req.cookies.uuid;
 
-    <span class="C_inicializeted">// Se não houver cookie uuid, crie um novo</span>
+    <span class="comment">// Se não houver cookie uuid, crie um novo</span>
     <span class="green-code"><strong>if</strong></span> (uuid === <span class="green-code"><strong>undefined</strong></span>) {
         uuid = uuidv4();
     }
 
-    <span class="C_inicializeted">// Adicione a mensagem primeiro na matriz de mensagens</span>
+    <span class="comment">// Adicione a mensagem primeiro na matriz de mensagens</span>
     messages.unshift({ uuid: uuid, message: req.body.message });
 
-    <span class="C_inicializeted">// Colete todas as mensagens anteriores para uuid</span>
+    <span class="comment">// Colete todas as mensagens anteriores para uuid</span>
     <span class="green-code"><strong>let</strong></span> user_entries = [];
     messages.forEach((entry) => {
         <span class="green-code"><strong>if</strong></span> (entry.uuid == req.cookies.uuid)
             user_entries.push(entry.message);
     });
 
-    <span class="C_inicializeted">// Atualizar data de expiração do cookie</span>
+    <span class="comment">// Atualizar data de expiração do cookie</span>
     <span class="green-code"><strong>let</strong></span> expires = <span class="green-code"><strong>new</strong></span> <span class="dark_blue_code">Date</span>(<span class="dark_blue_code">Date</span>.now());
     expires.setDate(expires.getDate() + <span class="dark_blue_code">30</span>);
     res.cookie(<span class="orange-code">'uuid'</span>, uuid, { <span class="dark_blue_code">expires</span>: expires });
 
-    <span class="C_inicializeted">// Enviar de volta a resposta JSON</span>
+    <span class="comment">// Enviar de volta a resposta JSON</span>
     res.json(user_entries);
 });
 
 app.get(<span class="orange-code">'/'</span>, (req, res) => {
 
-    <span class="C_inicializeted">// Apenas solicitações habilitadas para JSON</span>
+    <span class="comment">// Apenas solicitações habilitadas para JSON</span>
     <span class="green-code"><strong>if</strong></span> (req.headers.accept != <span class="orange-code">"application/json"</span>) {
         res.sendStatus(<span class="dark_blue_code"><strong>404</strong></span>);
         <span class="green-code"><strong>return</strong></span>;
     }
 
-    <span class="C_inicializeted">// Localiza o cookie na solicitação</span>
+    <span class="comment">// Localiza o cookie na solicitação</span>
     <span class="green-code"><strong>let</strong></span> uuid = req.cookies.uuid;
 
-    <span class="C_inicializeted">// Mensagens do cliente</span>
+    <span class="comment">// Mensagens do cliente</span>
     <span class="green-code"><strong>let</strong></span> user_entries = [];
 
-    <span class="C_inicializeted">// Se não houver cookie uuid, crie um novo</span>
+    <span class="comment">// Se não houver cookie uuid, crie um novo</span>
     <span class="green-code"><strong>if</strong></span> (uuid === <span class="green-code"><strong>undefined</strong></span>) {
         uuid = uuidv4();
     } <span class="green-code"><strong>else</strong></span> {
-        <span class="C_inicializeted">// Coletar mensagens para uuid</span>
+        <span class="comment">// Coletar mensagens para uuid</span>
         messages.forEach((entry) => {
             <span class="green-code"><strong>if</strong></span> (entry.uuid == req.cookies.uuid)
                 user_entries.push(entry.message);
         });
     }
 
-    <span class="C_inicializeted">// Atualizar data de expiração do cookie</span>
+    <span class="comment">// Atualizar data de expiração do cookie</span>
     <span class="green-code"><strong>let</strong></span> expires = <span class="green-code"><strong>new</strong></span> <span class="dark_blue_code">Date</span>(<span class="dark_blue_code">Date</span>.now());
     expires.setDate(expires.getDate() + <span class="dark_blue_code">30</span>);
     res.cookie(<span class="orange-code">'uuid'</span>, uuid, { <span class="dark_blue_code">expires</span>: expires });
 
-    <span class="C_inicializeted">// Enviar de volta a resposta JSON</span>
+    <span class="comment">// Enviar de volta a resposta JSON</span>
     res.json(user_entries);
 });
 
-<span class="C_inicializeted">// Iniciar o servidor</span>
+<span class="comment">// Iniciar o servidor</span>
 app.listen(<span class="dark_blue_code">port</span>, <span class="dark_blue_code">host</span>, () => {
     console.log(<span class="orange-code">`Server ready at http://${host}:${port}`</span>);
 });
@@ -205,7 +205,7 @@ app.listen(<span class="dark_blue_code">port</span>, <span class="dark_blue_code
                 <br>
                 <div class="typewriter-small" id="copycode">
                     <pre><code class="Texto">
-<span class="C_inicializeted">// Envia de volta a resposta JSON</span>
+<span class="comment">// Envia de volta a resposta JSON</span>
 res.json(user_entries)
                     </code></pre>
                 </div>
@@ -219,7 +219,7 @@ res.json(user_entries)
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="C_inicializeted">// Somente solicitações habilitadas para JSON</span>
+<span class="comment">// Somente solicitações habilitadas para JSON</span>
 <span class="green-code">if</span> ( req.headers.accept != <span class="orange-code">"application/json"</span>)
 {
     res.sendStatus(<span class="dark_blue_code">404</span>)

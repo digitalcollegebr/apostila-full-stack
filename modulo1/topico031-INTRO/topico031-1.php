@@ -98,16 +98,16 @@
         <i class="fas fa-copy"></i>
         Copiar
     </button>
-                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;stdio.h&gt;</span>
-        <span class="C_inicializeted"><strong>float</strong></span> side;
-        <span class="C_inicializeted"><strong>float</strong></span> area;
-        <span class="C_inicializeted"><strong>float</strong></span> volume;
+                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="comment">&lt;stdio.h&gt;</span>
+        <span class="comment"><strong>float</strong></span> side;
+        <span class="comment"><strong>float</strong></span> area;
+        <span class="comment"><strong>float</strong></span> volume;
 
-        <span class="C_inicializeted"><strong>void</strong></span> <span class="dark_blue_code"><strong>square</strong></span>()&lbrace; area = side * side;  &rbrace;
+        <span class="comment"><strong>void</strong></span> <span class="dark_blue_code"><strong>square</strong></span>()&lbrace; area = side * side;  &rbrace;
 
-        <span class="C_inicializeted"><strong>void</strong></span> <span class="dark_blue_code"><strong>cube</strong></span>()&lbrace; volume = area * side;  &rbrace;
+        <span class="comment"><strong>void</strong></span> <span class="dark_blue_code"><strong>cube</strong></span>()&lbrace; volume = area * side;  &rbrace;
 
-        <span class="C_inicializeted"><strong>int</strong></span><span class="dark_blue_code"><strong> main</strong></span>() &lbrace;
+        <span class="comment"><strong>int</strong></span><span class="dark_blue_code"><strong> main</strong></span>() &lbrace;
                 side = <span class="blue-color"><strong>2</strong></span>;
                 square();
                 cube();
@@ -130,15 +130,15 @@
         <i class="fas fa-copy"></i>
         Copiar
     </button>
-                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;iostream&gt;</span>
+                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="comment">&lt;iostream&gt;</span>
         <span class="green-code"><strong>class</strong></span><span class="code-color"><strong> Cube</strong></span>&lbrace;
-        <span class="C_inicializeted"><strong>float</strong></span> side;
+        <span class="comment"><strong>float</strong></span> side;
         <span class="blue-code">public:</span>
-        Cube&lpar;<span class="C_inicializeted"><strong>float</strong></span> s&rpar; &lbrace; side * side; &rbrace;
+        Cube&lpar;<span class="comment"><strong>float</strong></span> s&rpar; &lbrace; side * side; &rbrace;
         &rbrace;;
 
-        <span class="C_inicializeted"><strong>int</strong></span> <span class="dark_blue_code"><strong>main</strong></span>()&lbrace;
-        <span class="C_inicializeted"><strong>float</strong></span> side  = <span class="dark_blue-code"><strong>2</strong></span>;
+        <span class="comment"><strong>int</strong></span> <span class="dark_blue_code"><strong>main</strong></span>()&lbrace;
+        <span class="comment"><strong>float</strong></span> side  = <span class="dark_blue-code"><strong>2</strong></span>;
         Cube cube(side);
         std::cout << <span class="orange-code">"Volume: "</span> cube.volume() << std::endl;
         <span class="green-code"><strong>return</strong></span><span class="dark_blue_code"><strong> 0</strong></span>;

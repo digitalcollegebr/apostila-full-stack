@@ -39,7 +39,7 @@
     <span class="code-color"><strong>&lt;title&gt;</strong></span>Working with HTML Forms<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
-  <span class=".C_inicializeted">&lt;!-- o conteúdo do corpo vai aqui --&gt;</span>
+  <span class=".comment">&lt;!-- o conteúdo do corpo vai aqui --&gt;</span>
   
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>
@@ -60,7 +60,7 @@
     <span class="code-color"><strong>&lt;title&gt;</strong></span>Working with HTML Forms<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
-  <span class=".C_inicializeted">&lt;!--  Form to collect personal information --&gt;</span>
+  <span class=".comment">&lt;!--  Form to collect personal information --&gt;</span>
 
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Personal Information<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
@@ -108,7 +108,7 @@
     <span class="code-color"><strong>&lt;title&gt;</strong></span>Working with HTML Forms<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
-  <span class=".C_inicializeted">&lt;!-- The body content goes here --&gt;</span>
+  <span class="comment">&lt;!-- The body content goes here --&gt;</span>
   
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>

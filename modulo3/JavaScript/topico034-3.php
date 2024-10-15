@@ -208,7 +208,7 @@ else
   {
   console.log(<span class="orange-code">"and it is an odd number"</span>);
   }
-} <span class="C_inicializeted"> // end of if ( my_number > 0 )</span>
+} <span class="comment"> // end of if ( my_number > 0 )</span>
 else
 {
   console.log(<span class="orange-code">"The value of my_number is less than or equal to 0"</span>);
@@ -442,31 +442,31 @@ else
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="C_inicializeted">// A naive prime number tester</span>
-<span class="C_inicializeted">// The number we want to evaluate</span>
+<span class="comment">// A naive prime number tester</span>
+<span class="comment">// The number we want to evaluate</span>
 <span class="green-code"><strong>let</strong></span> candidate = <span class="dark_blue_code"><strong>231</strong></span>;
-<span class="C_inicializeted">// Auxiliary variable</span>
+<span class="comment">// Auxiliary variable</span>
 <span class="green-code"><strong>let</strong></span> is_prime = <span class="green-code"><strong>true</strong></span>;
-<span class="C_inicializeted">// The first factor to try</span>
+<span class="comment">// The first factor to try</span>
 <span class="green-code"><strong>let</strong></span> factor = <span class="dark_blue_code"><strong>2</strong></span>;
-<span class="C_inicializeted">// Execute the block statement if factor is</span>
-<span class="C_inicializeted">// less than candidate and keep doing it</span>
-<span class="C_inicializeted">// while factor is less than candidate</span>
+<span class="comment">// Execute the block statement if factor is</span>
+<span class="comment">// less than candidate and keep doing it</span>
+<span class="comment">// while factor is less than candidate</span>
 <span class="green-code"><strong>while</strong></span> ( factor < candidate )
 {
   <span class="green-code"><strong>if</strong></span> ( candidate % factor == <span class="dark_blue_code"><strong>0</strong></span> )
   {
-    <span class="C_inicializeted">// The remainder is zero, so the candidate is not prime</strong></span>
+    <span class="comment">// The remainder is zero, so the candidate is not prime</strong></span>
     is_prime = <span class="green-code"><strong>false</strong></span>;
     <span class="green-code"><strong>break</strong></span>;
   }
-  <span class="C_inicializeted">// The next factor to try. Simply></span>
-  <span class="C_inicializeted">// increment the current factor by one</span>
+  <span class="comment">// The next factor to try. Simply></span>
+  <span class="comment">// increment the current factor by one</span>
   factor++;
 }
-<span class="C_inicializeted">// Display the result in the console window.</span>
-<span class="C_inicializeted">// If candidate has no integer factor, then</span>
-<span class="C_inicializeted">// the auxiliary variable is_prime still true</span>
+<span class="comment">// Display the result in the console window.</span>
+<span class="comment">// If candidate has no integer factor, then</span>
+<span class="comment">// the auxiliary variable is_prime still true</span>
 <span class="green-code"><strong>if</strong></span> ( is_prime )
 {
   console.log(candidate, <span class="orange-code">"is prime"</span>);
@@ -504,7 +504,7 @@ else
                     <pre><code class="Texto">
 <span class="green-code"><strong>while</strong></span> ( factor &lt; candidate )
 {
-  <span class="C_inicializeted">// Skip even factors bigger than two</span>
+  <span class="comment">// Skip even factors bigger than two</span>
   <span class="green-code"><strong>if</strong></span> ( factor &gt; <span class="dark_blue_code"><strong>2</strong></span> && factor % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
   {
     factor++;
@@ -512,11 +512,11 @@ else
   }
   <span class="green-code"><strong>if</strong></span> ( candidate % factor == <span class="dark_blue_code"><strong>0</strong></span> )
   {
-    <span class="C_inicializeted">// The remainder is zero, so the candidate is not prime</span>
+    <span class="comment">// The remainder is zero, so the candidate is not prime</span>
     is_prime = <span class="green-code"><strong>false</strong></span>;
     <span class="green-code"><strong>break</strong></span>;
   }
-  <span class="C_inicializeted">// The next number that will divide the candidate</span>
+  <span class="comment">// The next number that will divide the candidate</span>
   factor++;
 }
                     </code></pre>
@@ -541,14 +541,14 @@ else
                     <pre><code class="Texto">
 <span class="green-code"><strong>for</strong></span> ( <span class="green-code"><strong>let</strong></span> factor = <span class="dark_blue_code"><strong>2</strong></span>; factor &lt; candidate; factor++ )
 {
-  <span class="C_inicializeted">// Skip even factors bigger than two</span>
+  <span class="comment">// Skip even factors bigger than two</span>
   <span class="green-code"><strong>if</strong></span> ( factor &gt; <span class="dark_blue_code"><strong>2</strong></span> && factor % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
   {
     <span class="green-code"><strong>continue</strong></span>;
   }
   <span class="green-code"><strong>if</strong></span> ( candidate % factor == <span class="dark_blue_code"><strong>0</strong></span> )
   {
-    <span class="C_inicializeted">// The remainder is zero, so the candidate is not prime</span>
+    <span class="comment">// The remainder is zero, so the candidate is not prime</span>
     is_prime = <span class="green-code"><strong>false</strong></span>;
     <span class="green-code"><strong>break</strong></span>;
   }
@@ -573,29 +573,29 @@ else
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="C_inicializeted">// A naive prime number tester</span>
-<span class="C_inicializeted">// The array of numbers we want to evaluate</span>
+<span class="comment">// A naive prime number tester</span>
+<span class="comment">// The array of numbers we want to evaluate</span>
 <span class="green-code"><strong>let</strong></span> candidates = [<span class="dark_blue_code"><strong>111</strong></span>, <span class="dark_blue_code"><strong>139</strong></span>, <span class="dark_blue_code"><strong>293</strong></span>, <span class="dark_blue_code"><strong>327</strong></span>];
-<span class="C_inicializeted">// Evaluates every candidate in the array</span>
+<span class="comment">// Evaluates every candidate in the array</span>
 <span class="green-code"><strong>for</strong></span> ( candidate <span class="green-code"><strong>of</strong></span> candidates )
 {
-  <span class="C_inicializeted">// Auxiliary variable</span>
+  <span class="comment">// Auxiliary variable</span>
   <span class="green-code"><strong>let</strong></span> is_prime = <span class="green-code"><strong>true</strong></span>;
   <span class="green-code"><strong>for</strong></span> ( <span class="green-code"><strong>let</strong></span> factor = <span class="dark_blue_code"><strong>2</strong></span>; factor &lt; candidate; factor++ )
   {
-    <span class="C_inicializeted">// Skip even factors bigger than two</span>
+    <span class="comment">// Skip even factors bigger than two</span>
     <span class="green-code"><strong>if</strong></span> ( factor &gt; <span class="dark_blue_code"><strong>2</strong></span> && factor % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
     {
       <span class="green-code"><strong>continue</strong></span>;
     }
     <span class="green-code"><strong>if</strong></span> ( candidate % factor == <span class="dark_blue_code"><strong>0</strong></span> )
     {
-      <span class="C_inicializeted">// The remainder is zero, so the candidate is not prime</span>
+      <span class="comment">// The remainder is zero, so the candidate is not prime</span>
       is_prime = <span class="green-code"><strong>false</strong></span>;
       <span class="green-code"><strong>break</strong></span>;
     }
   }
-  <span class="C_inicializeted">// Display the result in the console window</span>
+  <span class="comment">// Display the result in the console window</span>
   <span class="green-code"><strong>if</strong></span> ( is_prime )
   {
     console.log(candidate, <span class="orange-code">"is prime"</span>);
