@@ -247,7 +247,7 @@ Set-Cookie: client_id=62b5b719-fcb
         </div>
     </div>
     <br>
-    <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Atividade!</span></a>
+    <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     
     
 

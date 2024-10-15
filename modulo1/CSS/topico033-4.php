@@ -546,7 +546,7 @@
             </div>
         </div>
     </div>
-    <a href="../../modulo3/JavaScript/topico034-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
+    <a href="../../modulo3/JavaScript/topico034-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
 
     <?php include('../../layouts/footer.php') ?>
 </body>

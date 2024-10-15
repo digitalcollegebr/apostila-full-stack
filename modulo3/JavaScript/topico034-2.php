@@ -600,7 +600,9 @@ sum = <span class="blue-code">Number</span>(value1) + value2;
 
             </div>
         </div>
-    </div>    
+    </div> 
+    <a href="topico034-3-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+       
 </body>
 <?php
     include('../../layouts/footer.php')

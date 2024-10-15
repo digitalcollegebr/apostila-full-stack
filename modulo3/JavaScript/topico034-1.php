@@ -380,6 +380,8 @@ console.log(<span class="comment">/* what we want to log: */</span> <span class=
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+    <a href="topico034-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+    
 </body>
 <?php include('../../layouts/footer.php') ?>
