@@ -208,8 +208,8 @@ element.innerHTML = <span class="orange-code">"&lt;p&gt;New content&lt;/p&gt;"</
                     </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;div</strong></span> class=<span class="orange-code">"content"</span> id=<span class="orange-code">"content_first"</span><span class="code-color"><strong>&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>Don't change this paragraph.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
-    <span class="code-color"><strong>&lt;p&gt;</strong></span>The dynamic content goes here.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>Não altere este parágrafo.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span>O conteúdo dinâmico vai aqui.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
 <span class="code-color"><strong>&lt;/div&gt;</strong></span><span class="comment"><-- #content_first --></span>
                     </code></pre>
                 </div>
@@ -245,17 +245,17 @@ element.innerHTML = <span class="orange-code">"&lt;p&gt;New content&lt;/p&gt;"</
 <strong><span class="code-color">&lt;html&gt;</span></strong>
 <strong><span class="code-color">&lt;head&gt;</span></strong>
     <strong><span class="code-color">&lt;meta</span></strong> <span class="blue-code">charset</span>=<span class="orange-code">"utf-8"</span> <strong><span class="code-color">&gt;</span></strong>
-    <strong><span class="code-color">&lt;title&gt;</span></strong>HTML Manipulation with JavaScript<strong><span class="code-color">&lt;/title&gt;</span></strong>
+    <strong><span class="code-color">&lt;title&gt;</span></strong>Manipulação de HTML com JavaScript<strong><span class="code-color">&lt;/title&gt;</span></strong>
 <strong><span class="code-color">&lt;/head&gt;</span></strong>
 <strong><span class="code-color">&lt;body&gt;</span></strong>
 <strong><span class="code-color">&lt;div</span></strong> <span class="blue-code">class</span>=<span class="orange-code">"content"</span> <span class="blue-code">id</span>=<span class="orange-code">"content_first"</span> <strong><span class="code-color">hidden</span></strong><strong><span class="code-color">&gt;</span></strong>
-    <strong><span class="code-color">&lt;p&gt;</span></strong>First section.<strong><span class="code-color">&lt;/p&gt;</span></strong>
+    <strong><span class="code-color">&lt;p&gt;</span></strong>Primeira seção.<strong><span class="code-color">&lt;/p&gt;</span></strong>
 <strong><span class="code-color">&lt;/div&gt;</span></strong><!-- #content_first -->
 <strong><span class="code-color">&lt;div</span></strong> <span class="blue-code">class</span>=<span class="orange-code">"content"</span> <span class="blue-code">id</span>=<span class="orange-code">"content_second"</span> <strong><span class="code-color">hidden</span></strong><strong><span class="code-color">&gt;</span></strong>
-    <strong><span class="code-color">&lt;p&gt;</span></strong>Second section.<strong><span class="code-color">&lt;/p&gt;</span></strong>
+    <strong><span class="code-color">&lt;p&gt;</span></strong>Segunda seção.<strong><span class="code-color">&lt;/p&gt;</span></strong>
 <strong><span class="code-color">&lt;/div&gt;</span></strong><!-- #content_second -->
 <strong><span class="code-color">&lt;div</span></strong> <span class="blue-code">class</span>=<span class="orange-code">"content"</span> <span class="blue-code">id</span>=<span class="orange-code">"content_third"</span> <strong><span class="code-color">hidden</span></strong><strong><span class="code-color">&gt;</span></strong>
-    <strong><span class="code-color">&lt;p&gt;</span></strong>Third section.<strong><span class="code-color">&lt;/p&gt;</span></strong>
+    <strong><span class="code-color">&lt;p&gt;</span></strong>Terceira seção.<strong><span class="code-color">&lt;/p&gt;</span></strong>
 <strong><span class="code-color">&lt;/div&gt;</span></strong><!-- #content_third -->
 <strong><span class="code-color">&lt;/body&gt;</span></strong>
 <strong><span class="code-color">&lt;/html&gt;</span></strong>
@@ -271,7 +271,7 @@ element.innerHTML = <span class="orange-code">"&lt;p&gt;New content&lt;/p&gt;"</
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="comment">// Which content to show</span>
+<span class="comment">// Qual conteúdo mostrar</span>
 let content_visible;
 <span class="green-code"><strong>switch</strong></span>( <span class="blue-code">Math.floor</span>(<span class="blue-code">Math.random</span>() * <span class="orange-code">3</span>) )
 {
@@ -306,7 +306,7 @@ let content_visible;
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="comment">// Which content to show</span>
+<span class="comment">// Qual conteúdo mostrar</span>
 let content_visible;
 <span class="green-code"><strong>switch</strong></span>( <span class="blue-code">Math.floor</span>(<span class="blue-code">Math.random</span>() * <span class="orange-code">3</span>) )
 {
@@ -320,10 +320,10 @@ let content_visible;
   content_visible = <span class="orange-code">"#content_third";</span>
   <span class="green-code"><strong>break;</strong></span>
 }
-<span class="comment">// Hide all content divs, except content_visible</span>
+<span class="comment">// Oculte todas as divs de conteúdo, exceto content_visible</span>
 for (element <span class="green-code"><strong>of</strong></span> <span class="blue-code">document</span>.querySelectorAll(<span class="orange-code">".content:not("+content_visible+")"</span>))
 {
-  <span class="comment">// Hidden is a boolean attribute, so any value will enable it</span>
+  <span class="comment">// Hidden é um atributo booleano, então qualquer valor o ativará.</span>
   element.<span class="green-code">setAttribute</span>(<span class="orange-code">"hidden"</span>, <span class="orange-code">""</span>);
 }
 
@@ -362,7 +362,7 @@ for (element <span class="green-code"><strong>of</strong></span> <span class="bl
 <span class="code-color"><strong>&lt;/div&gt;</strong></span><span class="green-code"><strong><!-- #content_third --></strong></span>
 
 <span class="code-color"><strong>&lt;script&gt;</strong></span>
-<span class="green-code"><strong>// Which content to show</strong></span>
+<span class="comment">// Qual conteúdo mostrar</span>
 let content_visible;
 <span class="green-code"><strong>switch</strong></span>( <span class="blue-code">Math.floor</span>(<span class="blue-code">Math.random</span>() * <span class="orange-code">3</span>) )
 {
@@ -373,7 +373,7 @@ let content_visible;
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">1:</span>
   content_visible = <span class="orange-code">"#content_second";</span>
   <span class="green-code"><strong>break;</strong></span>
-  
+  hide
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">2:</span>
   content_visible = <span class="orange-code">"#content_third";</span>
   <span class="green-code"><strong>break;</strong></span>
@@ -428,9 +428,9 @@ document.querySelector(content_visible).<span class="green-code">style.display</
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="comment">// Which content to highlight</span>
+<span class="comment">// Qual conteúdo destacarWhich content to highlight</span>
 <span class="green-code"><strong>let</strong></span> content_highlight;
-<span class="comment">// Select a random content ID</span>
+<span class="comment">// Selecione um ID de conteúdo aleatório.</span>
 <span class="green-code"><strong>switch</strong></span> ( <span class="blue-code">Math.floor</span>(<span class="blue-code">Math.random</span>() * 3) )
 {
   <span class="green-code"><strong>case</strong></span> <span class="dark_blue_code"><strong>0</strong></span>:
@@ -443,7 +443,7 @@ document.querySelector(content_visible).<span class="green-code">style.display</
   content_highlight = <span class="orange-code">"#content_third";</span>
   <span class="green-code"><strong>break;</strong></span>
 }
-<span class="comment">// Highlight the selected div</span>
+<span class="comment">// Destaque a div selecionada.</span>
 <span class="blue-code">document</span>.querySelector(content_highlight).<span class="green-code">classList.add</span>(<span class="orange-code">"highlight";</span>)
                     </code></pre>
                 </div>
@@ -527,12 +527,12 @@ Third
                     <pre><code class="Texto">
 <span class="green-code"><strong>function</strong></span> highlight(id)
 {
-  <span class="comment">// Remove the "highlight" class from all content elements</span>
+  <span class="comment">// Remova a classe "highlight" de todos os elementos de conteúdo.</span>
   <span class="green-code"><strong>for</strong></span> (element <span class="green-code"><strong>of</strong></span> <span class="blue-code">document</span>.querySelectorAll(<span class="orange-code">".content"</span>))
   {
     element.classList.remove(<span class="orange-code">'highlight'</span>);
   }
-  <span class="comment">// Add the "highlight" class to the corresponding element</span>
+  <span class="comment">// Adicione a classe "highlight" ao elemento correspondente.</span>
   <span class="blue-code">document</span>.getElementById(<span class="orange-code">id</span>).classList.add(<span class="orange-code">'highlight'</span>);
 }
                     </code></pre>

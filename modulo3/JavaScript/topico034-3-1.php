@@ -117,23 +117,23 @@ console.log(<span class="orange-code">"O valor de my_number is"</span>, my_numbe
                     </p>
                 <div class="typewriter-small" style="width: 70%;">
                     <strong>value1 != value2</strong>
-                    <p class="Texto">True if value1 is not equal to value2.</p>
+                    <p class="Texto">Verdadeiro se o valor1 não for igual ao valor2.</p>
                 </div>
                 <div class="typewriter-small" style="width: 70%;">
                     <strong>value1 < value2</strong>
-                    <p class="Texto">True if value1 is less than value2.</p>
+                    <p class="Texto">Verdadeiro se o valor1 for menor que o valor2.</p>
                 </div>
                 <div class="typewriter-small" style="width: 70%;">
                     <strong>value1 > value2</strong>
-                    <p class="Texto">True if value1 is greater than value2.</p>
+                    <p class="Texto">Verdadeiro se o valor1 for maior que o valor2.</p>
                 </div>
                 <div class="typewriter-small" style="width: 70%;">
                 <p class="Subtopico"><strong>value1 <= value2</strong></p>
-                    <p class="Texto">True if value1 is less than or equal to value2.</p>
+                    <p class="Texto">Verdadeiro se o valor1 for menor ou igual ao valor2.</p>
                 </div>
                 <div class="typewriter-small" style="width: 70%;">
                     <p class="Subtopico"><strong>value1 >= value2</strong></p>
-                    <p class="Texto">True if value1 is grater than or equal to value2.</p>
+                    <p class="Texto">Verdadeiro se o valor1 for maior ou igual ao valor2.</p>
                 </div>
                 <p class="Texto">
                     Normalmente, não importa se o operando à esquerda do operador é uma string e o operando à
@@ -155,8 +155,8 @@ console.log(<span class="orange-code">"O valor de my_number is"</span>, my_numbe
                     </button>
                     <pre><code class="Texto">
 <span class="green-code">let</span> my_number = <span class="blue-code">4</span>;
-<span class="green-code">if</span> ( my_number == <span class="dark_blue_code">3</span> ) console.log(<span class="orange-code">"The value of my_number is 3"</span>);
-<span class="green-code">else</span> console.log(<span class="orange-code">"The value of my_number is not 3"</span>);
+<span class="green-code">if</span> ( my_number == <span class="dark_blue_code">3</span> ) console.log(<span class="orange-code">"o valor de my_number é três"</span>);
+<span class="green-code">else</span> console.log(<span class="orange-code">"o valor de my_number não é três"</span>);
                     </code></pre>
                 </div>
                 <p class="Texto">
@@ -180,7 +180,6 @@ else
   console.log(<span class="orange-code">"The value of my_number is not 3"</span>);
   console.log(<span class="orange-code">"and this is the second statement in the block"</span>);
 }
-
                     </code></pre>
                 </div>
                 <p class="Texto">
@@ -202,20 +201,20 @@ else
 <span class="green-code"><strong>let</strong></span> my_number = <span class="dark_blue_code"><strong>4</strong></span>;
 <span class="green-code"><strong>if</strong></span> ( my_number > <span class="dark_blue_code"><strong>0</strong></span>)
 {
-  console.log(<span class="orange-code">"The value of my_number is positive"</span>);
+  console.log(<span class="orange-code">"O valor de my_number é positivo"</span>);
   <span class="green-code">if</span> ( my_number % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
   {
-  console.log(<span class="orange-code">"and it is an even number"</span>);
+  console.log(<span class="orange-code">"e é um número par"</span>);
   }
   else
   {
-  console.log(<span class="orange-code">"and it is an odd number"</span>);
+  console.log(<span class="orange-code">"e é um número ímpar"</span>);
   }
 } <span class="comment"> // end of if ( my_number > 0 )</span>
 else
 {
-  console.log(<span class="orange-code">"The value of my_number is less than or equal to 0"</span>);
-  console.log(<span class="orange-code">"and I decided to ignore it"</span>);
+  console.log(<span class="orange-code">"O valor de my_number é menor ou igual a 0"</span>);
+  console.log(<span class="orange-code">"E eu decidi ignorá-lo"</span>);
 }
                     </code></pre>
                 </div>
@@ -240,13 +239,13 @@ else
 <span class="green-code"><strong>let</strong></span> my_number = <span class="dark_blue_code"><strong>4</strong></span>;
 <span class="green-code"><strong>if</strong></span> ( my_number > <span class="dark_blue_code"><strong>0</strong></span> && my_number % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
 {
-  console.log(<span class="orange-code">"The value of my_number is positive"</span>);
-  console.log(<span class="orange-code">"and it is an even number"</span>);
+  console.log(<span class="orange-code">"O valor de my_number é positivo"</span>);
+  console.log(<span class="orange-code">"e é um número par"</span>);
 }
 <span class="green-code"><strong>else</strong></span> 
 {
-  console.log(<span class="orange-code">"The value of my_number either 0, negative"</span>);
-  console.log(<span class="orange-code">"or it is a negative number"</span>);
+  console.log(<span class="orange-code">"O valor de my_number é 0 ou negativo"</span>);
+  console.log(<span class="orange-code">"ou é um número negativo"</span>);
 }
 
                     </code></pre>
@@ -265,8 +264,8 @@ else
 <span class="green-code"><strong>let</strong></span> my_number = <span class="dark_blue_code"><strong>-4</strong></span>;
 <span class="green-code"><strong>if</strong></span> ( my_number > <span class="dark_blue_code"><strong>0</strong></span> || my_number % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
 {
-  console.log(<span class="orange-code">"The value of my_number is positive"</span>);
-  console.log(<span class="orange-code">"or it is a even negative number"</span>);
+  console.log(<span class="orange-code">"O valor de my_number é positivo"</span>);
+  console.log(<span class="orange-code">"ou é um número negativo par"</span>);
 }
                     </code></pre>
                 </div>
@@ -284,7 +283,7 @@ else
 <span class="green-code"><strong>let</strong></span> my_number = <span class="dark_blue_code"><strong>-5</strong></span>;
 <span class="green-code"><strong>if</strong></span> ( ! ( my_number > <span class="dark_blue_code"><strong>0</strong></span> || my_number % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> ) )
 {
-  console.log(<span class="orange-code">"The value of my_number is an odd negative number"</span>);
+  console.log(<span class="orange-code">"O valor de my_number é um número negativo ímpar."</span>);
 }
                     </code></pre>
                 </div>
@@ -312,21 +311,21 @@ else
 <span class="green-code"><strong>if</strong></span> ( language == <span class="orange-code">"en"</span> )
 {
   found = <span class="dark_blue_code"><strong>1</strong></span>;
-  console.log(<span class="orange-code">"English"</span>);
+  console.log(<span class="orange-code">"Inglês"</span>);
 }
 <span class="green-code"><strong>if</strong></span> ( found == <span class="dark_blue_code"><strong>0</strong></span> && language == <span class="orange-code">"es"</span> )
 {
   found = <span class="dark_blue_code"><strong>1</strong></span>;
-  console.log(<span class="orange-code">"Spanish"</span>);
+  console.log(<span class="orange-code">"Espahol"</span>);
 }
 <span class="green-code"><strong>if</strong></span> ( found == <span class="dark_blue_code"><strong>0</strong></span> && language == <span class="orange-code">"pt"</span> )
 {
   found = <span class="dark_blue_code"><strong>1</strong></span>;
-  console.log(<span class="orange-code">"Portuguese"</span>);
+  console.log(<span class="orange-code">"Português"</span>);
 }
 <span class="green-code"><strong>if</strong></span> ( found == <span class="dark_blue_code"><strong>0</strong></span> )
 {
-  console.log(language, <span class="orange-code">" is unknown to me"</span>);
+  console.log(language, <span class="orange-code">" é desconhecida para mim"</span>);
 }
                     </code></pre>
                 </div>
@@ -343,16 +342,16 @@ else
 <span class="green-code"><strong>switch</strong></span> ( language )
 {
     <span class="green-code"><strong>case</strong></span> <span class="orange-code">"en"</span>:
-    console.log(<span class="orange-code">"English"</span>);
+    console.log(<span class="orange-code">"Inglês"</span>);
     <span class="green-code"><strong>break</strong></span>;
     <span class="green-code"><strong>case</strong></span> <span class="orange-code">"es"</span>:
-    console.log(<span class="orange-code">"Spanish"</span>);
+    console.log(<span class="orange-code">"Espahol"</span>);
     <span class="green-code"><strong>break</strong></span>;
     <span class="green-code"><strong>case</strong></span> <span class="orange-code">"pt"</span>:
-    console.log(<span class="orange-code">"Portuguese"</span>);
+    console.log(<span class="orange-code">"Português"</span>);
     <span class="green-code"><strong>break</strong></span>;
     <span class="blue-code">default</span>:
-    console.log(language, <span class="orange-code">" not found"</span>);
+    console.log(language, <span class="orange-code">" não encontrada"</span>);
 }
                     </code></pre>
                 </div>
@@ -383,16 +382,16 @@ else
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"en"</span>:
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"en_US"</span>:
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"en_GB"</span>:
-  console.log(<span class="orange-code">"English"</span>);
+  console.log(<span class="orange-code">"Inglês"</span>);
   <span class="green-code"><strong>break</strong></span>;
   
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"es"</span>:
-  console.log(<span class="orange-code">"Spanish"</span>);
+  console.log(<span class="orange-code">"Espahol"</span>);
   <span class="green-code"><strong>break</strong></span>;
   
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"pt"</span>:
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"pt_BR"</span>:
-  console.log(<span class="orange-code">"Portuguese"</span>);
+  console.log(<span class="orange-code">"Português"</span>);
   <span class="green-code"><strong>break</strong></span>;
   
   <span class="blue-code">default</span>:
@@ -411,20 +410,20 @@ else
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"en"</span>:
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"en_US"</span>:
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"en_GB"</span>:
-  console.log(<span class="orange-code">"English"</span>);
+  console.log(<span class="orange-code">"Inglês"</span>);
   <span class="green-code"><strong>break</strong></span>;
   
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"es"</span>:
-  console.log(<span class="orange-code">"Spanish"</span>);
+  console.log(<span class="orange-code">"Espanhol"</span>);
   <span class="green-code"><strong>break</strong></span>;
   
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"pt"</span>:
   <span class="green-code"><strong>case</strong></span> <span class="orange-code">"pt_BR"</span>:
-  console.log(<span class="orange-code">"Portuguese"</span>);
+  console.log(<span class="orange-code">"Português"</span>);
   <span class="green-code"><strong>break</strong></span>;
   
   <span class="blue-code">default</span>:
-  console.log(language, <span class="orange-code">" not found"</span>);
+  console.log(language, <span class="orange-code">" não encontrada"</span>);
 }
                     </code></pre>
                 </div>
@@ -445,38 +444,38 @@ else
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="comment">// A naive prime number tester</span>
-<span class="comment">// The number we want to evaluate</span>
+<span class="comment">// Um testador de número simples de números primos</span>
+<span class="comment">// O número que queremos avaliar</span>
 <span class="green-code"><strong>let</strong></span> candidate = <span class="dark_blue_code"><strong>231</strong></span>;
-<span class="comment">// Auxiliary variable</span>
+<span class="comment">// variável auxiliar</span>
 <span class="green-code"><strong>let</strong></span> is_prime = <span class="green-code"><strong>true</strong></span>;
-<span class="comment">// The first factor to try</span>
+<span class="comment">// O primeiro fator a ser testado</span>
 <span class="green-code"><strong>let</strong></span> factor = <span class="dark_blue_code"><strong>2</strong></span>;
-<span class="comment">// Execute the block statement if factor is</span>
-<span class="comment">// less than candidate and keep doing it</span>
-<span class="comment">// while factor is less than candidate</span>
+<span class="comment">// Execute o bloco de instruções se o fator for</span>
+<span class="comment">// menor que o candidato e continue fazendo isso</span>
+<span class="comment">// enquanto o fator for menor que o candidato</span>
 <span class="green-code"><strong>while</strong></span> ( factor < candidate )
 {
   <span class="green-code"><strong>if</strong></span> ( candidate % factor == <span class="dark_blue_code"><strong>0</strong></span> )
   {
-    <span class="comment">// The remainder is zero, so the candidate is not prime</strong></span>
+    <span class="comment">// O resto é zero, então o candidato não é primo</strong></span>
     is_prime = <span class="green-code"><strong>false</strong></span>;
     <span class="green-code"><strong>break</strong></span>;
   }
-  <span class="comment">// The next factor to try. Simply></span>
-  <span class="comment">// increment the current factor by one</span>
+  <span class="comment">// O próximo fator a tentar. Simplesmente</span>
+  <span class="comment">// incremente o fator atual em um</span>
   factor++;
 }
-<span class="comment">// Display the result in the console window.</span>
-<span class="comment">// If candidate has no integer factor, then</span>
-<span class="comment">// the auxiliary variable is_prime still true</span>
+<span class="comment">// Exiba o resultado na janela do console.</span>
+<span class="comment">// Se o candidato não tiver fator inteiro, então</span>
+<span class="comment">// a variável auxiliar is_prime ainda é verdadeira</span>
 <span class="green-code"><strong>if</strong></span> ( is_prime )
 {
-  console.log(candidate, <span class="orange-code">"is prime"</span>);
+  console.log(candidate, <span class="orange-code">"é primo"</span>);
 }
 <span class="green-code"><strong>else</strong></span>
 {
-  console.log(candidate, <span class="orange-code">"is not prime"</span>);
+  console.log(candidate, <span class="orange-code">"não é primo"</span>);
 }
                     </code></pre>
                 </div>
@@ -507,7 +506,7 @@ else
                     <pre><code class="Texto">
 <span class="green-code"><strong>while</strong></span> ( factor &lt; candidate )
 {
-  <span class="comment">// Skip even factors bigger than two</span>
+  <span class="comment">// Pule fatores pares maiores que dois</span>
   <span class="green-code"><strong>if</strong></span> ( factor &gt; <span class="dark_blue_code"><strong>2</strong></span> && factor % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
   {
     factor++;
@@ -515,11 +514,11 @@ else
   }
   <span class="green-code"><strong>if</strong></span> ( candidate % factor == <span class="dark_blue_code"><strong>0</strong></span> )
   {
-    <span class="comment">// The remainder is zero, so the candidate is not prime</span>
+    <span class="comment">// O resto é zero, então o candidato não é primo</span>
     is_prime = <span class="green-code"><strong>false</strong></span>;
     <span class="green-code"><strong>break</strong></span>;
   }
-  <span class="comment">// The next number that will divide the candidate</span>
+  <span class="comment">// O próximo número que irá dividir o candidato</span>
   factor++;
 }
                     </code></pre>
@@ -544,14 +543,14 @@ else
                     <pre><code class="Texto">
 <span class="green-code"><strong>for</strong></span> ( <span class="green-code"><strong>let</strong></span> factor = <span class="dark_blue_code"><strong>2</strong></span>; factor &lt; candidate; factor++ )
 {
-  <span class="comment">// Skip even factors bigger than two</span>
+  <span class="comment">// Ignorar fatores pares maiores que dois</span>
   <span class="green-code"><strong>if</strong></span> ( factor &gt; <span class="dark_blue_code"><strong>2</strong></span> && factor % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
   {
     <span class="green-code"><strong>continue</strong></span>;
   }
   <span class="green-code"><strong>if</strong></span> ( candidate % factor == <span class="dark_blue_code"><strong>0</strong></span> )
   {
-    <span class="comment">// The remainder is zero, so the candidate is not prime</span>
+    <span class="comment">// O resto é zero, então o candidato não é primo</span>
     is_prime = <span class="green-code"><strong>false</strong></span>;
     <span class="green-code"><strong>break</strong></span>;
   }
@@ -576,36 +575,36 @@ else
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="comment">// A naive prime number tester</span>
-<span class="comment">// The array of numbers we want to evaluate</span>
+<span class="comment">// Um testador de número simples de números primos</span>
+<span class="comment">// O array de números que queremos avaliar</span>
 <span class="green-code"><strong>let</strong></span> candidates = [<span class="dark_blue_code"><strong>111</strong></span>, <span class="dark_blue_code"><strong>139</strong></span>, <span class="dark_blue_code"><strong>293</strong></span>, <span class="dark_blue_code"><strong>327</strong></span>];
-<span class="comment">// Evaluates every candidate in the array</span>
+<span class="comment">// Avalia cada candidato no array</span>
 <span class="green-code"><strong>for</strong></span> ( candidate <span class="green-code"><strong>of</strong></span> candidates )
 {
-  <span class="comment">// Auxiliary variable</span>
+  <span class="comment">// Variável auxiliae</span>
   <span class="green-code"><strong>let</strong></span> is_prime = <span class="green-code"><strong>true</strong></span>;
   <span class="green-code"><strong>for</strong></span> ( <span class="green-code"><strong>let</strong></span> factor = <span class="dark_blue_code"><strong>2</strong></span>; factor &lt; candidate; factor++ )
   {
-    <span class="comment">// Skip even factors bigger than two</span>
+    <span class="comment">// Skip fatores pares maiores que dois</span>
     <span class="green-code"><strong>if</strong></span> ( factor &gt; <span class="dark_blue_code"><strong>2</strong></span> && factor % <span class="dark_blue_code"><strong>2</strong></span> == <span class="dark_blue_code"><strong>0</strong></span> )
     {
       <span class="green-code"><strong>continue</strong></span>;
     }
     <span class="green-code"><strong>if</strong></span> ( candidate % factor == <span class="dark_blue_code"><strong>0</strong></span> )
     {
-      <span class="comment">// The remainder is zero, so the candidate is not prime</span>
+      <span class="comment">// O resto é zero, então o candidato não é primo</span>
       is_prime = <span class="green-code"><strong>false</strong></span>;
       <span class="green-code"><strong>break</strong></span>;
     }
   }
-  <span class="comment">// Display the result in the console window</span>
+  <span class="comment">// Exibir o resultado na janela do console</span>
   <span class="green-code"><strong>if</strong></span> ( is_prime )
   {
-    console.log(candidate, <span class="orange-code">"is prime"</span>);
+    console.log(candidate, <span class="orange-code">"É primo"</span>);
   }
   <span class="green-code"><strong>else</strong></span>
   {
-    console.log(candidate, <span class="orange-code">"is not prime"</span>);
+    console.log(candidate, <span class="orange-code">"Não é primo"</span>);
   }
 }
                     </code></pre>

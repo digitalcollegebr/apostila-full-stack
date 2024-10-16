@@ -237,7 +237,7 @@
                                     Copiar
                     </button>
                 <pre><code class="Texto">
-<strong><span class="green-code">var</span></strong> message = <span class="orange-code">"test"</span>; 
+<strong><span class="green-code">var</span></strong> message = <span class="orange-code">"teste"</span>; 
 console.log(message);
                 </code></pre>
                 </div>
@@ -273,8 +273,8 @@ console.log(<span class='orange-code'>"world"</span>)
                                     Copiar
                     </button>
                 <pre><code class="Texto">
-console.log(<span class='orange-code'>"hello"</span>);
-console.log(<span class='orange-code'>"world"</span>);
+console.log(<span class='orange-code'>"Olá"</span>);
+console.log(<span class='orange-code'>"Mundo"</span>);
                 </code></pre>
                 </div>
                 <p class="Texto">
@@ -303,13 +303,13 @@ console.log(<span class='orange-code'>"world"</span>);
                 <pre><code class="Texto">
 <span class="comment">
 /*
- This script was written by the author of this lesson in May, 2020.
- It has exactly the same effect as the previous script, but includes comments.
+    Este script foi escrito pelo autor desta lição em maio de 2020. 
+    Ele tem exatamente o mesmo efeito que o script anterior, mas inclui comentários.
 */
 </span>
 <span class="green-code">var</span> message = <span class="orange-code">"test"</span>;
 
-console.log(message); <span class="comment">//Then, we output the message to the console</span> 
+console.log(message); <span class="comment">//Em seguida, exibimos a mensagem no console</span> 
                 </code></pre>
                 </div>
                 <p class="Texto">
@@ -331,7 +331,7 @@ console.log(message); <span class="comment">//Then, we output the message to the
                                     Copiar
                     </button>
                 <pre><code class="Texto">
-console.log(<span class="comment">/* what we want to log: */</span> <span class="orange-code">"hello world"</span> ) 
+console.log(<span class="comment">/* o que queremos registrar: */</span> <span class="orange-code">"olá mundo"</span> ) 
                 </code></pre>
                 </div>
                 <p class="Texto">
@@ -363,9 +363,8 @@ console.log(<span class="comment">/* what we want to log: */</span> <span class=
                                     Copiar
                     </button>
                 <pre><code class="Texto">
-<span class="comment">// We temporarily want to use a different message
-// var message = "test";</span>
-<span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"something else"</span>;
+<span class="comment">// Queremos temporariamente usar uma mensagem diferente // var message = "teste";</span>
+<span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"qualquer coisa"</span>;
                 </code></pre>
                 </div>
             </div>
