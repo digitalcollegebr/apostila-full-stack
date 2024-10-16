@@ -20,6 +20,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico033-3.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">033.4 - Layout e modelo de caixa com CSS</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">
@@ -543,11 +546,12 @@
             <p class="Texto">
             As regras de CSS dentro da diretiva <span class="code-color"><em>@media</em></span> serão usadas somente se os critérios entre parênteses forem satisfeitos. Neste exemplo, se a largura da janela de visualização for menor que <span class="code-color"><em>600px</em></span>, a regra não será aplicada ao contêiner div e seus filhos serão exibidos como elementos div convencionais. O navegador reavalia as consultas de mídia sempre que a dimensão da janela de visualização muda, de modo que o layout é alterado em tempo real ao se redimensionar a janela do navegador ou girar o smartphone.
             </p>
+            <a href="../../modulo3/JavaScript/topico034-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+
             </div>
         </div>
     </div>
-    <a href="../../modulo3/JavaScript/topico034-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
-
+    
     <?php include('../../layouts/footer.php') ?>
 </body>
 </html>

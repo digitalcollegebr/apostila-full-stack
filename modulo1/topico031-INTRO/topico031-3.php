@@ -23,6 +23,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico032-2.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">031.3 - Noções básicas de HTTP</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">O protocolo de transferência de hipertexto (<span class="code-color">HyperText Transfer Protocol ou HTTP</span>) define a forma como um cliente solicita um recurso específico ao servidor. O princípio de funcionamento é bastante simples: o cliente cria uma mensagem de solicitação identificando o recurso de que necessita e encaminha essa mensagem para o servidor através da rede. Por sua vez, o servidor HTTP avalia de onde extrair o recurso solicitado e envia uma mensagem de resposta de volta ao cliente. A mensagem de resposta contém detalhes sobre o recurso solicitado, seguidos do recurso em si.</p>
@@ -243,12 +246,13 @@ Set-Cookie: client_id=62b5b719-fcb
         <br>
         <p class="Texto">Com esse número de identificação, o servidor pode recuperar definições específicas ao cliente e gerar uma resposta personalizada. Também é possível usar mais de um campo <span class="code-color"><em>Set-Cookie</em></span> para entregar cookies diferentes ao mesmo cliente. Dessa forma, mais de uma definição pode ser preservada no lado do cliente.</p>
         <p class="Texto">Os cookies suscitam problemas de privacidade e potenciais falhas de segurança, já que existe a possibilidade de serem transferidos para outro cliente, que será identificado pelo servidor como sendo o cliente original. Os cookies usados para preservar sessões podem dar acesso a informações confidenciais do cliente original. Portanto, é imprescindível que os clientes adotem mecanismos de proteção local para evitar que seus cookies sejam extraídos e reutilizados sem autorização. </p>
+        <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
+            
         </div>
     </div>
     <br>
-    <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
-    
+     
     
 
 </body>

@@ -1029,7 +1029,6 @@ button:hover {
     height: auto;
     text-decoration: none;
     transition: 0.3s;
-    right: 0;
 }
 
 .button-left:hover {
@@ -1044,18 +1043,14 @@ a{
 }
 
 .button-prox-atv {
-    position: absolute;
+    padding: 10px;
     cursor: pointer;
-    display: block;
+    display: flex;
     width: 100px;
     height: auto;
     text-decoration: none;
     transition: 0.3s;
-    right: 0;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+    float: right;
 }
 
 .button-prox-atv:hover {

@@ -367,10 +367,11 @@ console.log(<span class="comment">/* o que queremos registrar: */</span> <span c
 <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"qualquer coisa"</span>;
                 </code></pre>
                 </div>
+                <a href="topico034-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+ 
             </div>
         </div>
     </div>
-    <a href="topico034-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
-    
+       
 </body>
 <?php include('../../layouts/footer.php') ?>

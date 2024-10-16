@@ -303,11 +303,11 @@
                 <p class="Texto">
                 O atributo media pode ser usado da mesma forma que na tag <span class="code-color"><strong>&lt;style&gt;</strong></span>: ele indica as mídias, como monitores de computador ou impressão, às quais as regras do arquivo externo devem se aplicar</p>
                 <p class="Texto">O CSS pode alterar completamente um elemento, mas ainda assim é importante empregar o elemento apropriado para os componentes da página. Caso contrário, as tecnologias de acessibilidade, como os leitores de tela, podem não ser capazes de identificar as seções corretas da página.</p>
+                <a href="topico033-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>
-    <a href="topico033-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
-
+    
     <?php include('../../layouts/footer.php') ?>
 </body>
 </html>

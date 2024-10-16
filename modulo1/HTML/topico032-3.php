@@ -20,6 +20,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico032-2.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">032.3 - Referências e recursos incorporados do HTML</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">As páginas web modernas raramente são constituídas somente de texto. Elas incluem muitos outros tipos de conteúdo, como imagens, áudio, vídeo e até outros documentos HTML. Junto com o conteúdo externo, os documentos HTML podem conter links para outros documentos, o que torna a experiência de navegação na Internet muito mais simples.</p>
@@ -246,17 +249,11 @@
                 </div>
                 <br>
                 <p class="Texto">Existem maneiras de personalizar a forma como o navegador reage às âncoras de URL. É possível, por exemplo, escrever uma função JavaScript que escuta o evento da janela hashchange e dispara uma ação personalizada, como uma animação ou uma solicitação HTTP. Vale notar, porém, que o fragmento de URL nunca é enviado ao servidor com a URL e, portanto, não pode ser usado como um identificador pelo servidor HTTP.</p>
-
-
-
-
-            
-
+                <a href="topico032-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>
-    <a href="topico032-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
-
+    
     <?php include('../../layouts/footer.php') ?>
             
     

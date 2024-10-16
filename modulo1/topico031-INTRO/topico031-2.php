@@ -23,6 +23,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico031-1.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">031.2 - Arquiterura de aplicações web</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">A palavra <em>aplicativo</em> tem um amplo significado no jargão tecnológico. Quando o aplicativo é um programa tradicional, executado localmente e auto-suficiente em sua finalidade, tanto a interface operacional do aplicativo quanto os componentes de processamento de dados são integrados em um único “pacote”. Um <em>aplicativo web</em> é diferente porque adota o modelo cliente/servidor e sua parte cliente é baseada em HTML, que é obtido do servidor e, em geral, processado por um navegador.</p>

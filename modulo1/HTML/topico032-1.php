@@ -392,13 +392,14 @@ comentários--&gt;
         </ul>
         <br>
         <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
-        curiosidade.</p>
+        curiosidade.</p> 
+        <a href="topico032-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
         </div>
         </div>
     </div>
     </body>
 
-    <a href="topico032-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+   
     
 
 <?php include('../../layouts/footer.php') ?>

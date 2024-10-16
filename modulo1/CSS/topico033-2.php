@@ -20,6 +20,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+                <a href="topico033-1.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">032.2 - Seletores de CSS e aplicação de estilo</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">
@@ -464,10 +467,11 @@
                 O seletor de pseudoclasse <span class="code-color"><em>:hover</em></span> aceita todas as propriedades CSS das regras de CSS convencionais.
                 Outras pseudoclasses são <span class="code-color"><em>:visited</em></span>, que corresponde aos hiperlinks já visitados, e <span class="code-color"><em>:focus</em></span>, que corresponde aos elementos do formulário que estão em foco.
                 </p>
+                <a href="topico033-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>
-    <a href="topico033-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+    
 
     <?php include('../../layouts/footer.php') ?>
 </body>

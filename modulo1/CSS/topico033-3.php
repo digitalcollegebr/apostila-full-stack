@@ -20,6 +20,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico033-2.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">033.3 - Estilização com CSS</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">O CSS inclui centenas de propriedades que podem ser usadas para modificar a aparência dos elementos HTML. Somente os designers experientes conseguem memorizar a maioria deles. No entanto, vale a pena conhecer as propriedades básicas que são aplicáveis a qualquer elemento, bem como algumas propriedades específicas de determinados elementos. Este capítulo trata de algumas propriedades populares que você certamente encontrará em seu caminho.</p>
@@ -450,11 +453,12 @@
                 <p class="Texto">
                 Existem decorações específicas a um elemento. Os círculos nas listas de marcadores podem ser personalizados usando a propriedade <em>list-style-type</em>. Para transformá-los em quadrados, por exemplo, usamos <span class="code-color"><em>list-style-type: square</em></span>. Para simplesmente removê-los, definimos o valor de <span class="code-color"><em>list-style-type</em></span> como <span class="code-color"><em>none</em></span>.
                 </p>
+                <a href="topico033-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+
             </div>
         </div>
     </div>
-    <a href="topico033-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
-
+    
     <?php include('../../layouts/footer.php') ?>
 </body>
 </html>

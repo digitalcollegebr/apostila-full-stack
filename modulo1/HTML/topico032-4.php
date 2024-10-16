@@ -20,6 +20,9 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico032-3.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">Formulários  HTML</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">Os formulários web são uma maneira simples e eficiente de solicitar informações ao visitante de uma página HTML. O desenvolvedor front-end pode usar diversos componentes, como campos de texto, caixas de seleção, botões e muitos outros para construir interfaces que enviam dados ao servidor de forma estruturada.</p>
