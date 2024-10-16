@@ -14,7 +14,7 @@
     --FonteMontserrat: 'Montserrat', sans-serif !important;
 
     /* Todas cores */
-    --CorDC01: #C61067;
+    --CorDC01: #35C560;
     --CorDC02: #623CEA;
     --CorDC03: #F9E784;
     --CorDC04: #02394A;
@@ -411,7 +411,7 @@
 
 
 .code-color {
-    color: #c51967;
+    color: #35C560;
 }
 .blue-code{
     color: #258eff;
@@ -553,11 +553,11 @@ ul li::before {
     width: 10px; /* Largura do marcador */
     height: 10px; /* Altura do marcador */
     border-radius: 50%; /* Faz o marcador ser um círculo */
-    background-color: #c51967; /* Cor do marcador */
+    background-color: #35C560; /* Cor do marcador */
 }
 
 .next-page{
-    color: #c51967;
+    color: #35C560;
 }
 
 .video-container {
