@@ -211,7 +211,7 @@
             <p class="Texto">A linguagem Python, por exemplo, possui recursos muito sofisticados de mineração e tabulação de dados. O desenvolvedor pode escolher o Python para escrever as partes do programa que lidam com esses aspectos e outra linguagem, como o C++, para realizar o processamento numérico mais pesado.</p>
             <p class="Texto">É possível adotar essa estratégia mesmo quando não existe uma API que permita a comunicação direta entre os dois componentes. O código escrito em Python pode gerar um arquivo no formato adequado para ser usado por um programa escrito em C++, por exemplo.</p>
             <p class="Texto">Embora seja possível escrever quase qualquer programa em qualquer linguagem, o desenvolvedor deve adotar aquela que estiver mais de acordo com o propósito do aplicativo. Ao fazer isso, você se beneficia da reutilização de componentes já testados e bem documentados.</p>
-             <a href="topico031-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+             <a href="topico031-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
 
             </div>
         </div>

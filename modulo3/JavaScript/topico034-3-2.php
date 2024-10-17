@@ -307,11 +307,10 @@
                 </div>
                 <p class="Texto">Ambas as versões de <span class="code-color"><em>next_prime</em></span> retornam o próximo número primo após o número dado como seu único argumento (<span class="code-color"><em>from</em></span>). A versão recursiva, como a versão anterior, começa verificando os casos especiais (ou seja, números menores ou iguais a dois). Em seguida, incrementa o candidato e começa a procurar por quaisquer fatores inteiros com o loop for (observe que o loop <span class="code-color"><strong>while</strong></span> não está mais presente). Nesse ponto, o único número primo par já foi testado, então o candidato e seus possíveisfatores são incrementados de dois em dois (um número ímpar mais dois é o número ímpar seguinte).</p>
                 <p class="Texto">Existem apenas duas maneiras de sair do loop <span class="code-color"><strong>for</strong></span> no exemplo. Se todos os fatores possíveis forem testados e nenhum deles tiver um resto igual a zero ao dividir o candidato, o loop <span class="code-color"><strong>for</strong></span> se completa e a função retorna o candidato como o número primo seguinte depois de <span class="code-color"><strong>from</strong></span>. Caso contrário, se factor for um fator inteiro de <span class="code-color"><em>candidate</em></span> <span class="code-color"><em>(candidate % factor == 0)</em></span>, o valor retornado virá da função next_prime chamada recursivamente, desta vez com o candidate incrementado como parâmetro <span class="code-color"><strong>from</strong></span>. As chamadas por <span class="code-color"><em>next_prime</em></span> serão empilhadas umas sobre as outras, até que um candidato finalmente não retorne fatores inteiros. Nesse momento, a última instância de <span class="code-color"><em>next_prime</em></span> contendo o número primo o retornará para a instância <span class="code-color"><em>next_prime</em></span> anterior, e assim sucessivamente até chegar à primeira instância de <span class="code-color"><em>next_prime</em></span>. Embora cada invocação da função use os mesmos nomes como variáveis, as invocações são isoladas entre si, de modo que suas variáveis são mantidas separadas na memória.</p>
+                <a href="topico034-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
-    </div>
-    <a href="topico034-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
-    
+    </div>   
 </body>
     <?php
     include('../../layouts/footer.php')

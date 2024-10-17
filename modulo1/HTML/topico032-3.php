@@ -249,7 +249,7 @@
                 </div>
                 <br>
                 <p class="Texto">Existem maneiras de personalizar a forma como o navegador reage às âncoras de URL. É possível, por exemplo, escrever uma função JavaScript que escuta o evento da janela hashchange e dispara uma ação personalizada, como uma animação ou uma solicitação HTTP. Vale notar, porém, que o fragmento de URL nunca é enviado ao servidor com a URL e, portanto, não pode ser usado como um identificador pelo servidor HTTP.</p>
-                <a href="topico032-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico032-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>

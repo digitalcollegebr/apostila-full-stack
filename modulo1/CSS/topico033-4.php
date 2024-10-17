@@ -546,7 +546,7 @@
             <p class="Texto">
             As regras de CSS dentro da diretiva <span class="code-color"><em>@media</em></span> serão usadas somente se os critérios entre parênteses forem satisfeitos. Neste exemplo, se a largura da janela de visualização for menor que <span class="code-color"><em>600px</em></span>, a regra não será aplicada ao contêiner div e seus filhos serão exibidos como elementos div convencionais. O navegador reavalia as consultas de mídia sempre que a dimensão da janela de visualização muda, de modo que o layout é alterado em tempo real ao se redimensionar a janela do navegador ou girar o smartphone.
             </p>
-            <a href="../../modulo3/JavaScript/topico034-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+            <a href="../../modulo3/JavaScript/topico034-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
 
             </div>
         </div>

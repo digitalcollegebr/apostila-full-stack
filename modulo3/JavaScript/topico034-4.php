@@ -569,7 +569,8 @@ Third
                     eventos não se restringem aos botões; portanto, podemos atribuir ações personalizadas a esses
                     manipuladores de eventos para todos os elementos HTML visíveis.
                 </p>
-
+                <a href="../topico035-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+    
             </div>
         </div>
     </div>

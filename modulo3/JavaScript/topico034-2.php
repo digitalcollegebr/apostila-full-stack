@@ -599,12 +599,12 @@ sum = <span class="blue-code">Number</span>(value1) + value2;
                         o programador use uma declaração de decisão como <span class="code-color"><em>if (value1 == null)</em></span> para verificar se uma
                         variável teve um valor atribuído, independentemente do tipo de valor atribuído à variável.
                         </p>
-
+                        <a href="topico034-3-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+   
             </div>
         </div>
     </div> 
-    <a href="topico034-3-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
-       
+        
 </body>
 <?php
     include('../../layouts/footer.php')

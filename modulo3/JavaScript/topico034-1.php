@@ -23,6 +23,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="../CSS/topico033-4.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">
                     034.1 Execução e sintaxe de JavaScript
                 </p>
@@ -367,7 +370,7 @@ console.log(<span class="comment">/* o que queremos registrar: */</span> <span c
 <span class="green-code"><strong>var</strong></span> message = <span class="orange-code">"qualquer coisa"</span>;
                 </code></pre>
                 </div>
-                <a href="topico034-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico034-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
  
             </div>
         </div>

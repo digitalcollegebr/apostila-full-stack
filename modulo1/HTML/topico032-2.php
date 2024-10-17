@@ -546,7 +546,7 @@ Esta<span class="code-color"><strong> palavra</strong></span> é importante.
                 <img src="../../assets/img/figure18.png" alt="Código" class="img-fluid">
                 </div>
                 <br>
-                <p><em>Figure 18. A tag &lt;mark&gt; é usada para para realçar um texto com um fundo amarelo<em>.</p>
+                <p><em>Figure 18. A tag &lt;mark&gt; é usada para para realçar um texto com um fundo amarelo</em>.</p>
                 <br>
                 <p class="Subtopico"><strong>Formatando o texto de nossa lista de compras em HTML</strong></p>
                 <p class="Texto">Com base em nossos exemplos anteriores, vamos inserir alguns elementos de expressão para alterar a aparência do texto e, ao mesmo tempo, adicionar importância semântica. O resultado aparece na <em>Figure 19</em>.</p>
@@ -995,12 +995,10 @@ field() {
             <img src="../../assets/img/figure22.png" alt="Código" class="img-fluid">
             </div>
             <p><em>Figure 22. Representação do documento HTML resultante em um navegador web, combinando todos os exemplos anteriores. A página representa um convite para uma festa ao ar livre, com a programação do evento e uma lista de coisas para os convidados levarem.</em></p>
-            <a href="topico032-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+            <a href="topico032-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>
     
 
     <?php include('../../layouts/footer.php') ?>
-
-    

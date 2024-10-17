@@ -453,7 +453,7 @@
                 <p class="Texto">
                 Existem decorações específicas a um elemento. Os círculos nas listas de marcadores podem ser personalizados usando a propriedade <em>list-style-type</em>. Para transformá-los em quadrados, por exemplo, usamos <span class="code-color"><em>list-style-type: square</em></span>. Para simplesmente removê-los, definimos o valor de <span class="code-color"><em>list-style-type</em></span> como <span class="code-color"><em>none</em></span>.
                 </p>
-                <a href="topico033-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico033-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
 
             </div>
         </div>

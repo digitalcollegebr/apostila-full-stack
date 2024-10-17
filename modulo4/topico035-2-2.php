@@ -452,6 +452,8 @@ $ <strong>curl http://myserver:8080/ --data message="This time" -c cookies.txt -
                     </code></pre>
                 </div>
                 <p class="Texto">A separação entre o código de processamento das solicitações e o código de apresentação da resposta torna o código mais limpo e permite que uma equipe divida o desenvolvimento do aplicativo entre diferentes especialistas. Um webdesigner, por exemplo, pode se concentrar nos arquivos de modelo em <span class="code-color"><em>views/</em></span> e nas folhas de estilo relacionadas, que são fornecidas como arquivos estáticos armazenados no diretório <span class="code-color"><em>public/</em></span> no servidor de exemplo.</p>
+                <a href="topico035-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+    
             </div>
         </div>
     </div>

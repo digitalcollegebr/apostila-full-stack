@@ -616,10 +616,10 @@ else
                     código do exemplo anterior foi aninhado nesta nova declaração de bloco, mas desta vez testando
                     cada candidato da matriz por sua vez.
                 </p>
+                <a href="topico034-3-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>
-    <a href="topico034-3-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     
 </body>
     <?php

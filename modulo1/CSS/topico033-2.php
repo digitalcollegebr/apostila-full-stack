@@ -467,7 +467,7 @@
                 O seletor de pseudoclasse <span class="code-color"><em>:hover</em></span> aceita todas as propriedades CSS das regras de CSS convencionais.
                 Outras pseudoclasses são <span class="code-color"><em>:visited</em></span>, que corresponde aos hiperlinks já visitados, e <span class="code-color"><em>:focus</em></span>, que corresponde aos elementos do formulário que estão em foco.
                 </p>
-                <a href="topico033-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico033-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>

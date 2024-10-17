@@ -393,7 +393,7 @@ comentários--&gt;
         <br>
         <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
         curiosidade.</p> 
-        <a href="topico032-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+        <a href="topico032-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
         </div>
         </div>
     </div>
