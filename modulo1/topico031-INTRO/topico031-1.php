@@ -93,20 +93,21 @@
                 <p class="Texto">O desenvolvedor parte do paradigma da linguagem para formular as tarefas a serem executadas pela máquina. Essas tarefas, por sua vez, são expressas simbolicamente com as palavras e construções sintáticas oferecidas pela linguagem.</p>
                 <p class="Texto">O código a seguir é um exemplo de linguagem procedural. Escrito em <span class="code-color"><strong>C</strong></span>, ele define variáveis que representam as faces, a área e o volume de formas geográficas. O valor da variável side é atribuído em <span class="code-color"><em>main()</em></span>, que é a função invocada quando o programa é executado. As variáveis <em>area e volume</em> são calculadas nas sub-rotinas <span class="code-color"><em>square()</em></span> e <span class="code-color"><em>cube()</em></span> que precedem a função principal:</p>
                 <br>
-            <div class="typewriter-small" id="copycode"  style="width: 60%;">
+            <div class="typewriter-small" id="copycode"  style="width: 70%;">
             <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
-                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;stdio.h&gt;</span>
-        <span class="C_inicializeted"><strong>float</strong></span> side;
-        <span class="C_inicializeted"><strong>float</strong></span> area;
-        <span class="C_inicializeted"><strong>float</strong></span> volume;
+                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="comment">&lt;stdio.h&gt;</span>
+        <span class="comment"><strong>float</strong></span> side;
+        <span class="comment"><strong>float</strong></span> area;
+        <span class="comment"><strong>float</strong></span> volume;
 
-        <span class="C_inicializeted"><strong>void</strong></span> <span class="dark_blue_code"><strong>square</strong></span>()&lbrace; area = side * side;  &rbrace;
+        <span class="comment"><strong>void</strong></span> <span class="dark_blue_code"><strong>square</strong></span>()&lbrace; area = side * side;  &rbrace;
 
-        <span class="C_inicializeted"><strong>void</strong></span> <span class="dark_blue_code"><strong>cube</strong></span>()&lbrace; volume = area * side;  &rbrace;
+        <span class="comment"><strong>void</strong></span> <span class="dark_blue_code"><strong>cube</strong></span>()&lbrace; volume = area * side;  &rbrace;
 
-        <span class="C_inicializeted"><strong>int</strong></span><span class="dark_blue_code"><strong> main</strong></span>() &lbrace;
+        <span class="comment"><strong>int</strong></span><span class="dark_blue_code"><strong> main</strong></span>() &lbrace;
                 side = <span class="blue-color"><strong>2</strong></span>;
                 square();
                 cube();
@@ -127,16 +128,17 @@
         <div class="typewriter-small" style=" margin: 0 auto;">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
-                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="C_inicializeted">&lt;iostream&gt;</span>
+                  <p><pre><code><span class="red-color"><strong>include</strong></span> <span class="comment">&lt;iostream&gt;</span>
         <span class="green-code"><strong>class</strong></span><span class="code-color"><strong> Cube</strong></span>&lbrace;
-        <span class="C_inicializeted"><strong>float</strong></span> side;
+        <span class="comment"><strong>float</strong></span> side;
         <span class="blue-code">public:</span>
-        Cube&lpar;<span class="C_inicializeted"><strong>float</strong></span> s&rpar; &lbrace; side * side; &rbrace;
+        Cube&lpar;<span class="comment"><strong>float</strong></span> s&rpar; &lbrace; side * side; &rbrace;
         &rbrace;;
 
-        <span class="C_inicializeted"><strong>int</strong></span> <span class="dark_blue_code"><strong>main</strong></span>()&lbrace;
-        <span class="C_inicializeted"><strong>float</strong></span> side  = <span class="dark_blue-code"><strong>2</strong></span>;
+        <span class="comment"><strong>int</strong></span> <span class="dark_blue_code"><strong>main</strong></span>()&lbrace;
+        <span class="comment"><strong>float</strong></span> side  = <span class="dark_blue-code"><strong>2</strong></span>;
         Cube cube(side);
         std::cout << <span class="orange-code">"Volume: "</span> cube.volume() << std::endl;
         <span class="green-code"><strong>return</strong></span><span class="dark_blue_code"><strong> 0</strong></span>;
@@ -151,6 +153,7 @@
         <div class="typewriter-small" style="" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
                 <p><pre><code><span class="green-code"><strong>function</strong></span> cube(side) &lbrace;
                 <span class="green-code"><strong>return</strong></span> side*side*side;
@@ -169,6 +172,7 @@
         <div class="typewriter-small" id="copycode"  style=" width: 45%; font-size: 12px;">
         <button class="copy-btn" onclick="copyCode()">
             <i class="fas fa-copy"></i>
+            Copiar
          </button>
          <pre><code class="Texto">
 <span class="green-code"><strong>import</strong></span>{ OrbitControls }<span class="green-code"><strong>from</strong></span><span class="orange-code">'modules/OrbitControls.js'</span>;
@@ -207,12 +211,12 @@
             <p class="Texto">A linguagem Python, por exemplo, possui recursos muito sofisticados de mineração e tabulação de dados. O desenvolvedor pode escolher o Python para escrever as partes do programa que lidam com esses aspectos e outra linguagem, como o C++, para realizar o processamento numérico mais pesado.</p>
             <p class="Texto">É possível adotar essa estratégia mesmo quando não existe uma API que permita a comunicação direta entre os dois componentes. O código escrito em Python pode gerar um arquivo no formato adequado para ser usado por um programa escrito em C++, por exemplo.</p>
             <p class="Texto">Embora seja possível escrever quase qualquer programa em qualquer linguagem, o desenvolvedor deve adotar aquela que estiver mais de acordo com o propósito do aplicativo. Ao fazer isso, você se beneficia da reutilização de componentes já testados e bem documentados.</p>
-            
+             <a href="topico031-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+
             </div>
         </div>
     </div>
-    <a href="topico031-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
-    <?php
+       <?php
     // A_S - Footer
     include('../../layouts/footer.php');
 ?>

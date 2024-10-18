@@ -20,6 +20,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico033-2.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">033.3 - Estilização com CSS</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">O CSS inclui centenas de propriedades que podem ser usadas para modificar a aparência dos elementos HTML. Somente os designers experientes conseguem memorizar a maioria deles. No entanto, vale a pena conhecer as propriedades básicas que são aplicáveis a qualquer elemento, bem como algumas propriedades específicas de determinados elementos. Este capítulo trata de algumas propriedades populares que você certamente encontrará em seu caminho.</p>
@@ -45,9 +48,10 @@
                 Cada componente de uma cor é representado por um número binário de oito bits, variando de <span class="code-color"><strong>0 a 255</strong></span>. Todos os três componentes devem ser especificados na mistura de cores, sempre na ordem <span class="red-code"><strong>vermelho</strong></span>, <span class="green-color"><strong>verde</strong></span>, <span class="dark_blue_code"><strong>azul</strong></span>. Portanto, para trocar a cor de todo o texto da página para vermelho usando a notação RGB, usamos <span class="code-color"><em>rgb(255,0,0)</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
@@ -58,13 +62,14 @@
                 <br>
                 <p class="Texto">Um componente definido como <span class="code-color"><em>0</em></span> indica que a cor básica correspondente não é usada na mistura de cores. Também é possível usar porcentagens em vez de números:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <div class="typewriter-small" style="width: 60%"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
-    <span class="blue-code">color:</span><span class="dark_blue_code"> rgb</span>(<span class="code-color"><strong>100%,0%,0%</strong></span>);
+<span class="blue-code">color:</span><span class="dark_blue_code"> rgb</span>(<span class="code-color"><strong>100%,0%,0%</strong></span>);
 }
                     </code></pre>
                 </div>
@@ -164,24 +169,26 @@
               O caminho para a imagem deve ser especificado usando um designador <span class="code-color"><em>url()</em></span>. Se a imagem que você deseja usar estiver na mesma pasta do arquivo HTML, basta incluir o nome do arquivo:
               </p>
               <br>
-              <div class="typewriter-small" style="width: 50%;" id="copycode">
+              <div class="typewriter-small" style="width: 60%;" id="copycode">
               <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span> {
     <span class="blue-code">background-image:</span><span class="green-code"> url("background.jpg")</span>;
 }
                     </code></pre>
-                </div>
+              </div>
                 <br>
                 <p class="Texto">
                 Neste exemplo, o arquivo de imagem <em>background.jpg</em> será usado como imagem de fundo para todo o corpo da página. Por padrão, a imagem de fundo é repetida se seu tamanho não bastar para cobrir a página inteira, começando no canto superior esquerdo da área correspondente ao seletor da regra. Esse comportamento pode ser modificado com a propriedade <span class="code-color"><em>background-repeat</em></span>. Se você quiser que a imagem de fundo seja posta na área do elemento sem repeti-la, use o valor <span class="code-color"><em>no-repeat</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <div class="typewriter-small" style="width: 60%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>body</strong></span> {
@@ -228,26 +235,27 @@
                 As bordas podem ser traçadas em um estilo diferente de uma linha sólida. A propriedade <span class="code-color"><em>borderstyle: dashed</em></span>, por exemplo, criaria uma borda tracejada. Os outros valores de estilo possíveis são:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                
+                <div class="typewriter-small" style="width: 70%;">
                 <strong>dotted</strong><p>Uma sequência de pontos redondos.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>double</strong>
                     <p>Duas linhas retas.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>groove</strong>
                     <p>Uma linha com aparência sulcada</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>ridge</strong>
                     <p>Uma linha com aparência tridimensional</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>inset</strong>
                     <p>Um elemento em baixo relevo</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>outset</strong>
                     <p>Um elemento em alto relevo</p>
                 </div>
@@ -261,22 +269,22 @@
                 As unidades absolutas são equivalentes às suas correspondentes físicas, como centímetros ou polegadas. Nos monitores convencionais, uma polegada tem 96 pixels de largura. As seguintes unidades absolutas são comumente usadas:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                 <strong>in (polegada)</strong><p>1 in equivale a a 2,54 cm ou 96 px.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>cm  (centímetro)</strong>
                     <p> 1 cm equivale a 96 px / 2,54.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>mm (milímetro)</strong>
                     <p>1 mm equivale a 1 cm / 10.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>px (píxel)</strong>
                     <p>1 px equivale a 1 / 96 de polegada.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>pt (ponto)</strong>
                     <p>1pt equivale a 1 / 72 de polegada.</p>
                 </div>
@@ -285,22 +293,22 @@
                 As unidades relativas variam de acordo com as outras medidas ou com as dimensões da janela de visualização. A janela de visualização é a área do documento atualmente visível em sua janela. No modo de tela inteira, a janela de visualização corresponde à tela do dispositivo. As seguintes unidades relativas são comumente usadas:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>%</strong>
                     <p>Porcentagem—é relativa ao elemento pai.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                 <strong>em</strong><p>O tamanho da fonte usada no elemento.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>rem</strong>
                     <p>O tamanho da fonte usada no elemento raiz.</p>
                 </div>
-                <div class="typewriter-small" style="width: 50%;">
+                <div class="typewriter-small" style="width: 70%;">
                     <strong>vw</strong>
                     <p>1% da largura da janela de visualização</p>
                 </div>
-                <div class="typewriter-small"  style="width: 50%;">
+                <div class="typewriter-small"  style="width: 70%;">
                     <strong>vh</strong>
                     <p>1% da altura da janela de visualização.</p>
                 </div>
@@ -320,9 +328,10 @@
                 As três famílias de fontes genéricas mais comuns são <sapn class="code-color"><em>serif</em></sapn>, <span class="code-color"><em>sans-serif</em></span> e <span class="code-color"><em>monospace</em></span>. Serif é a família de fontes padrão da maioria dos navegadores. Se você preferir usar sans-serif para a página inteira, adicione a seguinte regra à sua folha de estilo:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
@@ -335,9 +344,10 @@
                 Opcionalmente, podemos primeiro definir um nome específico de família de fonte, seguido pelo nome de família genérico:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>*</strong></span> {
@@ -371,6 +381,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p&gt;</strong></span>CSS é o <span class="code-color"><strong>&lt;span</strong></span> <span class="blue-code">class=</span><span class="orange-code">"under"</span><span class="code-color"><strong>&gt;</strong></span>mecanismo dedicado <span class="code-color"><strong>&lt;/span&gt;</strong></span> para estilizar documentos HTML. <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -381,9 +392,10 @@
                 Use então o seletor <span class="code-color"><em>.under</em></span> para alterar a propriedade <span class="code-color"><em>text-decoration</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;"  id="copycode">
+                <div class="typewriter-small" style="width: 60%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.under</strong></span> {
@@ -396,7 +408,11 @@
                 Por padrão, todos os elementos a (link) são sublinhados. Para remover o sublinhado, use o valor none em <span class="code-color"><em>text-decoration</em></span> de todos os elementos a:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <div class="typewriter-small" style="width:60%;" id="copycode">]
+                <button class="copy-btn" onclick="copyCode()">
+                        <i class="fas fa-copy"></i>
+                        Copiar
+            </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>a</strong></span> {
     <span class="blue-code">text-decoration: </span><span class="dark_blue_code"> none</span>;
@@ -408,9 +424,10 @@
                 Ao revisar o conteúdo, alguns autores gostam de riscar as partes incorretas ou desatualizadas do texto, para que o leitor saiba que o texto foi atualizado e o que foi removido. Para fazer isso, use o valor <span class="code-color"><em>line-through</em></span> da propriedade <span class="code-color"><em>text-decoration</em></span>:
                 </p>
                 <br>
-                <div class="typewriter-small" style="width: 50%;" id="copycode">
+                <div class="typewriter-small" style="width: 60%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>.disregard</strong></span> {
@@ -426,6 +443,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;p&gt;</strong></span>Netscape Navigator <span class="code-color"><strong>&lt;span</strong></span> <span class="blue-code">class=</span><span class="orange-code">"disregard"</span><span class="code-color"><strong>&gt;</strong></span>é<span class="code-color"><strong>&lt;/span&gt;</strong></span> era o mais popular dos web browsers. <span class="code-color"><strong>&lt;/p&gt;</strong></span>
@@ -435,11 +453,12 @@
                 <p class="Texto">
                 Existem decorações específicas a um elemento. Os círculos nas listas de marcadores podem ser personalizados usando a propriedade <em>list-style-type</em>. Para transformá-los em quadrados, por exemplo, usamos <span class="code-color"><em>list-style-type: square</em></span>. Para simplesmente removê-los, definimos o valor de <span class="code-color"><em>list-style-type</em></span> como <span class="code-color"><em>none</em></span>.
                 </p>
+                <a href="topico033-4.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+
             </div>
         </div>
     </div>
-    <a href="../../questoesModulo01/unidade07.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
-
+    
     <?php include('../../layouts/footer.php') ?>
 </body>
 </html>

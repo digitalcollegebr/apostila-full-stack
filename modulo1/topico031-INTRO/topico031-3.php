@@ -23,6 +23,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico032-2.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">031.3 - Noções básicas de HTTP</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">O protocolo de transferência de hipertexto (<span class="code-color">HyperText Transfer Protocol ou HTTP</span>) define a forma como um cliente solicita um recurso específico ao servidor. O princípio de funcionamento é bastante simples: o cliente cria uma mensagem de solicitação identificando o recurso de que necessita e encaminha essa mensagem para o servidor através da rede. Por sua vez, o servidor HTTP avalia de onde extrair o recurso solicitado e envia uma mensagem de resposta de volta ao cliente. A mensagem de resposta contém detalhes sobre o recurso solicitado, seguidos do recurso em si.</p>
@@ -47,7 +50,7 @@
                             NOTE 
                     </div>
                     <div class="CaixaConteudo ConteudoExemplo">
-                        <p class="Texto">A <span class="code-color"><strong>URL</strong></span> <span class="code-color"><em>(Uniform Resource Locator)</em></span> é um endereço que aponta para um recurso na internet. Esse recurso geralmente é um arquivo que pode ser copiado de um servidor remoto, mas as URLs também podem indicar conteúdos gerados dinamicamente e fluxos de dados.</p>
+                        <p class="Texto">A URL(Uniform Resource Locator) é um endereço que aponta para um recurso na internet. Esse recurso geralmente é um arquivo que pode ser copiado de um servidor remoto, mas as URLs também podem indicar conteúdos gerados dinamicamente e fluxos de dados.</p>
                     </div>
                 </div>
                 <br>
@@ -63,7 +66,7 @@
                             NOTE 
                     </div>
                     <div class="CaixaConteudo ConteudoExemplo">
-                        <p class="Texto">Existem outros protocolos usados por aplicativos web para implementar a comunicação cliente/servidor. Para chamadas de áudio e vídeo, por exemplo, é mais apropriado usar <span class="code-color"><strong>WebSockets</strong></span>, um protocolo de nível inferior que é mais eficiente do que o HTTP para transferir fluxos de dados em ambas as direções.</p>
+                        <p class="Texto">Existem outros protocolos usados por aplicativos web para implementar a comunicação cliente/servidor. Para chamadas de áudio e vídeo, por exemplo, é mais apropriado usar WebSockets, um protocolo de nível inferior que é mais eficiente do que o HTTP para transferir fluxos de dados em ambas as direções.</p>
                     </div>
                 </div>
                 <br>
@@ -72,7 +75,7 @@
                 <br>
                 <p class="Subtopico"><strong>A mensagem de solicitação</strong></p>
                 <p class="Texto">O HTTP opera através de uma conexão já estabelecida entre cliente e servidor, geralmente implementada em TCP e criptografada com TLS. Na verdade, uma vez que uma conexão que atenda aos requisitos impostos pelo servidor esteja pronta, uma solicitação HTTP digitada à mão em texto simples pode gerar a resposta do servidor. Na prática, porém, os programadores raramente precisam implementar rotinas para compor mensagens HTTP, pois a maioria das linguagens de programação fornece mecanismos que automatizam a criação dessas mensagens. No caso da URL de exemplo, <span class="code-color"><a href="https://learning.lpi.org/pt/" target="_blank">https://learning.lpi.org/pt/</a></span>, a mensagem de solicitação mais simples possível teria o seguinte conteúdo:</p>
-    <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px">
+    <div class="typewriter-small" style="width: 70%; text-align: left; font-size:20px">
     <pre><code>
     GET /pt/ HTTP/1.1
     Host: learning.lpi.org
@@ -99,15 +102,16 @@
                 <p class="Texto">O campo <span class="code-color"><em>Accept</em></span> tem um valor mais imediato, pois informa ao servidor o formato do recurso solicitado. Se o formato do recurso for indiferente para o cliente, o campo <span class="code-color"><em>Accept</em></span> pode especificar <span class="code-color"><em>*/*</em></span> como formato.</p>
                 <p class="Texto">Existem muitos outros campos de cabeçalho que podem ser usados em uma mensagem HTTP, mas os campos mostrados no exemplo já bastam para solicitar um recurso do servidor.</p>
                 <p class="Texto">Além dos campos no cabeçalho da solicitação, o cliente pode incluir outros dados complementares na solicitação HTTP que será enviada ao servidor. Se esses dados consistirem apenas em parâmetros de texto simples, no formato name=value, eles podem ser adicionados ao caminho do método GET. Os parâmetros são incorporados ao caminho após um ponto de interrogação e são separados por <span class="code-color"><em> “&”</em></span>:</p>
-                <div class="typewriter-small"  style="width: 60%; text-align: center; font-size:20px">
-
-                    GET /cgi-bin/receive.cgi?name=LPI&email=info@lpi.org HTTP/1.1
+                <div class="typewriter-small"  style="width: 70%; text-align: center; font-size:20px">
+                    <pre><code>
+GET /cgi-bin/receive.cgi?name=LPI&email=info@lpi.org HTTP/1.1
+                    </code></pre>
                 </div>
                 <br>
                 <p class="Texto">Neste exemplo, <span class="code-color"><em>/cgi-bin/receive.cgi</em></span> é o caminho até o script no servidor que vai processar e, possivelmente, usar os parâmetros <span class="code-color"><em>name</em></span> e <span class="code-color"><em>email</em></span> obtidos no caminho da solicitação. A string que corresponde aos campos, no formato <span class="code-color"><em>name=LPI&email=info@lpi.org</em></span>, é chamada <em>string de solicitação e é fornecida ao script <span class="code-color"><em>receive.cgi</em></span> pelo servidor HTTP que recebe a solicitação.</em></p>
                 <p class="Texto">Quando os dados são compostos por mais do que campos curtos de texto, é mais apropriado enviálos no corpo de dados da mensagem. Neste caso, deve-se utilizar o método <span class="code-color"><strong>HTTP POST</strong></span> para que o servidor receba e processe o corpo de dados da mensagem, de acordo com as especificações indicadas no cabeçalho da solicitação. Quando o método POST é usado, o cabeçalho da solicitação deve fornecer o tamanho da carga que será enviada e a maneira como o corpo é formatado:</p>
                 <br>
-    <div class="typewriter-small" style="width:50%; text-align: left; font-size:20px;">
+    <div class="typewriter-small" style="width:; text-align: left; font-size:20px;">
     <pre><code>
     POST /cgi-bin/receive.cgi HTTP/1.1
     Host: learning.lpi.org
@@ -122,7 +126,7 @@
                 <p class="Subtopico"><strong>O cabeçalho de resposta</strong></p>
                 <p class="Texto">Depois que o servidor HTTP recebe o cabeçalho da mensagem de solicitação, o servidor retorna uma mensagem de resposta ao cliente. Uma solicitação de arquivo HTML normalmente tem um cabeçalho de resposta semelhante a este:</p>
                 <br>
-                <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px;">
+                <div class="typewriter-small" style="width: ; text-align: left; font-size:20px;">
     <pre><code>
     HTTP/1.1 200 OK
     Accept-Ranges: bytes
@@ -138,86 +142,60 @@
                 <p class="Texto">A primeira linha fornece a versão do protocolo HTTP usado na mensagem de resposta, que deve
                 corresponder à versão usada no cabeçalho da solicitação. Em seguida, ainda na primeira linha, aparece o código de status da resposta, indicando como o servidor interpretou e gerou a resposta para a solicitação.</p>
                 <p class="Texto">O código de status é um número de três dígitos, no qual o dígito mais à esquerda define a classe da resposta. Existem cinco classes de códigos de status, numeradas de 1 a 5, cada uma indicando um tipo de ação realizado pelo servidor:</p>
-                <div class="typewriter-small"  style="width: 60%; font-size: 20px;">
+                <div class="typewriter-small"  style="width: 70%; font-size: 20px;">
                 <strong>1xx (Informativo)</strong><p>A solicitação foi recebida, o processo está sendo continuado</p>
                 </div>
-                <div class="typewriter-small" style="width: 60%; font-size: 20px;">
+                <div class="typewriter-small" style="width: 70%; font-size: 20px;">
                     <strong>2xx (Sucesso)</strong>
                     <p>A solicitação foi recebida, entendida e aceita com sucesso.</p>
                 </div>
-                <div class="typewriter-small" style="width: 60%; font-size: 20px;">
+                <div class="typewriter-small" style="width: 70%; font-size: 20px;">
                     <strong>3xx (Redirecionamento)</strong>
                     <p>São necessárias ações adicionais para concluir a solicitação.</p>
                 </div>
-                <div class="typewriter-small" style="width: 60%; text-align: left; font-size: 20px;">
+                <div class="typewriter-small" style="width: 70%; text-align: left; font-size: 20px;">
                     <strong>4xx (Erro do cliente)</strong>
                     <p>A solicitação contém sintaxe incorreta ou não pode ser atendida</p>
                 </div>
-                <div class="typewriter-small" style="width: 60%; font-size: 20px;">
+                <div class="typewriter-small" style="width: 70%; font-size: 20px;">
 
                     <strong>5xx (Erro do servidor)</strong>
                     <p>O servidor não atendeu a uma solicitação aparentemente válida.</p>
                 </div>
                 <p class="Texto">O segundo e o terceiro dígitos são usados para indicar detalhes adicionais. O código 200, por exemplo, indica que a solicitação pode ser atendida sem problemas. Como mostrado no exemplo, também é possível fornecer uma breve descrição após o código de resposta <span class="code-color"><em>(OK)</em></span>. Alguns códigos específicos servem para garantir que o cliente HTTP possa acessar o recurso em situações adversas ou para ajudar a identificar o motivo da falha no caso de uma solicitação malsucedida:</p>
                 <br>
-                <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">301 Moved Permanently</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O recurso de destino recebeu uma nova URL permanente, fornecida pelo campo de cabeçalho <span class="code-color"><em>Location</em></span> na resposta.</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">302 Found</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O recurso de destino reside temporariamente em uma URL diferente</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">401 Unauthorized</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">A solicitação não foi aplicada porque não possui credenciais de autenticação válidas para o recurso de destino.</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">403 Forbidden</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">A resposta <span class="code-color"><em>Forbidden</em>
-                </span> indica que, embora a solicitação seja válida, o servidor está configurado para não fornecê-la</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">404 Not Found</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O servidor de origem não encontrou uma representação atual do recurso de destino ou não está disposto a divulgar uma representação existente.</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">500 Internal Server Error</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O servidor encontrou uma condição inesperada que o impediu de atender à solicitação.</p>
-            </div>
-        </div>
-        <br>
-        <div class="attecion">
-            <div class="notice" id="especial-text"><span class="code-color">502 Bad Gateway</span></div>
-            <div class="separator"></div>
-            <div class="notice-side">
-                <p class="Texto">O servidor, ao atuar como um gateway ou proxy, recebeu uma resposta inválida de um servidor
-                de entrada que ele acessou ao tentar atender a solicitação.</p>
-            </div>
-        </div>
-        <br>
+                <p class="Texto">A seguir estão alguns códigos de status HTTP, cada um indicando um tipo de resposta específica:</p>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>302 Found</strong></span>
+    <p>O recurso de destino reside temporariamente em uma URL diferente.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>401 Unauthorized</strong></span>
+    <p>A solicitação não foi aplicada porque não possui credenciais de autenticação válidas para o recurso de destino.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>403 Forbidden</strong></span>
+    <p>A resposta <em>Forbidden</em> indica que, embora a solicitação seja válida, o servidor está configurado para não fornecê-la.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>404 Not Found</strong></span>
+    <p>O servidor de origem não encontrou uma representação atual do recurso de destino ou não está disposto a divulgar uma representação existente.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>500 Internal Server Error</strong></span>
+    <p>O servidor encontrou uma condição inesperada que o impediu de atender à solicitação.</p>
+</div>
+
+<div class="typewriter-small" style="width: 70%; font-size: 20px;">
+    <span class="code-color"><strong>502 Bad Gateway</strong></span>
+    <p>O servidor, ao atuar como um gateway ou proxy, recebeu uma resposta inválida de um servidor de entrada que ele acessou ao tentar atender a solicitação.</p>
+</div>
+
         <p class="Texto">Embora indiquem que não foi possível atender à solicitação, os códigos de status <span class="code-color"><em>4xx</em></span> e <span class="code-color"><em>5xx</em></span> pelo menos informam que o servidor HTTP está rodando e é capaz de receber solicitações. Os códigos <span class="code-color"><em>4xx</em></span> requerem que uma ação seja realizada no lado do cliente, pois sua URL ou credenciais estão incorretos. Por sua vez, os códigos <span class="code-color"><em>5xx</em></span> indicam algo errado no lado do servidor. Portanto, no contexto dos aplicativos web, essas duas classes de códigos de status indicam que a origem do erro está no próprio aplicativo, seja no cliente ou no servidor, e não na infraestrutura subjacente.</p>
         <br>
         <p class="Subtopico"><strong>Conteúdo estático e dinâmico</strong></p>
@@ -249,7 +227,7 @@
         <p class="Texto">Em um site convencional ou aplicativo web, os recursos responsáveis pelo controle da sessão baseiam-se em cabeçalhos HTTP. O servidor não pode pressupor, por exemplo, que todas as solicitações provenientes do mesmo endereço IP vêm do mesmo cliente. O método mais tradicional que permite ao servidor associar diferentes solicitações a um único cliente é o uso de <span class="code-color"><em>cookies</em></span>, uma etiqueta de identificação fornecida ao cliente pelo servidor e incluída no cabeçalho HTTP.</p>
         <p class="Texto">Os cookies permitem que o servidor preserve informações sobre um cliente específico, mesmo que a pessoa que está executando o cliente não se identifique explicitamente. Com os cookies, é possível implementar sessões em que os logins, cartões de compras, preferências, etc., são preservados entre diferentes solicitações feitas ao mesmo servidor que os forneceu. Os cookies também são usados para rastrear a navegação do usuário, por isso é importante ter a permissão dele antes de enviá-los.</p>
         <p class="Texto">O servidor define o cookie no cabeçalho da resposta usando o campo Set-Cookie. O valor do campo é um par name=value escolhido de forma a representar algum atributo associado a um cliente específico. O servidor pode, por exemplo, criar um número de identificação para um cliente que solicita um recurso pela primeira vez e repassá-lo ao cliente no cabeçalho da resposta:</p>
-        <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px;">
+        <div class="typewriter-small" style="width: ; text-align: left; font-size:20px;">
     <pre><code>
 HTTP/1.1 200 OK
 Accept-Ranges: bytes
@@ -258,7 +236,7 @@ Set-Cookie: client_id=62b5b719-fcb
     </div>
         <br>
         <p class="Texto">Se o cliente permitir o uso de cookies, as novas solicitações para este mesmo servidor terão o campo do cookie no cabeçalho:</p>
-        <div class="typewriter-small" style="width: 50%; text-align: left; font-size:20px;">
+        <div class="typewriter-small" style="width: ; text-align: left; font-size:20px;">
     <pre><code>
     GET /en/ HTTP/1.1
     Host: learning.lpi.org
@@ -268,12 +246,13 @@ Set-Cookie: client_id=62b5b719-fcb
         <br>
         <p class="Texto">Com esse número de identificação, o servidor pode recuperar definições específicas ao cliente e gerar uma resposta personalizada. Também é possível usar mais de um campo <span class="code-color"><em>Set-Cookie</em></span> para entregar cookies diferentes ao mesmo cliente. Dessa forma, mais de uma definição pode ser preservada no lado do cliente.</p>
         <p class="Texto">Os cookies suscitam problemas de privacidade e potenciais falhas de segurança, já que existe a possibilidade de serem transferidos para outro cliente, que será identificado pelo servidor como sendo o cliente original. Os cookies usados para preservar sessões podem dar acesso a informações confidenciais do cliente original. Portanto, é imprescindível que os clientes adotem mecanismos de proteção local para evitar que seus cookies sejam extraídos e reutilizados sem autorização. </p>
+        <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
+            
         </div>
     </div>
     <br>
-    <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"><span class="tooltip">Atividade!</span></a>
-    
+     
     
 
 </body>

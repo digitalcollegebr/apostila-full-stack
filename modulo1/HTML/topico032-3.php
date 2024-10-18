@@ -20,6 +20,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico032-2.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">032.3 - Referências e recursos incorporados do HTML</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">As páginas web modernas raramente são constituídas somente de texto. Elas incluem muitos outros tipos de conteúdo, como imagens, áudio, vídeo e até outros documentos HTML. Junto com o conteúdo externo, os documentos HTML podem conter links para outros documentos, o que torna a experiência de navegação na Internet muito mais simples.</p>
@@ -32,8 +35,10 @@
                 <div class="typewriter-small" style="text-align: center;" id="codecopy">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre><code class="Texto">
+    <span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src=</span><span class="orange-code">"logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
     <span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src=</span><span class="orange-code">"logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
                 </div>
                 </code></pre>
@@ -42,6 +47,7 @@
                 <div class="typewriter-small" style=" text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                     <i class="fas fa-copy"></i>
+                    Copiar
                 </button>
                 <pre><code class="Texto">
     <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"../logo.png"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -63,7 +69,7 @@
                     </div>
                 <br>
                 <p class="Texto">Se a imagem não puder ser carregada, o navegador HTML mostrará o texto fornecido no atributo alt em vez da imagem. Por exemplo:</p>
-                <div class="typewriter-small" id="copycode" style="width: 50%">
+                <div class="typewriter-small" id="copycode" style="width: 70%; text-align: center;" >
                 <button class="copy-btn" onclick="copyCode()">
                      <i class="fas fa-copy"></i>
                 </button>
@@ -76,7 +82,7 @@
                 <br>
                 <p class="Subtopico"><strong>Tipos de imagem</strong></p>
                 <p class="Texto">Os navegadores podem exibir todos os tipos mais populares de imagem, como <span class="code-color"><em>JPEG</em></span>, <span class="code-color"><em>PNG</em></span>, <span class="code-color"><em>GIF</em></span> e <span class="code-color"><em>SVG</em></span>. As dimensões das imagens são detectadas no momento em que elas são carregadas, mas também podem ser predefinidas com os atributos <span class="code-color"><strong>width</strong></span> e <span class="code-color"><strong>height</strong></span> <em>(largura e altura)</em>:</p>
-                <div class="typewriter-small"  id="copycode">
+                <div class="typewriter-small"  id="copycode" style="text-align: center;">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
             </button>
@@ -86,9 +92,9 @@
                 </div>
                 <p class="Texto">A única razão para incluir atributos de dimensão à tag <img> é evitar quebrar o layout quando a imagem demorar muito para carregar ou quando não puder ser carregada. O uso dos atributos <span class="code-color"><em>width</em></span> e <span class="code-color"><em>height</em></span> para alterar as dimensões originais da imagem pode ter resultados indesejáveis:</p>
                 <ul>
-                    <li>As imagens serão distorcidas se o tamanho original for menor do que as novas dimensões ou se a proporção definida for diferente da original.
+                    <li class="Texto">As imagens serão distorcidas se o tamanho original for menor do que as novas dimensões ou se a proporção definida for diferente da original.
                     </li>
-                    <li> Ao se reduzir o tamanho de imagens grandes, é necessária uma maior largura de banda, o que
+                    <li class="Texto"> Ao se reduzir o tamanho de imagens grandes, é necessária uma maior largura de banda, o que
                     resulta em tempos de carregamento mais longos.</li>
                 </ul>
                 <p class="Texto">O SVG é o único formato que não sofre com esses efeitos, porque todas as suas informações gráficas são armazenadas em coordenadas numéricas adequadas para o redimensionamento e suas dimensões não afetam o tamanho do arquivo (daí o nome <em>Scalable Vector Graphics</em>). Por exemplo, para desenhar um retângulo em SVG, são necessárias apenas a posição, as dimensões das arestas e as informações de cor. O valor específico de cada pixel será renderizado dinamicamente posteriormente. Na verdade, as imagens SVG são semelhantes aos arquivos HTML, no sentido de que seus elementos gráficos também são definidos por tags em um arquivo de texto. Os arquivos SVG destinam-se a representar desenhos com arestas bem definidas, como gráficos ou diagramas.</p>
@@ -107,7 +113,7 @@
             </button>
                     <pre>
                         <code class="Texto">
-<span class="code-color"><strong>&lt;audio</strong></span><span class="blue-code">controls src=</span><span class="orange-code">"/media/recording.mp3"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;audio</strong></span><span class="blue-code"> controls src=</span><span                    class="orange-code">"/media/recording.mp3"</span><span class="code-color"><strong>&gt;</strong></span>
         <span class="code-color"><strong>&lt;p&gt;</strong></span>Áudio indisponível<span class="code-color"><strong>&lt;em&gt;</strong></span>recording.mp3<span class="code-color"><strong>&lt;/em&gt;</strong></span><span class="code-color"><strong>&lt;/p&gt;</strong></span>
 <span class="code-color"><strong>&lt;/audio&gt;</strong></span>
                 </code>
@@ -138,6 +144,7 @@
                 <div class="typewriter-small" style="" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&gt;</strong></span>Contact Information<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -147,6 +154,7 @@
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="code-color"><strong>&gt;</strong></span><span class="code-color"><strong>&lt;img</strong></span><span class="blue-code"> src</span><span class="orange-code">"contact.png"</span><span class="blue-code"> alt=</span><span class="orange-code">"contact.png"</span><span class="code-color"><strong>&gt;</strong></span>"Informações de contato"<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -156,18 +164,20 @@
                 <div class="typewriter-small" style="" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
-        <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span><span class="code-color"><strong>&gt;</strong></span>Contato via Email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+<span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"mailto:info@lpi.org"</span><span class="code-color"><strong>&gt;</strong></span>Contato via Email<span class="code-color"><strong>&lt;/a&gt;</strong></span>
             </code></pre>
                 </div>
                 <p class="Texto">O prefixo tel: indica um número de telefone. Essa indicação é particularmente útil para visitantes que visualizam a página em dispositivos móveis:</p>
                 <div class="typewriter-small" style=" " id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
-        <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"<span class="code-color"><strong>&gt;</strong></span></span>Contato via telefone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
+<span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"tel:+123456789"<span class="code-color"><strong>&gt;</strong></span></span>Contato via telefone<span class="code-color"><strong>&lt;/a&gt;</strong></span>
                 </code></pre>
                 </div>
                 <p class="Texto">Quando o link é clicado, o navegador abre o conteúdo do caminho com o aplicativo associado.</p>
@@ -175,6 +185,7 @@
                 <div class="typewriter-small" style=";"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
         <span class="code-color"><strong>&lt;a </strong></span><span class="blue-code">href=</span><span class="orange-code">"contact.html"</span><span class="blue-code"> target=</span><span class="orange-code">"_blank"</span> <span class="code-color"><strong>&gt; </strong></span>Contate para mais informaçãoes<span class="code-color"><strong>&lt;/a&gt;</strong></span>
@@ -185,6 +196,7 @@
                 <div class="typewriter-small" style="width: 70%;"  id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
 
                     <pre>
@@ -218,6 +230,7 @@
                 <div class="typewriter-small" style=""   id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                 </button>
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;span</strong></span><span class="blue-code"> class=</span><span class="orange-code">"my-headline"</span><span class="blue-code">id=</span><span class="orange-code">"history"</span><span class="code-color"> <strong>&gt;</strong></span>History<span class="code-color"><strong>&lt;/span&gt;</strong></span><span class="code-color"></span>

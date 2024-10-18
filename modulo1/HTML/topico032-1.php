@@ -1,8 +1,6 @@
 
 <?php include '../../layouts/header.php'; ?>
 
-
-
 <body>
     <!-- A_S - Habilita o VLibras -->
     <div vw class="enabled">
@@ -38,6 +36,7 @@
             <div class="typewriter">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                 <strong><pre><code>&lt;!DOCTYPE html&gt;
                &lt;html&gt;
@@ -60,9 +59,10 @@
         o título de um documento HTML. No entanto, um elemento possui dois outros componentes. Um
         elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> completo seria parecido com este:</p>
         <br>
-        <div class="typewriter-small" style="width: 40%;" id="copycode">
+        <div class="typewriter-small" style="width: 70%; text-align: center; height: 130px; padding-top: 55px;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto"><span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página HTML<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
 </code></pre>
@@ -122,9 +122,10 @@
         <br>
         <p class="Subtopico"><strong>Comentários em HTML</strong></p>
         <p class="Texto">Ao criar uma página HTML, é recomendável inserir comentários no código para melhorar sua legibilidade e descrever a finalidade dos blocos de código maiores. As tags &lt;!-- e --&gt; indicam os comentários, como mostrado no exemplo a seguir:</p>
-        <div class="typewriter-small" style="width: 40%; color: #797979;" id="copycode">
+        <div class="typewriter-small" style="width: 60%; color: #797979;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 &lt;!--Isto é um comentário--&gt;<br>
@@ -150,9 +151,10 @@ comentários--&gt;
         <p class="Texto">As tags HTML podem incluir um ou mais atributos para especificar detalhes do elemento HTML.
         Uma tag simples com dois atributos tem o seguinte formato:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%; text-align: center;"  id="copycode">
+        <div class="typewriter-small" style="width: 60%; text-align: center;"  id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
             <pre><code class="Texto">
 <span class="code-color">&lt;tag</span> <span class="blue-code">attribute-a=</span> <span class="orange-code">"value-a"</span> <span class="blue-code">attribute-b=</span><span class="orange-code">"value-b"</span><span class="code-color">&gt;</span>
@@ -240,9 +242,10 @@ comentários--&gt;
         <br>
         <p class="Texto">Eis um exemplo do uso desse elemento:</p>
         <br>
-        <div class="typewriter-small" style="width: 40%; text-align: center;" id="copycode">
+        <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;title&gt;</strong></span>Minha página teste<span class="code-color"><span class="code-color"><strong>&lt;/title&gt;</strong></span>
@@ -262,7 +265,7 @@ comentários--&gt;
         </div>
         <br>
         <p class="Subtopico"><strong>Metadados</strong></p>
-        <p class="Texto">O elemento &lt;meta&gt; é usado para especificar metainformações, de maneira a descrever melhor o conteúdo de um documento HTML. Trata-se de um elemento de auto-fechamento, ou seja, ele não tem uma tag de fechamento. Além dos atributos genéricos, que são válidos para todos os elementos HTML, o elemento &lt;meta&gt; também usa os seguintes atributos:
+        <p class="Texto">O elemento <span class="code-color"><strong>&lt;meta&gt;</strong></span> é usado para especificar metainformações, de maneira a descrever melhor o conteúdo de um documento HTML. Trata-se de um elemento de auto-fechamento, ou seja, ele não tem uma tag de fechamento. Além dos atributos genéricos, que são válidos para todos os elementos HTML, o elemento &lt;meta&gt; também usa os seguintes atributos:
         </p>
         <br>
         <div class="attecion">
@@ -304,6 +307,7 @@ comentários--&gt;
         <div class="typewriter-small"  id="copycode" >
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"author"</span> <span class="blue-code">content=</span><span class="orange-code">"Name Surname"</span><span class="code-color">&gt;</span>
@@ -317,6 +321,7 @@ comentários--&gt;
     <div class="typewriter-small" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color">&lt;meta</span> <span class="blue-code">name=</span> <span class="orange-code">"keywords"</span> <span class="blue-code">content=</span><span class="orange-code">"keyword1, keyword2, keyword3, keyword4, keyword5"</span><span class="code-color">&gt;</span>
@@ -337,9 +342,11 @@ comentários--&gt;
         documento se atualize</strong></p>
         <br>
         <p class="Texto">Usando a tag <span class="code-color"><strong>&lt;meta&gt;</strong></span>, é possível atualizar automaticamente uma página HTML depois de um período determinado (por exemplo, após 30 segundos), desta forma:</p>
-        <div class="typewriter-small" style="width: 40%;" id="copycode">
+        <div class="typewriter-small" style="width:
+        70%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
     <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30"</span><span class="code-color">&gt;</span>
@@ -348,9 +355,10 @@ comentários--&gt;
         <br>
         <p class="Texto">Outra alternativa é redirecionar uma página web para outra página web após o mesmo período de tempo com o seguinte código:</p>
         <br>
-        <div class="typewriter-small" style="width: 50%;" id="copycode">
+        <div class="typewriter-small" style="width: 70%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color">&lt;meta</span> <span class="blue-code">http-equiv=</span> <span class="orange-code">"refresh"</span> <span class="blue-code">content=</span><span class="orange-code">"30;url=http://www.lpi.org"</span><span class="code-color">&gt;</span>
@@ -362,9 +370,10 @@ comentários--&gt;
         <p class="Subtopico"><strong>Especificar a codificação de caracteres</strong></p>
         <p class="Texto">O atributo <span class="code-color">charset</span> especifica a codificação de caracteres para o documento HTML. Um exemplo comum é:</p>
         <br>
-        <div class="typewriter-small" style="width: 30%; text-align: center;" id="copycode">
+        <div class="typewriter-small" style="width: 60%; text-align: center;" id="copycode">
         <button class="copy-btn" onclick="copyCode()">
         <i class="fas fa-copy"></i>
+        Copiar
     </button>
     <pre><code class="Texto">
 <span class="code-color">&lt;meta</span> <span class="blue-code">charset=</span> <span class="orange-code">"utf-8"<span class="code-color">&gt;</span>
@@ -383,16 +392,14 @@ comentários--&gt;
         </ul>
         <br>
         <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
-        curiosidade.</p>
-        <br>
+        curiosidade.</p> 
+        <a href="topico032-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
         </div>
         </div>
     </div>
-    <a href="../../questoesModulo01/unidade01.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
+    </body>
+
+   
     
 
 <?php include('../../layouts/footer.php') ?>
-
-
-</body>
-</html>

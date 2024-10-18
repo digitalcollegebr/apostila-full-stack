@@ -23,6 +23,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico031-1.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">031.2 - Arquiterura de aplicações web</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">A palavra <em>aplicativo</em> tem um amplo significado no jargão tecnológico. Quando o aplicativo é um programa tradicional, executado localmente e auto-suficiente em sua finalidade, tanto a interface operacional do aplicativo quanto os componentes de processamento de dados são integrados em um único “pacote”. Um <em>aplicativo web</em> é diferente porque adota o modelo cliente/servidor e sua parte cliente é baseada em HTML, que é obtido do servidor e, em geral, processado por um navegador.</p>
@@ -94,11 +97,10 @@
                 <br>
                 <p class="Subtopico"><strong>Manutenção de código</strong></p>
                 <p class="Texto">Qualquer que seja o modelo de banco de dados adotado, os aplicativos precisam adicionar dados e provavelmente atualizá-los ao longo da vida útil dos aplicativos. Em alguns aplicativos, como o webmail, os próprios usuários fornecem dados ao banco de dados ao usar o cliente para enviar e receber mensagens. Em outros casos, como em um aplicativo de compras, é importante permitir que os mantenedores do aplicativo modifiquem o banco de dados sem ter de recorrer à programação. Muitas empresas, portanto, adotam algum tipo de <em>sistema de gerenciamento de conteúdo (CMS)</em>, que permite que usuários não-técnicos administrem o aplicativo. Portanto, para a maioria dos aplicativos web, é necessário implementar pelo menos dois tipos de clientes: o cliente não-privilegiado, empregado por usuários comuns, e o cliente privilegiado, empregado por usuários especiais para manter e atualizar as informações apresentadas pelo aplicativo.</p>
-
             </div>
         </div>
     </div>
-    <a href="topico031-3.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (2).png" alt="" class="next"></a>
+    <a href="topico031-3.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     <?php
     // A_S - Footer
     include('../../layouts/footer.php');
