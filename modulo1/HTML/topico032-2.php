@@ -518,6 +518,7 @@ Esta<span class="code-color"><strong> palavra</strong></span> é importante.
                 <div class="typewriter-small" style=" width: 60%" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                     </button>
                     <pre><code class="Texto">
     O código Markdown<span class="code-color"><strong>&lt;code&gt;</strong></span># Heading<span class="code-color"><strong>&lt;/code&gt;</strong></span> cria um título no nível mais alto da hierarquia.
@@ -973,7 +974,7 @@ field() {
           <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Bebidas<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
           <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Pão<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
           <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Petiscos<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Sobremesass<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Sobremesas<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
       <span class="code-color"><strong>&lt;/section&gt;</strong></span>
     <span class="code-color"><strong>&lt;/main&gt;</strong></span>
@@ -992,11 +993,12 @@ field() {
             <p class="Texto">Em um navegador web, a página inteira é exibida como na <em>Figure 22</em>.</p>
             <br>
             <div class="image-content">
-            <img src="../../assets/img/figure22.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure22.png" alt="Código" class="img-fluid">
             </div>
             <p><em>Figure 22. Representação do documento HTML resultante em um navegador web, combinando todos os exemplos anteriores. A página representa um convite para uma festa ao ar livre, com a programação do evento e uma lista de coisas para os convidados levarem.</em></p>
-            <a href="topico032-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+            
             </div>
+            <a href="topico032-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
         </div>
     </div>
     

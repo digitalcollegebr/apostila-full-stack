@@ -32,7 +32,7 @@
                 <p class="Subtopico"><strong>Imagens</strong></p>
                 <p class="Texto">O tipo mais comum de conteúdo incorporado são as imagens que acompanham o texto. As imagens
                 são salvas separadamente e referenciadas dentro do arquivo HTML com a tag <span class="code-color"><strong>&lt;img&gt;</strong></span>:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: center;" id="codecopy">
+                <div class="typewriter-small" style="width: 60%; text-align: center;" id="codecopy">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -43,7 +43,7 @@
                 </code></pre>
                 <br>
                 <p class="Texto">A tag <span class="code-color"><strong>&lt;img&gt;</strong></span> não requer uma tag de fechamento. A propriedade src indica o local de origem do arquivo de imagem. Neste exemplo, o arquivo de imagem logo.png deve estar localizado no mesmo diretório do arquivo HTML, caso contrário o navegador não poderá exibi-lo. A propriedade de localização de origem aceita caminhos relativos, de forma que a notação de ponto pode ser usada para indicar o caminho até a imagem:</p>
-                <div class="typewriter-small" style="width: 50%; text-align: center;" id="copycode">
+                <div class="typewriter-small" style="width: 60%; text-align: center;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                     <i class="fas fa-copy"></i>
                     Copiar
@@ -71,6 +71,7 @@
                 <div class="typewriter-small" id="copycode" style="width: 70%; text-align: center;" >
                 <button class="copy-btn" onclick="copyCode()">
                      <i class="fas fa-copy"></i>
+                     Copiar
                 </button>
                 <pre><code class="Texto">
 <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -84,6 +85,7 @@
                 <div class="typewriter-small"  id="copycode" style="text-align: center;">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
     <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="blue-code">width=</span><span class="orange-code">"300"</span><span class="blue-code">height=</span><span class="orange-code">"100"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -109,6 +111,7 @@
                 <div class="typewriter-small" style="width: 70%;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre>
                         <code class="Texto">
@@ -127,6 +130,7 @@
                 <div class="typewriter-small" style="width: 70%; text-align: left;" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                     <i class="fas fa-copy"></i>
+                    Copiar
                 </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;iframe&gt;</strong></span><span class="blue-code">name=</span><span class="orange-code">"viewer"</span><span class="blue-code">src=</span><span class="orange-code">"gallery.html"</span><span class="code-color"><strong>&gt;</strong></span>
