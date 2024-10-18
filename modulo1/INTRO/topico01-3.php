@@ -23,7 +23,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-            <a href="topico032-2.php" class="button-left">
+            <a href="topico02-2.php" class="button-left">
                     <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <p class="Titulo">031.3 - Noções básicas de HTTP</p>
@@ -246,7 +246,7 @@ Set-Cookie: client_id=62b5b719-fcb
         <br>
         <p class="Texto">Com esse número de identificação, o servidor pode recuperar definições específicas ao cliente e gerar uma resposta personalizada. Também é possível usar mais de um campo <span class="code-color"><em>Set-Cookie</em></span> para entregar cookies diferentes ao mesmo cliente. Dessa forma, mais de uma definição pode ser preservada no lado do cliente.</p>
         <p class="Texto">Os cookies suscitam problemas de privacidade e potenciais falhas de segurança, já que existe a possibilidade de serem transferidos para outro cliente, que será identificado pelo servidor como sendo o cliente original. Os cookies usados para preservar sessões podem dar acesso a informações confidenciais do cliente original. Portanto, é imprescindível que os clientes adotem mecanismos de proteção local para evitar que seus cookies sejam extraídos e reutilizados sem autorização. </p>
-        <a href="../../questoesIntroducao/questaoIntro.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+        <a href="../HTML/topico02-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
             
         </div>

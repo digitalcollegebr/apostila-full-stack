@@ -20,7 +20,7 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-            <a href="topico032-3.php" class="button-left">
+            <a href="topico02-3.php" class="button-left">
                     <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <p class="Titulo">Formulários  HTML</p>
@@ -628,7 +628,7 @@
                 <p class="Texto">O método escolhido não afeta a forma como o visitante interage com o formulário. Os métodos get e post são processados de forma diferente pelo script do lado do servidor que recebe o formulário.</p>
                 <p class="Texto">Ao usar o método post, também é possível alterar o tipo MIME do conteúdo do formulário com o atributo de formulário enctype. Ele afeta a maneira como os campos e valores do formulário serão empilhados na comunicação HTTP com o servidor. O valor padrão para enctype é <em>application/xwww-form-urlencoded</em>, semelhante ao formato usado no método get. Se o formulário contiver campos de entrada do tipo file, é necessário usar o enctype <em>multipart/form-data</em>.</p>
 
-                <a href="../CSS/topico033-1.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="../CSS/topico03-1.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>

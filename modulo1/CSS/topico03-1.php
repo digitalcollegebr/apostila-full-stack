@@ -28,7 +28,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-            <a href="../HTML/topico032-4.php" class="button-left">
+            <a href="../HTML/topico02-4.php" class="button-left">
                     <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <p class="Titulo">Noções básicas de CSS</p>
@@ -306,7 +306,7 @@
                 <p class="Texto">
                 O atributo media pode ser usado da mesma forma que na tag <span class="code-color"><strong>&lt;style&gt;</strong></span>: ele indica as mídias, como monitores de computador ou impressão, às quais as regras do arquivo externo devem se aplicar</p>
                 <p class="Texto">O CSS pode alterar completamente um elemento, mas ainda assim é importante empregar o elemento apropriado para os componentes da página. Caso contrário, as tecnologias de acessibilidade, como os leitores de tela, podem não ser capazes de identificar as seções corretas da página.</p>
-                <a href="topico033-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico03-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>

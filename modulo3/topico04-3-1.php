@@ -1,5 +1,5 @@
 <?php
-    include('../../layouts/header.php')
+    include('../layouts/headerQ.php')
 ?>
 <body>
     <!-- A_S - Habilita o VLibras -->
@@ -21,6 +21,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico04-2.php" class="button-left">
+                    <img src="../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Subtopico" style="font-size: 13px;"><strong>Parte 01</strong></p>
                 <p class="Titulo">034.3 Estrututras de controle e funções do JavaScript</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
@@ -616,12 +619,12 @@ else
                     código do exemplo anterior foi aninhado nesta nova declaração de bloco, mas desta vez testando
                     cada candidato da matriz por sua vez.
                 </p>
-                <a href="topico034-3-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico04-3-2.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
     </div>
     
 </body>
     <?php
-    include('../../layouts/footer.php')
+    include('../layouts/footerQ.php')
 ?>

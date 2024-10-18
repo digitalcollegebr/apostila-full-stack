@@ -20,7 +20,7 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-            <a href="topico032-1.php" class="button-left">
+            <a href="topico02-1.php" class="button-left">
                     <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <p class="Titulo">032.2 - A semântica do HTML e a hierarquia de documentos</p>
@@ -998,7 +998,7 @@ field() {
             <p><em>Figure 22. Representação do documento HTML resultante em um navegador web, combinando todos os exemplos anteriores. A página representa um convite para uma festa ao ar livre, com a programação do evento e uma lista de coisas para os convidados levarem.</em></p>
             
             </div>
-            <a href="topico032-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+            <a href="topico02-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
         </div>
     </div>
     

@@ -422,7 +422,7 @@ Welcome back, visitor
                 <p class="Subtopico"><strong>Segurança dos cookies</strong></p>
                 <p class="Texto">O desenvolvedor deve estar ciente das potenciais vulnerabilidades ao usar cookies para identificar os clientes que fazem solicitações. Os invasores podem usar técnicas como <em>cross-site scripting (XSS)</em> e <em>cross-site request forgery (CSRF)</em> para roubar os cookies de um cliente e, assim, personificá-lo ao fazer uma solicitação ao servidor. De modo geral, esses tipos de ataques usam campos de comentários não validados ou URLs construídas meticulosamente para inserir código JavaScript malicioso na página. Quando executado por um cliente autêntico, esse código pode copiar cookies válidos e armazená-los, ou encaminhá-los para outro destino.</p>
                 <p class="Texto">Portanto, especialmente em aplicativos profissionais, é importante instalar e empregar recursos mais especializados do Express, conhecidos como <em>middleware</em>. Os módulos <span class="code-color"><em>express-session</em></span> ou <span class="code-color"><em>cookie-session</em></span> permitem um controle mais completo e seguro sobre a sessão e o gerenciamento de cookies. Esses componentes oferecem controles extras para evitar que os cookies sejam desviados de seu emissor original.</p>
-                <a href="topico035-2-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico035-2-2.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     
             </div>
         </div>

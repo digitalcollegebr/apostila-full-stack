@@ -23,6 +23,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico05-2-2.php" class="button-left">
+                    <img src="../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">Noções básicas de SQL</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">Embora seja possível escrever suas próprias funções para implementar um armazenamento persistente, costuma ser mais conveniente usar um sistema de gerenciamento de banco de dados para acelerar o desenvolvimento e garantir melhor segurança e estabilidade aos dados formatados em tabela. A estratégia mais popular para armazenar dados organizados em tabelas interrelacionadas, especialmente quando essas tabelas são pesadamente consultadas e atualizadas, é instalar um banco de dados relacional que suporte <span class="code-color"><strong>Structured Query Language</strong></span> (SQL), uma linguagem voltada para bancos de dados relacionais. O Node.js oferece suporte a diversos sistemas de gerenciamento de banco de dados SQL. Seguindo os princípios de portabilidade e execução do espaço de usuário adotados pelo Node.js Express, o <span class="code-color"><strong>SQLite</strong></span> é uma boa escolha para o armazenamento persistente dos dados usados por este tipo de servidor HTTP.</p>

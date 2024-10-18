@@ -23,7 +23,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-            <a href="topico031-1.php" class="button-left">
+            <a href="topico01-1.php" class="button-left">
                     <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <p class="Titulo">031.2 - Arquiterura de aplicações web</p>
@@ -100,7 +100,7 @@
             </div>
         </div>
     </div>
-    <a href="topico031-3.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+    <a href="topico01-3.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     <?php
     // A_S - Footer
     include('../../layouts/footer.php');
