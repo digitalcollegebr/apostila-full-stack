@@ -846,7 +846,7 @@ field() {
                 <p class="Texto">O elemento <span class="code-color"><strong>&lt;article&gt;</strong></span> define um conteúdo independente e autônomo que faz sentido por si só, sem
                 o resto da página. Seu conteúdo é potencialmente redistribuível ou reutilizável em outro contexto. Exemplos típicos ou materiais apropriados para um elemento <span class="code-color"><strong>&lt;article&gt;</strong></span> seriam uma postagem de blog, uma lista de produtos de uma loja ou o anúncio de um produto. O anúncio poderia então existir tanto por conta própria quanto em uma página maior.</p>
                 <p class="Texto">Em nosso exemplo, podemos substituir a primeira <strong>&lt;section&gt;</strong> que envolve a programação por um elemento <strong>&lt;article&gt;</strong>.</p>
-            <div class="typewriter-small"  style="width: 50%;" id="copycode">
+            <div class="typewriter-small"  style="width: 60%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar

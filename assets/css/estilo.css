@@ -633,11 +633,7 @@ video {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
 
-.image-container:hover img {
-    transform: scale(1.05);
 }
 
 .container-side {
@@ -657,12 +653,9 @@ video {
     width: 400px; /* Defina o tamanho da imagem conforme necessário */
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     overflow: hidden;
-        display: block;
-        margin: 0 ;
-    
-    transform: scale(1.05);
+    display: block;
+    margin: 0 ;
 }
 
 .text {
@@ -696,7 +689,6 @@ video {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     overflow: hidden;
 }
 
@@ -707,11 +699,6 @@ video {
     border-radius: 10px;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-.image-content:hover img {
-    transform: scale(1.05);
 }
 
 table {

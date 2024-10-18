@@ -373,7 +373,7 @@ app.get('/', (req, res) => {
                 <br>
                 <p class="Texto">A primeira tag EJS especial é o elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> na seção <span class="code-color"><strong>&lt;head&gt;</strong></span>:</p>
                 <br>
-                <div class="typewriter-small" id="copycode" style="text-align:center; width: 50%;">
+                <div class="typewriter-small" id="copycode" style="text-align:center; width: 60%;">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i> Copiar
                     </button>

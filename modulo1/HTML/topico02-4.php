@@ -42,7 +42,7 @@
     <span class="code-color"><strong>&lt;title&gt;</strong></span>Working with HTML Forms<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
-  <span class=".comment">&lt;!-- o conteúdo do corpo vai aqui --&gt;</span>
+  <span class="comment">&lt;!-- o conteúdo do corpo vai aqui --&gt;</span>
   
   <span class="code-color"><strong>&lt;/body&gt;</strong></span>
 <span class="code-color"><strong>&lt;/html&gt;</strong></span>
@@ -63,7 +63,7 @@
     <span class="code-color"><strong>&lt;title&gt;</strong></span>Working with HTML Forms<span class="code-color"><strong>&lt;/title&gt;</strong></span>
   <span class="code-color"><strong>&lt;/head&gt;</strong></span>
   <span class="code-color"><strong>&lt;body&gt;</strong></span>
-  <span class=".comment">&lt;!--  Form to collect personal information --&gt;</span>
+  <span class="comment">&lt;!--  Form to collect personal information --&gt;</span>
 
     <span class="code-color"><strong>&lt;form&gt;</strong></span>
         <span class="code-color"><strong>&lt;h2&gt;</strong></span>Personal Information<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
@@ -627,7 +627,7 @@
                 <p class="Texto">O método <span class="code-color"><em>post</em></span> faz com que o navegador envie os dados do formulário na seção do corpo da solicitação HTTP. Embora necessário para dados binários que excedem o limite de tamanho de uma URL, o método post adiciona uma sobrecarga desnecessária à conexão quando usado com formas textuais mais simples, por isso o método get é preferível nesses casos.</p>
                 <p class="Texto">O método escolhido não afeta a forma como o visitante interage com o formulário. Os métodos get e post são processados de forma diferente pelo script do lado do servidor que recebe o formulário.</p>
                 <p class="Texto">Ao usar o método post, também é possível alterar o tipo MIME do conteúdo do formulário com o atributo de formulário enctype. Ele afeta a maneira como os campos e valores do formulário serão empilhados na comunicação HTTP com o servidor. O valor padrão para enctype é <em>application/xwww-form-urlencoded</em>, semelhante ao formato usado no método get. Se o formulário contiver campos de entrada do tipo file, é necessário usar o enctype <em>multipart/form-data</em>.</p>
-                
+
                 <a href="../CSS/topico033-1.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
         </div>
