@@ -230,19 +230,19 @@ res.json(user_entries)
                 <br>
                 <p class="Texto">Uma solicitação feita com um comando <span class="code-color"><em>curl</em></span> simples para inserir uma nova mensagem não será aceita, porque <span class="code-color"><em>curl</em></span>, por padrão, não especifica <span class="code-color"><em>application/json</em></span> no cabeçalho <span class="code-color"><em>accept</em></span>:</p>
                 <br>
-                <div class="typewriter-small" id="copycode">
+                <div class="console" id="copycode">
                     <pre><code class="Texto">
 $ <strong> curl http://myserver:8080/ --data message="My first message" -c cookies.txt -b
 cookies.txt -H "accept: application/json"</strong>
-["My first message"]
+["Minha primeira menssagem"]
                     </code></pre>
                 </div>
                 <p class="Texto">Para obter mensagens usando a outra rota, o processo é semelhante, mas desta vez usando o método HTTP <span class="code-color">GET</span>:</p>
                 <br>
-                <div class="typewriter-small" id="copycode">
+                <div class="console" id="copycode">
                     <pre><code class="Texto">
 $ <strong>curl http://myserver:8080/ -c cookies.txt -b cookies.txt -H "accept:application/json"</strong>
-["Another message","My first message"]
+["Outra menssagem","Minha primeira mensagem"]
                     </code></pre>
                 </div>
                 <br>
@@ -253,6 +253,10 @@ $ <strong>curl http://myserver:8080/ -c cookies.txt -b cookies.txt -H "accept:ap
                 está sendo executado:</p>
                 <br>
                 <div class="typewriter-small" id="copycode" style="text-align: center;">
+                        <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                        </button>
                     <pre><code class="Texto">
 $ <strong>npm install ejs</strong>
                     </code></pre>
@@ -373,12 +377,12 @@ app.get('/', (req, res) => {
                 <br>
                 <p class="Texto">A primeira tag EJS especial é o elemento <span class="code-color"><strong>&lt;title&gt;</strong></span> na seção <span class="code-color"><strong>&lt;head&gt;</strong></span>:</p>
                 <br>
-                <div class="typewriter-small" id="copycode" style="text-align:center; width: 50%;">
+                <div class="typewriter-small" id="copycode" style="text-align:center; width: 60%;">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i> Copiar
                     </button>
                     <pre><code class="Texto">
-<span class="code-color"><strong>&lt;</strong></span><span class="red-color"><strong>%=</strong></span> title <span class="red-color"><strong>%</strong></span><span class="red-color"><strong>&gt;</strong></span>
+<span class="code-color"><strong>&lt;</strong></span><span class="red-color"><strong>%=</strong></span> title <span class="red-color"><strong>%</strong></span><span class="code-color"><strong>&gt;</strong></span>
                     </code></pre>
                 </div>
                 <br>
@@ -420,10 +424,7 @@ app.get('/', (req, res) => {
                 <br>
                 <p class="Texto">Neste trecho, a primeira tag <span class="code-color"><strong><% … %></strong></span> inicia uma instrução <span class="code-color"><em>forEach</em></span> que percorre todos os elementos da matriz message. Os delimitadores <span class="code-color"><strong><% e %></strong></span> permitem controlar os trechos de HTML. Um novo item de lista HTML, <span class="code-color"><strong>&lt;li&gt;<%= message %>&lt;/li&gt;</strong></span>, será criado para cada elemento de <span class="code-color"><em>messages</em></span>. Com essas mudanças, o servidor enviará a resposta em HTML quando uma solicitação como a seguinte for recebida:</p>
                 <br>
-                <div class="typewriter-small" id="copycode">
-                    <button class="copy-btn" onclick="copyCode()">
-                        <i class="fas fa-copy"></i> Copiar
-                    </button>
+                <div class="console" id="copycode">
                     <pre><code class="Texto">
 $ <strong>curl http://myserver:8080/ --data message="This time" -c cookies.txt -b cookies.txt</strong>
 &lt;!DOCTYPE html&gt;

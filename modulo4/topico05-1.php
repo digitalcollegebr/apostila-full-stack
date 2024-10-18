@@ -234,7 +234,7 @@ daysjs().format(<span class="orange-code">'dYYYY MM-DDTHH:mm:ss'</span>)
                 <br>
                 <p class="Texto">O módulo dayjs é carregado com a palavra-chave require. Quando um método do módulo é chamado, a biblioteca pega a data e hora atuais do sistema e as exibe no formato especificado:</p>
                 <br>
-                <div class="typewriter-small" style="text-align: center;">
+                <div class="console" style="text-align: center;">
                         <pre><code>
 2020 11-22T11:04:36
                         </code></pre>
@@ -277,7 +277,7 @@ daysjs().format(<span class="orange-code">'dYYYY MM-DDTHH:mm:ss'</span>)
                 <br>
                 <p class="Texto">Salve esse conteúdo em um arquivo chamado basic_server.js e execute-o através de um comando node. O terminal que executa o Node.js exibirá a seguinte mensagem:</p>
                 <br>
-                <div class="typewriter-small" style="text-align: center;">
+                <div class="console" style="text-align: center;">
                         <pre><code>
 Server running at http://127.0.0.1:3000/
                         </code></pre>

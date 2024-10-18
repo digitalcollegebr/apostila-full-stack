@@ -94,7 +94,7 @@ $ <strong>node index.js</strong>
                 <p class="Texto">O exemplo a seguir mostra como usar o comando curl na linha de comando para fazer uma
                 solicitação HTTP ao servidor recém-implantado:</p>
                 <br>
-                <div class="typewriter-small">
+                <div class="console">
                     <pre><code>
 $ <strong>curl http://myserver:8080 -v</strong>
 * Trying 192.168.1.225:8080...
@@ -150,11 +150,7 @@ app.<span class="green-code"><strong>get</strong></span>(<span class="orange-cod
                 <p class="Subtopico"><strong>Método POST</strong></p>
                 <p class="Texto">Para estender a funcionalidade de nosso servidor de teste, vamos ver como definir uma rota para o método HTTP <span class="code-color"><em>POST</em></span>. <strong>Ele é usado pelos clientes que precisam enviar ao servidor dados extras, além dos que estão incluídos no cabeçalho da solicitação</strong>. A opção <span class="code-color"><em>--data</em></span> do comando <span class="code-color"><em>curl</em></span> invoca automaticamente o método <span class="code-color"><em>POST</em></span> e inclui o conteúdo que será enviado ao servidor via <span class="code-color"><em>POST</em></span>. A linha <span class="code-color"><em>POST / HTTP/1.1</em></span> na saída a seguir mostra que o método <span class="code-color"><em>POST</em></span> foi empregado. No entanto, nosso servidor definiu apenas um método <span class="code-color"><em>GET</em></span>, por isso ocorre um erro quando usamos <span class="code-color"><em>curl</em></span> para enviar uma solicitação via <span class="code-color"><em>POST</em></span>:</p>
                 <br>
-                <div class="typewriter-small" id="copycode">
-                    <button class="copy-btn" onclick="copyCode()">
-                        <i class="fas fa-copy"></i>
-                        Copiar
-                    </button>
+                <div class="console" id="copycode">
                     <pre><code class="Texto">
 $ <strong>curl http://myserver:8080/echo --data message="This is the POST request body"</strong>
 * Trying 192.168.1.225:8080...
@@ -275,10 +271,6 @@ app.<span class="green-code"><strong>get</strong></span>(<span class="orange-cod
                 <p class="Texto">A rota neste exemplo corresponde às solicitações feitas com o método <span class="code-color"><em>GET</em></span> usando o caminho <span class="code-color"><em>/echo/:message</em></span>, onde <span class="code-color"><em>:message</em></span> é um espaço reservado para qualquer termo enviado com esse rótulo pelo cliente. Esses parâmetros estão acessíveis na propriedade <span class="code-color"><em>req.params</em></span>. Com esta nova rota, a função echo do servidor pode ser solicitada de forma mais sucinta pelo cliente:</p>
                 <br>
                 <div class="typewriter-small" id="copycode">
-                        <button class="copy-btn" onclick="copyCode()">
-                                <i class="fas fa-copy"></i>
-                                Copiar
-                        </button>
                         <pre><code class="Texto">
 $ <strong> curl http://myserver:8080/echo/hello</strong>
 hello
@@ -364,7 +356,7 @@ app.<span class="green-code"><strong>get</strong></span>(<span class="orange-cod
                 <br>
                 <p class="Texto">Por padrão, o <span class="code-color">curl</span> não usa cookies nas transações. Mas ele tem opções para armazenar (<span class="code-color">-c cookies.txt</span>) e enviar cookies armazenados (<span class="code-color">-b cookies.txt</span>):</p>
                 <br>
-                <div class="typewriter-small">
+                <div class="console">
                     <pre><code class="Texto">
 $ <strong>curl http://myserver:8080/ -c cookies.txt -b cookies.txt -v</strong>
 * Trying 192.168.1.225:8080...
@@ -393,7 +385,7 @@ Welcome, new visitor!
                 <br>
                 <p class="Texto">Como esse comando foi o primeiro acesso desde que os cookies foram implementados no servidor, o cliente não tinha cookies para incluir na solicitação. Como seria de se esperar, o servidor não identificou o cookie na solicitação e, portanto, incluiu o cookie nos cabeçalhos de resposta, conforme indicado na linha <span class="code-color"><em>Set-Cookie: known=1; Path=/</em></span> da saída. Como habilitamos os cookies em curl, uma nova solicitação incluirá o cookie <span class="code-color"><em>known=1</em></span> nos cabeçalhos da solicitação, permitindo que o servidor identifique a presença do cookie:</p>
                 <br>
-                <div class="typewriter-small">
+                <div class="console">
                     <pre><code class="Texto">
 $ <strong>curl http://myserver:8080/ -c cookies.txt -b cookies.txt -v</strong>
 * Trying 192.168.1.225:8080...

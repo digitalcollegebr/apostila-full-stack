@@ -71,8 +71,7 @@
                         Copiar
             </button>
             <pre><code class="Texto">
-    <span class="code-color"><strong>&lt;h1&gt;</strong></span>Nível de cabeçalho 1 para identificar de forma única a 
-    página<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
+    <span class="code-color"><strong>&lt;h1&gt;</strong></span>Nível de cabeçalho 1 para identificar de forma única a página<span class="code-color"><strong>&lt;/h1&gt;</strong></span>
     <span class="code-color"><strong>&lt;h2&gt;</strong></span>Nível de cabeçalho 2<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
     <span class="code-color"><strong>&lt;h3&gt;</strong></span>Nível de cabeçalho 3<span class="code-color"><strong>&lt;/h3&gt;</strong></span>
     <span class="code-color"><strong>&lt;h4&gt;</strong></span>Nível de cabeçalho 4<span class="code-color"><strong>&lt;/h4&gt;</strong></span>
@@ -132,7 +131,8 @@
                         Copiar
             </button>
             <pre><code class="Texto">
-    <span class="code-color"><strong>&lt;p&gt;</strong></span> Convite para Festa no jardim do João <span class="span code-color"><strong>&lt;br&gt;</strong></span>Sábado, próxima    semana.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
+    <span class="code-color"><strong>&lt;p&gt;</strong></span> Convite para Festa no jardim do João <span class="span code-color"><strong>&lt;br&gt;</strong></span>
+    Sábado, próxima semana.<span class="code-color"><strong>&lt;/p&gt;</strong></span>
                 </div>
             </code></pre>
                 <br>
@@ -311,7 +311,7 @@
             </button>
     <pre><code class="Texto">
     <span class="code-color"><strong>&lt;h2&gt;</strong></span>Agenda<span class="code-color"><strong>&lt;/h2&gt;</strong></span>
-    <span class="code-color"><strong>&lt;ol type=</strong></span><span class="red-color">"A"</span><span class="code-color"><strong> start=</strong></span><span class="red-color">"3"</span><span class="code-color"><strong>&gt;</strong></span>
+    <span class="code-color"><strong>&lt;ol</strong> <span class="dark_blue_code">type=</span></span><span class="red-color">"A"</span><span class="dark_blue_code"> start=</span><span class="red-color">"3"</span><span class="code-color"><strong>&gt;</strong></span>
       <span class="code-color"><strong>&lt;li&gt;</strong></span>Bem-vindos<span class="code-color"><strong>&lt;/li&gt;</strong></span>
       <span class="code-color"><strong>&lt;li&gt;</strong></span>
       Churrasco
@@ -402,7 +402,7 @@
                         Copiar
             </button>
             <pre><code class="Texto">
-Esta<span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
+    <span class="code-color"><strong>&lt;b&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/b&gt;</strong></span>está em negrito.
                 </div>
                 </code></pre>
                 <br>
@@ -459,7 +459,7 @@ Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class
                         Copiar
             </button>
             <pre><code class="Texto">
-    Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
+Esta <span class="code-color"><strong>&lt;tt&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/tt&gt;</strong></span> está em fonte de largura fixa.
                 </div>
                 </code></pre>
                 <br>
@@ -481,7 +481,7 @@ Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class
                         Copiar
             </button>
             <pre><code class="Texto">
-                Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
+Esta <span class="code-color"><strong>&lt;em&gt;</strong></span>palavra<span class="code-color"><strong>&lt;/em&gt;</strong></span> está enfatizada.
                 </div>
                 </code></pre>
                 <br>
@@ -500,7 +500,7 @@ Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class
                         Copiar
             </button>
             <pre><code class="Texto">
-    Esta <span class="code-color"><strong>palavra</strong></span> é importante.
+Esta <span class="code-color"><strong>palavra</strong></span> é importante.
                 </div>
                 <br>
                 <div class="image-content">
@@ -518,6 +518,7 @@ Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class
                 <div class="typewriter-small" style=" width: 60%" id="copycode">
                     <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
                     </button>
                     <pre><code class="Texto">
     O código Markdown<span class="code-color"><strong>&lt;code&gt;</strong></span># Heading<span class="code-color"><strong>&lt;/code&gt;</strong></span> cria um título no nível mais alto da hierarquia.
@@ -538,7 +539,7 @@ Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class
                         Copiar
             </button>
             <pre><code class="Texto">
-    Esta <span class="code-color"><strong>&lt;mark&gt;</strong></span>palavra <span class="code-color"><strong>&lt;/mark&gt;</strong></span> está destacada.
+Esta <span class="code-color"><strong>&lt;mark&gt;</strong></span>palavra <span class="code-color"><strong>&lt;/mark&gt;</strong></span> está destacada.
                 </div>
             </code></pre>
                 <br>
@@ -845,7 +846,7 @@ Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class
                 <p class="Texto">O elemento <span class="code-color"><strong>&lt;article&gt;</strong></span> define um conteúdo independente e autônomo que faz sentido por si só, sem
                 o resto da página. Seu conteúdo é potencialmente redistribuível ou reutilizável em outro contexto. Exemplos típicos ou materiais apropriados para um elemento <span class="code-color"><strong>&lt;article&gt;</strong></span> seriam uma postagem de blog, uma lista de produtos de uma loja ou o anúncio de um produto. O anúncio poderia então existir tanto por conta própria quanto em uma página maior.</p>
                 <p class="Texto">Em nosso exemplo, podemos substituir a primeira <strong>&lt;section&gt;</strong> que envolve a programação por um elemento <strong>&lt;article&gt;</strong>.</p>
-            <div class="typewriter-small"  style="width: 50%;" id="copycode">
+            <div class="typewriter-small"  style="width: 60%;" id="copycode">
             <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
                         Copiar
@@ -973,7 +974,7 @@ Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class
           <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Bebidas<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
           <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Pão<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
           <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Petiscos<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
-          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Sobremesass<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
+          <span class="code-color"><strong>&lt;li&gt;</strong></span><span class="code-color"><strong>&lt;strong&gt;</strong></span>Sobremesas<span class="code-color"><strong>&lt;/strong&gt;</strong></span><span class="code-color"><strong>&lt;/li&gt;</strong></span>
         <span class="code-color"><strong>&lt;/ul&gt;</strong></span>
       <span class="code-color"><strong>&lt;/section&gt;</strong></span>
     <span class="code-color"><strong>&lt;/main&gt;</strong></span>
@@ -992,11 +993,12 @@ Esta<span class="code-color"><strong>&lt;u&gt;</strong></span>palavra<span class
             <p class="Texto">Em um navegador web, a página inteira é exibida como na <em>Figure 22</em>.</p>
             <br>
             <div class="image-content">
-            <img src="../../assets/img/figure22.png" alt="Código" class="img-fluid">
+                <img src="../../assets/img/figure22.png" alt="Código" class="img-fluid">
             </div>
             <p><em>Figure 22. Representação do documento HTML resultante em um navegador web, combinando todos os exemplos anteriores. A página representa um convite para uma festa ao ar livre, com a programação do evento e uma lista de coisas para os convidados levarem.</em></p>
-            <a href="topico032-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+            
             </div>
+            <a href="topico032-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
         </div>
     </div>
     

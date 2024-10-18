@@ -362,10 +362,10 @@ body{
     background-color: transparent;
     border: none;
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
+
 }
 .copy-btn:hover {
-    font-size: 10px;
     background-color: transparent;
 }
 
@@ -416,7 +416,7 @@ body{
 }
 
 
-.code-color {
+.code-color {   
     color: #35C560;
 }
 .blue-code{
@@ -430,7 +430,7 @@ body{
     color: #f3260b;
 }
 .red-color{
-    color: #b31414;
+    color: #ff0000;
 }
 .comment{
     color: #717171;
@@ -593,6 +593,7 @@ video {
   background-color: var(--CorPreta) !important;
   padding: 20px 0;
   text-align: center;
+  margin-top: 50px;
   clear: both;
 
 }
@@ -638,11 +639,7 @@ video {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
 
-.image-container:hover img {
-    transform: scale(1.05);
 }
 
 .container-side {
@@ -662,12 +659,9 @@ video {
     width: 400px; /* Defina o tamanho da imagem conforme necessário */
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     overflow: hidden;
-        display: block;
-        margin: 0 ;
-    
-    transform: scale(1.05);
+    display: block;
+    margin: 0 ;
 }
 
 .text {
@@ -701,7 +695,6 @@ video {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     overflow: hidden;
 }
 
@@ -712,11 +705,6 @@ video {
     border-radius: 10px;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-.image-content:hover img {
-    transform: scale(1.05);
 }
 
 table {

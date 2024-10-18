@@ -72,6 +72,7 @@
                 <div class="typewriter-small" id="copycode" style="width: 70%; text-align: center;" >
                 <button class="copy-btn" onclick="copyCode()">
                      <i class="fas fa-copy"></i>
+                     Copiar
                 </button>
                 <pre><code class="Texto">
         <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -85,6 +86,7 @@
                 <div class="typewriter-small"  id="copycode" style="text-align: center;">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
             <pre><code class="Texto">
 <span class="code-color"><strong>&lt;img </strong></span><span class="blue-code">src=</span><span class="orange-code">"logo.png"</span><span class="blue-code">alt=</span><span class="orange-code">"The Company logo"</span><span class="blue-code">width=</span><span class="orange-code">"300"</span><span class="blue-code">height=</span><span class="orange-code">"100"</span><span class="code-color"><strong>&gt;</strong></span>
@@ -110,6 +112,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                         <i class="fas fa-copy"></i>
+                        Copiar
             </button>
                     <pre>
                         <code class="Texto">
@@ -128,6 +131,7 @@
                 <div class="typewriter-small" id="copycode">
                 <button class="copy-btn" onclick="copyCode()">
                     <i class="fas fa-copy"></i>
+                    Copiar
                 </button>
                     <pre><code class="Texto">
 <span class="code-color"><strong>&lt;iframe&gt;</strong></span><span class="blue-code">name=</span><span class="orange-code">"viewer"</span><span class="blue-code">src=</span><span class="orange-code">"gallery.html"</span><span class="code-color"><strong>&gt;</strong></span>
