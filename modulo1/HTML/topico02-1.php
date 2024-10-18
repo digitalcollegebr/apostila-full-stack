@@ -18,6 +18,9 @@
     <div class="container" style="margin-top: 50px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="../INTRO/topico01-3.php" class="button-left">
+                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <!-- Titulo -->
                 <p class="Titulo">032.1 - Marcação de documentos HTML</p>
                 <br>
@@ -393,7 +396,7 @@ comentários--&gt;
         <br>
         <p class="Texto">No entanto, esses dois exemplos estão além do escopo do exame e são citados aqui como mera
         curiosidade.</p> 
-        <a href="topico032-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+        <a href="topico02-2.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
         </div>
         </div>
     </div>

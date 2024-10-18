@@ -1,5 +1,5 @@
 <?php
-    include('../../layouts/header.php')
+    include('../layouts/headerQ.php')
 ?>
 <body>
     <!-- A_S - Habilita o VLibras -->
@@ -21,6 +21,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+                <a href="topico04-3-2.php" class="button-left">
+                    <img src="../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">034.4 Manipulação de conteúdo e estilo de websites com JavaScript</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">
@@ -569,12 +572,12 @@ Third
                     eventos não se restringem aos botões; portanto, podemos atribuir ações personalizadas a esses
                     manipuladores de eventos para todos os elementos HTML visíveis.
                 </p>
-                <a href="../topico035-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="../modulo4/topico05-1.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     
             </div>
         </div>
     </div>
 
 <?php
-        include('../../layouts/footer.php')
+        include('../layouts/footerQ.php')
 ?>

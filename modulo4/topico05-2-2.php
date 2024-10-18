@@ -23,6 +23,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico05-2-1.php" class="button-left">
+                    <img src="../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Subtopico" style="font-size: 13px;"><strong>Parte 02</strong></p>
                 <p class="Titulo">035.2 - Noções básicas de NodeJs Express</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
@@ -453,7 +456,7 @@ $ <strong>curl http://myserver:8080/ --data message="This time" -c cookies.txt -
                     </code></pre>
                 </div>
                 <p class="Texto">A separação entre o código de processamento das solicitações e o código de apresentação da resposta torna o código mais limpo e permite que uma equipe divida o desenvolvimento do aplicativo entre diferentes especialistas. Um webdesigner, por exemplo, pode se concentrar nos arquivos de modelo em <span class="code-color"><em>views/</em></span> e nas folhas de estilo relacionadas, que são fornecidas como arquivos estáticos armazenados no diretório <span class="code-color"><em>public/</em></span> no servidor de exemplo.</p>
-                <a href="topico035-3.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico05-3.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     
             </div>
         </div>

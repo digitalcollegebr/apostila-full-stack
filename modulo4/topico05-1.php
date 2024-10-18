@@ -23,6 +23,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+                <a href="../modulo3/topico04-4.php" class="button-left">
+                    <img src="../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">034.4 - Noções básicas de Node.js</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">O <span class="code-color"><strong>Node.js</strong></span> é um ambiente de tempo de execução que executa código <span class="code-color"><strong>JavaScript</strong></span> em servidores web—o chamado <em>back-end</em> (lado do servidor)—em vez de usar uma segunda linguagem, como <span class="code-color"><strong>Python</strong></span> ou <span class="code-color"><strong>Ruby</strong></span>, para os programas do lado do servidor. A linguagem <span class="code-color"><strong>JavaScript</strong></span> já é utilizada no front-end moderno dos aplicativos web, interagindo com o <strong>HTML</strong> e <strong>CSS</strong> da interface de usuário do navegador web. O uso do <span class="code-color"><strong>Node.js</strong></span> em conjunto com o <span class="code-color"><strong>JavaScript</strong></span> no navegador oferece a possibilidade de se empregar apenas uma linguagem de programação para todo o aplicativo.</p>
@@ -102,7 +105,7 @@ undefined
                 <p class="Texto">É difícil dizer quanto tempo seu programa Node.js levará para lidar com uma solicitação. Algumas solicitações podem ser curtas—por exemplo, percorrer variáveis na memória e retorná-las—ao passo que outras podem exigir atividades mais demoradas, como abrir um arquivo no sistema ou emitir uma consulta a um banco de dados e aguardar os resultados. Como o Node.js lida com essa incerteza? O laço de eventos é a resposta.</p>
                 <p class="Texto">Imagine um chef de cozinha realizando várias tarefas. Assar um bolo é algo requer um certo tempo do forno. O chef não fica sentado esperando o bolo ficar pronto e só depois começa a coar um café. Em vez disso, enquanto o forno assa o bolo, o chef prepara o café e faz outras coisas em paralelo. Mas ele está sempre verificando se está na hora de mudar o foco para uma tarefa específica (como fazer café) ou de tirar o bolo do forno.</p>
                 <div class="image-content">
-                        <img src="../../assets/img/meme.jpg" alt="">
+                        <img src="../assets/img/meme.jpg" alt="">
                 </div>
                 <p class="Texto">O laço de eventos é como o chef que está constantemente ciente do que se passa ao redor. No Node.js, um “verificador de eventos” está sempre verificando as operações que foram concluídas ou que estão esperando para serem processadas pelo mecanismo JavaScript.</p>
                 <p class="Texto">Graças a esse método, uma operação assíncrona e longa não bloqueia as outras operações mais rápidas que vêm depois. Isso ocorre porque o mecanismo de laço de evento está sempre verificando se aquela tarefa longa, como uma operação de I/O, já foi realizada. Caso contrário, o Node.js pode continuar a processar outras tarefas. Quando a tarefa em segundo plano é concluída, os resultados são retornados e o aplicativo que está rodando sobre o Node.js pode usar uma função de gatilho (retorno de chamada) para processar a saída.</p>
@@ -290,7 +293,7 @@ Server running at http://127.0.0.1:3000/
                 <div class="image-content">
                         <img src="../assets/img/node-meme1.png" alt="Node.js meme">
                 </div>
-                <a href="topico035-2-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                <a href="topico035-2-1.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     
             </div>
         </div>

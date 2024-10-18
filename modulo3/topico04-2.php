@@ -1,5 +1,5 @@
 <?php
-    include('../../layouts/header.php')
+    include('../layouts/headerQ.php')
 ?>
 <body>
     <!-- A_S - Habilita o VLibras -->
@@ -21,6 +21,9 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
+            <a href="topico04-1.php" class="button-left">
+                    <img src="../assets/img/arrow-circle-left.png" alt="" class="left">
+                </a>
                 <p class="Titulo">034.1 Lição 1</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
                 <p class="Texto">
@@ -586,7 +589,8 @@ Esse é o caso quando queremos avaliar o resultado de uma expressão dentro de u
                         <br>
                         <div class="typewriter-small" id="copycode" style="text-align: center;">
                             <button class="copy-btn" onclick="copyCode()">
-                                <i class="fas fa-copy"></i> Copiar
+                                <i class="fas fa-copy"></i>
+                                 Copiar
                             </button>
                             <pre><code class="Texto">
 sum = <span class="blue-code">Number</span>(value1) + value2;
@@ -599,7 +603,7 @@ sum = <span class="blue-code">Number</span>(value1) + value2;
                         o programador use uma declaração de decisão como <span class="code-color"><em>if (value1 == null)</em></span> para verificar se uma
                         variável teve um valor atribuído, independentemente do tipo de valor atribuído à variável.
                         </p>
-                        <a href="topico034-3-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+                        <a href="topico04-3-1.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
    
             </div>
         </div>
@@ -607,6 +611,6 @@ sum = <span class="blue-code">Number</span>(value1) + value2;
         
 </body>
 <?php
-    include('../../layouts/footer.php')
+    include('../layouts/footerQ.php')
 ?>
 
