@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../../layouts/header.php');
+    include('../layouts/header.php');
 ?>
 
 <body>
@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
             <a href="topico02-2.php" class="button-left">
-                    <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
+                    <img src="../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <p class="Titulo">031.3 - Noções básicas de HTTP</p>
                 <p class="Subtopico"><strong>Introdução</strong></p>
@@ -32,7 +32,7 @@
                 <p class="Texto">Mais especificamente, HTTP é o conjunto de regras que definem como o aplicativo cliente deve formatar as mensagens de <em>solicitação</em> que serão enviadas ao servidor. O servidor então segue as regras do HTTP para interpretar a solicitação e formatar mensagens de <em>resposta</em>. Além de solicitar ou transferir o conteúdo solicitado, as mensagens HTTP contêm informações extras sobre o cliente e o servidor envolvidos, sobre o conteúdo em si e até mesmo sobre sua indisponibilidade. Se um recurso não puder ser enviado, um código na resposta explica o motivo da indisponibilidade e, se possível, indica para onde o recurso foi movido.</p>
                 <p class="Texto">A parte da mensagem que define os detalhes do recurso e outras informações de contexto é chamada de <em>cabeçalho</em> da mensagem. A parte após o cabeçalho, que contém o conteúdo do recurso correspondente, é chamada de <em>corpo de dados</em> (ou carga) da mensagem. Tanto as mensagens de solicitação quanto as mensagens de resposta podem ter um corpo de dados, mas na maioria dos casos ele está presente apenas na mensagem de resposta.</p>
                 <div class="image-content">
-                    <img src="../../assets/img/http.png" alt="HTTP">
+                    <img src="../assets/img/http.png" alt="HTTP">
                 </div>
                 <br>
                 <p class="Subtopico"><strong>A solicitação do cliente</strong></p>
@@ -55,7 +55,7 @@
                 </div>
                 <br>
                 <div class="image-content">
-                    <img src="../../assets/img/url.png" alt="Componentes da URL">
+                    <img src="../assets/img/url.png" alt="Componentes da URL">
                 </div>
                 <p class="Subtopico"><strong>Como o cliente lida com a URL</strong></p>
                 <p class="Texto">Antes de contatar o servidor, o cliente precisa converter <span class="code-color"><em>learning.lpi.org_</em></span> para o endereço IP correspondente. O cliente usa outro serviço de Internet, o <em>Sistema de Nomes de Domínio (Domain Name System ou DNS)</em>, para solicitar o endereço IP de um nome de host a um ou mais servidores DNS predefinidos (em geral, os servidores DNS são definidos automaticamente pelo provedor).</p>
@@ -246,7 +246,7 @@ Set-Cookie: client_id=62b5b719-fcb
         <br>
         <p class="Texto">Com esse número de identificação, o servidor pode recuperar definições específicas ao cliente e gerar uma resposta personalizada. Também é possível usar mais de um campo <span class="code-color"><em>Set-Cookie</em></span> para entregar cookies diferentes ao mesmo cliente. Dessa forma, mais de uma definição pode ser preservada no lado do cliente.</p>
         <p class="Texto">Os cookies suscitam problemas de privacidade e potenciais falhas de segurança, já que existe a possibilidade de serem transferidos para outro cliente, que será identificado pelo servidor como sendo o cliente original. Os cookies usados para preservar sessões podem dar acesso a informações confidenciais do cliente original. Portanto, é imprescindível que os clientes adotem mecanismos de proteção local para evitar que seus cookies sejam extraídos e reutilizados sem autorização. </p>
-        <a href="../HTML-modulo02/topico02-1.php" class="button-prox-atv"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+        <a href="../HTML-modulo02/topico02-1.php" class="button-prox-atv"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
             </div>
             
         </div>
@@ -259,7 +259,7 @@ Set-Cookie: client_id=62b5b719-fcb
 </html>
 <?php
     // A_S - Footer
-    include('../../layouts/footer.php');
+    include('../layouts/footer.php');
 ?>
 
     

@@ -32,7 +32,7 @@
                     <div class="col-md-6 col-sm-12 col-lg-6">
                         <br>
                         <div class="image-container">
-                            <img src="../../assets/img/first_Computer.jpg" alt="Computador antigo">
+                            <img src="../assets/img/first_Computer.jpg" alt="Computador antigo">
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     </div>
                     <br>
                     <div class="image-side">
-                        <img src="../../assets/img/codigo.gif" alt="GIF de código">
+                        <img src="../assets/img/codigo.gif" alt="GIF de código">
                     </div>
                 </div>
                 <br>
@@ -81,7 +81,7 @@
                     <div class="image-side">
                             <div class="video-container">
                             <video autoplay loop muted>
-            <source src="../../assets/img/GitHub.mp4" type="video/mp4">
+            <source src="../assets/img/GitHub.mp4" type="video/mp4">
         </video>
                      </div>
                     </div>
@@ -211,13 +211,13 @@
             <p class="Texto">A linguagem Python, por exemplo, possui recursos muito sofisticados de mineração e tabulação de dados. O desenvolvedor pode escolher o Python para escrever as partes do programa que lidam com esses aspectos e outra linguagem, como o C++, para realizar o processamento numérico mais pesado.</p>
             <p class="Texto">É possível adotar essa estratégia mesmo quando não existe uma API que permita a comunicação direta entre os dois componentes. O código escrito em Python pode gerar um arquivo no formato adequado para ser usado por um programa escrito em C++, por exemplo.</p>
             <p class="Texto">Embora seja possível escrever quase qualquer programa em qualquer linguagem, o desenvolvedor deve adotar aquela que estiver mais de acordo com o propósito do aplicativo. Ao fazer isso, você se beneficia da reutilização de componentes já testados e bem documentados.</p>
-             <a href="topico01-2.php" class="button-prox"><img src="../../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
+             <a href="topico01-2.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
 
             </div>
         </div>
     </div>
        <?php
     // A_S - Footer
-    include('../../layouts/footer.php');
+    include('../layouts/footer.php');
 ?>
 
