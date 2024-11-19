@@ -28,7 +28,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-            <a href="../HTML/topico02-4.php" class="button-left">
+            <a href="../HTML-modulo02/topico02-4.php" class="button-left">
                     <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <p class="Titulo">Noções básicas de CSS</p>

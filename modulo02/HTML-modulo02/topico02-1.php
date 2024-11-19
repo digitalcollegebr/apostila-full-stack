@@ -18,7 +18,7 @@
     <div class="container" style="margin-top: 50px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-            <a href="../INTRO/topico01-3.php" class="button-left">
+            <a href="../modulo01/topico01-3.php" class="button-left">
                     <img src="../../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <!-- Titulo -->
