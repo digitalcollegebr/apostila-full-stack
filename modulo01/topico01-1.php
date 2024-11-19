@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../../layouts/header.php');
+    include('../layouts/headerQ.php');
 ?>
 
 <body>
@@ -218,6 +218,6 @@
     </div>
        <?php
     // A_S - Footer
-    include('../layouts/footer.php');
+    include('../layouts/footerQ.php');
 ?>
 

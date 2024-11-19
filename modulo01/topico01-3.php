@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../layouts/header.php');
+    include('../layouts/headerQ.php');
 ?>
 
 <body>
@@ -259,7 +259,7 @@ Set-Cookie: client_id=62b5b719-fcb
 </html>
 <?php
     // A_S - Footer
-    include('../layouts/footer.php');
+    include('../layouts/footerQ.php');
 ?>
 
     

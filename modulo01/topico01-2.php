@@ -1,6 +1,6 @@
 <?php
     // A_S - Header
-    include('../../layouts/header.php');
+    include('../layouts/headerQ.php');
 ?>
 
 <body>
@@ -103,5 +103,5 @@
     <a href="topico01-3.php" class="button-prox"><img src="../assets/img/arrow-circle-right (1).png" alt="" class="next"><span class="tooltip">Próximo!</span></a>
     <?php
     // A_S - Footer
-    include('../layouts/footer.php');
+    include('../layouts/footerQ.php');
 ?>
