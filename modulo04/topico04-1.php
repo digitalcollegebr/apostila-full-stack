@@ -23,7 +23,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-lg-12">
-            <a href="..modulo02/CSS-modulo03/topico033-4.php" class="button-left">
+            <a href="../modulo02/CSS-modulo03/topico033-4.php" class="button-left">
                     <img src="../assets/img/arrow-circle-left.png" alt="" class="left">
                 </a>
                 <p class="Titulo">
